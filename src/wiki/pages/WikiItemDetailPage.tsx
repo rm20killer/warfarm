@@ -136,8 +136,7 @@ export function WikiItemDetailPage() {
   const pageTitle = itemName ? `${itemName} - Codex, Drops & Stats` : 'Item Codex Details';
   const pageDescription =
     article?.extract?.slice(0, 160) ||
-    itemGeneralInfo?.description?.slice(0, 160) ||
-    resourceGuide?.quickSummary ||
+    resourceGuide?.description?.slice(0, 160) ||
     (itemName
       ? `Warframe codex guide, drop tables, crafting recipes, and stats for ${itemName}.`
       : 'Warframe item codex and farming guide.');
@@ -146,7 +145,7 @@ export function WikiItemDetailPage() {
     title: pageTitle,
     description: pageDescription,
     keywords: itemName
-      ? `${itemName}, warframe ${itemName}, warframe drops, farming guide, ${itemGeneralInfo?.category || 'codex'}`
+      ? `${itemName}, warframe ${itemName}, warframe drops, farming guide, ${itemGeneralInfo?.type || resourceGuide?.category || 'codex'}`
       : undefined,
     canonicalPath: itemName ? `/item/${encodeURIComponent(itemName)}` : '/item',
   });
