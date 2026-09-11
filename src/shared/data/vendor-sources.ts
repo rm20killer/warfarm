@@ -179,7 +179,7 @@ export function getItemVendorAcquisition(idOrName: string): ItemVendorAcquisitio
       rankRequirement: 'Rank 1 with The Hex',
       location: 'Höllvania Central Mall (1999)',
       fullAcquisitionSentence: `${idOrName} is purchased from Eleanor of The Hex in the Höllvania Central Mall for 10 Live Heartcell obtained from vanquishing a Technocyte Coda.`,
-      notes: `Offerings rotate every 4 days between Batch A and Batch B with randomized elemental progenitor damage types and percentage bonuses. This weapon belongs to ${batch} (${batchWeapons.join(', ')}). Alternate batch: ${otherBatch}.`,
+      notes: `Offerings rotate every 4 days between Batch A and Batch B with randomized elemental progenitor damage types and percentage bonuses. This weapon belongs to ${batch} (${batchWeapons.join(', ')}).`,
     };
   }
 
