@@ -2,14 +2,19 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getResourceGuide } from '../../shared/data/resource-guide';
 import { ItemThumbnail } from '../../shared/utils/item-images';
+import { resolveComponentFullName } from '../../shared/data/item-components';
 
 interface ResourceFarmTooltipProps {
   ingredientName: string;
   count: number;
   isComponent?: boolean;
+  parentItemName?: string;
 }
 
-export function ResourceFarmTooltip({ ingredientName, count, isComponent }: ResourceFarmTooltipProps) {
+export function ResourceFarmTooltip({ ingredientName, count, isComponent, parentItemName }: ResourceFarmTooltipProps) {
+  const targetItemName = isComponent && parentItemName
+    ? resolveComponentFullName(ingredientName, parentItemName)
+    : ingredientName;
   const [isOpen, setIsOpen] = useState(false);
   const closeTimerRef = useRef<NodeJS.Timeout | null>(null);
   const navigate = useNavigate();
@@ -50,7 +55,7 @@ export function ResourceFarmTooltip({ ingredientName, count, isComponent }: Reso
 
   const handleChipClick = (e: React.MouseEvent) => {
     if ((e.target as HTMLElement).closest('a')) return;
-    navigate(`/item/${encodeURIComponent(ingredientName)}`);
+    navigate(`/item/${encodeURIComponent(targetItemName)}`);
   };
 
   return (
@@ -64,12 +69,12 @@ export function ResourceFarmTooltip({ ingredientName, count, isComponent }: Reso
       role="button"
       aria-haspopup="dialog"
       aria-expanded={isOpen}
-      aria-label={`Ingredient ${ingredientName}, required: ${count}. Click or hover for farming spots.`}
+      aria-label={`Ingredient ${targetItemName}, required: ${count}. Click or hover for farming spots.`}
     >
-      <div style={styles.chip} onClick={handleChipClick} title={`Click to open full guide for ${ingredientName}`}>
-        <ItemThumbnail name={ingredientName} size={22} />
+      <div style={styles.chip} onClick={handleChipClick} title={`Click to open full guide for ${targetItemName}`}>
+        <ItemThumbnail name={targetItemName} size={22} />
         <span style={styles.countBadge}>{count.toLocaleString()}x</span>
-        <span style={styles.ingredientName}>{ingredientName}</span>
+        <span style={styles.ingredientName}>{targetItemName}</span>
         {!isComponent && guide && <span style={styles.infoIcon}>&#9432;</span>}
       </div>
 

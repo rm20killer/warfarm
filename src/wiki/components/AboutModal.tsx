@@ -75,9 +75,9 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                   </span>
                 </div>
                 <div style={styles.syncMetaCol}>
-                  <span style={styles.metaLabel}>Gathered Items</span>
+                  <span style={styles.metaLabel}>Total Items</span>
                   <span style={styles.metaVal}>
-                    {syncMetaJson.resourcesCount} resources &amp; recipes
+                    {syncMetaJson.totalCount} <span style={styles.metaUnit}>items</span>
                   </span>
                 </div>
               </div>
@@ -87,10 +87,6 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                   Local Commands for anyone self hosting:
                 </span>
                 <div style={styles.codeBlock}>
-                  <div>
-                    <code>npm run sync:all</code> : Fetches latest wiki data
-                    &amp; regenerates complete Obsidian vault
-                  </div>
                   <div>
                     <code>npm run sync:data</code> : Pulls latest item catalogs
                     and drop tables

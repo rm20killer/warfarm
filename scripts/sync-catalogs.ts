@@ -2091,6 +2091,7 @@ export async function syncCatalogs(): Promise<{
     enemyDropTablesCount: Object.keys(enemyDropTablesMap).length,
     incarnonGenesesCount,
     wikiResourcesGathered: wikiCategoryTitles.length,
+    totalCount: slimWf.length + slimWp.length + slimMods.length + slimResources.length + uniqueWeaponsCount + slimGear.length + slimArcanes.length,
     sources: [
       'https://wiki.warframe.com/',
       'https://github.com/WFCD/warframe-items',

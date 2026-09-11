@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { searchWiki, WikiSearchResult } from '../../shared/api/wiki-client';
 import { RESOURCE_GUIDES } from '../../shared/data/resource-guide';
 import { getVisitHistory, clearVisitHistory, PageVisitHistory } from '../storage';
+import { findSimilarItems } from '../../shared/utils/fuzzy-search';
+import { ItemThumbnail } from '../../shared/utils/item-images';
 
 const LOOKUP_POOL = [
   // User's core items
@@ -12,6 +14,7 @@ const LOOKUP_POOL = [
   'Plastids',
   'Meso N15 Relic',
   'Axi A17 Relic',
+  'Lith A12 Relic',
   'Wisp Prime',
   'Toroid',
   // Popular Warframes & Primes
@@ -75,18 +78,48 @@ export function WikiSearchPage() {
   }, []);
 
   useEffect(() => {
-    if (!query.trim()) {
+    const trimmed = query.trim();
+    if (!trimmed) {
       setResults([]);
       setIsSearching(false);
       return;
     }
 
+    // 1. Instant local search from database (matches "a12" -> "Lith A12 Relic")
+    const localSuggestions = findSimilarItems(trimmed, 8);
+    const localItems: WikiSearchResult[] = localSuggestions.map((s) => ({
+      title: s.name,
+      snippet: `${s.category}${s.subType && s.subType !== s.category ? ` · ${s.subType}` : ''}`,
+      url: s.path,
+    }));
+    setResults(localItems);
+
     const timer = setTimeout(async () => {
       setIsSearching(true);
-      const res = await searchWiki(query, 8);
-      setResults(res);
+      const onlineResults = await searchWiki(trimmed, 8);
+
+      const seen = new Set<string>();
+      const merged: WikiSearchResult[] = [];
+
+      for (const item of localItems) {
+        const key = item.title.toLowerCase();
+        if (!seen.has(key)) {
+          seen.add(key);
+          merged.push(item);
+        }
+      }
+
+      for (const item of onlineResults) {
+        const key = item.title.toLowerCase();
+        if (!seen.has(key)) {
+          seen.add(key);
+          merged.push(item);
+        }
+      }
+
+      setResults(merged.slice(0, 10));
       setIsSearching(false);
-    }, 250);
+    }, 200);
 
     return () => clearTimeout(timer);
   }, [query]);
@@ -110,7 +143,7 @@ export function WikiSearchPage() {
         <div style={styles.searchWrapper}>
           <input
             type="text"
-            placeholder="Search items, resources, warframes, relics (e.g. Argon Crystal)..."
+            placeholder="Search items, resources, warframes, relics (e.g. A12, Tellurium, Rhino Prime)..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             style={styles.searchInput}
@@ -128,8 +161,13 @@ export function WikiSearchPage() {
                 onClick={() => handleSelect(item.title)}
                 style={styles.autocompleteRow}
               >
-                <span style={styles.itemTitle}>{item.title}</span>
-                {item.snippet && <span style={styles.itemSnippet}>{item.snippet}</span>}
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, width: '100%' }}>
+                  <ItemThumbnail name={item.title} size={32} />
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', flex: 1, minWidth: 0 }}>
+                    <span style={styles.itemTitle}>{item.title}</span>
+                    {item.snippet && <span style={styles.itemSnippet}>{item.snippet}</span>}
+                  </div>
+                </div>
               </button>
             ))}
           </div>

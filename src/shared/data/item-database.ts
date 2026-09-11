@@ -553,3 +553,410 @@ export function getEnemyDropsForItem(idOrName: string): EnemyDropEntry[] {
   return [];
 }
 
+export interface VariantItemEntry {
+  name: string;
+  variantType: 'Base' | 'Prime' | 'Kuva' | 'Tenet' | 'Coda' | 'Syndicate' | 'Wraith' | 'Vandal' | 'Prisma' | 'Dex' | 'Mutalist' | 'Other';
+  isCurrent: boolean;
+}
+
+export interface StatComparisonRow {
+  label: string;
+  currentVal: string | number;
+  counterpartVal: string | number;
+  deltaText: string;
+  isImprovement: boolean | null;
+}
+
+export interface ItemVariantComparison {
+  currentItemName: string;
+  baseItemName: string;
+  category: 'Weapon' | 'Warframe';
+  variants: VariantItemEntry[];
+  selectedVariantName: string;
+  comparisonRows: StatComparisonRow[];
+}
+
+export function extractBaseItemName(name: string): string {
+  let base = name.trim();
+  const prefixRegex = /^(Kuva|Tenet|Coda|Prisma|Dex|MK1-|Mk1\s+|Synoid|Telos|Vaykor|Secura|Rakta|Sancti|Mutalist|Carmine|Dragon|Mara)\s*/i;
+  base = base.replace(prefixRegex, '');
+  const suffixRegex = /\s+(Prime|Wraith|Vandal|Prisma|Dex|Umbra)$/i;
+  base = base.replace(suffixRegex, '');
+  return base.trim();
+}
+
+export function getVariantType(name: string, baseName: string): VariantItemEntry['variantType'] {
+  const lower = name.toLowerCase().trim();
+  const lowerBase = baseName.toLowerCase().trim();
+  if (lower === lowerBase) return 'Base';
+  if (lower.endsWith(' prime')) return 'Prime';
+  if (lower.startsWith('kuva ')) return 'Kuva';
+  if (lower.startsWith('tenet ')) return 'Tenet';
+  if (lower.startsWith('coda ')) return 'Coda';
+  if (lower.endsWith(' wraith')) return 'Wraith';
+  if (lower.endsWith(' vandal')) return 'Vandal';
+  if (lower.startsWith('prisma ') || lower.endsWith(' prisma')) return 'Prisma';
+  if (lower.startsWith('dex ') || lower.endsWith(' dex')) return 'Dex';
+  if (
+    lower.startsWith('vaykor ') ||
+    lower.startsWith('telos ') ||
+    lower.startsWith('synoid ') ||
+    lower.startsWith('secura ') ||
+    lower.startsWith('rakta ') ||
+    lower.startsWith('sancti ')
+  ) {
+    return 'Syndicate';
+  }
+  if (lower.startsWith('mutalist ')) return 'Mutalist';
+  return 'Other';
+}
+
+function parseNum(strOrNum: string | number | undefined): number {
+  if (typeof strOrNum === 'number') return strOrNum;
+  if (!strOrNum) return 0;
+  const match = strOrNum.toString().match(/[-+]?[0-9]*\.?[0-9]+/);
+  return match ? parseFloat(match[0]) : 0;
+}
+
+export function compareWeaponCombatStats(
+  current: WeaponCombatStats,
+  counterpart: WeaponCombatStats,
+  currentMR = 0,
+  counterpartMR = 0
+): StatComparisonRow[] {
+  const rows: StatComparisonRow[] = [];
+
+  // 1. Mastery Rank
+  const mrDiff = counterpartMR - currentMR;
+  rows.push({
+    label: 'Mastery Rank',
+    currentVal: `MR ${currentMR}`,
+    counterpartVal: `MR ${counterpartMR}`,
+    deltaText: mrDiff === 0 ? 'Same' : mrDiff > 0 ? `+${mrDiff} MR` : `${mrDiff} MR`,
+    isImprovement: mrDiff === 0 ? null : mrDiff < 0, // Lower MR requirement is technically accessible earlier
+  });
+
+  // 2. Critical Chance
+  const curCC = parseNum(current.critChance);
+  const cntCC = parseNum(counterpart.critChance);
+  const ccDiff = +(cntCC - curCC).toFixed(1);
+  rows.push({
+    label: 'Critical Chance',
+    currentVal: current.critChance,
+    counterpartVal: counterpart.critChance,
+    deltaText: ccDiff === 0 ? 'Same' : ccDiff > 0 ? `+${ccDiff}%` : `${ccDiff}%`,
+    isImprovement: ccDiff === 0 ? null : ccDiff > 0,
+  });
+
+  // 3. Critical Multiplier
+  const curCD = parseNum(current.critMultiplier);
+  const cntCD = parseNum(counterpart.critMultiplier);
+  const cdDiff = +(cntCD - curCD).toFixed(1);
+  rows.push({
+    label: 'Critical Multiplier',
+    currentVal: current.critMultiplier,
+    counterpartVal: counterpart.critMultiplier,
+    deltaText: cdDiff === 0 ? 'Same' : cdDiff > 0 ? `+${cdDiff}x` : `${cdDiff}x`,
+    isImprovement: cdDiff === 0 ? null : cdDiff > 0,
+  });
+
+  // 4. Status Chance
+  const curSC = parseNum(current.statusChance);
+  const cntSC = parseNum(counterpart.statusChance);
+  const scDiff = +(cntSC - curSC).toFixed(1);
+  rows.push({
+    label: 'Status Chance',
+    currentVal: current.statusChance,
+    counterpartVal: counterpart.statusChance,
+    deltaText: scDiff === 0 ? 'Same' : scDiff > 0 ? `+${scDiff}%` : `${scDiff}%`,
+    isImprovement: scDiff === 0 ? null : scDiff > 0,
+  });
+
+  // 5. Fire Rate / Attack Speed
+  const curFR = parseNum(current.fireRate);
+  const cntFR = parseNum(counterpart.fireRate);
+  const frDiff = +(cntFR - curFR).toFixed(2);
+  rows.push({
+    label: 'Fire Rate / Speed',
+    currentVal: current.fireRate,
+    counterpartVal: counterpart.fireRate,
+    deltaText: frDiff === 0 ? 'Same' : frDiff > 0 ? `+${frDiff}` : `${frDiff}`,
+    isImprovement: frDiff === 0 ? null : frDiff > 0,
+  });
+
+  // 6. Magazine
+  const magDiff = counterpart.magazine - current.magazine;
+  rows.push({
+    label: 'Magazine Size',
+    currentVal: `${current.magazine} rounds`,
+    counterpartVal: `${counterpart.magazine} rounds`,
+    deltaText: magDiff === 0 ? 'Same' : magDiff > 0 ? `+${magDiff}` : `${magDiff}`,
+    isImprovement: magDiff === 0 ? null : magDiff > 0,
+  });
+
+  // 7. Reload Time (Lower is better!)
+  const curRel = parseNum(current.reload);
+  const cntRel = parseNum(counterpart.reload);
+  const relDiff = +(cntRel - curRel).toFixed(2);
+  rows.push({
+    label: 'Reload Time',
+    currentVal: current.reload,
+    counterpartVal: counterpart.reload,
+    deltaText: relDiff === 0 ? 'Same' : relDiff < 0 ? `${relDiff}s (Faster)` : `+${relDiff}s (Slower)`,
+    isImprovement: relDiff === 0 ? null : relDiff < 0,
+  });
+
+  // 8. Total Base Damage
+  const curDmg = current.modes[0]?.damageTotal || 0;
+  const cntDmg = counterpart.modes[0]?.damageTotal || 0;
+  const dmgDiff = +(cntDmg - curDmg).toFixed(1);
+  const dmgPct = curDmg > 0 ? +((dmgDiff / curDmg) * 100).toFixed(1) : 0;
+  rows.push({
+    label: 'Total Base Damage',
+    currentVal: curDmg.toString(),
+    counterpartVal: cntDmg.toString(),
+    deltaText: dmgDiff === 0 ? 'Same' : dmgDiff > 0 ? `+${dmgDiff} (+${dmgPct}%)` : `${dmgDiff} (${dmgPct}%)`,
+    isImprovement: dmgDiff === 0 ? null : dmgDiff > 0,
+  });
+
+  // 9. Riven Disposition
+  rows.push({
+    label: 'Riven Disposition',
+    currentVal: current.dispositionText,
+    counterpartVal: counterpart.dispositionText,
+    deltaText: current.dispositionText === counterpart.dispositionText ? 'Same' : 'Variant-specific',
+    isImprovement: null,
+  });
+
+  return rows;
+}
+
+export function compareWarframeCombatStats(
+  current: WarframeCombatStats,
+  counterpart: WarframeCombatStats
+): StatComparisonRow[] {
+  const rows: StatComparisonRow[] = [];
+
+  // Health
+  const hpDiff = counterpart.health - current.health;
+  rows.push({
+    label: 'Health',
+    currentVal: current.health,
+    counterpartVal: counterpart.health,
+    deltaText: hpDiff === 0 ? 'Same' : hpDiff > 0 ? `+${hpDiff}` : `${hpDiff}`,
+    isImprovement: hpDiff === 0 ? null : hpDiff > 0,
+  });
+
+  // Shield
+  const shieldDiff = counterpart.shield - current.shield;
+  rows.push({
+    label: 'Shield',
+    currentVal: current.shield,
+    counterpartVal: counterpart.shield,
+    deltaText: shieldDiff === 0 ? 'Same' : shieldDiff > 0 ? `+${shieldDiff}` : `${shieldDiff}`,
+    isImprovement: shieldDiff === 0 ? null : shieldDiff > 0,
+  });
+
+  // Armor
+  const armorDiff = counterpart.armor - current.armor;
+  rows.push({
+    label: 'Armor',
+    currentVal: current.armor,
+    counterpartVal: counterpart.armor,
+    deltaText: armorDiff === 0 ? 'Same' : armorDiff > 0 ? `+${armorDiff}` : `${armorDiff}`,
+    isImprovement: armorDiff === 0 ? null : armorDiff > 0,
+  });
+
+  // Energy / Power
+  const pwrDiff = counterpart.power - current.power;
+  rows.push({
+    label: 'Energy (Power)',
+    currentVal: current.power,
+    counterpartVal: counterpart.power,
+    deltaText: pwrDiff === 0 ? 'Same' : pwrDiff > 0 ? `+${pwrDiff}` : `${pwrDiff}`,
+    isImprovement: pwrDiff === 0 ? null : pwrDiff > 0,
+  });
+
+  // Sprint Speed
+  const spdDiff = +(counterpart.sprintSpeed - current.sprintSpeed).toFixed(2);
+  rows.push({
+    label: 'Sprint Speed',
+    currentVal: current.sprintSpeed,
+    counterpartVal: counterpart.sprintSpeed,
+    deltaText: spdDiff === 0 ? 'Same' : spdDiff > 0 ? `+${spdDiff}` : `${spdDiff}`,
+    isImprovement: spdDiff === 0 ? null : spdDiff > 0,
+  });
+
+  // Mastery Rank
+  const mrDiff = counterpart.masteryReq - current.masteryReq;
+  rows.push({
+    label: 'Mastery Rank',
+    currentVal: `MR ${current.masteryReq}`,
+    counterpartVal: `MR ${counterpart.masteryReq}`,
+    deltaText: mrDiff === 0 ? 'Same' : mrDiff > 0 ? `+${mrDiff} MR` : `${mrDiff} MR`,
+    isImprovement: mrDiff === 0 ? null : mrDiff < 0,
+  });
+
+  // Polarities
+  const curPol = current.polarities.join(', ') || 'None';
+  const cntPol = counterpart.polarities.join(', ') || 'None';
+  rows.push({
+    label: 'Base Polarities',
+    currentVal: curPol,
+    counterpartVal: cntPol,
+    deltaText:
+      counterpart.polarities.length > current.polarities.length
+        ? `+${counterpart.polarities.length - current.polarities.length} Polarity`
+        : current.polarities.length === counterpart.polarities.length
+        ? 'Same Count'
+        : `${counterpart.polarities.length - current.polarities.length}`,
+    isImprovement: counterpart.polarities.length > current.polarities.length ? true : null,
+  });
+
+  // Aura
+  rows.push({
+    label: 'Aura Polarity',
+    currentVal: current.aura || 'None',
+    counterpartVal: counterpart.aura || 'None',
+    deltaText: current.aura === counterpart.aura ? 'Same' : 'Different',
+    isImprovement: null,
+  });
+
+  return rows;
+}
+
+export function getItemVariantFamily(itemName: string, targetVariantName?: string): ItemVariantComparison | undefined {
+  if (!itemName) return undefined;
+  const baseName = extractBaseItemName(itemName);
+  const baseNameLower = baseName.toLowerCase();
+
+  // Check if this item is a Warframe
+  const isWarframe = (allWarframes as any[]).some((wf) => extractBaseItemName(wf.name).toLowerCase() === baseNameLower);
+
+  if (isWarframe) {
+    const matchingWarframes = (allWarframes as any[]).filter(
+      (wf) => extractBaseItemName(wf.name).toLowerCase() === baseNameLower
+    );
+
+    if (matchingWarframes.length <= 1 && !itemName.toLowerCase().includes('prime')) {
+      return undefined;
+    }
+
+    const variants: VariantItemEntry[] = matchingWarframes.map((wf) => ({
+      name: wf.name,
+      variantType: getVariantType(wf.name, baseName),
+      isCurrent: wf.name.toLowerCase() === itemName.toLowerCase(),
+    }));
+
+    // Sort: Base first, then Prime, then others
+    const typeOrder: Record<string, number> = { Base: 1, Prime: 2, Other: 3 };
+    variants.sort((a, b) => (typeOrder[a.variantType] || 9) - (typeOrder[b.variantType] || 9));
+
+    // Choose counterpart: requested target or first non-current variant (preferring Prime if on Base, or Base if on Prime)
+    let counterpart = targetVariantName
+      ? variants.find((v) => v.name.toLowerCase() === targetVariantName.toLowerCase())
+      : undefined;
+
+    if (!counterpart) {
+      if (itemName.toLowerCase().endsWith(' prime')) {
+        counterpart = variants.find((v) => v.variantType === 'Base') || variants.find((v) => !v.isCurrent);
+      } else {
+        counterpart = variants.find((v) => v.variantType === 'Prime') || variants.find((v) => !v.isCurrent);
+      }
+    }
+
+    if (!counterpart) return undefined;
+
+    const currentStats = getWarframeCombatStats(itemName);
+    const counterpartStats = getWarframeCombatStats(counterpart.name);
+
+    if (!currentStats || !counterpartStats) return undefined;
+
+    const comparisonRows = compareWarframeCombatStats(currentStats, counterpartStats);
+
+    return {
+      currentItemName: itemName,
+      baseItemName: baseName,
+      category: 'Warframe',
+      variants,
+      selectedVariantName: counterpart.name,
+      comparisonRows,
+    };
+  }
+
+  // Otherwise check Weapons
+  const matchingWeapons = (allWeapons as any[]).filter(
+    (w) => extractBaseItemName(w.name).toLowerCase() === baseNameLower
+  );
+
+  if (matchingWeapons.length <= 1) {
+    return undefined;
+  }
+
+  const variants: VariantItemEntry[] = matchingWeapons.map((w) => ({
+    name: w.name,
+    variantType: getVariantType(w.name, baseName),
+    isCurrent: w.name.toLowerCase() === itemName.toLowerCase(),
+  }));
+
+  // Sort: Base first, Prime, Kuva, Tenet, Coda, Syndicate, Wraith, Vandal, Prisma, Dex, Other
+  const typeOrder: Record<string, number> = {
+    Base: 1,
+    Prime: 2,
+    Kuva: 3,
+    Tenet: 4,
+    Coda: 5,
+    Syndicate: 6,
+    Wraith: 7,
+    Vandal: 8,
+    Prisma: 9,
+    Dex: 10,
+    Mutalist: 11,
+    Other: 12,
+  };
+  variants.sort((a, b) => (typeOrder[a.variantType] || 99) - (typeOrder[b.variantType] || 99));
+
+  let counterpart = targetVariantName
+    ? variants.find((v) => v.name.toLowerCase() === targetVariantName.toLowerCase())
+    : undefined;
+
+  if (!counterpart) {
+    if (itemName.toLowerCase().endsWith(' prime')) {
+      counterpart = variants.find((v) => v.variantType === 'Base') || variants.find((v) => !v.isCurrent);
+    } else {
+      counterpart =
+        variants.find((v) => v.variantType === 'Prime') ||
+        variants.find((v) => v.variantType === 'Kuva') ||
+        variants.find((v) => v.variantType === 'Tenet') ||
+        variants.find((v) => v.variantType === 'Coda') ||
+        variants.find((v) => !v.isCurrent);
+    }
+  }
+
+  if (!counterpart) return undefined;
+
+  const currentStats = getWeaponCombatStats(itemName);
+  const counterpartStats = getWeaponCombatStats(counterpart.name);
+
+  if (!currentStats || !counterpartStats) return undefined;
+
+  const curRaw = (allWeapons as any[]).find((w) => w.name.toLowerCase() === itemName.toLowerCase());
+  const cntRaw = (allWeapons as any[]).find((w) => w.name.toLowerCase() === counterpart!.name.toLowerCase());
+
+  const comparisonRows = compareWeaponCombatStats(
+    currentStats,
+    counterpartStats,
+    curRaw?.masteryReq || 0,
+    cntRaw?.masteryReq || 0
+  );
+
+  return {
+    currentItemName: itemName,
+    baseItemName: baseName,
+    category: 'Weapon',
+    variants,
+    selectedVariantName: counterpart.name,
+    comparisonRows,
+  };
+}
+

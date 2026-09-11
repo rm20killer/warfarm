@@ -9,8 +9,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "sync:data": "tsx scripts/sync-catalogs.ts",
-    "export:obsidian": "tsx scripts/export-obsidian.ts",
-    "sync:all": "tsx scripts/sync-catalogs.ts && tsx scripts/export-obsidian.ts"
+    "export:obsidian": "tsx scripts/export-obsidian.ts"
   },
   "dependencies": {
     "react": "^18.3.1",

@@ -36,12 +36,25 @@ import {
   getWeaponExtraInfo,
   getWarframeCombatStats,
   getEnemyDropsForItem,
+  getItemVariantFamily,
   ItemGeneralInfo,
   WeaponCombatStats,
   WeaponExtraInfo,
   WarframeCombatStats,
   EnemyDropEntry,
+  ItemVariantComparison,
+  StatComparisonRow,
 } from '../../shared/data/item-database';
+import {
+  getRelicDropsForPrimeItem,
+  getRelicById,
+  RelicEntry,
+  RelicRefinement,
+  REFINEMENT_TRACES,
+  getRewardRefinementChances,
+  calculateSquadSuccessProbability,
+  PrimeComponentRelicDrop,
+} from '../../shared/data/relic-database';
 import { RecommendedBuild, getRecommendedBuildsForItem } from '../../shared/data/recommended-builds';
 import { ResourceFarmTooltip } from '../components/ResourceFarmTooltip';
 import {
@@ -63,6 +76,14 @@ import {
 } from '../storage';
 import { ItemThumbnail } from '../../shared/utils/item-images';
 import { getWeaponLineage } from './GearDirectoryPage';
+import { findSimilarItems, SimilarItemSuggestion } from '../../shared/utils/fuzzy-search';
+import {
+  parseItemComponent,
+  getParentItemComponents,
+  resolveComponentFullName,
+  ItemComponentInfo,
+  SiblingComponent,
+} from '../../shared/data/item-components';
 
 function renderFormattedAcquisition(text: string) {
   const paragraphs = text.split(/\n\n+/);
@@ -180,6 +201,16 @@ export function WikiItemDetailPage() {
   const [selectedArcaneRank, setSelectedArcaneRank] = useState<number>(5);
   const [arcaneSynergies, setArcaneSynergies] = useState<ArcaneSynergy[]>([]);
   const [relicSpots, setRelicSpots] = useState<RelicFarmingSpot[]>([]);
+  const [relicData, setRelicData] = useState<RelicEntry | undefined>(undefined);
+  const [selectedRelicRefinement, setSelectedRelicRefinement] = useState<RelicRefinement>('Intact');
+  const [variantComparison, setVariantComparison] = useState<ItemVariantComparison | undefined>(undefined);
+  const [selectedVariantTarget, setSelectedVariantTarget] = useState<string | undefined>(undefined);
+  const [isVariantCompOpen, setIsVariantCompOpen] = useState(false);
+  const [primeRelicDrops, setPrimeRelicDrops] = useState<Record<string, PrimeComponentRelicDrop[]>>({});
+  const [openRelicAccordions, setOpenRelicAccordions] = useState<Record<string, boolean>>({});
+  const [componentInfo, setComponentInfo] = useState<ItemComponentInfo | undefined>(undefined);
+  const [parentComponents, setParentComponents] = useState<SiblingComponent[]>([]);
+  const [similarItems, setSimilarItems] = useState<SimilarItemSuggestion[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [personalNote, setPersonalNote] = useState('');
   const [noteSaved, setNoteSaved] = useState(false);
@@ -191,13 +222,29 @@ export function WikiItemDetailPage() {
     if (!itemName) return;
 
     setIsLoading(true);
+    setSimilarItems(findSimilarItems(itemName));
     setPersonalNote(getPersonalItemNote(itemName));
+
+    const comp = parseItemComponent(itemName);
+    setComponentInfo(comp);
+
+    if (comp) {
+      setParentComponents(comp.siblingComponents);
+    } else {
+      setParentComponents(getParentItemComponents(itemName));
+    }
 
     const targets = getPersonalTargets();
     const existingTarget = targets.find((t) => t.name.toLowerCase() === itemName.toLowerCase());
     setTarget(existingTarget);
     if (existingTarget) {
       setTargetQty(existingTarget.targetQuantity);
+    }
+
+    const relic = getRelicById(itemName);
+    setRelicData(relic);
+    if (relic) {
+      setSelectedRelicRefinement('Intact');
     }
 
     const guide = getResourceGuide(itemName);
@@ -218,22 +265,37 @@ export function WikiItemDetailPage() {
     const incarnonDetails = getIncarnonGenesisDetails(itemName);
     setIncarnonGenesis(incarnonDetails);
 
-    const recipe = getCraftingRecipe(itemName);
+    let recipe: FoundryCraftingRecipe | undefined = undefined;
+    if (comp) {
+      if (!comp.isPreCraftedDrop) {
+        recipe = comp.craftingRecipe || getCraftingRecipe(itemName);
+      }
+    } else {
+      recipe = getCraftingRecipe(itemName);
+    }
     setCraftingRecipe(recipe);
 
-    const generalInfo = getItemGeneralInfo(itemName);
+    const isComponentItem = Boolean(comp);
+
+    const generalInfo = isComponentItem ? undefined : getItemGeneralInfo(itemName);
     setItemGeneralInfo(generalInfo);
 
-    const wStats = getWeaponCombatStats(itemName);
+    const wStats = isComponentItem ? undefined : getWeaponCombatStats(itemName);
     setWeaponStats(wStats);
 
-    const wfStats = getWarframeCombatStats(itemName);
+    const wfStats = isComponentItem ? undefined : getWarframeCombatStats(itemName);
     setWarframeStats(wfStats);
 
-    const wExtras = getWeaponExtraInfo(itemName);
+    const wExtras = isComponentItem ? undefined : getWeaponExtraInfo(itemName);
     setWeaponExtras(wExtras);
 
-    const builds = getRecommendedBuildsForItem(itemName, wfStats ? 'Warframe' : wStats ? 'Primary' : undefined);
+    const vComp = isComponentItem ? undefined : getItemVariantFamily(itemName, selectedVariantTarget);
+    setVariantComparison(vComp);
+
+    const pDrops = getRelicDropsForPrimeItem(itemName);
+    setPrimeRelicDrops(pDrops);
+
+    const builds = isComponentItem ? [] : getRecommendedBuildsForItem(itemName, wfStats ? 'Warframe' : wStats ? 'Primary' : undefined);
     setRecommendedBuilds(builds);
     setSelectedBuildIndex(0);
 
@@ -258,9 +320,9 @@ export function WikiItemDetailPage() {
     setSpecialChallenge(challenge);
 
     const eraMatch = itemName.match(/^(Lith|Meso|Neo|Axi|Requiem)/i);
-    if (eraMatch) {
-      const era = (eraMatch[1].charAt(0).toUpperCase() + eraMatch[1].slice(1).toLowerCase()) as RelicEra;
-      setRelicSpots(getBestRelicSpots(era));
+    const resolvedEra = relic ? relic.era : eraMatch ? (eraMatch[1].charAt(0).toUpperCase() + eraMatch[1].slice(1).toLowerCase()) as RelicEra : null;
+    if (resolvedEra) {
+      setRelicSpots(getBestRelicSpots(resolvedEra));
     } else {
       setRelicSpots([]);
     }
@@ -272,7 +334,8 @@ export function WikiItemDetailPage() {
     setPreviousPage(prev);
 
     let itemCategory = 'Item';
-    if (arcane) itemCategory = 'Arcane';
+    if (comp) itemCategory = `${comp.parentCategory} Part`;
+    else if (arcane) itemCategory = 'Arcane';
     else if (modDetails) itemCategory = 'Mod';
     else if (guide) itemCategory = 'Resource';
     else if (wfStats) itemCategory = 'Warframe';
@@ -288,6 +351,18 @@ export function WikiItemDetailPage() {
 
     fetchWikiArticle(itemName)
       .then((data) => {
+        if ((!data || !data.extract) && comp?.parentItemName) {
+          return fetchWikiArticle(comp.parentItemName).then((parentData) => {
+            if (parentData && parentData.extract) {
+              setArticle({
+                ...parentData,
+                title: itemName,
+              });
+            } else {
+              setArticle(data);
+            }
+          });
+        }
         setArticle(data);
       })
       .finally(() => {
@@ -328,6 +403,12 @@ export function WikiItemDetailPage() {
     }
   };
 
+  const handleSelectVariant = (variantName: string) => {
+    setSelectedVariantTarget(variantName);
+    const updated = getItemVariantFamily(itemName, variantName);
+    setVariantComparison(updated);
+  };
+
   useEffect(() => {
     if (itemName) {
       document.title = `${itemName} - Warframe Wiki`;
@@ -336,6 +417,28 @@ export function WikiItemDetailPage() {
 
   const relicMatch = itemName ? itemName.match(/^(Lith|Meso|Neo|Axi|Requiem)/i) : null;
   const weaponLineage = itemName ? getWeaponLineage(itemName, itemGeneralInfo?.type) : null;
+
+  const hasAnyData = Boolean(
+    article ||
+    resourceGuide ||
+    lootSource ||
+    relicData ||
+    enemyDrops.length > 0 ||
+    specialChallenge ||
+    detailedMod ||
+    vendorAcquisition ||
+    incarnonGenesis ||
+    craftingRecipe ||
+    itemGeneralInfo ||
+    weaponStats ||
+    warframeStats ||
+    weaponExtras ||
+    arcaneData ||
+    relicMatch ||
+    componentInfo ||
+    parentComponents.length > 0 ||
+    Object.keys(primeRelicDrops).length > 0
+  );
 
   if (!itemName) {
     return (
@@ -403,11 +506,30 @@ export function WikiItemDetailPage() {
                   {detailedMod.rarity} {detailedMod.type || 'Mod'}
                 </span>
               )}
-              {relicMatch && (
+              {relicData ? (
+                <>
+                  <span style={{ ...styles.categoryBadge, backgroundColor: '#2a2216', color: '#f0c060', borderColor: '#5c4820' }}>
+                    {relicData.era.toUpperCase()} Relic
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      fontWeight: 700,
+                      padding: '2px 7px',
+                      borderRadius: 3,
+                      backgroundColor: relicData.vaulted ? '#2d2218' : '#142a1a',
+                      color: relicData.vaulted ? '#e0a060' : '#7ae08a',
+                      border: `1px solid ${relicData.vaulted ? '#543820' : '#23582e'}`,
+                    }}
+                  >
+                    {relicData.vaulted ? 'VAULTED' : 'UNVAULTED'}
+                  </span>
+                </>
+              ) : relicMatch ? (
                 <span style={{ ...styles.categoryBadge, backgroundColor: '#2a2216', color: '#f0c060', borderColor: '#5c4820' }}>
                   {relicMatch[1].toUpperCase()} Relic
                 </span>
-              )}
+              ) : null}
               {warframeStats && (
                 <span style={{ ...styles.categoryBadge, backgroundColor: '#182436', color: '#8ecbfc', borderColor: '#204064' }}>
                   Warframe
@@ -416,6 +538,11 @@ export function WikiItemDetailPage() {
               {weaponStats && (
                 <span style={{ ...styles.categoryBadge, backgroundColor: '#20182c', color: '#dca8ff', borderColor: '#482868' }}>
                   {itemGeneralInfo?.type || 'Weapon'}
+                </span>
+              )}
+              {componentInfo && (
+                <span style={{ ...styles.categoryBadge, backgroundColor: '#2d2218', color: '#ffd700', borderColor: '#5c4820' }}>
+                  {componentInfo.isPrime ? 'Prime ' : ''}{componentInfo.parentCategory} Component
                 </span>
               )}
               {weaponLineage && (
@@ -513,9 +640,313 @@ export function WikiItemDetailPage() {
 
       {isLoading ? (
         <p style={styles.statusNotice}>Loading wiki information...</p>
+      ) : !hasAnyData ? (
+        <div style={styles.notFoundContainer}>
+          <div style={styles.notFoundHeader}>
+            <h2 style={styles.notFoundTitle}>Item Not Found: "{itemName}"</h2>
+            <p style={styles.notFoundSub}>
+              We could not find an exact match for this item in our local database or wiki archives.
+            </p>
+          </div>
+
+          {similarItems.length > 0 && (
+            <div style={styles.suggestionsSection}>
+              <h3 style={styles.suggestionsTitle}>Did you mean one of these items?</h3>
+              <div style={styles.suggestionsGrid}>
+                {similarItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    style={styles.suggestionCard}
+                  >
+                    <ItemThumbnail name={item.name} size={48} />
+                    <div style={styles.suggestionDetails}>
+                      <div style={styles.suggestionName}>{item.name}</div>
+                      <div style={styles.suggestionCategory}>
+                        <span style={styles.suggestionBadge}>{item.category}</span>
+                        {item.subType && item.subType !== item.category && (
+                          <span style={styles.suggestionSubtype}>{item.subType}</span>
+                        )}
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div style={{ marginTop: 24, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+            <Link to="/" style={styles.primarySearchLink}>
+              Search Database
+            </Link>
+            <Link to="/relics" style={styles.secondarySearchLink}>
+              Browse Relics
+            </Link>
+            <Link to="/gear" style={styles.secondarySearchLink}>
+              Browse Gear Directory
+            </Link>
+          </div>
+        </div>
       ) : (
         <div style={styles.contentGrid}>
           <div style={styles.mainColumn}>
+            {componentInfo && (
+              <section style={styles.componentParentCard}>
+                <div style={styles.componentParentHeader}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+                    <ItemThumbnail name={componentInfo.parentItemName} size={48} />
+                    <div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
+                        <span style={styles.componentBadge}>
+                          {componentInfo.isPrime ? 'PRIME ' : ''}{componentInfo.parentCategory.toUpperCase()} COMPONENT
+                        </span>
+                        <span style={{ fontSize: 13, color: '#a0a8c8' }}>
+                          Part of:
+                        </span>
+                        <Link
+                          to={`/item/${encodeURIComponent(componentInfo.parentItemName)}`}
+                          style={styles.parentItemLink}
+                        >
+                          {componentInfo.parentItemName}
+                        </Link>
+                      </div>
+                      <p style={{ margin: 0, fontSize: 13, color: '#c0c8e0', lineHeight: 1.45 }}>
+                        {componentInfo.isPreCraftedDrop
+                          ? `Pre-crafted part obtained directly from Void Relics. Used in the Foundry to build ${componentInfo.parentItemName}.`
+                          : componentInfo.isBlueprint
+                          ? `Foundry manufacturing blueprint required to assemble ${componentInfo.parentItemName}.`
+                          : `Component blueprint for ${componentInfo.parentItemName}. Requires crafting before final assembly.`}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {componentInfo.siblingComponents.length > 1 && (
+                  <div style={styles.siblingStrip}>
+                    <span style={styles.siblingStripLabel}>
+                      All Components for {componentInfo.parentItemName}:
+                    </span>
+                    <div style={styles.siblingList}>
+                      {componentInfo.siblingComponents.map((sib) => (
+                        <Link
+                          key={sib.name}
+                          to={sib.path}
+                          style={{
+                            ...styles.siblingChip,
+                            ...(sib.isCurrent ? styles.siblingChipActive : {}),
+                          }}
+                          title={sib.isCurrent ? `Currently viewing ${sib.name}` : `View ${sib.name} details and drop sources`}
+                        >
+                          <ItemThumbnail name={sib.name} size={18} />
+                          <span>{sib.shortName}</span>
+                          {sib.isCurrent && <span style={styles.viewingIndicator}>(Viewing)</span>}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </section>
+            )}
+            
+            {article?.extract && (
+              <section style={styles.sectionCard}>
+                <h2 style={styles.sectionTitle}>Wiki Summary</h2>
+                {article.thumbnailUrl && (
+                  <img
+                    src={article.thumbnailUrl}
+                    alt={itemName}
+                    style={styles.itemImage}
+                  />
+                )}
+                <p style={styles.extractText}>{article.extract}</p>
+                {resourceGuide?.specialMechanics && (
+                  <div style={styles.mechanicCallout}>
+                    <strong>Special Mechanics:</strong> {resourceGuide.specialMechanics}
+                  </div>
+                )}
+              </section>
+            )}
+            {variantComparison && variantComparison.variants.length > 1 && (
+              <section style={styles.variantComparisonCard}>
+                <div style={styles.variantHeader}>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
+                      <span style={styles.variantBadge}>VARIANT COMPARISON</span>
+                      <span style={styles.variantFamilyText}>
+                        Family: <strong style={{ color: '#f0f0f8' }}>{variantComparison.baseItemName}</strong> ({variantComparison.variants.length} versions)
+                      </span>
+                    </div>
+                    <p style={styles.variantSubtitle}>
+                      Compare stats side-by-side against other editions in this item family.
+                    </p>
+                  </div>
+
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+                    <button
+                      type="button"
+                      onClick={() => setIsVariantCompOpen(!isVariantCompOpen)}
+                      style={styles.variantToggleBtn}
+                    >
+                      {isVariantCompOpen ? 'Hide Stats Comparison ▲' : 'Show Stats Comparison ▼'}
+                    </button>
+                    <Link
+                      to={`/item/${encodeURIComponent(variantComparison.selectedVariantName)}`}
+                      style={styles.openVariantBtn}
+                    >
+                      Open {variantComparison.selectedVariantName} Page
+                    </Link>
+                  </div>
+                </div>
+
+                {isVariantCompOpen && (
+                  <>
+                    <div style={styles.variantTabsRow}>
+                      <span style={styles.variantTabsLabel}>Select Variant to Compare:</span>
+                      <div style={styles.variantTabsList}>
+                        {variantComparison.variants.map((v) => {
+                          const isSelected = v.name.toLowerCase() === variantComparison.selectedVariantName.toLowerCase();
+                          const isCurrent = v.isCurrent;
+                          return (
+                            <button
+                              key={v.name}
+                              onClick={() => !isCurrent && handleSelectVariant(v.name)}
+                              disabled={isCurrent}
+                              style={{
+                                ...styles.variantTabBtn,
+                                ...(isSelected ? styles.variantTabBtnSelected : {}),
+                                ...(isCurrent ? styles.variantTabBtnCurrent : {}),
+                              }}
+                              title={isCurrent ? 'Currently viewing this item' : `Compare stats with ${v.name}`}
+                            >
+                              <span style={styles.variantTypeTag}>{v.variantType}</span>
+                              <span style={styles.variantNameText}>{v.name}</span>
+                              {isCurrent && <span style={styles.currentIndicator}>(Current)</span>}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    <div style={styles.comparisonTableWrapper}>
+                      <table style={styles.comparisonTable}>
+                        <thead>
+                          <tr>
+                            <th style={styles.compTh}>Attribute</th>
+                            <th style={styles.compThCurrent}>
+                              <span style={styles.compThSub}>Current Item</span>
+                              <div style={styles.compThTitle}>{variantComparison.currentItemName}</div>
+                            </th>
+                            <th style={styles.compThCounterpart}>
+                              <span style={styles.compThSub}>Compared Variant</span>
+                              <div style={styles.compThTitle}>{variantComparison.selectedVariantName}</div>
+                            </th>
+                            <th style={styles.compThDelta}>Difference / Delta</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {variantComparison.comparisonRows.map((row, rIdx) => {
+                            let deltaColor = '#c0c4dc';
+                            let deltaBg = '#1c1e2d';
+                            let deltaBorder = '#2a2e44';
+                            if (row.isImprovement === true) {
+                              deltaColor = '#7ae08a';
+                              deltaBg = '#142a1a';
+                              deltaBorder = '#23582e';
+                            } else if (row.isImprovement === false) {
+                              deltaColor = '#ff8282';
+                              deltaBg = '#2d1818';
+                              deltaBorder = '#542222';
+                            }
+
+                            return (
+                              <tr key={rIdx} style={styles.compTr}>
+                                <td style={styles.compTdLabel}>{row.label}</td>
+                                <td style={styles.compTdCurrent}>{row.currentVal}</td>
+                                <td style={styles.compTdCounterpart}>{row.counterpartVal}</td>
+                                <td style={styles.compTdDelta}>
+                                  <span
+                                    style={{
+                                      ...styles.deltaBadge,
+                                      color: deltaColor,
+                                      backgroundColor: deltaBg,
+                                      borderColor: deltaBorder,
+                                    }}
+                                  >
+                                    {row.deltaText}
+                                  </span>
+                                </td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                  </>
+                )}
+              </section>
+            )}
+            {craftingRecipe && (
+              <section style={styles.sectionCard}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10, marginBottom: 14 }}>
+                  <div>
+                    <h2 style={styles.sectionTitle}>Foundry & Crafting Recipe</h2>
+                    <span style={styles.craftCostText}>
+                      Build Price: {craftingRecipe.buildPriceCredits.toLocaleString()} Credits
+                      {craftingRecipe.rushPricePlat ? ` | Rush: ${craftingRecipe.rushPricePlat} Plat` : ''}
+                    </span>
+                  </div>
+                  <div style={styles.cookTimeBadge}>
+                    <span style={styles.cookTimeLabel}>Time to Cook:</span>
+                    <span style={styles.cookTimeValue}>{craftingRecipe.buildTimeText}</span>
+                  </div>
+                </div>
+
+                <div style={styles.ingredientsBlock}>
+                  <span style={styles.ingredientsTitle}>Required Crafting Resources (Hover to see best farming spots):</span>
+                  <div style={styles.ingredientsGrid}>
+                    {craftingRecipe.ingredients.map((ing, i) => (
+                      <ResourceFarmTooltip
+                        key={i}
+                        ingredientName={ing.name}
+                        count={ing.count}
+                        isComponent={ing.isComponent}
+                        parentItemName={componentInfo?.parentItemName || itemName}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                {craftingRecipe.componentRecipes && craftingRecipe.componentRecipes.length > 0 && (
+                  <div style={styles.componentRecipesSection}>
+                    <span style={styles.componentsHeading}>Component Blueprints (Cook time: 12 hours each):</span>
+                    <div style={styles.componentRecipesList}>
+                      {craftingRecipe.componentRecipes.map((comp) => (
+                        <div key={comp.itemId} style={styles.compRecipeBox}>
+                          <div style={styles.compRecipeHeader}>
+                            <span style={styles.compRecipeName}>{comp.itemName}</span>
+                            <span style={styles.compRecipeMeta}>
+                              Time: {comp.buildTimeText} | {comp.buildPriceCredits.toLocaleString()} Credits
+                            </span>
+                          </div>
+                          <div style={styles.ingredientsGrid}>
+                            {comp.ingredients.map((ing, i) => (
+                              <ResourceFarmTooltip
+                                key={i}
+                                ingredientName={ing.name}
+                                count={ing.count}
+                                isComponent={ing.isComponent}
+                                parentItemName={comp.itemName || componentInfo?.parentItemName || itemName}
+                              />
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </section>
+            )}
+
             {detailedMod?.vendorSource && (
               <section style={styles.acquisitionCard}>
                 <div style={styles.acquisitionHeader}>
@@ -559,6 +990,498 @@ export function WikiItemDetailPage() {
                 )}
               </section>
             )}
+
+            {resourceGuide?.acquisition && (
+              <section style={styles.sectionCard}>
+                <h2 style={styles.sectionTitle}>Acquisition & Strategy</h2>
+                {renderFormattedAcquisition(resourceGuide.acquisition)}
+              </section>
+            )}
+
+            {resourceGuide && resourceGuide.optimalNodes.length > 0 && (
+              <section style={styles.sectionCard}>
+                <h2 style={styles.sectionTitle}>Optimal Farming Locations</h2>
+                <div style={styles.nodeList}>
+                  {resourceGuide.optimalNodes.map((node, i) => (
+                    <div key={i} style={styles.nodeCard}>
+                      <div style={styles.nodeCardTop}>
+                        <div>
+                          <span style={styles.nodeName}>{node.node}</span>
+                          <span style={styles.nodePlanet}> - {node.planet}</span>
+                          <span style={styles.missionTypeBadge}>{node.missionType}</span>
+                        </div>
+                        <span
+                          style={{
+                            ...styles.efficiencyBadge,
+                            color: node.efficiencyRating === 'Best' ? '#92d492' : '#c4c492',
+                          }}
+                        >
+                          {node.efficiencyRating}
+                        </span>
+                      </div>
+                      <p style={styles.strategyText}>{node.strategyNote}</p>
+                    </div>
+                  ))}
+                </div>
+
+                {resourceGuide.recommendedFrames.length > 0 && (
+                  <div style={styles.framesTipBox}>
+                    <strong style={styles.framesTipTitle}>Recommended Squad Loadouts:</strong>
+                    <span style={styles.framesList}>
+                      {resourceGuide.recommendedFrames.join(', ')}
+                    </span>
+                  </div>
+                )}
+              </section>
+            )}
+
+            {relicData && (
+              <section style={styles.sectionCard}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 12, marginBottom: 16 }}>
+                  <div>
+                    <h2 style={styles.sectionTitle}>{relicData.fullName} Drops &amp; Refinement</h2>
+                    <p style={{ margin: '4px 0 0 0', fontSize: 13, color: '#a0a4c0' }}>
+                      Select a refinement tier to inspect drop chances for solo runs and 4-player Radshare squad runs.
+                    </p>
+                  </div>
+
+                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                    {(['Intact', 'Exceptional', 'Flawless', 'Radiant'] as RelicRefinement[]).map((tier) => {
+                      const isSelected = selectedRelicRefinement === tier;
+                      const traces = REFINEMENT_TRACES[tier];
+                      return (
+                        <button
+                          key={tier}
+                          type="button"
+                          onClick={() => setSelectedRelicRefinement(tier)}
+                          style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            padding: '6px 12px',
+                            background: isSelected ? '#252b42' : '#141624',
+                            border: `1px solid ${isSelected ? '#ffd700' : '#23273c'}`,
+                            borderRadius: 6,
+                            cursor: 'pointer',
+                            color: isSelected ? '#ffd700' : '#9ea4c4',
+                            transition: 'all 0.15s ease',
+                          }}
+                        >
+                          <span style={{ fontSize: 12, fontWeight: 700 }}>{tier}</span>
+                          <span style={{ fontSize: 10, color: isSelected ? '#eed8a0' : '#787c94' }}>
+                            {traces === 0 ? '0 Traces' : `+${traces} Traces`}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                <div style={{ padding: '10px 14px', background: '#161928', border: '1px solid #282f4c', borderRadius: 6, marginBottom: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 8 }}>
+                  <div>
+                    <span style={{ fontSize: 13, color: '#f0f0f8', fontWeight: 600 }}>
+                      Selected Refinement: <strong style={{ color: '#ffd700' }}>{selectedRelicRefinement}</strong> ({REFINEMENT_TRACES[selectedRelicRefinement]} Void Traces)
+                    </span>
+                    <p style={{ margin: '2px 0 0 0', fontSize: 12, color: '#9098b8' }}>
+                      {selectedRelicRefinement === 'Radiant'
+                        ? 'Rare drop rate maximized to 10.00% (34.39% in 4-player Radshare squad).'
+                        : selectedRelicRefinement === 'Flawless'
+                        ? 'Rare drop rate boosted to 6.00% (21.93% in 4-player squad).'
+                        : selectedRelicRefinement === 'Exceptional'
+                        ? 'Rare drop rate boosted to 4.00% (15.07% in 4-player squad).'
+                        : 'Base drop rate: 2.00% Rare, 11.00% Uncommon, 25.33% Common.'}
+                    </p>
+                  </div>
+                  <span style={{ fontSize: 11, fontWeight: 700, padding: '3px 8px', borderRadius: 4, background: '#1f2438', color: '#8ec4f4' }}>
+                    {relicData.rewards.length} Potential Drops
+                  </span>
+                </div>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 12, marginBottom: 20 }}>
+                  {relicData.rewards.map((rw, rIdx) => {
+                    const chances = getRewardRefinementChances(rw.rarity);
+                    const currentRate = chances[selectedRelicRefinement.toLowerCase() as keyof typeof chances] as number;
+                    const squadRate = calculateSquadSuccessProbability(currentRate, 4);
+
+                    let rarityBg = '#221e18';
+                    let rarityColor = '#e0a060';
+                    let rarityBorder = '#543820';
+                    if (rw.rarity === 'Rare') {
+                      rarityBg = '#2c2616';
+                      rarityColor = '#ffd700';
+                      rarityBorder = '#6e5820';
+                    } else if (rw.rarity === 'Uncommon') {
+                      rarityBg = '#1c222c';
+                      rarityColor = '#90caf9';
+                      rarityBorder = '#28446c';
+                    }
+
+                    return (
+                      <div
+                        key={rIdx}
+                        style={{
+                          background: '#151724',
+                          border: `1px solid ${rw.rarity === 'Rare' ? '#4a3820' : '#222638'}`,
+                          borderRadius: 6,
+                          padding: 12,
+                          display: 'flex',
+                          flexDirection: 'column',
+                          justifyContent: 'space-between',
+                          gap: 10,
+                        }}
+                      >
+                        <div>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+                            <span
+                              style={{
+                                fontSize: 10,
+                                fontWeight: 700,
+                                textTransform: 'uppercase',
+                                padding: '2px 6px',
+                                borderRadius: 3,
+                                background: rarityBg,
+                                color: rarityColor,
+                                border: `1px solid ${rarityBorder}`,
+                              }}
+                            >
+                              {rw.rarity}
+                            </span>
+                            <span style={{ fontSize: 15, fontWeight: 800, color: rarityColor }}>
+                              {currentRate}%
+                            </span>
+                          </div>
+
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                            <ItemThumbnail name={rw.itemName} size={36} />
+                            <Link
+                              to={`/item/${encodeURIComponent(rw.itemName)}`}
+                              style={{
+                                fontSize: 13,
+                                fontWeight: 600,
+                                color: '#e0e4f4',
+                                textDecoration: 'none',
+                                lineHeight: 1.35,
+                              }}
+                            >
+                              {rw.itemName}
+                            </Link>
+                          </div>
+                        </div>
+
+                        <div style={{ padding: '6px 8px', background: '#10121c', borderRadius: 4, display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 11 }}>
+                          <span style={{ color: '#7c829c' }}>4-Player Squad:</span>
+                          <strong style={{ color: '#8ec48e' }}>{squadRate}%</strong>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div style={{ marginTop: 20 }}>
+                  <h3 style={{ fontSize: 14, fontWeight: 700, color: '#f0f0f8', margin: '0 0 10px 0' }}>
+                    Refinement Probability Matrix (All Tiers Comparison)
+                  </h3>
+                  <div style={styles.comparisonTableWrapper}>
+                    <table style={styles.comparisonTable}>
+                      <thead>
+                        <tr>
+                          <th style={styles.compTh}>Reward Item</th>
+                          <th style={styles.compTh}>Rarity</th>
+                          <th style={{ ...styles.compTh, background: selectedRelicRefinement === 'Intact' ? '#242a42' : undefined }}>
+                            Intact (0)
+                          </th>
+                          <th style={{ ...styles.compTh, background: selectedRelicRefinement === 'Exceptional' ? '#242a42' : undefined }}>
+                            Exceptional (25)
+                          </th>
+                          <th style={{ ...styles.compTh, background: selectedRelicRefinement === 'Flawless' ? '#242a42' : undefined }}>
+                            Flawless (50)
+                          </th>
+                          <th style={{ ...styles.compTh, background: selectedRelicRefinement === 'Radiant' ? '#242a42' : undefined }}>
+                            Radiant (100)
+                          </th>
+                          <th style={styles.compTh}>Upgrade Delta</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {relicData.rewards.map((rw, idx) => {
+                          const chances = getRewardRefinementChances(rw.rarity);
+                          const delta = Number((chances.radiant - chances.intact).toFixed(2));
+                          const isBoost = delta > 0;
+                          return (
+                            <tr key={idx} style={styles.compTr}>
+                              <td style={styles.compTdLabel}>
+                                <Link
+                                  to={`/item/${encodeURIComponent(rw.itemName)}`}
+                                  style={{ color: '#d0d4e8', textDecoration: 'none', fontWeight: 600 }}
+                                >
+                                  {rw.itemName}
+                                </Link>
+                              </td>
+                              <td style={styles.compTdCurrent}>
+                                <span style={getRarityBadgeStyle(rw.rarity)}>
+                                  {rw.rarity}
+                                </span>
+                              </td>
+                              <td style={{ ...styles.compTdCounterpart, background: selectedRelicRefinement === 'Intact' ? '#1f243c' : undefined }}>
+                                {chances.intact}%
+                              </td>
+                              <td style={{ ...styles.compTdCounterpart, background: selectedRelicRefinement === 'Exceptional' ? '#1f243c' : undefined }}>
+                                {chances.exceptional}%
+                              </td>
+                              <td style={{ ...styles.compTdCounterpart, background: selectedRelicRefinement === 'Flawless' ? '#1f243c' : undefined }}>
+                                {chances.flawless}%
+                              </td>
+                              <td style={{ ...styles.compTdCounterpart, background: selectedRelicRefinement === 'Radiant' ? '#1f243c' : undefined }}>
+                                <strong style={{ color: '#ffd700' }}>{chances.radiant}%</strong>
+                              </td>
+                              <td style={styles.compTdDelta}>
+                                <span
+                                  style={{
+                                    ...styles.deltaBadge,
+                                    color: isBoost ? '#7ae08a' : '#ff8282',
+                                    backgroundColor: isBoost ? '#142a1a' : '#2d1818',
+                                    borderColor: isBoost ? '#23582e' : '#542222',
+                                  }}
+                                >
+                                  {isBoost ? `+${delta}% (boost)` : `${delta}%`}
+                                </span>
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {relicSpots.length > 0 && (
+              <section style={styles.sectionCard}>
+                <h2 style={styles.sectionTitle}>Fastest Relic Farming Spots ({relicData ? `${relicData.era} Era` : 'Era'})</h2>
+                <div style={styles.nodeList}>
+                  {relicSpots.map((spot, i) => (
+                    <div key={i} style={styles.nodeCard}>
+                      <div style={styles.nodeCardTop}>
+                        <div>
+                          <span style={styles.nodeName}>{spot.node}</span>
+                          <span style={styles.nodePlanet}> ({spot.planet})</span>
+                          <span style={styles.missionTypeBadge}>{spot.missionType}</span>
+                        </div>
+                        <span style={styles.dropRateBadge}>{spot.dropRateText}</span>
+                      </div>
+                      <p style={styles.strategyText}>
+                        <strong>Time:</strong> {spot.expectedTime} | {spot.strategyTip}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {Object.keys(primeRelicDrops).length > 0 && (
+              <section style={styles.sectionCard}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16, flexWrap: 'wrap', gap: 8 }}>
+                  <div>
+                    <h2 style={styles.sectionTitle}>Void Relic Drop Sources</h2>
+                    <p style={{ margin: '4px 0 0 0', fontSize: 13, color: '#a0a4c0' }}>
+                      All active and historical Void Relics containing {itemName} blueprints and parts.
+                    </p>
+                  </div>
+                  <Link to="/relics" style={styles.wikiLink}>
+                    View Full Relics Directory
+                  </Link>
+                </div>
+            
+                <div style={{ padding: '10px 14px', background: '#1c1c28', borderLeft: '3px solid #ffd700', borderRadius: '0 6px 6px 0', marginBottom: 20, fontSize: 12.5, color: '#b0b8d0', lineHeight: 1.5 }}>
+                  <strong style={{ color: '#ffd700' }}>Note on Vaulted Relics:</strong> Vaulted relics do not drop in standard Star Chart missions.
+                </div>
+            
+                <div style={styles.primeRelicsList}>
+                  {Object.entries(primeRelicDrops).map(([partName, relics]) => {
+                    const isOpen = openRelicAccordions[partName] === true;
+                    const sortedRelics = [...relics].sort((a, b) => {
+                      if (a.vaulted !== b.vaulted) return a.vaulted ? 1 : -1;
+                      return b.radiantChance - a.radiantChance;
+                    });
+                    const bestRelic = sortedRelics[0];
+                    const unvaultedCount = relics.filter((r) => !r.vaulted).length;
+                    const vaultedCount = relics.filter((r) => r.vaulted).length;
+                  
+                    return (
+                      <div key={partName} style={{...styles.primeRelicPartGroup, borderColor: isOpen ? '#3a425c' : '#1f2334'}}>
+                        <div
+                          onClick={() => setOpenRelicAccordions((prev) => ({ ...prev, [partName]: !isOpen }))}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                              e.preventDefault();
+                              setOpenRelicAccordions((prev) => ({ ...prev, [partName]: !isOpen }));
+                            }
+                          }}
+                          style={{
+                            ...styles.primeRelicAccordionHeaderBtn,
+                            background: isOpen ? '#181b2a' : '#141620',
+                            borderBottom: isOpen ? '1px solid #1f2334' : 'none'
+                          }}
+                          role="button"
+                          tabIndex={0}
+                          aria-expanded={isOpen}
+                        >
+                          {(() => {
+                            const fullPartName = componentInfo ? itemName : resolveComponentFullName(partName, itemName);
+                            const isDifferentPage = fullPartName.toLowerCase() !== itemName.toLowerCase();
+
+                            return (
+                              <>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', flex: 1 }}>
+                                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                                    <span style={styles.primeRelicPartTitle}>{partName}</span>
+                                  </div>
+
+                                  {isDifferentPage && (
+                                    <Link
+                                      to={`/item/${encodeURIComponent(fullPartName)}`}
+                                      style={styles.partPageLink}
+                                      onClick={(e) => e.stopPropagation()}
+                                      title={`Open ${fullPartName} component page`}
+                                    >
+                                      Open Page
+                                    </Link>
+                                  )}
+
+                                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginLeft: 'auto', marginRight: 16 }}>
+                                    {bestRelic && (
+                                      <span style={styles.highestDropBadge}>
+                                        Best: {bestRelic.radiantChance}% ({bestRelic.era} {bestRelic.relicName})
+                                      </span>
+                                    )}
+                                    <span style={styles.unvaultedCountBadge}>
+                                      {unvaultedCount > 0 ? `${unvaultedCount} Unvaulted` : 'All Vaulted'}
+                                      {vaultedCount > 0 ? ` · ${vaultedCount} Vaulted` : ''}
+                                    </span>
+                                  </div>
+                                </div>
+                                  
+                                <div style={styles.accordionToggleWrapper}>
+                                  <span style={{
+                                    ...styles.accordionToggleArrow,
+                                    transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)'
+                                  }}>
+                                    ▼
+                                  </span>
+                                </div>
+                              </>
+                            );
+                          })()}
+                        </div>
+                        
+                        {isOpen && (
+                          <div style={styles.relicBadgesGrid}>
+                            {sortedRelics.map((r, rIdx) => {
+                              let eraBg = '#1b2234';
+                              let eraColor = '#90caf9';
+                              if (r.era === 'Lith') { eraBg = '#2a2216'; eraColor = '#e0a868'; }
+                              else if (r.era === 'Meso') { eraBg = '#1a2624'; eraColor = '#70c8b0'; }
+                              else if (r.era === 'Neo') { eraBg = '#281a28'; eraColor = '#d088d8'; }
+                              else if (r.era === 'Axi') { eraBg = '#2c2616'; eraColor = '#e8c458'; }
+                              else if (r.era === 'Requiem') { eraBg = '#2c1414'; eraColor = '#e86868'; }
+                            
+                              return (
+                                <Link
+                                  key={rIdx}
+                                  to={`/item/${encodeURIComponent(r.fullName)}`}
+                                  style={{
+                                    ...styles.primeRelicCard,
+                                    opacity: r.vaulted ? 0.65 : 1,
+                                    textDecoration: 'none',
+                                    color: 'inherit',
+                                    cursor: 'pointer',
+                                  }}
+                                  title={`View details and drop tables for ${r.fullName}`}
+                                >
+                                  <div style={styles.primeRelicCardTop}>
+                                    <span style={{ ...styles.eraChip, backgroundColor: eraBg, color: eraColor }}>
+                                      {r.era} {r.relicName}
+                                    </span>
+                                    <span
+                                      style={{
+                                        fontSize: 9.5,
+                                        fontWeight: 700,
+                                        padding: '2px 5px',
+                                        borderRadius: 3,
+                                        backgroundColor: r.vaulted ? '#2d2218' : '#142a1a',
+                                        color: r.vaulted ? '#e0a060' : '#7ae08a',
+                                        border: `1px solid ${r.vaulted ? '#543820' : '#23582e'}`,
+                                      }}
+                                    >
+                                      {r.vaulted ? 'Vaulted' : 'Unvaulted'}
+                                    </span>
+                                  </div>
+                                    
+                                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                    <span style={getRarityBadgeStyle(r.rarity)}>
+                                      {r.rarity}
+                                    </span>
+                                  </div>
+                                    
+                                  <div style={styles.primeRelicChancesRow}>
+                                    <span style={styles.relicChanceText}>Intact: <strong style={{ color: '#f0f0f8' }}>{r.intactChance}%</strong></span>
+                                    <span style={styles.relicChanceText}>Radiant: <strong style={{ color: '#f0f0f8' }}>{r.radiantChance}%</strong></span>
+                                  </div>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
+
+            {lootSource && (lootSource.bossOrEnemyName || lootSource.locationNode || (Object.keys(primeRelicDrops).length === 0 && !componentInfo)) && (
+              <section style={styles.sectionCard}>
+                <h2 style={styles.sectionTitle}>Acquisition & Loot Drops</h2>
+                <div style={styles.lootSummaryBox}>
+                  {lootSource.bossOrEnemyName && (
+                    <div style={styles.lootInfoRow}>
+                      <span style={styles.lootInfoLabel}>Source Boss / Enemy:</span>
+                      <span style={styles.lootInfoValue}>{lootSource.bossOrEnemyName}</span>
+                    </div>
+                  )}
+                  {lootSource.locationNode && (
+                    <div style={styles.lootInfoRow}>
+                      <span style={styles.lootInfoLabel}>Star Chart Node:</span>
+                      <span style={styles.lootInfoValue}>
+                        {lootSource.locationNode} {lootSource.planet ? `(${lootSource.planet})` : ''}
+                      </span>
+                    </div>
+                  )}
+                  {lootSource.generalDropInfo && Object.keys(primeRelicDrops).length === 0 && !componentInfo && (
+                    <p style={styles.lootGeneralText}>{lootSource.generalDropInfo}</p>
+                  )}
+                </div>
+
+                {Object.keys(primeRelicDrops).length === 0 && !componentInfo && lootSource.components && lootSource.components.length > 0 && (
+                  <div style={styles.componentsTable}>
+                    <span style={styles.componentsHeader}>Component Blueprints & Parts:</span>
+                    {lootSource.components.map((c, i) => (
+                      <div key={i} style={styles.componentRow}>
+                        <span style={styles.componentName}>{c.partName}</span>
+                        <div style={styles.componentRight}>
+                          <span style={styles.componentSource}>{c.sourceText}</span>
+                          {c.dropChance !== undefined && (
+                            <span style={styles.componentChance}>{c.dropChance}%</span>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </section>
+            )}
+
 
             {incarnonGenesis ? (
               <section style={styles.incarnonCard}>
@@ -675,196 +1598,6 @@ export function WikiItemDetailPage() {
                 </p>
               </section>
             ) : null}
-
-            {article?.extract && (
-              <section style={styles.sectionCard}>
-                <h2 style={styles.sectionTitle}>Wiki Summary</h2>
-                {article.thumbnailUrl && (
-                  <img
-                    src={article.thumbnailUrl}
-                    alt={itemName}
-                    style={styles.itemImage}
-                  />
-                )}
-                <p style={styles.extractText}>{article.extract}</p>
-                {resourceGuide?.specialMechanics && (
-                  <div style={styles.mechanicCallout}>
-                    <strong>Special Mechanics:</strong> {resourceGuide.specialMechanics}
-                  </div>
-                )}
-              </section>
-            )}
-
-            {craftingRecipe && (
-              <section style={styles.sectionCard}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10, marginBottom: 14 }}>
-                  <div>
-                    <h2 style={styles.sectionTitle}>Foundry & Crafting Recipe</h2>
-                    <span style={styles.craftCostText}>
-                      Build Price: {craftingRecipe.buildPriceCredits.toLocaleString()} Credits
-                      {craftingRecipe.rushPricePlat ? ` | Rush: ${craftingRecipe.rushPricePlat} Plat` : ''}
-                    </span>
-                  </div>
-                  <div style={styles.cookTimeBadge}>
-                    <span style={styles.cookTimeIcon}>&#9200;</span>
-                    <span style={styles.cookTimeLabel}>Time to Cook:</span>
-                    <span style={styles.cookTimeValue}>{craftingRecipe.buildTimeText}</span>
-                  </div>
-                </div>
-
-                <div style={styles.ingredientsBlock}>
-                  <span style={styles.ingredientsTitle}>Required Crafting Resources (Hover to see best farming spots):</span>
-                  <div style={styles.ingredientsGrid}>
-                    {craftingRecipe.ingredients.map((ing, i) => (
-                      <ResourceFarmTooltip
-                        key={i}
-                        ingredientName={ing.name}
-                        count={ing.count}
-                        isComponent={ing.isComponent}
-                      />
-                    ))}
-                  </div>
-                </div>
-
-                {craftingRecipe.componentRecipes && craftingRecipe.componentRecipes.length > 0 && (
-                  <div style={styles.componentRecipesSection}>
-                    <span style={styles.componentsHeading}>Component Blueprints (Cook time: 12 hours each):</span>
-                    <div style={styles.componentRecipesList}>
-                      {craftingRecipe.componentRecipes.map((comp) => (
-                        <div key={comp.itemId} style={styles.compRecipeBox}>
-                          <div style={styles.compRecipeHeader}>
-                            <span style={styles.compRecipeName}>{comp.itemName}</span>
-                            <span style={styles.compRecipeMeta}>
-                              Time: {comp.buildTimeText} | {comp.buildPriceCredits.toLocaleString()} Credits
-                            </span>
-                          </div>
-                          <div style={styles.ingredientsGrid}>
-                            {comp.ingredients.map((ing, i) => (
-                              <ResourceFarmTooltip
-                                key={i}
-                                ingredientName={ing.name}
-                                count={ing.count}
-                                isComponent={ing.isComponent}
-                              />
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </section>
-            )}
-
-
-{resourceGuide?.acquisition && (
-              <section style={styles.sectionCard}>
-                <h2 style={styles.sectionTitle}>Acquisition</h2>
-                {renderFormattedAcquisition(resourceGuide.acquisition)}
-              </section>
-            )}
-
-            {resourceGuide && resourceGuide.optimalNodes.length > 0 && (
-              <section style={styles.sectionCard}>
-                <h2 style={styles.sectionTitle}>Optimal Farming Locations</h2>
-                <div style={styles.nodeList}>
-                  {resourceGuide.optimalNodes.map((node, i) => (
-                    <div key={i} style={styles.nodeCard}>
-                      <div style={styles.nodeCardTop}>
-                        <div>
-                          <span style={styles.nodeName}>{node.node}</span>
-                          <span style={styles.nodePlanet}> - {node.planet}</span>
-                          <span style={styles.missionTypeBadge}>{node.missionType}</span>
-                        </div>
-                        <span
-                          style={{
-                            ...styles.efficiencyBadge,
-                            color: node.efficiencyRating === 'Best' ? '#92d492' : '#c4c492',
-                          }}
-                        >
-                          {node.efficiencyRating}
-                        </span>
-                      </div>
-                      <p style={styles.strategyText}>{node.strategyNote}</p>
-                    </div>
-                  ))}
-                </div>
-
-                {resourceGuide.recommendedFrames.length > 0 && (
-                  <div style={styles.framesTipBox}>
-                    <strong style={styles.framesTipTitle}>Recommended Squad Loadouts:</strong>
-                    <span style={styles.framesList}>
-                      {resourceGuide.recommendedFrames.join(', ')}
-                    </span>
-                  </div>
-                )}
-              </section>
-            )}
-
-            {relicSpots.length > 0 && (
-              <section style={styles.sectionCard}>
-                <h2 style={styles.sectionTitle}>Fastest Relic Farming Spots</h2>
-                <div style={styles.nodeList}>
-                  {relicSpots.map((spot, i) => (
-                    <div key={i} style={styles.nodeCard}>
-                      <div style={styles.nodeCardTop}>
-                        <div>
-                          <span style={styles.nodeName}>{spot.node}</span>
-                          <span style={styles.nodePlanet}> ({spot.planet})</span>
-                          <span style={styles.missionTypeBadge}>{spot.missionType}</span>
-                        </div>
-                        <span style={styles.dropRateBadge}>{spot.dropRateText}</span>
-                      </div>
-                      <p style={styles.strategyText}>
-                        <strong>Time:</strong> {spot.expectedTime} | {spot.strategyTip}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {lootSource && (
-              <section style={styles.sectionCard}>
-                <h2 style={styles.sectionTitle}>Acquisition & Loot Drops</h2>
-                <div style={styles.lootSummaryBox}>
-                  {lootSource.bossOrEnemyName && (
-                    <div style={styles.lootInfoRow}>
-                      <span style={styles.lootInfoLabel}>Source Boss / Enemy:</span>
-                      <span style={styles.lootInfoValue}>{lootSource.bossOrEnemyName}</span>
-                    </div>
-                  )}
-                  {lootSource.locationNode && (
-                    <div style={styles.lootInfoRow}>
-                      <span style={styles.lootInfoLabel}>Star Chart Node:</span>
-                      <span style={styles.lootInfoValue}>
-                        {lootSource.locationNode} {lootSource.planet ? `(${lootSource.planet})` : ''}
-                      </span>
-                    </div>
-                  )}
-                  {lootSource.generalDropInfo && (
-                    <p style={styles.lootGeneralText}>{lootSource.generalDropInfo}</p>
-                  )}
-                </div>
-
-                {lootSource.components && lootSource.components.length > 0 && (
-                  <div style={styles.componentsTable}>
-                    <span style={styles.componentsHeader}>Component Blueprints & Parts:</span>
-                    {lootSource.components.map((c, i) => (
-                      <div key={i} style={styles.componentRow}>
-                        <span style={styles.componentName}>{c.partName}</span>
-                        <div style={styles.componentRight}>
-                          <span style={styles.componentSource}>{c.sourceText}</span>
-                          {c.dropChance !== undefined && (
-                            <span style={styles.componentChance}>{c.dropChance}%</span>
-                          )}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </section>
-            )}
 
             {enemyDrops.length > 0 && (
               <section style={styles.sectionCard}>
@@ -1322,7 +2055,7 @@ export function WikiItemDetailPage() {
                                 textDecoration: 'none',
                               }}
                             >
-                              🔴 Reddit /r/Warframe ↗
+                              🔴 Reddit /r/Warframe
                             </a>
                           )}
                           {b.externalLinks?.tiktokUrl && (
@@ -1344,7 +2077,7 @@ export function WikiItemDetailPage() {
                                 textDecoration: 'none',
                               }}
                             >
-                              🎵 TikTok Builds & Clips ↗
+                              🎵 TikTok Builds & Clips
                             </a>
                           )}
                           {b.externalLinks?.overframeUrl && (
@@ -1366,7 +2099,7 @@ export function WikiItemDetailPage() {
                                 textDecoration: 'none',
                               }}
                             >
-                              🌐 Overframe Community ↗
+                              🌐 Overframe Community
                             </a>
                           )}
                         </div>
@@ -1390,7 +2123,7 @@ export function WikiItemDetailPage() {
                     rel="noreferrer"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 6, backgroundColor: '#281a18', color: '#ff6644', border: '1px solid #582820', borderRadius: 6, padding: '6px 12px', fontSize: 12, fontWeight: 600, textDecoration: 'none' }}
                   >
-                    🔴 Reddit /r/Warframe ↗
+                    🔴 Reddit /r/Warframe
                   </a>
                   <a
                     href={`https://overframe.gg/search?q=${encodeURIComponent(itemName)}`}
@@ -1398,7 +2131,7 @@ export function WikiItemDetailPage() {
                     rel="noreferrer"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 6, backgroundColor: '#242018', color: '#ffd700', border: '1px solid #504420', borderRadius: 6, padding: '6px 12px', fontSize: 12, fontWeight: 600, textDecoration: 'none' }}
                   >
-                    🌐 Overframe ↗
+                    🌐 Overframe
                   </a>
                   <a
                     href={`https://www.tiktok.com/search?q=${encodeURIComponent(itemName + ' warframe build')}`}
@@ -1406,7 +2139,7 @@ export function WikiItemDetailPage() {
                     rel="noreferrer"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 6, backgroundColor: '#182024', color: '#00e5ff', border: '1px solid #204050', borderRadius: 6, padding: '6px 12px', fontSize: 12, fontWeight: 600, textDecoration: 'none' }}
                   >
-                    🎵 TikTok Builds ↗
+                    🎵 TikTok Builds
                   </a>
                 </div>
               </section>
@@ -2019,6 +2752,124 @@ const styles: Record<string, React.CSSProperties> = {
     border: '1px solid #1e1e2c',
     borderRadius: 6,
     padding: 20,
+  },
+  componentParentCard: {
+    background: '#141420',
+    border: '1px solid #2a2a3e',
+    borderLeft: '4px solid #ffd700',
+    borderRadius: 6,
+    padding: 16,
+  },
+  componentParentHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    flexWrap: 'wrap',
+    gap: 12,
+  },
+  componentBadge: {
+    fontSize: 11,
+    fontWeight: 700,
+    padding: '2px 8px',
+    borderRadius: 4,
+    background: '#2d2218',
+    color: '#ffd700',
+    border: '1px solid #5c4820',
+  },
+  parentItemLink: {
+    fontSize: 14,
+    fontWeight: 700,
+    color: '#ffd700',
+    textDecoration: 'none',
+  },
+  baseVariantLink: {
+    fontSize: 12,
+    fontWeight: 600,
+    color: '#77aaff',
+    textDecoration: 'none',
+    padding: '4px 10px',
+    background: '#162030',
+    border: '1px solid #204060',
+    borderRadius: 4,
+  },
+  siblingStrip: {
+    marginTop: 14,
+    paddingTop: 12,
+    borderTop: '1px solid #242436',
+  },
+  siblingStripLabel: {
+    fontSize: 12,
+    fontWeight: 600,
+    color: '#9098b8',
+    display: 'block',
+    marginBottom: 8,
+  },
+  siblingList: {
+    display: 'flex',
+    gap: 8,
+    flexWrap: 'wrap',
+  },
+  siblingChip: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: 6,
+    padding: '5px 10px',
+    background: '#161622',
+    border: '1px solid #262638',
+    borderRadius: 4,
+    color: '#d0d4e8',
+    fontSize: 12,
+    textDecoration: 'none',
+    fontWeight: 500,
+  },
+  siblingChipActive: {
+    background: '#2a2216',
+    borderColor: '#785420',
+    color: '#ffd700',
+    fontWeight: 700,
+  },
+  viewingIndicator: {
+    fontSize: 11,
+    color: '#e0a860',
+    fontWeight: 700,
+  },
+  parentPartsOverviewCard: {
+    background: '#12121c',
+    border: '1px solid #222238',
+    borderRadius: 6,
+    padding: 16,
+  },
+  parentPartsHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 10,
+    flexWrap: 'wrap',
+    marginBottom: 10,
+  },
+  parentPartsBadge: {
+    fontSize: 11,
+    fontWeight: 700,
+    padding: '2px 7px',
+    borderRadius: 3,
+    background: '#1c2838',
+    color: '#68d4ff',
+    border: '1px solid #28446c',
+  },
+  parentPartsTitle: {
+    fontSize: 13,
+    color: '#c0c8e0',
+    fontWeight: 600,
+  },
+partPageLink: {
+    fontSize: 11.5,
+    fontWeight: 600,
+    color: '#8ec4f4',
+    textDecoration: 'none',
+    padding: '4px 8px',
+    background: '#1c2438',
+    borderRadius: 4,
+    border: '1px solid #2a3654',
+    transition: 'background 0.2s',
   },
   sectionTitle: {
     fontSize: 16,
@@ -2836,5 +3687,437 @@ const styles: Record<string, React.CSSProperties> = {
     paddingTop: 6,
     borderTop: '1px dashed #2c1e44',
   },
+  variantComparisonCard: {
+    background: '#131520',
+    border: '1px solid #23273c',
+    borderLeft: '4px solid #7c4dff',
+    borderRadius: 6,
+    padding: 20,
+    marginBottom: 20,
+  },
+  variantHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    flexWrap: 'wrap',
+    gap: 12,
+    marginBottom: 16,
+    paddingBottom: 14,
+    borderBottom: '1px solid #1f2334',
+  },
+  variantBadge: {
+    fontSize: 11,
+    fontWeight: 700,
+    letterSpacing: '0.6px',
+    padding: '3px 8px',
+    background: '#281c4a',
+    color: '#d6b8ff',
+    borderRadius: 4,
+    border: '1px solid #4a2d80',
+  },
+  variantFamilyText: {
+    fontSize: 13,
+    color: '#a8acc8',
+  },
+  variantSubtitle: {
+    fontSize: 13,
+    color: '#8e94b2',
+    margin: 0,
+    lineHeight: 1.4,
+  },
+  openVariantBtn: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: 6,
+    padding: '8px 14px',
+    background: '#1e2436',
+    border: '1px solid #3d4a6a',
+    borderRadius: 4,
+    color: '#70b4ff',
+    fontSize: 12.5,
+    fontWeight: 600,
+    textDecoration: 'none',
+    minHeight: 36,
+  },
+  variantTabsRow: {
+    marginBottom: 16,
+  },
+  variantTabsLabel: {
+    display: 'block',
+    fontSize: 12,
+    fontWeight: 600,
+    color: '#8e94b2',
+    marginBottom: 8,
+  },
+  variantTabsList: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  variantTabBtn: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: 6,
+    padding: '7px 12px',
+    background: '#181a26',
+    border: '1px solid #282c40',
+    borderRadius: 4,
+    color: '#c0c4dc',
+    fontSize: 12.5,
+    cursor: 'pointer',
+    minHeight: 34,
+  },
+  variantTabBtnSelected: {
+    background: '#252b42',
+    borderColor: '#546b9e',
+    color: '#f0f4ff',
+    boxShadow: '0 0 0 1px #546b9e',
+  },
+  variantTabBtnCurrent: {
+    background: '#161e18',
+    borderColor: '#24482c',
+    color: '#8ec492',
+    cursor: 'default',
+    opacity: 0.85,
+  },
+  variantTypeTag: {
+    fontSize: 10,
+    fontWeight: 700,
+    padding: '2px 5px',
+    background: '#10121a',
+    borderRadius: 3,
+    color: '#8e94b2',
+    textTransform: 'uppercase',
+  },
+  variantNameText: {
+    fontWeight: 600,
+  },
+  currentIndicator: {
+    fontSize: 11,
+    fontStyle: 'italic',
+    color: '#78a87c',
+  },
+  comparisonTableWrapper: {
+    overflowX: 'auto',
+    borderRadius: 4,
+    border: '1px solid #202436',
+  },
+  comparisonTable: {
+    width: '100%',
+    borderCollapse: 'collapse',
+    textAlign: 'left',
+    fontSize: 13,
+  },
+  compTh: {
+    padding: '10px 14px',
+    background: '#151724',
+    color: '#8e94b2',
+    fontWeight: 600,
+    fontSize: 12,
+    borderBottom: '1px solid #23273a',
+  },
+  compThCurrent: {
+    padding: '10px 14px',
+    background: '#161b24',
+    borderBottom: '1px solid #23273a',
+  },
+  compThCounterpart: {
+    padding: '10px 14px',
+    background: '#1a1828',
+    borderBottom: '1px solid #23273a',
+  },
+  compThDelta: {
+    padding: '10px 14px',
+    background: '#151724',
+    color: '#8e94b2',
+    fontWeight: 600,
+    fontSize: 12,
+    borderBottom: '1px solid #23273a',
+  },
+  compThSub: {
+    display: 'block',
+    fontSize: 10.5,
+    fontWeight: 600,
+    textTransform: 'uppercase',
+    color: '#888ca8',
+    letterSpacing: '0.4px',
+  },
+  compThTitle: {
+    fontSize: 13,
+    fontWeight: 700,
+    color: '#f0f0f8',
+    marginTop: 2,
+  },
+  compTr: {
+    borderBottom: '1px solid #1c1f2e',
+  },
+  compTdLabel: {
+    padding: '10px 14px',
+    fontWeight: 600,
+    color: '#d0d4e8',
+    background: '#12141f',
+  },
+  compTdCurrent: {
+    padding: '10px 14px',
+    color: '#e4e6f4',
+    background: '#141624',
+  },
+  compTdCounterpart: {
+    padding: '10px 14px',
+    color: '#e4e6f4',
+    background: '#171626',
+    fontWeight: 600,
+  },
+  compTdDelta: {
+    padding: '10px 14px',
+    background: '#12141f',
+  },
+  deltaBadge: {
+    display: 'inline-block',
+    padding: '3px 8px',
+    borderRadius: 3,
+    fontSize: 11.5,
+    fontWeight: 600,
+    border: '1px solid',
+  },
+  primeRelicsList: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 12,
+  },
+primeRelicPartGroup: {
+    background: '#101218',
+    border: '1px solid #1f2334',
+    borderRadius: 8,
+    overflow: 'hidden',
+    transition: 'border-color 0.2s ease',
+  },
+  primeRelicPartHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 12,
+    paddingBottom: 8,
+    borderBottom: '1px solid #1a1e2c',
+  },
+primeRelicPartTitle: {
+    fontSize: 14.5,
+    fontWeight: 700,
+    color: '#f4f4fa',
+    letterSpacing: '0.3px',
+  },
+  primeRelicPartCount: {
+    fontSize: 12,
+    color: '#8e94b2',
+    fontWeight: 600,
+  },
+relicBadgesGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+    gap: 12,
+    padding: '16px',
+    backgroundColor: '#0d0f16',
+  },
+primeRelicCard: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 10,
+    background: '#151722',
+    border: '1px solid #202436',
+    borderRadius: 6,
+    padding: '12px 14px',
+    transition: 'opacity 0.2s ease',
+  },
+  primeRelicCardTop: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  eraChip: {
+    display: 'inline-block',
+    padding: '2px 7px',
+    borderRadius: 3,
+    fontSize: 11.5,
+    fontWeight: 700,
+    letterSpacing: '0.3px',
+  },
+primeRelicChancesRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingTop: 8,
+    marginTop: 2,
+    borderTop: '1px solid #1f2334',
+  },
+relicChanceText: {
+    fontSize: 11.5,
+    color: '#8e94b2',
+  },
+  variantToggleBtn: {
+    padding: '8px 14px',
+    background: '#281c4a',
+    border: '1px solid #5a3899',
+    borderRadius: 4,
+    color: '#d6b8ff',
+    fontSize: 12.5,
+    fontWeight: 600,
+    cursor: 'pointer',
+    minHeight: 36,
+  },
+primeRelicAccordionHeaderBtn: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '14px 16px',
+    cursor: 'pointer',
+    textAlign: 'left',
+    color: 'inherit',
+    border: 'none',
+    outline: 'none',
+    transition: 'background-color 0.15s ease',
+  },
+highestDropBadge: {
+    fontSize: 11,
+    fontWeight: 600,
+    padding: '3px 8px',
+    borderRadius: 4,
+    backgroundColor: '#142a1a',
+    color: '#7ae08a',
+    border: '1px solid #23582e',
+  },
+unvaultedCountBadge: {
+    fontSize: 11,
+    fontWeight: 600,
+    padding: '3px 8px',
+    borderRadius: 4,
+    backgroundColor: '#1b2234',
+    color: '#90caf9',
+    border: '1px solid #2e3e60',
+  },
+accordionToggleWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 28,
+    height: 28,
+    borderRadius: '50%',
+    backgroundColor: '#1c2032',
+  },
+  accordionToggleArrow: {
+    fontSize: 12,
+    color: '#8e94b2',
+    transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+  },
+  notFoundContainer: {
+    padding: '28px 24px',
+    background: '#12141f',
+    border: '1px solid #23273c',
+    borderRadius: 8,
+    marginTop: 12,
+  },
+  notFoundHeader: {
+    marginBottom: 20,
+  },
+  notFoundTitle: {
+    fontSize: 22,
+    fontWeight: 700,
+    color: '#f0f0f8',
+    margin: '0 0 8px 0',
+  },
+  notFoundSub: {
+    fontSize: 14,
+    color: '#9a9eb8',
+    margin: 0,
+    lineHeight: 1.5,
+  },
+  suggestionsSection: {
+    marginTop: 20,
+    paddingTop: 20,
+    borderTop: '1px solid #1c2032',
+  },
+  suggestionsTitle: {
+    fontSize: 15,
+    fontWeight: 600,
+    color: '#ffd700',
+    margin: '0 0 14px 0',
+  },
+  suggestionsGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+    gap: 12,
+  },
+  suggestionCard: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 12,
+    padding: '10px 14px',
+    background: '#161826',
+    border: '1px solid #242940',
+    borderRadius: 6,
+    textDecoration: 'none',
+    transition: 'all 0.15s ease',
+  },
+  suggestionDetails: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 3,
+    overflow: 'hidden',
+  },
+  suggestionName: {
+    fontSize: 13.5,
+    fontWeight: 600,
+    color: '#e4e6f4',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+  },
+  suggestionCategory: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 6,
+  },
+  suggestionBadge: {
+    fontSize: 10.5,
+    fontWeight: 700,
+    padding: '1px 5px',
+    borderRadius: 3,
+    background: '#22283c',
+    color: '#90caf9',
+  },
+  suggestionSubtype: {
+    fontSize: 11,
+    color: '#8e94b2',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+  },
+  primarySearchLink: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: 6,
+    padding: '8px 16px',
+    background: '#24324c',
+    border: '1px solid #3c5482',
+    borderRadius: 4,
+    color: '#8ec4f4',
+    fontSize: 13,
+    fontWeight: 600,
+    textDecoration: 'none',
+  },
+  secondarySearchLink: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: 6,
+    padding: '8px 16px',
+    background: '#181b28',
+    border: '1px solid #282e44',
+    borderRadius: 4,
+    color: '#a0a4c0',
+    fontSize: 13,
+    fontWeight: 600,
+    textDecoration: 'none',
+  },
 };
+
 

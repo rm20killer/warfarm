@@ -119,5 +119,20 @@ describe('Foundry Crafting Recipes & Cook Times', () => {
     expect(getCraftingRecipe('Orokin Catalyst')).toBeDefined();
     expect(getCraftingRecipe('non-existent-gear')).toBeUndefined();
   });
+
+  it('resolves crafting recipe for Alternox Prime Blueprint and prime weapon synthesis', () => {
+    const alternoxBp = getCraftingRecipe('Alternox Prime Blueprint');
+    expect(alternoxBp).toBeDefined();
+    expect(alternoxBp?.itemName).toContain('Alternox Prime');
+    expect(alternoxBp?.ingredients.length).toBeGreaterThan(0);
+    expect(alternoxBp?.ingredients.some((i) => i.name === 'Orokin Cell')).toBe(true);
+  });
+
+  it('resolves crafting recipe for Perigale Prime and its components', () => {
+    const perigale = getCraftingRecipe('Perigale Prime');
+    expect(perigale).toBeDefined();
+    expect(perigale?.itemName).toBe('Perigale Prime');
+    expect(perigale?.ingredients.length).toBeGreaterThan(0);
+  });
 });
 
