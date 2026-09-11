@@ -10,6 +10,7 @@ import {
 } from '../../shared/api/worldstate-client';
 import { ItemThumbnail } from '../../shared/utils/item-images';
 import syncMetaJson from '../../shared/data/generated/sync-meta.json';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 
 export type LiveSectionView = 'All' | 'Fissures' | 'Bounties' | 'Events' | 'Cycles';
 
@@ -26,6 +27,13 @@ export function LiveWorldStatePage() {
   const [expandedBountyIndices, setExpandedBountyIndices] = useState<Record<number, boolean>>({});
   const [lastUpdatedTime, setLastUpdatedTime] = useState<string>('');
   const [activeSectionView, setActiveSectionView] = useState<LiveSectionView>('All');
+
+  usePageMeta({
+    title: 'Live WorldState Tracker, Void Fissures & Cycles',
+    description: 'Track real-time Warframe Void Fissures, Cetus and Fortuna day/night cycles, Arbitrations, Invasions, and Archon Hunts.',
+    keywords: 'warframe worldstate, live fissures, cetus day night cycle, void fissures, steel path fissures, archon hunt, baro kiteer',
+    canonicalPath: '/live',
+  });
 
   const loadData = async (force = false) => {
     try {

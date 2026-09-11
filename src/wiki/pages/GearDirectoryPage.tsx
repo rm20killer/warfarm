@@ -27,6 +27,7 @@ import {
   removePersonalTarget,
 } from '../storage';
 import { ItemThumbnail } from '../../shared/utils/item-images';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 
 export type GearTab = 'Warframes' | 'Weapons' | 'Gear' | 'Companions' | 'Archwing';
 
@@ -86,9 +87,16 @@ interface GearCardItem {
 }
 
 export function GearDirectoryPage() {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const paramTab = searchParams.get('tab') as GearTab | null;
   const paramLineage = searchParams.get('lineage') as SpecialLineage | null;
+
+  usePageMeta({
+    title: 'Warframes, Weapons & Gear Directory',
+    description: 'Explore all Warframes, Primary, Secondary, and Melee weapons, companions, Archwing gear, and Kuva/Tenet/Incarnon variants.',
+    keywords: 'warframe weapons, warframes directory, kuva weapons, tenet weapons, incarnon genesis, prime warframes, companion builds',
+    canonicalPath: '/gear',
+  });
 
   const [activeTab, setActiveTab] = useState<GearTab>(
     paramLineage && paramLineage !== 'All' ? 'Weapons' : paramTab || 'Warframes'

@@ -7,6 +7,7 @@ import {
   PlanetNodeMission,
   SpawnableEnemy,
 } from '../../shared/data/planet-missions';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 
 export function PlanetsMissionsPage() {
   const [selectedPlanet, setSelectedPlanet] = useState<string>('All');
@@ -15,6 +16,13 @@ export function PlanetsMissionsPage() {
   const [selectedMission, setSelectedMission] = useState<PlanetNodeMission | null>(null);
   const [inspectorTab, setInspectorTab] = useState<'drops' | 'enemies'>('drops');
   const [enemySearch, setEnemySearch] = useState('');
+
+  usePageMeta({
+    title: 'Star Chart Missions, Drop Tables & Enemy Spawns',
+    description: 'Explore Warframe Star Chart nodes, mission types, rotation drop tables, and spawnable enemy pools across all planets.',
+    keywords: 'warframe star chart, mission drops, rotation A B C, spy missions, survival rewards, excavation rewards, enemy drop tables',
+    canonicalPath: '/missions',
+  });
 
   const activePlanetData = PLANETS_DATA.find((p) => p.id === selectedPlanet);
 

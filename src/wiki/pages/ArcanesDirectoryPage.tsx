@@ -11,6 +11,7 @@ import {
   savePersonalTarget,
   removePersonalTarget,
 } from '../storage';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 
 const SLOT_TABS: Array<{ slot: string; label: string }> = [
   { slot: 'All', label: 'All Slots' },
@@ -79,6 +80,13 @@ function getRarityTheme(rarity: string) {
 export function ArcanesDirectoryPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const allArcanes = useMemo(() => getAllArcanes(), []);
+
+  usePageMeta({
+    title: 'Arcanes Database, Drop Locations & Dissolution',
+    description: 'Explore Warframe Arcanes across Warframes, Primary, Secondary, and Melee weapons with drop sources, syndicate costs, and Vosfor dissolution packs.',
+    keywords: 'warframe arcanes, arcane energize, arcane avenger, melee duplicate, melee exposure, vosfor dissolution, eidolon arcanes',
+    canonicalPath: '/arcanes',
+  });
 
   const slotParam = searchParams.get('slot') || 'All';
   const rarityParam = searchParams.get('rarity') || 'All';

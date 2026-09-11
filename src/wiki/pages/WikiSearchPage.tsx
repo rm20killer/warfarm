@@ -5,6 +5,7 @@ import { RESOURCE_GUIDES } from '../../shared/data/resource-guide';
 import { getVisitHistory, clearVisitHistory, PageVisitHistory } from '../storage';
 import { findSimilarItems } from '../../shared/utils/fuzzy-search';
 import { ItemThumbnail } from '../../shared/utils/item-images';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 
 const LOOKUP_POOL = [
   // User's core items
@@ -69,6 +70,13 @@ export function WikiSearchPage() {
   const [isSearching, setIsSearching] = useState(false);
   const [quickLookups, setQuickLookups] = useState<string[]>(() => getRandomLookups(8));
   const [history, setHistory] = useState<PageVisitHistory[]>(getVisitHistory);
+
+  usePageMeta({
+    title: 'Warframe Codex & Item Search',
+    description: 'Search items, weapons, warframes, and resources across the Warframe Star Chart with official drop locations and recipes.',
+    keywords: 'warframe codex, warframe search, warframe items, warframe wiki, drop tables',
+    canonicalPath: '/',
+  });
 
   useEffect(() => {
     const syncHistory = () => setHistory(getVisitHistory());
@@ -135,7 +143,7 @@ export function WikiSearchPage() {
   return (
     <div style={styles.container}>
       <header style={styles.heroSection}>
-        <h1 style={styles.heroTitle}>Warframe Personal Wiki</h1>
+        <h1 style={styles.heroTitle}>Warframe Codex &amp; Item Search</h1>
         <p style={styles.heroSubtitle}>
           Search items, consult official wiki data, and discover optimal farming locations across the Star Chart.
         </p>

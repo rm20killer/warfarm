@@ -65,6 +65,7 @@ import {
 } from '../storage';
 import { getWeaponLineage } from './GearDirectoryPage';
 import { findSimilarItems, SimilarItemSuggestion } from '../../shared/utils/fuzzy-search';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 import {
   parseItemComponent,
   getParentItemComponents,
@@ -131,6 +132,24 @@ export function WikiItemDetailPage() {
   const [target, setTarget] = useState<PersonalTarget | undefined>(undefined);
   const [targetQty, setTargetQty] = useState(1);
   const [previousPage, setPreviousPage] = useState<PageVisitHistory | undefined>(undefined);
+
+  const pageTitle = itemName ? `${itemName} - Codex, Drops & Stats` : 'Item Codex Details';
+  const pageDescription =
+    article?.extract?.slice(0, 160) ||
+    itemGeneralInfo?.description?.slice(0, 160) ||
+    resourceGuide?.quickSummary ||
+    (itemName
+      ? `Warframe codex guide, drop tables, crafting recipes, and stats for ${itemName}.`
+      : 'Warframe item codex and farming guide.');
+
+  usePageMeta({
+    title: pageTitle,
+    description: pageDescription,
+    keywords: itemName
+      ? `${itemName}, warframe ${itemName}, warframe drops, farming guide, ${itemGeneralInfo?.category || 'codex'}`
+      : undefined,
+    canonicalPath: itemName ? `/item/${encodeURIComponent(itemName)}` : '/item',
+  });
 
   useEffect(() => {
     if (!itemName) return;

@@ -6,6 +6,7 @@ import {
   ResourceFarmingGuide,
 } from '../../shared/data/resource-guide';
 import { savePersonalTarget, getPersonalTargets, removePersonalTarget } from '../storage';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 
 const CATEGORIES: Array<{ id: ResourceCategory | 'All'; label: string }> = [
   { id: 'All', label: 'All Resources' },
@@ -20,6 +21,13 @@ export function ResourceLocatorPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [trackedIds, setTrackedIds] = useState<Set<string>>(() => {
     return new Set(getPersonalTargets().map((t) => t.id));
+  });
+
+  usePageMeta({
+    title: 'Resource Farming Directory & Node Guide',
+    description: 'Find optimal farming locations and nodes for Argon Crystals, Tellurium, Orokin Cells, Plastids, and all Warframe resources.',
+    keywords: 'warframe resources, argon crystal farm, orokin cell farm, tellurium farm, plastids farm, polymer bundle, open world mining',
+    canonicalPath: '/resources',
   });
 
   const allGuides = useMemo(() => getAllResourceGuides(), []);

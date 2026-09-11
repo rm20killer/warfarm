@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { RelicEra, DropRarity } from '../../shared/types/warframe';
 import { getBestRelicSpots } from '../../shared/api/drop-data';
 import { getAllRelics, RelicEntry, RelicRewardEntry, RelicVaultFilter } from '../../shared/data/relic-database';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 
 const ERAS: (RelicEra | 'All')[] = ['All', 'Lith', 'Meso', 'Neo', 'Axi', 'Requiem'];
 const VAULT_FILTERS: { label: string; value: RelicVaultFilter }[] = [
@@ -55,6 +56,13 @@ export function RelicFinderPage() {
   const [vaultFilter, setVaultFilter] = useState<RelicVaultFilter>('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [displayLimit, setDisplayLimit] = useState(24);
+
+  usePageMeta({
+    title: 'Void Relic Drop Rates & Farming Guide',
+    description: 'Explore 770+ Warframe Void Relics across Lith, Meso, Neo, Axi, and Requiem eras with drop rates, refinement chances, and speedrun nodes.',
+    keywords: 'warframe void relics, lith relic, meso relic, neo relic, axi relic, requiem relic, radiant drop rate, prime parts',
+    canonicalPath: '/relics',
+  });
 
   const speedrunSpots = getBestRelicSpots(selectedSpeedrunEra);
   const allRelics = useMemo(() => getAllRelics(), []);

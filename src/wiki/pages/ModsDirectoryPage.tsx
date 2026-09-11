@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { getAllMods, DetailedModData, ModRarity, ModPolarity } from '../../shared/data/mod-database';
 import { getAllLootMods, LootSourceItem } from '../../shared/data/loot-sources';
 import { ItemThumbnail } from '../../shared/utils/item-images';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 
 interface UnifiedModCard {
   id: string;
@@ -115,6 +116,13 @@ export function ModsDirectoryPage() {
   const [selectedRarity, setSelectedRarity] = useState<string>('All');
   const [selectedPolarity, setSelectedPolarity] = useState<string>('All');
   const [visibleCount, setVisibleCount] = useState<number>(48);
+
+  usePageMeta({
+    title: 'Warframe Mods Database, Drops & Polarities',
+    description: 'Browse 1,800+ Warframe mods, Primed mods, Galvanized mods, Archon mods, and augment mods with drain stats and drop sources.',
+    keywords: 'warframe mods, primed mods, galvanized mods, augment mods, archon mods, mod drop locations, polarity',
+    canonicalPath: '/mods',
+  });
 
   useEffect(() => {
     setVisibleCount(48);

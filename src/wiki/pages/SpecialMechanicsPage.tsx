@@ -4,10 +4,18 @@ import {
   SPECIAL_CHALLENGES,
   SpecialChallengeGuide,
 } from '../../shared/data/special-mechanics';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 
 export function SpecialMechanicsPage() {
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [selectedChallengeId, setSelectedChallengeId] = useState<string>(SPECIAL_CHALLENGES[0].id);
+
+  usePageMeta({
+    title: 'Lua Puzzle Solutions, Halls of Ascension & Vaults',
+    description: 'Walkthroughs for the 7 Lua Halls of Ascension Drift mod puzzles, Orokin Derelict Dragon Key Vaults, and Granum Void mechanics.',
+    keywords: 'warframe lua puzzles, halls of ascension, drift mods, dragon key vaults, corrupted mods, granum void, puzzle guide',
+    canonicalPath: '/mechanics',
+  });
 
   const categories = ['All', 'Lua Principle', 'Vault System', 'Special Dimension'];
 

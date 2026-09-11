@@ -7,9 +7,17 @@ import {
   PersonalTarget,
 } from '../storage';
 import { getResourceGuide } from '../../shared/data/resource-guide';
+import { usePageMeta } from '../../shared/utils/usePageMeta';
 
 export function MyTargetsPage() {
   const [targets, setTargets] = useState<PersonalTarget[]>([]);
+
+  usePageMeta({
+    title: 'My Farm Targets & Priority Route Planner',
+    description: 'Track your personal Warframe farming goals, resources, craftable blueprints, and compute optimal multi-item farming routes.',
+    keywords: 'warframe target tracker, farm planner, optimal farming routes, crafting checklist',
+    canonicalPath: '/targets',
+  });
 
   useEffect(() => {
     setTargets(getPersonalTargets());

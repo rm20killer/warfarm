@@ -1,0 +1,7 @@
+# robots.txt for Warfarm Tracker (Warframe Companion & Codex)
+User-agent: *
+Allow: /
+
+# XML Sitemap location
+Sitemap: https://warfarm.pages.dev/sitemap.xml
+

@@ -2146,6 +2146,13 @@ export async function syncCatalogs(): Promise<{
   };
   fs.writeFileSync(path.join(GENERATED_DIR, 'sync-meta.json'), JSON.stringify(syncMeta, null, 2));
 
+  try {
+    const { writeSitemap } = await import('./generate-sitemap');
+    writeSitemap();
+  } catch (err) {
+    console.warn('Could not generate sitemap during catalog sync:', err);
+  }
+
   return {
     warframesCount: slimWf.length,
     weaponsCount: slimWp.length,
