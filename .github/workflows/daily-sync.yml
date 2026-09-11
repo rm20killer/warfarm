@@ -1,7 +1,7 @@
 name: Daily Data Check
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 5 * * *'
 
 jobs:
   check-and-trigger:
@@ -15,16 +15,36 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Restore previous data
+        uses: actions/cache/restore@v4
+        with:
+          path: src/shared/data/generated
+          key: generated-data-cache
+
+      - name: Hash data before sync
+        id: hash-before
+        run: |
+          if [ -d "src/shared/data/generated" ]; then
+            echo "hash=$(find src/shared/data/generated -type f -exec md5sum {} + | sort | md5sum | awk '{ print $1 }')" >> $GITHUB_OUTPUT
+          else
+            echo "hash=none" >> $GITHUB_OUTPUT
+          fi
+
       - name: Run sync script to fetch data
         run: npm run sync:data
         
-      - name: Check for file changes
-        id: git-check
+      - name: Hash data after sync
+        id: hash-after
         run: |
-          if [[ -n $(git status -s) ]]; then
-            echo "changes=true" >> $GITHUB_OUTPUT
-          fi
+          echo "hash=$(find src/shared/data/generated -type f -exec md5sum {} + | sort | md5sum | awk '{ print $1 }')" >> $GITHUB_OUTPUT
+
+      - name: Save new data cache
+        if: steps.hash-before.outputs.hash != steps.hash-after.outputs.hash
+        uses: actions/cache/save@v4
+        with:
+          path: src/shared/data/generated
+          key: generated-data-cache-${{ github.run_id }}
 
       - name: Trigger Cloudflare Pages Rebuild
-        if: steps.git-check.outputs.changes == 'true'
+        if: steps.hash-before.outputs.hash != steps.hash-after.outputs.hash
         run: curl -X POST "${{ secrets.CF_DEPLOY_HOOK }}"
