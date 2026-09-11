@@ -627,7 +627,7 @@ export function GearDirectoryPage() {
                   rel="noreferrer noopener"
                   style={styles.wikiLink}
                 >
-                  Official Wiki ↗
+                  Official Wiki
                 </a>
               </div>
             </article>
@@ -797,12 +797,15 @@ const styles: Record<string, React.CSSProperties> = {
   filterPill: {
     background: '#1a1a24',
     border: '1px solid #2a2a3c',
-    borderRadius: 3,
+    borderRadius: 4,
     color: '#a0a0b8',
-    padding: '4px 10px',
+    padding: '6px 12px',
     fontSize: 12,
     cursor: 'pointer',
     transition: 'all 0.15s ease',
+    display: 'inline-flex',
+    alignItems: 'center',
+    minHeight: 34,
   },
   filterPillActive: {
     background: '#242b3d',
@@ -820,10 +823,11 @@ const styles: Record<string, React.CSSProperties> = {
     fontWeight: 500,
     outline: 'none',
     cursor: 'pointer',
+    minHeight: 34,
   },
   resultsMeta: {
     fontSize: 13,
-    color: '#707086',
+    color: '#8e98b4',
     marginBottom: 16,
   },
   cardGrid: {
@@ -919,7 +923,7 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 6,
   },
   locationLabel: {
-    color: '#707086',
+    color: '#8e98b4',
     fontWeight: 600,
     minWidth: 70,
   },
@@ -995,7 +999,7 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 12,
   },
   statLabel: {
-    color: '#707086',
+    color: '#8e98b4',
   },
   statVal: {
     color: '#d8d8e6',
@@ -1014,7 +1018,7 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 6,
   },
   variantLabel: {
-    color: '#707086',
+    color: '#8e98b4',
     fontWeight: 600,
   },
   variantPill: {
@@ -1047,7 +1051,7 @@ const styles: Record<string, React.CSSProperties> = {
     fontWeight: 600,
   },
   wikiLink: {
-    color: '#707086',
+    color: '#8e98b4',
     textDecoration: 'none',
     fontSize: 12,
   },
@@ -1066,7 +1070,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   emptyText: {
     fontSize: 13,
-    color: '#707086',
+    color: '#8e98b4',
     margin: 0,
   },
 };

@@ -638,11 +638,14 @@ const styles: Record<string, React.CSSProperties> = {
     backgroundColor: '#1b1c28',
     border: '1px solid #2e3044',
     color: '#c0c0d8',
-    padding: '4px 10px',
+    padding: '6px 12px',
     borderRadius: 4,
-    fontSize: 11,
+    fontSize: 12,
     cursor: 'pointer',
     fontWeight: 500,
+    display: 'inline-flex',
+    alignItems: 'center',
+    minHeight: 34,
   },
   sortWrapper: {
     display: 'flex',
@@ -662,6 +665,7 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: 4,
     fontSize: 12,
     cursor: 'pointer',
+    minHeight: 34,
   },
   resultsInfoBar: {
     display: 'flex',
@@ -676,10 +680,13 @@ const styles: Record<string, React.CSSProperties> = {
     backgroundColor: 'transparent',
     border: '1px solid #3b3c50',
     color: '#8e9ec4',
-    padding: '4px 10px',
+    padding: '6px 12px',
     borderRadius: 4,
     fontSize: 12,
     cursor: 'pointer',
+    display: 'inline-flex',
+    alignItems: 'center',
+    minHeight: 34,
   },
   arcaneGrid: {
     display: 'grid',
@@ -722,7 +729,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   thumbFallback: {
     fontSize: 22,
-    color: '#65667e',
+    color: '#8e9ec4',
   },
   headerTitles: {
     flex: 1,
@@ -755,7 +762,7 @@ const styles: Record<string, React.CSSProperties> = {
   rankBadge: {
     fontSize: 10,
     fontWeight: 600,
-    color: '#707088',
+    color: '#8e9ec4',
   },
   arcaneTitleLink: {
     fontSize: 16,
@@ -866,7 +873,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   moreDropsHint: {
     fontSize: 11,
-    color: '#707088',
+    color: '#8e9ec4',
   },
   dissolutionRow: {
     fontSize: 11,
@@ -877,7 +884,7 @@ const styles: Record<string, React.CSSProperties> = {
     border: '1px solid #1c1d2b',
   },
   dissolutionLabel: {
-    color: '#6e7088',
+    color: '#8e9ec4',
     fontWeight: 600,
   },
   cardFooter: {
