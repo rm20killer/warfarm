@@ -1,0 +1,30 @@
+name: Daily Data Check
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  check-and-trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run sync script to fetch data
+        run: npm run sync:data
+        
+      - name: Check for file changes
+        id: git-check
+        run: |
+          if [[ -n $(git status -s) ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Trigger Cloudflare Pages Rebuild
+        if: steps.git-check.outputs.changes == 'true'
+        run: curl -X POST "${{ secrets.CF_DEPLOY_HOOK }}"
