@@ -18,15 +18,23 @@ import {
   PageVisitHistory,
 } from './storage';
 import syncMetaJson from '../shared/data/generated/sync-meta.json';
+import { AppFooter } from './components/AppFooter';
+import { AboutModal } from './components/AboutModal';
+import { findSimilarItems, SimilarItemSuggestion } from '../shared/utils/fuzzy-search';
+import { ItemThumbnail } from '../shared/utils/item-images';
 
-function NavigationBar() {
+interface NavigationBarProps {
+  onOpenAbout: () => void;
+}
+
+function NavigationBar({ onOpenAbout }: NavigationBarProps) {
   const navigate = useNavigate();
   const location = useLocation();
   const [targetCount, setTargetCount] = useState(0);
   const [headerQuery, setHeaderQuery] = useState('');
-  const [showSyncModal, setShowSyncModal] = useState(false);
   const [history, setHistory] = useState<PageVisitHistory[]>(getVisitHistory);
   const [showHistoryDropdown, setShowHistoryDropdown] = useState(false);
+  const [suggestions, setSuggestions] = useState<SimilarItemSuggestion[]>([]);
 
   useEffect(() => {
     const updateCount = () => setTargetCount(getPersonalTargets().length);
@@ -44,11 +52,27 @@ function NavigationBar() {
     return () => window.removeEventListener('wiki-history-updated', updateHistory);
   }, []);
 
+  useEffect(() => {
+    const trimmed = headerQuery.trim();
+    if (trimmed.length >= 2) {
+      setSuggestions(findSimilarItems(trimmed, 6));
+    } else {
+      setSuggestions([]);
+    }
+  }, [headerQuery]);
+
   const handleHeaderSearch = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter' && headerQuery.trim()) {
       navigate(`/item/${encodeURIComponent(headerQuery.trim())}`);
       setHeaderQuery('');
+      setSuggestions([]);
     }
+  };
+
+  const handleSelectSuggestion = (path: string) => {
+    navigate(path);
+    setHeaderQuery('');
+    setSuggestions([]);
   };
 
   return (
@@ -59,24 +83,57 @@ function NavigationBar() {
           <NavLink to="/" style={styles.brandTitle}>
             Warfarm Tracker
           </NavLink>
-          <span style={styles.versionNavBadge} title={`Data synced: ${new Date(syncMetaJson.lastSyncedAt).toLocaleDateString()}`}>
+          <button
+            type="button"
+            onClick={onOpenAbout}
+            style={styles.versionNavBadge}
+            title={`Game Version: ${syncMetaJson.gameVersion || 'Update 38'} (Click for sync & project info)`}
+          >
             {syncMetaJson.gameVersion || 'Update 38'}
-          </span>
+          </button>
         </div>
 
         <div style={styles.headerSearchWrapper}>
           <input
             type="text"
-            placeholder="Quick jump (e.g. Tellurium, Rhino)..."
+            placeholder="Quick jump (e.g. A12, Tellurium, Rhino)..."
             value={headerQuery}
             onChange={(e) => setHeaderQuery(e.target.value)}
             onKeyDown={handleHeaderSearch}
             style={styles.headerSearchInput}
             aria-label="Quick search"
           />
+          {suggestions.length > 0 && (
+            <div style={styles.headerSuggestionsDropdown}>
+              {suggestions.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => handleSelectSuggestion(item.path)}
+                  style={styles.headerSuggestionRow}
+                >
+                  <ItemThumbnail name={item.name} size={28} />
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', overflow: 'hidden' }}>
+                    <span style={styles.headerSuggestionName}>{item.name}</span>
+                    <span style={styles.headerSuggestionCategory}>
+                      {item.category}{item.subType && item.subType !== item.category ? ` · ${item.subType}` : ''}
+                    </span>
+                  </div>
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         <div style={styles.actionArea}>
+          <button
+            type="button"
+            onClick={onOpenAbout}
+            style={styles.aboutNavBtn}
+            title="About Warfarm Tracker, Data Sync & Links"
+          >
+            About &amp; Sync
+          </button>
+
           <div style={{ position: 'relative' }}>
             <button
               type="button"
@@ -148,13 +205,6 @@ function NavigationBar() {
             )}
           </div>
 
-          <button
-            onClick={() => setShowSyncModal(true)}
-            style={styles.syncNavBtn}
-            title="Live Data Sync"
-          >
-            Sync
-          </button>
         </div>
       </div>
 
@@ -188,7 +238,7 @@ function NavigationBar() {
             borderBottom: isActive ? '2px solid #8e9ec4' : '2px solid transparent',
           })}
         >
-          Warframes & Weapons
+          Warframes &amp; Weapons
         </NavLink>
         <NavLink
           to="/arcanes"
@@ -228,7 +278,7 @@ function NavigationBar() {
             borderBottom: isActive ? '2px solid #8e9ec4' : '2px solid transparent',
           })}
         >
-          Lua & Puzzles
+          Lua &amp; Puzzles
         </NavLink>
         <NavLink
           to="/relics"
@@ -251,51 +301,19 @@ function NavigationBar() {
           My Targets {targetCount > 0 && <span style={styles.targetBadge}>{targetCount}</span>}
         </NavLink>
       </nav>
-
-      {showSyncModal && (
-        <div style={styles.modalBackdrop} onClick={() => setShowSyncModal(false)}>
-          <div style={styles.modalCard} onClick={(e) => e.stopPropagation()}>
-            <div style={styles.modalHeader}>
-              <h2 style={styles.modalTitle}>Sync Info</h2>
-              <button
-                onClick={() => setShowSyncModal(false)}
-                style={styles.modalCloseBtn}
-                aria-label="Close modal"
-              >
-                &times;
-              </button>
-            </div>
-
-            <div style={styles.modalBody}>
-              <section style={styles.modalSection}>
-                <h3 style={styles.modalSectionTitle}>Synced with Official Wiki</h3>
-                <p style={styles.modalText}>
-                  Synchronized with <code>wiki.warframe.com</code> and Warframe Public Export:
-                </p>
-                <ul style={styles.featureList}>
-                  <li><strong>Last Synced</strong>: {new Date(syncMetaJson.lastSyncedAt).toLocaleString()}</li>
-                  <li><strong>Wiki Resources Gathered</strong>: {syncMetaJson.resourcesCount} (includes official recommended farming locations & drop planets)</li>
-                  <li><strong>Sources</strong>: Official Warframe Wiki, Warframe-Items, Public Export Plus</li>
-                </ul>
-                <div style={styles.codeBlock}>
-                  <div><code>npm run sync:all</code> : Fetches latest wiki data & regenerates the complete Obsidian vault</div>
-                  <div><code>npm run sync:data</code> : Pulls latest items, wiki resources, and recipes</div>
-                  <div><code>npm run export:obsidian</code> : Re-exports all markdown notes and images to the vault</div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-      )}
     </header>
   );
 }
 
 export function PersonalWikiApp() {
+  const [showAboutModal, setShowAboutModal] = useState(false);
+
   return (
     <BrowserRouter>
       <div style={styles.appShell}>
-        <NavigationBar />
+        <NavigationBar
+          onOpenAbout={() => setShowAboutModal(true)}
+        />
         <main style={styles.mainContent}>
           <Routes>
             <Route path="/" element={<WikiSearchPage />} />
@@ -311,6 +329,13 @@ export function PersonalWikiApp() {
             <Route path="/targets" element={<MyTargetsPage />} />
           </Routes>
         </main>
+        <AppFooter
+          onOpenAbout={() => setShowAboutModal(true)}
+        />
+        <AboutModal
+          isOpen={showAboutModal}
+          onClose={() => setShowAboutModal(false)}
+        />
       </div>
     </BrowserRouter>
   );
@@ -367,6 +392,7 @@ const styles: Record<string, React.CSSProperties> = {
     flex: '1 1 250px',
     maxWidth: 480,
     margin: '0 12px',
+    position: 'relative',
   },
   headerSearchInput: {
     width: '100%',
@@ -379,6 +405,44 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 13,
     outline: 'none',
     transition: 'border-color 0.2s ease',
+  },
+  headerSuggestionsDropdown: {
+    position: 'absolute',
+    top: 'calc(100% + 4px)',
+    left: 0,
+    right: 0,
+    backgroundColor: '#12141f',
+    border: '1px solid #24283c',
+    borderRadius: 6,
+    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.6)',
+    zIndex: 1000,
+    overflow: 'hidden',
+  },
+  headerSuggestionRow: {
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    gap: 10,
+    padding: '8px 12px',
+    background: 'none',
+    border: 'none',
+    borderBottom: '1px solid #1a1e2e',
+    color: '#e0e4f4',
+    cursor: 'pointer',
+    textAlign: 'left',
+    transition: 'background-color 0.15s ease',
+  },
+  headerSuggestionName: {
+    fontSize: 13,
+    fontWeight: 600,
+    color: '#e0e4f4',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+  },
+  headerSuggestionCategory: {
+    fontSize: 11,
+    color: '#8e94b2',
   },
   actionArea: {
     display: 'flex',
@@ -536,104 +600,16 @@ const styles: Record<string, React.CSSProperties> = {
     marginLeft: 8,
     flexShrink: 0,
   },
-  syncNavBtn: {
-    background: '#1c2234',
-    border: '1px solid #36486c',
+  aboutNavBtn: {
+    background: '#141824',
+    border: '1px solid #283852',
     borderRadius: 6,
-    color: '#9db4e0',
+    color: '#8ec4ff',
     padding: '6px 14px',
     fontSize: 12,
     fontWeight: 600,
     cursor: 'pointer',
     transition: 'all 0.15s ease',
-  },
-  modalBackdrop: {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    background: 'rgba(5, 5, 8, 0.75)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 1000,
-  },
-  modalCard: {
-    background: '#12121a',
-    border: '1px solid #28283c',
-    borderRadius: 8,
-    width: '90%',
-    maxWidth: 620,
-    maxHeight: '85vh',
-    overflowY: 'auto',
-    padding: 24,
-    boxShadow: '0 12px 36px rgba(0,0,0,0.6)',
-  },
-  modalHeader: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 20,
-    borderBottom: '1px solid #202030',
-    paddingBottom: 12,
-  },
-  modalTitle: {
-    fontSize: 18,
-    fontWeight: 700,
-    color: '#f0f0f8',
-    margin: 0,
-  },
-  modalCloseBtn: {
-    background: 'transparent',
-    border: 'none',
-    color: '#8888a2',
-    fontSize: 24,
-    cursor: 'pointer',
-    padding: '0 6px',
-  },
-  modalBody: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 20,
-  },
-  modalSection: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 12,
-  },
-  modalSectionTitle: {
-    fontSize: 14,
-    fontWeight: 600,
-    color: '#d0d0e2',
-    margin: 0,
-    textTransform: 'uppercase',
-    letterSpacing: '0.04em',
-  },
-  modalText: {
-    fontSize: 13,
-    color: '#a0a0b8',
-    margin: 0,
-    lineHeight: 1.5,
-  },
-  featureList: {
-    margin: '4px 0 0 0',
-    paddingLeft: 20,
-    fontSize: 13,
-    color: '#c0c0d4',
-    lineHeight: 1.6,
-  },
-  codeBlock: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 8,
-    background: '#09090e',
-    border: '1px solid #1e1e2c',
-    borderRadius: 6,
-    padding: 14,
-    fontSize: 12,
-    fontFamily: 'monospace',
-    color: '#8ec48e',
   },
   mainContent: {
     flex: 1,
