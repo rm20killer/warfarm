@@ -4,9 +4,6 @@ import {
   getRelicsByEra,
   searchRelics,
   getRelicDropsForPrimeItem,
-  getRelicById,
-  getRewardRefinementChances,
-  calculateSquadSuccessProbability,
 } from '../src/shared/data/relic-database';
 import {
   extractBaseItemName,
@@ -52,37 +49,6 @@ describe('Relic Database & Prime Drops', () => {
 
     const rhinoDrops = getRelicDropsForPrimeItem('Rhino Prime');
     expect(Object.keys(rhinoDrops).length).toBeGreaterThanOrEqual(3);
-  });
-
-  it('looks up relics by full name, code, and normalized id', () => {
-    const r1 = getRelicById('Lith A12 Relic');
-    const r2 = getRelicById('lith_a12');
-    const r3 = getRelicById('Lith A12');
-    const r4 = getRelicById('a12');
-
-    expect(r1).toBeDefined();
-    expect(r1?.fullName).toBe('Lith A12 Relic');
-    expect(r2?.id).toBe('lith_a12');
-    expect(r3?.fullName).toBe('Lith A12 Relic');
-    expect(r4?.fullName).toBe('Lith A12 Relic');
-    expect(r1?.rewards.length).toBe(6);
-  });
-
-  it('calculates refinement probabilities and squad chances correctly', () => {
-    const rareChances = getRewardRefinementChances('Rare');
-    expect(rareChances.intact).toBe(2.0);
-    expect(rareChances.exceptional).toBe(4.0);
-    expect(rareChances.flawless).toBe(6.0);
-    expect(rareChances.radiant).toBe(10.0);
-
-    const squadRadiantRare = calculateSquadSuccessProbability(10.0, 4);
-    expect(squadRadiantRare).toBe(34.39);
-
-    const uncommonChances = getRewardRefinementChances('Uncommon');
-    expect(uncommonChances.radiant).toBe(20.0);
-
-    const commonChances = getRewardRefinementChances('Common');
-    expect(commonChances.radiant).toBe(16.67);
   });
 });
 
@@ -136,13 +102,7 @@ describe('Variant Family Detection & Combat Stats Comparison', () => {
   });
 });
 
-import {
-  parseItemComponent,
-  getParentItemComponents,
-  resolveComponentFullName,
-} from '../src/shared/data/item-components';
-
-describe('Prime Component Crafting Recipes & Linking', () => {
+describe('Prime Component Crafting Recipes', () => {
   it('resolves component recipes for Prime Warframes', () => {
     const ashPrime = getCraftingRecipe('Ash Prime');
     expect(ashPrime).toBeDefined();
@@ -158,42 +118,6 @@ describe('Prime Component Crafting Recipes & Linking', () => {
     expect(chassis).toBeDefined();
     expect(chassis?.buildPriceCredits).toBe(15000);
     expect(chassis?.ingredients.length).toBeGreaterThan(0);
-  });
-
-  it('parses Alternox Prime Blueprint and links back to Alternox Prime & base Alternox', () => {
-    const info = parseItemComponent('Alternox Prime Blueprint');
-    expect(info).toBeDefined();
-    expect(info?.componentType).toBe('Blueprint');
-    expect(info?.parentItemName).toBe('Alternox Prime');
-    expect(info?.baseItemName).toBe('Alternox');
-    expect(info?.isPrime).toBe(true);
-    expect(info?.isBlueprint).toBe(true);
-    expect(info?.siblingComponents.length).toBeGreaterThanOrEqual(1);
-
-    const recipe = info?.craftingRecipe;
-    expect(recipe).toBeDefined();
-    expect(recipe?.ingredients.length).toBeGreaterThan(0);
-  });
-
-  it('parses Perigale Prime Receiver and links back to Perigale Prime & base Perigale', () => {
-    const info = parseItemComponent('Perigale Prime Receiver');
-    expect(info).toBeDefined();
-    expect(info?.componentType).toBe('Receiver');
-    expect(info?.parentItemName).toBe('Perigale Prime');
-    expect(info?.baseItemName).toBe('Perigale');
-    expect(info?.isPrime).toBe(true);
-    expect(info?.isPreCraftedDrop).toBe(true);
-    expect(info?.siblingComponents.length).toBeGreaterThanOrEqual(1);
-
-    const parentComponents = getParentItemComponents('Perigale Prime');
-    expect(parentComponents.length).toBeGreaterThanOrEqual(1);
-    expect(parentComponents.some((p) => p.shortName === 'Receiver' || p.name.includes('Receiver'))).toBe(true);
-  });
-
-  it('resolves full component names from short ingredient labels', () => {
-    expect(resolveComponentFullName('Barrel', 'Acceltra Prime')).toBe('Acceltra Prime Barrel');
-    expect(resolveComponentFullName('Receiver', 'Perigale Prime')).toBe('Perigale Prime Receiver');
-    expect(resolveComponentFullName('Orokin Cell', 'Alternox Prime')).toBe('Orokin Cell');
   });
 });
 

@@ -604,8 +604,10 @@ export async function syncCatalogs(): Promise<{
   resourcesCount: number;
   gearCount?: number;
   arcanesCount?: number;
+  relicsCount?: number;
   weaponRecipesCount: number;
   enemyDropTablesCount?: number;
+  incarnonGenesesCount?: number;
 }> {
   if (!fs.existsSync(GENERATED_DIR)) {
     fs.mkdirSync(GENERATED_DIR, { recursive: true });
@@ -623,6 +625,7 @@ export async function syncCatalogs(): Promise<{
     sentinelsRaw,
     archwingRaw,
     arcanesRaw,
+    relicsRaw,
     wfcdDropData,
     modLocationsRaw,
     blueprintLocationsRaw,
@@ -641,6 +644,7 @@ export async function syncCatalogs(): Promise<{
     fetch('https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json/Sentinels.json').then((r) => r.json() as Promise<any[]>),
     fetch('https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json/Archwing.json').then((r) => r.json() as Promise<any[]>),
     fetch('https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json/Arcanes.json').then((r) => r.json() as Promise<any[]>),
+    fetch('https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json/Relics.json').then((r) => r.json() as Promise<any[]>),
     fetch('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.slim.json').then((r) => r.json() as Promise<any>).catch(() => ({})),
     fetch('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/modLocations.json').then((r) => r.json() as Promise<any>).catch(() => ({})),
     fetch('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/blueprintLocations.json').then((r) => r.json() as Promise<any>).catch(() => ({})),
@@ -1034,12 +1038,53 @@ export async function syncCatalogs(): Promise<{
       };
     });
 
+  const intactRelics = (relicsRaw || []).filter((r: any) => r.name && r.name.endsWith(' Intact'));
+  const radiantMap = new Map<string, any>();
+  (relicsRaw || []).filter((r: any) => r.name && r.name.endsWith(' Radiant')).forEach((r: any) => {
+    const base = r.name.replace(/ Radiant$/, '');
+    radiantMap.set(base, r);
+  });
+
+  const slimRelics = intactRelics.map((intact: any) => {
+    const baseName = intact.name.replace(/ Intact$/, '');
+    const parts = baseName.split(' ');
+    const rawEra = parts[0];
+    const name = parts.slice(1).join(' ');
+    const rad = radiantMap.get(baseName);
+    const rewards = (intact.rewards || []).map((rw: any) => {
+      const itemName = rw.item?.name || rw.itemName || '';
+      const radRw = rad?.rewards?.find((rrw: any) => (rrw.item?.name || rrw.itemName) === itemName);
+      const intactChance = rw.chance || 0;
+      const radiantChance = radRw?.chance || (intactChance <= 5 ? 10 : intactChance <= 15 ? 20 : 16.67);
+      let rarity = 'Common';
+      if (intactChance <= 5 || rw.rarity === 'Rare') rarity = 'Rare';
+      else if (intactChance <= 15 || rw.rarity === 'Uncommon') rarity = 'Uncommon';
+      return { itemName, rarity, intactChance, radiantChance };
+    });
+
+    let era = rawEra;
+    if (!['Lith', 'Meso', 'Neo', 'Axi', 'Requiem'].includes(era)) {
+      if (era === 'Vanguard') era = 'Axi';
+      else era = 'Lith';
+    }
+
+    return {
+      id: baseName.toLowerCase().replace(/[^a-z0-9]+/g, '_'),
+      era,
+      name,
+      fullName: `${baseName} Relic`,
+      vaulted: !!intact.vaulted,
+      rewards,
+    };
+  });
+
   fs.writeFileSync(path.join(GENERATED_DIR, 'all-warframes.json'), JSON.stringify(slimWf, null, 2));
   fs.writeFileSync(path.join(GENERATED_DIR, 'all-weapons.json'), JSON.stringify(slimWp, null, 2));
   fs.writeFileSync(path.join(GENERATED_DIR, 'all-mods.json'), JSON.stringify(slimMods, null, 2));
   fs.writeFileSync(path.join(GENERATED_DIR, 'all-resources.json'), JSON.stringify(slimResources, null, 2));
   fs.writeFileSync(path.join(GENERATED_DIR, 'all-gear.json'), JSON.stringify(slimGear, null, 2));
   fs.writeFileSync(path.join(GENERATED_DIR, 'all-arcanes.json'), JSON.stringify(slimArcanes, null, 2));
+  fs.writeFileSync(path.join(GENERATED_DIR, 'all-relics.json'), JSON.stringify(slimRelics, null, 2));
 
   // Process Weapon & Gear Foundry Crafting Recipes
   interface WeaponCraftingIngredient {
@@ -2088,10 +2133,11 @@ export async function syncCatalogs(): Promise<{
     weaponRecipesCount: uniqueWeaponsCount,
     gearCount: slimGear.length,
     arcanesCount: slimArcanes.length,
+    relicsCount: slimRelics.length,
     enemyDropTablesCount: Object.keys(enemyDropTablesMap).length,
     incarnonGenesesCount,
     wikiResourcesGathered: wikiCategoryTitles.length,
-    totalCount: slimWf.length + slimWp.length + slimMods.length + slimResources.length + uniqueWeaponsCount + slimGear.length + slimArcanes.length,
+    totalCount: slimWf.length + slimWp.length + slimMods.length + slimResources.length + uniqueWeaponsCount + slimGear.length + slimArcanes.length + slimRelics.length,
     sources: [
       'https://wiki.warframe.com/',
       'https://github.com/WFCD/warframe-items',
@@ -2107,6 +2153,7 @@ export async function syncCatalogs(): Promise<{
     resourcesCount: slimResources.length,
     gearCount: slimGear.length,
     arcanesCount: slimArcanes.length,
+    relicsCount: slimRelics.length,
     weaponRecipesCount: uniqueWeaponsCount,
     enemyDropTablesCount: Object.keys(enemyDropTablesMap).length,
     incarnonGenesesCount,
@@ -2124,6 +2171,7 @@ if (process.argv[1]?.endsWith('sync-catalogs.ts')) {
       console.log(` - Resources:        ${res.resourcesCount}`);
       console.log(` - Gear & Other:     ${res.gearCount}`);
       console.log(` - Arcanes:          ${res.arcanesCount}`);
+      console.log(` - Relics:           ${res.relicsCount}`);
       console.log(` - Enemy Drop Tables: ${res.enemyDropTablesCount}`);
       console.log(` - Incarnon Geneses: ${res.incarnonGenesesCount}`);
     })
