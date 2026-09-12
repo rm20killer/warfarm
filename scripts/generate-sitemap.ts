@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const BASE_URL = process.env.SITE_URL || 'https://warfarm.pages.dev';
+const BASE_URL = process.env.SITE_URL || 'https://warfarm.dev';
 const GENERATED_DIR = path.resolve(process.cwd(), 'src', 'shared', 'data', 'generated');
 const PUBLIC_DIR = path.resolve(process.cwd(), 'public');
 
