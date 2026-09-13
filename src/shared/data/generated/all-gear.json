@@ -1,0 +1,5938 @@
+[
+  {
+    "id": "a_fishing_spear",
+    "name": "A Fishing Spear",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "The barbed prongs on this fishing spear make it easier to catch fish with smooth skin. \n\nObtained from Fisher Hai-Luk in Cetus (Earth). This spear is most effective on the following Plains of Eidolon fish:\nCharc Eel\nCuthol\nGoopolla\nMurkray\nSharrac\nYogwun",
+    "imageName": "FishingSpearA.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "adrenal_stim",
+    "name": "Adrenal Stim",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Elevates adrenaline levels to enable faster movement while increasing sensitivity to damage.",
+    "imageName": "AdrenalStim.png",
+    "masteryReq": 0,
+    "buildPrice": 10000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 1000,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Plastids",
+        "itemCount": 500,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 1500,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Synthula",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "advanced_nosam_cutter",
+    "name": "Advanced Nosam Cutter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Rare Gems on any Landscape.\n\nTravel far from Hub settlements for the best chance of mining rare minerals.",
+    "imageName": "MiningLaserC.png",
+    "masteryReq": 0,
+    "buildPrice": 3500,
+    "buildTime": "1 hour",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 500,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Fersteel Alloy",
+        "itemCount": 40,
+        "sourceText": "Ostron (Old Man Suumbaat), Visitor",
+        "dropChance": 100
+      },
+      {
+        "partName": "Marquise Veridos",
+        "itemCount": 2,
+        "sourceText": "Ostron (Old Man Suumbaat), Visitor",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "air_support_charges",
+    "name": "Air Support Charges",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Charges consumed by Landing Craft Air Support.",
+    "imageName": "LisetAirSupport.png",
+    "masteryReq": 0,
+    "buildPrice": 4000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 1200,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Morphics",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Plastids",
+        "itemCount": 700,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "alpha_corruptor",
+    "name": "Alpha Corruptor",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Inert on its own this corruptor is highly effective if mixed with its Beta counterpart. Properly mixed, these will destabilize Fomorian Reactors much faster than their Stable counterparts. This volatile item cannot be simultaneously equipped with Beta Corruptors. Recommended for Tenno operating as a team.",
+    "imageName": "CorruptorYellow.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "amethyst_antitoxin",
+    "name": "Amethyst Antitoxin",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "This is a mildly effective antitoxin.",
+    "imageName": "AmethystAntitoxin.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Threshcone",
+        "itemCount": 4,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "ancient_protector_specter",
+    "name": "Ancient Protector Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys an ANCIENT PROTECTOR EXIMUS unit to fight for you.",
+    "imageName": "BallSpawnerAncientHealer.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Hallowed Flame Endurance Caches, Rotation A",
+        "dropChance": 7.37
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "antiserum_injector",
+    "name": "Antiserum Injector",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Injects antiserum into Vaporizers or the user to prevent armor degradation.",
+    "imageName": "SyringeStandardFull.png",
+    "masteryReq": 0,
+    "buildPrice": 30000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 35,
+    "components": [
+      {
+        "partName": "Antiserum Injector Fragment",
+        "itemCount": 500,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Fieldron",
+        "itemCount": 2,
+        "sourceText": "Rare Corpus Storage Container",
+        "dropChance": 100
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 6000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Tellurium",
+        "itemCount": 2,
+        "sourceText": "Ancient Maggot",
+        "dropChance": 0.03
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "archgun_deployer",
+    "name": "Archgun Deployer",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy the selected archwing gun in any atmospheric environment using this gear item.",
+    "imageName": "SummonArchwingGun.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "archwing_launcher",
+    "name": "Archwing Launcher",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Summons an Archwing for use during free roam missions.",
+    "imageName": "GenericArchwingSystems.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "atomicycle_summon",
+    "name": "Atomicycle Summon",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Summons an Atomicycle for use in 1999 and free roam missions.",
+    "imageName": "SummonMotorcycle.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "avichaea_echo_lure",
+    "name": "Avichaea Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Avichaea with life-like animal calls.",
+    "imageName": "LureChipInfestedMergoo.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Acquaintance",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "avichaea_pheromone_gland",
+    "name": "Avichaea Pheromone Gland",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Avichaea.",
+    "imageName": "RarityBoostInfestedMergoo.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Acquaintance",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "beckonsnare",
+    "name": "Beckonsnare",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Field-and-forget, the Beckonsnare emits an ultrasonic frequency enticing to targeted lifeforms. Upon entering they are comfortably contained within a one-way photon fence for easy collection at your convenience.",
+    "imageName": "LandscapeTrapLightGear.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "beryl_antitoxin",
+    "name": "Beryl Antitoxin",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "This is a mildly effective antitoxin.",
+    "imageName": "BerylAntitoxin.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Sunlight Threshcone",
+        "itemCount": 4,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "beta_corruptor",
+    "name": "Beta Corruptor",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Inert on its own this corruptor is highly effective if mixed with its Alpha counterpart. Properly mixed, these will destabilize Fomorian Reactors much faster than their Stable counterparts. This volatile item cannot be simultaneously equipped with Alpha Corruptors. Recommended for Tenno operating as a team.",
+    "imageName": "CorruptorRed.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "bleeding_dragon_key",
+    "name": "Bleeding Dragon Key",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Health is greatly reduced while key is equipped.\n\nBlueprint can be obtained via the Orokin Lab in a Clan Dojo.",
+    "imageName": "VaultKeyB.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 250,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Void Traces",
+        "itemCount": 10,
+        "sourceText": "Extended Granum Void, Rotation A",
+        "dropChance": 33.33
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "bolarola_echo_lure",
+    "name": "Bolarola Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Bolarola with life-like animal calls. The Bolarola is most often found around the Mountainous areas of Orb Vallis.",
+    "imageName": "ThemeLureChipSnowArmadillo.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Doer",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "bolarola_pheromone_synthesizer",
+    "name": "Bolarola Pheromone Synthesizer",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Bolarola.",
+    "imageName": "RarityBoostSnowArmadillo.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Doer",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "broad_spectrum_bait",
+    "name": "Broad-Spectrum Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "A simple cocktail of short-chain polymers and contaminants. Easily detected by rudimentary Servofish in the Orb Vallis under all conditions, but ignored by more specialized models. Good for Sapcaddies (found in the lake), and Tinks and Brickies (found in ponds).\n\nObtained from The Business in Fortuna (Venus).",
+    "imageName": "ContaminantGeneric.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "calcifin_stim",
+    "name": "Calcifin Stim",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Hardens skin, fortifying against damage while restricting movement.",
+    "imageName": "CalcifinStim.png",
+    "masteryReq": 0,
+    "buildPrice": 10000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 1500,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Plastids",
+        "itemCount": 500,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 1000,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Synthula",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "carpet_bomb",
+    "name": "Carpet Bomb",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Ordis drops bombs in a line from your position to the beacon you placed.",
+    "imageName": "AirSupportCarpetBomb.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "charamote_bait",
+    "name": "Charamote Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait is synthesized from complex hexophenol that is known to attract Charamotes, a Servofish found in Orb Vallis cave hotspots.\n\nObtained from The Business in Fortuna (Venus).",
+    "imageName": "ContaminantCaveTierB.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Doer",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "charger_specter",
+    "name": "Charger Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a CHARGER EXIMUS unit to fight for you.",
+    "imageName": "BallSpawnerCharger.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Hallowed Flame Endurance Caches, Rotation A",
+        "dropChance": 7.37
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "cipher",
+    "name": "Cipher",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Single-use device used for auto-hacking the lockdown control panels.",
+    "imageName": "Cipher.png",
+    "masteryReq": 0,
+    "buildPrice": 100,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 400,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 400,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "citrine_antitoxin",
+    "name": "Citrine Antitoxin",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "This is a moderately effective antitoxin.",
+    "imageName": "CitrineAntitoxin.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Sunlight Dragonlily",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Sunlight Threshcone",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "clem_clone",
+    "name": "Clem Clone",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a clone of Clem to fight for you.",
+    "imageName": "BallSpawnerClem.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Hallowed Flame Endurance Caches, Rotation B",
+        "dropChance": 1.01
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "clotra_stim",
+    "name": "Clotra Stim",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Revives a target that is bleeding out, and provides a bonus revive to any allies in range.",
+    "imageName": "ClotraStim.png",
+    "masteryReq": 0,
+    "buildPrice": 10000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 500,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Cryotic",
+        "itemCount": 1500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 1000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Synthula",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "codex_scanner",
+    "name": "Codex Scanner",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Samples a target of interest for later analysis in your Codex (25 charges).",
+    "imageName": "CodexScanner.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "condroc_echo_lure",
+    "name": "Condroc Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Condroc with life-like animal calls. Condroc inhabit the Plains of Eidolon.",
+    "imageName": "ThemeLureChipCondroc.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Ostron (Master Teasonai), Offworlder",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "condroc_pheromone_oota",
+    "name": "Condroc Pheromone Oota",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Condroc.",
+    "imageName": "RarityBoostCondroc.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Ostron (Master Teasonai), Offworlder",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "corrupted_bombard_specter",
+    "name": "Corrupted Bombard Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a CORRUPTED BOMBARD unit to fight for you.",
+    "imageName": "BallSpawnerCorruptedBombard.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "corrupted_heavy_gunner_specter",
+    "name": "Corrupted Heavy Gunner Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a CORRUPTED HEAVY GUNNER unit to fight for you.",
+    "imageName": "BallSpawnerCorruptedHeavyGunner.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "corrupted_lancer_specter",
+    "name": "Corrupted Lancer Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a CORRUPTED LANCER EXIMUS unit to fight for you.",
+    "imageName": "BallSpawnerCorruptedLancer.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "cosmic_specter",
+    "name": "Cosmic Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
+    "imageName": "SpecterPlatinum.png",
+    "masteryReq": 0,
+    "buildPrice": 60000,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 20,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Eris/Brugia (Rescue), Rotation C",
+        "dropChance": 100
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 500,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Gallium",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 5000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Plastids",
+        "itemCount": 1000,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "cosmic_specter_regiment",
+    "name": "Cosmic Specter Regiment",
+    "category": "Gear",
+    "type": "Specter",
+    "description": "An army composed of cosmic-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for four conflicts.",
+    "imageName": "SpecterArmyPlatinum.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "cryptilex_echo_lure",
+    "name": "Cryptilex Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Cryptilex with life-like animal calls.",
+    "imageName": "LureChipInfestedMaggot.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "cryptilex_pheromone_gland",
+    "name": "Cryptilex Pheromone Gland",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Cryptilex.",
+    "imageName": "RarityBoostInfestedMaggot.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "cuthol_bait",
+    "name": "Cuthol Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait is composed of materials that are known to attract Cuthols, a fish found only in Plains of Eidolon pond hotspots during the night.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
+    "imageName": "FishBaitNightRareB.png",
+    "masteryReq": 0,
+    "buildPrice": 2000,
+    "buildTime": "5 minutes",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Fish Meat",
+        "itemCount": 20,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Goopolla Spleen",
+        "itemCount": 10,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Maprico",
+        "itemCount": 5,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Murkray Liver",
+        "itemCount": 5,
+        "sourceText": "Operational Supply, Neutral",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "decaying_dragon_key",
+    "name": "Decaying Dragon Key",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Shields are greatly reduced while key is equipped. Full Shield Gate duration is capped at 0.33s.\n\nBlueprint can be obtained via the Orokin Lab in a Clan Dojo.",
+    "imageName": "VaultKeyC.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 250,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Void Traces",
+        "itemCount": 10,
+        "sourceText": "Extended Granum Void, Rotation A",
+        "dropChance": 33.33
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "desert_skate_specter",
+    "name": "Desert Skate Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a DESERT SKATE unit to fight for you.",
+    "imageName": "BallSpawnerSkate.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "dreamers",
+    "name": "Dreamers",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Nora sends enemies to dreamland with a calming tune.",
+    "imageName": "AirSupportNightwave.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "ebisu_spear",
+    "name": "Ebisu Spear",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Plumb the depths with this crafty fishing spear that's barely detectable to Infested and hybrid/Orokin fish. Due to its Infested aspect, it's one of the only known things that can pass through exocrine. \n\nObtained from Daughter in the Necralisk. This spear is most effective on fish found in the Cambion Drift (Deimos).",
+    "imageName": "InfestedFishingSpearB.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Daughter), Associate",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "echo_lure",
+    "name": "Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby wildlife with life-like animal calls.",
+    "imageName": "AnimalLure.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Acquaintance",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Entrati (Son), Associate",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Entrati (Son), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Entrati (Son), Stranger",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Entrati (Son), Stranger",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Ostron (Master Teasonai), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Ostron (Master Teasonai), Offworlder",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Ostron (Master Teasonai), Trusted",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Ostron (Master Teasonai), Visitor",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Solaris United (The Business), Cove",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "eros_arrow_skin",
+    "name": "Eros Arrow Skin",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Show the enemy how much you care with the adorable Eros Arrow skin.",
+    "imageName": "ErosArrow.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "extinguished_dragon_key",
+    "name": "Extinguished Dragon Key",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Damage is greatly reduced while key is equipped.\n\nBlueprint can be obtained via the Orokin Lab in a Clan Dojo.",
+    "imageName": "VaultKeyA.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 250,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Void Traces",
+        "itemCount": 10,
+        "sourceText": "Extended Granum Void, Rotation A",
+        "dropChance": 33.33
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "faithful_void_offering",
+    "name": "Faithful Void Offering",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Give unto The Void 10,000 credits.",
+    "imageName": "CorpusCreditCardMedium.png",
+    "masteryReq": 0,
+    "buildPrice": 10000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 1,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 5,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "fass_residue",
+    "name": "Fass Residue",
+    "category": "Gear",
+    "type": "Fish Bait",
+    "description": "A chunk of the wyrm Fass, collected after his explosive death in the Cambion Drift. Used to attract Glutinox on the surface during Vome, Ostimyr at surface hotspots during Fass, and Vitreospina in caves during Fass/Vome.\n\nLocation: Cambion Drift on Deimos while Vome is active",
+    "imageName": "WyrmBaitInfested.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Daughter), Associate",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 30 - 40 Cambion Drift Bounty), Rotation A",
+        "chance": 3.23,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 30 - 40 Cambion Drift Bounty), Rotation A",
+        "chance": 4.11,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 30 - 40 Cambion Drift Bounty), Rotation A",
+        "chance": 7.5,
+        "rarity": "Rare"
+      }
+    ]
+  },
+  {
+    "id": "focused_nosam_cutter",
+    "name": "Focused Nosam Cutter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "A more accurate variation of the Nosam Cutter.\n\nTravel far from Hub settlements for the best chance of mining rare minerals.",
+    "imageName": "MiningLaserB.png",
+    "masteryReq": 0,
+    "buildPrice": 3500,
+    "buildTime": "1 hour",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 500,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Esher Devar",
+        "itemCount": 1,
+        "sourceText": "Ostron (Old Man Suumbaat), Offworlder",
+        "dropChance": 100
+      },
+      {
+        "partName": "Pyrotic Alloy",
+        "itemCount": 40,
+        "sourceText": "Ostron (Old Man Suumbaat), Neutral",
+        "dropChance": 100
+      },
+      {
+        "partName": "Tear Azurite",
+        "itemCount": 1,
+        "sourceText": "Ostron (Old Man Suumbaat), Neutral",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "fomorian_disruptor",
+    "name": "Fomorian Disruptor",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "When activated, it disrupts a Fomorian core's Omega energy field, making it vulnerable. Also shields Tenno from Omega radiation.",
+    "imageName": "FomorianDisruptor.png",
+    "masteryReq": 0,
+    "buildPrice": 1250,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Cryotic",
+        "itemCount": 300,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 3500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Omega Isotope",
+        "itemCount": 4,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "force_specter",
+    "name": "Force Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
+    "imageName": "SpecterGold.png",
+    "masteryReq": 0,
+    "buildPrice": 50000,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 20,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 1000,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Eris/Brugia (Rescue), Rotation B",
+        "dropChance": 100
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 1000,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Plastids",
+        "itemCount": 1000,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 1000,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "force_specter_regiment",
+    "name": "Force Specter Regiment",
+    "category": "Gear",
+    "type": "Specter",
+    "description": "An army composed of force-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for three conflicts.",
+    "imageName": "SpecterArmyGold.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "fosfor_blau",
+    "name": "Fosfor Blau",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Launch a bright blue flare that significantly increases Affinity Range while active.",
+    "imageName": "FlareBlue.png",
+    "masteryReq": 0,
+    "buildPrice": 5000,
+    "buildTime": "1 hour",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Goopolla Spleen",
+        "itemCount": 5,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Grokdrul",
+        "itemCount": 5,
+        "sourceText": "Grokdrul Drum",
+        "dropChance": 100
+      },
+      {
+        "partName": "Karkina Antenna",
+        "itemCount": 5,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Maprico",
+        "itemCount": 5,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "fosfor_rahd",
+    "name": "Fosfor Rahd",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Launch a bright red flare that significantly increases Affinity Range while active.",
+    "imageName": "FlareRed.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Operational Supply, Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "glappid_bait",
+    "name": "Glappid Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait is composed of exotic materials that are known to attract the elusive Glappid, a fish found only in Plains of Eidolon ocean hotspots during the night.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
+    "imageName": "FishBaitNightLegendary.png",
+    "masteryReq": 0,
+    "buildPrice": 5000,
+    "buildTime": "10 minutes",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Cuthol Tendrils",
+        "itemCount": 5,
+        "sourceText": "Operational Supply, Neutral",
+        "dropChance": 100
+      },
+      {
+        "partName": "Fish Meat",
+        "itemCount": 10,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Maprico",
+        "itemCount": 5,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Norg Brain",
+        "itemCount": 5,
+        "sourceText": "Operational Supply, Neutral",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "glyph_prism",
+    "name": "Glyph Prism",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Launches a magnetic prism to display your chosen Glyph. Only one may be deployed at a time, and charges are consumed on use.",
+    "imageName": "LotusSymbol.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "grand_finale",
+    "name": "Grand Finale",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Want a more spectacular fireworks display to show your patriotism? Celebrate in style with this single use consumable item.",
+    "imageName": "FireworksCrate.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "grustrag_three_beacon",
+    "name": "Grustrag Three Beacon",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Lures the Grustrag Three out of hiding. One-time use gear item that can only be used in locations where the assassins would normally appear.",
+    "imageName": "AssassinBaitC.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "health_restore_large_",
+    "name": "Health Restore (Large)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Instantly restores your Health to full.",
+    "imageName": "LargeHeal.png",
+    "masteryReq": 0,
+    "buildPrice": 1000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Jadeleaf",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Threshcone",
+        "itemCount": 15,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Sunlight Jadeleaf",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Sunlight Threshcone",
+        "itemCount": 15,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "health_restore_small_",
+    "name": "Health Restore (Small)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Instantly restores 50 Health.",
+    "imageName": "SmallHeal.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "hobbled_dragon_key",
+    "name": "Hobbled Dragon Key",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Speed is greatly reduced while key is equipped.\n\nBlueprint can be obtained via the Orokin Lab in a Clan Dojo.",
+    "imageName": "VaultKeyD.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 250,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Void Traces",
+        "itemCount": 10,
+        "sourceText": "Extended Granum Void, Rotation A",
+        "dropChance": 33.33
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "horrasque_echo_lure",
+    "name": "Horrasque Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Horrasque with life-like animal calls.",
+    "imageName": "ThemeLureChipSnowPredator.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Cove",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "horrasque_pheromone_synthesizer",
+    "name": "Horrasque Pheromone Synthesizer",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Horrasque.",
+    "imageName": "RarityBoostSnowPredator.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Cove",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "humble_void_offering",
+    "name": "Humble Void Offering",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Give unto The Void 1,000 credits.",
+    "imageName": "CorpusCreditCardLow.png",
+    "masteryReq": 0,
+    "buildPrice": 1000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 1,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 5,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "k_drive_launcher",
+    "name": "K-Drive Launcher",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Summons a K-Drive for use during free roam missions",
+    "imageName": "SummonHoverboard.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "kahl_beacon",
+    "name": "Kahl Beacon",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Calls Kahl and a retinue of his Brothers to assist you for a limited time. Subsequent uses heal Kahl's squad and add an additional Brother.",
+    "imageName": "AirSupportGrineer.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "kaithe_summon",
+    "name": "Kaithe Summon",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Summon and instantly mount a Kaithe while in free roam missions.",
+    "imageName": "SummonErsatz.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "ki_teer_fireworks",
+    "name": "Ki'Teer Fireworks",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "A bombastic symphony of color.",
+    "imageName": "BaroFireworks.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "kinetic_siphon_trap",
+    "name": "Kinetic Siphon Trap",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Specialized trap for attracting and slowing the movement of synthesis targets.",
+    "imageName": "HunterTrap.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Cephalon Simaris, Kinetic Siphon Trap x 10\n",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "kriller_bait",
+    "name": "Kriller Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait is synthesized from Methacalcene-1 that is known to attract Krillers, a Servofish found in Orb Vallis lakes during warm weather.\n\nObtained via The Business in Fortuna (Venus).",
+    "imageName": "ContaminantLakeTierA.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Outworlder",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "kuaka_echo_lure",
+    "name": "Kuaka Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Kuaka with life-like animal calls. Kuaka inhabit the Plains of Eidolon.",
+    "imageName": "ThemeLureChipKuaka.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Ostron (Master Teasonai), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "kuaka_pheromone_oota",
+    "name": "Kuaka Pheromone Oota",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Kuaka.",
+    "imageName": "RarityBoostKuaka.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Ostron (Master Teasonai), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "kubrodon_echo_lure",
+    "name": "Kubrodon Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Kubrodon with life-like animal calls. The Kubrodon is most often found around the Craters in Orb Vallis.",
+    "imageName": "ThemeLureChipLegendaryKubrow.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Old Mate",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "kubrodon_pheromone_synthesizer",
+    "name": "Kubrodon Pheromone Synthesizer",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Kubrodon.",
+    "imageName": "RarityBoostLegendaryKubrow.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Old Mate",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "lanzo_fishing_spear",
+    "name": "Lanzo Fishing Spear",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "The barbed prongs on this fishing spear make it easier to catch fish with smooth skin. \n\nObtained from Fisher Hai-Luk in Cetus (Earth). This spear is most effective on the following Plains of Eidolon fish:\nCharc Eel\nCuthol\nGoopolla\nMurkray\nSharrac\nYogwun",
+    "imageName": "FishingSpearA.png",
+    "masteryReq": 0,
+    "buildPrice": 1000,
+    "buildTime": "5 minutes",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 1200,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Grokdrul",
+        "itemCount": 10,
+        "sourceText": "Grokdrul Drum",
+        "dropChance": 100
+      },
+      {
+        "partName": "Nistlepod",
+        "itemCount": 10,
+        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+        "dropChance": 15.18
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "lapis_antitoxin",
+    "name": "Lapis Antitoxin",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "This is an extremely effective antitoxin.",
+    "imageName": "LapisAntitoxin.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Dragonlily",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Jadeleaf",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Sunlight Dragonlily",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Sunlight Jadeleaf",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "loc_pin",
+    "name": "Loc-Pin",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "A persistent waypoint marker for use with the world map. Coordinate your squad and track places of importance!",
+    "imageName": "MapMarker.png",
+    "masteryReq": 0,
+    "buildPrice": 4000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 200,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Plastids",
+        "itemCount": 100,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 150,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "longwinder_bait",
+    "name": "Longwinder Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait is synthesized from beryzene that is known to attract Longwinders, a Servofish found in Orb Vallis lake hotspots during warm weather.\n\nObtained via The Business in Fortuna (Venus).",
+    "imageName": "ContaminantLakeTierB.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Rapscallion",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "luminous_dye",
+    "name": "Luminous Dye",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Dyes the waters with a compound that sticks to fish passing through it, making them easier to see from the shore.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
+    "imageName": "FishingBoosterBlue.png",
+    "masteryReq": 0,
+    "buildPrice": 5000,
+    "buildTime": "5 minutes",
+    "skipBuildTimePrice": 25,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 10,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Iradite",
+        "itemCount": 10,
+        "sourceText": "Iradite Formation",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "med_tower",
+    "name": "Med-Tower",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Ordis delivers a Med-Tower to restore health to nearby allies.",
+    "imageName": "AirSupportMantis.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "mergoo_echo_lure",
+    "name": "Mergoo Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Mergoo with life-like animal calls. Mergoo inhabit the Plains of Eidolon.",
+    "imageName": "ThemeLureChipMergoo.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Ostron (Master Teasonai), Visitor",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "mergoo_pheromone_oota",
+    "name": "Mergoo Pheromone Oota",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Mergoo.",
+    "imageName": "RarityBoostMergoo.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Ostron (Master Teasonai), Visitor",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "mirewinder_bait",
+    "name": "Mirewinder Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait is composed of aromatic tetraxin that is known to attract Mirewinders, a Servofish found in Orb Vallis cave hotspots.\n\nObtained via The Business in Fortuna (Venus).",
+    "imageName": "ContaminantCaveTierA.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Rapscallion",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "missile_battery",
+    "name": "Missile Battery",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Launches homing missiles",
+    "imageName": "GenericGear.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "moa_specter",
+    "name": "Moa Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a MOA EXIMUS unit to fight for you.",
+    "imageName": "BallSpawnerMoa.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "murkray_bait",
+    "name": "Murkray Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait is composed of materials that are known to attract Murkrays, a fish found only in Plains of Eidolon ocean hotspots during both day and night.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
+    "imageName": "FishBaitBothRare.png",
+    "masteryReq": 0,
+    "buildPrice": 2000,
+    "buildTime": "5 minutes",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Fish Meat",
+        "itemCount": 20,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Goopolla Spleen",
+        "itemCount": 10,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Mortus Horn",
+        "itemCount": 5,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Tralok Eyes",
+        "itemCount": 5,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "narrow_spectrum_bait",
+    "name": "Narrow-Spectrum Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This endochlor/dionium melange attracts both Recasters and Eye-Eyes, Servofish found in Orb Vallis ponds. The Eye-Eye shows up during warm weather and Recasters shows up at Hot Spots during cool weather.\n\nObtained from The Business in Fortuna (Venus).",
+    "imageName": "ContaminantPondTierA.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Outworlder",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "necramech_summon",
+    "name": "Necramech Summon",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Summon a Necramech to the battlefield.",
+    "imageName": "SummonMech.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "nexifera_echo_lure",
+    "name": "Nexifera Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Nexifera with life-like animal calls.",
+    "imageName": "LureChipThwomp.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "nexifera_pheromone_gland",
+    "name": "Nexifera Pheromone Gland",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Nexifera.",
+    "imageName": "RarityBoostThwomp.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "nightfall_apothic",
+    "name": "Nightfall Apothic",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
+    "imageName": "NightfallApothic.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 0,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Dusklight Sarracenia",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Dragonlily",
+        "itemCount": 6,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Morphics",
+        "itemCount": 2,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Sunlight Threshcone",
+        "itemCount": 12,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "norg_bait",
+    "name": "Norg Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait is composed of materials that are known to attract Norg, a fish found only in Plains of Eidolon lake hotspots during the night.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
+    "imageName": "FishBaitNightRareA.png",
+    "masteryReq": 0,
+    "buildPrice": 2000,
+    "buildTime": "5 minutes",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Fish Meat",
+        "itemCount": 20,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Karkina Antenna",
+        "itemCount": 5,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Maprico",
+        "itemCount": 5,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Sharrac Teeth",
+        "itemCount": 5,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "nosam_cutter",
+    "name": "Nosam Cutter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Standard tool for cutting ore and gems out of stone.\n\nTravel far from Hub settlements for the best chance of mining rare minerals.",
+    "imageName": "MiningLaserA.png",
+    "masteryReq": 0,
+    "buildPrice": 3500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 500,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2000,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "omni",
+    "name": "Omni",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "An Omni is a multi-use Railjack tool for extinguishing fires, grounding electrical hazards, and repairing hull ruptures. Use outside the Railjack to instantly recall back to the ship.",
+    "imageName": "FireExtinguisher.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Ceres/Lex (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Earth/Mantle (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Cosis (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Isos (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Abaddon (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Beleth (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Cryotic Front (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jupiter/Ananke (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Lua/Copernicus (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Ara (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      }
+    ]
+  },
+  {
+    "id": "omni_ammo_box",
+    "name": "Omni Ammo Box",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Fully restores all ammo types.",
+    "imageName": "GenericGear.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Ceres/Lex (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Earth/Mantle (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Cosis (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Isos (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Abaddon (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Beleth (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Cryotic Front (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jupiter/Ananke (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Lua/Copernicus (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Ara (Capture)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      }
+    ]
+  },
+  {
+    "id": "on_call_crew",
+    "name": "On Call Crew",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Call in a designated crew member for backup in non-Railjack missions.",
+    "imageName": "BallSpawnerCrewmate.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "oplink",
+    "name": "Oplink",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "A device used to manage coordination and resources during Operation Link missions.",
+    "imageName": "GapwaveTransponder.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "orokin_eye",
+    "name": "Orokin Eye",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Ordis scans the area for rare items.",
+    "imageName": "AirSupportRareInstinct.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "override",
+    "name": "Override",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Ordis hacks into enemy systems and disrupts security protocols for a short period.",
+    "imageName": "AirSupportLiset.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "passionate_void_offering",
+    "name": "Passionate Void Offering",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Give unto The Void a generous 100,000 credits.",
+    "imageName": "CorpusCreditCardHigh.png",
+    "masteryReq": 0,
+    "buildPrice": 100000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 1,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 5,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "peppered_bait",
+    "name": "Peppered Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait attracts fish that are active in the Plains of Eidolon during the day.\n\nObtained from Fisher Hai-Luk in Cetus (Earth). Attracts Mawfish and Charc Eels in the lake; Khut-Khut, Yogwun, and Mortus Lungfish in ponds; and Goopolla and Tralok in the ocean.",
+    "imageName": "FishBaitGeneric.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Fish Meat",
+        "itemCount": 20,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Nistlepod",
+        "itemCount": 20,
+        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+        "dropChance": 15.18
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "peram_fishing_spear",
+    "name": "Peram Fishing Spear",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "This fishing spear has multiple blades that allow it to pierce the hides of scaly fish. \n\nObtained from Fisher Hai-Luk in Cetus (Earth). This spear is most effective on the following Plains of Eidolon fish:\nGlappid\nKhut-Khut\nMawfish\nMortus Lungfish\nNorg",
+    "imageName": "FishingSpearC.png",
+    "masteryReq": 0,
+    "buildPrice": 5000,
+    "buildTime": "1 hour",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Coprite Alloy",
+        "itemCount": 100,
+        "sourceText": "Ostron (Old Man Suumbaat), Offworlder",
+        "dropChance": 100
+      },
+      {
+        "partName": "Fersteel Alloy",
+        "itemCount": 80,
+        "sourceText": "Ostron (Old Man Suumbaat), Visitor",
+        "dropChance": 100
+      },
+      {
+        "partName": "Grokdrul",
+        "itemCount": 55,
+        "sourceText": "Grokdrul Drum",
+        "dropChance": 100
+      },
+      {
+        "partName": "Nistlepod",
+        "itemCount": 70,
+        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+        "dropChance": 15.18
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "pharoma",
+    "name": "Pharoma",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "A compound that relaxes nearby fish.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
+    "imageName": "FishingBoosterYellow.png",
+    "masteryReq": 0,
+    "buildPrice": 5000,
+    "buildTime": "5 minutes",
+    "skipBuildTimePrice": 25,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 10,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Iradite",
+        "itemCount": 10,
+        "sourceText": "Iradite Formation",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "phase_specter",
+    "name": "Phase Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
+    "imageName": "SpecterSilver.png",
+    "masteryReq": 0,
+    "buildPrice": 30000,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 20,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 1000,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Ceres/Nuovo (Rescue), Rotation C",
+        "dropChance": 100
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 5000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 750,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 5000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "phase_specter_regiment",
+    "name": "Phase Specter Regiment",
+    "category": "Gear",
+    "type": "Specter",
+    "description": "An army composed of phase-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for two conflicts.",
+    "imageName": "SpecterArmySilver.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "pherliac_pods",
+    "name": "Pherliac Pods",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Creates 50x Pherliac Pods that releases powerful pheromones to attract the Infested.",
+    "imageName": "BallSpawnerInfestedBait.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 0,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Demolisher Juggernaut",
+        "dropChance": 2.5
+      },
+      {
+        "partName": "Chitinous Husk",
+        "itemCount": 1,
+        "sourceText": "Deimos Juggernaut",
+        "dropChance": 25
+      },
+      {
+        "partName": "Infected Palpators",
+        "itemCount": 1,
+        "sourceText": "Deimos Juggernaut",
+        "dropChance": 25
+      },
+      {
+        "partName": "Pulsating Tubercles",
+        "itemCount": 1,
+        "sourceText": "Deimos Juggernaut",
+        "dropChance": 25
+      },
+      {
+        "partName": "Severed Bile Sac",
+        "itemCount": 1,
+        "sourceText": "Deimos Juggernaut",
+        "dropChance": 25
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "pistol_ammo_box",
+    "name": "Pistol Ammo Box",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores a bunch of pistol ammo.",
+    "imageName": "GenericGear.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "pobbers_echo_lure",
+    "name": "Pobbers Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Pobbers with life-like animal calls. The Pobbers is most often found around the Mushroom Fields of Orb Vallis.",
+    "imageName": "ThemeLureChipSnowRodent.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "pobbers_pheromone_synthesizer",
+    "name": "Pobbers Pheromone Synthesizer",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Pobbers.",
+    "imageName": "RarityBoostSnowRodent.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "potent_pherliac_pods",
+    "name": "Potent Pherliac Pods",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Creates 50x Potent Pherliac Pods that releases powerful pheromones to attract the Infested.",
+    "imageName": "BallSpawnerInfestedBait.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 0,
+    "components": [
+      {
+        "partName": "Argon Crystal",
+        "itemCount": 3,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Pherliac Pods",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "predasite_echo_lure",
+    "name": "Predasite Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Predasite with life-like animal calls.",
+    "imageName": "LureChipInfestedPredator.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Stranger",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "predasite_pheromone_gland",
+    "name": "Predasite Pheromone Gland",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Predasite.",
+    "imageName": "RarityBoostInfestedPredator.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Stranger",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "processed_fass_residue",
+    "name": "Processed Fass Residue",
+    "category": "Gear",
+    "type": "Fish Bait",
+    "description": "Matter from the body of the Wyrm Fass, purged of toxins, and rendered usefully. Used to attract Aquapulmo and Flagellocanth in Cambion Drift surface hotspots, Aquapulmo only during Vome.\n\nObtained from Daughter in the Necralisk (Deimos).",
+    "imageName": "WyrmBaitInfestedProcessed.png",
+    "masteryReq": 0,
+    "buildPrice": 30000,
+    "buildTime": "12 hours",
+    "skipBuildTimePrice": 20,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Fass Residue",
+        "itemCount": 5,
+        "sourceText": "Entrati (Daughter), Associate",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "processed_vome_residue",
+    "name": "Processed Vome Residue",
+    "category": "Gear",
+    "type": "Fish Bait",
+    "description": "The flesh of Vome, refined, and ready for use. Used to attract Myxostomata in Cambion Drift cave hotspots during Vome.\n\nObtained from Daughter in the Necralisk (Deimos).",
+    "imageName": "WyrmBaitEntratiProcessed.png",
+    "masteryReq": 0,
+    "buildPrice": 30000,
+    "buildTime": "12 hours",
+    "skipBuildTimePrice": 20,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Vome Residue",
+        "itemCount": 5,
+        "sourceText": "Entrati (Daughter), Friend",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "railjack_recall",
+    "name": "Railjack Recall",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "",
+    "imageName": "RailjackRecallItem.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "razorback_cipher",
+    "name": "Razorback Cipher",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Used to bypass security systems that protect the Razorback's holding cell.",
+    "imageName": "RazorbackCipher.png",
+    "masteryReq": 0,
+    "buildPrice": 1250,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Cryptographic Alu",
+        "itemCount": 4,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Gallium",
+        "itemCount": 3,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 1500,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "refract_stim",
+    "name": "Refract Stim",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Coats the target in a film that refracts light, allowing undetected movement.",
+    "imageName": "RefractStim.png",
+    "masteryReq": 0,
+    "buildPrice": 10000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 500,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Cryotic",
+        "itemCount": 1000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 1500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Synthula",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "remote_observer",
+    "name": "Remote Observer",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a short-lived remote camera that overrides your Warframe optics",
+    "imageName": "GenericComponentPlug.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "requiem_ultimatum",
+    "name": "Requiem Ultimatum",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Provokes an immediate confrontation with your Kuva Lich or Sister of Parvos: an insult which cannot be ignored.",
+    "imageName": "NemesisBait.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "rifle_ammo_box",
+    "name": "Rifle Ammo Box",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores a bunch of rifle ammo.",
+    "imageName": "GenericGear.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "roller_specter",
+    "name": "Roller Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a ROLLER EXIMUS unit to fight for you.",
+    "imageName": "BallSpawnerRoller.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "sacred_vessel",
+    "name": "Sacred Vessel",
+    "category": "Gear",
+    "type": "Key",
+    "description": "A peculiar relic from the tomb of Inaros.",
+    "imageName": "SpiritJar.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "sawgaw_echo_lure",
+    "name": "Sawgaw Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Sawgaw with life-like animal calls.",
+    "imageName": "ThemeLureChipSnowBird.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Rapscallion",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "sawgaw_pheromone_synthesizer",
+    "name": "Sawgaw Pheromone Synthesizer",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Sawgaw.",
+    "imageName": "RarityBoostSnowBird.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Rapscallion",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "scorpion_specter",
+    "name": "Scorpion Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a SCORPION EXIMUS unit to fight for you.",
+    "imageName": "MacheteWomanAvatar.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "sentry_gun",
+    "name": "Sentry Gun",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Ordis delivers an automatic turret that will fire upon nearby visible enemies.",
+    "imageName": "AirSupportSentryTurret.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "shield_osprey_specter",
+    "name": "Shield Osprey Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a SHIELD OSPREY EXIMUS unit to fight for you.",
+    "imageName": "BallSpawnerShieldDrone.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "shield_restore_small_",
+    "name": "Shield Restore (Small)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Instantly restores 50 Shield.",
+    "imageName": "ShieldHeal.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "shockprod_fishing_spear",
+    "name": "Shockprod Fishing Spear",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Purpose built to recover Servofish without damage. Delivers a disabling electromagnetic pulse after a successful hit if timed correctly.\n\nObtained from The Business in Fortuna. This spear is most effective on Servofish found in the Orb Vallis (Venus). ",
+    "imageName": "RobofishSpearB.png",
+    "masteryReq": 0,
+    "buildPrice": 2000,
+    "buildTime": "1 hour",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 1000,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Grokdrul",
+        "itemCount": 35,
+        "sourceText": "Grokdrul Drum",
+        "dropChance": 100
+      },
+      {
+        "partName": "Nistlepod",
+        "itemCount": 55,
+        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+        "dropChance": 15.18
+      },
+      {
+        "partName": "Pyrotic Alloy",
+        "itemCount": 40,
+        "sourceText": "Ostron (Old Man Suumbaat), Neutral",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "shotgun_ammo_box",
+    "name": "Shotgun Ammo Box",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores a bunch of shotgun ammo.",
+    "imageName": "GenericGear.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "sniper_ammo_box",
+    "name": "Sniper Ammo Box",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores a bunch of sniper ammo.",
+    "imageName": "GenericGear.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "snow_globe",
+    "name": "Snow Globe",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Frost deep freezes any vapor and moisture in the area, creating a protective sphere with brief invulnerability to boost its strength.",
+    "imageName": "FrostSnowGlobe.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "spari_spear",
+    "name": "Spari Spear",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Plumb the depths with this crafty fishing spear that's barely detectable to Infested and hybrid/Orokin fish. Due to its Infested aspect, it's one of the only known things that can pass through exocrine. \n\nObtained from Daughter in the Necralisk. This spear is most effective on fish found in the Cambion Drift (Deimos).",
+    "imageName": "InfestedFishingSpearA.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Daughter), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "squad_ammo_restore_large_",
+    "name": "Squad Ammo Restore (Large)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores 3x Primary and Secondary Ammo Pick Up Amount every 15s for 60s.",
+    "imageName": "LargeTeamAmmoSingle.png",
+    "masteryReq": 0,
+    "buildPrice": 9000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Red Veil, Esteemed",
+        "dropChance": 100
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 300,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "squad_ammo_restore_medium_",
+    "name": "Squad Ammo Restore (Medium)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores 2x Primary and Secondary Ammo Pick Up Amount every 15s for 60s.",
+    "imageName": "TotemAmmo.png",
+    "masteryReq": 0,
+    "buildPrice": 4000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 600,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 600,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "squad_ammo_restore_small_",
+    "name": "Squad Ammo Restore (Small)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores 1x Primary and Secondary Ammo Pick Up Amount every 15s for 60s.",
+    "imageName": "TotemAmmo.png",
+    "masteryReq": 0,
+    "buildPrice": 36000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 7200,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 900,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "squad_energy_restore_large_",
+    "name": "Squad Energy Restore (Large)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores Energy to all squad members. Pulses 100 Energy every 7.5s for 30s.",
+    "imageName": "LargeTeamEnergySingle.png",
+    "masteryReq": 0,
+    "buildPrice": 9000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Arbiters of Hexis, Lawful",
+        "dropChance": 100
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 3000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 500,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "squad_energy_restore_medium_",
+    "name": "Squad Energy Restore (Medium)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores Energy to all squad members. Pulses 50 Energy every 5s for 20s.",
+    "imageName": "TotemEnergy.png",
+    "masteryReq": 0,
+    "buildPrice": 4000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 150,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 600,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "squad_energy_restore_small_",
+    "name": "Squad Energy Restore (Small)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores Energy to all squad members. Pulses 25 Energy every 7.5s for 30s.",
+    "imageName": "TotemEnergy.png",
+    "masteryReq": 0,
+    "buildPrice": 3600,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 9000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 900,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "squad_health_restore_large_",
+    "name": "Squad Health Restore (Large)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores Health to all squad members. Pulses 300 Health every 7.5s for 30s.",
+    "imageName": "LargeTeamHealSingle.png",
+    "masteryReq": 0,
+    "buildPrice": 9000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "New Loka, Benevolent",
+        "dropChance": 100
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 600,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 4000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "squad_health_restore_medium_",
+    "name": "Squad Health Restore (Medium)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores Health to all squad members. Pulses 100 Health every 5s for 20s.",
+    "imageName": "TotemHealth.png",
+    "masteryReq": 0,
+    "buildPrice": 4000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 600,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "squad_health_restore_small_",
+    "name": "Squad Health Restore (Small)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores Health to all squad members. Pulses 30 Health every 7.5s for 30s.",
+    "imageName": "TeamHeal.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "squad_shield_restore_large_",
+    "name": "Squad Shield Restore (Large)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores Shields to all squad members. Pulses 300 Shield every 7.5s for 30s.",
+    "imageName": "LargeTeamShieldSingle.png",
+    "masteryReq": 0,
+    "buildPrice": 9000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 1000,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Cephalon Suda, Intelligent",
+        "dropChance": 100
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "squad_shield_restore_medium_",
+    "name": "Squad Shield Restore (Medium)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores Shields to all squad members. Pulses 100 Shield every 7.5s for 30s.",
+    "imageName": "TotemShield.png",
+    "masteryReq": 0,
+    "buildPrice": 4000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 150,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 600,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "squad_shield_restore_small_",
+    "name": "Squad Shield Restore (Small)",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Restores Shields to all squad members. Pulses 35 Shield every 7.5s for 30s.",
+    "imageName": "TotemShield.png",
+    "masteryReq": 0,
+    "buildPrice": 36000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 14400,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "stable_corruptor",
+    "name": "Stable Corruptor",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Injected into a Fomorian Reactor this corruptor will imbalance the fuels. Critically imbalanced reactors will eventually implode, destroy the ship. Slow but effective, recommended for Solo Tenno.",
+    "imageName": "CorruptorCombined.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "stalker_beacon",
+    "name": "Stalker Beacon",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Lures the Stalker out of hiding. One-time use gear item that can only be used in locations where the assassin would normally appear.",
+    "imageName": "AssassinBait.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "stalker_specter",
+    "name": "Stalker Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a clone of the Stalker to fight for you.",
+    "imageName": "Stalker.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "starburst",
+    "name": "Starburst",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Celebrate the holiday with fireworks! Light up the sky with this single use consumable item.",
+    "imageName": "FireworksSingle.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "stover_echo_lure",
+    "name": "Stover Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Stovers with life-like animal calls.",
+    "imageName": "ThemeLureChipOrokinKubrow.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Cove",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "stover_pheromone_synthesizer",
+    "name": "Stover Pheromone Synthesizer",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Stover.",
+    "imageName": "RarityBoostOrokinKubrow.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Cove",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "stunna_fishing_spear",
+    "name": "Stunna Fishing Spear",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Successful electromagnetic pulses radiate outward also disabling any nearby Servofish.\n\nObtained from The Business in Fortuna. This spear is most effective on Servofish found in the Orb Vallis (Venus). ",
+    "imageName": "RobofishSpearC.png",
+    "masteryReq": 0,
+    "buildPrice": 2000,
+    "buildTime": "1 hour",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 1000,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Grokdrul",
+        "itemCount": 35,
+        "sourceText": "Grokdrul Drum",
+        "dropChance": 100
+      },
+      {
+        "partName": "Nistlepod",
+        "itemCount": 55,
+        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+        "dropChance": 15.18
+      },
+      {
+        "partName": "Pyrotic Alloy",
+        "itemCount": 40,
+        "sourceText": "Ostron (Old Man Suumbaat), Neutral",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "sunpoint_plasma_drill",
+    "name": "Sunpoint Plasma Drill",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Fast-ignition, high-intensity mining tool capable of extracting the rarest of materials with surgical precision.\n\nCan be used to retrieve Rare Gems on any Landscape. Travel far from Hub settlements for the best chance of mining rare minerals.",
+    "imageName": "MiningLaserSolarisC.png",
+    "masteryReq": 0,
+    "buildPrice": 3500,
+    "buildTime": "1 hour",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Advanced Nosam Cutter",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 1000,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Marquise Veridos",
+        "itemCount": 2,
+        "sourceText": "Ostron (Old Man Suumbaat), Visitor",
+        "dropChance": 100
+      },
+      {
+        "partName": "Travocyte Alloy",
+        "itemCount": 30,
+        "sourceText": "Solaris United (Smokefinger), Neutral",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "sunrise_apothic",
+    "name": "Sunrise Apothic",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
+    "imageName": "SunriseApothic.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 0,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Frostleaf",
+        "itemCount": 8,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Morphics",
+        "itemCount": 2,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Sunlight Jadeleaf",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Vestan Moss",
+        "itemCount": 12,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "surge_eximus_specter",
+    "name": "Surge Eximus Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a clone of the Surge Eximus to fight for you.",
+    "imageName": "SurgeEximusBall.png",
+    "masteryReq": 0,
+    "buildPrice": 7500,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 2500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 2500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "synathid_bait",
+    "name": "Synathid Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait is synthesized from specialized A-disulphex-A compounds that are known to attract Synathid, a legendarily rare Servofish found only in Orb Vallis cave hotspots.\n\nObtained from The Business in Fortuna (Venus).",
+    "imageName": "ContaminantCaveTierC.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Cove",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "synthesis_scanner",
+    "name": "Synthesis Scanner",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Synthesize a genetic data of the target and uploads it to the Sanctuary.",
+    "imageName": "LibraryScanner.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Cephalon Simaris, Synthesis Scanner x 25\n",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "thermian_rpg",
+    "name": "Thermian Rpg",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploys a Thermian RPG",
+    "imageName": "SummonThermianRPG.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "topaz_antitoxin",
+    "name": "Topaz Antitoxin",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "This is a moderately effective antitoxin.",
+    "imageName": "TopazAntitoxin.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Dragonlily",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Threshcone",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "tranq_rifle",
+    "name": "Tranq Rifle",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Tranquilizes animals for the purpose of safe relocation.",
+    "imageName": "TranqRifle.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Solaris United (The Business), Neutral",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "tromyzon_bait",
+    "name": "Tromyzon Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait is synthesized from long-chain LS-74 compounds that are known to attract Tromyzon, a Servofish found in Orb Vallis pond hotspots during cool weather.\n\nObtained from The Business in Fortuna (Venus).",
+    "imageName": "ContaminantPondTierB.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Doer",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "tulok_fishing_spear",
+    "name": "Tulok Fishing Spear",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "This fishing spear features a slender blade to puncture armored plates and carapaces. \n\nObtained from Fisher Hai-Luk in Cetus (Earth). This spear is most effective on the following Plains of Eidolon fish:\nTralok",
+    "imageName": "FishingSpearB.png",
+    "masteryReq": 0,
+    "buildPrice": 2000,
+    "buildTime": "1 hour",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 1000,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Grokdrul",
+        "itemCount": 35,
+        "sourceText": "Grokdrul Drum",
+        "dropChance": 100
+      },
+      {
+        "partName": "Nistlepod",
+        "itemCount": 55,
+        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+        "dropChance": 15.18
+      },
+      {
+        "partName": "Pyrotic Alloy",
+        "itemCount": 40,
+        "sourceText": "Ostron (Old Man Suumbaat), Neutral",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "twilight_apothic",
+    "name": "Twilight Apothic",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
+    "imageName": "TwilightApothic.png",
+    "masteryReq": 0,
+    "buildPrice": 500,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 0,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Lunar Pitcher",
+        "itemCount": 6,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Jadeleaf",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Morphics",
+        "itemCount": 2,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Ruk's Claw",
+        "itemCount": 6,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "twilight_bait",
+    "name": "Twilight Bait",
+    "category": "Gear",
+    "type": "Fish",
+    "description": "This bait attracts predatory fish that are active in the Plains of Eidolon during either day or night.\n\nObtained from Fisher Hai-Luk in Cetus (Earth). Attracts Sharrac and Karkina in the ocean.",
+    "imageName": "FishBaitBothUncommon.png",
+    "masteryReq": 0,
+    "buildPrice": 1000,
+    "buildTime": "2 minutes",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Fish Meat",
+        "itemCount": 20,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Fish Oil",
+        "itemCount": 10,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Maprico",
+        "itemCount": 1,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Nistlepod",
+        "itemCount": 10,
+        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+        "dropChance": 15.18
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "undazoa_echo_lure",
+    "name": "Undazoa Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Undazoa with life-like animal calls.",
+    "imageName": "LureChipZongro.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Associate",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "undazoa_pheromone_gland",
+    "name": "Undazoa Pheromone Gland",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Undazoa.",
+    "imageName": "RarityBoostZongro.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Associate",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "vapor_specter",
+    "name": "Vapor Specter",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
+    "imageName": "SpecterBronze.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "8 hours",
+    "skipBuildTimePrice": 20,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Ceres/Nuovo (Rescue), Rotation B",
+        "dropChance": 100
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 5000,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 7500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "vapor_specter_regiment",
+    "name": "Vapor Specter Regiment",
+    "category": "Gear",
+    "type": "Specter",
+    "description": "An army composed of vapor-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for one conflict.",
+    "imageName": "SpecterArmyBronze.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "vasca_curative",
+    "name": "Vasca Curative",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Known as 'lisau heisah' by the Ostrons, this is a traditionally-brewed remedy for the Vasca virus. Once applied any infected Kavats within a short radius are cured.",
+    "imageName": "CatbrowVampireDisinfect.png",
+    "masteryReq": 0,
+    "buildPrice": 2000,
+    "buildTime": "1 hour",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Karkina Antenna",
+        "itemCount": 3,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Maprico",
+        "itemCount": 15,
+        "sourceText": "Narmer Thumper",
+        "dropChance": 16.68
+      },
+      {
+        "partName": "Nistlepod",
+        "itemCount": 15,
+        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+        "dropChance": 15.18
+      },
+      {
+        "partName": "Norg Brain",
+        "itemCount": 3,
+        "sourceText": "Operational Supply, Neutral",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "vasca_kavat_echo_lure",
+    "name": "Vasca Kavat Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Vasca Kavat with life-like animal calls. Vasca Kavat roam the Plains of Eidolon at night.",
+    "imageName": "ThemeLureChipVampireKavat.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Ostron (Master Teasonai), Trusted",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "vasca_kavat_pheromone_oota",
+    "name": "Vasca Kavat Pheromone Oota",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Vasca Kavat.",
+    "imageName": "RarityBoostVampireKavat.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Ostron (Master Teasonai), Trusted",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "vermillion_antitoxin",
+    "name": "Vermillion Antitoxin",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "This is an extremely effective antitoxin.",
+    "imageName": "VermillionAntitoxin.png",
+    "masteryReq": 0,
+    "buildPrice": 2000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Dragonlily",
+        "itemCount": 4,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Moonlight Jadeleaf",
+        "itemCount": 4,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Sunlight Dragonlily",
+        "itemCount": 4,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Sunlight Jadeleaf",
+        "itemCount": 4,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "virmink_echo_lure",
+    "name": "Virmink Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Virmink with life-like animal calls. The Virmink is most often found around the Lakes in Orb Vallis.",
+    "imageName": "ThemeLureChipSnowCritter.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Outworlder",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "virmink_pheromone_synthesizer",
+    "name": "Virmink Pheromone Synthesizer",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Virmink.",
+    "imageName": "RarityBoostSnowCritter.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Solaris United (The Business), Outworlder",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "vome_residue",
+    "name": "Vome Residue",
+    "category": "Gear",
+    "type": "Fish Bait",
+    "description": "A gobbet of raw flesh, fallen from the wyrm Vome in her death spasm. Used to attract Chondricord and Duriod in Cambion Drift cave hotspots during Fass and Vome.\n\nLocation: Cambion Drift on Deimos while Fass is active",
+    "imageName": "WyrmBaitEntrati.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Daughter), Friend",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 30 - 40 Cambion Drift Bounty), Rotation B",
+        "chance": 3.23,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 30 - 40 Cambion Drift Bounty), Rotation B",
+        "chance": 4.11,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 30 - 40 Cambion Drift Bounty), Rotation B",
+        "chance": 7.5,
+        "rarity": "Rare"
+      }
+    ]
+  },
+  {
+    "id": "vortex",
+    "name": "Vortex",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Creates a whirling mass of energy that violently attracts nearby enemies, crushing their atoms into a tiny spec of matter.",
+    "imageName": "VaubanVortex.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Axio Basilisk",
+        "chance": 0.83,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orm Harpi",
+        "chance": 1.11,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Elite Axio Basilisk",
+        "chance": 1.39,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Gyre Flak",
+        "chance": 1.66,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Vorac Basilisk",
+        "chance": 1.66,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Elite Orm Harpi",
+        "chance": 1.85,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Elite Taro Basilisk",
+        "chance": 1.85,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Elite Vorac Basilisk",
+        "chance": 2.27,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Elite Gyre Flak",
+        "chance": 2.77,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Exo Taktis",
+        "chance": 3.32,
+        "rarity": "Uncommon"
+      }
+    ]
+  },
+  {
+    "id": "vulpaphyla_echo_lure",
+    "name": "Vulpaphyla Echo-Lure",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Entice and attract nearby Vulpaphyla with life-like animal calls.",
+    "imageName": "LureChipInfestedCritter.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Stranger",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "vulpaphyla_pheromone_gland",
+    "name": "Vulpaphyla Pheromone Gland",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Vulpaphyla.",
+    "imageName": "RarityBoostInfestedCritter.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Entrati (Son), Stranger",
+        "chance": 100,
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "wolf_beacon",
+    "name": "Wolf Beacon",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Lures the Wolf out of hiding. One-time use gear item that can only be used in locations where the assassin would normally appear.",
+    "imageName": "AssassinBaitD.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "zanuka_hunter_beacon",
+    "name": "Zanuka Hunter Beacon",
+    "category": "Gear",
+    "type": "Gear",
+    "description": "Lures the Zanuka Hunter out of hiding. One-time use gear item that can only be used in locations where the assassin would normally appear.",
+    "imageName": "AssassinBaitB.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "carrier",
+    "name": "Carrier",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "With 'Assault Mode' and 'Ammo Case' as default Precepts, Carrier is a seeker Sentinel. Carrier also comes with a shotgun weapon.",
+    "imageName": "Carrier.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 1000,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 400,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Control Module",
+        "itemCount": 3,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 1500,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "carrier_prime",
+    "name": "Carrier Prime",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "This ornate sentinel is an excellent example of late Orokin craftsmanship and styling.",
+    "imageName": "CarrierPrime.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Lith V7 Relic (Radiant)",
+        "dropChance": 16.67
+      },
+      {
+        "partName": "Carapace",
+        "itemCount": 1,
+        "sourceText": "Lith V10 Relic",
+        "dropChance": 11
+      },
+      {
+        "partName": "Cerebrum",
+        "itemCount": 1,
+        "sourceText": "Lith C1 Relic (Radiant)",
+        "dropChance": 10
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 6,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Axi A7 Relic (Radiant)",
+        "dropChance": 16.67
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "dethcube",
+    "name": "Dethcube",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "With 'Assault Mode' and 'Vaporize' as default precepts, Dethcube acts exactly as advertised, as a badass cube of 'deth'. Comes loaded with Deth Machine Rifle weapon.",
+    "imageName": "Dethcube.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 500,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 400,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Control Module",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 200,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "dethcube_prime",
+    "name": "Dethcube Prime",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "With 'Assault Mode' and 'Vaporize' as default precepts, Dethcube Prime is the apex of lethal support. Comes loaded with Deth Machine Rifle Prime weapon.",
+    "imageName": "DethcubePrime.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Lith D1 Relic (Radiant)",
+        "dropChance": 10
+      },
+      {
+        "partName": "Carapace",
+        "itemCount": 1,
+        "sourceText": "Axi N7 Relic",
+        "dropChance": 11
+      },
+      {
+        "partName": "Cerebrum",
+        "itemCount": 1,
+        "sourceText": "Lith D2 Relic (Radiant)",
+        "dropChance": 10
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 6,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Axi I1 Relic (Radiant)",
+        "dropChance": 16.67
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "diriga",
+    "name": "Diriga",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "Diriga shocks nearby enemies, and picks off distant threats, utilizing the Vulklok sniper rifle and the 'Calculated Shot', 'Arc Coil' and 'Electro Pulse' precepts.",
+    "imageName": "Diriga.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 600,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Argon Crystal",
+        "itemCount": 2,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Plastids",
+        "itemCount": 350,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Polymer Bundle",
+        "itemCount": 500,
+        "sourceText": "Ceres/Ker (Caches), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "djinn",
+    "name": "Djinn",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "With 'Thumper' and 'Fatal Attraction' as default Precepts, Djinn is a combat Sentinel. Djinn also comes with a poison dart weapon.",
+    "imageName": "Djinn.png",
+    "masteryReq": 0,
+    "buildPrice": 30000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 35,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 3500,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Forma",
+        "itemCount": 2,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Mutagen Mass",
+        "itemCount": 6,
+        "sourceText": "Hallowed Flame Endurance Caches, Rotation B",
+        "dropChance": 11.06
+      },
+      {
+        "partName": "Salvage",
+        "itemCount": 30000,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "helios",
+    "name": "Helios",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "With 'Investigator' as its unique Precept and 'Deconstructor' as its weapon, the versatile Helios Sentinel acts as both a lethal guardian and an automatic codex scanner. Scans require an equipped Codex Scanner and an available charge.",
+    "imageName": "Helios.png",
+    "masteryReq": 0,
+    "buildPrice": 5000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 35,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 5000,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Fieldron",
+        "itemCount": 10,
+        "sourceText": "Rare Corpus Storage Container",
+        "dropChance": 100
+      },
+      {
+        "partName": "Forma",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Oxium",
+        "itemCount": 300,
+        "sourceText": "Carrypod",
+        "dropChance": 0.5
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "helios_prime",
+    "name": "Helios Prime",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "This knowledge hungry protector defends its master with Deconstructor Prime.",
+    "imageName": "HeliosPrime.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Lith C3 Relic",
+        "dropChance": 11
+      },
+      {
+        "partName": "Carapace",
+        "itemCount": 1,
+        "sourceText": "Axi A3 Relic (Radiant)",
+        "dropChance": 16.67
+      },
+      {
+        "partName": "Cerebrum",
+        "itemCount": 1,
+        "sourceText": "Axi H1 Relic (Radiant)",
+        "dropChance": 10
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 6,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Axi A12 Relic",
+        "dropChance": 11
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "nautilus",
+    "name": "Nautilus",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "With 'Auto Omni' and 'Cordon' as default Precepts, this Sentinel is the ideal companion for long voyages aboard a Railjack.",
+    "imageName": "EmpyreanSentinel.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Neptune/Arva Vector (Skirmish), Rotation C",
+        "dropChance": 4.26
+      },
+      {
+        "partName": "Carapace",
+        "itemCount": 1,
+        "sourceText": "Neptune/Arva Vector (Skirmish), Rotation C",
+        "dropChance": 4.26
+      },
+      {
+        "partName": "Cerebrum",
+        "itemCount": 1,
+        "sourceText": "Neptune/Arva Vector (Skirmish), Rotation C",
+        "dropChance": 4.26
+      },
+      {
+        "partName": "Nullstones",
+        "itemCount": 5,
+        "sourceText": "Apex Membroid (Level 76 - 100)",
+        "dropChance": 0
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Neptune/Arva Vector (Skirmish), Rotation C",
+        "dropChance": 4.26
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "nautilus_prime",
+    "name": "Nautilus Prime",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "This brave deckhand defends his crew with Verglas Prime.",
+    "imageName": "NautilusPrime.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Lith N17 Relic (Radiant)",
+        "dropChance": 10
+      },
+      {
+        "partName": "Carapace",
+        "itemCount": 1,
+        "sourceText": "Axi V13 Relic (Radiant)",
+        "dropChance": 16.67
+      },
+      {
+        "partName": "Cerebrum",
+        "itemCount": 1,
+        "sourceText": "Axi N13 Relic (Radiant)",
+        "dropChance": 10
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 6,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Axi S16 Relic",
+        "dropChance": 11
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "oxylus",
+    "name": "Oxylus",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "With 'Scan Aquatic Lifeforms' and 'Scan Matter' as default Precepts, Oxylus was designed to assist in Search-and-Rescue operations through the harsh landscape around The Orb Vallis. Oxylus also comes with a Multron rifle.",
+    "imageName": "Oxylus.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Axidrol Alloy",
+        "itemCount": 45,
+        "sourceText": "Solaris United (Smokefinger), Neutral",
+        "dropChance": 100
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Solaris United (The Business), Old Mate",
+        "dropChance": 100
+      },
+      {
+        "partName": "Goblite Tears",
+        "itemCount": 15,
+        "sourceText": "Solaris United (Smokefinger), Outworlder",
+        "dropChance": 100
+      },
+      {
+        "partName": "Longwinder Lathe Coagulant",
+        "itemCount": 10,
+        "sourceText": "Exploiter Orb",
+        "dropChance": 50.01
+      },
+      {
+        "partName": "Scrap",
+        "itemCount": 40,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "prisma_shade",
+    "name": "Prisma Shade",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "A rare jewel of the void. How could anything so beautiful be crafted for stealth?",
+    "imageName": "PrismaShade.png",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": []
+  },
+  {
+    "id": "shade",
+    "name": "Shade",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "With 'Revenge' and 'Ghost' as default Precepts, Shade is well suited for stealth gameplay. Shade also comes with a burst laser pistol.",
+    "imageName": "Shade.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 500,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 400,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Control Module",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 200,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "shade_prime",
+    "name": "Shade Prime",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "Shade Prime specializes in stealth and comes locked and loaded with the Burst Laser Prime. Together, you can dominate the shadows.",
+    "imageName": "ShadePrime.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Axi A17 Relic",
+        "dropChance": 11
+      },
+      {
+        "partName": "Carapace",
+        "itemCount": 1,
+        "sourceText": "Axi S16 Relic (Radiant)",
+        "dropChance": 10
+      },
+      {
+        "partName": "Cerebrum",
+        "itemCount": 1,
+        "sourceText": "Axi G11 Relic (Radiant)",
+        "dropChance": 16.67
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 6,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Axi B6 Relic",
+        "dropChance": 11
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "taxon",
+    "name": "Taxon",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "With 'Assault Mode' and 'Molecular Conversion' as default Precepts, Taxon protects its owner with shield restoration. Equipped with the Artax ice-beam.",
+    "imageName": "Taxon.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 1,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Ferrite",
+        "itemCount": 500,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      },
+      {
+        "partName": "Neurodes",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Rubedo",
+        "itemCount": 200,
+        "sourceText": "Earth/Cervantes (Caches), Rotation B",
+        "dropChance": 12.18
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "wyrm",
+    "name": "Wyrm",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "With 'Assault Mode' and 'Crowd Dispersion' as default Precepts, Wyrm is a highly offensive Sentinel. Wyrm also comes with a laser rifle.",
+    "imageName": "Wyrm.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Alloy Plate",
+        "itemCount": 500,
+        "sourceText": "Mars/Gradivus (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 400,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Control Module",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 200,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "wyrm_prime",
+    "name": "Wyrm Prime",
+    "category": "Companions",
+    "type": "Sentinel",
+    "description": "Both bodyguard and status symbol, the Wyrm Prime Sentinel was the last line of defense for high ranking Tenno in the Orokin Era.",
+    "imageName": "WyrmPrime.png",
+    "masteryReq": 0,
+    "buildPrice": 15000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 30,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Axi S2 Relic (Radiant)",
+        "dropChance": 16.67
+      },
+      {
+        "partName": "Carapace",
+        "itemCount": 1,
+        "sourceText": "Axi L1 Relic (Radiant)",
+        "dropChance": 16.67
+      },
+      {
+        "partName": "Cerebrum",
+        "itemCount": 1,
+        "sourceText": "Lith G2 Relic (Radiant)",
+        "dropChance": 16.67
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 6,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Meso E1 Relic",
+        "dropChance": 11
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "amesha",
+    "name": "Amesha",
+    "category": "Archwing",
+    "type": "Archwing",
+    "description": "Transform into a winged guardian.",
+    "imageName": "Amesha.png",
+    "masteryReq": 0,
+    "buildPrice": 25000,
+    "buildTime": "12 hours",
+    "skipBuildTimePrice": 50,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Harness",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Nitain Extract",
+        "itemCount": 4,
+        "sourceText": "Wolf Of Saturn Six",
+        "dropChance": 0.13
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Wings",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "elytron",
+    "name": "Elytron",
+    "category": "Archwing",
+    "type": "Archwing",
+    "description": "This heavy duty Archwing was designed for one purpose, destruction.",
+    "imageName": "Elytron.png",
+    "masteryReq": 0,
+    "buildPrice": 25000,
+    "buildTime": "36 hours",
+    "skipBuildTimePrice": 50,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Control Module",
+        "itemCount": 5,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Harness",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Wings",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "itzal",
+    "name": "Itzal",
+    "category": "Archwing",
+    "type": "Archwing",
+    "description": "Designed for quick clandestine attacks, the Itzal Archwing excels at striking from the darkness of space.",
+    "imageName": "Itzal.png",
+    "masteryReq": 0,
+    "buildPrice": 25000,
+    "buildTime": "36 hours",
+    "skipBuildTimePrice": 50,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Control Module",
+        "itemCount": 2,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Harness",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Wings",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "odonata",
+    "name": "Odonata",
+    "category": "Archwing",
+    "type": "Archwing",
+    "description": "The systems built into this Archwing balance offensive capabilities with defensive countermeasures.",
+    "imageName": "Odonata.png",
+    "masteryReq": 0,
+    "buildPrice": 7000,
+    "buildTime": "1 minute",
+    "skipBuildTimePrice": 5,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Circuits",
+        "itemCount": 300,
+        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Harness",
+        "itemCount": 1,
+        "sourceText": "Cephalon Simaris, Complete The Archwing (Quest)",
+        "dropChance": 100
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Cephalon Simaris, Complete The Archwing (Quest)",
+        "dropChance": 100
+      },
+      {
+        "partName": "Wings",
+        "itemCount": 1,
+        "sourceText": "Cephalon Simaris, Complete The Archwing (Quest)",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "odonata_prime",
+    "name": "Odonata Prime",
+    "category": "Archwing",
+    "type": "Archwing",
+    "description": "This enhanced version of the first Archwing prototype takes the design to its theoretical limits.",
+    "imageName": "OdonataPrime.png",
+    "masteryReq": 0,
+    "buildPrice": 25000,
+    "buildTime": "36 hours",
+    "skipBuildTimePrice": 50,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Harness",
+        "itemCount": 1,
+        "sourceText": "Axi K1 Relic (Radiant)",
+        "dropChance": 16.67
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Systems",
+        "itemCount": 1,
+        "sourceText": "Axi V1 Relic (Radiant)",
+        "dropChance": 16.67
+      },
+      {
+        "partName": "Wings",
+        "itemCount": 1,
+        "sourceText": "Lith O2 Relic (Radiant)",
+        "dropChance": 10
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "exilus_warframe_adapter",
+    "name": "Exilus Warframe Adapter",
+    "category": "Gear",
+    "type": "Equipment Adapter",
+    "description": "Fuses with a Warframe to unlock the Exilus Mod Slot.",
+    "imageName": "UtilityModule.png",
+    "masteryReq": 0,
+    "buildPrice": 25000,
+    "buildTime": "23 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Argon Crystal",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Cephalon Simaris, Complete Natah (Quest)",
+        "dropChance": 100
+      },
+      {
+        "partName": "Forma",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "exilus_weapon_adapter",
+    "name": "Exilus Weapon Adapter",
+    "category": "Gear",
+    "type": "Equipment Adapter",
+    "description": "Fuses with a compatible weapon to unlock its Exilus Mod Slot.",
+    "imageName": "UtilityWeaponModule.png",
+    "masteryReq": 0,
+    "buildPrice": 25000,
+    "buildTime": "23 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Requiem I Relic (Radiant)",
+        "dropChance": 10
+      },
+      {
+        "partName": "Exceptional Sentient Core",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Forma",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "forma",
+    "name": "Forma",
+    "category": "Gear",
+    "type": "Equipment Adapter",
+    "description": "",
+    "imageName": "",
+    "masteryReq": 0,
+    "buildPrice": 0,
+    "skipBuildTimePrice": 0,
+    "components": [],
+    "drops": [
+      {
+        "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "chance": 0.25,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Annihilation (Conclave), Rotation B",
+        "chance": 0.25,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+        "chance": 0.25,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Lunaro (Conclave), Rotation B",
+        "chance": 0.25,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+        "chance": 0.25,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+        "chance": 0.25,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+        "chance": 0.25,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+        "chance": 0.25,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Sedna/Nakki (Arena)",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Sedna/Undine (Arena)",
+        "chance": 0.4,
+        "rarity": "Legendary"
+      }
+    ]
+  },
+  {
+    "id": "gravimag",
+    "name": "Gravimag",
+    "category": "Gear",
+    "type": "Rifle",
+    "description": "Allows archwing guns to be deployed in terrestrial zones. Install this device on archwing guns to compensate for atmospheric and gravitational forces not experienced in space.\nNOTE: Deployment requires gear obtained from the Profit-Taker mission in Fortuna.",
+    "imageName": "HeavyWeaponCatalyst.png",
+    "masteryReq": 0,
+    "buildPrice": 25000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Atmo Systems",
+        "itemCount": 5,
+        "sourceText": "Venus/Orb Vallis (Level 40 - 60 PROFIT-TAKER - PHASE 1), Rotation C",
+        "dropChance": 10
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Gyromag Systems",
+        "itemCount": 10,
+        "sourceText": "Vox Solaris, Operative",
+        "dropChance": 100
+      },
+      {
+        "partName": "Repeller Systems",
+        "itemCount": 2,
+        "sourceText": "Vox Solaris, Hand",
+        "dropChance": 100
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "orokin_catalyst",
+    "name": "Orokin Catalyst",
+    "category": "Gear",
+    "type": "Misc",
+    "description": "Orokin modification technology used to super-charge weaponry. Doubles the available Mod Capacity on a Weapon.",
+    "imageName": "ComponentCatalyst.png",
+    "masteryReq": 0,
+    "buildPrice": 25000,
+    "buildTime": "23 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "The Descendia: Rare Rewards (Steel Path)",
+        "dropChance": 19.36
+      },
+      {
+        "partName": "Control Module",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Gallium",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Morphics",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "orokin_reactor",
+    "name": "Orokin Reactor",
+    "category": "Gear",
+    "type": "Misc",
+    "description": "Reactor used to super-charge Warframes. Doubles the available Mod Capacity on a Warframe, Archwing, and Companions.",
+    "imageName": "ComponentReactor.png",
+    "masteryReq": 0,
+    "buildPrice": 35000,
+    "buildTime": "23 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "The Descendia: Rare Rewards (Steel Path)",
+        "dropChance": 19.36
+      },
+      {
+        "partName": "Morphics",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Neural Sensors",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Neurodes",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Orokin Cell",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "stance_forma",
+    "name": "Stance Forma",
+    "category": "Gear",
+    "type": "Equipment Adapter",
+    "description": "Modifies a Stance slot on a melee weapon to be compatible with any Mod Polarity.",
+    "imageName": "StanceForma.png",
+    "masteryReq": 0,
+    "buildPrice": 100000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Argon Crystal",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      },
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Forma",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Nitain Extract",
+        "itemCount": 5,
+        "sourceText": "Wolf Of Saturn Six",
+        "dropChance": 0.13
+      }
+    ],
+    "drops": []
+  },
+  {
+    "id": "umbra_forma",
+    "name": "Umbra Forma",
+    "category": "Gear",
+    "type": "Equipment Adapter",
+    "description": "Forma that can apply the UMBRA polarity.\n\nThis shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe or Melee Weapon to UMBRA polarity and then resets their affinity to Unranked. This can only be used on max Rank Warframes and Melee Weapons.",
+    "imageName": "FormaUmbra.png",
+    "masteryReq": 0,
+    "buildPrice": 35000,
+    "buildTime": "24 hours",
+    "skipBuildTimePrice": 10,
+    "components": [
+      {
+        "partName": "Blueprint",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Forma",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "partName": "Kuva",
+        "itemCount": 500,
+        "sourceText": "Demolisher Bailiff",
+        "dropChance": 100
+      },
+      {
+        "partName": "Nano Spores",
+        "itemCount": 1100,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 12.65
+      },
+      {
+        "partName": "Neurodes",
+        "itemCount": 1,
+        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
+        "dropChance": 0.25
+      }
+    ],
+    "drops": []
+  }
+]

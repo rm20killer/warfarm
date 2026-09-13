@@ -1,0 +1,23 @@
+{
+  "gameVersion": "Update 43: Jade Shadows: Constellations",
+  "gameBuild": "v2026.08.19",
+  "versionDisplay": "Warframe Update 43: Jade Shadows: Constellations",
+  "lastSyncedAt": "2026-09-13T11:45:59.354Z",
+  "warframesCount": 121,
+  "weaponsCount": 612,
+  "modsCount": 1806,
+  "resourcesCount": 600,
+  "weaponRecipesCount": 603,
+  "gearCount": 210,
+  "arcanesCount": 172,
+  "relicsCount": 778,
+  "enemyDropTablesCount": 996,
+  "incarnonGenesesCount": 45,
+  "wikiResourcesGathered": 507,
+  "totalCount": 4902,
+  "sources": [
+    "https://wiki.warframe.com/",
+    "https://github.com/WFCD/warframe-items",
+    "https://github.com/WFCD/warframe-drop-data"
+  ]
+}

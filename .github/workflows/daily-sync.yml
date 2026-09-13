@@ -13,38 +13,19 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm ci
-
-      - name: Restore previous data
-        uses: actions/cache/restore@v4
-        with:
-          path: src/shared/data/generated
-          key: generated-data-cache
-
-      - name: Hash data before sync
-        id: hash-before
-        run: |
-          if [ -d "src/shared/data/generated" ]; then
-            echo "hash=$(find src/shared/data/generated -type f -exec md5sum {} + | sort | md5sum | awk '{ print $1 }')" >> $GITHUB_OUTPUT
-          else
-            echo "hash=none" >> $GITHUB_OUTPUT
-          fi
+        run: npm ci --legacy-peer-deps
 
       - name: Run sync script to fetch data
         run: npm run sync:data
         
-      - name: Hash data after sync
-        id: hash-after
+      - name: Check for file changes
+        id: git-check
         run: |
-          echo "hash=$(find src/shared/data/generated -type f -exec md5sum {} + | sort | md5sum | awk '{ print $1 }')" >> $GITHUB_OUTPUT
-
-      - name: Save new data cache
-        if: steps.hash-before.outputs.hash != steps.hash-after.outputs.hash
-        uses: actions/cache/save@v4
-        with:
-          path: src/shared/data/generated
-          key: generated-data-cache-${{ github.run_id }}
+          # If your sync script generates a file in /data, check if it's modified
+          if [[ -n $(git status -s) ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
 
       - name: Trigger Cloudflare Pages Rebuild
-        if: steps.hash-before.outputs.hash != steps.hash-after.outputs.hash
+        if: steps.git-check.outputs.changes == 'true'
         run: curl -X POST "${{ secrets.CF_DEPLOY_HOOK }}"

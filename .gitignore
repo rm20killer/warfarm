@@ -9,7 +9,6 @@ dist/
 Thumbs.db
 
 /warframe-obsidian-vault
-/src/shared/data/generated
 
 # wrangler files
 .wrangler
