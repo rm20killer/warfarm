@@ -16,3 +16,4 @@ Thumbs.db
 !.dev.vars.example
 .env*
 !.env.example
+src/shared/data/generated/sync-meta.json
