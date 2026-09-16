@@ -11,12 +11,19 @@ export interface RelicRewardEntry {
   radiantChance: number;
 }
 
+export interface RelicDropLocation {
+  location: string;
+  rarity?: string;
+  chance?: number;
+}
+
 export interface RelicEntry {
   id: string;
   era: RelicEra;
   name: string;
   fullName: string;
   vaulted?: boolean;
+  drops?: RelicDropLocation[];
   rewards: RelicRewardEntry[];
 }
 
@@ -27,6 +34,7 @@ export interface PrimeComponentRelicDrop {
   relicName: string;
   fullName: string;
   vaulted?: boolean;
+  drops?: RelicDropLocation[];
   rarity: DropRarity;
   intactChance: number;
   radiantChance: number;
@@ -109,10 +117,15 @@ export function getRelicDropsForPrimeItem(primeItemName: string): Record<string,
   const result: Record<string, PrimeComponentRelicDrop[]> = {};
   const query = primeItemName.trim().toLowerCase();
 
+  if (!query || query === 'prime' || query.length < 3) {
+    return result;
+  }
+
   for (const relic of ALL_RELICS) {
     for (const rw of relic.rewards) {
       const rwLower = rw.itemName.toLowerCase();
-      if (rwLower.includes(query)) {
+      // Ensure match occurs as a whole item prefix or word boundary, not arbitrary substring
+      if (rwLower.startsWith(query + ' ') || rwLower === query || rwLower.includes(' ' + query + ' ')) {
         let partName = rw.itemName;
         const primeIdx = rwLower.indexOf(query);
         if (primeIdx !== -1) {
@@ -133,6 +146,7 @@ export function getRelicDropsForPrimeItem(primeItemName: string): Record<string,
           relicName: relic.name,
           fullName: relic.fullName,
           vaulted: !!relic.vaulted,
+          drops: relic.drops,
           rarity: rw.rarity,
           intactChance: rw.intactChance,
           radiantChance: rw.radiantChance,

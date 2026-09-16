@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import syncMetaJson from "../../shared/data/generated/sync-meta.json";
+import { theme } from "../styles/theme";
 
 interface AboutModalProps {
   isOpen: boolean;
@@ -25,6 +26,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
   return (
     <div style={styles.backdrop} onClick={onClose} role="presentation">
       <div
+        className="modal-dialog-responsive"
         style={styles.dialog}
         onClick={(e) => e.stopPropagation()}
         role="dialog"
@@ -102,7 +104,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
 
           {/* Section 3: Author & Support Links */}
           <section style={styles.section}>
-            <h3 style={styles.sectionHeading}>Developer &amp; Links</h3>
+            <h3 style={styles.sectionHeading}>Developer & Links</h3>
             <div style={styles.linkGrid}>
               <a
                 href="https://github.com/rm20killer/warfarm"
@@ -141,7 +143,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
           {/* Section 4: Sources */}
           <section style={styles.section}>
             <h3 style={styles.sectionHeading}>
-              Data Sources &amp; Community Repositories
+              Data Sources & Community Repositories
             </h3>
             <ul style={styles.sourceList}>
               <li style={styles.sourceItem}>
@@ -206,7 +208,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
           {/* Section 5: Disclaimer */}
           <section style={styles.disclaimerBox}>
             <h4 style={styles.disclaimerHeading}>
-              Disclaimer &amp; Trademarks
+              Disclaimer & Trademarks
             </h4>
             <p style={styles.disclaimerText}>
               This project is an unofficial fan creation and is not affiliated
@@ -229,7 +231,7 @@ const styles: Record<string, React.CSSProperties> = {
     left: 0,
     right: 0,
     bottom: 0,
-    background: "rgba(6, 7, 12, 0.8)",
+    background: theme.colors.bgModalBackdrop,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -238,24 +240,24 @@ const styles: Record<string, React.CSSProperties> = {
     boxSizing: "border-box",
   },
   dialog: {
-    background: "#12141e",
-    border: "1px solid #283048",
-    borderRadius: 8,
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderStrong}`,
+    borderRadius: theme.radii.lg,
     width: "100%",
     maxWidth: 640,
     maxHeight: "90vh",
     overflowY: "auto",
     padding: 24,
-    boxShadow: "0 16px 40px rgba(0, 0, 0, 0.7)",
+    boxShadow: theme.shadows.lg,
     boxSizing: "border-box",
   },
   header: {
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center", // Centers close button vertically with the title
+    alignItems: "center",
     marginBottom: 20,
     paddingBottom: 12,
-    borderBottom: "1px solid #22283c",
+    borderBottom: `1px solid ${theme.colors.borderDefault}`,
   },
   headerLeft: {
     display: "flex",
@@ -265,23 +267,23 @@ const styles: Record<string, React.CSSProperties> = {
   title: {
     fontSize: 18,
     fontWeight: 700,
-    color: "#f0f2fa",
+    color: theme.colors.textHighlight,
     margin: 0,
   },
   versionBadge: {
     fontSize: 11,
     fontWeight: 700,
     padding: "2px 8px",
-    background: "#222538",
-    color: "#ffd700",
-    borderRadius: 4,
-    border: "1px solid #ffd70033",
+    background: theme.colors.bgCardElevated,
+    color: theme.colors.gold,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.goldBorder}`,
     whiteSpace: "nowrap",
   },
   closeBtn: {
     background: "transparent",
     border: "none",
-    color: "#98a4c8",
+    color: theme.colors.textSecondary,
     fontSize: 24,
     cursor: "pointer",
     padding: "0 6px",
@@ -303,7 +305,7 @@ const styles: Record<string, React.CSSProperties> = {
   sectionHeading: {
     fontSize: 13,
     fontWeight: 700,
-    color: "#c4d0ec",
+    color: theme.colors.textHighlight,
     textTransform: "uppercase",
     letterSpacing: "0.04em",
     margin: 0,
@@ -311,13 +313,13 @@ const styles: Record<string, React.CSSProperties> = {
   text: {
     fontSize: 13.5,
     lineHeight: 1.6,
-    color: "#b0b8d4",
+    color: theme.colors.textPrimary,
     margin: 0,
   },
   syncCard: {
-    background: "#0d0f18",
-    border: "1px solid #1e2436",
-    borderRadius: 6,
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: "14px 16px",
     display: "flex",
     flexDirection: "column",
@@ -335,7 +337,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   metaLabel: {
     fontSize: 11,
-    color: "#7e8aa8",
+    color: theme.colors.textMuted,
     textTransform: "uppercase",
     fontWeight: 600,
     letterSpacing: "0.03em",
@@ -343,31 +345,36 @@ const styles: Record<string, React.CSSProperties> = {
   metaVal: {
     fontSize: 13,
     fontWeight: 600,
-    color: "#d4dcf4",
+    color: theme.colors.textHighlight,
+  },
+  metaUnit: {
+    fontSize: 11,
+    color: theme.colors.textSecondary,
+    fontWeight: 400,
   },
   cliSection: {
     display: "flex",
     flexDirection: "column",
     gap: 6,
-    borderTop: "1px solid #181d2c",
+    borderTop: `1px solid ${theme.colors.borderSubtle}`,
     paddingTop: 12,
   },
   cliLabel: {
     fontSize: 11,
     fontWeight: 600,
-    color: "#8e9ec4",
+    color: theme.colors.textSecondary,
   },
   codeBlock: {
     display: "flex",
     flexDirection: "column",
     gap: 6,
-    background: "#07080c",
-    border: "1px solid #161824",
-    borderRadius: 4,
+    background: theme.colors.bgNavbar,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.sm,
     padding: 10,
     fontSize: 12,
-    fontFamily: "monospace",
-    color: "#8ec48e",
+    fontFamily: theme.typography.monoFontFamily,
+    color: theme.colors.green,
     lineHeight: 1.5,
     overflowX: "auto",
     whiteSpace: "nowrap",
@@ -382,16 +389,16 @@ const styles: Record<string, React.CSSProperties> = {
     flexDirection: "column",
     gap: 4,
     padding: "12px 14px",
-    background: "#161a28",
-    border: "1px solid #283452",
-    borderRadius: 6,
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.md,
     textDecoration: "none",
     transition: "border-color 0.15s ease, background 0.15s ease",
     overflow: "hidden",
   },
   cardLabel: {
     fontSize: 11,
-    color: "#8e9ec4",
+    color: theme.colors.textSecondary,
     textTransform: "uppercase",
     fontWeight: 600,
     letterSpacing: "0.03em",
@@ -399,19 +406,19 @@ const styles: Record<string, React.CSSProperties> = {
   cardTitle: {
     fontSize: 13,
     fontWeight: 600,
-    color: "#68d4ff",
+    color: theme.colors.accent,
     whiteSpace: "nowrap",
     overflow: "hidden",
     textOverflow: "ellipsis",
   },
-bmcCardLink: {
+  bmcCardLink: {
     display: 'flex',
     flexDirection: 'column',
     gap: 4,
     padding: '12px 14px',
     background: '#f7d501', 
     border: '1px solid #8b8454ff',
-    borderRadius: 6,
+    borderRadius: theme.radii.md,
     textDecoration: 'none',
   },
   bmcCardLabel: {
@@ -436,29 +443,29 @@ bmcCardLink: {
   sourceItem: {
     fontSize: 13.5,
     lineHeight: 1.5,
-    color: "#b8c0d8",
+    color: theme.colors.textPrimary,
   },
   inlineLink: {
-    color: "#68d4ff",
+    color: theme.colors.accent,
     textDecoration: "none",
     fontWeight: 600,
   },
   sourceDesc: {
     display: "block",
     fontSize: 12.5,
-    color: "#8e9ec4",
+    color: theme.colors.textSecondary,
     marginTop: 4,
   },
   disclaimerBox: {
-    background: "#0d0f18",
-    border: "1px solid #202434",
-    borderRadius: 6,
+    background: theme.colors.bgNavbar,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: "14px 16px",
   },
   disclaimerHeading: {
     fontSize: 11,
     fontWeight: 700,
-    color: "#8e9ec4",
+    color: theme.colors.textSecondary,
     textTransform: "uppercase",
     letterSpacing: "0.04em",
     margin: "0 0 8px 0",
@@ -466,7 +473,7 @@ bmcCardLink: {
   disclaimerText: {
     fontSize: 12,
     lineHeight: 1.5,
-    color: "#808aa8",
+    color: theme.colors.textMuted,
     margin: 0,
   },
 };

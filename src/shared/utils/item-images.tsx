@@ -4,6 +4,7 @@ import weaponsJson from '../data/generated/all-weapons.json';
 import modsJson from '../data/generated/all-mods.json';
 import gearJson from '../data/generated/all-gear.json';
 import resourcesJson from '../data/generated/all-resources.json';
+import arcanesJson from '../data/generated/all-arcanes.json';
 
 const itemImageMap = new Map<string, string>();
 
@@ -30,6 +31,7 @@ registerItems(weaponsJson);
 registerItems(modsJson);
 registerItems(gearJson);
 registerItems(resourcesJson);
+registerItems(arcanesJson);
 
 export function getItemImageName(itemName: string): string | undefined {
   if (!itemName) return undefined;

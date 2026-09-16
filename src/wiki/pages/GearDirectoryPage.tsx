@@ -28,6 +28,8 @@ import {
 } from '../storage';
 import { ItemThumbnail } from '../../shared/utils/item-images';
 import { usePageMeta } from '../../shared/utils/usePageMeta';
+import { theme } from '../styles/theme';
+import { directoryStyles } from '../styles/directoryPageStyles';
 
 export type GearTab = 'Warframes' | 'Weapons' | 'Gear' | 'Companions' | 'Archwing';
 
@@ -69,6 +71,71 @@ export function getWeaponLineage(name: string, subType?: string): 'Incarnon' | '
   return null;
 }
 
+export function getGearCardBorderStyle(item: { name: string; subType?: string }): React.CSSProperties {
+  const nameLower = item.name.toLowerCase();
+  const subLower = (item.subType || '').toLowerCase();
+  const lin = getWeaponLineage(item.name, item.subType);
+
+  if (lin === 'Incarnon' || nameLower.includes('incarnon') || subLower.includes('incarnon')) {
+    return {
+      borderColor: theme.colors.lineageIncarnonBorder,
+      borderTop: `2px solid ${theme.colors.lineageIncarnon}`,
+    };
+  }
+  if (lin === 'Kuva' || nameLower.includes('kuva') || subLower.includes('kuva')) {
+    return {
+      borderColor: theme.colors.lineageKuvaBorder,
+      borderTop: `2px solid ${theme.colors.lineageKuva}`,
+    };
+  }
+  if (lin === 'Tenet' || nameLower.includes('tenet') || subLower.includes('tenet')) {
+    return {
+      borderColor: theme.colors.lineageTenetBorder,
+      borderTop: `2px solid ${theme.colors.lineageTenet}`,
+    };
+  }
+  if (lin === 'Coda' || nameLower.includes('coda') || subLower.includes('coda')) {
+    return {
+      borderColor: theme.colors.lineageCodaBorder,
+      borderTop: `2px solid ${theme.colors.lineageCoda}`,
+    };
+  }
+  if (nameLower.includes('prime') || subLower.includes('prime')) {
+    return {
+      borderColor: theme.colors.goldBorder,
+      borderTop: `2px solid ${theme.colors.gold}`,
+    };
+  }
+  if (nameLower.includes('prisma') || subLower.includes('prisma')) {
+    return {
+      borderColor: '#205468',
+      borderTop: '2px solid #52e0e0',
+    };
+  }
+  if (nameLower.includes('vandal') || subLower.includes('vandal')) {
+    return {
+      borderColor: '#244c68',
+      borderTop: '2px solid #68b8e0',
+    };
+  }
+  if (nameLower.includes('wraith') || subLower.includes('wraith')) {
+    return {
+      borderColor: '#682020',
+      borderTop: '2px solid #e05050',
+    };
+  }
+  if (nameLower.includes('archon') || subLower.includes('archon')) {
+    return {
+      borderColor: theme.colors.goldBorder,
+      borderTop: `2px solid ${theme.colors.orange}`,
+    };
+  }
+
+  return {
+    borderColor: theme.colors.borderDefault,
+  };
+}
+
 interface GearCardItem {
   id: string;
   name: string;
@@ -106,8 +173,15 @@ export function GearDirectoryPage() {
   const [selectedWeaponType, setSelectedWeaponType] = useState('All');
   const [selectedLineage, setSelectedLineage] = useState<SpecialLineage>(paramLineage || 'All');
   const [weaponSort, setWeaponSort] = useState<WeaponSortOption>('Default');
+  const [showFilters, setShowFilters] = useState<boolean>(false);
   const [targetIds, setTargetIds] = useState<Set<string>>(new Set());
   const [visibleCount, setVisibleCount] = useState<number>(36);
+
+  const activeFilterCount =
+    (selectedAcquisition !== 'All' ? 1 : 0) +
+    (activeTab === 'Weapons' && selectedLineage !== 'All' ? 1 : 0) +
+    (activeTab === 'Weapons' && selectedWeaponType !== 'All' ? 1 : 0) +
+    (activeTab === 'Weapons' && weaponSort !== 'Default' ? 1 : 0);
 
   useEffect(() => {
     setVisibleCount(36);
@@ -268,7 +342,7 @@ export function GearDirectoryPage() {
   };
 
   return (
-    <div style={styles.container}>
+    <div className="page-container-responsive" style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.title}>Warframes & Weapons Directory</h1>
         <p style={styles.subtitle}>
@@ -351,9 +425,9 @@ export function GearDirectoryPage() {
         </button>
       </div>
 
-      {/* Filter and Search Controls */}
-      <div style={styles.filterSection}>
-        <div style={styles.searchRow}>
+      {/* Search Controls */}
+      <div style={styles.searchControlsRow}>
+        <div style={styles.searchBarWrapper}>
           <input
             type="text"
             placeholder={`Search ${activeTab.toLowerCase()} by name, boss, node, component...`}
@@ -364,8 +438,9 @@ export function GearDirectoryPage() {
           />
           {searchQuery && (
             <button
+              type="button"
               onClick={() => setSearchQuery('')}
-              style={styles.clearButton}
+              style={styles.clearSearchBtn}
               aria-label="Clear search"
             >
               Clear
@@ -373,13 +448,57 @@ export function GearDirectoryPage() {
           )}
         </div>
 
-        <div style={styles.filterRow}>
+        <button
+          type="button"
+          onClick={() => setShowFilters((prev) => !prev)}
+          style={{
+            ...styles.filterToggleBtn,
+            backgroundColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBg : theme.colors.bgInput,
+            borderColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBorder : theme.colors.borderDefault,
+            color: showFilters || activeFilterCount > 0 ? theme.colors.textHighlight : theme.colors.textSecondary,
+          }}
+          aria-expanded={showFilters}
+        >
+          <span style={{ fontSize: 13 }}>⚙</span>
+          <span>Filters</span>
+          {activeFilterCount > 0 && (
+            <span style={styles.filterCountBadge}>{activeFilterCount}</span>
+          )}
+          <span style={{ fontSize: 10, color: theme.colors.textMuted }}>
+            {showFilters ? '▲' : '▼'}
+          </span>
+        </button>
+
+        {activeFilterCount > 0 && (
+          <button
+            type="button"
+            onClick={() => {
+              setSelectedAcquisition('All');
+              setSelectedLineage('All');
+              setSelectedWeaponType('All');
+              setWeaponSort('Default');
+            }}
+            style={styles.resetFiltersQuickBtn}
+          >
+            Reset
+          </button>
+        )}
+      </div>
+
+      {/* Collapsible Filter Drawer */}
+      {showFilters && (
+        <div style={styles.filterDrawerCard}>
+          <div style={styles.filterDrawerHeader}>
+            <span style={styles.filterDrawerTitle}>Filter {activeTab}</span>
+          </div>
+
           <div style={styles.filterGroup}>
             <label style={styles.filterLabel}>Acquisition Type:</label>
-            <div style={styles.pillContainer}>
+            <div style={styles.filterPills}>
               {acquisitionTypes.map((type) => (
                 <button
                   key={type}
+                  type="button"
                   onClick={() => setSelectedAcquisition(type)}
                   style={{
                     ...styles.filterPill,
@@ -396,18 +515,19 @@ export function GearDirectoryPage() {
             <>
               <div style={styles.filterGroup}>
                 <label style={styles.filterLabel}>Special Lineage:</label>
-                <div style={styles.pillContainer}>
+                <div style={styles.filterPills}>
                   {(['All', 'Incarnon', 'Coda', 'Tenet', 'Kuva'] as const).map((type) => (
                     <button
                       key={type}
+                      type="button"
                       onClick={() => setSelectedLineage(type)}
                       style={{
                         ...styles.filterPill,
                         ...(selectedLineage === type ? styles.filterPillActive : {}),
-                        ...(type === 'Incarnon' && selectedLineage === type ? { borderColor: '#b877f0', color: '#e8d4ff', background: '#2c1844' } : {}),
-                        ...(type === 'Coda' && selectedLineage === type ? { borderColor: '#ff6b81', color: '#ffd6dc', background: '#38161e' } : {}),
-                        ...(type === 'Tenet' && selectedLineage === type ? { borderColor: '#4fc3f7', color: '#e1f5fe', background: '#102a3a' } : {}),
-                        ...(type === 'Kuva' && selectedLineage === type ? { borderColor: '#e53935', color: '#ffebee', background: '#361414' } : {}),
+                        ...(type === 'Incarnon' && selectedLineage === type ? { borderColor: theme.colors.lineageIncarnonBorder, color: theme.colors.lineageIncarnon, background: theme.colors.lineageIncarnonBg } : {}),
+                        ...(type === 'Coda' && selectedLineage === type ? { borderColor: theme.colors.lineageCodaBorder, color: theme.colors.lineageCoda, background: theme.colors.lineageCodaBg } : {}),
+                        ...(type === 'Tenet' && selectedLineage === type ? { borderColor: theme.colors.lineageTenetBorder, color: theme.colors.lineageTenet, background: theme.colors.lineageTenetBg } : {}),
+                        ...(type === 'Kuva' && selectedLineage === type ? { borderColor: theme.colors.lineageKuvaBorder, color: theme.colors.lineageKuva, background: theme.colors.lineageKuvaBg } : {}),
                       }}
                     >
                       {type === 'All'
@@ -420,10 +540,11 @@ export function GearDirectoryPage() {
 
               <div style={styles.filterGroup}>
                 <label style={styles.filterLabel}>Weapon Class:</label>
-                <div style={styles.pillContainer}>
+                <div style={styles.filterPills}>
                   {weaponTypes.map((type) => (
                     <button
                       key={type}
+                      type="button"
                       onClick={() => setSelectedWeaponType(type)}
                       style={{
                         ...styles.filterPill,
@@ -457,25 +578,69 @@ export function GearDirectoryPage() {
               </div>
             </>
           )}
+
+          <div style={styles.filterDrawerFooter}>
+            <span style={{ fontSize: 12, color: theme.colors.textSecondary }}>
+              {activeFilterCount > 0 ? `${activeFilterCount} active filters applied` : 'Showing all items'}
+            </span>
+            <div style={{ display: 'flex', gap: 8 }}>
+              {activeFilterCount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSelectedAcquisition('All');
+                    setSelectedLineage('All');
+                    setSelectedWeaponType('All');
+                    setWeaponSort('Default');
+                  }}
+                  style={styles.resetFiltersBtn}
+                >
+                  Reset All
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => setShowFilters(false)}
+                style={styles.applyFiltersBtn}
+              >
+                Done
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Results Header */}
-      <div style={styles.resultsMeta}>
-        <span>
-          Showing {Math.min(visibleCount, filteredItems.length)} of {filteredItems.length} {activeTab.toLowerCase()}
+      <div style={styles.resultsInfoBar}>
+        <span style={styles.resultsCount}>
+          Showing <strong>{Math.min(visibleCount, filteredItems.length)}</strong> of {filteredItems.length} {activeTab.toLowerCase()}
           {activeTab === 'Weapons' && selectedLineage !== 'All' && ` (${selectedLineage})`}
         </span>
+        {(selectedAcquisition !== 'All' || (activeTab === 'Weapons' && (selectedWeaponType !== 'All' || selectedLineage !== 'All' || weaponSort !== 'Default')) || searchQuery) && (
+          <button
+            type="button"
+            style={styles.resetFiltersBtn}
+            onClick={() => {
+              setSearchQuery('');
+              setSelectedAcquisition('All');
+              setSelectedLineage('All');
+              setSelectedWeaponType('All');
+              setWeaponSort('Default');
+            }}
+          >
+            Reset All Filters
+          </button>
+        )}
       </div>
 
       {/* Catalog Grid */}
-      <div style={styles.cardGrid}>
+      <div className="card-grid-responsive" style={styles.cardGrid}>
         {filteredItems.slice(0, visibleCount).map((item) => {
           const isTargeted = targetIds.has(item.id);
           const wikiUrl = `https://wiki.warframe.com/w/${encodeURIComponent(item.name.replace(/ /g, '_'))}`;
 
           return (
-            <article key={item.id} style={styles.card}>
+            <article key={item.id} style={{ ...styles.card, ...getGearCardBorderStyle(item) }}>
               <div style={styles.cardHeader}>
                 <ItemThumbnail name={item.name} size={56} style={{ marginRight: 12 }} />
                 <div style={{ flex: 1, minWidth: 0 }}>
@@ -484,28 +649,9 @@ export function GearDirectoryPage() {
                     {activeTab === 'Weapons' && (() => {
                       const lin = getWeaponLineage(item.name, item.subType);
                       if (!lin) return null;
-                      const badgeColors: Record<string, { bg: string; color: string; border: string }> = {
-                        Incarnon: { bg: '#2d1a44', color: '#e4b8ff', border: '#5b328a' },
-                        Coda: { bg: '#36151d', color: '#ffb3c0', border: '#782637' },
-                        Tenet: { bg: '#10283c', color: '#8ecbfc', border: '#235178' },
-                        Kuva: { bg: '#351414', color: '#ff9e9e', border: '#782828' },
-                      };
-                      const bStyle = badgeColors[lin];
                       return (
-                        <span
-                          style={{
-                            display: 'inline-block',
-                            fontSize: 10.5,
-                            fontWeight: 700,
-                            letterSpacing: '0.4px',
-                            padding: '2px 7px',
-                            borderRadius: 3,
-                            background: bStyle.bg,
-                            color: bStyle.color,
-                            border: `1px solid ${bStyle.border}`,
-                          }}
-                        >
-                          {lin.toUpperCase()}
+                        <span style={theme.helpers.getLineageBadgeStyle(lin)}>
+                          {lin}
                         </span>
                       );
                     })()}
@@ -673,6 +819,20 @@ export function GearDirectoryPage() {
 }
 
 const styles: Record<string, React.CSSProperties> = {
+  ...directoryStyles,
+  cardGrid: directoryStyles.cardGrid3Col,
+  tabBar: directoryStyles.categoryPillsStrip,
+  tabButton: directoryStyles.categoryPill,
+  tabButtonActive: directoryStyles.categoryPillActive,
+  emptyState: directoryStyles.emptyNoticeBox,
+  emptyTitle: {
+    fontSize: 16,
+    fontWeight: 600,
+    color: theme.colors.textHighlight,
+    margin: '0 0 8px 0',
+  },
+  emptyText: directoryStyles.emptyNoticeText,
+  resultsMeta: directoryStyles.resultsInfoBar,
   paginationArea: {
     display: 'flex',
     justifyContent: 'center',
@@ -682,187 +842,14 @@ const styles: Record<string, React.CSSProperties> = {
     marginBottom: 40,
     flexWrap: 'wrap',
   },
-  loadMoreBtn: {
-    padding: '10px 20px',
-    background: '#1d2334',
-    border: '1px solid #3c4f74',
-    borderRadius: 4,
-    color: '#a0c0f0',
-    fontSize: 14,
-    fontWeight: 600,
-    cursor: 'pointer',
-    transition: 'all 0.15s ease',
-  },
   loadAllBtn: {
     padding: '10px 18px',
-    background: '#14141e',
-    border: '1px solid #28283c',
-    borderRadius: 4,
-    color: '#8888a4',
+    background: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.sm,
+    color: theme.colors.textSecondary,
     fontSize: 13,
     cursor: 'pointer',
-  },
-  container: {
-    padding: '16px 18px 60px 18px',
-    maxWidth: 1040,
-    margin: '0 auto',
-  },
-  header: {
-    backgroundColor: '#151722',
-    border: '1px solid #232738',
-    borderRadius: 8,
-    padding: '16px 20px',
-    marginBottom: 16,
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 700,
-    color: '#f0f0f8',
-    margin: '0 0 4px 0',
-  },
-  subtitle: {
-    fontSize: 13,
-    color: '#888ca8',
-    margin: 0,
-    lineHeight: 1.4,
-  },
-  tabBar: {
-    display: 'flex',
-    gap: 8,
-    borderBottom: '1px solid #1e1e2c',
-    marginBottom: 16,
-  },
-  tabButton: {
-    background: 'transparent',
-    border: 'none',
-    borderBottom: '2px solid transparent',
-    color: '#8888a2',
-    padding: '10px 18px',
-    fontSize: 14,
-    fontWeight: 600,
-    cursor: 'pointer',
-    transition: 'all 0.15s ease',
-  },
-  tabButtonActive: {
-    color: '#ffd700',
-    borderBottom: '2px solid #ffd700',
-  },
-  filterSection: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 12,
-    padding: 16,
-    background: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
-    marginBottom: 16,
-  },
-  searchRow: {
-    display: 'flex',
-    gap: 8,
-  },
-  searchInput: {
-    flex: 1,
-    padding: '10px 14px',
-    background: '#0e0e12',
-    border: '1px solid #2a2a3c',
-    borderRadius: 4,
-    color: '#f0f0f8',
-    fontSize: 14,
-    outline: 'none',
-  },
-  clearButton: {
-    padding: '0 14px',
-    background: '#1a1a24',
-    border: '1px solid #2a2a3c',
-    borderRadius: 4,
-    color: '#a0a0b8',
-    fontSize: 13,
-    cursor: 'pointer',
-  },
-  filterRow: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: 16,
-  },
-  filterGroup: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 6,
-  },
-  filterLabel: {
-    fontSize: 12,
-    fontWeight: 600,
-    color: '#8888a2',
-    textTransform: 'uppercase',
-    letterSpacing: '0.05em',
-  },
-  pillContainer: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: 6,
-  },
-  filterPill: {
-    background: '#1a1a24',
-    border: '1px solid #2a2a3c',
-    borderRadius: 4,
-    color: '#a0a0b8',
-    padding: '6px 12px',
-    fontSize: 12,
-    cursor: 'pointer',
-    transition: 'all 0.15s ease',
-    display: 'inline-flex',
-    alignItems: 'center',
-    minHeight: 34,
-  },
-  filterPillActive: {
-    background: '#242b3d',
-    borderColor: '#4d648d',
-    color: '#f0f0f8',
-    fontWeight: 600,
-  },
-  sortSelect: {
-    padding: '6px 12px',
-    background: '#1a1a24',
-    border: '1px solid #2a2a3c',
-    borderRadius: 4,
-    color: '#e4e4f0',
-    fontSize: 12.5,
-    fontWeight: 500,
-    outline: 'none',
-    cursor: 'pointer',
-    minHeight: 34,
-  },
-  resultsMeta: {
-    fontSize: 13,
-    color: '#8e98b4',
-    marginBottom: 16,
-  },
-  cardGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(310px, 1fr))',
-    gap: 16,
-  },
-  card: {
-    background: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
-    padding: 16,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 12,
-  },
-  cardHeader: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    gap: 12,
-  },
-  cardTitle: {
-    fontSize: 18,
-    fontWeight: 700,
-    color: '#f0f0f8',
-    margin: '0 0 6px 0',
   },
   cardMetaRow: {
     display: 'flex',
@@ -873,53 +860,31 @@ const styles: Record<string, React.CSSProperties> = {
   subTypeBadge: {
     fontSize: 11,
     padding: '2px 6px',
-    background: '#1d2130',
-    border: '1px solid #2e3852',
-    color: '#8e9ec4',
-    borderRadius: 2,
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    color: theme.colors.textSecondary,
+    borderRadius: theme.radii.sm,
   },
   acquisitionBadge: {
     fontSize: 11,
     padding: '2px 6px',
-    background: '#201f16',
-    border: '1px solid #4a4524',
-    color: '#d4c264',
-    borderRadius: 2,
+    background: theme.colors.goldBg,
+    border: `1px solid ${theme.colors.goldBorder}`,
+    color: theme.colors.gold,
+    borderRadius: theme.radii.sm,
   },
   mrBadge: {
     fontSize: 11,
     padding: '2px 6px',
-    background: '#1b1b26',
-    border: '1px solid #2f2f45',
-    color: '#a0a0b8',
-    borderRadius: 2,
-  },
-  targetBtn: {
-    background: '#181c26',
-    border: '1px solid #2f3e5e',
-    color: '#8e9ec4',
-    borderRadius: 3,
-    padding: '4px 10px',
-    fontSize: 11,
-    fontWeight: 600,
-    cursor: 'pointer',
-    whiteSpace: 'nowrap',
-  },
-  targetBtnActive: {
-    background: '#233221',
-    borderColor: '#4d7547',
-    color: '#86d979',
-  },
-  cardDescription: {
-    fontSize: 13,
-    color: '#b0b0c4',
-    margin: 0,
-    lineHeight: 1.45,
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    color: theme.colors.textMuted,
+    borderRadius: theme.radii.sm,
   },
   locationSection: {
-    background: '#0e0e14',
-    border: '1px solid #1a1a24',
-    borderRadius: 3,
+    background: theme.colors.bgNavbar,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.sm,
     padding: '8px 12px',
     display: 'flex',
     flexDirection: 'column',
@@ -931,19 +896,19 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 6,
   },
   locationLabel: {
-    color: '#8e98b4',
+    color: theme.colors.textSecondary,
     fontWeight: 600,
     minWidth: 70,
   },
   locationValue: {
-    color: '#d8d8e6',
+    color: theme.colors.textPrimary,
   },
   generalDropInfo: {
     fontSize: 11,
-    color: '#a0a0b4',
+    color: theme.colors.textSecondary,
     margin: '4px 0 0 0',
     lineHeight: 1.4,
-    borderTop: '1px dashed #1a1a24',
+    borderTop: `1px dashed ${theme.colors.borderSubtle}`,
     paddingTop: 4,
   },
   componentsSection: {
@@ -954,7 +919,7 @@ const styles: Record<string, React.CSSProperties> = {
   componentsTitle: {
     fontSize: 12,
     fontWeight: 600,
-    color: '#8888a2',
+    color: theme.colors.textSecondary,
     margin: 0,
     textTransform: 'uppercase',
     letterSpacing: '0.04em',
@@ -963,9 +928,9 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     flexDirection: 'column',
     gap: 4,
-    background: '#0a0a0e',
-    border: '1px solid #1a1a24',
-    borderRadius: 3,
+    background: theme.colors.bgNavbar,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.sm,
     padding: 8,
   },
   componentItem: {
@@ -976,7 +941,7 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 8,
   },
   componentName: {
-    color: '#e0e0ec',
+    color: theme.colors.textPrimary,
     fontWeight: 500,
   },
   componentSourceWrap: {
@@ -986,18 +951,18 @@ const styles: Record<string, React.CSSProperties> = {
     textAlign: 'right',
   },
   componentSource: {
-    color: '#8888a2',
+    color: theme.colors.textSecondary,
     fontSize: 11,
   },
   componentChance: {
-    color: '#d4c264',
+    color: theme.colors.gold,
     fontSize: 11,
     fontWeight: 600,
   },
   combatSection: {
-    background: '#0e0e14',
-    border: '1px solid #1a1a24',
-    borderRadius: 3,
+    background: theme.colors.bgNavbar,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.sm,
     padding: '6px 10px',
   },
   combatGrid: {
@@ -1007,10 +972,10 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 12,
   },
   statLabel: {
-    color: '#8e98b4',
+    color: theme.colors.textSecondary,
   },
   statVal: {
-    color: '#d8d8e6',
+    color: theme.colors.textPrimary,
     fontWeight: 600,
   },
   variantsSection: {
@@ -1026,59 +991,41 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 6,
   },
   variantLabel: {
-    color: '#8e98b4',
+    color: theme.colors.textSecondary,
     fontWeight: 600,
   },
   variantPill: {
-    background: '#181b24',
-    border: '1px solid #2a3142',
-    color: '#8e9ec4',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    color: theme.colors.textSecondary,
     padding: '1px 6px',
-    borderRadius: 2,
+    borderRadius: theme.radii.sm,
   },
   augmentPill: {
-    background: '#241a20',
-    border: '1px solid #4a2839',
-    color: '#c9789b',
+    background: theme.colors.catWeaponBg,
+    border: `1px solid ${theme.colors.catWeaponBorder}`,
+    color: theme.colors.catWeapon,
     padding: '1px 6px',
-    borderRadius: 2,
+    borderRadius: theme.radii.sm,
     cursor: 'help',
   },
   cardActions: {
     marginTop: 'auto',
     paddingTop: 10,
-    borderTop: '1px solid #1a1a26',
+    borderTop: `1px solid ${theme.colors.borderSubtle}`,
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
   detailLink: {
-    color: '#8e9ec4',
+    color: theme.colors.accent,
     textDecoration: 'none',
     fontSize: 13,
     fontWeight: 600,
   },
   wikiLink: {
-    color: '#8e98b4',
+    color: theme.colors.textSecondary,
     textDecoration: 'none',
     fontSize: 12,
-  },
-  emptyState: {
-    textAlign: 'center',
-    padding: '48px 24px',
-    background: '#12121a',
-    border: '1px solid #1e1e2c',
-    borderRadius: 4,
-  },
-  emptyTitle: {
-    fontSize: 16,
-    fontWeight: 600,
-    color: '#e0e0ec',
-    margin: '0 0 8px 0',
-  },
-  emptyText: {
-    fontSize: 13,
-    color: '#8e98b4',
-    margin: 0,
   },
 };

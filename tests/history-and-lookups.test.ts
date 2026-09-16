@@ -5,7 +5,7 @@ import {
   clearVisitHistory,
   PageVisitHistory,
 } from '../src/wiki/storage';
-import { getRandomLookups } from '../src/wiki/pages/WikiSearchPage';
+import { getRandomLookups } from '../src/wiki/utils/search-lookups';
 
 describe('Randomized Quick Lookups', () => {
   it('generates 8 unique lookup items from the pool', () => {

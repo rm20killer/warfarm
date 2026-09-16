@@ -1,4 +1,5 @@
 import React from 'react';
+import { theme } from '../styles/theme';
 
 interface AppFooterProps {
   onOpenAbout: () => void;
@@ -22,14 +23,14 @@ export function AppFooter({ onOpenAbout }: AppFooterProps) {
                 onClick={onOpenAbout}
                 style={styles.aboutBtn}
               >
-                About &amp; Sync Info
+                About & Sync Info
               </button>
             </div>
           </div>
 
           {/* Column 2: Creator & Support */}
           <div style={styles.column}>
-            <div style={styles.columnTitle}>Project &amp; Author</div>
+            <div style={styles.columnTitle}>Project & Author</div>
             <ul style={styles.linkList}>
               <li>
                 <a
@@ -66,7 +67,7 @@ export function AppFooter({ onOpenAbout }: AppFooterProps) {
 
           {/* Column 3: Data & Wiki Sources */}
           <div style={styles.column}>
-            <div style={styles.columnTitle}>Data &amp; Wiki Sources</div>
+            <div style={styles.columnTitle}>Data & Wiki Sources</div>
             <ul style={styles.linkList}>
               <li>
                 <a
@@ -127,10 +128,10 @@ export function AppFooter({ onOpenAbout }: AppFooterProps) {
 
 const styles: Record<string, React.CSSProperties> = {
   footer: {
-    background: '#08090e',
-    borderTop: '1px solid #181a24',
+    background: theme.colors.bgNavbar,
+    borderTop: `1px solid ${theme.colors.borderSubtle}`,
     padding: '36px 20px 24px 20px',
-    color: '#98a2be',
+    color: theme.colors.textSecondary,
     marginTop: 'auto',
   },
   container: {
@@ -153,13 +154,13 @@ const styles: Record<string, React.CSSProperties> = {
   brandTitle: {
     fontSize: 16,
     fontWeight: 700,
-    color: '#e4e8f8',
+    color: theme.colors.textHighlight,
     letterSpacing: '0.02em',
   },
   description: {
     fontSize: 13,
     lineHeight: 1.5,
-    color: '#8e98b4',
+    color: theme.colors.textSecondary,
     margin: 0,
     maxWidth: 320,
   },
@@ -170,10 +171,10 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: 4,
   },
   aboutBtn: {
-    background: '#161c2c',
-    border: '1px solid #2e3c5a',
-    borderRadius: 6,
-    color: '#8ec4ff',
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderAccent}`,
+    borderRadius: theme.radii.md,
+    color: theme.colors.accent,
     padding: '6px 12px',
     fontSize: 12,
     fontWeight: 600,
@@ -181,10 +182,10 @@ const styles: Record<string, React.CSSProperties> = {
     transition: 'background 0.15s',
   },
   syncBtn: {
-    background: '#12141c',
-    border: '1px solid #222636',
-    borderRadius: 6,
-    color: '#a0a8c4',
+    background: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.md,
+    color: theme.colors.textSecondary,
     padding: '6px 12px',
     fontSize: 12,
     fontWeight: 600,
@@ -193,7 +194,7 @@ const styles: Record<string, React.CSSProperties> = {
   columnTitle: {
     fontSize: 12,
     fontWeight: 700,
-    color: '#c4cce4',
+    color: theme.colors.textHighlight,
     textTransform: 'uppercase',
     letterSpacing: '0.05em',
   },
@@ -207,25 +208,25 @@ const styles: Record<string, React.CSSProperties> = {
   },
   link: {
     fontSize: 13,
-    color: '#a0accc',
+    color: theme.colors.textPrimary,
     textDecoration: 'none',
     transition: 'color 0.15s',
   },
   supportLink: {
     fontSize: 13,
-    color: '#ffd580',
+    color: theme.colors.gold,
     fontWeight: 600,
     textDecoration: 'none',
     transition: 'color 0.15s',
   },
   disclaimerRow: {
-    borderTop: '1px solid #141722',
+    borderTop: `1px solid ${theme.colors.borderSubtle}`,
     paddingTop: 18,
   },
   disclaimerText: {
     fontSize: 11.5,
     lineHeight: 1.6,
-    color: '#8e98b4',
+    color: theme.colors.textMuted,
     margin: 0,
   },
 };

@@ -4,6 +4,8 @@ import { RelicEra, DropRarity } from '../../shared/types/warframe';
 import { getBestRelicSpots } from '../../shared/api/drop-data';
 import { getAllRelics, RelicEntry, RelicRewardEntry, RelicVaultFilter } from '../../shared/data/relic-database';
 import { usePageMeta } from '../../shared/utils/usePageMeta';
+import { theme } from '../styles/theme';
+import { directoryStyles } from '../styles/directoryPageStyles';
 
 const ERAS: (RelicEra | 'All')[] = ['All', 'Lith', 'Meso', 'Neo', 'Axi', 'Requiem'];
 const VAULT_FILTERS: { label: string; value: RelicVaultFilter }[] = [
@@ -13,40 +15,34 @@ const VAULT_FILTERS: { label: string; value: RelicVaultFilter }[] = [
 ];
 
 function getRarityBadgeStyle(rarity?: DropRarity): React.CSSProperties {
-  const r = (rarity || '').toLowerCase();
-  if (r.includes('rare')) {
-    return {
-      display: 'inline-block',
-      padding: '2px 7px',
-      borderRadius: 4,
-      fontSize: 11,
-      fontWeight: 600,
-      backgroundColor: '#ffd70018',
-      border: '1px solid #ffd70044',
-      color: '#ffd700',
-    };
+  return theme.helpers.getRarityBadgeStyle(rarity);
+}
+
+export function getRelicCardBorderStyle(era: string): React.CSSProperties {
+  const e = (era || '').toLowerCase();
+  let border = theme.colors.borderDefault;
+  let topBorder = theme.colors.accent;
+
+  if (e === 'lith') {
+    border = theme.colors.relicLithBorder;
+    topBorder = theme.colors.relicLith;
+  } else if (e === 'meso') {
+    border = theme.colors.relicMesoBorder;
+    topBorder = theme.colors.relicMeso;
+  } else if (e === 'neo') {
+    border = theme.colors.relicNeoBorder;
+    topBorder = theme.colors.relicNeo;
+  } else if (e === 'axi') {
+    border = theme.colors.relicAxiBorder;
+    topBorder = theme.colors.relicAxi;
+  } else if (e === 'requiem') {
+    border = theme.colors.relicRequiemBorder;
+    topBorder = theme.colors.relicRequiem;
   }
-  if (r.includes('uncommon')) {
-    return {
-      display: 'inline-block',
-      padding: '2px 7px',
-      borderRadius: 4,
-      fontSize: 11,
-      fontWeight: 600,
-      backgroundColor: '#90caf918',
-      border: '1px solid #90caf944',
-      color: '#90caf9',
-    };
-  }
+
   return {
-    display: 'inline-block',
-    padding: '2px 7px',
-    borderRadius: 4,
-    fontSize: 11,
-    fontWeight: 600,
-    backgroundColor: '#a0a4c018',
-    border: '1px solid #a0a4c033',
-    color: '#c0c4dc',
+    borderColor: border,
+    borderTop: `2px solid ${topBorder}`,
   };
 }
 
@@ -56,6 +52,26 @@ export function RelicFinderPage() {
   const [vaultFilter, setVaultFilter] = useState<RelicVaultFilter>('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [displayLimit, setDisplayLimit] = useState(24);
+  const [showFilters, setShowFilters] = useState(false);
+  const [expandedDropIds, setExpandedDropIds] = useState<Set<string>>(new Set());
+  const [isMobile, setIsMobile] = useState<boolean>(() => {
+    return typeof window !== 'undefined' ? window.innerWidth < 768 : false;
+  });
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const activeFilterCount = useMemo(() => {
+    let count = 0;
+    if (catalogEra !== 'All') count++;
+    if (vaultFilter !== 'All') count++;
+    return count;
+  }, [catalogEra, vaultFilter]);
 
   usePageMeta({
     title: 'Void Relic Drop Rates & Farming Guide',
@@ -92,9 +108,10 @@ export function RelicFinderPage() {
   }, [filteredRelics, displayLimit]);
 
   return (
-    <div style={styles.container}>
+    <div className="page-container-responsive" style={styles.container}>
       <header style={styles.header}>
-        <h1 style={styles.title}>Relic &amp; Prime Parts Finder</h1>
+        <div style={styles.headerBadge}>Void Relics & Prime Vault</div>
+        <h1 style={styles.title}>Relic & Prime Parts Finder</h1>
         <p style={styles.subtitle}>
           Locate the fastest Star Chart missions to stockpile Void Relics by era, search the full Relics catalog, and inspect reward drop rates.
         </p>
@@ -118,9 +135,9 @@ export function RelicFinderPage() {
                 onClick={() => setSelectedSpeedrunEra(era)}
                 style={{
                   ...styles.speedrunEraBtn,
-                  backgroundColor: selectedSpeedrunEra === era ? '#242b3d' : '#141622',
-                  borderColor: selectedSpeedrunEra === era ? '#4d648d' : '#222638',
-                  color: selectedSpeedrunEra === era ? '#f0f0f8' : '#888ca8',
+                  backgroundColor: selectedSpeedrunEra === era ? theme.colors.accentBg : theme.colors.bgInput,
+                  borderColor: selectedSpeedrunEra === era ? theme.colors.accentBorder : theme.colors.borderDefault,
+                  color: selectedSpeedrunEra === era ? theme.colors.textHighlight : theme.colors.textSecondary,
                 }}
               >
                 {era}
@@ -129,7 +146,7 @@ export function RelicFinderPage() {
           </div>
         </div>
 
-        <div style={styles.spotsGrid}>
+        <div className="card-grid-responsive" style={styles.spotsGrid}>
           {speedrunSpots.map((spot, i) => (
             <div key={i} style={styles.spotCard}>
               <div style={styles.spotCardTop}>
@@ -168,7 +185,6 @@ export function RelicFinderPage() {
 
         {/* Vault Notice Banner */}
         <div style={styles.vaultNoticeBanner}>
-          <div style={styles.vaultNoticeIcon}>ℹ️</div>
           <div>
             <strong style={styles.vaultNoticeTitle}>Vaulted Relics Drop Policy:</strong>
             <p style={styles.vaultNoticeText}>
@@ -177,9 +193,9 @@ export function RelicFinderPage() {
           </div>
         </div>
 
-        {/* Filter Controls */}
-        <div style={styles.filterControlsBox}>
-          <div style={styles.searchBar}>
+        {/* Search & Filter Controls */}
+        <div style={styles.searchControlsRow}>
+          <div style={styles.searchBarWrapper}>
             <input
               type="text"
               placeholder="Search relic code or reward (e.g. A18, Wisp Prime, Acceltra, Forma)..."
@@ -193,6 +209,7 @@ export function RelicFinderPage() {
             />
             {searchQuery && (
               <button
+                type="button"
                 onClick={() => setSearchQuery('')}
                 style={styles.clearSearchBtn}
                 title="Clear search"
@@ -202,49 +219,210 @@ export function RelicFinderPage() {
             )}
           </div>
 
-          <div style={styles.filterRow}>
-            {/* Era Tabs */}
-            <div style={styles.eraSelector}>
-              {ERAS.map((era) => (
+          {isMobile ? (
+            <>
+              <button
+                type="button"
+                onClick={() => setShowFilters((prev) => !prev)}
+                style={{
+                  ...styles.filterToggleBtn,
+                  backgroundColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBg : theme.colors.bgInput,
+                  borderColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBorder : theme.colors.borderDefault,
+                  color: showFilters || activeFilterCount > 0 ? theme.colors.textHighlight : theme.colors.textSecondary,
+                }}
+                aria-expanded={showFilters}
+              >
+                <span style={{ fontSize: 13 }}>⚙</span>
+                <span>Filters</span>
+                {activeFilterCount > 0 && (
+                  <span style={styles.filterCountBadge}>{activeFilterCount}</span>
+                )}
+                <span style={{ fontSize: 10, color: theme.colors.textMuted }}>
+                  {showFilters ? '▲' : '▼'}
+                </span>
+              </button>
+
+              {activeFilterCount > 0 && (
                 <button
-                  key={era}
+                  type="button"
                   onClick={() => {
-                    setCatalogEra(era);
+                    setCatalogEra('All');
+                    setVaultFilter('All');
                     setDisplayLimit(24);
                   }}
-                  style={{
-                    ...styles.eraButton,
-                    backgroundColor: catalogEra === era ? '#28324a' : '#141624',
-                    borderColor: catalogEra === era ? '#546b9e' : '#22263a',
-                    color: catalogEra === era ? '#f0f4ff' : '#8e94b2',
-                  }}
+                  style={styles.resetFiltersQuickBtn}
                 >
-                  {era === 'All' ? 'All Tiers' : `${era}`}
+                  Reset
                 </button>
-              ))}
+              )}
+            </>
+          ) : (
+            /* Desktop Direct Filter Bar - No toggle button required */
+            <div style={styles.desktopFilterBar}>
+              <div style={styles.desktopFilterGroup}>
+                <span style={styles.desktopFilterLabel}>Era:</span>
+                <div style={styles.filterPills}>
+                  {ERAS.map((era) => (
+                    <button
+                      key={era}
+                      type="button"
+                      onClick={() => {
+                        setCatalogEra(era);
+                        setDisplayLimit(24);
+                      }}
+                      style={{
+                        ...styles.filterPill,
+                        ...(catalogEra === era ? styles.filterPillActive : {}),
+                      }}
+                    >
+                      {era === 'All' ? 'All' : era}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div style={styles.desktopFilterGroup}>
+                <span style={styles.desktopFilterLabel}>Status:</span>
+                <div style={styles.filterPills}>
+                  {VAULT_FILTERS.map((vf) => (
+                    <button
+                      key={vf.value}
+                      type="button"
+                      onClick={() => {
+                        setVaultFilter(vf.value);
+                        setDisplayLimit(24);
+                      }}
+                      style={{
+                        ...styles.filterPill,
+                        ...(vaultFilter === vf.value ? styles.filterPillActive : {}),
+                        ...(vf.value === 'Unvaulted' && vaultFilter === vf.value ? { backgroundColor: theme.colors.greenBg, borderColor: theme.colors.greenBorder, color: theme.colors.green } : {}),
+                        ...(vf.value === 'Vaulted' && vaultFilter === vf.value ? { backgroundColor: theme.colors.orangeBg, borderColor: theme.colors.orangeBorder, color: theme.colors.orange } : {}),
+                      }}
+                    >
+                      {vf.value === 'All' ? 'All Status' : vf.value}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {activeFilterCount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setCatalogEra('All');
+                    setVaultFilter('All');
+                    setDisplayLimit(24);
+                  }}
+                  style={styles.resetFiltersQuickBtn}
+                >
+                  Reset
+                </button>
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* Mobile Collapsible Filter Drawer */}
+        {isMobile && showFilters && (
+          <div style={styles.filterDrawerCard}>
+            <div style={styles.filterDrawerHeader}>
+              <span style={styles.filterDrawerTitle}>Filter Relics Catalog</span>
             </div>
 
-            {/* Vault Status Selector */}
-            <div style={styles.vaultSelector}>
-              {VAULT_FILTERS.map((vf) => (
+            <div style={styles.filterGroup}>
+              <span style={styles.filterLabel}>Relic Era:</span>
+              <div style={styles.filterPills}>
+                {ERAS.map((era) => (
+                  <button
+                    key={era}
+                    type="button"
+                    onClick={() => {
+                      setCatalogEra(era);
+                      setDisplayLimit(24);
+                    }}
+                    style={{
+                      ...styles.filterPill,
+                      ...(catalogEra === era ? styles.filterPillActive : {}),
+                    }}
+                  >
+                    {era === 'All' ? 'All Tiers' : `${era}`}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div style={styles.filterGroup}>
+              <span style={styles.filterLabel}>Vault Status:</span>
+              <div style={styles.filterPills}>
+                {VAULT_FILTERS.map((vf) => (
+                  <button
+                    key={vf.value}
+                    type="button"
+                    onClick={() => {
+                      setVaultFilter(vf.value);
+                      setDisplayLimit(24);
+                    }}
+                    style={{
+                      ...styles.filterPill,
+                      ...(vaultFilter === vf.value ? styles.filterPillActive : {}),
+                      ...(vf.value === 'Unvaulted' && vaultFilter === vf.value ? { backgroundColor: theme.colors.greenBg, borderColor: theme.colors.greenBorder, color: theme.colors.green } : {}),
+                      ...(vf.value === 'Vaulted' && vaultFilter === vf.value ? { backgroundColor: theme.colors.orangeBg, borderColor: theme.colors.orangeBorder, color: theme.colors.orange } : {}),
+                    }}
+                  >
+                    {vf.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div style={styles.filterDrawerFooter}>
+              <span style={{ fontSize: 12, color: theme.colors.textSecondary }}>
+                {activeFilterCount > 0 ? `${activeFilterCount} active filters applied` : 'Showing all relic tiers and drop states'}
+              </span>
+              <div style={{ display: 'flex', gap: 8 }}>
+                {activeFilterCount > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setCatalogEra('All');
+                      setVaultFilter('All');
+                      setDisplayLimit(24);
+                    }}
+                    style={styles.resetFiltersBtn}
+                  >
+                    Reset All
+                  </button>
+                )}
                 <button
-                  key={vf.value}
-                  onClick={() => {
-                    setVaultFilter(vf.value);
-                    setDisplayLimit(24);
-                  }}
-                  style={{
-                    ...styles.vaultBtn,
-                    backgroundColor: vaultFilter === vf.value ? (vf.value === 'Unvaulted' ? '#162e1c' : vf.value === 'Vaulted' ? '#2e2016' : '#28324a') : '#141624',
-                    borderColor: vaultFilter === vf.value ? (vf.value === 'Unvaulted' ? '#2e6b3c' : vf.value === 'Vaulted' ? '#6b482e' : '#546b9e') : '#22263a',
-                    color: vaultFilter === vf.value ? (vf.value === 'Unvaulted' ? '#7ae08a' : vf.value === 'Vaulted' ? '#e0a868' : '#f0f4ff') : '#8e94b2',
-                  }}
+                  type="button"
+                  onClick={() => setShowFilters(false)}
+                  style={styles.applyFiltersBtn}
                 >
-                  {vf.label}
+                  Done
                 </button>
-              ))}
+              </div>
             </div>
           </div>
+        )}
+
+        <div style={styles.resultsInfoBar}>
+          <span style={styles.resultsCount}>
+            Showing <strong>{displayedRelics.length}</strong> of {filteredRelics.length} Relics
+          </span>
+          {(catalogEra !== 'All' || vaultFilter !== 'All' || searchQuery) && (
+            <button
+              type="button"
+              style={styles.resetFiltersBtn}
+              onClick={() => {
+                setSearchQuery('');
+                setCatalogEra('All');
+                setVaultFilter('All');
+                setDisplayLimit(24);
+              }}
+            >
+              Reset All Filters
+            </button>
+          )}
         </div>
 
         {/* Relic Grid */}
@@ -263,18 +441,21 @@ export function RelicFinderPage() {
             </button>
           </div>
         ) : (
-          <div style={styles.relicsGrid}>
+          <div className="card-grid-responsive" style={styles.relicsGrid}>
             {displayedRelics.map((relic) => {
-              let eraBg = '#1b2234';
-              let eraColor = '#90caf9';
-              if (relic.era === 'Lith') { eraBg = '#2a2216'; eraColor = '#e0a868'; }
-              else if (relic.era === 'Meso') { eraBg = '#1a2624'; eraColor = '#70c8b0'; }
-              else if (relic.era === 'Neo') { eraBg = '#281a28'; eraColor = '#d088d8'; }
-              else if (relic.era === 'Axi') { eraBg = '#2c2616'; eraColor = '#e8c458'; }
-              else if (relic.era === 'Requiem') { eraBg = '#2c1414'; eraColor = '#e86868'; }
+              let eraBg = theme.colors.accentBg;
+              let eraColor = theme.colors.accent;
+              if (relic.era === 'Lith') { eraBg = theme.colors.goldBg; eraColor = theme.colors.gold; }
+              else if (relic.era === 'Meso') { eraBg = theme.colors.greenBg; eraColor = theme.colors.green; }
+              else if (relic.era === 'Neo') { eraBg = theme.colors.purpleBg; eraColor = theme.colors.purple; }
+              else if (relic.era === 'Axi') { eraBg = theme.colors.goldBg; eraColor = theme.colors.goldLight; }
+              else if (relic.era === 'Requiem') { eraBg = theme.colors.redBg; eraColor = theme.colors.red; }
+
+              const isDropExpanded = expandedDropIds.has(relic.id);
+              const relicDrops = relic.drops || [];
 
               return (
-                <div key={relic.id} style={styles.relicCard}>
+                <div key={relic.id} style={{ ...styles.relicCard, ...getRelicCardBorderStyle(relic.era) }}>
                   <div style={styles.relicCardHeader}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
                       <span style={{ ...styles.eraBadge, backgroundColor: eraBg, color: eraColor }}>
@@ -284,9 +465,9 @@ export function RelicFinderPage() {
                       <span
                         style={{
                           ...styles.vaultStatusBadge,
-                          backgroundColor: relic.vaulted ? '#261814' : '#142818',
-                          borderColor: relic.vaulted ? '#4a2c20' : '#234828',
-                          color: relic.vaulted ? '#d09870' : '#7ae08a',
+                          backgroundColor: relic.vaulted ? theme.colors.orangeBg : theme.colors.greenBg,
+                          borderColor: relic.vaulted ? theme.colors.orangeBorder : theme.colors.greenBorder,
+                          color: relic.vaulted ? theme.colors.orange : theme.colors.green,
                         }}
                       >
                         {relic.vaulted ? 'Vaulted' : 'Unvaulted'}
@@ -300,11 +481,12 @@ export function RelicFinderPage() {
                     </Link>
                   </div>
 
+                  {/* Rewards Table */}
                   <div style={styles.rewardsTableWrapper}>
                     <table style={styles.rewardsTable}>
                       <thead>
                         <tr>
-                          <th style={styles.rwThItem}>Reward Item</th>
+                          <th style={styles.rwThItem}>Item Reward</th>
                           <th style={styles.rwThRarity}>Rarity</th>
                           <th style={styles.rwThRate}>Intact</th>
                           <th style={styles.rwThRate}>Radiant</th>
@@ -326,13 +508,58 @@ export function RelicFinderPage() {
                                 {rw.rarity}
                               </span>
                             </td>
-                            <td style={styles.rwTdRate}>{rw.intactChance}%</td>
-                            <td style={styles.rwTdRateRadiant}>{rw.radiantChance}%</td>
+                            <td style={styles.rwTdRate}>
+                              {rw.intactChance}%
+                            </td>
+                            <td style={styles.rwTdRateRadiant}>
+                              {rw.radiantChance}%
+                            </td>
                           </tr>
                         ))}
                       </tbody>
                     </table>
                   </div>
+
+                  {/* Active Drop Locations or Vaulted Notice */}
+                  {!relic.vaulted && relicDrops.length > 0 ? (
+                    <div style={styles.dropsSection}>
+                      <div style={styles.dropsHeaderRow}>
+                        <span style={styles.dropsTitle}>
+                          Drops ({relicDrops.length} locations):
+                        </span>
+                        {relicDrops.length > 2 && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setExpandedDropIds((prev) => {
+                                const next = new Set(prev);
+                                if (next.has(relic.id)) next.delete(relic.id);
+                                else next.add(relic.id);
+                                return next;
+                              });
+                            }}
+                            style={styles.expandDropsBtn}
+                          >
+                            {isDropExpanded ? 'Show Less' : `+${relicDrops.length - 2} More`}
+                          </button>
+                        )}
+                      </div>
+                      <div style={styles.dropsList}>
+                        {(isDropExpanded ? relicDrops : relicDrops.slice(0, 2)).map((d, dIdx) => (
+                          <div key={dIdx} style={styles.dropItem}>
+                            <span style={styles.dropLocation}>{d.location}</span>
+                            {d.chance !== undefined && (
+                              <span style={styles.dropRateVal}>{d.chance}%</span>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : relic.vaulted ? (
+                    <div style={styles.vaultNoticeSmall}>
+                      Vaulted — Not dropping in Star Chart rotations.
+                    </div>
+                  ) : null}
                 </div>
               );
             })}
@@ -340,7 +567,7 @@ export function RelicFinderPage() {
         )}
 
         {/* Load More Button */}
-        {filteredRelics.length > displayLimit && (
+        {displayLimit < filteredRelics.length && (
           <div style={styles.loadMoreContainer}>
             <button
               onClick={() => setDisplayLimit((prev) => prev + 24)}
@@ -352,11 +579,11 @@ export function RelicFinderPage() {
         )}
       </section>
 
-      {/* Rotation Reference Help */}
+      {/* Rotation Mechanics Help */}
       <section style={styles.rotationHelpSection}>
-        <h3 style={styles.rotationHelpTitle}>Warframe Mission Rotation Reference</h3>
+        <h3 style={styles.rotationHelpTitle}>Understanding Star Chart Rotation Mechanics (A, A, B, C)</h3>
         <p style={styles.rotationHelpText}>
-          Most endless missions (Survival, Defense, Interception, Defection, Excavation) follow the <strong>A-A-B-C</strong> rotation cycle:
+          Endless missions cycle through reward pools in a predetermined sequence:
         </p>
         <ul style={styles.rotationList}>
           <li><strong>Survival:</strong> 5m (A), 10m (A), 15m (B), 20m (C) (repeats indefinitely)</li>
@@ -370,324 +597,45 @@ export function RelicFinderPage() {
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  container: {
-    padding: '16px 18px 60px 18px',
-    maxWidth: 1200,
-    margin: '0 auto',
+  ...directoryStyles,
+  headerBadge: {
+    ...directoryStyles.headerBadge,
+    backgroundColor: theme.colors.catRelicBg,
+    color: theme.colors.catRelic,
+    border: `1px solid ${theme.colors.catRelicBorder}`,
   },
-  header: {
-    backgroundColor: '#151722',
-    border: '1px solid #232738',
-    borderRadius: 8,
-    padding: '18px 22px',
-    marginBottom: 20,
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 700,
-    color: '#f0f0f8',
-    margin: '0 0 4px 0',
-  },
-  subtitle: {
-    fontSize: 13,
-    color: '#888ca8',
-    margin: 0,
-    lineHeight: 1.4,
-  },
-  speedrunSection: {
-    backgroundColor: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
-    padding: 20,
-    marginBottom: 20,
-  },
-  sectionHeaderRow: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    flexWrap: 'wrap',
-    gap: 12,
-    marginBottom: 16,
-  },
-  sectionTitle: {
-    fontSize: 16,
-    fontWeight: 700,
-    color: '#f0f0f8',
-    margin: '0 0 4px 0',
-  },
-  sectionDesc: {
-    fontSize: 12.5,
-    color: '#888ca8',
-    margin: 0,
-  },
-  highlightEra: {
-    color: '#90caf9',
-  },
-  eraMiniSelector: {
-    display: 'flex',
-    gap: 6,
-    flexWrap: 'wrap',
-  },
-  speedrunEraBtn: {
-    padding: '6px 12px',
-    border: '1px solid',
-    borderRadius: 4,
-    fontSize: 12,
-    fontWeight: 600,
-    cursor: 'pointer',
-    minHeight: 34,
-  },
-  spotsGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-    gap: 12,
-  },
-  spotCard: {
-    backgroundColor: '#171a26',
-    border: '1px solid #252a3d',
-    borderRadius: 6,
-    padding: 14,
-  },
-  spotCardTop: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 8,
-  },
-  spotNode: {
-    fontSize: 14,
-    fontWeight: 700,
-    color: '#f0f0f8',
-  },
-  spotPlanet: {
-    fontSize: 13,
-    color: '#888ca8',
-  },
-  dropRate: {
-    fontSize: 11.5,
-    fontWeight: 600,
-    color: '#7ae08a',
-    backgroundColor: '#132818',
-    padding: '2px 7px',
-    borderRadius: 3,
-    border: '1px solid #234828',
-  },
-  metaRow: {
-    display: 'flex',
-    gap: 6,
-    flexWrap: 'wrap',
-    marginBottom: 8,
-  },
-  metaBadge: {
-    fontSize: 11,
-    padding: '2px 6px',
-    backgroundColor: '#12141e',
-    color: '#a0a4c0',
-    borderRadius: 3,
-    border: '1px solid #222638',
-  },
-  timeBadge: {
-    fontSize: 11,
-    padding: '2px 6px',
-    backgroundColor: '#241e14',
-    color: '#e0b870',
-    borderRadius: 3,
-    border: '1px solid #443420',
-    fontWeight: 600,
-  },
-  strategyTip: {
-    fontSize: 12,
-    color: '#b0b4cc',
-    lineHeight: 1.4,
-    margin: 0,
-  },
-  catalogSection: {
-    backgroundColor: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
-    padding: 20,
-    marginBottom: 20,
-  },
-  catalogHeader: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    flexWrap: 'wrap',
-    gap: 12,
-    marginBottom: 16,
-  },
-  resultsCountBadge: {
-    fontSize: 12,
-    fontWeight: 600,
-    color: '#8ec48e',
-    backgroundColor: '#142418',
-    border: '1px solid #234428',
-    padding: '4px 10px',
-    borderRadius: 4,
-  },
-  vaultNoticeBanner: {
-    display: 'flex',
-    alignItems: 'flex-start',
-    gap: 12,
-    backgroundColor: '#161926',
-    border: '1px solid #283048',
-    borderLeft: '4px solid #68a8ff',
-    borderRadius: 6,
-    padding: '12px 16px',
-    marginBottom: 18,
-  },
-  vaultNoticeIcon: {
-    fontSize: 18,
-    lineHeight: 1,
-    marginTop: 2,
-  },
-  vaultNoticeTitle: {
-    fontSize: 13,
-    color: '#90caf9',
-    display: 'block',
-    marginBottom: 4,
-  },
-  vaultNoticeText: {
-    fontSize: 12.5,
-    color: '#c0c8e0',
-    margin: 0,
-    lineHeight: 1.5,
-  },
-  filterControlsBox: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 12,
-    marginBottom: 18,
-  },
-  searchBar: {
-    display: 'flex',
-    position: 'relative',
-    alignItems: 'center',
-  },
-  searchInput: {
-    width: '100%',
-    padding: '10px 14px',
-    backgroundColor: '#171926',
-    border: '1px solid #282d42',
-    borderRadius: 6,
-    color: '#f0f0f8',
-    fontSize: 13.5,
-    outline: 'none',
-    boxSizing: 'border-box',
-    minHeight: 40,
-  },
-  clearSearchBtn: {
-    position: 'absolute',
-    right: 10,
-    padding: '4px 10px',
-    backgroundColor: '#242838',
-    border: '1px solid #3d445c',
-    borderRadius: 4,
-    color: '#a0a4c0',
-    fontSize: 12,
-    cursor: 'pointer',
-  },
-  filterRow: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    flexWrap: 'wrap',
-    gap: 12,
-  },
-  eraSelector: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: 8,
-  },
-  eraButton: {
-    padding: '7px 14px',
-    border: '1px solid',
-    borderRadius: 4,
-    fontSize: 12.5,
-    fontWeight: 600,
-    cursor: 'pointer',
-    minHeight: 34,
-  },
-  vaultSelector: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: 8,
-  },
-  vaultBtn: {
-    padding: '7px 14px',
-    border: '1px solid',
-    borderRadius: 4,
-    fontSize: 12.5,
-    fontWeight: 600,
-    cursor: 'pointer',
-    minHeight: 34,
-  },
-  emptyNoticeBox: {
-    padding: '30px 20px',
-    textAlign: 'center',
-    backgroundColor: '#171926',
-    borderRadius: 6,
-    border: '1px solid #23273a',
-  },
-  emptyNoticeText: {
-    fontSize: 14,
-    color: '#8e94b2',
-    margin: '0 0 12px 0',
-  },
-  resetFiltersBtn: {
-    padding: '8px 16px',
-    backgroundColor: '#242b3d',
-    border: '1px solid #4d648d',
-    borderRadius: 4,
-    color: '#f0f0f8',
-    fontSize: 13,
-    fontWeight: 600,
-    cursor: 'pointer',
-    minHeight: 36,
-  },
-  relicsGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
-    gap: 14,
-  },
-  relicCard: {
-    backgroundColor: '#161824',
-    border: '1px solid #23273a',
-    borderRadius: 6,
-    padding: 14,
-    display: 'flex',
-    flexDirection: 'column',
-  },
+  relicsGrid: directoryStyles.cardGrid,
+  relicCard: directoryStyles.card,
   relicCardHeader: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 10,
     paddingBottom: 8,
-    borderBottom: '1px solid #202436',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
   },
   eraBadge: {
     fontSize: 11.5,
     fontWeight: 700,
     padding: '2px 7px',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
     letterSpacing: '0.3px',
   },
   relicNameTitle: {
     fontSize: 14,
     fontWeight: 700,
-    color: '#f0f0f8',
+    color: theme.colors.textHighlight,
   },
   vaultStatusBadge: {
     fontSize: 10.5,
     fontWeight: 600,
     padding: '2px 6px',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
     border: '1px solid',
   },
   wikiLinkSmall: {
     fontSize: 12,
-    color: '#70b4ff',
+    color: theme.colors.accent,
     textDecoration: 'none',
     fontWeight: 600,
   },
@@ -702,36 +650,36 @@ const styles: Record<string, React.CSSProperties> = {
   },
   rwThItem: {
     padding: '6px 6px 6px 0',
-    color: '#8e94b2',
+    color: theme.colors.textSecondary,
     fontWeight: 600,
     fontSize: 11,
-    borderBottom: '1px solid #202436',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
   },
   rwThRarity: {
     padding: '6px 6px',
-    color: '#8e94b2',
+    color: theme.colors.textSecondary,
     fontWeight: 600,
     fontSize: 11,
-    borderBottom: '1px solid #202436',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
     textAlign: 'center',
   },
   rwThRate: {
     padding: '6px 6px',
-    color: '#8e94b2',
+    color: theme.colors.textSecondary,
     fontWeight: 600,
     fontSize: 11,
-    borderBottom: '1px solid #202436',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
     textAlign: 'right',
   },
   rwRow: {
-    borderBottom: '1px solid #1a1c2a',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
   },
   rwTdItem: {
     padding: '6px 6px 6px 0',
-    color: '#e0e4f4',
+    color: theme.colors.textPrimary,
   },
   rewardItemLink: {
-    color: '#d0d8f0',
+    color: theme.colors.textPrimary,
     textDecoration: 'none',
     fontWeight: 500,
   },
@@ -742,44 +690,175 @@ const styles: Record<string, React.CSSProperties> = {
   rwTdRate: {
     padding: '6px 6px',
     textAlign: 'right',
-    color: '#a0a4c0',
+    color: theme.colors.textSecondary,
   },
   rwTdRateRadiant: {
     padding: '6px 6px',
     textAlign: 'right',
-    color: '#7ae08a',
+    color: theme.colors.green,
     fontWeight: 600,
   },
-  loadMoreContainer: {
-    textAlign: 'center',
-    marginTop: 20,
+  speedrunSection: {
+    marginBottom: 32,
+    backgroundColor: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.lg,
+    padding: '18px 20px',
   },
-  loadMoreBtn: {
-    padding: '10px 22px',
-    backgroundColor: '#1e2436',
-    border: '1px solid #3d4a6a',
-    borderRadius: 4,
-    color: '#70b4ff',
+  sectionHeaderRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    flexWrap: 'wrap',
+    gap: 12,
+    marginBottom: 16,
+    paddingBottom: 12,
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: 700,
+    color: theme.colors.textHighlight,
+    margin: '0 0 4px 0',
+  },
+  highlightEra: {
+    color: theme.colors.accent,
+  },
+  sectionDesc: {
     fontSize: 13,
+    color: theme.colors.textSecondary,
+    margin: 0,
+  },
+  eraMiniSelector: {
+    display: 'flex',
+    gap: 6,
+    flexWrap: 'wrap',
+  },
+  speedrunEraBtn: {
+    padding: '5px 12px',
+    borderRadius: theme.radii.sm,
+    border: '1px solid',
+    fontSize: 12,
     fontWeight: 600,
     cursor: 'pointer',
-    minHeight: 40,
+    transition: 'all 0.15s ease',
+  },
+  spotsGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
+    gap: 12,
+  },
+  spotCard: {
+    backgroundColor: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
+    padding: 12,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+  },
+  spotCardTop: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
+    marginBottom: 8,
+  },
+  spotNode: {
+    fontSize: 14,
+    fontWeight: 700,
+    color: theme.colors.textHighlight,
+  },
+  spotPlanet: {
+    fontSize: 12,
+    color: theme.colors.textMuted,
+  },
+  dropRate: {
+    fontSize: 12,
+    fontWeight: 700,
+    color: theme.colors.green,
+  },
+  metaRow: {
+    display: 'flex',
+    gap: 6,
+    flexWrap: 'wrap',
+    marginBottom: 8,
+  },
+  metaBadge: {
+    fontSize: 10.5,
+    padding: '2px 6px',
+    backgroundColor: theme.colors.bgCard,
+    color: theme.colors.textSecondary,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+  },
+  timeBadge: {
+    fontSize: 10.5,
+    padding: '2px 6px',
+    backgroundColor: theme.colors.accentBg,
+    color: theme.colors.accent,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.accentBorder}`,
+  },
+  strategyTip: {
+    fontSize: 12,
+    color: theme.colors.textSecondary,
+    margin: 0,
+    lineHeight: 1.35,
+  },
+  catalogSection: {
+    marginBottom: 32,
+  },
+  catalogHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    flexWrap: 'wrap',
+    gap: 12,
+    marginBottom: 16,
+  },
+  resultsCountBadge: {
+    fontSize: 12,
+    fontWeight: 600,
+    padding: '4px 10px',
+    backgroundColor: theme.colors.bgCardElevated,
+    borderRadius: theme.radii.sm,
+    color: theme.colors.textSecondary,
+    border: `1px solid ${theme.colors.borderDefault}`,
+  },
+  vaultNoticeBanner: {
+    padding: '12px 14px',
+    backgroundColor: theme.colors.orangeBg,
+    borderLeft: `4px solid ${theme.colors.orange}`,
+    borderRadius: theme.radii.md,
+    marginBottom: 16,
+  },
+  vaultNoticeTitle: {
+    fontSize: 13,
+    color: theme.colors.orange,
+    display: 'block',
+    marginBottom: 2,
+  },
+  vaultNoticeText: {
+    fontSize: 12,
+    color: theme.colors.textSecondary,
+    margin: 0,
+    lineHeight: 1.4,
   },
   rotationHelpSection: {
-    backgroundColor: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
+    backgroundColor: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.lg,
     padding: 20,
   },
   rotationHelpTitle: {
     fontSize: 15,
     fontWeight: 700,
-    color: '#f0f0f8',
+    color: theme.colors.textHighlight,
     margin: '0 0 8px 0',
   },
   rotationHelpText: {
     fontSize: 13,
-    color: '#888ca8',
+    color: theme.colors.textSecondary,
     margin: '0 0 10px 0',
     lineHeight: 1.4,
   },
@@ -787,7 +866,7 @@ const styles: Record<string, React.CSSProperties> = {
     margin: 0,
     paddingLeft: 18,
     fontSize: 13,
-    color: '#b0b4cc',
+    color: theme.colors.textPrimary,
     lineHeight: 1.6,
   },
 };

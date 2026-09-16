@@ -14,7 +14,9 @@ import {
 import { SpecialChallengeGuide } from '../../../shared/data/special-mechanics';
 import { ItemComponentInfo } from '../../../shared/data/item-components';
 import { PageVisitHistory, PersonalTarget } from '../../storage';
+import { getMarketItemUrl, getItemMarketSlug } from '../../../shared/api/market-client';
 import { detailStyles as styles } from './itemDetailStyles';
+import { theme } from '../../styles/theme';
 
 interface ItemHeaderViewProps {
   itemName: string;
@@ -33,6 +35,7 @@ interface ItemHeaderViewProps {
   target?: PersonalTarget;
   targetQty: number;
   previousPage?: PageVisitHistory;
+  isTradeable?: boolean;
   onToggleTarget: () => void;
   onUpdateQty: (qty: number) => void;
 }
@@ -54,6 +57,7 @@ export function ItemHeaderView({
   target,
   targetQty,
   previousPage,
+  isTradeable = true,
   onToggleTarget,
   onUpdateQty,
 }: ItemHeaderViewProps) {
@@ -67,7 +71,7 @@ export function ItemHeaderView({
               to={previousPage.path}
               style={{
                 ...styles.backLink,
-                color: '#68d4ff',
+                color: theme.colors.accent,
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: 6,
@@ -95,8 +99,8 @@ export function ItemHeaderView({
         </div>
       </nav>
 
-      <header style={styles.header}>
-        <div style={styles.headerLeft}>
+      <header className="detail-header" style={styles.header}>
+        <div className="detail-header-left" style={styles.headerLeft}>
           <ItemThumbnail name={itemName} size={84} />
           <div style={styles.headerInfo}>
             <h1 style={styles.title}>{itemName}</h1>
@@ -105,18 +109,18 @@ export function ItemHeaderView({
                 <span style={styles.categoryBadge}>{resourceGuide.category} Resource</span>
               )}
               {arcaneData && (
-                <span style={{ ...styles.categoryBadge, backgroundColor: 'rgba(255, 215, 0, 0.15)', color: '#ffd700', borderColor: '#d4af37' }}>
+                <span style={{ ...styles.categoryBadge, backgroundColor: theme.colors.catArcaneBg, color: theme.colors.catArcane, borderColor: theme.colors.catArcaneBorder }}>
                   {arcaneData.rarity} {arcaneData.slot} Arcane
                 </span>
               )}
               {detailedMod && (
-                <span style={{ ...styles.categoryBadge, backgroundColor: '#1a2234', color: '#90b4e0', borderColor: '#2c3e60' }}>
+                <span style={{ ...styles.categoryBadge, backgroundColor: theme.colors.catModBg, color: theme.colors.catMod, borderColor: theme.colors.catModBorder }}>
                   {detailedMod.rarity} {detailedMod.type || 'Mod'}
                 </span>
               )}
               {relicData ? (
                 <>
-                  <span style={{ ...styles.categoryBadge, backgroundColor: '#2a2216', color: '#f0c060', borderColor: '#5c4820' }}>
+                  <span style={{ ...styles.categoryBadge, backgroundColor: theme.colors.catRelicBg, color: theme.colors.catRelic, borderColor: theme.colors.catRelicBorder }}>
                     {relicData.era.toUpperCase()} Relic
                   </span>
                   <span
@@ -125,69 +129,36 @@ export function ItemHeaderView({
                       fontWeight: 700,
                       padding: '2px 7px',
                       borderRadius: 3,
-                      backgroundColor: relicData.vaulted ? '#2d2218' : '#142a1a',
-                      color: relicData.vaulted ? '#e0a060' : '#7ae08a',
-                      border: `1px solid ${relicData.vaulted ? '#543820' : '#23582e'}`,
+                      backgroundColor: relicData.vaulted ? theme.colors.vaultedBg : theme.colors.unvaultedBg,
+                      color: relicData.vaulted ? theme.colors.vaulted : theme.colors.unvaulted,
+                      border: `1px solid ${relicData.vaulted ? theme.colors.vaultedBorder : theme.colors.unvaultedBorder}`,
                     }}
                   >
                     {relicData.vaulted ? 'VAULTED' : 'UNVAULTED'}
                   </span>
                 </>
               ) : relicMatch ? (
-                <span style={{ ...styles.categoryBadge, backgroundColor: '#2a2216', color: '#f0c060', borderColor: '#5c4820' }}>
+                <span style={{ ...styles.categoryBadge, backgroundColor: theme.colors.catRelicBg, color: theme.colors.catRelic, borderColor: theme.colors.catRelicBorder }}>
                   {relicMatch[1].toUpperCase()} Relic
                 </span>
               ) : null}
               {warframeStats && (
-                <span style={{ ...styles.categoryBadge, backgroundColor: '#182436', color: '#8ecbfc', borderColor: '#204064' }}>
+                <span style={{ ...styles.categoryBadge, backgroundColor: theme.colors.catWarframeBg, color: theme.colors.catWarframe, borderColor: theme.colors.catWarframeBorder }}>
                   Warframe
                 </span>
               )}
               {weaponStats && (
-                <span style={{ ...styles.categoryBadge, backgroundColor: '#20182c', color: '#dca8ff', borderColor: '#482868' }}>
+                <span style={{ ...styles.categoryBadge, backgroundColor: theme.colors.catWeaponBg, color: theme.colors.catWeapon, borderColor: theme.colors.catWeaponBorder }}>
                   {itemGeneralInfo?.type || 'Weapon'}
                 </span>
               )}
               {componentInfo && (
-                <span style={{ ...styles.categoryBadge, backgroundColor: '#2d2218', color: '#ffd700', borderColor: '#5c4820' }}>
+                <span style={{ ...styles.categoryBadge, backgroundColor: theme.colors.goldBg, color: theme.colors.gold, borderColor: theme.colors.goldBorder }}>
                   {componentInfo.isPrime ? 'Prime ' : ''}{componentInfo.parentCategory} Component
                 </span>
               )}
               {weaponLineage && (
-                <span
-                  style={{
-                    fontSize: 11,
-                    fontWeight: 700,
-                    letterSpacing: '0.4px',
-                    padding: '2px 7px',
-                    borderRadius: 3,
-                    background:
-                      weaponLineage === 'Incarnon'
-                        ? '#2d1a44'
-                        : weaponLineage === 'Coda'
-                        ? '#36151d'
-                        : weaponLineage === 'Tenet'
-                        ? '#10283c'
-                        : '#351414',
-                    color:
-                      weaponLineage === 'Incarnon'
-                        ? '#e4b8ff'
-                        : weaponLineage === 'Coda'
-                        ? '#ffb3c0'
-                        : weaponLineage === 'Tenet'
-                        ? '#8ecbfc'
-                        : '#ff9e9e',
-                    border: `1px solid ${
-                      weaponLineage === 'Incarnon'
-                        ? '#5b328a'
-                        : weaponLineage === 'Coda'
-                        ? '#782637'
-                        : weaponLineage === 'Tenet'
-                        ? '#235178'
-                        : '#782828'
-                    }`,
-                  }}
-                >
+                <span style={theme.helpers.getLineageBadgeStyle(weaponLineage)}>
                   {weaponLineage.toUpperCase()}
                 </span>
               )}
@@ -210,23 +181,38 @@ export function ItemHeaderView({
                   rel="noopener noreferrer"
                   style={styles.wikiLink}
                 >
-                  Open on Official Wiki &#8599;
+                  Open on Official Wiki
+                </a>
+              )}
+              {isTradeable && getItemMarketSlug(itemName) && (
+                <a
+                  href={getMarketItemUrl(itemName)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    ...styles.wikiLink,
+                    backgroundColor: theme.colors.accentBg,
+                    color: theme.colors.accent,
+                    borderColor: theme.colors.accentBorder,
+                  }}
+                >
+                  Warframe.market
                 </a>
               )}
             </div>
           </div>
         </div>
 
-        <div style={styles.targetWidget}>
-          <div style={styles.targetControls}>
+        <div className="detail-target-widget" style={styles.targetWidget}>
+          <div className="detail-target-controls" style={styles.targetControls}>
             <button
               type="button"
               onClick={onToggleTarget}
               style={{
                 ...styles.targetButton,
-                backgroundColor: target ? '#263a26' : '#1e1e2c',
-                borderColor: target ? '#406040' : '#2e2e42',
-                color: target ? '#92d492' : '#c8c8dc',
+                backgroundColor: target ? theme.colors.greenBg : theme.colors.bgInput,
+                borderColor: target ? theme.colors.greenBorder : theme.colors.borderDefault,
+                color: target ? theme.colors.green : theme.colors.textSecondary,
               }}
             >
               {target ? 'In Farming Targets' : '+ Add to Targets'}

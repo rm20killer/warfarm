@@ -5,9 +5,13 @@ import {
   SpecialChallengeGuide,
 } from '../../shared/data/special-mechanics';
 import { usePageMeta } from '../../shared/utils/usePageMeta';
+import { theme } from '../styles/theme';
+import { directoryStyles } from '../styles/directoryPageStyles';
 
 export function SpecialMechanicsPage() {
   const [activeCategory, setActiveCategory] = useState<string>('All');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [showFilters, setShowFilters] = useState(false);
   const [selectedChallengeId, setSelectedChallengeId] = useState<string>(SPECIAL_CHALLENGES[0].id);
 
   usePageMeta({
@@ -18,16 +22,27 @@ export function SpecialMechanicsPage() {
   });
 
   const categories = ['All', 'Lua Principle', 'Vault System', 'Special Dimension'];
+  const activeFilterCount = activeCategory !== 'All' ? 1 : 0;
 
   const filteredChallenges = SPECIAL_CHALLENGES.filter((c) => {
-    return activeCategory === 'All' || c.category === activeCategory;
+    const matchesCategory = activeCategory === 'All' || c.category === activeCategory;
+    const q = searchQuery.toLowerCase().trim();
+    const matchesQuery =
+      !q ||
+      c.title.toLowerCase().includes(q) ||
+      c.rewardItem.toLowerCase().includes(q) ||
+      c.roomVisualCue.toLowerCase().includes(q) ||
+      c.category.toLowerCase().includes(q);
+    return matchesCategory && matchesQuery;
   });
 
   const activeChallenge =
-    SPECIAL_CHALLENGES.find((c) => c.id === selectedChallengeId) || SPECIAL_CHALLENGES[0];
+    filteredChallenges.find((c) => c.id === selectedChallengeId) ||
+    filteredChallenges[0] ||
+    SPECIAL_CHALLENGES[0];
 
   return (
-    <div style={styles.container}>
+    <div className="page-container-responsive" style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.title}>Lua Challenges & Special Mechanics</h1>
         <p style={styles.subtitle}>
@@ -35,26 +50,139 @@ export function SpecialMechanicsPage() {
         </p>
       </header>
 
-      <section style={styles.filterSection}>
-        <div style={styles.catTabBar}>
-          {categories.map((cat) => (
+      {/* Search Controls */}
+      <div style={styles.searchControlsRow}>
+        <div style={styles.searchBarWrapper}>
+          <input
+            type="text"
+            placeholder="Search puzzles, drift mods, vaults (e.g. Agility, Power Drift, Dragon Key, Granum)..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            style={styles.searchInput}
+            aria-label="Search puzzles"
+          />
+          {searchQuery && (
             <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              style={{
-                ...styles.catTab,
-                backgroundColor: activeCategory === cat ? '#242b3d' : '#12141d',
-                borderColor: activeCategory === cat ? '#4d648d' : '#1f2334',
-                color: activeCategory === cat ? '#f0f0fa' : '#888ca8',
-              }}
+              type="button"
+              onClick={() => setSearchQuery('')}
+              style={styles.clearSearchBtn}
+              title="Clear search"
             >
-              {cat}
+              Clear
             </button>
-          ))}
+          )}
         </div>
-      </section>
 
-      <div style={styles.layoutGrid}>
+        <button
+          type="button"
+          onClick={() => setShowFilters((prev) => !prev)}
+          style={{
+            ...styles.filterToggleBtn,
+            backgroundColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBg : theme.colors.bgInput,
+            borderColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBorder : theme.colors.borderDefault,
+            color: showFilters || activeFilterCount > 0 ? theme.colors.textHighlight : theme.colors.textSecondary,
+          }}
+          aria-expanded={showFilters}
+        >
+          <span style={{ fontSize: 13 }}>⚙</span>
+          <span>Filters</span>
+          {activeFilterCount > 0 && (
+            <span style={styles.filterCountBadge}>{activeFilterCount}</span>
+          )}
+          <span style={{ fontSize: 10, color: theme.colors.textMuted }}>
+            {showFilters ? '▲' : '▼'}
+          </span>
+        </button>
+
+        {activeFilterCount > 0 && (
+          <button
+            type="button"
+            onClick={() => setActiveCategory('All')}
+            style={styles.resetFiltersQuickBtn}
+          >
+            Reset
+          </button>
+        )}
+      </div>
+
+      {/* Collapsible Filter Drawer */}
+      {showFilters && (
+        <div style={styles.filterDrawerCard}>
+          <div style={styles.filterDrawerHeader}>
+            <span style={styles.filterDrawerTitle}>Filter Special Challenges</span>
+            <button
+              type="button"
+              onClick={() => setShowFilters(false)}
+              style={styles.closeDrawerBtn}
+            >
+              &times; Close
+            </button>
+          </div>
+
+          <div style={styles.filterGroup}>
+            <span style={styles.filterLabel}>Challenge Category:</span>
+            <div style={styles.filterPills}>
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  type="button"
+                  onClick={() => setActiveCategory(cat)}
+                  style={{
+                    ...styles.filterPill,
+                    ...(activeCategory === cat ? styles.filterPillActive : {}),
+                  }}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div style={styles.filterDrawerFooter}>
+            <span style={{ fontSize: 12, color: theme.colors.textSecondary }}>
+              {activeFilterCount > 0 ? `${activeFilterCount} active filter applied` : 'Showing all challenge types'}
+            </span>
+            <div style={{ display: 'flex', gap: 8 }}>
+              {activeFilterCount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setActiveCategory('All')}
+                  style={styles.resetFiltersBtn}
+                >
+                  Reset All
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => setShowFilters(false)}
+                style={styles.applyFiltersBtn}
+              >
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div style={styles.resultsInfoBar}>
+        <span style={styles.resultsCount}>
+          Showing <strong>{filteredChallenges.length}</strong> of {SPECIAL_CHALLENGES.length} Special Challenges
+        </span>
+        {(activeCategory !== 'All' || searchQuery) && (
+          <button
+            type="button"
+            style={styles.resetFiltersBtn}
+            onClick={() => {
+              setSearchQuery('');
+              setActiveCategory('All');
+            }}
+          >
+            Reset All Filters
+          </button>
+        )}
+      </div>
+
+      <div className="detail-content-grid" style={styles.layoutGrid}>
         <aside style={styles.sidebarList}>
           <span style={styles.sidebarHeader}>Select Puzzle Challenge:</span>
           {filteredChallenges.map((challenge) => {
@@ -65,14 +193,14 @@ export function SpecialMechanicsPage() {
                 onClick={() => setSelectedChallengeId(challenge.id)}
                 style={{
                   ...styles.challengeItemBtn,
-                  backgroundColor: isSelected ? '#1e2436' : '#12141d',
-                  borderColor: isSelected ? '#42557e' : '#1f2334',
+                  backgroundColor: isSelected ? theme.colors.bgCardElevated : theme.colors.bgCard,
+                  borderColor: isSelected ? theme.colors.accentBorder : theme.colors.borderDefault,
                 }}
               >
                 <span
                   style={{
                     ...styles.challengeBtnTitle,
-                    color: isSelected ? '#e4e4f0' : '#9a9aa8',
+                    color: isSelected ? theme.colors.textHighlight : theme.colors.textSecondary,
                   }}
                 >
                   {challenge.title}
@@ -98,13 +226,13 @@ export function SpecialMechanicsPage() {
               </Link>
             </div>
 
-            <section style={styles.infoBlock}>
+            <div style={styles.infoBlock}>
               <strong style={styles.blockHeading}>Room Recognition Cue:</strong>
               <p style={styles.blockText}>{activeChallenge.roomVisualCue}</p>
-            </section>
+            </div>
 
-            <section style={styles.infoBlock}>
-              <strong style={styles.blockHeading}>Recommended Squad & Warframe Setups:</strong>
+            <div style={styles.infoBlock}>
+              <strong style={styles.blockHeading}>Recommended Warframes / Tools:</strong>
               <div style={styles.framesBadgeRow}>
                 {activeChallenge.recommendedFrames.map((frame, i) => (
                   <span key={i} style={styles.frameBadge}>
@@ -112,10 +240,10 @@ export function SpecialMechanicsPage() {
                   </span>
                 ))}
               </div>
-            </section>
+            </div>
 
-            <section style={styles.infoBlock}>
-              <strong style={styles.blockHeading}>Step-by-Step Puzzle Solution:</strong>
+            <div style={styles.infoBlock}>
+              <strong style={styles.blockHeading}>Step-by-Step Solution:</strong>
               <ol style={styles.solutionList}>
                 {activeChallenge.stepByStepSolution.map((step, i) => (
                   <li key={i} style={styles.solutionStep}>
@@ -123,11 +251,11 @@ export function SpecialMechanicsPage() {
                   </li>
                 ))}
               </ol>
-            </section>
+            </div>
 
             {activeChallenge.tipsAndTricks && activeChallenge.tipsAndTricks.length > 0 && (
-              <section style={styles.tipsBlock}>
-                <strong style={styles.tipsHeading}>Pro-Tips & Ability Shortcuts:</strong>
+              <div style={styles.tipsBlock}>
+                <strong style={styles.tipsHeading}>Solo Player Tips & Shortcuts:</strong>
                 <ul style={styles.tipsList}>
                   {activeChallenge.tipsAndTricks.map((tip, i) => (
                     <li key={i} style={styles.tipItem}>
@@ -135,7 +263,7 @@ export function SpecialMechanicsPage() {
                     </li>
                   ))}
                 </ul>
-              </section>
+              </div>
             )}
           </article>
         </main>
@@ -145,50 +273,10 @@ export function SpecialMechanicsPage() {
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  container: {
-    padding: '16px 18px 60px 18px',
-    maxWidth: 1040,
-    margin: '0 auto',
-  },
-  header: {
-    backgroundColor: '#151722',
-    border: '1px solid #232738',
-    borderRadius: 8,
-    padding: '16px 20px',
-    marginBottom: 16,
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 700,
-    color: '#f0f0f8',
-    margin: '0 0 4px 0',
-  },
-  subtitle: {
-    fontSize: 13,
-    color: '#888ca8',
-    margin: 0,
-    lineHeight: 1.4,
-  },
-  filterSection: {
-    backgroundColor: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
-    padding: 16,
-    marginBottom: 16,
-  },
-  catTabBar: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: 6,
-  },
-  catTab: {
-    padding: '6px 14px',
-    borderRadius: 4,
-    border: '1px solid',
-    fontSize: 12,
-    cursor: 'pointer',
-    fontWeight: 500,
-  },
+  ...directoryStyles,
+  filterSection: directoryStyles.filterDrawerCard,
+  catTabBar: directoryStyles.categoryPillsStrip,
+  catTab: directoryStyles.categoryPill,
   layoutGrid: {
     display: 'grid',
     gridTemplateColumns: '320px 1fr',
@@ -202,7 +290,7 @@ const styles: Record<string, React.CSSProperties> = {
   sidebarHeader: {
     fontSize: 12,
     fontWeight: 600,
-    color: '#888ca8',
+    color: theme.colors.textMuted,
     marginBottom: 4,
     textTransform: 'uppercase',
   },
@@ -212,7 +300,7 @@ const styles: Record<string, React.CSSProperties> = {
     alignItems: 'flex-start',
     padding: '12px 14px',
     border: '1px solid',
-    borderRadius: 6,
+    borderRadius: theme.radii.md,
     cursor: 'pointer',
     textAlign: 'left',
     transition: 'all 0.15s',
@@ -224,50 +312,42 @@ const styles: Record<string, React.CSSProperties> = {
   },
   rewardBadge: {
     fontSize: 11,
-    color: '#8ec48e',
+    color: theme.colors.green,
   },
   detailPane: {
     minWidth: 0,
   },
   detailCard: {
-    background: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.lg,
     padding: 24,
-  },
-  cardHeader: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    borderBottom: '1px solid #1f2334',
-    paddingBottom: 16,
-    marginBottom: 20,
-    gap: 12,
   },
   challengeCategory: {
     fontSize: 11,
     padding: '2px 6px',
-    background: '#1c1c2c',
-    color: '#9090b8',
-    borderRadius: 3,
+    background: theme.colors.purpleBg,
+    color: theme.colors.purple,
+    borderRadius: theme.radii.sm,
     display: 'inline-block',
     marginBottom: 6,
+    border: `1px solid ${theme.colors.purpleBorder}`,
   },
   challengeMainTitle: {
     fontSize: 20,
     fontWeight: 700,
-    color: '#eaeaf4',
+    color: theme.colors.textHighlight,
     margin: 0,
   },
   rewardLink: {
     fontSize: 12,
     fontWeight: 600,
-    color: '#8ea0d4',
+    color: theme.colors.accent,
     textDecoration: 'none',
     padding: '4px 10px',
-    backgroundColor: '#1a1d2c',
-    border: '1px solid #29304a',
-    borderRadius: 4,
+    backgroundColor: theme.colors.accentBg,
+    border: `1px solid ${theme.colors.accentBorder}`,
+    borderRadius: theme.radii.sm,
     whiteSpace: 'nowrap',
   },
   infoBlock: {
@@ -276,13 +356,13 @@ const styles: Record<string, React.CSSProperties> = {
   blockHeading: {
     fontSize: 13,
     fontWeight: 600,
-    color: '#c8c8dc',
+    color: theme.colors.textPrimary,
     display: 'block',
     marginBottom: 6,
   },
   blockText: {
     fontSize: 13,
-    color: '#8e8ea4',
+    color: theme.colors.textSecondary,
     lineHeight: 1.5,
     margin: 0,
   },
@@ -294,16 +374,16 @@ const styles: Record<string, React.CSSProperties> = {
   frameBadge: {
     fontSize: 12,
     padding: '4px 10px',
-    background: '#181826',
-    border: '1px solid #242436',
-    borderRadius: 4,
-    color: '#b0b0cc',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.sm,
+    color: theme.colors.textSecondary,
   },
   solutionList: {
     paddingLeft: 20,
     margin: 0,
     fontSize: 13,
-    color: '#9898ae',
+    color: theme.colors.textSecondary,
     lineHeight: 1.6,
   },
   solutionStep: {
@@ -311,13 +391,14 @@ const styles: Record<string, React.CSSProperties> = {
   },
   tipsBlock: {
     padding: 14,
-    background: '#161622',
-    borderLeft: '3px solid #8e9ec4',
-    borderRadius: 4,
+    background: theme.colors.bgCardElevated,
+    borderLeft: `3px solid ${theme.colors.accent}`,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   tipsHeading: {
     fontSize: 12,
-    color: '#d0d0e2',
+    color: theme.colors.textHighlight,
     display: 'block',
     marginBottom: 6,
   },
@@ -328,9 +409,8 @@ const styles: Record<string, React.CSSProperties> = {
   },
   tipItem: {
     fontSize: 12,
-    color: '#8ec48e',
+    color: theme.colors.green,
     padding: '2px 0',
     lineHeight: 1.4,
   },
 };
-

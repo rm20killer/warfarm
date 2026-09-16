@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import {
   PLANETS_DATA,
@@ -8,6 +8,8 @@ import {
   SpawnableEnemy,
 } from '../../shared/data/planet-missions';
 import { usePageMeta } from '../../shared/utils/usePageMeta';
+import { theme } from '../styles/theme';
+import { directoryStyles } from '../styles/directoryPageStyles';
 
 export function PlanetsMissionsPage() {
   const [selectedPlanet, setSelectedPlanet] = useState<string>('All');
@@ -16,6 +18,14 @@ export function PlanetsMissionsPage() {
   const [selectedMission, setSelectedMission] = useState<PlanetNodeMission | null>(null);
   const [inspectorTab, setInspectorTab] = useState<'drops' | 'enemies'>('drops');
   const [enemySearch, setEnemySearch] = useState('');
+  const [showFilters, setShowFilters] = useState(false);
+
+  const activeFilterCount = useMemo(() => {
+    let count = 0;
+    if (selectedPlanet !== 'All') count++;
+    if (selectedType !== 'All') count++;
+    return count;
+  }, [selectedPlanet, selectedType]);
 
   usePageMeta({
     title: 'Star Chart Missions, Drop Tables & Enemy Spawns',
@@ -52,16 +62,18 @@ export function PlanetsMissionsPage() {
     : null;
 
   return (
-    <div style={styles.container}>
+    <div className="page-container-responsive" style={styles.container}>
       <header style={styles.header}>
+        <div style={styles.headerBadge}>Star Chart Codex</div>
         <h1 style={styles.title}>Star Chart Mission & Planet Drops</h1>
         <p style={styles.subtitle}>
           Browse drop tables, boss blueprints, spawnable enemies, and endless rotation loot (Rot A, B, C) across Star Chart planets.
         </p>
       </header>
 
-      <section style={styles.filterSection}>
-        <div style={styles.searchBar}>
+      {/* Search Controls */}
+      <div style={styles.searchControlsRow}>
+        <div style={styles.searchBarWrapper}>
           <input
             type="text"
             placeholder="Search missions, items, bosses (e.g. Sargas Ruk, Axi Relic, Fossa, Kela)..."
@@ -70,54 +82,155 @@ export function PlanetsMissionsPage() {
             style={styles.searchInput}
             aria-label="Search missions and drops"
           />
+          {searchQuery && (
+            <button
+              type="button"
+              onClick={() => setSearchQuery('')}
+              style={styles.clearSearchBtn}
+              title="Clear search"
+            >
+              Clear
+            </button>
+          )}
         </div>
 
-        <div style={styles.planetTabBar}>
+        <button
+          type="button"
+          onClick={() => setShowFilters((prev) => !prev)}
+          style={{
+            ...styles.filterToggleBtn,
+            backgroundColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBg : theme.colors.bgInput,
+            borderColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBorder : theme.colors.borderDefault,
+            color: showFilters || activeFilterCount > 0 ? theme.colors.textHighlight : theme.colors.textSecondary,
+          }}
+          aria-expanded={showFilters}
+        >
+          <span style={{ fontSize: 13 }}>⚙</span>
+          <span>Filters</span>
+          {activeFilterCount > 0 && (
+            <span style={styles.filterCountBadge}>{activeFilterCount}</span>
+          )}
+          <span style={{ fontSize: 10, color: theme.colors.textMuted }}>
+            {showFilters ? '▲' : '▼'}
+          </span>
+        </button>
+
+        {activeFilterCount > 0 && (
           <button
-            onClick={() => setSelectedPlanet('All')}
-            style={{
-              ...styles.planetTab,
-              backgroundColor: selectedPlanet === 'All' ? '#222234' : '#14141c',
-              borderColor: selectedPlanet === 'All' ? '#404060' : '#222230',
-              color: selectedPlanet === 'All' ? '#f0f0fa' : '#8888a0',
+            type="button"
+            onClick={() => {
+              setSelectedPlanet('All');
+              setSelectedType('All');
+            }}
+            style={styles.resetFiltersQuickBtn}
+          >
+            Reset
+          </button>
+        )}
+      </div>
+
+      {/* Collapsible Filter Drawer */}
+      {showFilters && (
+        <div style={styles.filterDrawerCard}>
+          <div style={styles.filterDrawerHeader}>
+            <span style={styles.filterDrawerTitle}>Filter Star Chart Missions</span>
+          </div>
+
+          <div style={styles.filterGroup}>
+            <span style={styles.filterLabel}>Planet:</span>
+            <div style={styles.filterPills}>
+              <button
+                type="button"
+                onClick={() => setSelectedPlanet('All')}
+                style={{
+                  ...styles.filterPill,
+                  ...(selectedPlanet === 'All' ? styles.filterPillActive : {}),
+                }}
+              >
+                All Planets
+              </button>
+              {PLANETS_DATA.map((planet) => (
+                <button
+                  key={planet.id}
+                  type="button"
+                  onClick={() => setSelectedPlanet(planet.id)}
+                  style={{
+                    ...styles.filterPill,
+                    ...(selectedPlanet === planet.id ? styles.filterPillActive : {}),
+                  }}
+                >
+                  {planet.name}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div style={styles.filterGroup}>
+            <span style={styles.filterLabel}>Mission Type:</span>
+            <div style={styles.filterPills}>
+              {missionTypes.map((type) => (
+                <button
+                  key={type}
+                  type="button"
+                  onClick={() => setSelectedType(type)}
+                  style={{
+                    ...styles.filterPill,
+                    ...(selectedType === type ? styles.filterPillActive : {}),
+                  }}
+                >
+                  {type}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div style={styles.filterDrawerFooter}>
+            <span style={{ fontSize: 12, color: theme.colors.textSecondary }}>
+              {activeFilterCount > 0 ? `${activeFilterCount} active filters applied` : 'Showing all Star Chart planets & mission types'}
+            </span>
+            <div style={{ display: 'flex', gap: 8 }}>
+              {activeFilterCount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSelectedPlanet('All');
+                    setSelectedType('All');
+                  }}
+                  style={styles.resetFiltersBtn}
+                >
+                  Reset All
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => setShowFilters(false)}
+                style={styles.applyFiltersBtn}
+              >
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div style={styles.resultsInfoBar}>
+        <span style={styles.resultsCount}>
+          Showing <strong>{displayedMissions.length}</strong> Missions & Nodes
+        </span>
+        {(selectedPlanet !== 'All' || selectedType !== 'All' || searchQuery) && (
+          <button
+            type="button"
+            style={styles.resetFiltersBtn}
+            onClick={() => {
+              setSearchQuery('');
+              setSelectedPlanet('All');
+              setSelectedType('All');
             }}
           >
-            All Planets
+            Reset All Filters
           </button>
-          {PLANETS_DATA.map((planet) => (
-            <button
-              key={planet.id}
-              onClick={() => setSelectedPlanet(planet.id)}
-              style={{
-                ...styles.planetTab,
-                backgroundColor: selectedPlanet === planet.id ? '#222234' : '#14141c',
-                borderColor: selectedPlanet === planet.id ? '#404060' : '#222230',
-                color: selectedPlanet === planet.id ? '#f0f0fa' : '#8888a0',
-              }}
-            >
-              {planet.name}
-            </button>
-          ))}
-        </div>
-
-        <div style={styles.typeFilterRow}>
-          <span style={styles.filterLabel}>Mission Type:</span>
-          {missionTypes.map((type) => (
-            <button
-              key={type}
-              onClick={() => setSelectedType(type)}
-              style={{
-                ...styles.typeBtn,
-                backgroundColor: selectedType === type ? '#1e1e2c' : '#12121a',
-                color: selectedType === type ? '#d0d0e8' : '#7a7a92',
-                borderColor: selectedType === type ? '#34344c' : '#1c1c28',
-              }}
-            >
-              {type}
-            </button>
-          ))}
-        </div>
-      </section>
+        )}
+      </div>
 
       {activePlanetData && (
         <section style={styles.planetOverviewCard}>
@@ -258,7 +371,7 @@ export function PlanetsMissionsPage() {
           aria-modal="true"
           aria-labelledby="mission-inspector-title"
         >
-          <div style={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+          <div className="modal-dialog-responsive" style={styles.modalContent} onClick={(e) => e.stopPropagation()}>
             <div style={styles.modalHeader}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
@@ -287,8 +400,8 @@ export function PlanetsMissionsPage() {
                 onClick={() => setInspectorTab('drops')}
                 style={{
                   ...styles.modalTabBtn,
-                  borderBottomColor: inspectorTab === 'drops' ? '#8ec4f4' : 'transparent',
-                  color: inspectorTab === 'drops' ? '#f0f0fa' : '#8888a0',
+                  borderBottomColor: inspectorTab === 'drops' ? theme.colors.accent : 'transparent',
+                  color: inspectorTab === 'drops' ? theme.colors.textHighlight : theme.colors.textSecondary,
                 }}
               >
                 All Drops & Rewards
@@ -297,8 +410,8 @@ export function PlanetsMissionsPage() {
                 onClick={() => setInspectorTab('enemies')}
                 style={{
                   ...styles.modalTabBtn,
-                  borderBottomColor: inspectorTab === 'enemies' ? '#8ec4f4' : 'transparent',
-                  color: inspectorTab === 'enemies' ? '#f0f0fa' : '#8888a0',
+                  borderBottomColor: inspectorTab === 'enemies' ? theme.colors.accent : 'transparent',
+                  color: inspectorTab === 'enemies' ? theme.colors.textHighlight : theme.colors.textSecondary,
                 }}
               >
                 Spawnable Enemies ({selectedMission.spawnableEnemies?.length || 0})
@@ -349,10 +462,13 @@ export function PlanetsMissionsPage() {
                             <span style={styles.rotHeader}>Rotation A</span>
                             {selectedMission.rotationA.map((r, i) => (
                               <div key={i} style={styles.rotRow}>
-                                <Link to={`/item/${encodeURIComponent(r.itemName)}`} style={styles.itemLink}>
+                                <Link
+                                  to={`/item/${encodeURIComponent(r.itemName)}`}
+                                  style={styles.itemLink}
+                                >
                                   {r.itemName}
                                 </Link>
-                                <span style={styles.chanceText}>{r.chance.toFixed(1)}%</span>
+                                <span style={styles.chanceText}>{r.chance}%</span>
                               </div>
                             ))}
                           </div>
@@ -362,10 +478,13 @@ export function PlanetsMissionsPage() {
                             <span style={styles.rotHeader}>Rotation B</span>
                             {selectedMission.rotationB.map((r, i) => (
                               <div key={i} style={styles.rotRow}>
-                                <Link to={`/item/${encodeURIComponent(r.itemName)}`} style={styles.itemLink}>
+                                <Link
+                                  to={`/item/${encodeURIComponent(r.itemName)}`}
+                                  style={styles.itemLink}
+                                >
                                   {r.itemName}
                                 </Link>
-                                <span style={styles.chanceText}>{r.chance.toFixed(1)}%</span>
+                                <span style={styles.chanceText}>{r.chance}%</span>
                               </div>
                             ))}
                           </div>
@@ -375,10 +494,13 @@ export function PlanetsMissionsPage() {
                             <span style={styles.rotHeader}>Rotation C</span>
                             {selectedMission.rotationC.map((r, i) => (
                               <div key={i} style={styles.rotRow}>
-                                <Link to={`/item/${encodeURIComponent(r.itemName)}`} style={styles.itemLink}>
+                                <Link
+                                  to={`/item/${encodeURIComponent(r.itemName)}`}
+                                  style={styles.itemLink}
+                                >
                                   {r.itemName}
                                 </Link>
-                                <span style={styles.chanceText}>{r.chance.toFixed(1)}%</span>
+                                <span style={styles.chanceText}>{r.chance}%</span>
                               </div>
                             ))}
                           </div>
@@ -403,64 +525,77 @@ export function PlanetsMissionsPage() {
                   <div style={{ marginBottom: 12 }}>
                     <input
                       type="text"
-                      placeholder="Filter enemies or loot drops (e.g. Saryn, Vitality, Butcher)..."
+                      placeholder="Filter enemies by name or category (e.g. Grineer, Heavy Gunner, Eximus)..."
                       value={enemySearch}
                       onChange={(e) => setEnemySearch(e.target.value)}
                       style={styles.modalFilterInput}
-                      aria-label="Filter enemies and drops"
                     />
                   </div>
 
                   {selectedMission.spawnableEnemies && selectedMission.spawnableEnemies.length > 0 ? (
                     <div style={styles.enemiesList}>
                       {selectedMission.spawnableEnemies
-                        .filter(
-                          (enemy) =>
-                            !enemySearch ||
-                            enemy.name.toLowerCase().includes(enemySearch.toLowerCase()) ||
-                            enemy.armorOrHealthType.toLowerCase().includes(enemySearch.toLowerCase()) ||
-                            enemy.drops.some((d) =>
-                              d.itemName.toLowerCase().includes(enemySearch.toLowerCase())
-                            )
-                        )
-                        .map((enemy: SpawnableEnemy, idx) => (
+                        .filter((enemy) => {
+                          if (!enemySearch.trim()) return true;
+                          const q = enemySearch.toLowerCase();
+                          return (
+                            enemy.name.toLowerCase().includes(q) ||
+                            (enemy.unitCategory && enemy.unitCategory.toLowerCase().includes(q)) ||
+                            (enemy.armorOrHealthType && enemy.armorOrHealthType.toLowerCase().includes(q))
+                          );
+                        })
+                        .map((enemy, idx) => (
                           <div key={idx} style={styles.enemyCard}>
                             <div style={styles.enemyCardHeader}>
                               <div>
                                 <span style={styles.enemyName}>{enemy.name}</span>
-                                <span style={styles.enemyArmorText}>
-                                  Health/Armor: {enemy.armorOrHealthType}
-                                </span>
+                                {enemy.armorOrHealthType && (
+                                  <span style={styles.enemyArmorText}>
+                                    Armor / Type: {enemy.armorOrHealthType}
+                                  </span>
+                                )}
                               </div>
-                              <span style={styles.enemyCategoryBadge}>{enemy.unitCategory}</span>
+                              {enemy.unitCategory && (
+                                <span style={styles.enemyCategoryBadge}>{enemy.unitCategory}</span>
+                              )}
                             </div>
 
-                            <div style={styles.enemyDropsBlock}>
-                              <span style={styles.enemyDropsTitle}>Drop Table & Loot:</span>
-                              <div style={styles.enemyDropsGrid}>
-                                {enemy.drops.map((drop, dIdx) => (
-                                  <div key={dIdx} style={styles.enemyDropItem}>
-                                    <Link
-                                      to={`/item/${encodeURIComponent(drop.itemName)}`}
-                                      style={styles.enemyDropLink}
-                                    >
-                                      {drop.itemName} &rarr;
-                                    </Link>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                                      <span style={styles.dropCategoryTag}>{drop.category}</span>
-                                      <span style={styles.dropChanceTag}>{drop.chanceText}</span>
+                            {enemy.drops && enemy.drops.length > 0 && (
+                              <div style={styles.enemyDropsBlock}>
+                                <span style={styles.enemyDropsTitle}>
+                                  Verified Drop Pool ({enemy.drops.length} items):
+                                </span>
+                                <div style={styles.enemyDropsGrid}>
+                                  {enemy.drops.map((drop, dIdx) => (
+                                    <div key={dIdx} style={styles.enemyDropItem}>
+                                      <Link
+                                        to={`/item/${encodeURIComponent(drop.itemName)}`}
+                                        style={styles.enemyDropLink}
+                                      >
+                                        {drop.itemName}
+                                      </Link>
+                                      <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+                                        {drop.category && (
+                                          <span style={styles.dropCategoryTag}>
+                                            {drop.category}
+                                          </span>
+                                        )}
+                                        <span style={styles.dropChanceTag}>
+                                          {drop.chanceText}
+                                        </span>
+                                      </div>
                                     </div>
-                                  </div>
-                                ))}
+                                  ))}
+                                </div>
                               </div>
-                            </div>
+                            )}
                           </div>
                         ))}
                     </div>
                   ) : (
                     <div style={styles.fallbackEnemiesBox}>
-                      <p style={{ margin: 0, fontSize: 13, color: '#9a9ab0', lineHeight: 1.5 }}>
-                        Standard {selectedMission.faction} combat units spawn dynamically based on mission level ({selectedMission.levelRange}). Refer to the All Drops tab for node-specific drop tables and mission rewards.
+                      <p style={{ color: theme.colors.textSecondary, margin: 0 }}>
+                        Specific spawn list not cataloged for this node yet.
                       </p>
                     </div>
                   )}
@@ -475,88 +610,12 @@ export function PlanetsMissionsPage() {
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  container: {
-    padding: '16px 18px 60px 18px',
-    maxWidth: 1040,
-    margin: '0 auto',
-  },
-  header: {
-    backgroundColor: '#151722',
-    border: '1px solid #232738',
-    borderRadius: 8,
-    padding: '16px 20px',
-    marginBottom: 16,
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 700,
-    color: '#f0f0f8',
-    margin: '0 0 4px 0',
-  },
-  subtitle: {
-    fontSize: 13,
-    color: '#888ca8',
-    margin: 0,
-    lineHeight: 1.4,
-  },
-  filterSection: {
-    backgroundColor: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
-    padding: 16,
-    marginBottom: 16,
-  },
-  searchBar: {
-    marginBottom: 14,
-  },
-  searchInput: {
-    width: '100%',
-    boxSizing: 'border-box',
-    padding: '10px 14px',
-    background: '#0e0e12',
-    border: '1px solid #2a2a3c',
-    borderRadius: 5,
-    color: '#e2e2ec',
-    fontSize: 14,
-    outline: 'none',
-  },
-  planetTabBar: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: 6,
-    marginBottom: 12,
-  },
-  planetTab: {
-    padding: '6px 12px',
-    borderRadius: 4,
-    border: '1px solid',
-    fontSize: 12,
-    cursor: 'pointer',
-    fontWeight: 500,
-  },
-  typeFilterRow: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-    gap: 6,
-    marginTop: 8,
-  },
-  filterLabel: {
-    fontSize: 12,
-    color: '#888ca8',
-    marginRight: 4,
-  },
-  typeBtn: {
-    padding: '4px 10px',
-    border: '1px solid',
-    borderRadius: 3,
-    fontSize: 11,
-    cursor: 'pointer',
-  },
+  ...directoryStyles,
+  emptyNotice: directoryStyles.emptyNoticeBox,
   planetOverviewCard: {
-    background: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.lg,
     padding: 16,
     marginBottom: 16,
   },
@@ -569,44 +628,40 @@ const styles: Record<string, React.CSSProperties> = {
   planetName: {
     fontSize: 18,
     fontWeight: 600,
-    color: '#eaeaf4',
+    color: theme.colors.textHighlight,
     margin: 0,
   },
   planetFaction: {
     fontSize: 12,
-    color: '#8a8aa0',
+    color: theme.colors.textSecondary,
   },
   bossBadge: {
     fontSize: 12,
     padding: '3px 8px',
-    background: '#241a1a',
-    color: '#d48888',
-    borderRadius: 4,
+    background: theme.colors.redBg,
+    color: theme.colors.red,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.redBorder}`,
   },
   resourceRow: {
     fontSize: 12,
   },
   resourceLabel: {
-    color: '#7a7a90',
+    color: theme.colors.textMuted,
     marginRight: 6,
   },
   resourceList: {
-    color: '#90c490',
+    color: theme.colors.green,
   },
   missionsList: {
     display: 'flex',
     flexDirection: 'column',
     gap: 16,
   },
-  emptyNotice: {
-    color: '#8a8aa0',
-    fontSize: 14,
-    padding: '24px 0',
-  },
   missionCard: {
-    background: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.lg,
     padding: 16,
   },
   missionCardHeader: {
@@ -626,40 +681,43 @@ const styles: Record<string, React.CSSProperties> = {
   nodeTitle: {
     fontSize: 16,
     fontWeight: 600,
-    color: '#e4e4ee',
+    color: theme.colors.textHighlight,
     margin: 0,
   },
   planetTag: {
     fontSize: 11,
     padding: '2px 6px',
-    background: '#162230',
-    color: '#8ec4f4',
-    borderRadius: 3,
+    background: theme.colors.accentBg,
+    color: theme.colors.accent,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.accentBorder}`,
     fontWeight: 600,
   },
   typeBadge: {
     fontSize: 11,
     padding: '2px 6px',
-    background: '#1c1c2c',
-    color: '#9090b8',
-    borderRadius: 3,
+    background: theme.colors.purpleBg,
+    color: theme.colors.purple,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.purpleBorder}`,
   },
   levelBadge: {
     fontSize: 11,
     padding: '2px 6px',
-    background: '#181822',
-    color: '#8a8aa0',
-    borderRadius: 3,
+    background: theme.colors.bgCardElevated,
+    color: theme.colors.textSecondary,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   factionText: {
     fontSize: 12,
-    color: '#7a7a90',
+    color: theme.colors.textMuted,
   },
   inspectBtn: {
-    background: '#1e2436',
-    color: '#8ec4f4',
-    border: '1px solid #2e3852',
-    borderRadius: 4,
+    background: theme.colors.accentBg,
+    color: theme.colors.accent,
+    border: `1px solid ${theme.colors.accentBorder}`,
+    borderRadius: theme.radii.sm,
     padding: '5px 12px',
     fontSize: 12,
     fontWeight: 600,
@@ -667,19 +725,20 @@ const styles: Record<string, React.CSSProperties> = {
   },
   missionNotes: {
     fontSize: 12,
-    color: '#9090a8',
+    color: theme.colors.textSecondary,
     margin: '0 0 10px 0',
     lineHeight: 1.4,
   },
   specialDropsBlock: {
-    background: '#161622',
-    borderRadius: 4,
+    background: theme.colors.bgCardElevated,
+    borderRadius: theme.radii.sm,
     padding: 10,
     marginBottom: 10,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   blockTitle: {
     fontSize: 12,
-    color: '#b0b0c4',
+    color: theme.colors.textPrimary,
     display: 'block',
     marginBottom: 6,
   },
@@ -690,7 +749,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   specialDropItem: {
     fontSize: 12,
-    color: '#a0c4a0',
+    color: theme.colors.green,
     padding: '2px 0',
   },
   rotationsSection: {
@@ -703,17 +762,17 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: 6,
   },
   rotationCol: {
-    background: '#161622',
-    borderRadius: 4,
+    background: theme.colors.bgInput,
+    borderRadius: theme.radii.sm,
     padding: 10,
-    border: '1px solid #1e1e2c',
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   rotHeader: {
     fontSize: 11,
     fontWeight: 600,
-    color: '#9292b0',
+    color: theme.colors.textSecondary,
     display: 'block',
-    borderBottom: '1px solid #222234',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
     paddingBottom: 4,
     marginBottom: 6,
     textTransform: 'uppercase',
@@ -725,18 +784,18 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '3px 0',
   },
   itemLink: {
-    color: '#c8c8dc',
+    color: theme.colors.textPrimary,
     textDecoration: 'none',
   },
   chanceText: {
-    color: '#8ec48e',
+    color: theme.colors.green,
     fontWeight: 500,
     marginLeft: 8,
   },
   enemiesPreviewBlock: {
     marginTop: 12,
     paddingTop: 10,
-    borderTop: '1px solid #1c1c28',
+    borderTop: `1px solid ${theme.colors.borderSubtle}`,
     display: 'flex',
     alignItems: 'center',
     gap: 8,
@@ -744,7 +803,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   enemiesPreviewLabel: {
     fontSize: 11,
-    color: '#7a7a92',
+    color: theme.colors.textMuted,
     fontWeight: 600,
   },
   enemiesPreviewChips: {
@@ -754,11 +813,11 @@ const styles: Record<string, React.CSSProperties> = {
   },
   enemyPreviewChip: {
     fontSize: 11,
-    background: '#1a1a28',
-    border: '1px solid #262638',
-    color: '#b0b0c8',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    color: theme.colors.textSecondary,
     padding: '2px 6px',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
   },
   modalBackdrop: {
     position: 'fixed',
@@ -766,7 +825,7 @@ const styles: Record<string, React.CSSProperties> = {
     left: 0,
     right: 0,
     bottom: 0,
-    background: 'rgba(5, 5, 10, 0.85)',
+    background: theme.colors.bgModalBackdrop,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -774,54 +833,55 @@ const styles: Record<string, React.CSSProperties> = {
     padding: 16,
   },
   modalContent: {
-    background: '#12121c',
-    border: '1px solid #26263c',
-    borderRadius: 8,
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderStrong}`,
+    borderRadius: theme.radii.lg,
     maxWidth: 780,
     width: '100%',
     maxHeight: '90vh',
     display: 'flex',
     flexDirection: 'column',
-    boxShadow: '0 16px 40px rgba(0, 0, 0, 0.7)',
+    boxShadow: theme.shadows.lg,
   },
   modalHeader: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     padding: '16px 20px',
-    borderBottom: '1px solid #1e1e2c',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
   },
   modalTitle: {
     fontSize: 20,
     fontWeight: 700,
-    color: '#f0f0fa',
+    color: theme.colors.textHighlight,
     margin: 0,
   },
   modalPlanetBadge: {
     fontSize: 12,
     padding: '2px 8px',
-    background: '#182438',
-    color: '#8ec4f4',
-    borderRadius: 3,
+    background: theme.colors.accentBg,
+    color: theme.colors.accent,
+    borderRadius: theme.radii.sm,
     fontWeight: 600,
+    border: `1px solid ${theme.colors.accentBorder}`,
   },
   modalFaction: {
     fontSize: 12,
-    color: '#8a8aa0',
+    color: theme.colors.textSecondary,
     marginTop: 4,
     display: 'block',
   },
   modalCloseBtn: {
     background: 'none',
     border: 'none',
-    color: '#8a8aa0',
+    color: theme.colors.textSecondary,
     fontSize: 24,
     cursor: 'pointer',
     padding: '0 4px',
   },
   modalTabs: {
     display: 'flex',
-    borderBottom: '1px solid #1e1e2c',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
     padding: '0 20px',
     gap: 16,
   },
@@ -842,9 +902,9 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 16,
   },
   inspectorSectionBox: {
-    background: '#151522',
-    border: '1px solid #1f1f30',
-    borderRadius: 6,
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: 12,
     marginBottom: 12,
   },
@@ -856,11 +916,11 @@ const styles: Record<string, React.CSSProperties> = {
   },
   resourceChip: {
     fontSize: 12,
-    background: '#1a221a',
-    color: '#90d490',
-    border: '1px solid #253825',
+    background: theme.colors.greenBg,
+    color: theme.colors.green,
+    border: `1px solid ${theme.colors.greenBorder}`,
     padding: '4px 10px',
-    borderRadius: 4,
+    borderRadius: theme.radii.sm,
     textDecoration: 'none',
     fontWeight: 500,
   },
@@ -868,10 +928,10 @@ const styles: Record<string, React.CSSProperties> = {
     width: '100%',
     boxSizing: 'border-box',
     padding: '8px 12px',
-    background: '#161624',
-    border: '1px solid #26263a',
-    borderRadius: 4,
-    color: '#e4e4f0',
+    background: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.sm,
+    color: theme.colors.textHighlight,
     fontSize: 13,
     outline: 'none',
   },
@@ -881,9 +941,9 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 12,
   },
   enemyCard: {
-    background: '#151522',
-    border: '1px solid #202034',
-    borderRadius: 6,
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: 12,
   },
   enemyCardHeader: {
@@ -895,32 +955,33 @@ const styles: Record<string, React.CSSProperties> = {
   enemyName: {
     fontSize: 14,
     fontWeight: 600,
-    color: '#f0f0fa',
+    color: theme.colors.textHighlight,
     display: 'block',
   },
   enemyArmorText: {
     fontSize: 11,
-    color: '#8a8aa4',
+    color: theme.colors.textMuted,
     marginTop: 2,
     display: 'block',
   },
   enemyCategoryBadge: {
     fontSize: 10,
     padding: '2px 6px',
-    background: '#241c2c',
-    color: '#c490d4',
-    borderRadius: 3,
+    background: theme.colors.purpleBg,
+    color: theme.colors.purple,
+    borderRadius: theme.radii.sm,
     fontWeight: 600,
     textTransform: 'uppercase',
+    border: `1px solid ${theme.colors.purpleBorder}`,
   },
   enemyDropsBlock: {
     marginTop: 8,
-    borderTop: '1px solid #1c1c2c',
+    borderTop: `1px solid ${theme.colors.borderSubtle}`,
     paddingTop: 8,
   },
   enemyDropsTitle: {
     fontSize: 11,
-    color: '#8a8aa0',
+    color: theme.colors.textSecondary,
     fontWeight: 600,
     display: 'block',
     marginBottom: 6,
@@ -934,31 +995,33 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    background: '#111118',
+    background: theme.colors.bgInput,
     padding: '5px 8px',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
     fontSize: 12,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   enemyDropLink: {
-    color: '#c0c0d8',
+    color: theme.colors.textPrimary,
     textDecoration: 'none',
   },
   dropCategoryTag: {
     fontSize: 10,
-    background: '#1c1c28',
-    color: '#8a8aa0',
+    background: theme.colors.bgCardElevated,
+    color: theme.colors.textMuted,
     padding: '1px 5px',
-    borderRadius: 2,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   dropChanceTag: {
     fontSize: 11,
-    color: '#8ec48e',
+    color: theme.colors.green,
     fontWeight: 600,
   },
   fallbackEnemiesBox: {
-    background: '#151522',
-    border: '1px solid #1f1f30',
-    borderRadius: 6,
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: 16,
     textAlign: 'center',
   },

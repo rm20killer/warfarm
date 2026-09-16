@@ -20,19 +20,31 @@ export interface MarketOrder {
   platform: 'pc' | 'xbox' | 'ps4' | 'switch';
 }
 
-export interface MarketStatistics {
-  datetime: string;
-  minPrice: number;
-  maxPrice: number;
-  avgPrice: number;
-  median: number;
-  waPrice: number;
-  volume: number;
+export interface MarketPriceSummary {
+  slug: string;
+  itemName: string;
+  minSell: number | null; // Lowest active sell price (Buy Now)
+  maxBuy: number | null; // Highest active buy price (Sell Now)
+  activeOrderCount: number;
+  onlineSellersCount: number;
+  marketUrl: string;
+  updatedAt: string;
+  isCached?: boolean;
 }
 
-export interface MarketItemDetails {
-  item: MarketItem;
-  orders: MarketOrder[];
-  statistics48h: MarketStatistics[];
-  statistics90d: MarketStatistics[];
+export interface MarketPartPriceEntry {
+  partName: string;
+  slug: string;
+  minSell: number | null;
+  maxBuy: number | null;
+  marketUrl: string;
+}
+
+export interface PrimeSetMarketBreakdown {
+  baseItemName: string;
+  setSummary: MarketPriceSummary | null;
+  parts: MarketPartPriceEntry[];
+  totalPartsMinSell: number | null;
+  setVsPartsDifference: number | null; // negative means buying parts separately is cheaper
+  updatedAt: string;
 }

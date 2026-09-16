@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ItemThumbnail } from '../../../shared/utils/item-images';
 import { ItemComponentInfo } from '../../../shared/data/item-components';
+import { theme } from '../../styles/theme';
 import { detailStyles as styles } from './itemDetailStyles';
 
 interface ComponentDetailViewProps {
@@ -19,7 +20,7 @@ export function ComponentDetailView({ componentInfo }: ComponentDetailViewProps)
               <span style={styles.componentBadge}>
                 {componentInfo.isPrime ? 'PRIME ' : ''}{componentInfo.parentCategory.toUpperCase()} COMPONENT
               </span>
-              <span style={{ fontSize: 13, color: '#a0a8c8' }}>
+              <span style={{ fontSize: 13, color: theme.colors.textSecondary }}>
                 Part of:
               </span>
               <Link
@@ -29,7 +30,7 @@ export function ComponentDetailView({ componentInfo }: ComponentDetailViewProps)
                 {componentInfo.parentItemName}
               </Link>
             </div>
-            <p style={{ margin: 0, fontSize: 13, color: '#c0c8e0', lineHeight: 1.45 }}>
+            <p style={{ margin: 0, fontSize: 13, color: theme.colors.textPrimary, lineHeight: 1.45 }}>
               {componentInfo.isPreCraftedDrop
                 ? `Pre-crafted part obtained directly from Void Relics. Used in the Foundry to build ${componentInfo.parentItemName}.`
                 : componentInfo.isBlueprint

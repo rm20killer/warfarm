@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { getResourceGuide } from '../../shared/data/resource-guide';
 import { ItemThumbnail } from '../../shared/utils/item-images';
 import { resolveComponentFullName } from '../../shared/data/item-components';
+import { theme } from '../styles/theme';
 
 interface ResourceFarmTooltipProps {
   ingredientName: string;
@@ -19,7 +20,6 @@ export function ResourceFarmTooltip({ ingredientName, count, isComponent, parent
   const closeTimerRef = useRef<NodeJS.Timeout | null>(null);
   const navigate = useNavigate();
   const guide = getResourceGuide(ingredientName);
-
 
   useEffect(() => {
     return () => {
@@ -147,9 +147,9 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'inline-flex',
     alignItems: 'center',
     gap: 8,
-    background: '#161622',
-    border: '1px solid #242436',
-    borderRadius: 4,
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.sm,
     padding: '6px 12px',
     cursor: 'pointer',
     transition: 'border-color 0.15s, background-color 0.15s',
@@ -157,19 +157,19 @@ const styles: Record<string, React.CSSProperties> = {
   countBadge: {
     fontSize: 11,
     fontWeight: 700,
-    color: '#8ec48e',
-    background: '#142214',
+    color: theme.colors.green,
+    background: theme.colors.greenBg,
     padding: '2px 6px',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
   },
   ingredientName: {
     fontSize: 13,
     fontWeight: 500,
-    color: '#e4e4ee',
+    color: theme.colors.textHighlight,
   },
   infoIcon: {
     fontSize: 11,
-    color: '#7a7a92',
+    color: theme.colors.textMuted,
   },
   tooltipContainer: {
     position: 'absolute',
@@ -182,11 +182,11 @@ const styles: Record<string, React.CSSProperties> = {
   },
   tooltipCard: {
     width: 280,
-    background: '#141422',
-    border: '1px solid #2c2c44',
-    borderRadius: 6,
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderStrong}`,
+    borderRadius: theme.radii.md,
     padding: 14,
-    boxShadow: '0 8px 28px rgba(0, 0, 0, 0.7)',
+    boxShadow: theme.shadows.lg,
     textAlign: 'left',
   },
   tooltipHeader: {
@@ -194,20 +194,20 @@ const styles: Record<string, React.CSSProperties> = {
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 8,
-    borderBottom: '1px solid #1e1e30',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
     paddingBottom: 6,
   },
   tooltipTitle: {
     fontSize: 13,
     fontWeight: 600,
-    color: '#eaeaf4',
+    color: theme.colors.textHighlight,
   },
   tooltipBadge: {
     fontSize: 10,
     padding: '1px 5px',
-    background: '#222234',
-    color: '#9a9ac0',
-    borderRadius: 3,
+    background: theme.colors.bgCardElevated,
+    color: theme.colors.textSecondary,
+    borderRadius: theme.radii.sm,
   },
   tooltipRow: {
     fontSize: 11,
@@ -216,15 +216,15 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 6,
   },
   tooltipLabel: {
-    color: '#7c7c94',
+    color: theme.colors.textMuted,
   },
   tooltipValue: {
-    color: '#d0d0e2',
+    color: theme.colors.textPrimary,
   },
   bestNodeBox: {
-    background: '#181828',
-    border: '1px solid #24243a',
-    borderRadius: 4,
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.sm,
     padding: 8,
     marginTop: 6,
     marginBottom: 8,
@@ -238,28 +238,28 @@ const styles: Record<string, React.CSSProperties> = {
   bestNodeLabel: {
     fontSize: 10,
     fontWeight: 600,
-    color: '#9090b0',
+    color: theme.colors.textSecondary,
     textTransform: 'uppercase',
   },
   bestNodeRating: {
     fontSize: 10,
     fontWeight: 700,
-    color: '#90d490',
+    color: theme.colors.green,
   },
   bestNodeName: {
     fontSize: 12,
     fontWeight: 600,
-    color: '#e4e4f0',
+    color: theme.colors.textHighlight,
   },
   bestNodeType: {
     fontSize: 10,
-    color: '#7a7a92',
+    color: theme.colors.textMuted,
     display: 'block',
     marginBottom: 4,
   },
   bestNodeTip: {
     fontSize: 11,
-    color: '#8e8ea4',
+    color: theme.colors.textSecondary,
     margin: 0,
     lineHeight: 1.3,
   },
@@ -270,18 +270,18 @@ const styles: Record<string, React.CSSProperties> = {
     marginBottom: 8,
   },
   framesValue: {
-    color: '#8ec4c4',
+    color: theme.colors.accent,
   },
   viewGuideLink: {
     display: 'block',
     fontSize: 11,
-    color: '#6e8ec4',
+    color: theme.colors.accent,
     textDecoration: 'none',
     marginTop: 4,
   },
   componentNotice: {
     fontSize: 11,
-    color: '#8c8ca0',
+    color: theme.colors.textSecondary,
     lineHeight: 1.4,
     margin: 0,
   },

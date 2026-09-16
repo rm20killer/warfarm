@@ -12,6 +12,9 @@ import {
   removePersonalTarget,
 } from '../storage';
 import { usePageMeta } from '../../shared/utils/usePageMeta';
+import { theme } from '../styles/theme';
+import { directoryStyles } from '../styles/directoryPageStyles';
+import { formatWarframeText } from '../utils/format-text';
 
 const SLOT_TABS: Array<{ slot: string; label: string }> = [
   { slot: 'All', label: 'All Slots' },
@@ -47,33 +50,33 @@ function getRarityTheme(rarity: string) {
   const r = rarity.toLowerCase();
   if (r.includes('legendary')) {
     return {
-      border: '#ffd700',
-      badgeBg: 'rgba(255, 215, 0, 0.15)',
-      badgeText: '#ffd700',
-      tagBorder: '#ffd700',
+      border: theme.colors.rarityLegendaryBorder,
+      badgeBg: theme.colors.rarityLegendaryBg,
+      badgeText: theme.colors.rarityLegendary,
+      tagBorder: theme.colors.rarityLegendaryBorder,
     };
   }
   if (r.includes('rare')) {
     return {
-      border: '#d4af37',
-      badgeBg: 'rgba(212, 175, 55, 0.15)',
-      badgeText: '#ffd700',
-      tagBorder: '#d4af37',
+      border: theme.colors.rarityRareBorder,
+      badgeBg: theme.colors.rarityRareBg,
+      badgeText: theme.colors.rarityRare,
+      tagBorder: theme.colors.rarityRareBorder,
     };
   }
   if (r.includes('uncommon')) {
     return {
-      border: '#7090b8',
-      badgeBg: 'rgba(112, 144, 184, 0.15)',
-      badgeText: '#90caf9',
-      tagBorder: '#7090b8',
+      border: theme.colors.rarityUncommonBorder,
+      badgeBg: theme.colors.rarityUncommonBg,
+      badgeText: theme.colors.rarityUncommon,
+      tagBorder: theme.colors.rarityUncommonBorder,
     };
   }
   return {
-    border: '#a67042',
-    badgeBg: 'rgba(166, 112, 66, 0.15)',
-    badgeText: '#d49b6a',
-    tagBorder: '#a67042',
+    border: theme.colors.rarityCommonBorder,
+    badgeBg: theme.colors.rarityCommonBg,
+    badgeText: theme.colors.rarityCommon,
+    tagBorder: theme.colors.rarityCommonBorder,
   };
 }
 
@@ -95,7 +98,17 @@ export function ArcanesDirectoryPage() {
   const queryParam = searchParams.get('q') || '';
 
   const [searchQuery, setSearchQuery] = useState(queryParam);
+  const [showFilters, setShowFilters] = useState<boolean>(false);
   const [targetIds, setTargetIds] = useState<Set<string>>(new Set());
+
+  const activeFilterCount = useMemo(() => {
+    let count = 0;
+    if (slotParam !== 'All') count++;
+    if (rarityParam !== 'All') count++;
+    if (sourceParam !== 'All') count++;
+    if (sortParam !== 'name_asc') count++;
+    return count;
+  }, [slotParam, rarityParam, sourceParam, sortParam]);
 
   useEffect(() => {
     const updateTargets = () => {
@@ -221,128 +234,201 @@ export function ArcanesDirectoryPage() {
   };
 
   return (
-    <div style={styles.container}>
+    <div className="page-container-responsive" style={styles.container}>
       <header style={styles.header}>
-        <div style={styles.headerBadge}>Warframe Upgrades</div>
         <h1 style={styles.title}>Arcanes & Enhancements Directory</h1>
         <p style={styles.subtitle}>
           Browse all {allArcanes.length} Arcanes across Warframes, Weapons, Operators, and Amps. Find exact drop chances from Eidolon hunts, Steel Path Acolytes, Zariman, Sanctum Netracells, and syndicate vendors.
         </p>
       </header>
 
-      <div style={styles.searchBarWrapper}>
-        <input
-          type="text"
-          style={styles.searchInput}
-          placeholder="Search Arcanes by name, perk, or effect (e.g. Energize, Ability Strength, Overguard, Multishot)..."
-          value={searchQuery}
-          onChange={(e) => {
-            setSearchQuery(e.target.value);
-            updateFilterParam('q', e.target.value);
+      <div style={styles.searchControlsRow}>
+        <div style={styles.searchBarWrapper}>
+          <input
+            type="text"
+            style={styles.searchInput}
+            placeholder="Search Arcanes by name, perk, or effect (e.g. Energize, Ability Strength, Overguard, Multishot)..."
+            value={searchQuery}
+            onChange={(e) => {
+              setSearchQuery(e.target.value);
+              updateFilterParam('q', e.target.value);
+            }}
+            aria-label="Search Arcanes"
+          />
+          {searchQuery && (
+            <button
+              type="button"
+              style={styles.clearSearchBtn}
+              onClick={() => {
+                setSearchQuery('');
+                updateFilterParam('q', '');
+              }}
+            >
+              Clear
+            </button>
+          )}
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setShowFilters((prev) => !prev)}
+          style={{
+            ...styles.filterToggleBtn,
+            backgroundColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBg : theme.colors.bgInput,
+            borderColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBorder : theme.colors.borderDefault,
+            color: showFilters || activeFilterCount > 0 ? theme.colors.textHighlight : theme.colors.textSecondary,
           }}
-          aria-label="Search Arcanes"
-        />
-        {searchQuery && (
+          aria-expanded={showFilters}
+        >
+          <span style={{ fontSize: 13 }}>⚙</span>
+          <span>Filters</span>
+          {activeFilterCount > 0 && (
+            <span style={styles.filterCountBadge}>{activeFilterCount}</span>
+          )}
+          <span style={{ fontSize: 10, color: theme.colors.textMuted }}>
+            {showFilters ? '▲' : '▼'}
+          </span>
+        </button>
+
+        {activeFilterCount > 0 && (
           <button
             type="button"
-            style={styles.clearSearchBtn}
             onClick={() => {
-              setSearchQuery('');
-              updateFilterParam('q', '');
+              setSearchParams({}, { replace: true });
             }}
+            style={styles.resetFiltersQuickBtn}
           >
-            Clear
+            Reset
           </button>
         )}
       </div>
 
-      <div style={styles.filterSection}>
-        <div style={styles.filterGroup}>
-          <span style={styles.filterLabel}>Slot:</span>
-          <div style={styles.pillRow}>
-            {SLOT_TABS.map((t) => {
-              const active = slotParam.toLowerCase() === t.slot.toLowerCase();
-              return (
-                <button
-                  key={t.slot}
-                  type="button"
-                  onClick={() => updateFilterParam('slot', t.slot)}
-                  style={{
-                    ...styles.filterPill,
-                    ...(active ? styles.filterPillActive : {}),
-                  }}
-                >
-                  {t.label} ({countsBySlot[t.slot] || 0})
-                </button>
-              );
-            })}
+      {showFilters && (
+        <div style={styles.filterDrawerCard}>
+          <div style={styles.filterDrawerHeader}>
+            <span style={styles.filterDrawerTitle}>Filter Arcanes Catalog</span>
+            <button
+              type="button"
+              onClick={() => setShowFilters(false)}
+              style={styles.closeDrawerBtn}
+            >
+              &times; Close
+            </button>
           </div>
-        </div>
 
-        <div style={styles.filterGroup}>
-          <span style={styles.filterLabel}>Acquisition Source:</span>
-          <div style={styles.pillRow}>
-            {SOURCE_FILTERS.map((s) => {
-              const active = sourceParam.toLowerCase() === s.id.toLowerCase();
-              return (
-                <button
-                  key={s.id}
-                  type="button"
-                  onClick={() => updateFilterParam('source', s.id)}
-                  style={{
-                    ...styles.filterPill,
-                    ...(active ? styles.filterPillActive : {}),
-                  }}
-                >
-                  {s.label}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        <div style={styles.secondaryFilterRow}>
-          <div style={styles.filterGroupInline}>
-            <span style={styles.filterLabelInline}>Rarity:</span>
-            <div style={styles.pillRowSmall}>
-              {RARITY_FILTERS.map((r) => {
-                const active = rarityParam.toLowerCase() === r.id.toLowerCase();
+          <div style={styles.filterGroup}>
+            <span style={styles.filterLabel}>Slot:</span>
+            <div style={styles.pillRow}>
+              {SLOT_TABS.map((t) => {
+                const active = slotParam.toLowerCase() === t.slot.toLowerCase();
                 return (
                   <button
-                    key={r.id}
+                    key={t.slot}
                     type="button"
-                    onClick={() => updateFilterParam('rarity', r.id)}
+                    onClick={() => updateFilterParam('slot', t.slot)}
                     style={{
-                      ...styles.filterPillSmall,
+                      ...styles.filterPill,
                       ...(active ? styles.filterPillActive : {}),
                     }}
                   >
-                    {r.label}
+                    {t.label} ({countsBySlot[t.slot] || 0})
                   </button>
                 );
               })}
             </div>
           </div>
 
-          <div style={styles.sortWrapper}>
-            <label htmlFor="arcane-sort-select" style={styles.sortLabel}>
-              Sort:
-            </label>
-            <select
-              id="arcane-sort-select"
-              style={styles.sortSelect}
-              value={sortParam}
-              onChange={(e) => updateFilterParam('sort', e.target.value)}
-            >
-              <option value="name_asc">Alphabetical (A - Z)</option>
-              <option value="name_desc">Alphabetical (Z - A)</option>
-              <option value="rarity_high">Rarity (Legendary First)</option>
-              <option value="rarity_low">Rarity (Common First)</option>
-              <option value="ranks_desc">Max Rank (High - Low)</option>
-            </select>
+          <div style={styles.filterGroup}>
+            <span style={styles.filterLabel}>Acquisition Source:</span>
+            <div style={styles.pillRow}>
+              {SOURCE_FILTERS.map((s) => {
+                const active = sourceParam.toLowerCase() === s.id.toLowerCase();
+                return (
+                  <button
+                    key={s.id}
+                    type="button"
+                    onClick={() => updateFilterParam('source', s.id)}
+                    style={{
+                      ...styles.filterPill,
+                      ...(active ? styles.filterPillActive : {}),
+                    }}
+                  >
+                    {s.label}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div style={styles.secondaryFilterRow}>
+            <div style={styles.filterGroupInline}>
+              <span style={styles.filterLabelInline}>Rarity:</span>
+              <div style={styles.pillRowSmall}>
+                {RARITY_FILTERS.map((r) => {
+                  const active = rarityParam.toLowerCase() === r.id.toLowerCase();
+                  return (
+                    <button
+                      key={r.id}
+                      type="button"
+                      onClick={() => updateFilterParam('rarity', r.id)}
+                      style={{
+                        ...styles.filterPillSmall,
+                        ...(active ? styles.filterPillActive : {}),
+                      }}
+                    >
+                      {r.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div style={styles.sortWrapper}>
+              <label htmlFor="arcane-sort-select" style={styles.sortLabel}>
+                Sort:
+              </label>
+              <select
+                id="arcane-sort-select"
+                style={styles.sortSelect}
+                value={sortParam}
+                onChange={(e) => updateFilterParam('sort', e.target.value)}
+              >
+                <option value="name_asc">Alphabetical (A - Z)</option>
+                <option value="name_desc">Alphabetical (Z - A)</option>
+                <option value="rarity_high">Rarity (Legendary First)</option>
+                <option value="rarity_low">Rarity (Common First)</option>
+                <option value="ranks_desc">Max Rank (High - Low)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style={styles.filterDrawerFooter}>
+            <span style={{ fontSize: 12, color: theme.colors.textSecondary }}>
+              {activeFilterCount > 0 ? `${activeFilterCount} active filters applied` : 'Showing all arcanes'}
+            </span>
+            <div style={{ display: 'flex', gap: 8 }}>
+              {activeFilterCount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSearchParams({}, { replace: true });
+                  }}
+                  style={styles.resetFiltersBtn}
+                >
+                  Reset All
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => setShowFilters(false)}
+                style={styles.applyFiltersBtn}
+              >
+                Done
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       <div style={styles.resultsInfoBar}>
         <span style={styles.resultsCount}>
@@ -362,9 +448,9 @@ export function ArcanesDirectoryPage() {
         )}
       </div>
 
-      <div style={styles.arcaneGrid}>
+      <div className="card-grid-responsive" style={styles.arcaneGrid}>
         {filteredArcanes.map((arcane) => {
-          const theme = getRarityTheme(arcane.rarity);
+          const rarityTheme = getRarityTheme(arcane.rarity);
           const isTarget = targetIds.has(arcane.id);
           const cleanDesc = arcane.description.replace(/\\n/g, ' ').trim();
 
@@ -376,7 +462,7 @@ export function ArcanesDirectoryPage() {
               key={arcane.id}
               style={{
                 ...styles.arcaneCard,
-                borderColor: theme.border,
+                borderColor: rarityTheme.border,
               }}
             >
               <div style={styles.cardHeader}>
@@ -401,9 +487,9 @@ export function ArcanesDirectoryPage() {
                     <span
                       style={{
                         ...styles.rarityBadge,
-                        backgroundColor: theme.badgeBg,
-                        color: theme.badgeText,
-                        borderColor: theme.tagBorder,
+                        backgroundColor: rarityTheme.badgeBg,
+                        color: rarityTheme.badgeText,
+                        borderColor: rarityTheme.tagBorder,
                       }}
                     >
                       {arcane.rarity}
@@ -421,8 +507,8 @@ export function ArcanesDirectoryPage() {
                   type="button"
                   style={{
                     ...styles.targetBtn,
-                    backgroundColor: isTarget ? '#ffd700' : '#1e1f2b',
-                    color: isTarget ? '#101118' : '#8888a2',
+                    backgroundColor: isTarget ? theme.colors.gold : theme.colors.bgInput,
+                    color: isTarget ? theme.colors.textInverse : theme.colors.textSecondary,
                   }}
                   onClick={() => handleToggleTarget(arcane)}
                   title={isTarget ? 'Remove from My Targets' : 'Add to My Targets'}
@@ -433,7 +519,7 @@ export function ArcanesDirectoryPage() {
 
               <div style={styles.cardBody}>
                 <p style={styles.effectText}>
-                  {cleanDesc || 'Provides unique specialized stat enhancements.'}
+                  {cleanDesc ? formatWarframeText(cleanDesc) : 'Provides unique specialized stat enhancements.'}
                 </p>
 
                 <div style={styles.acquisitionSection}>
@@ -454,7 +540,7 @@ export function ArcanesDirectoryPage() {
                   ) : topDrop ? (
                     <div style={styles.dropItemRow}>
                       <div style={styles.dropLocationText}>
-                        <span style={{ color: '#00e676', marginRight: 6 }}>●</span>
+                        <span style={{ color: theme.colors.green, marginRight: 6 }}>●</span>
                         {topDrop.location}
                       </div>
                       {topDrop.chance !== undefined && (
@@ -512,248 +598,25 @@ export function ArcanesDirectoryPage() {
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  container: {
-    maxWidth: 1200,
-    margin: '0 auto',
-    padding: '24px 16px 64px 16px',
-    color: '#e4e4eb',
-  },
-  header: {
-    marginBottom: 24,
-  },
-  headerBadge: {
-    display: 'inline-block',
-    fontSize: 11,
-    fontWeight: 700,
-    letterSpacing: '0.08em',
-    textTransform: 'uppercase',
-    padding: '3px 8px',
-    borderRadius: 4,
-    backgroundColor: 'rgba(255, 215, 0, 0.12)',
-    color: '#ffd700',
-    border: '1px solid rgba(255, 215, 0, 0.25)',
-    marginBottom: 8,
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 800,
-    color: '#f4f4fa',
+  ...directoryStyles,
+  arcaneGrid: directoryStyles.cardGrid3Col,
+  arcaneCard: directoryStyles.card,
+  arcaneTitleLink: directoryStyles.cardTitleLink,
+  sortWrapper: directoryStyles.sortWrapper,
+  sortLabel: directoryStyles.sortLabel,
+  sortSelect: directoryStyles.sortSelect,
+  noResultsBox: directoryStyles.emptyNoticeBox,
+  noResultsTitle: {
+    fontSize: 18,
+    color: theme.colors.textHighlight,
     margin: '0 0 8px 0',
   },
-  subtitle: {
-    fontSize: 14,
-    color: '#9898b0',
-    lineHeight: 1.5,
-    margin: 0,
-    maxWidth: 820,
-  },
-  searchBarWrapper: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: 8,
-    marginBottom: 20,
-  },
-  searchInput: {
-    flex: 1,
-    backgroundColor: '#161722',
-    border: '1px solid #2d2e3f',
-    borderRadius: 6,
-    padding: '12px 16px',
-    fontSize: 14,
-    color: '#f0f0f8',
-    outline: 'none',
-  },
-  clearSearchBtn: {
-    backgroundColor: '#262738',
-    border: '1px solid #3d3e52',
-    color: '#c0c0d8',
-    borderRadius: 6,
-    padding: '12px 16px',
-    cursor: 'pointer',
-    fontSize: 13,
-  },
-  filterSection: {
-    backgroundColor: '#12131c',
-    border: '1px solid #232433',
-    borderRadius: 8,
-    padding: 16,
-    marginBottom: 16,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 14,
-  },
-  filterGroup: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 6,
-  },
-  filterLabel: {
-    fontSize: 12,
-    fontWeight: 700,
-    textTransform: 'uppercase',
-    letterSpacing: '0.05em',
-    color: '#8e8ea6',
-  },
-  pillRow: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: 6,
-  },
-  filterPill: {
-    backgroundColor: '#1b1c28',
-    border: '1px solid #2e3044',
-    color: '#c0c0d8',
-    padding: '6px 12px',
-    borderRadius: 4,
-    fontSize: 12,
-    cursor: 'pointer',
-    fontWeight: 500,
-    transition: 'all 0.15s ease',
-  },
-  filterPillActive: {
-    backgroundColor: '#2b304c',
-    borderColor: '#7a8ebd',
-    color: '#ffffff',
-    fontWeight: 700,
-  },
-  secondaryFilterRow: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    gap: 12,
-    paddingTop: 10,
-    borderTop: '1px solid #1e1f2d',
-  },
-  filterGroupInline: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: 10,
-  },
-  filterLabelInline: {
-    fontSize: 12,
-    fontWeight: 700,
-    textTransform: 'uppercase',
-    letterSpacing: '0.05em',
-    color: '#8e8ea6',
-  },
-  pillRowSmall: {
-    display: 'flex',
-    gap: 6,
-    flexWrap: 'wrap',
-  },
-  filterPillSmall: {
-    backgroundColor: '#1b1c28',
-    border: '1px solid #2e3044',
-    color: '#c0c0d8',
-    padding: '6px 12px',
-    borderRadius: 4,
-    fontSize: 12,
-    cursor: 'pointer',
-    fontWeight: 500,
-    display: 'inline-flex',
-    alignItems: 'center',
-    minHeight: 34,
-  },
-  sortWrapper: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: 8,
-  },
-  sortLabel: {
-    fontSize: 12,
-    fontWeight: 700,
-    color: '#8e8ea6',
-  },
-  sortSelect: {
-    backgroundColor: '#1b1c28',
-    border: '1px solid #2e3044',
-    color: '#f0f0f8',
-    padding: '6px 10px',
-    borderRadius: 4,
-    fontSize: 12,
-    cursor: 'pointer',
-    minHeight: 34,
-  },
-  resultsInfoBar: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 16,
-    fontSize: 13,
-    color: '#8888a2',
-  },
-  resultsCount: {},
-  resetFiltersBtn: {
-    backgroundColor: 'transparent',
-    border: '1px solid #3b3c50',
-    color: '#8e9ec4',
-    padding: '6px 12px',
-    borderRadius: 4,
-    fontSize: 12,
-    cursor: 'pointer',
-    display: 'inline-flex',
-    alignItems: 'center',
-    minHeight: 34,
-  },
-  arcaneGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
-    gap: 16,
-  },
-  arcaneCard: {
-    backgroundColor: '#14151f',
-    borderWidth: 1,
-    borderStyle: 'solid',
-    borderRadius: 8,
-    display: 'flex',
-    flexDirection: 'column',
-    overflow: 'hidden',
-  },
-  cardHeader: {
-    padding: '12px 14px',
-    backgroundColor: '#181926',
-    borderBottom: '1px solid #232435',
-    display: 'flex',
-    alignItems: 'center',
-    gap: 12,
-  },
-  thumbArea: {
-    width: 44,
-    height: 44,
-    borderRadius: 6,
-    backgroundColor: '#0e0f17',
-    border: '1px solid #26273a',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    overflow: 'hidden',
-    flexShrink: 0,
-  },
-  thumbImg: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'contain',
-  },
-  thumbFallback: {
-    fontSize: 22,
-    color: '#8e9ec4',
-  },
-  headerTitles: {
-    flex: 1,
-    minWidth: 0,
-  },
-  badgeRow: {
-    display: 'flex',
-    gap: 6,
-    alignItems: 'center',
-    marginBottom: 4,
-  },
+  noResultsText: directoryStyles.emptyNoticeText,
   rarityBadge: {
     fontSize: 10,
     fontWeight: 700,
     padding: '1px 6px',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
     borderWidth: 1,
     borderStyle: 'solid',
     textTransform: 'uppercase',
@@ -762,51 +625,25 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 10,
     fontWeight: 600,
     padding: '1px 6px',
-    borderRadius: 3,
-    backgroundColor: '#202233',
-    color: '#a0b0d0',
-    border: '1px solid #30334a',
+    borderRadius: theme.radii.sm,
+    backgroundColor: theme.colors.bgCardElevated,
+    color: theme.colors.textSecondary,
+    border: `1px solid ${theme.colors.borderDefault}`,
   },
   rankBadge: {
     fontSize: 10,
     fontWeight: 600,
-    color: '#8e9ec4',
-  },
-  arcaneTitleLink: {
-    fontSize: 16,
-    fontWeight: 700,
-    color: '#f0f0f8',
-    textDecoration: 'none',
-    display: 'block',
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-  },
-  targetBtn: {
-    padding: '5px 9px',
-    borderRadius: 4,
-    border: '1px solid #36374c',
-    fontSize: 11,
-    fontWeight: 600,
-    cursor: 'pointer',
-    whiteSpace: 'nowrap',
-  },
-  cardBody: {
-    padding: '14px',
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 12,
+    color: theme.colors.textSecondary,
   },
   effectText: {
     fontSize: 13,
-    color: '#e4e4ee',
+    color: theme.colors.textPrimary,
     lineHeight: 1.45,
     margin: 0,
-    backgroundColor: '#0f1018',
+    backgroundColor: theme.colors.bgInput,
     padding: '10px 12px',
-    borderRadius: 6,
-    border: '1px solid #1e1f2e',
+    borderRadius: theme.radii.md,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   acquisitionSection: {
     display: 'flex',
@@ -818,12 +655,12 @@ const styles: Record<string, React.CSSProperties> = {
     fontWeight: 700,
     textTransform: 'uppercase',
     letterSpacing: '0.04em',
-    color: '#7e7e98',
+    color: theme.colors.textMuted,
   },
   vendorSourceCard: {
-    backgroundColor: '#1b1d2c',
-    border: '1px solid #2e3148',
-    borderRadius: 6,
+    backgroundColor: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: '8px 10px',
   },
   vendorStoreTag: {
@@ -831,99 +668,81 @@ const styles: Record<string, React.CSSProperties> = {
     fontWeight: 700,
     textTransform: 'uppercase',
     padding: '1px 5px',
-    borderRadius: 3,
-    backgroundColor: 'rgba(0, 230, 118, 0.12)',
-    color: '#00e676',
-    border: '1px solid rgba(0, 230, 118, 0.25)',
+    borderRadius: theme.radii.sm,
+    backgroundColor: theme.colors.greenBg,
+    color: theme.colors.green,
+    border: `1px solid ${theme.colors.greenBorder}`,
     display: 'inline-block',
     marginBottom: 4,
   },
   vendorDetails: {
     fontSize: 12,
-    color: '#e0e0f0',
+    color: theme.colors.textPrimary,
   },
   standingBadge: {
-    color: '#ffd700',
+    color: theme.colors.gold,
     fontWeight: 600,
   },
   vendorNotes: {
     fontSize: 11,
-    color: '#8e8ea6',
+    color: theme.colors.textMuted,
     marginTop: 4,
   },
   dropItemRow: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#13141f',
-    border: '1px solid #202233',
-    borderRadius: 6,
+    backgroundColor: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: '8px 10px',
   },
   dropLocationText: {
     fontSize: 12,
-    color: '#d0d0e2',
+    color: theme.colors.textPrimary,
     fontWeight: 500,
   },
   dropChanceBadge: {
     fontSize: 11,
     fontWeight: 700,
-    color: '#00e676',
-    backgroundColor: 'rgba(0, 230, 118, 0.1)',
-    border: '1px solid rgba(0, 230, 118, 0.2)',
+    color: theme.colors.green,
+    backgroundColor: theme.colors.greenBg,
+    border: `1px solid ${theme.colors.greenBorder}`,
     padding: '1px 6px',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
   },
   dropFallbackText: {
     fontSize: 12,
-    color: '#8e8ea6',
+    color: theme.colors.textMuted,
     fontStyle: 'italic',
   },
   moreDropsHint: {
     fontSize: 11,
-    color: '#8e9ec4',
+    color: theme.colors.textSecondary,
   },
   dissolutionRow: {
     fontSize: 11,
-    color: '#a0a0be',
-    backgroundColor: '#10111a',
+    color: theme.colors.textSecondary,
+    backgroundColor: theme.colors.bgInput,
     padding: '4px 8px',
-    borderRadius: 4,
-    border: '1px solid #1c1d2b',
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   dissolutionLabel: {
-    color: '#8e9ec4',
+    color: theme.colors.accent,
     fontWeight: 600,
   },
   cardFooter: {
     padding: '10px 14px',
-    borderTop: '1px solid #1e1f2d',
-    backgroundColor: '#12131d',
+    borderTop: `1px solid ${theme.colors.borderSubtle}`,
+    backgroundColor: theme.colors.bgCardElevated,
     display: 'flex',
     justifyContent: 'flex-end',
   },
   inspectBtn: {
-    color: '#8e9ec4',
+    color: theme.colors.accent,
     textDecoration: 'none',
     fontSize: 12,
     fontWeight: 600,
-  },
-  noResultsBox: {
-    textAlign: 'center',
-    padding: '48px 16px',
-    backgroundColor: '#12131c',
-    borderRadius: 8,
-    border: '1px solid #232433',
-    marginTop: 24,
-  },
-  noResultsTitle: {
-    fontSize: 18,
-    color: '#f0f0f8',
-    margin: '0 0 8px 0',
-  },
-  noResultsText: {
-    fontSize: 13,
-    color: '#8888a2',
-    margin: '0 0 16px 0',
   },
 };

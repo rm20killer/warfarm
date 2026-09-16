@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { fetchWikiArticle, WikiArticleDetails } from '../../shared/api/wiki-client';
 import { getResourceGuide, ResourceFarmingGuide } from '../../shared/data/resource-guide';
@@ -31,6 +31,7 @@ import {
   getWarframeCombatStats,
   getEnemyDropsForItem,
   getItemVariantFamily,
+  isItemTradeable,
   ItemGeneralInfo,
   WeaponCombatStats,
   WeaponExtraInfo,
@@ -65,6 +66,7 @@ import {
 } from '../storage';
 import { getWeaponLineage } from './GearDirectoryPage';
 import { findSimilarItems, SimilarItemSuggestion } from '../../shared/utils/fuzzy-search';
+import { fetchMarketPrice } from '../../shared/api/market-client';
 import { usePageMeta } from '../../shared/utils/usePageMeta';
 import {
   parseItemComponent,
@@ -91,6 +93,7 @@ import {
   AcquisitionDropView,
   CommunityBuildsView,
   ItemGeneralInfoAsideView,
+  MarketPriceView,
 } from '../components/item-detail';
 
 export function WikiItemDetailPage() {
@@ -124,13 +127,14 @@ export function WikiItemDetailPage() {
   const [primeRelicDrops, setPrimeRelicDrops] = useState<Record<string, PrimeComponentRelicDrop[]>>({});
   const [openRelicAccordions, setOpenRelicAccordions] = useState<Record<string, boolean>>({});
   const [componentInfo, setComponentInfo] = useState<ItemComponentInfo | undefined>(undefined);
-  const [, setParentComponents] = useState<SiblingComponent[]>([]);
+  const [parentComponents, setParentComponents] = useState<SiblingComponent[]>([]);
   const [similarItems, setSimilarItems] = useState<SimilarItemSuggestion[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [personalNote, setPersonalNote] = useState('');
   const [noteSaved, setNoteSaved] = useState(false);
   const [target, setTarget] = useState<PersonalTarget | undefined>(undefined);
   const [targetQty, setTargetQty] = useState(1);
+  const [startingPrice, setStartingPrice] = useState<number | null>(null);
   const [previousPage, setPreviousPage] = useState<PageVisitHistory | undefined>(undefined);
 
   const pageTitle = itemName ? `${itemName} - Codex, Drops & Stats` : 'Item Codex Details';
@@ -281,6 +285,35 @@ export function WikiItemDetailPage() {
       category: itemCategory,
     });
 
+    setStartingPrice(null);
+    const itemIsTradeable = isItemTradeable(itemName, {
+      isComponent: Boolean(comp),
+      isMod: Boolean(modDetails),
+      isArcane: Boolean(arcane),
+      isRelic: Boolean(relic || eraMatch),
+      isWarframe: Boolean(wfStats),
+      isWeapon: Boolean(wStats),
+      tradable: guide?.tradable,
+    });
+
+    if (itemIsTradeable) {
+      const isTradeablePrimeSet = Boolean(
+        (wfStats?.name?.includes('Prime') ||
+          wStats?.name?.includes('Prime') ||
+          (itemName.endsWith(' Prime') || itemName.endsWith(' Prime Set'))) &&
+        !comp &&
+        !modDetails
+      );
+
+      fetchMarketPrice(itemName, { isSet: isTradeablePrimeSet })
+        .then((data) => {
+          if (data && typeof data.minSell === 'number') {
+            setStartingPrice(data.minSell);
+          }
+        })
+        .catch(() => {});
+    }
+
     fetchWikiArticle(itemName)
       .then((data) => {
         if ((!data || !data.extract) && comp?.parentItemName) {
@@ -370,10 +403,46 @@ export function WikiItemDetailPage() {
     warframeStats ||
     weaponExtras ||
     arcaneData ||
-    relicMatch ||
     componentInfo ||
     Object.keys(primeRelicDrops).length > 0
   );
+
+  const marketComponentNames = useMemo(() => {
+    if (componentInfo?.siblingComponents && componentInfo.siblingComponents.length > 0) {
+      return componentInfo.siblingComponents.map((s) => s.name);
+    }
+    if (parentComponents && parentComponents.length > 0) {
+      return parentComponents.map((s) => s.name);
+    }
+    return [];
+  }, [componentInfo, parentComponents]);
+
+  const hasDedicatedCodexData = Boolean(
+    componentInfo ||
+    detailedMod ||
+    weaponStats ||
+    warframeStats ||
+    arcaneData ||
+    relicData ||
+    resourceGuide ||
+    lootSource ||
+    vendorAcquisition ||
+    incarnonGenesis ||
+    specialChallenge
+  );
+
+  const isTradeable = useMemo(() => {
+    return isItemTradeable(itemName, {
+      category: warframeStats ? 'Warframe' : weaponStats ? 'Weapon' : arcaneData ? 'Arcane' : detailedMod ? 'Mod' : resourceGuide ? 'Resource' : undefined,
+      isComponent: Boolean(componentInfo),
+      isMod: Boolean(detailedMod),
+      isArcane: Boolean(arcaneData),
+      isRelic: Boolean(relicData || relicMatch),
+      isWarframe: Boolean(warframeStats),
+      isWeapon: Boolean(weaponStats),
+      tradable: resourceGuide?.tradable,
+    });
+  }, [itemName, warframeStats, weaponStats, arcaneData, detailedMod, relicData, relicMatch, componentInfo, resourceGuide]);
 
   if (!itemName) {
     return (
@@ -384,8 +453,24 @@ export function WikiItemDetailPage() {
     );
   }
 
+  if (isLoading) {
+    return (
+      <div style={styles.container}>
+        <p style={styles.statusNotice}>Loading wiki information...</p>
+      </div>
+    );
+  }
+
+  if (!hasAnyData) {
+    return (
+      <div className="page-container-responsive" style={styles.container}>
+        <ItemNotFoundView itemName={itemName} similarItems={similarItems} />
+      </div>
+    );
+  }
+
   return (
-    <div style={styles.container}>
+    <div className="page-container-responsive" style={styles.container}>
       <ItemHeaderView
         itemName={itemName}
         article={article}
@@ -403,90 +488,101 @@ export function WikiItemDetailPage() {
         target={target}
         targetQty={targetQty}
         previousPage={previousPage}
+        isTradeable={isTradeable}
         onToggleTarget={handleToggleTarget}
         onUpdateQty={handleUpdateQty}
       />
 
-      {isLoading ? (
-        <p style={styles.statusNotice}>Loading wiki information...</p>
-      ) : !hasAnyData ? (
-        <ItemNotFoundView itemName={itemName} similarItems={similarItems} />
-      ) : (
-        <div style={styles.contentGrid}>
-          <div style={styles.mainColumn}>
-            {componentInfo && (
-              <ComponentDetailView componentInfo={componentInfo} />
+      <div className="detail-content-grid" style={styles.contentGrid}>
+        <div style={styles.mainColumn}>
+          {componentInfo && (
+            <ComponentDetailView componentInfo={componentInfo} />
+          )}
+          
+          <ItemWikiSummaryView
+            itemName={itemName}
+            article={article}
+            resourceGuide={resourceGuide}
+            hasDedicatedCodexData={hasDedicatedCodexData}
+          />
+
+          <VariantComparisonView
+            variantComparison={variantComparison}
+            isVariantCompOpen={isVariantCompOpen}
+            onToggleOpen={() => setIsVariantCompOpen(!isVariantCompOpen)}
+            onSelectVariant={handleSelectVariant}
+          />
+
+          <FoundryRecipeView
+            craftingRecipe={craftingRecipe}
+            itemName={itemName}
+            parentItemName={componentInfo?.parentItemName}
+          />
+
+          {relicData && (
+            <RelicDetailView
+              relicData={relicData}
+              selectedRelicRefinement={selectedRelicRefinement}
+              relicSpots={relicSpots}
+              onSelectRefinement={setSelectedRelicRefinement}
+            />
+          )}
+
+          <WeaponDetailView
+            weaponStats={weaponStats}
+            weaponExtras={weaponExtras}
+          />
+
+          {warframeStats && (
+            <WarframeDetailView warframeStats={warframeStats} />
+          )}
+
+          {detailedMod && (
+            <ModStatsProgressionView detailedMod={detailedMod} />
+          )}
+
+          <AcquisitionDropView
+            itemName={itemName}
+            primeRelicDrops={primeRelicDrops}
+            openRelicAccordions={openRelicAccordions}
+            componentInfo={componentInfo}
+            lootSource={lootSource}
+            vendorAcquisition={vendorAcquisition}
+            incarnonGenesis={incarnonGenesis}
+            enemyDrops={enemyDrops}
+            specialChallenge={specialChallenge}
+            resourceGuide={resourceGuide}
+            onToggleRelicAccordion={handleToggleRelicAccordion}
+          />
+
+          <MarketPriceView
+            itemName={itemName}
+            isPrime={Boolean(
+              (warframeStats?.name?.includes('Prime') ||
+                weaponStats?.name?.includes('Prime') ||
+                (itemName.endsWith(' Prime') || itemName.endsWith(' Prime Set'))) &&
+              !detailedMod &&
+              !componentInfo
             )}
-            
-            <ItemWikiSummaryView
-              itemName={itemName}
-              article={article}
-              resourceGuide={resourceGuide}
-            />
+            isComponentItem={Boolean(componentInfo)}
+            componentNames={marketComponentNames}
+            isTradeable={isTradeable}
+          />
 
-            <VariantComparisonView
-              variantComparison={variantComparison}
-              isVariantCompOpen={isVariantCompOpen}
-              onToggleOpen={() => setIsVariantCompOpen(!isVariantCompOpen)}
-              onSelectVariant={handleSelectVariant}
-            />
-
-            <FoundryRecipeView
-              craftingRecipe={craftingRecipe}
-              itemName={itemName}
-              parentItemName={componentInfo?.parentItemName}
-            />
-
-            {relicData && (
-              <RelicDetailView
-                relicData={relicData}
-                selectedRelicRefinement={selectedRelicRefinement}
-                relicSpots={relicSpots}
-                onSelectRefinement={setSelectedRelicRefinement}
-              />
-            )}
-
-            <WeaponDetailView
-              weaponStats={weaponStats}
-              weaponExtras={weaponExtras}
-            />
-
-            {warframeStats && (
-              <WarframeDetailView warframeStats={warframeStats} />
-            )}
-
-            {detailedMod && (
-              <ModStatsProgressionView detailedMod={detailedMod} />
-            )}
-
-            <AcquisitionDropView
-              itemName={itemName}
-              primeRelicDrops={primeRelicDrops}
-              openRelicAccordions={openRelicAccordions}
-              componentInfo={componentInfo}
-              lootSource={lootSource}
-              vendorAcquisition={vendorAcquisition}
-              incarnonGenesis={incarnonGenesis}
-              enemyDrops={enemyDrops}
-              specialChallenge={specialChallenge}
-              resourceGuide={resourceGuide}
-              onToggleRelicAccordion={handleToggleRelicAccordion}
-            />
-
-            <CommunityBuildsView
-              itemName={itemName}
-              recommendedBuilds={recommendedBuilds}
-              selectedBuildIndex={selectedBuildIndex}
-              isCombatItem={Boolean(warframeStats || weaponStats)}
-              onSelectBuildIndex={setSelectedBuildIndex}
-            />
-          </div>
+          <CommunityBuildsView
+            itemName={itemName}
+            recommendedBuilds={recommendedBuilds}
+            selectedBuildIndex={selectedBuildIndex}
+            isCombatItem={Boolean(warframeStats || weaponStats)}
+            onSelectBuildIndex={setSelectedBuildIndex}
+          />
+        </div>
 
           <aside style={styles.sideColumn}>
             {detailedMod && (
               <>
                 <ModVendorAcquisitionView detailedMod={detailedMod} />
-                <ModGeneralInfoView detailedMod={detailedMod} />
+                <ModGeneralInfoView detailedMod={detailedMod} startingPrice={startingPrice} />
               </>
             )}
 
@@ -500,7 +596,9 @@ export function WikiItemDetailPage() {
             )}
 
             <ItemGeneralInfoAsideView
+              itemName={itemName}
               itemGeneralInfo={itemGeneralInfo}
+              startingPrice={startingPrice}
               personalNote={personalNote}
               noteSaved={noteSaved}
               resourceGuide={resourceGuide}
@@ -509,7 +607,6 @@ export function WikiItemDetailPage() {
             />
           </aside>
         </div>
-      )}
     </div>
   );
 }

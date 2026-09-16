@@ -2,6 +2,7 @@
   {
     "id": "a_fishing_spear",
     "name": "A Fishing Spear",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/BaseSpearFishingSpear",
     "category": "Gear",
     "type": "Gear",
     "description": "The barbed prongs on this fishing spear make it easier to catch fish with smooth skin. \n\nObtained from Fisher Hai-Luk in Cetus (Earth). This spear is most effective on the following Plains of Eidolon fish:\nCharc Eel\nCuthol\nGoopolla\nMurkray\nSharrac\nYogwun",
@@ -15,6 +16,7 @@
   {
     "id": "adrenal_stim",
     "name": "Adrenal Stim",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/NpcBuffs/SpeedBuffArmorDebuff",
     "category": "Gear",
     "type": "Gear",
     "description": "Elevates adrenaline levels to enable faster movement while increasing sensitivity to damage.",
@@ -58,6 +60,7 @@
   {
     "id": "advanced_nosam_cutter",
     "name": "Advanced Nosam Cutter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MiningLaserC",
     "category": "Gear",
     "type": "Gear",
     "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Rare Gems on any Landscape.\n\nTravel far from Hub settlements for the best chance of mining rare minerals.",
@@ -96,6 +99,7 @@
   {
     "id": "air_support_charges",
     "name": "Air Support Charges",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetAirSupport",
     "category": "Gear",
     "type": "Gear",
     "description": "Charges consumed by Landing Craft Air Support.",
@@ -140,6 +144,7 @@
   {
     "id": "alpha_corruptor",
     "name": "Alpha Corruptor",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/AlphaCorruptor",
     "category": "Gear",
     "type": "Gear",
     "description": "Inert on its own this corruptor is highly effective if mixed with its Beta counterpart. Properly mixed, these will destabilize Fomorian Reactors much faster than their Stable counterparts. This volatile item cannot be simultaneously equipped with Beta Corruptors. Recommended for Tenno operating as a team.",
@@ -153,6 +158,7 @@
   {
     "id": "amethyst_antitoxin",
     "name": "Amethyst Antitoxin",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/Toxins/NightCommonAntitoxin",
     "category": "Gear",
     "type": "Gear",
     "description": "This is a mildly effective antitoxin.",
@@ -178,6 +184,7 @@
   {
     "id": "ancient_protector_specter",
     "name": "Ancient Protector Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/AncientHealerBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys an ANCIENT PROTECTOR EXIMUS unit to fight for you.",
@@ -217,6 +224,7 @@
   {
     "id": "antiserum_injector",
     "name": "Antiserum Injector",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/InfestedSyringe",
     "category": "Gear",
     "type": "Gear",
     "description": "Injects antiserum into Vaporizers or the user to prevent armor degradation.",
@@ -260,6 +268,7 @@
   {
     "id": "archgun_deployer",
     "name": "Archgun Deployer",
+    "uniqueName": "/Lotus/Types/Restoratives/HeavyWeaponSummon",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy the selected archwing gun in any atmospheric environment using this gear item.",
@@ -273,6 +282,7 @@
   {
     "id": "archwing_launcher",
     "name": "Archwing Launcher",
+    "uniqueName": "/Lotus/Types/Restoratives/OpenArchwingSummon",
     "category": "Gear",
     "type": "Gear",
     "description": "Summons an Archwing for use during free roam missions.",
@@ -286,6 +296,7 @@
   {
     "id": "atomicycle_summon",
     "name": "Atomicycle Summon",
+    "uniqueName": "/Lotus/Types/Restoratives/MotorcycleSummon",
     "category": "Gear",
     "type": "Gear",
     "description": "Summons an Atomicycle for use in 1999 and free roam missions.",
@@ -299,6 +310,7 @@
   {
     "id": "avichaea_echo_lure",
     "name": "Avichaea Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedMergooLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Avichaea with life-like animal calls.",
@@ -318,6 +330,7 @@
   {
     "id": "avichaea_pheromone_gland",
     "name": "Avichaea Pheromone Gland",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedMergooRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Avichaea.",
@@ -337,6 +350,7 @@
   {
     "id": "beckonsnare",
     "name": "Beckonsnare",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/Eidolon/LandscapeTrapLightGear",
     "category": "Gear",
     "type": "Gear",
     "description": "Field-and-forget, the Beckonsnare emits an ultrasonic frequency enticing to targeted lifeforms. Upon entering they are comfortably contained within a one-way photon fence for easy collection at your convenience.",
@@ -350,6 +364,7 @@
   {
     "id": "beryl_antitoxin",
     "name": "Beryl Antitoxin",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/Toxins/DayCommonAntitoxin",
     "category": "Gear",
     "type": "Gear",
     "description": "This is a mildly effective antitoxin.",
@@ -375,6 +390,7 @@
   {
     "id": "beta_corruptor",
     "name": "Beta Corruptor",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/BetaCorruptor",
     "category": "Gear",
     "type": "Gear",
     "description": "Inert on its own this corruptor is highly effective if mixed with its Alpha counterpart. Properly mixed, these will destabilize Fomorian Reactors much faster than their Stable counterparts. This volatile item cannot be simultaneously equipped with Alpha Corruptors. Recommended for Tenno operating as a team.",
@@ -388,6 +404,7 @@
   {
     "id": "bleeding_dragon_key",
     "name": "Bleeding Dragon Key",
+    "uniqueName": "/Lotus/Types/Restoratives/Upgraded/HealthDebuffKey",
     "category": "Gear",
     "type": "Gear",
     "description": "Health is greatly reduced while key is equipped.\n\nBlueprint can be obtained via the Orokin Lab in a Clan Dojo.",
@@ -420,6 +437,7 @@
   {
     "id": "bolarola_echo_lure",
     "name": "Bolarola Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/SnowArmadilloLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Bolarola with life-like animal calls. The Bolarola is most often found around the Mountainous areas of Orb Vallis.",
@@ -439,6 +457,7 @@
   {
     "id": "bolarola_pheromone_synthesizer",
     "name": "Bolarola Pheromone Synthesizer",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/SnowArmadilloRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Bolarola.",
@@ -458,6 +477,7 @@
   {
     "id": "broad_spectrum_bait",
     "name": "Broad-Spectrum Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/GenericContaminant",
     "category": "Gear",
     "type": "Fish",
     "description": "A simple cocktail of short-chain polymers and contaminants. Easily detected by rudimentary Servofish in the Orb Vallis under all conditions, but ignored by more specialized models. Good for Sapcaddies (found in the lake), and Tinks and Brickies (found in ponds).\n\nObtained from The Business in Fortuna (Venus).",
@@ -477,6 +497,7 @@
   {
     "id": "calcifin_stim",
     "name": "Calcifin Stim",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/NpcBuffs/ArmorBuffSpeedDebuff",
     "category": "Gear",
     "type": "Gear",
     "description": "Hardens skin, fortifying against damage while restricting movement.",
@@ -520,6 +541,7 @@
   {
     "id": "carpet_bomb",
     "name": "Carpet Bomb",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetBarrage",
     "category": "Gear",
     "type": "Gear",
     "description": "Ordis drops bombs in a line from your position to the beacon you placed.",
@@ -533,6 +555,7 @@
   {
     "id": "charamote_bait",
     "name": "Charamote Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/CaveContaminantTierB",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait is synthesized from complex hexophenol that is known to attract Charamotes, a Servofish found in Orb Vallis cave hotspots.\n\nObtained from The Business in Fortuna (Venus).",
@@ -552,6 +575,7 @@
   {
     "id": "charger_specter",
     "name": "Charger Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/ChargerBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a CHARGER EXIMUS unit to fight for you.",
@@ -591,6 +615,7 @@
   {
     "id": "cipher",
     "name": "Cipher",
+    "uniqueName": "/Lotus/Types/Restoratives/Cipher",
     "category": "Gear",
     "type": "Gear",
     "description": "Single-use device used for auto-hacking the lockdown control panels.",
@@ -623,6 +648,7 @@
   {
     "id": "citrine_antitoxin",
     "name": "Citrine Antitoxin",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/Toxins/DayUnCommonAntitoxin",
     "category": "Gear",
     "type": "Gear",
     "description": "This is a moderately effective antitoxin.",
@@ -653,6 +679,7 @@
   {
     "id": "clem_clone",
     "name": "Clem Clone",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/ClemBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a clone of Clem to fight for you.",
@@ -692,6 +719,7 @@
   {
     "id": "clotra_stim",
     "name": "Clotra Stim",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/NpcBuffs/ReviveBuff",
     "category": "Gear",
     "type": "Gear",
     "description": "Revives a target that is bleeding out, and provides a bonus revive to any allies in range.",
@@ -735,6 +763,7 @@
   {
     "id": "codex_scanner",
     "name": "Codex Scanner",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/Scanner",
     "category": "Gear",
     "type": "Gear",
     "description": "Samples a target of interest for later analysis in your Codex (25 charges).",
@@ -748,6 +777,7 @@
   {
     "id": "condroc_echo_lure",
     "name": "Condroc Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/BirdOfPreyLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Condroc with life-like animal calls. Condroc inhabit the Plains of Eidolon.",
@@ -767,6 +797,7 @@
   {
     "id": "condroc_pheromone_oota",
     "name": "Condroc Pheromone Oota",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/CondrocRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Condroc.",
@@ -786,6 +817,7 @@
   {
     "id": "corrupted_bombard_specter",
     "name": "Corrupted Bombard Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/CorruptedBombardBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a CORRUPTED BOMBARD unit to fight for you.",
@@ -824,6 +856,7 @@
   {
     "id": "corrupted_heavy_gunner_specter",
     "name": "Corrupted Heavy Gunner Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/CorruptedHeavyGunnerBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a CORRUPTED HEAVY GUNNER unit to fight for you.",
@@ -837,6 +870,7 @@
   {
     "id": "corrupted_lancer_specter",
     "name": "Corrupted Lancer Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/CorruptedLancerBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a CORRUPTED LANCER EXIMUS unit to fight for you.",
@@ -875,6 +909,7 @@
   {
     "id": "cosmic_specter",
     "name": "Cosmic Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/PlatinumSpectre",
     "category": "Gear",
     "type": "Gear",
     "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
@@ -920,6 +955,7 @@
   {
     "id": "cosmic_specter_regiment",
     "name": "Cosmic Specter Regiment",
+    "uniqueName": "/Lotus/Types/Game/SpectreArmies/PlatinumSpectreArmy",
     "category": "Gear",
     "type": "Specter",
     "description": "An army composed of cosmic-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for four conflicts.",
@@ -933,6 +969,7 @@
   {
     "id": "cryptilex_echo_lure",
     "name": "Cryptilex Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedMaggotLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Cryptilex with life-like animal calls.",
@@ -952,6 +989,7 @@
   {
     "id": "cryptilex_pheromone_gland",
     "name": "Cryptilex Pheromone Gland",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedMaggotRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Cryptilex.",
@@ -971,6 +1009,7 @@
   {
     "id": "cuthol_bait",
     "name": "Cuthol Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/NightRareFishBaitBItem",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait is composed of materials that are known to attract Cuthols, a fish found only in Plains of Eidolon pond hotspots during the night.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
@@ -1014,6 +1053,7 @@
   {
     "id": "decaying_dragon_key",
     "name": "Decaying Dragon Key",
+    "uniqueName": "/Lotus/Types/Restoratives/Upgraded/ShieldDebuffKey",
     "category": "Gear",
     "type": "Gear",
     "description": "Shields are greatly reduced while key is equipped. Full Shield Gate duration is capped at 0.33s.\n\nBlueprint can be obtained via the Orokin Lab in a Clan Dojo.",
@@ -1046,6 +1086,7 @@
   {
     "id": "desert_skate_specter",
     "name": "Desert Skate Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/SkateBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a DESERT SKATE unit to fight for you.",
@@ -1059,6 +1100,7 @@
   {
     "id": "dreamers",
     "name": "Dreamers",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetStun",
     "category": "Gear",
     "type": "Gear",
     "description": "Nora sends enemies to dreamland with a calming tune.",
@@ -1072,6 +1114,7 @@
   {
     "id": "ebisu_spear",
     "name": "Ebisu Spear",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/InfestedFishingSpearB",
     "category": "Gear",
     "type": "Gear",
     "description": "Plumb the depths with this crafty fishing spear that's barely detectable to Infested and hybrid/Orokin fish. Due to its Infested aspect, it's one of the only known things that can pass through exocrine. \n\nObtained from Daughter in the Necralisk. This spear is most effective on fish found in the Cambion Drift (Deimos).",
@@ -1091,6 +1134,7 @@
   {
     "id": "echo_lure",
     "name": "Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/UpgradedAnimalLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby wildlife with life-like animal calls.",
@@ -1155,6 +1199,7 @@
   {
     "id": "eros_arrow_skin",
     "name": "Eros Arrow Skin",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/ValentinesArrowBundle",
     "category": "Gear",
     "type": "Gear",
     "description": "Show the enemy how much you care with the adorable Eros Arrow skin.",
@@ -1168,6 +1213,7 @@
   {
     "id": "extinguished_dragon_key",
     "name": "Extinguished Dragon Key",
+    "uniqueName": "/Lotus/Types/Restoratives/Upgraded/DamageDebuffKey",
     "category": "Gear",
     "type": "Gear",
     "description": "Damage is greatly reduced while key is equipped.\n\nBlueprint can be obtained via the Orokin Lab in a Clan Dojo.",
@@ -1200,6 +1246,7 @@
   {
     "id": "faithful_void_offering",
     "name": "Faithful Void Offering",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/CreditChipMedium",
     "category": "Gear",
     "type": "Gear",
     "description": "Give unto The Void 10,000 credits.",
@@ -1232,6 +1279,7 @@
   {
     "id": "fass_residue",
     "name": "Fass Residue",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Infested/InfestedFishBaitA",
     "category": "Gear",
     "type": "Fish Bait",
     "description": "A chunk of the wyrm Fass, collected after his explosive death in the Cambion Drift. Used to attract Glutinox on the surface during Vome, Ostimyr at surface hotspots during Fass, and Vitreospina in caves during Fass/Vome.\n\nLocation: Cambion Drift on Deimos while Vome is active",
@@ -1266,6 +1314,7 @@
   {
     "id": "focused_nosam_cutter",
     "name": "Focused Nosam Cutter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MiningLaserB",
     "category": "Gear",
     "type": "Gear",
     "description": "A more accurate variation of the Nosam Cutter.\n\nTravel far from Hub settlements for the best chance of mining rare minerals.",
@@ -1310,6 +1359,7 @@
   {
     "id": "fomorian_disruptor",
     "name": "Fomorian Disruptor",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/FomorianNegator",
     "category": "Gear",
     "type": "Gear",
     "description": "When activated, it disrupts a Fomorian core's Omega energy field, making it vulnerable. Also shields Tenno from Omega radiation.",
@@ -1347,6 +1397,7 @@
   {
     "id": "force_specter",
     "name": "Force Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/GoldSpectre",
     "category": "Gear",
     "type": "Gear",
     "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
@@ -1392,6 +1443,7 @@
   {
     "id": "force_specter_regiment",
     "name": "Force Specter Regiment",
+    "uniqueName": "/Lotus/Types/Game/SpectreArmies/GoldSpectreArmy",
     "category": "Gear",
     "type": "Specter",
     "description": "An army composed of force-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for three conflicts.",
@@ -1405,6 +1457,7 @@
   {
     "id": "fosfor_blau",
     "name": "Fosfor Blau",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/Synthetics/FlareBlue",
     "category": "Gear",
     "type": "Gear",
     "description": "Launch a bright blue flare that significantly increases Affinity Range while active.",
@@ -1449,6 +1502,7 @@
   {
     "id": "fosfor_rahd",
     "name": "Fosfor Rahd",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/Synthetics/FlareDemo",
     "category": "Gear",
     "type": "Gear",
     "description": "Launch a bright red flare that significantly increases Affinity Range while active.",
@@ -1468,6 +1522,7 @@
   {
     "id": "glappid_bait",
     "name": "Glappid Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/NightLegendaryFishBaitItem",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait is composed of exotic materials that are known to attract the elusive Glappid, a fish found only in Plains of Eidolon ocean hotspots during the night.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
@@ -1511,6 +1566,7 @@
   {
     "id": "glyph_prism",
     "name": "Glyph Prism",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/GlyphConsumable",
     "category": "Gear",
     "type": "Gear",
     "description": "Launches a magnetic prism to display your chosen Glyph. Only one may be deployed at a time, and charges are consumed on use.",
@@ -1524,6 +1580,7 @@
   {
     "id": "grand_finale",
     "name": "Grand Finale",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/FireWorksCrate",
     "category": "Gear",
     "type": "Gear",
     "description": "Want a more spectacular fireworks display to show your patriotism? Celebrate in style with this single use consumable item.",
@@ -1537,6 +1594,7 @@
   {
     "id": "grustrag_three_beacon",
     "name": "Grustrag Three Beacon",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/AssassinBaitC",
     "category": "Gear",
     "type": "Gear",
     "description": "Lures the Grustrag Three out of hiding. One-time use gear item that can only be used in locations where the assassins would normally appear.",
@@ -1550,6 +1608,7 @@
   {
     "id": "health_restore_large_",
     "name": "Health Restore (Large)",
+    "uniqueName": "/Lotus/Types/Restoratives/SelfHealLarge",
     "category": "Gear",
     "type": "Gear",
     "description": "Instantly restores your Health to full.",
@@ -1590,6 +1649,7 @@
   {
     "id": "health_restore_small_",
     "name": "Health Restore (Small)",
+    "uniqueName": "/Lotus/Types/Restoratives/SelfHealSmall",
     "category": "Gear",
     "type": "Gear",
     "description": "Instantly restores 50 Health.",
@@ -1603,6 +1663,7 @@
   {
     "id": "hobbled_dragon_key",
     "name": "Hobbled Dragon Key",
+    "uniqueName": "/Lotus/Types/Restoratives/Upgraded/SpeedDebuffKey",
     "category": "Gear",
     "type": "Gear",
     "description": "Speed is greatly reduced while key is equipped.\n\nBlueprint can be obtained via the Orokin Lab in a Clan Dojo.",
@@ -1635,6 +1696,7 @@
   {
     "id": "horrasque_echo_lure",
     "name": "Horrasque Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/SnowPredatorLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Horrasque with life-like animal calls.",
@@ -1654,6 +1716,7 @@
   {
     "id": "horrasque_pheromone_synthesizer",
     "name": "Horrasque Pheromone Synthesizer",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/SnowPredatorRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Horrasque.",
@@ -1673,6 +1736,7 @@
   {
     "id": "humble_void_offering",
     "name": "Humble Void Offering",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/CreditChipSmall",
     "category": "Gear",
     "type": "Gear",
     "description": "Give unto The Void 1,000 credits.",
@@ -1705,6 +1769,7 @@
   {
     "id": "k_drive_launcher",
     "name": "K-Drive Launcher",
+    "uniqueName": "/Lotus/Types/Restoratives/HoverboardSummon",
     "category": "Gear",
     "type": "Gear",
     "description": "Summons a K-Drive for use during free roam missions",
@@ -1718,6 +1783,7 @@
   {
     "id": "kahl_beacon",
     "name": "Kahl Beacon",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetKahl",
     "category": "Gear",
     "type": "Gear",
     "description": "Calls Kahl and a retinue of his Brothers to assist you for a limited time. Subsequent uses heal Kahl's squad and add an additional Brother.",
@@ -1731,6 +1797,7 @@
   {
     "id": "kaithe_summon",
     "name": "Kaithe Summon",
+    "uniqueName": "/Lotus/Types/Restoratives/ErsatzSummon",
     "category": "Gear",
     "type": "Gear",
     "description": "Summon and instantly mount a Kaithe while in free roam missions.",
@@ -1744,6 +1811,7 @@
   {
     "id": "ki_teer_fireworks",
     "name": "Ki'Teer Fireworks",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/BaroFireWorksCrate",
     "category": "Gear",
     "type": "Gear",
     "description": "A bombastic symphony of color.",
@@ -1757,6 +1825,7 @@
   {
     "id": "kinetic_siphon_trap",
     "name": "Kinetic Siphon Trap",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/HunterTool",
     "category": "Gear",
     "type": "Gear",
     "description": "Specialized trap for attracting and slowing the movement of synthesis targets.",
@@ -1776,6 +1845,7 @@
   {
     "id": "kriller_bait",
     "name": "Kriller Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/LakeContaminantTierA",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait is synthesized from Methacalcene-1 that is known to attract Krillers, a Servofish found in Orb Vallis lakes during warm weather.\n\nObtained via The Business in Fortuna (Venus).",
@@ -1795,6 +1865,7 @@
   {
     "id": "kuaka_echo_lure",
     "name": "Kuaka Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/ForestRodentLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Kuaka with life-like animal calls. Kuaka inhabit the Plains of Eidolon.",
@@ -1814,6 +1885,7 @@
   {
     "id": "kuaka_pheromone_oota",
     "name": "Kuaka Pheromone Oota",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/KuakaRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Kuaka.",
@@ -1833,6 +1905,7 @@
   {
     "id": "kubrodon_echo_lure",
     "name": "Kubrodon Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/LegendaryKubrowLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Kubrodon with life-like animal calls. The Kubrodon is most often found around the Craters in Orb Vallis.",
@@ -1852,6 +1925,7 @@
   {
     "id": "kubrodon_pheromone_synthesizer",
     "name": "Kubrodon Pheromone Synthesizer",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/LegendaryKubrowRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Kubrodon.",
@@ -1871,6 +1945,7 @@
   {
     "id": "lanzo_fishing_spear",
     "name": "Lanzo Fishing Spear",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/SpearFishingSpear",
     "category": "Gear",
     "type": "Gear",
     "description": "The barbed prongs on this fishing spear make it easier to catch fish with smooth skin. \n\nObtained from Fisher Hai-Luk in Cetus (Earth). This spear is most effective on the following Plains of Eidolon fish:\nCharc Eel\nCuthol\nGoopolla\nMurkray\nSharrac\nYogwun",
@@ -1909,6 +1984,7 @@
   {
     "id": "lapis_antitoxin",
     "name": "Lapis Antitoxin",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/Toxins/RareAntitoxin",
     "category": "Gear",
     "type": "Gear",
     "description": "This is an extremely effective antitoxin.",
@@ -1949,6 +2025,7 @@
   {
     "id": "loc_pin",
     "name": "Loc-Pin",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MapMarker",
     "category": "Gear",
     "type": "Gear",
     "description": "A persistent waypoint marker for use with the world map. Coordinate your squad and track places of importance!",
@@ -1987,6 +2064,7 @@
   {
     "id": "longwinder_bait",
     "name": "Longwinder Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/LakeContaminantTierB",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait is synthesized from beryzene that is known to attract Longwinders, a Servofish found in Orb Vallis lake hotspots during warm weather.\n\nObtained via The Business in Fortuna (Venus).",
@@ -2006,6 +2084,7 @@
   {
     "id": "luminous_dye",
     "name": "Luminous Dye",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/FishingBoosts/AnglerVision",
     "category": "Gear",
     "type": "Gear",
     "description": "Dyes the waters with a compound that sticks to fish passing through it, making them easier to see from the shore.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
@@ -2038,6 +2117,7 @@
   {
     "id": "med_tower",
     "name": "Med-Tower",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetMedStation",
     "category": "Gear",
     "type": "Gear",
     "description": "Ordis delivers a Med-Tower to restore health to nearby allies.",
@@ -2051,6 +2131,7 @@
   {
     "id": "mergoo_echo_lure",
     "name": "Mergoo Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/OstronSeaBirdLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Mergoo with life-like animal calls. Mergoo inhabit the Plains of Eidolon.",
@@ -2070,6 +2151,7 @@
   {
     "id": "mergoo_pheromone_oota",
     "name": "Mergoo Pheromone Oota",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/MergooRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Mergoo.",
@@ -2089,6 +2171,7 @@
   {
     "id": "mirewinder_bait",
     "name": "Mirewinder Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/CaveContaminantTierA",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait is composed of aromatic tetraxin that is known to attract Mirewinders, a Servofish found in Orb Vallis cave hotspots.\n\nObtained via The Business in Fortuna (Venus).",
@@ -2108,6 +2191,7 @@
   {
     "id": "missile_battery",
     "name": "Missile Battery",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetLaserTurret",
     "category": "Gear",
     "type": "Gear",
     "description": "Launches homing missiles",
@@ -2121,6 +2205,7 @@
   {
     "id": "moa_specter",
     "name": "Moa Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MoaBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a MOA EXIMUS unit to fight for you.",
@@ -2159,6 +2244,7 @@
   {
     "id": "murkray_bait",
     "name": "Murkray Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/BothRareFishBaitAItem",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait is composed of materials that are known to attract Murkrays, a fish found only in Plains of Eidolon ocean hotspots during both day and night.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
@@ -2202,6 +2288,7 @@
   {
     "id": "narrow_spectrum_bait",
     "name": "Narrow-Spectrum Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/PondContaminantTierA",
     "category": "Gear",
     "type": "Fish",
     "description": "This endochlor/dionium melange attracts both Recasters and Eye-Eyes, Servofish found in Orb Vallis ponds. The Eye-Eye shows up during warm weather and Recasters shows up at Hot Spots during cool weather.\n\nObtained from The Business in Fortuna (Venus).",
@@ -2221,6 +2308,7 @@
   {
     "id": "necramech_summon",
     "name": "Necramech Summon",
+    "uniqueName": "/Lotus/Types/Restoratives/LoadoutTechSummon",
     "category": "Gear",
     "type": "Gear",
     "description": "Summon a Necramech to the battlefield.",
@@ -2234,6 +2322,7 @@
   {
     "id": "nexifera_echo_lure",
     "name": "Nexifera Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedNexiferaLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Nexifera with life-like animal calls.",
@@ -2247,6 +2336,7 @@
   {
     "id": "nexifera_pheromone_gland",
     "name": "Nexifera Pheromone Gland",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedNexiferaRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Nexifera.",
@@ -2260,6 +2350,7 @@
   {
     "id": "nightfall_apothic",
     "name": "Nightfall Apothic",
+    "uniqueName": "/Lotus/Types/Restoratives/TitaniaQuest/SpecterSummonKnaveLoki",
     "category": "Gear",
     "type": "Gear",
     "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
@@ -2301,6 +2392,7 @@
   {
     "id": "norg_bait",
     "name": "Norg Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/NightRareFishBaitAItem",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait is composed of materials that are known to attract Norg, a fish found only in Plains of Eidolon lake hotspots during the night.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
@@ -2344,6 +2436,7 @@
   {
     "id": "nosam_cutter",
     "name": "Nosam Cutter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MiningLaser",
     "category": "Gear",
     "type": "Gear",
     "description": "Standard tool for cutting ore and gems out of stone.\n\nTravel far from Hub settlements for the best chance of mining rare minerals.",
@@ -2376,6 +2469,7 @@
   {
     "id": "omni",
     "name": "Omni",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/RepairTool",
     "category": "Gear",
     "type": "Gear",
     "description": "An Omni is a multi-use Railjack tool for extinguishing fires, grounding electrical hazards, and repairing hull ruptures. Use outside the Railjack to instantly recall back to the ship.",
@@ -2440,6 +2534,7 @@
   {
     "id": "omni_ammo_box",
     "name": "Omni Ammo Box",
+    "uniqueName": "/Lotus/Types/Restoratives/SelfOmniAmmo",
     "category": "Gear",
     "type": "Gear",
     "description": "Fully restores all ammo types.",
@@ -2504,6 +2599,7 @@
   {
     "id": "on_call_crew",
     "name": "On Call Crew",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/CrewmateBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Call in a designated crew member for backup in non-Railjack missions.",
@@ -2517,6 +2613,7 @@
   {
     "id": "oplink",
     "name": "Oplink",
+    "uniqueName": "/Lotus/Types/Restoratives/ScenarioBeacon",
     "category": "Gear",
     "type": "Gear",
     "description": "A device used to manage coordination and resources during Operation Link missions.",
@@ -2530,6 +2627,7 @@
   {
     "id": "orokin_eye",
     "name": "Orokin Eye",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetGoldenInstinct",
     "category": "Gear",
     "type": "Gear",
     "description": "Ordis scans the area for rare items.",
@@ -2543,6 +2641,7 @@
   {
     "id": "override",
     "name": "Override",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetAutoHack",
     "category": "Gear",
     "type": "Gear",
     "description": "Ordis hacks into enemy systems and disrupts security protocols for a short period.",
@@ -2556,6 +2655,7 @@
   {
     "id": "passionate_void_offering",
     "name": "Passionate Void Offering",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/CreditChipLarge",
     "category": "Gear",
     "type": "Gear",
     "description": "Give unto The Void a generous 100,000 credits.",
@@ -2588,6 +2688,7 @@
   {
     "id": "peppered_bait",
     "name": "Peppered Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/GenericFishBait",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait attracts fish that are active in the Plains of Eidolon during the day.\n\nObtained from Fisher Hai-Luk in Cetus (Earth). Attracts Mawfish and Charc Eels in the lake; Khut-Khut, Yogwun, and Mortus Lungfish in ponds; and Goopolla and Tralok in the ocean.",
@@ -2619,6 +2720,7 @@
   {
     "id": "peram_fishing_spear",
     "name": "Peram Fishing Spear",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/SpearFishingSpearC",
     "category": "Gear",
     "type": "Gear",
     "description": "This fishing spear has multiple blades that allow it to pierce the hides of scaly fish. \n\nObtained from Fisher Hai-Luk in Cetus (Earth). This spear is most effective on the following Plains of Eidolon fish:\nGlappid\nKhut-Khut\nMawfish\nMortus Lungfish\nNorg",
@@ -2663,6 +2765,7 @@
   {
     "id": "pharoma",
     "name": "Pharoma",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/FishingBoosts/SoftTouch",
     "category": "Gear",
     "type": "Gear",
     "description": "A compound that relaxes nearby fish.\n\nObtained from Fisher Hai-Luk in Cetus (Earth).",
@@ -2695,6 +2798,7 @@
   {
     "id": "phase_specter",
     "name": "Phase Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/SilverSpectre",
     "category": "Gear",
     "type": "Gear",
     "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
@@ -2740,6 +2844,7 @@
   {
     "id": "phase_specter_regiment",
     "name": "Phase Specter Regiment",
+    "uniqueName": "/Lotus/Types/Game/SpectreArmies/SilverSpectreArmy",
     "category": "Gear",
     "type": "Specter",
     "description": "An army composed of phase-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for two conflicts.",
@@ -2753,6 +2858,7 @@
   {
     "id": "pherliac_pods",
     "name": "Pherliac Pods",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/InfestedBaitBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Creates 50x Pherliac Pods that releases powerful pheromones to attract the Infested.",
@@ -2798,6 +2904,7 @@
   {
     "id": "pistol_ammo_box",
     "name": "Pistol Ammo Box",
+    "uniqueName": "/Lotus/Types/Restoratives/SelfPistolAmmo",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores a bunch of pistol ammo.",
@@ -2811,6 +2918,7 @@
   {
     "id": "pobbers_echo_lure",
     "name": "Pobbers Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/SnowRodentLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Pobbers with life-like animal calls. The Pobbers is most often found around the Mushroom Fields of Orb Vallis.",
@@ -2830,6 +2938,7 @@
   {
     "id": "pobbers_pheromone_synthesizer",
     "name": "Pobbers Pheromone Synthesizer",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/SnowRodentRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Pobbers.",
@@ -2849,6 +2958,7 @@
   {
     "id": "potent_pherliac_pods",
     "name": "Potent Pherliac Pods",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/InfestedIrradiatedBaitBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Creates 50x Potent Pherliac Pods that releases powerful pheromones to attract the Infested.",
@@ -2880,6 +2990,7 @@
   {
     "id": "predasite_echo_lure",
     "name": "Predasite Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedPredatorLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Predasite with life-like animal calls.",
@@ -2899,6 +3010,7 @@
   {
     "id": "predasite_pheromone_gland",
     "name": "Predasite Pheromone Gland",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedPredatorRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Predasite.",
@@ -2918,6 +3030,7 @@
   {
     "id": "processed_fass_residue",
     "name": "Processed Fass Residue",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Infested/InfestedFishBaitB",
     "category": "Gear",
     "type": "Fish Bait",
     "description": "Matter from the body of the Wyrm Fass, purged of toxins, and rendered usefully. Used to attract Aquapulmo and Flagellocanth in Cambion Drift surface hotspots, Aquapulmo only during Vome.\n\nObtained from Daughter in the Necralisk (Deimos).",
@@ -2944,6 +3057,7 @@
   {
     "id": "processed_vome_residue",
     "name": "Processed Vome Residue",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Infested/OrokinFishBaitB",
     "category": "Gear",
     "type": "Fish Bait",
     "description": "The flesh of Vome, refined, and ready for use. Used to attract Myxostomata in Cambion Drift cave hotspots during Vome.\n\nObtained from Daughter in the Necralisk (Deimos).",
@@ -2970,6 +3084,7 @@
   {
     "id": "railjack_recall",
     "name": "Railjack Recall",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/RecallToRailjack",
     "category": "Gear",
     "type": "Gear",
     "description": "",
@@ -2983,6 +3098,7 @@
   {
     "id": "razorback_cipher",
     "name": "Razorback Cipher",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/RazorbackCipher",
     "category": "Gear",
     "type": "Gear",
     "description": "Used to bypass security systems that protect the Razorback's holding cell.",
@@ -3020,6 +3136,7 @@
   {
     "id": "refract_stim",
     "name": "Refract Stim",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/NpcBuffs/CloakingBuff",
     "category": "Gear",
     "type": "Gear",
     "description": "Coats the target in a film that refracts light, allowing undetected movement.",
@@ -3063,6 +3180,7 @@
   {
     "id": "remote_observer",
     "name": "Remote Observer",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/CameraConsumable",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a short-lived remote camera that overrides your Warframe optics",
@@ -3076,6 +3194,7 @@
   {
     "id": "requiem_ultimatum",
     "name": "Requiem Ultimatum",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/NemesisBait",
     "category": "Gear",
     "type": "Gear",
     "description": "Provokes an immediate confrontation with your Kuva Lich or Sister of Parvos: an insult which cannot be ignored.",
@@ -3089,6 +3208,7 @@
   {
     "id": "rifle_ammo_box",
     "name": "Rifle Ammo Box",
+    "uniqueName": "/Lotus/Types/Restoratives/SelfRifleAmmo",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores a bunch of rifle ammo.",
@@ -3102,6 +3222,7 @@
   {
     "id": "roller_specter",
     "name": "Roller Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/RollerBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a ROLLER EXIMUS unit to fight for you.",
@@ -3140,6 +3261,7 @@
   {
     "id": "sacred_vessel",
     "name": "Sacred Vessel",
+    "uniqueName": "/Lotus/Types/Keys/MummyQuest/MummyArtifact01GearItem",
     "category": "Gear",
     "type": "Key",
     "description": "A peculiar relic from the tomb of Inaros.",
@@ -3153,6 +3275,7 @@
   {
     "id": "sawgaw_echo_lure",
     "name": "Sawgaw Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/SnowBirdLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Sawgaw with life-like animal calls.",
@@ -3172,6 +3295,7 @@
   {
     "id": "sawgaw_pheromone_synthesizer",
     "name": "Sawgaw Pheromone Synthesizer",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/SnowBirdRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Sawgaw.",
@@ -3191,6 +3315,7 @@
   {
     "id": "scorpion_specter",
     "name": "Scorpion Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MacheteWomanBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a SCORPION EXIMUS unit to fight for you.",
@@ -3204,6 +3329,7 @@
   {
     "id": "sentry_gun",
     "name": "Sentry Gun",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetTurret",
     "category": "Gear",
     "type": "Gear",
     "description": "Ordis delivers an automatic turret that will fire upon nearby visible enemies.",
@@ -3217,6 +3343,7 @@
   {
     "id": "shield_osprey_specter",
     "name": "Shield Osprey Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/ShieldDroneBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a SHIELD OSPREY EXIMUS unit to fight for you.",
@@ -3255,6 +3382,7 @@
   {
     "id": "shield_restore_small_",
     "name": "Shield Restore (Small)",
+    "uniqueName": "/Lotus/Types/Restoratives/SelfShieldHeal",
     "category": "Gear",
     "type": "Gear",
     "description": "Instantly restores 50 Shield.",
@@ -3268,6 +3396,7 @@
   {
     "id": "shockprod_fishing_spear",
     "name": "Shockprod Fishing Spear",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/RobofishSpearB",
     "category": "Gear",
     "type": "Gear",
     "description": "Purpose built to recover Servofish without damage. Delivers a disabling electromagnetic pulse after a successful hit if timed correctly.\n\nObtained from The Business in Fortuna. This spear is most effective on Servofish found in the Orb Vallis (Venus). ",
@@ -3312,6 +3441,7 @@
   {
     "id": "shotgun_ammo_box",
     "name": "Shotgun Ammo Box",
+    "uniqueName": "/Lotus/Types/Restoratives/SelfShotgunAmmo",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores a bunch of shotgun ammo.",
@@ -3325,6 +3455,7 @@
   {
     "id": "sniper_ammo_box",
     "name": "Sniper Ammo Box",
+    "uniqueName": "/Lotus/Types/Restoratives/SelfSniperAmmo",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores a bunch of sniper ammo.",
@@ -3338,6 +3469,7 @@
   {
     "id": "snow_globe",
     "name": "Snow Globe",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetShield",
     "category": "Gear",
     "type": "Gear",
     "description": "Frost deep freezes any vapor and moisture in the area, creating a protective sphere with brief invulnerability to boost its strength.",
@@ -3351,6 +3483,7 @@
   {
     "id": "spari_spear",
     "name": "Spari Spear",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/InfestedFishingSpearA",
     "category": "Gear",
     "type": "Gear",
     "description": "Plumb the depths with this crafty fishing spear that's barely detectable to Infested and hybrid/Orokin fish. Due to its Infested aspect, it's one of the only known things that can pass through exocrine. \n\nObtained from Daughter in the Necralisk. This spear is most effective on fish found in the Cambion Drift (Deimos).",
@@ -3370,6 +3503,7 @@
   {
     "id": "squad_ammo_restore_large_",
     "name": "Squad Ammo Restore (Large)",
+    "uniqueName": "/Lotus/Types/Restoratives/SyndicateTeamAmmoTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores 3x Primary and Secondary Ammo Pick Up Amount every 15s for 60s.",
@@ -3403,6 +3537,7 @@
   {
     "id": "squad_ammo_restore_medium_",
     "name": "Squad Ammo Restore (Medium)",
+    "uniqueName": "/Lotus/Types/Restoratives/ClanTeamAmmoTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores 2x Primary and Secondary Ammo Pick Up Amount every 15s for 60s.",
@@ -3435,6 +3570,7 @@
   {
     "id": "squad_ammo_restore_small_",
     "name": "Squad Ammo Restore (Small)",
+    "uniqueName": "/Lotus/Types/Restoratives/TeamAmmoTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores 1x Primary and Secondary Ammo Pick Up Amount every 15s for 60s.",
@@ -3467,6 +3603,7 @@
   {
     "id": "squad_energy_restore_large_",
     "name": "Squad Energy Restore (Large)",
+    "uniqueName": "/Lotus/Types/Restoratives/SyndicateTeamEnergyTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores Energy to all squad members. Pulses 100 Energy every 7.5s for 30s.",
@@ -3500,6 +3637,7 @@
   {
     "id": "squad_energy_restore_medium_",
     "name": "Squad Energy Restore (Medium)",
+    "uniqueName": "/Lotus/Types/Restoratives/ClanTeamEnergyTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores Energy to all squad members. Pulses 50 Energy every 5s for 20s.",
@@ -3532,6 +3670,7 @@
   {
     "id": "squad_energy_restore_small_",
     "name": "Squad Energy Restore (Small)",
+    "uniqueName": "/Lotus/Types/Restoratives/TeamEnergyTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores Energy to all squad members. Pulses 25 Energy every 7.5s for 30s.",
@@ -3564,6 +3703,7 @@
   {
     "id": "squad_health_restore_large_",
     "name": "Squad Health Restore (Large)",
+    "uniqueName": "/Lotus/Types/Restoratives/SyndicateTeamHealTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores Health to all squad members. Pulses 300 Health every 7.5s for 30s.",
@@ -3597,6 +3737,7 @@
   {
     "id": "squad_health_restore_medium_",
     "name": "Squad Health Restore (Medium)",
+    "uniqueName": "/Lotus/Types/Restoratives/ClanTeamHealTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores Health to all squad members. Pulses 100 Health every 5s for 20s.",
@@ -3629,6 +3770,7 @@
   {
     "id": "squad_health_restore_small_",
     "name": "Squad Health Restore (Small)",
+    "uniqueName": "/Lotus/Types/Restoratives/TeamHeal",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores Health to all squad members. Pulses 30 Health every 7.5s for 30s.",
@@ -3642,6 +3784,7 @@
   {
     "id": "squad_shield_restore_large_",
     "name": "Squad Shield Restore (Large)",
+    "uniqueName": "/Lotus/Types/Restoratives/SyndicateTeamShieldTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores Shields to all squad members. Pulses 300 Shield every 7.5s for 30s.",
@@ -3675,6 +3818,7 @@
   {
     "id": "squad_shield_restore_medium_",
     "name": "Squad Shield Restore (Medium)",
+    "uniqueName": "/Lotus/Types/Restoratives/ClanTeamShieldTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores Shields to all squad members. Pulses 100 Shield every 7.5s for 30s.",
@@ -3707,6 +3851,7 @@
   {
     "id": "squad_shield_restore_small_",
     "name": "Squad Shield Restore (Small)",
+    "uniqueName": "/Lotus/Types/Restoratives/TeamShieldTotem",
     "category": "Gear",
     "type": "Gear",
     "description": "Restores Shields to all squad members. Pulses 35 Shield every 7.5s for 30s.",
@@ -3733,6 +3878,7 @@
   {
     "id": "stable_corruptor",
     "name": "Stable Corruptor",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/StableCorruptor",
     "category": "Gear",
     "type": "Gear",
     "description": "Injected into a Fomorian Reactor this corruptor will imbalance the fuels. Critically imbalanced reactors will eventually implode, destroy the ship. Slow but effective, recommended for Solo Tenno.",
@@ -3746,6 +3892,7 @@
   {
     "id": "stalker_beacon",
     "name": "Stalker Beacon",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/AssassinBait",
     "category": "Gear",
     "type": "Gear",
     "description": "Lures the Stalker out of hiding. One-time use gear item that can only be used in locations where the assassin would normally appear.",
@@ -3759,6 +3906,7 @@
   {
     "id": "stalker_specter",
     "name": "Stalker Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/StalkerBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a clone of the Stalker to fight for you.",
@@ -3797,6 +3945,7 @@
   {
     "id": "starburst",
     "name": "Starburst",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/FireWorksSingle",
     "category": "Gear",
     "type": "Gear",
     "description": "Celebrate the holiday with fireworks! Light up the sky with this single use consumable item.",
@@ -3810,6 +3959,7 @@
   {
     "id": "stover_echo_lure",
     "name": "Stover Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/OrokinKubrowLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Stovers with life-like animal calls.",
@@ -3829,6 +3979,7 @@
   {
     "id": "stover_pheromone_synthesizer",
     "name": "Stover Pheromone Synthesizer",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/OrokinKubrowRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Stover.",
@@ -3848,6 +3999,7 @@
   {
     "id": "stunna_fishing_spear",
     "name": "Stunna Fishing Spear",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/RobofishSpearC",
     "category": "Gear",
     "type": "Gear",
     "description": "Successful electromagnetic pulses radiate outward also disabling any nearby Servofish.\n\nObtained from The Business in Fortuna. This spear is most effective on Servofish found in the Orb Vallis (Venus). ",
@@ -3892,6 +4044,7 @@
   {
     "id": "sunpoint_plasma_drill",
     "name": "Sunpoint Plasma Drill",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MiningLaserSolaris",
     "category": "Gear",
     "type": "Gear",
     "description": "Fast-ignition, high-intensity mining tool capable of extracting the rarest of materials with surgical precision.\n\nCan be used to retrieve Rare Gems on any Landscape. Travel far from Hub settlements for the best chance of mining rare minerals.",
@@ -3935,6 +4088,7 @@
   {
     "id": "sunrise_apothic",
     "name": "Sunrise Apothic",
+    "uniqueName": "/Lotus/Types/Restoratives/TitaniaQuest/SpecterSummonFeyarchOberon",
     "category": "Gear",
     "type": "Gear",
     "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
@@ -3976,6 +4130,7 @@
   {
     "id": "surge_eximus_specter",
     "name": "Surge Eximus Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/SurgeEximusBall",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a clone of the Surge Eximus to fight for you.",
@@ -4014,6 +4169,7 @@
   {
     "id": "synathid_bait",
     "name": "Synathid Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/CaveContaminantTierC",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait is synthesized from specialized A-disulphex-A compounds that are known to attract Synathid, a legendarily rare Servofish found only in Orb Vallis cave hotspots.\n\nObtained from The Business in Fortuna (Venus).",
@@ -4033,6 +4189,7 @@
   {
     "id": "synthesis_scanner",
     "name": "Synthesis Scanner",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/LibraryScanner",
     "category": "Gear",
     "type": "Gear",
     "description": "Synthesize a genetic data of the target and uploads it to the Sanctuary.",
@@ -4052,6 +4209,7 @@
   {
     "id": "thermian_rpg",
     "name": "Thermian Rpg",
+    "uniqueName": "/Lotus/Types/Restoratives/ThermianRPGSummon",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploys a Thermian RPG",
@@ -4065,6 +4223,7 @@
   {
     "id": "topaz_antitoxin",
     "name": "Topaz Antitoxin",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/Toxins/NightUnCommonAntitoxin",
     "category": "Gear",
     "type": "Gear",
     "description": "This is a moderately effective antitoxin.",
@@ -4095,6 +4254,7 @@
   {
     "id": "tranq_rifle",
     "name": "Tranq Rifle",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/TranqRifleGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Tranquilizes animals for the purpose of safe relocation.",
@@ -4119,6 +4279,7 @@
   {
     "id": "tromyzon_bait",
     "name": "Tromyzon Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/PondContaminantTierB",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait is synthesized from long-chain LS-74 compounds that are known to attract Tromyzon, a Servofish found in Orb Vallis pond hotspots during cool weather.\n\nObtained from The Business in Fortuna (Venus).",
@@ -4138,6 +4299,7 @@
   {
     "id": "tulok_fishing_spear",
     "name": "Tulok Fishing Spear",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/SpearFishingSpearB",
     "category": "Gear",
     "type": "Gear",
     "description": "This fishing spear features a slender blade to puncture armored plates and carapaces. \n\nObtained from Fisher Hai-Luk in Cetus (Earth). This spear is most effective on the following Plains of Eidolon fish:\nTralok",
@@ -4182,6 +4344,7 @@
   {
     "id": "twilight_apothic",
     "name": "Twilight Apothic",
+    "uniqueName": "/Lotus/Types/Restoratives/TitaniaQuest/SpecterSummonOrphidSaryn",
     "category": "Gear",
     "type": "Gear",
     "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
@@ -4223,6 +4386,7 @@
   {
     "id": "twilight_bait",
     "name": "Twilight Bait",
+    "uniqueName": "/Lotus/Types/Game/FishBait/BothUncommonFishBaitItem",
     "category": "Gear",
     "type": "Fish",
     "description": "This bait attracts predatory fish that are active in the Plains of Eidolon during either day or night.\n\nObtained from Fisher Hai-Luk in Cetus (Earth). Attracts Sharrac and Karkina in the ocean.",
@@ -4265,6 +4429,7 @@
   {
     "id": "undazoa_echo_lure",
     "name": "Undazoa Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedZongroLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Undazoa with life-like animal calls.",
@@ -4284,6 +4449,7 @@
   {
     "id": "undazoa_pheromone_gland",
     "name": "Undazoa Pheromone Gland",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedZongroRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Undazoa.",
@@ -4303,6 +4469,7 @@
   {
     "id": "vapor_specter",
     "name": "Vapor Specter",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/BronzeSpectre",
     "category": "Gear",
     "type": "Gear",
     "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
@@ -4336,6 +4503,7 @@
   {
     "id": "vapor_specter_regiment",
     "name": "Vapor Specter Regiment",
+    "uniqueName": "/Lotus/Types/Game/SpectreArmies/BronzeSpectreArmy",
     "category": "Gear",
     "type": "Specter",
     "description": "An army composed of vapor-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for one conflict.",
@@ -4349,6 +4517,7 @@
   {
     "id": "vasca_curative",
     "name": "Vasca Curative",
+    "uniqueName": "/Lotus/Types/Restoratives/CatbrowVampireDisinfect",
     "category": "Gear",
     "type": "Gear",
     "description": "Known as 'lisau heisah' by the Ostrons, this is a traditionally-brewed remedy for the Vasca virus. Once applied any infected Kavats within a short radius are cured.",
@@ -4393,6 +4562,7 @@
   {
     "id": "vasca_kavat_echo_lure",
     "name": "Vasca Kavat Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/VampireKavatLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Vasca Kavat with life-like animal calls. Vasca Kavat roam the Plains of Eidolon at night.",
@@ -4412,6 +4582,7 @@
   {
     "id": "vasca_kavat_pheromone_oota",
     "name": "Vasca Kavat Pheromone Oota",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/VampireKavatRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Vasca Kavat.",
@@ -4431,6 +4602,7 @@
   {
     "id": "vermillion_antitoxin",
     "name": "Vermillion Antitoxin",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/Toxins/SoloRareAntitoxin",
     "category": "Gear",
     "type": "Gear",
     "description": "This is an extremely effective antitoxin.",
@@ -4471,6 +4643,7 @@
   {
     "id": "virmink_echo_lure",
     "name": "Virmink Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/SnowCritterLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Virmink with life-like animal calls. The Virmink is most often found around the Lakes in Orb Vallis.",
@@ -4490,6 +4663,7 @@
   {
     "id": "virmink_pheromone_synthesizer",
     "name": "Virmink Pheromone Synthesizer",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/RarityBoosts/SnowCritterRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Virmink.",
@@ -4509,6 +4683,7 @@
   {
     "id": "vome_residue",
     "name": "Vome Residue",
+    "uniqueName": "/Lotus/Types/Game/FishBait/Infested/OrokinFishBaitA",
     "category": "Gear",
     "type": "Fish Bait",
     "description": "A gobbet of raw flesh, fallen from the wyrm Vome in her death spasm. Used to attract Chondricord and Duriod in Cambion Drift cave hotspots during Fass and Vome.\n\nLocation: Cambion Drift on Deimos while Fass is active",
@@ -4543,6 +4718,7 @@
   {
     "id": "vortex",
     "name": "Vortex",
+    "uniqueName": "/Lotus/Types/Restoratives/LisetBlackHole",
     "category": "Gear",
     "type": "Gear",
     "description": "Creates a whirling mass of energy that violently attracts nearby enemies, crushing their atoms into a tiny spec of matter.",
@@ -4607,6 +4783,7 @@
   {
     "id": "vulpaphyla_echo_lure",
     "name": "Vulpaphyla Echo-Lure",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedCritterLureGearItem",
     "category": "Gear",
     "type": "Gear",
     "description": "Entice and attract nearby Vulpaphyla with life-like animal calls.",
@@ -4626,6 +4803,7 @@
   {
     "id": "vulpaphyla_pheromone_gland",
     "name": "Vulpaphyla Pheromone Gland",
+    "uniqueName": "/Lotus/Types/Restoratives/Conservation/Deimos/InfestedCritterRarityBoost",
     "category": "Gear",
     "type": "Gear",
     "description": "Deploy just before using the echo-lure to increase the chance of attracting a rarer subspecies of Vulpaphyla.",
@@ -4645,6 +4823,7 @@
   {
     "id": "wolf_beacon",
     "name": "Wolf Beacon",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/AssassinBaitD",
     "category": "Gear",
     "type": "Gear",
     "description": "Lures the Wolf out of hiding. One-time use gear item that can only be used in locations where the assassin would normally appear.",
@@ -4658,6 +4837,7 @@
   {
     "id": "zanuka_hunter_beacon",
     "name": "Zanuka Hunter Beacon",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/AssassinBaitB",
     "category": "Gear",
     "type": "Gear",
     "description": "Lures the Zanuka Hunter out of hiding. One-time use gear item that can only be used in locations where the assassin would normally appear.",
@@ -4671,6 +4851,7 @@
   {
     "id": "carrier",
     "name": "Carrier",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/CarrierPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "With 'Assault Mode' and 'Ammo Case' as default Precepts, Carrier is a seeker Sentinel. Carrier also comes with a shotgun weapon.",
@@ -4715,6 +4896,7 @@
   {
     "id": "carrier_prime",
     "name": "Carrier Prime",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeCarrierPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "This ornate sentinel is an excellent example of late Orokin craftsmanship and styling.",
@@ -4760,6 +4942,7 @@
   {
     "id": "dethcube",
     "name": "Dethcube",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/DethCubePowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "With 'Assault Mode' and 'Vaporize' as default precepts, Dethcube acts exactly as advertised, as a badass cube of 'deth'. Comes loaded with Deth Machine Rifle weapon.",
@@ -4804,6 +4987,7 @@
   {
     "id": "dethcube_prime",
     "name": "Dethcube Prime",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeDethCubePowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "With 'Assault Mode' and 'Vaporize' as default precepts, Dethcube Prime is the apex of lethal support. Comes loaded with Deth Machine Rifle Prime weapon.",
@@ -4849,6 +5033,7 @@
   {
     "id": "diriga",
     "name": "Diriga",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "Diriga shocks nearby enemies, and picks off distant threats, utilizing the Vulklok sniper rifle and the 'Calculated Shot', 'Arc Coil' and 'Electro Pulse' precepts.",
@@ -4893,6 +5078,7 @@
   {
     "id": "djinn",
     "name": "Djinn",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/GubberPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "With 'Thumper' and 'Fatal Attraction' as default Precepts, Djinn is a combat Sentinel. Djinn also comes with a poison dart weapon.",
@@ -4937,6 +5123,7 @@
   {
     "id": "helios",
     "name": "Helios",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/MeleePetPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "With 'Investigator' as its unique Precept and 'Deconstructor' as its weapon, the versatile Helios Sentinel acts as both a lethal guardian and an automatic codex scanner. Scans require an equipped Codex Scanner and an available charge.",
@@ -4981,6 +5168,7 @@
   {
     "id": "helios_prime",
     "name": "Helios Prime",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeHeliosPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "This knowledge hungry protector defends its master with Deconstructor Prime.",
@@ -5026,6 +5214,7 @@
   {
     "id": "nautilus",
     "name": "Nautilus",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/EmpyreanSentinelPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "With 'Auto Omni' and 'Cordon' as default Precepts, this Sentinel is the ideal companion for long voyages aboard a Railjack.",
@@ -5071,6 +5260,7 @@
   {
     "id": "nautilus_prime",
     "name": "Nautilus Prime",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/NautilusPrimeSentinelPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "This brave deckhand defends his crew with Verglas Prime.",
@@ -5116,6 +5306,7 @@
   {
     "id": "oxylus",
     "name": "Oxylus",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/RadarPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "With 'Scan Aquatic Lifeforms' and 'Scan Matter' as default Precepts, Oxylus was designed to assist in Search-and-Rescue operations through the harsh landscape around The Orb Vallis. Oxylus also comes with a Multron rifle.",
@@ -5160,6 +5351,7 @@
   {
     "id": "prisma_shade",
     "name": "Prisma Shade",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrismaShadePowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "A rare jewel of the void. How could anything so beautiful be crafted for stealth?",
@@ -5173,6 +5365,7 @@
   {
     "id": "shade",
     "name": "Shade",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/ShadePowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "With 'Revenge' and 'Ghost' as default Precepts, Shade is well suited for stealth gameplay. Shade also comes with a burst laser pistol.",
@@ -5217,6 +5410,7 @@
   {
     "id": "shade_prime",
     "name": "Shade Prime",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeShadePowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "Shade Prime specializes in stealth and comes locked and loaded with the Burst Laser Prime. Together, you can dominate the shadows.",
@@ -5262,6 +5456,7 @@
   {
     "id": "taxon",
     "name": "Taxon",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/TnSentinelCrossPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "With 'Assault Mode' and 'Molecular Conversion' as default Precepts, Taxon protects its owner with shield restoration. Equipped with the Artax ice-beam.",
@@ -5300,6 +5495,7 @@
   {
     "id": "wyrm",
     "name": "Wyrm",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/WyrmPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "With 'Assault Mode' and 'Crowd Dispersion' as default Precepts, Wyrm is a highly offensive Sentinel. Wyrm also comes with a laser rifle.",
@@ -5344,6 +5540,7 @@
   {
     "id": "wyrm_prime",
     "name": "Wyrm Prime",
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit",
     "category": "Companions",
     "type": "Sentinel",
     "description": "Both bodyguard and status symbol, the Wyrm Prime Sentinel was the last line of defense for high ranking Tenno in the Orokin Era.",
@@ -5389,6 +5586,7 @@
   {
     "id": "amesha",
     "name": "Amesha",
+    "uniqueName": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack",
     "category": "Archwing",
     "type": "Archwing",
     "description": "Transform into a winged guardian.",
@@ -5430,6 +5628,7 @@
   {
     "id": "elytron",
     "name": "Elytron",
+    "uniqueName": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack",
     "category": "Archwing",
     "type": "Archwing",
     "description": "This heavy duty Archwing was designed for one purpose, destruction.",
@@ -5471,6 +5670,7 @@
   {
     "id": "itzal",
     "name": "Itzal",
+    "uniqueName": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack",
     "category": "Archwing",
     "type": "Archwing",
     "description": "Designed for quick clandestine attacks, the Itzal Archwing excels at striking from the darkness of space.",
@@ -5512,6 +5712,7 @@
   {
     "id": "odonata",
     "name": "Odonata",
+    "uniqueName": "/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack",
     "category": "Archwing",
     "type": "Archwing",
     "description": "The systems built into this Archwing balance offensive capabilities with defensive countermeasures.",
@@ -5556,6 +5757,7 @@
   {
     "id": "odonata_prime",
     "name": "Odonata Prime",
+    "uniqueName": "/Lotus/Powersuits/Archwing/PrimeJetPack/PrimeJetPack",
     "category": "Archwing",
     "type": "Archwing",
     "description": "This enhanced version of the first Archwing prototype takes the design to its theoretical limits.",
@@ -5600,6 +5802,7 @@
   {
     "id": "exilus_warframe_adapter",
     "name": "Exilus Warframe Adapter",
+    "uniqueName": "/Lotus/Types/Items/MiscItems/UtilityUnlocker",
     "category": "Gear",
     "type": "Equipment Adapter",
     "description": "Fuses with a Warframe to unlock the Exilus Mod Slot.",
@@ -5637,6 +5840,7 @@
   {
     "id": "exilus_weapon_adapter",
     "name": "Exilus Weapon Adapter",
+    "uniqueName": "/Lotus/Types/Items/MiscItems/WeaponUtilityUnlocker",
     "category": "Gear",
     "type": "Equipment Adapter",
     "description": "Fuses with a compatible weapon to unlock its Exilus Mod Slot.",
@@ -5673,6 +5877,7 @@
   {
     "id": "forma",
     "name": "Forma",
+    "uniqueName": "/Lotus/StoreItems/Types/Items/MiscItems/Forma",
     "category": "Gear",
     "type": "Equipment Adapter",
     "description": "",
@@ -5737,6 +5942,7 @@
   {
     "id": "gravimag",
     "name": "Gravimag",
+    "uniqueName": "/Lotus/Types/Items/MiscItems/HeavyWeaponCatalyst",
     "category": "Gear",
     "type": "Rifle",
     "description": "Allows archwing guns to be deployed in terrestrial zones. Install this device on archwing guns to compensate for atmospheric and gravitational forces not experienced in space.\nNOTE: Deployment requires gear obtained from the Profit-Taker mission in Fortuna.",
@@ -5775,6 +5981,7 @@
   {
     "id": "orokin_catalyst",
     "name": "Orokin Catalyst",
+    "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCatalyst",
     "category": "Gear",
     "type": "Misc",
     "description": "Orokin modification technology used to super-charge weaponry. Doubles the available Mod Capacity on a Weapon.",
@@ -5817,6 +6024,7 @@
   {
     "id": "orokin_reactor",
     "name": "Orokin Reactor",
+    "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinReactor",
     "category": "Gear",
     "type": "Misc",
     "description": "Reactor used to super-charge Warframes. Doubles the available Mod Capacity on a Warframe, Archwing, and Companions.",
@@ -5858,6 +6066,7 @@
   {
     "id": "stance_forma",
     "name": "Stance Forma",
+    "uniqueName": "/Lotus/Types/Items/MiscItems/FormaStance",
     "category": "Gear",
     "type": "Equipment Adapter",
     "description": "Modifies a Stance slot on a melee weapon to be compatible with any Mod Polarity.",
@@ -5895,6 +6104,7 @@
   {
     "id": "umbra_forma",
     "name": "Umbra Forma",
+    "uniqueName": "/Lotus/Types/Items/MiscItems/FormaUmbra",
     "category": "Gear",
     "type": "Equipment Adapter",
     "description": "Forma that can apply the UMBRA polarity.\n\nThis shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe or Melee Weapon to UMBRA polarity and then resets their affinity to Unranked. This can only be used on max Rank Warframes and Melee Weapons.",

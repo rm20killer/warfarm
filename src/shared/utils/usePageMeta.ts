@@ -11,7 +11,7 @@ export interface PageMetaOptions {
 const DEFAULT_TITLE_SUFFIX = 'Warfarm Tracker';
 const DEFAULT_DESCRIPTION =
   'Warframe codex, live WorldState fissures tracker, Void relic drop rates calculator, resource farming guide, weapon recipes, and arcane drop tables.';
-const BASE_URL = 'https://warfarm.pages.dev';
+const BASE_URL = 'https://warfarm.dev';
 
 export function usePageMeta({
   title,

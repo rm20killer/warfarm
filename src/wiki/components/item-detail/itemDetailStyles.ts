@@ -1,54 +1,11 @@
 import React from 'react';
+import { theme } from '../../styles/theme';
 
-export function getRarityBadgeStyle(rarity?: string): React.CSSProperties {
-  const r = (rarity || '').toLowerCase();
-  if (r.includes('legendary')) {
-    return {
-      display: 'inline-block',
-      padding: '2px 8px',
-      borderRadius: 4,
-      fontSize: 11,
-      fontWeight: 600,
-      backgroundColor: '#f5f5f518',
-      border: '1px solid #ffffff44',
-      color: '#ffffff',
-    };
-  }
-  if (r.includes('rare')) {
-    return {
-      display: 'inline-block',
-      padding: '2px 8px',
-      borderRadius: 4,
-      fontSize: 11,
-      fontWeight: 600,
-      backgroundColor: '#ffd70018',
-      border: '1px solid #ffd70044',
-      color: '#ffd700',
-    };
-  }
-  if (r.includes('uncommon')) {
-    return {
-      display: 'inline-block',
-      padding: '2px 8px',
-      borderRadius: 4,
-      fontSize: 11,
-      fontWeight: 600,
-      backgroundColor: '#90caf918',
-      border: '1px solid #90caf944',
-      color: '#90caf9',
-    };
-  }
-  return {
-    display: 'inline-block',
-    padding: '2px 8px',
-    borderRadius: 4,
-    fontSize: 11,
-    fontWeight: 600,
-    backgroundColor: '#d49b6a18',
-    border: '1px solid #d49b6a44',
-    color: '#eed8c4',
-  };
-}
+export { theme };
+export const getRarityBadgeStyle = theme.helpers.getRarityBadgeStyle;
+export const getCategoryBadgeStyle = theme.helpers.getCategoryBadgeStyle;
+export const getLineageBadgeStyle = theme.helpers.getLineageBadgeStyle;
+
 
 export const detailStyles: Record<string, React.CSSProperties> = {
   container: {
@@ -60,7 +17,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     marginBottom: 16,
   },
   backLink: {
-    color: '#8a8aa8',
+    color: theme.colors.textMuted,
     textDecoration: 'none',
     fontSize: 13,
   },
@@ -71,7 +28,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     flexWrap: 'wrap',
     gap: 16,
     paddingBottom: 20,
-    borderBottom: '1px solid #1c1c28',
+    borderBottom: `1px solid ${theme.colors.borderDefault}`,
     marginBottom: 24,
   },
   headerLeft: {
@@ -88,20 +45,20 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   title: {
     fontSize: 26,
     fontWeight: 700,
-    color: '#eaeaf0',
+    color: theme.colors.textHighlight,
     margin: 0,
   },
   categoryBadge: {
     alignSelf: 'flex-start',
     fontSize: 11,
     padding: '3px 8px',
-    background: '#1c1c2c',
-    color: '#9090b8',
+    background: theme.colors.bgCardElevated,
+    color: theme.colors.textSecondary,
     borderRadius: 4,
   },
   wikiLink: {
     fontSize: 12,
-    color: '#6e8ec4',
+    color: theme.colors.accentLight,
     textDecoration: 'none',
   },
   targetWidget: {
@@ -128,24 +85,24 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   },
   qtyLabel: {
     fontSize: 12,
-    color: '#8a8aa0',
+    color: theme.colors.textMuted,
   },
   qtyInput: {
     width: 60,
     padding: '6px 8px',
-    background: '#14141c',
-    border: '1px solid #282838',
+    background: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderDefault}`,
     borderRadius: 4,
-    color: '#e0e0e8',
+    color: theme.colors.textPrimary,
     fontSize: 13,
     textAlign: 'center',
   },
   statusNotice: {
-    color: '#8a8aa0',
+    color: theme.colors.textMuted,
     fontSize: 14,
   },
   errorNotice: {
-    color: '#c48a8a',
+    color: theme.colors.red,
     fontSize: 14,
     marginBottom: 12,
   },
@@ -165,14 +122,14 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     gap: 20,
   },
   sectionCard: {
-    background: '#12121a',
-    border: '1px solid #1e1e2c',
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderDefault}`,
     borderRadius: 6,
     padding: 20,
   },
   componentParentCard: {
-    background: '#141420',
-    border: '1px solid #2a2a3e',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderStrong}`,
     borderLeft: '4px solid #ffd700',
     borderRadius: 6,
     padding: 16,
@@ -189,35 +146,35 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     fontWeight: 700,
     padding: '2px 8px',
     borderRadius: 4,
-    background: '#2d2218',
-    color: '#ffd700',
-    border: '1px solid #5c4820',
+    background: theme.colors.goldBg,
+    color: theme.colors.gold,
+    border: `1px solid ${theme.colors.goldBorder}`,
   },
   parentItemLink: {
     fontSize: 14,
     fontWeight: 700,
-    color: '#ffd700',
+    color: theme.colors.gold,
     textDecoration: 'none',
   },
   baseVariantLink: {
     fontSize: 12,
     fontWeight: 600,
-    color: '#77aaff',
+    color: theme.colors.accentLight,
     textDecoration: 'none',
     padding: '4px 10px',
-    background: '#162030',
-    border: '1px solid #204060',
+    background: theme.colors.accentBg,
+    border: `1px solid ${theme.colors.accentBorder}`,
     borderRadius: 4,
   },
   siblingStrip: {
     marginTop: 14,
     paddingTop: 12,
-    borderTop: '1px solid #242436',
+    borderTop: `1px solid ${theme.colors.borderDefault}`,
   },
   siblingStripLabel: {
     fontSize: 12,
     fontWeight: 600,
-    color: '#9098b8',
+    color: theme.colors.textSecondary,
     display: 'block',
     marginBottom: 8,
   },
@@ -231,46 +188,46 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     alignItems: 'center',
     gap: 6,
     padding: '5px 10px',
-    background: '#161622',
-    border: '1px solid #262638',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
     borderRadius: 4,
-    color: '#d0d4e8',
+    color: theme.colors.textPrimary,
     fontSize: 12,
     textDecoration: 'none',
     fontWeight: 500,
   },
   siblingChipActive: {
-    background: '#2a2216',
+    background: theme.colors.goldBg,
     borderColor: '#785420',
-    color: '#ffd700',
+    color: theme.colors.gold,
     fontWeight: 700,
   },
   viewingIndicator: {
     fontSize: 11,
-    color: '#e0a860',
+    color: theme.colors.orange,
     fontWeight: 700,
   },
   partPageLink: {
     fontSize: 11.5,
     fontWeight: 600,
-    color: '#8ec4f4',
+    color: theme.colors.accentLight,
     textDecoration: 'none',
     padding: '4px 8px',
     background: '#1c2438',
     borderRadius: 4,
-    border: '1px solid #2a3654',
+    border: `1px solid ${theme.colors.borderStrong}`,
     transition: 'background 0.2s',
   },
   sectionTitle: {
     fontSize: 16,
     fontWeight: 600,
-    color: '#dcdce8',
+    color: theme.colors.textPrimary,
     marginBottom: 14,
   },
   sectionSubTitle: {
     fontSize: 14,
     fontWeight: 600,
-    color: '#c4c4d4',
+    color: theme.colors.textSecondary,
     marginBottom: 8,
   },
   itemImage: {
@@ -279,13 +236,13 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     objectFit: 'contain',
     borderRadius: 4,
     marginBottom: 12,
-    background: '#181824',
+    background: theme.colors.bgCard,
     padding: 8,
   },
   extractText: {
     fontSize: 13,
     lineHeight: 1.6,
-    color: '#a0a0b8',
+    color: theme.colors.textSecondary,
     margin: 0,
   },
   mechanicCallout: {
@@ -304,8 +261,8 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     gap: 10,
   },
   nodeCard: {
-    background: '#161622',
-    border: '1px solid #202030',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
     borderRadius: 4,
     padding: 12,
   },
@@ -318,19 +275,19 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   nodeName: {
     fontSize: 14,
     fontWeight: 600,
-    color: '#e0e0ec',
+    color: theme.colors.textPrimary,
   },
   nodePlanet: {
     fontSize: 13,
-    color: '#8a8aa0',
+    color: theme.colors.textMuted,
   },
   missionTypeBadge: {
     marginLeft: 8,
     fontSize: 11,
     padding: '2px 6px',
-    background: '#222232',
+    background: theme.colors.bgCardElevated,
     borderRadius: 3,
-    color: '#9090b0',
+    color: theme.colors.textSecondary,
   },
   efficiencyBadge: {
     fontSize: 11,
@@ -338,32 +295,32 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   },
   dropRateBadge: {
     fontSize: 11,
-    color: '#8ec48e',
+    color: theme.colors.green,
     fontWeight: 500,
   },
   strategyText: {
     fontSize: 12,
-    color: '#8a8aa4',
+    color: theme.colors.textMuted,
     margin: 0,
     lineHeight: 1.4,
   },
   framesTipBox: {
     marginTop: 16,
     padding: '10px 12px',
-    background: '#161622',
+    background: theme.colors.bgCardElevated,
     borderRadius: 4,
     fontSize: 12,
   },
   framesTipTitle: {
-    color: '#c0c0d4',
+    color: theme.colors.textSecondary,
     marginRight: 6,
   },
   framesList: {
-    color: '#8e9ec4',
+    color: theme.colors.accentLight,
   },
   notesHelp: {
     fontSize: 12,
-    color: '#7a7a90',
+    color: theme.colors.textMuted,
     marginBottom: 10,
     lineHeight: 1.3,
   },
@@ -371,10 +328,10 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     width: '100%',
     boxSizing: 'border-box',
     padding: '10px',
-    background: '#161622',
-    border: '1px solid #262638',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
     borderRadius: 4,
-    color: '#d0d0dc',
+    color: theme.colors.textPrimary,
     fontSize: 12,
     lineHeight: 1.4,
     resize: 'vertical',
@@ -387,10 +344,10 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   },
   saveNoteBtn: {
     padding: '5px 12px',
-    background: '#202030',
-    border: '1px solid #2e2e44',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderStrong}`,
     borderRadius: 3,
-    color: '#b0b0c8',
+    color: theme.colors.textSecondary,
     fontSize: 12,
     cursor: 'pointer',
   },
@@ -401,11 +358,11 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   },
   planetItem: {
     fontSize: 12,
-    color: '#8a8aa4',
+    color: theme.colors.textMuted,
     padding: '3px 0',
   },
   lootSummaryBox: {
-    background: '#161622',
+    background: theme.colors.bgCardElevated,
     borderRadius: 4,
     padding: 12,
     marginBottom: 14,
@@ -420,11 +377,11 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     gap: 8,
   },
   lootInfoLabel: {
-    color: '#84849a',
+    color: theme.colors.textMuted,
     minWidth: 140,
   },
   lootInfoValue: {
-    color: '#e0e0ec',
+    color: theme.colors.textPrimary,
     fontWeight: 600,
   },
   lootGeneralText: {
@@ -441,22 +398,22 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   componentsHeader: {
     fontSize: 12,
     fontWeight: 600,
-    color: '#b0b0c4',
+    color: theme.colors.textSecondary,
     marginBottom: 4,
   },
   componentRow: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    background: '#161622',
-    border: '1px solid #202030',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
     borderRadius: 4,
     padding: '8px 12px',
     fontSize: 12,
   },
   componentName: {
     fontWeight: 500,
-    color: '#e4e4ee',
+    color: theme.colors.textPrimary,
   },
   componentRight: {
     display: 'flex',
@@ -464,16 +421,16 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     gap: 12,
   },
   componentSource: {
-    color: '#8a8aa0',
+    color: theme.colors.textMuted,
   },
   componentChance: {
-    color: '#8ec48e',
+    color: theme.colors.green,
     fontWeight: 600,
   },
   blockTitle: {
     fontSize: 13,
     fontWeight: 600,
-    color: '#c0c0d8',
+    color: theme.colors.textSecondary,
     display: 'block',
     marginBottom: 6,
   },
@@ -485,8 +442,8 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     lineHeight: 1.6,
   },
   acquisitionCard: {
-    background: '#141420',
-    border: '1px solid #28283e',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
     borderLeft: '4px solid #8eb4e4',
     borderRadius: 6,
     padding: 16,
@@ -501,29 +458,29 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   acquisitionBadge: {
     fontSize: 11,
     padding: '2px 8px',
-    background: '#222b3a',
-    color: '#8ec4f4',
+    background: theme.colors.accentBg,
+    color: theme.colors.accentLight,
     borderRadius: 3,
     fontWeight: 600,
     textTransform: 'uppercase',
   },
   vendorStoreTag: {
     fontSize: 12,
-    color: '#8a8aa4',
+    color: theme.colors.textMuted,
   },
   acquisitionSentence: {
     fontSize: 14,
-    color: '#e4e4f0',
+    color: theme.colors.textPrimary,
     lineHeight: 1.5,
     margin: '0 0 6px 0',
   },
   standingHighlight: {
-    color: '#90d490',
+    color: theme.colors.green,
     fontWeight: 600,
   },
   vendorNotes: {
     fontSize: 12,
-    color: '#8e8ea4',
+    color: theme.colors.textMuted,
     margin: 0,
     lineHeight: 1.4,
   },
@@ -546,16 +503,16 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   },
   rankTh: {
     padding: '8px 10px',
-    borderBottom: '1px solid #242436',
-    color: '#8c8ca4',
+    borderBottom: `1px solid ${theme.colors.borderDefault}`,
+    color: theme.colors.textMuted,
     fontWeight: 600,
     fontSize: 11,
     textTransform: 'uppercase',
   },
   rankTd: {
     padding: '8px 10px',
-    borderBottom: '1px solid #1a1a26',
-    color: '#dcdce8',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
+    color: theme.colors.textPrimary,
   },
   rankBadge: {
     display: 'inline-block',
@@ -565,30 +522,30 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     background: '#1a1a28',
     borderRadius: 3,
     fontWeight: 600,
-    color: '#c0c0d8',
+    color: theme.colors.textSecondary,
   },
   costBadge: {
     display: 'inline-block',
     padding: '2px 6px',
-    background: '#182418',
-    color: '#8ec48e',
+    background: theme.colors.greenBg,
+    color: theme.colors.green,
     borderRadius: 3,
     fontWeight: 600,
   },
   statTd: {
     padding: '8px 10px',
-    borderBottom: '1px solid #1a1a26',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
     color: '#8ec4c4',
     fontWeight: 500,
   },
   effectTd: {
     padding: '8px 10px',
-    borderBottom: '1px solid #1a1a26',
-    color: '#a0a0b8',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
+    color: theme.colors.textSecondary,
     lineHeight: 1.4,
   },
   maxRankRow: {
-    background: '#161626',
+    background: theme.colors.bgCardElevated,
   },
   infoBox: {
     display: 'flex',
@@ -600,43 +557,43 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '4px 0',
-    borderBottom: '1px solid #181824',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
     fontSize: 12,
   },
   infoLabel: {
     color: '#828298',
   },
   infoVal: {
-    color: '#dcdce6',
+    color: theme.colors.textPrimary,
     fontWeight: 500,
     textAlign: 'right',
   },
   dropTablesLink: {
-    color: '#6e8ec4',
+    color: theme.colors.accentLight,
     textDecoration: 'none',
     fontSize: 12,
   },
   craftCostText: {
     fontSize: 12,
-    color: '#8a8aa4',
+    color: theme.colors.textMuted,
   },
   cookTimeBadge: {
     display: 'flex',
     alignItems: 'center',
     gap: 6,
-    background: '#1c1c2c',
+    background: theme.colors.bgCardElevated,
     padding: '4px 10px',
     borderRadius: 4,
-    border: '1px solid #2a2a3e',
+    border: `1px solid ${theme.colors.borderStrong}`,
   },
   cookTimeLabel: {
     fontSize: 11,
-    color: '#8a8aa0',
+    color: theme.colors.textMuted,
   },
   cookTimeValue: {
     fontSize: 12,
     fontWeight: 700,
-    color: '#90d490',
+    color: theme.colors.green,
   },
   ingredientsBlock: {
     marginTop: 12,
@@ -645,7 +602,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   ingredientsTitle: {
     fontSize: 12,
     fontWeight: 600,
-    color: '#b0b0c4',
+    color: theme.colors.textSecondary,
     display: 'block',
     marginBottom: 8,
   },
@@ -660,7 +617,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   componentsHeading: {
     fontSize: 12,
     fontWeight: 600,
-    color: '#b0b0c4',
+    color: theme.colors.textSecondary,
     display: 'block',
     marginBottom: 8,
   },
@@ -670,8 +627,8 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     gap: 10,
   },
   compRecipeBox: {
-    background: '#161622',
-    border: '1px solid #202030',
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
     borderRadius: 4,
     padding: 10,
   },
@@ -684,11 +641,11 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   compRecipeName: {
     fontSize: 13,
     fontWeight: 600,
-    color: '#e0e0ec',
+    color: theme.colors.textPrimary,
   },
   compRecipeMeta: {
     fontSize: 11,
-    color: '#8a8aa0',
+    color: theme.colors.textMuted,
   },
   statsSummaryGrid: {
     display: 'grid',
@@ -697,7 +654,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     marginTop: 10,
   },
   statsSummaryCard: {
-    background: '#161622',
+    background: theme.colors.bgCardElevated,
     border: '1px solid #202032',
     borderRadius: 4,
     padding: '8px 10px',
@@ -721,7 +678,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     marginTop: 6,
   },
   damageModeBox: {
-    background: '#161622',
+    background: theme.colors.bgCardElevated,
     border: '1px solid #202032',
     borderRadius: 4,
     padding: 10,
@@ -740,7 +697,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   damageModeTotal: {
     fontSize: 12,
     fontWeight: 700,
-    color: '#90d490',
+    color: theme.colors.green,
   },
   damageTypesRow: {
     display: 'flex',
@@ -770,7 +727,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     marginTop: 6,
   },
   augmentCard: {
-    background: '#161622',
+    background: theme.colors.bgCardElevated,
     border: '1px solid #202032',
     borderRadius: 4,
     padding: 10,
@@ -784,7 +741,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   augmentLink: {
     fontSize: 13,
     fontWeight: 600,
-    color: '#8ec4f4',
+    color: theme.colors.accentLight,
     textDecoration: 'none',
   },
   augmentSource: {
@@ -793,7 +750,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   },
   augmentEffect: {
     fontSize: 12,
-    color: '#c0c0d4',
+    color: theme.colors.textSecondary,
     margin: 0,
     lineHeight: 1.4,
   },
@@ -804,7 +761,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     marginTop: 6,
   },
   variantCard: {
-    background: '#161622',
+    background: theme.colors.bgCardElevated,
     border: '1px solid #202032',
     borderRadius: 4,
     padding: 10,
@@ -824,7 +781,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   },
   variantBonus: {
     fontSize: 11,
-    color: '#90d490',
+    color: theme.colors.green,
     margin: 0,
   },
   abilitiesList: {
@@ -834,7 +791,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     marginTop: 10,
   },
   abilityCard: {
-    background: '#161622',
+    background: theme.colors.bgCardElevated,
     border: '1px solid #202032',
     borderRadius: 4,
     padding: 12,
@@ -850,7 +807,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     fontWeight: 700,
     textTransform: 'uppercase',
     background: '#1f2538',
-    color: '#8ec4f4',
+    color: theme.colors.accentLight,
     padding: '2px 6px',
     borderRadius: 3,
     border: '1px solid #2c3650',
@@ -862,7 +819,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   },
   abilityDescription: {
     fontSize: 12,
-    color: '#a0a0b8',
+    color: theme.colors.textSecondary,
     lineHeight: 1.5,
     margin: 0,
   },
@@ -878,18 +835,18 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   },
   enemyDropsTh: {
     padding: '8px 10px',
-    borderBottom: '1px solid #242436',
-    color: '#8c8ca4',
+    borderBottom: `1px solid ${theme.colors.borderDefault}`,
+    color: theme.colors.textMuted,
     fontWeight: 600,
     fontSize: 11,
     textTransform: 'uppercase',
   },
   enemyDropRow: {
-    borderBottom: '1px solid #1a1a26',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
   },
   enemyDropNameCell: {
     padding: '10px 10px',
-    color: '#e4e4ee',
+    color: theme.colors.textPrimary,
     fontWeight: 500,
   },
   enemyNameText: {
@@ -1090,7 +1047,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     gap: 12,
     marginBottom: 16,
     paddingBottom: 14,
-    borderBottom: '1px solid #1f2334',
+    borderBottom: `1px solid ${theme.colors.borderDefault}`,
   },
   variantBadge: {
     fontSize: 11,
@@ -1232,7 +1189,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   compThTitle: {
     fontSize: 13,
     fontWeight: 700,
-    color: '#f0f0f8',
+    color: theme.colors.textHighlight,
     marginTop: 2,
   },
   compTr: {
@@ -1241,7 +1198,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   compTdLabel: {
     padding: '10px 14px',
     fontWeight: 600,
-    color: '#d0d4e8',
+    color: theme.colors.textPrimary,
     background: '#12141f',
   },
   compTdCurrent: {
@@ -1274,7 +1231,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   },
   primeRelicPartGroup: {
     background: '#101218',
-    border: '1px solid #1f2334',
+    border: `1px solid ${theme.colors.borderDefault}`,
     borderRadius: 8,
     overflow: 'hidden',
     transition: 'border-color 0.2s ease',
@@ -1334,7 +1291,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     alignItems: 'center',
     paddingTop: 8,
     marginTop: 2,
-    borderTop: '1px solid #1f2334',
+    borderTop: `1px solid ${theme.colors.borderDefault}`,
   },
   relicChanceText: {
     fontSize: 11.5,
@@ -1369,8 +1326,8 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     fontWeight: 600,
     padding: '3px 8px',
     borderRadius: 4,
-    backgroundColor: '#142a1a',
-    color: '#7ae08a',
+    backgroundColor: theme.colors.greenBg,
+    color: theme.colors.green,
     border: '1px solid #23582e',
   },
   unvaultedCountBadge: {
@@ -1409,7 +1366,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   notFoundTitle: {
     fontSize: 22,
     fontWeight: 700,
-    color: '#f0f0f8',
+    color: theme.colors.textHighlight,
     margin: '0 0 8px 0',
   },
   notFoundSub: {
@@ -1426,7 +1383,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
   suggestionsTitle: {
     fontSize: 15,
     fontWeight: 600,
-    color: '#ffd700',
+    color: theme.colors.gold,
     margin: '0 0 14px 0',
   },
   suggestionsGrid: {
@@ -1439,7 +1396,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     alignItems: 'center',
     gap: 12,
     padding: '10px 14px',
-    background: '#161826',
+    background: theme.colors.bgCardElevated,
     border: '1px solid #242940',
     borderRadius: 6,
     textDecoration: 'none',
@@ -1487,7 +1444,7 @@ export const detailStyles: Record<string, React.CSSProperties> = {
     background: '#24324c',
     border: '1px solid #3c5482',
     borderRadius: 4,
-    color: '#8ec4f4',
+    color: theme.colors.accentLight,
     fontSize: 13,
     fontWeight: 600,
     textDecoration: 'none',

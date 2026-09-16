@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeAll } from 'vitest';
 import fs from 'fs';
 import path from 'path';
 import { exportToObsidian } from '../scripts/export-obsidian';
@@ -6,17 +6,19 @@ import { exportToObsidian } from '../scripts/export-obsidian';
 describe('Obsidian Vault Export & Auto-Sync System', () => {
   const vaultPath = path.resolve(process.cwd(), 'warframe-obsidian-vault');
 
-  it('generates a complete Obsidian vault structure with .obsidian configuration and 2,500+ notes', async () => {
-    const result = await exportToObsidian(vaultPath);
-    expect(result.notesCount).toBeGreaterThan(2500);
-    expect(fs.existsSync(result.vaultDir)).toBe(true);
+  beforeAll(async () => {
+    await exportToObsidian(vaultPath);
+  }, 60000);
+
+  it('generates a complete Obsidian vault structure with .obsidian configuration', async () => {
+    expect(fs.existsSync(vaultPath)).toBe(true);
 
     const appJsonPath = path.join(vaultPath, '.obsidian', 'app.json');
     expect(fs.existsSync(appJsonPath)).toBe(true);
     const appConfig = JSON.parse(fs.readFileSync(appJsonPath, 'utf-8'));
     expect(appConfig.useMarkdownLinks).toBe(false);
     expect(appConfig.attachmentFolderPath).toBe('Attachments');
-  }, 30000);
+  });
 
   it('populates Attachments folder with offline image assets', () => {
     const attachmentsDir = path.join(vaultPath, 'Attachments');

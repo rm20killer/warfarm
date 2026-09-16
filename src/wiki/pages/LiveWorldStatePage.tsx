@@ -11,6 +11,8 @@ import {
 import { ItemThumbnail } from '../../shared/utils/item-images';
 import syncMetaJson from '../../shared/data/generated/sync-meta.json';
 import { usePageMeta } from '../../shared/utils/usePageMeta';
+import { theme } from '../styles/theme';
+import { directoryStyles } from '../styles/directoryPageStyles';
 
 export type LiveSectionView = 'All' | 'Fissures' | 'Bounties' | 'Events' | 'Cycles';
 
@@ -63,7 +65,7 @@ export function LiveWorldStatePage() {
           name: 'Plains of Eidolon',
           icon: '🌅',
           state: worldState.cetusCycle.isDay ? 'Day' : 'Night (Eidolons)',
-          stateColor: worldState.cetusCycle.isDay ? '#ffbb33' : '#69b4ff',
+          stateColor: worldState.cetusCycle.isDay ? theme.colors.day : theme.colors.night,
           timeLeft: worldState.cetusCycle.timeLeft,
           hint: worldState.cetusCycle.isDay ? 'Daytime bounties' : 'Teralyst / Hydrolyst hunting',
         },
@@ -71,7 +73,7 @@ export function LiveWorldStatePage() {
           name: 'Orb Vallis',
           icon: '❄️',
           state: worldState.vallisCycle.isWarm ? 'Warm' : 'Cold',
-          stateColor: worldState.vallisCycle.isWarm ? '#ff8844' : '#44ccff',
+          stateColor: worldState.vallisCycle.isWarm ? theme.colors.warm : theme.colors.coldCycle,
           timeLeft: worldState.vallisCycle.timeLeft,
           hint: worldState.vallisCycle.isWarm ? 'Warm servofish' : 'Cold servofish',
         },
@@ -79,7 +81,7 @@ export function LiveWorldStatePage() {
           name: 'Cambion Drift',
           icon: '🦠',
           state: worldState.cambionCycle.active === 'vome' ? 'Vome' : 'Fass',
-          stateColor: worldState.cambionCycle.active === 'vome' ? '#33ddaa' : '#ff5522',
+          stateColor: worldState.cambionCycle.active === 'vome' ? theme.colors.vome : theme.colors.fass,
           timeLeft: worldState.cambionCycle.timeLeft,
           hint: worldState.cambionCycle.active === 'vome' ? 'Isolation Vaults' : 'Fass Spores active',
         },
@@ -87,7 +89,7 @@ export function LiveWorldStatePage() {
           name: 'Earth Day / Night',
           icon: '🌍',
           state: worldState.earthCycle.isDay ? 'Day' : 'Night',
-          stateColor: worldState.earthCycle.isDay ? '#ffcc44' : '#7799cc',
+          stateColor: worldState.earthCycle.isDay ? theme.colors.day : theme.colors.night,
           timeLeft: worldState.earthCycle.timeLeft,
           hint: worldState.earthCycle.isDay ? 'Sunlight Threshcone' : 'Moonlight Threshcone',
         },
@@ -95,7 +97,7 @@ export function LiveWorldStatePage() {
           name: 'Zariman Ten Zero',
           icon: '🚢',
           state: worldState.zarimanCycle?.isCorpus ? 'Corpus' : 'Grineer',
-          stateColor: worldState.zarimanCycle?.isCorpus ? '#55aaff' : '#ff4444',
+          stateColor: worldState.zarimanCycle?.isCorpus ? theme.colors.corpusCycle : theme.colors.grineerCycle,
           timeLeft: worldState.zarimanCycle?.timeLeft || 'Active',
           hint: 'Holdfast Bounties',
         },
@@ -144,7 +146,7 @@ export function LiveWorldStatePage() {
   const showEvents = activeSectionView === 'All' || activeSectionView === 'Events';
 
   return (
-    <div style={styles.container}>
+    <div className="page-container-responsive" style={styles.container}>
       <style>{`
         .live-dashboard-layout {
           display: grid;
@@ -168,46 +170,47 @@ export function LiveWorldStatePage() {
         }
       `}</style>
 
-      {/* Top Banner with Compact Meta & Section Filter */}
-      <div style={styles.headerBanner}>
-        <div style={{ flex: 1, minWidth: 280 }}>
-          <h1 style={styles.mainTitle}>Star Chart Live Operations</h1>
-          <p style={styles.subTitle}>
-            Real-time open world environments, Void fissures, and syndicate bounty rewards.
-          </p>
+      {/* Standardized Header Banner */}
+      <header style={styles.header}>
+        <h1 style={styles.title}>Star Chart Live Operations</h1>
+        <p style={styles.subtitle}>
+          Real-time open world environments, Void fissures, and syndicate bounty rewards across the Origin System.
+        </p>
+      </header>
+
+      {/* Navigation and Sync Controls */}
+      <div style={styles.controlsStrip}>
+        <div style={styles.viewTabs} role="tablist" aria-label="WorldState feed sections">
+          {(['All', 'Fissures', 'Bounties', 'Events', 'Cycles'] as LiveSectionView[]).map((v) => (
+            <button
+              key={v}
+              role="tab"
+              aria-selected={activeSectionView === v}
+              onClick={() => setActiveSectionView(v)}
+              style={{
+                ...styles.viewTabBtn,
+                backgroundColor: activeSectionView === v ? theme.colors.accentBg : theme.colors.bgInput,
+                color: activeSectionView === v ? theme.colors.textHighlight : theme.colors.textSecondary,
+                borderColor: activeSectionView === v ? theme.colors.accentBorder : theme.colors.borderDefault,
+              }}
+            >
+              {v === 'All' ? 'All Feeds' : v === 'Events' ? 'Operations & Trader' : v}
+            </button>
+          ))}
         </div>
 
-        <div style={styles.headerControls}>
-          <div style={styles.viewTabs}>
-            {(['All', 'Fissures', 'Bounties', 'Events', 'Cycles'] as LiveSectionView[]).map((v) => (
-              <button
-                key={v}
-                onClick={() => setActiveSectionView(v)}
-                style={{
-                  ...styles.viewTabBtn,
-                  backgroundColor: activeSectionView === v ? '#2e3856' : '#141620',
-                  color: activeSectionView === v ? '#ffd700' : '#888ca8',
-                  borderColor: activeSectionView === v ? '#ffd70088' : '#252a3d',
-                }}
-              >
-                {v === 'All' ? 'All Feeds' : v === 'Events' ? 'Operations & Trader' : v}
-              </button>
-            ))}
-          </div>
-
-          <div style={styles.refreshArea}>
-            <button
-              onClick={() => loadData(true)}
-              disabled={loading}
-              style={styles.refreshButton}
-              title="Refresh Live Data"
-            >
-              {loading ? '↻ Syncing...' : '↻ Refresh'}
-            </button>
-            {lastUpdatedTime && (
-              <span style={styles.lastUpdatedText}>Updated {lastUpdatedTime}</span>
-            )}
-          </div>
+        <div style={styles.refreshArea}>
+          <button
+            onClick={() => loadData(true)}
+            disabled={loading}
+            style={styles.refreshButton}
+            title="Refresh Live Data"
+          >
+            {loading ? '↻ Syncing...' : '↻ Refresh'}
+          </button>
+          {lastUpdatedTime && (
+            <span style={styles.lastUpdatedText}>Updated {lastUpdatedTime}</span>
+          )}
         </div>
       </div>
 
@@ -280,9 +283,9 @@ export function LiveWorldStatePage() {
                   <span
                     style={{
                       ...styles.statusBadgeSmall,
-                      backgroundColor: worldState.voidTrader.active ? '#1b4332' : '#232942',
-                      color: worldState.voidTrader.active ? '#74c69d' : '#8fa0d0',
-                      borderColor: worldState.voidTrader.active ? '#2d6a4f' : '#39446d',
+                      backgroundColor: worldState.voidTrader.active ? theme.colors.voidTraderActiveBg : theme.colors.voidTraderInactiveBg,
+                      color: worldState.voidTrader.active ? theme.colors.voidTraderActive : theme.colors.voidTraderInactive,
+                      borderColor: worldState.voidTrader.active ? theme.colors.voidTraderActiveBorder : theme.colors.voidTraderInactiveBorder,
                     }}
                   >
                     {worldState.voidTrader.active ? 'Active in Relay' : 'Scheduled Arrival'}
@@ -297,8 +300,8 @@ export function LiveWorldStatePage() {
                 {worldState.voidTrader.inventory && worldState.voidTrader.inventory.length > 0 && (
                   <div style={styles.inventoryPreview}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
-                      <strong style={{ fontSize: 11, color: '#b0b8d8' }}>Featured Offerings:</strong>
-                      <span style={{ fontSize: 10, color: '#ffd700' }}>
+                      <strong style={{ fontSize: 11, color: theme.colors.textSecondary }}>Featured Offerings:</strong>
+                      <span style={{ fontSize: 10, color: theme.colors.gold }}>
                         {worldState.voidTrader.inventory.length} items
                       </span>
                     </div>
@@ -735,82 +738,31 @@ export function LiveWorldStatePage() {
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  container: {
-    width: '100%',
-    maxWidth: 'none',
-    margin: 0,
-    padding: '16px 24px 60px 24px',
-    boxSizing: 'border-box',
-  },
-  headerBanner: {
+  ...directoryStyles,
+  controlsStrip: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#151722',
-    border: '1px solid #232738',
-    borderRadius: 8,
-    padding: '16px 20px',
-    marginBottom: 16,
+    marginBottom: 20,
+    padding: '10px 14px',
+    backgroundColor: theme.colors.bgCardElevated,
+    borderRadius: theme.radii.md,
+    border: `1px solid ${theme.colors.borderDefault}`,
     flexWrap: 'wrap',
-    gap: 16,
-  },
-  versionRow: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: 8,
-    marginBottom: 6,
-  },
-  liveIndicator: {
-    color: '#00e676',
-    fontSize: 11,
-    fontWeight: 700,
-    letterSpacing: '0.08em',
-  },
-  versionBadge: {
-    backgroundColor: '#25293d',
-    color: '#ffd700',
-    fontSize: 11,
-    fontWeight: 600,
-    padding: '2px 8px',
-    borderRadius: 4,
-    border: '1px solid #ffd70044',
-  },
-  buildBadge: {
-    backgroundColor: '#1d2130',
-    color: '#8e9ec4',
-    fontSize: 10,
-    padding: '2px 6px',
-    borderRadius: 4,
-  },
-  mainTitle: {
-    fontSize: 22,
-    fontWeight: 700,
-    color: '#f0f0f8',
-    margin: '0 0 4px 0',
-  },
-  subTitle: {
-    fontSize: 13,
-    color: '#888ca8',
-    margin: 0,
-  },
-  headerControls: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: 16,
-    flexWrap: 'wrap',
+    gap: 12,
   },
   viewTabs: {
     display: 'flex',
-    backgroundColor: '#11131a',
-    borderRadius: 6,
+    backgroundColor: theme.colors.bgNavbar,
+    borderRadius: theme.radii.md,
     padding: 3,
-    border: '1px solid #232738',
+    border: `1px solid ${theme.colors.borderDefault}`,
     gap: 3,
     flexWrap: 'wrap',
   },
   viewTabBtn: {
     border: '1px solid transparent',
-    borderRadius: 4,
+    borderRadius: theme.radii.sm,
     padding: '6px 12px',
     fontSize: 12,
     fontWeight: 600,
@@ -824,10 +776,10 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 4,
   },
   refreshButton: {
-    backgroundColor: '#282d42',
-    color: '#e0e0f0',
-    border: '1px solid #3d4566',
-    borderRadius: 6,
+    backgroundColor: theme.colors.accentBg,
+    color: theme.colors.accent,
+    border: `1px solid ${theme.colors.accentBorder}`,
+    borderRadius: theme.radii.md,
     padding: '8px 14px',
     fontSize: 12,
     fontWeight: 600,
@@ -835,14 +787,14 @@ const styles: Record<string, React.CSSProperties> = {
   },
   lastUpdatedText: {
     fontSize: 11,
-    color: '#888ca8',
+    color: theme.colors.textMuted,
   },
   errorBox: {
-    backgroundColor: '#38181e',
-    color: '#ff8899',
+    backgroundColor: theme.colors.redBg,
+    color: theme.colors.redLight,
     padding: '10px 14px',
-    borderRadius: 6,
-    border: '1px solid #662233',
+    borderRadius: theme.radii.md,
+    border: `1px solid ${theme.colors.redBorder}`,
     marginBottom: 16,
     fontSize: 13,
   },
@@ -855,9 +807,9 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 10,
   },
   cycleCardCompact: {
-    backgroundColor: '#141620',
-    border: '1px solid #232736',
-    borderRadius: 6,
+    backgroundColor: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.md,
     padding: '10px 12px',
   },
   cycleCardTop: {
@@ -877,13 +829,13 @@ const styles: Record<string, React.CSSProperties> = {
   cycleName: {
     fontSize: 13,
     fontWeight: 600,
-    color: '#e0e0ec',
+    color: theme.colors.textHighlight,
   },
   cycleStateBadge: {
     fontSize: 10,
     fontWeight: 700,
     padding: '2px 6px',
-    borderRadius: 4,
+    borderRadius: theme.radii.sm,
     borderWidth: 1,
     borderStyle: 'solid',
   },
@@ -895,11 +847,11 @@ const styles: Record<string, React.CSSProperties> = {
   cycleTimeLeft: {
     fontSize: 14,
     fontWeight: 700,
-    color: '#ffd700',
+    color: theme.colors.gold,
   },
   cycleHint: {
     fontSize: 11,
-    color: '#888ca8',
+    color: theme.colors.textMuted,
   },
   sidebarColumn: {
     display: 'flex',
@@ -921,16 +873,17 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 10,
     fontWeight: 700,
     padding: '2px 6px',
-    borderRadius: 4,
+    borderRadius: theme.radii.sm,
     border: '1px solid',
   },
   countTag: {
     fontSize: 10,
-    color: '#888ca8',
-    backgroundColor: '#1c1f2e',
+    color: theme.colors.textMuted,
+    backgroundColor: theme.colors.bgInput,
     padding: '2px 6px',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
     fontWeight: 600,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   mainContentArea: {
     display: 'flex',
@@ -939,9 +892,9 @@ const styles: Record<string, React.CSSProperties> = {
     minWidth: 0,
   },
   panelSection: {
-    backgroundColor: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
+    backgroundColor: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.lg,
     padding: 16,
   },
   panelHeader: {
@@ -955,12 +908,12 @@ const styles: Record<string, React.CSSProperties> = {
   panelTitle: {
     fontSize: 16,
     fontWeight: 700,
-    color: '#f0f0f8',
+    color: theme.colors.textHighlight,
     margin: '0 0 2px 0',
   },
   panelSub: {
     fontSize: 11,
-    color: '#888ca8',
+    color: theme.colors.textSecondary,
   },
   filterBar: {
     display: 'flex',
@@ -971,22 +924,22 @@ const styles: Record<string, React.CSSProperties> = {
   sortButtonGroup: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#161824',
-    borderRadius: 4,
+    backgroundColor: theme.colors.bgInput,
+    borderRadius: theme.radii.sm,
     padding: 2,
-    border: '1px solid #232738',
+    border: `1px solid ${theme.colors.borderDefault}`,
     gap: 2,
   },
   sortGroupLabel: {
     fontSize: 10,
     fontWeight: 700,
-    color: '#888ca8',
+    color: theme.colors.textMuted,
     padding: '0 4px',
     textTransform: 'uppercase',
   },
   sortBtn: {
     border: '1px solid transparent',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
     padding: '4px 8px',
     fontSize: 11,
     fontWeight: 600,
@@ -995,24 +948,24 @@ const styles: Record<string, React.CSSProperties> = {
   },
   tierButtonGroup: {
     display: 'flex',
-    backgroundColor: '#161824',
-    borderRadius: 4,
+    backgroundColor: theme.colors.bgInput,
+    borderRadius: theme.radii.sm,
     padding: 2,
-    border: '1px solid #232738',
+    border: `1px solid ${theme.colors.borderDefault}`,
   },
   tierButton: {
     border: 'none',
-    borderRadius: 4,
+    borderRadius: theme.radii.sm,
     padding: '6px 10px',
     fontSize: 11,
     fontWeight: 600,
     cursor: 'pointer',
   },
   missionTypeSelect: {
-    backgroundColor: '#161824',
-    color: '#d0d4e8',
-    border: '1px solid #282f48',
-    borderRadius: 4,
+    backgroundColor: theme.colors.bgInput,
+    color: theme.colors.textPrimary,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.sm,
     padding: '5px 8px',
     fontSize: 11,
     fontWeight: 600,
@@ -1021,7 +974,7 @@ const styles: Record<string, React.CSSProperties> = {
   steelPathToggle: {
     fontSize: 11,
     fontWeight: 600,
-    color: '#ff7788',
+    color: theme.colors.red,
     display: 'flex',
     alignItems: 'center',
     cursor: 'pointer',
@@ -1038,9 +991,9 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#161826',
-    border: '1px solid #22263a',
-    borderRadius: 6,
+    backgroundColor: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: '8px 12px',
     transition: 'border-color 0.15s ease',
   },
@@ -1055,49 +1008,49 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 10,
     fontWeight: 700,
     padding: '2px 6px',
-    borderRadius: 4,
+    borderRadius: theme.radii.sm,
     border: '1px solid rgba(255, 255, 255, 0.2)',
   },
   missionTypeBadge: {
-    backgroundColor: '#20263c',
-    color: '#9baacf',
+    backgroundColor: theme.colors.bgInput,
+    color: theme.colors.textSecondary,
     fontSize: 10,
     fontWeight: 700,
     padding: '2px 6px',
-    borderRadius: 4,
-    border: '1px solid #2f3856',
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   steelPathBadge: {
-    backgroundColor: '#661122',
-    color: '#ff7788',
+    backgroundColor: theme.colors.redBg,
+    color: theme.colors.red,
     fontSize: 9,
     fontWeight: 700,
     padding: '2px 4px',
-    borderRadius: 4,
-    border: '1px solid #ff445555',
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.redBorder}`,
   },
   stormBadge: {
-    backgroundColor: '#332255',
-    color: '#cc88ff',
+    backgroundColor: theme.colors.purpleBg,
+    color: theme.colors.purple,
     fontSize: 9,
     fontWeight: 700,
     padding: '2px 4px',
-    borderRadius: 4,
-    border: '1px solid #aa66ff55',
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.purpleBorder}`,
   },
   fissureNode: {
     fontSize: 13,
     fontWeight: 600,
-    color: '#f0f0f8',
+    color: theme.colors.textHighlight,
     margin: 0,
   },
   fissureEnemyFaction: {
     fontSize: 11,
-    color: '#888ca8',
+    color: theme.colors.textMuted,
   },
   fissureEta: {
     fontSize: 11,
-    color: '#ffd700',
+    color: theme.colors.gold,
     fontWeight: 600,
     whiteSpace: 'nowrap',
     marginLeft: 8,
@@ -1110,7 +1063,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   toggleRewardsBtn: {
     border: '1px solid',
-    borderRadius: 4,
+    borderRadius: theme.radii.sm,
     padding: '5px 10px',
     fontSize: 11,
     fontWeight: 600,
@@ -1124,7 +1077,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   syndicateTabBtn: {
     border: '1px solid',
-    borderRadius: 4,
+    borderRadius: theme.radii.sm,
     padding: '6px 10px',
     fontSize: 11,
     fontWeight: 600,
@@ -1139,9 +1092,9 @@ const styles: Record<string, React.CSSProperties> = {
     paddingRight: 4,
   },
   bountyCardCompact: {
-    backgroundColor: '#151722',
-    border: '1px solid #232738',
-    borderRadius: 6,
+    backgroundColor: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: '8px 12px',
     transition: 'border-color 0.15s ease',
   },
@@ -1153,18 +1106,18 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 6,
   },
   bountyTierBadge: {
-    backgroundColor: '#262a3f',
-    color: '#90a0d0',
-    border: '1px solid #3b4263',
+    backgroundColor: theme.colors.bgInput,
+    color: theme.colors.textSecondary,
+    border: `1px solid ${theme.colors.borderSubtle}`,
     fontSize: 10,
     fontWeight: 700,
     padding: '2px 5px',
-    borderRadius: 4,
+    borderRadius: theme.radii.sm,
   },
   bountyTitleCompact: {
     fontSize: 13,
     fontWeight: 600,
-    color: '#f0f0f8',
+    color: theme.colors.textHighlight,
     margin: 0,
     display: 'inline-block',
   },
@@ -1172,13 +1125,13 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     gap: 8,
     fontSize: 11,
-    color: '#888ca8',
+    color: theme.colors.textSecondary,
   },
   cardToggleBtn: {
-    backgroundColor: '#1c1f2e',
-    border: '1px solid #2d334a',
-    borderRadius: 4,
-    color: '#9baacf',
+    backgroundColor: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.sm,
+    color: theme.colors.textSecondary,
     fontSize: 10,
     fontWeight: 600,
     padding: '3px 8px',
@@ -1186,7 +1139,7 @@ const styles: Record<string, React.CSSProperties> = {
     transition: 'all 0.15s ease',
   },
   rewardsSectionCompact: {
-    borderTop: '1px solid #1c2030',
+    borderTop: `1px solid ${theme.colors.borderSubtle}`,
     paddingTop: 8,
     marginTop: 8,
   },
@@ -1196,12 +1149,12 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 6,
   },
   rewardChipCompact: {
-    backgroundColor: '#1b1e2c',
-    border: '1px solid #2b3046',
-    borderRadius: 4,
+    backgroundColor: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.sm,
     padding: '3px 6px',
     fontSize: 11,
-    color: '#d0d4e8',
+    color: theme.colors.textPrimary,
     textDecoration: 'none',
     display: 'inline-flex',
     alignItems: 'center',
@@ -1216,50 +1169,50 @@ const styles: Record<string, React.CSSProperties> = {
     textOverflow: 'ellipsis',
   },
   rewardChance: {
-    color: '#ffd700',
+    color: theme.colors.gold,
     fontWeight: 700,
     fontSize: 10,
   },
   emptyState: {
     padding: 24,
     textAlign: 'center',
-    color: '#888ca8',
+    color: theme.colors.textMuted,
     fontSize: 13,
-    backgroundColor: '#141620',
-    borderRadius: 6,
+    backgroundColor: theme.colors.bgCard,
+    borderRadius: theme.radii.md,
   },
   traderCard: {
-    backgroundColor: '#141622',
-    border: '1px solid #2a3048',
-    borderRadius: 6,
+    backgroundColor: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.md,
     padding: 14,
   },
   eventCard: {
-    backgroundColor: '#151824',
-    border: '1px solid #242738',
-    borderRadius: 6,
+    backgroundColor: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: 12,
   },
   cardBadge: {
     fontSize: 10,
     fontWeight: 700,
-    color: '#ffd700',
+    color: theme.colors.gold,
     textTransform: 'uppercase',
     letterSpacing: '0.06em',
   },
   traderTitle: {
     fontSize: 15,
     fontWeight: 700,
-    color: '#fff',
+    color: theme.colors.textHighlight,
     margin: '0 0 4px 0',
   },
   traderLocation: {
     fontSize: 12,
-    color: '#9baacf',
+    color: theme.colors.textSecondary,
     marginBottom: 8,
   },
   inventoryPreview: {
-    borderTop: '1px solid #23283c',
+    borderTop: `1px solid ${theme.colors.borderSubtle}`,
     paddingTop: 8,
   },
   traderOfferingsGrid: {
@@ -1271,13 +1224,13 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     alignItems: 'center',
     gap: 8,
-    backgroundColor: '#171a28',
-    border: '1px solid #282f48',
-    borderRadius: 4,
+    backgroundColor: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.sm,
     padding: '4px 8px',
   },
   itemLink: {
-    color: '#ffd700',
+    color: theme.colors.gold,
     textDecoration: 'none',
     fontWeight: 600,
     fontSize: 12,
@@ -1285,34 +1238,34 @@ const styles: Record<string, React.CSSProperties> = {
   },
   traderItemCost: {
     fontSize: 10,
-    color: '#888ca8',
+    color: theme.colors.textSecondary,
   },
   eventTitle: {
     fontSize: 14,
     fontWeight: 700,
-    color: '#f0f0f8',
+    color: theme.colors.textHighlight,
     margin: '0 0 4px 0',
   },
   eventTooltip: {
     fontSize: 11,
-    color: '#888ca8',
+    color: theme.colors.textSecondary,
     margin: '0 0 6px 0',
     lineHeight: 1.3,
   },
   eventNode: {
     fontSize: 11,
-    color: '#8e9ec4',
+    color: theme.colors.textMuted,
     marginBottom: 8,
   },
   healthBarContainer: {
-    backgroundColor: '#202434',
-    borderRadius: 4,
+    backgroundColor: theme.colors.bgInput,
+    borderRadius: theme.radii.sm,
     height: 14,
     position: 'relative',
     overflow: 'hidden',
   },
   healthBarFill: {
-    backgroundColor: '#ff4455',
+    backgroundColor: theme.colors.red,
     height: '100%',
     transition: 'width 0.5s ease',
   },
@@ -1326,9 +1279,9 @@ const styles: Record<string, React.CSSProperties> = {
     lineHeight: '14px',
   },
   alertCard: {
-    backgroundColor: '#161927',
-    border: '1px solid #252a3d',
-    borderRadius: 6,
+    backgroundColor: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.md,
     padding: 10,
   },
   alertTopRow: {
@@ -1340,14 +1293,15 @@ const styles: Record<string, React.CSSProperties> = {
   alertMissionType: {
     fontSize: 11,
     fontWeight: 700,
-    color: '#74c69d',
-    backgroundColor: '#1b3828',
+    color: theme.colors.green,
+    backgroundColor: theme.colors.greenBg,
     padding: '2px 5px',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.greenBorder}`,
   },
   alertEta: {
     fontSize: 11,
-    color: '#ffd700',
+    color: theme.colors.gold,
     fontWeight: 600,
   },
   alertNodeRow: {
@@ -1358,7 +1312,7 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 11,
   },
   alertFaction: {
-    color: '#888ca8',
+    color: theme.colors.textMuted,
     fontSize: 10,
   },
   alertRewardBox: {
@@ -1371,12 +1325,12 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'inline-flex',
     alignItems: 'center',
     gap: 4,
-    backgroundColor: '#1d2133',
-    border: '1px solid #2f3652',
-    borderRadius: 3,
+    backgroundColor: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.sm,
     padding: '2px 6px',
     textDecoration: 'none',
-    color: '#e0e0ec',
+    color: theme.colors.textPrimary,
     fontSize: 10,
   },
   alertRewardName: {
@@ -1385,28 +1339,29 @@ const styles: Record<string, React.CSSProperties> = {
   alertCreditBadge: {
     fontSize: 10,
     fontWeight: 600,
-    color: '#ffd700',
-    backgroundColor: '#262419',
+    color: theme.colors.gold,
+    backgroundColor: theme.colors.goldBg,
     padding: '2px 5px',
-    borderRadius: 3,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.goldBorder}`,
   },
   emptySidebarNotice: {
     padding: 12,
     fontSize: 12,
-    color: '#888ca8',
-    backgroundColor: '#151722',
-    borderRadius: 6,
+    color: theme.colors.textMuted,
+    backgroundColor: theme.colors.bgCard,
+    borderRadius: theme.radii.md,
     textAlign: 'center',
   },
   sortieBoss: {
     fontSize: 14,
     fontWeight: 700,
-    color: '#f0f0f8',
+    color: theme.colors.textHighlight,
     margin: '0 0 2px 0',
   },
   sortieFaction: {
     fontSize: 11,
-    color: '#8e9ec4',
+    color: theme.colors.textSecondary,
     display: 'block',
     marginBottom: 8,
   },
@@ -1419,32 +1374,33 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     alignItems: 'flex-start',
     gap: 8,
-    backgroundColor: '#161927',
-    border: '1px solid #23283c',
-    borderRadius: 4,
+    backgroundColor: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.sm,
     padding: '6px 8px',
   },
   sortieStageNum: {
     fontSize: 10,
     fontWeight: 700,
-    backgroundColor: '#282d45',
-    color: '#90a0d0',
-    borderRadius: 3,
+    backgroundColor: theme.colors.bgCardElevated,
+    color: theme.colors.accent,
+    borderRadius: theme.radii.sm,
     width: 16,
     height: 16,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 1,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
   sortieVariantMission: {
     fontSize: 11,
     fontWeight: 600,
-    color: '#e0e0f0',
+    color: theme.colors.textPrimary,
   },
   sortieVariantMod: {
     fontSize: 10,
-    color: '#ff9988',
+    color: theme.colors.redLight,
   },
 };
 

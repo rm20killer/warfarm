@@ -229,10 +229,11 @@ export function getCraftingRecipe(idOrName: string): FoundryCraftingRecipe | und
     }
   }
 
-  // 6. Dynamic Prime Weapon / Item Recipe Synthesis from Void Relics (only for the main Prime item)
+  // 6. Dynamic Prime Weapon / Item Recipe Synthesis from Void Relics (only for a specific main Prime item)
   const isPartSuffix = /\s+(barrel|receiver|stock|blade|handle|hilt|guard|grip|string|upper limb|lower limb|disc|gauntlet|pouch|stars|ornament|chain|head|motor|heatsink|link)$/i.test(idOrName);
-  if (!isPartSuffix && lowerName.includes('prime')) {
-    const parentPrimeName = idOrName.trim();
+  const isPrimeItemName = (lowerName.endsWith(' prime') || lowerName.endsWith(' prime set')) && lowerName !== 'prime' && lowerName.length > 6;
+  if (!isPartSuffix && isPrimeItemName) {
+    const parentPrimeName = idOrName.replace(/\s+set$/i, '').trim();
     const parentLowerP = parentPrimeName.toLowerCase();
     const allRelicsList = (allRelicsJson as any[]) || [];
     const foundParts = new Set<string>();
@@ -240,7 +241,7 @@ export function getCraftingRecipe(idOrName: string): FoundryCraftingRecipe | und
     for (const relic of allRelicsList) {
       for (const rw of relic.rewards || []) {
         const rwL = (rw.itemName || '').toLowerCase();
-        if (rwL.includes(parentLowerP) && !rwL.endsWith('blueprint')) {
+        if ((rwL.startsWith(parentLowerP + ' ') || rwL === parentLowerP) && !rwL.endsWith('blueprint')) {
           foundParts.add(rw.itemName);
         }
       }

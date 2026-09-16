@@ -19,6 +19,7 @@ export interface ResourceFarmingGuide {
   acquisition?: string;
   recommendedFrames: string[];
   optimalNodes: OptimalFarmNode[];
+  tradable?: boolean;
 }
 
 export const RESOURCE_GUIDES: ResourceFarmingGuide[] = [

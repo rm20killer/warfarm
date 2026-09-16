@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ItemVariantComparison } from '../../../shared/data/item-database';
+import { theme } from '../../styles/theme';
 import { detailStyles as styles } from './itemDetailStyles';
 
 interface VariantComparisonViewProps {
@@ -25,7 +26,7 @@ export function VariantComparisonView({
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
             <span style={styles.variantBadge}>VARIANT COMPARISON</span>
             <span style={styles.variantFamilyText}>
-              Family: <strong style={{ color: '#f0f0f8' }}>{variantComparison.baseItemName}</strong> ({variantComparison.variants.length} versions)
+              Family: <strong style={{ color: theme.colors.textHighlight }}>{variantComparison.baseItemName}</strong> ({variantComparison.variants.length} versions)
             </span>
           </div>
           <p style={styles.variantSubtitle}>
@@ -98,11 +99,11 @@ export function VariantComparisonView({
               </thead>
               <tbody>
                 {variantComparison.comparisonRows.map((row, rIdx) => {
-                  let deltaColor = '#c0c4dc';
-                  let deltaBg = '#1c1e2d';
-                  let deltaBorder = '#2a2e44';
+                  let deltaColor = theme.colors.textSecondary;
+                  let deltaBg = theme.colors.bgCardElevated;
+                  let deltaBorder = theme.colors.borderDefault;
                   if (row.isImprovement === true) {
-                    deltaColor = '#7ae08a';
+                    deltaColor = theme.colors.green;
                     deltaBg = '#142a1a';
                     deltaBorder = '#23582e';
                   } else if (row.isImprovement === false) {

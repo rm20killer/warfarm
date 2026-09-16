@@ -2,6 +2,7 @@
   {
     "id": "acceltra",
     "name": "Acceltra",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/SapientPrimary/SapientPrimaryWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -140,6 +141,7 @@
   {
     "id": "acceltra_prime",
     "name": "Acceltra Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeAcceltra/PrimeAcceltraWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -278,6 +280,7 @@
   {
     "id": "aeolak",
     "name": "Aeolak",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnRifleErsatz/TnRifleErsatzWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -432,6 +435,7 @@
   {
     "id": "afentis",
     "name": "Afentis",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnHopliteSpear/TnHopliteSpearGunWeapon",
     "category": "Weapon",
     "subType": "Speargun (Primary)",
     "slot": "Primary",
@@ -587,6 +591,7 @@
   {
     "id": "afentis_prime",
     "name": "Afentis Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeAfentis/PrimeAfentisWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -743,6 +748,7 @@
   {
     "id": "alternox",
     "name": "Alternox",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/GyreRifle/GyreRifleWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -903,6 +909,7 @@
   {
     "id": "alternox_prime",
     "name": "Alternox Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeAlternox/PrimeAlternoxWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -1064,6 +1071,7 @@
   {
     "id": "ambassador",
     "name": "Ambassador",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpArSniper/CrpArSniperRifle",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -1203,6 +1211,7 @@
   {
     "id": "amprex",
     "name": "Amprex",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/ChainLightningGun/ChainLightningRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -1326,6 +1335,7 @@
   {
     "id": "arca_plasmor",
     "name": "Arca Plasmor",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpShotgun/CrpShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -1452,6 +1462,7 @@
   {
     "id": "argonak",
     "name": "Argonak",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/LaserAimRifle/LaserAimRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -1596,6 +1607,7 @@
   {
     "id": "astilla",
     "name": "Astilla",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnGlassShotgun/TnGlassShotgunGun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -1737,6 +1749,7 @@
   {
     "id": "astilla_prime",
     "name": "Astilla Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeAstilla/AstillaPrimeWeapon",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -1877,6 +1890,7 @@
   {
     "id": "attica",
     "name": "Attica",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnoPrmryXbow/TnoPrmryXbowWeapon",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -2005,6 +2019,7 @@
   {
     "id": "ax_52",
     "name": "Ax-52",
+    "uniqueName": "/Lotus/Weapons/Lasria/AK47/TC2024AK47Weapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -2130,6 +2145,7 @@
   {
     "id": "basmu",
     "name": "Basmu",
+    "uniqueName": "/Lotus/Weapons/Sentients/SentRifleNewWar/SentRifleNewWarGun",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -2276,6 +2292,7 @@
   {
     "id": "battacor",
     "name": "Battacor",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpSentExperimentRifle/CrpSentExperimentRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -2423,6 +2440,7 @@
   {
     "id": "baza",
     "name": "Baza",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnSMG/TnSMGWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -2550,6 +2568,7 @@
   {
     "id": "baza_prime",
     "name": "Baza Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeBaza/PrimeBazaGun",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -2678,6 +2697,7 @@
   {
     "id": "boar",
     "name": "Boar",
+    "uniqueName": "/Lotus/Weapons/Tenno/Shotgun/FullAutoShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -2815,6 +2835,7 @@
   {
     "id": "boar_prime",
     "name": "Boar Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Shotgun/PrimeBoar",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -2953,6 +2974,7 @@
   {
     "id": "boltor",
     "name": "Boltor",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/BoltoRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -3095,6 +3117,7 @@
   {
     "id": "boltor_prime",
     "name": "Boltor Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeBoltor/PrimeBoltor",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -3236,6 +3259,7 @@
   {
     "id": "braton",
     "name": "Braton",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/Rifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -3361,6 +3385,7 @@
   {
     "id": "braton_prime",
     "name": "Braton Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/BratonPrime",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -3512,6 +3537,7 @@
   {
     "id": "braton_vandal",
     "name": "Braton Vandal",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/VIPRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -3657,6 +3683,7 @@
   {
     "id": "bubonico",
     "name": "Bubonico",
+    "uniqueName": "/Lotus/Weapons/Infested/LongGuns/InfArmCannon/InfArmCannon",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -3807,6 +3834,7 @@
   {
     "id": "burston",
     "name": "Burston",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/BurstRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -3957,6 +3985,7 @@
   {
     "id": "burston_prime",
     "name": "Burston Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeBurston/PrimeBurston",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -4107,6 +4136,7 @@
   {
     "id": "buzlok",
     "name": "Buzlok",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrnGorgSniperRifle/GrnGorgSniperRifle",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -4243,6 +4273,7 @@
   {
     "id": "carmine_penta",
     "name": "Carmine Penta",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/GrenadeLauncher/CarminePenta",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -4372,6 +4403,7 @@
   {
     "id": "cedo",
     "name": "Cedo",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnAlchemistShotgun/TnAlchemistShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -4521,6 +4553,7 @@
   {
     "id": "cedo_prime",
     "name": "Cedo Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeCedo/PrimeCedoWeapon",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -4670,6 +4703,7 @@
   {
     "id": "cernos",
     "name": "Cernos",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/AntlerBow/AntlerBow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -4810,6 +4844,7 @@
   {
     "id": "cernos_prime",
     "name": "Cernos Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/PrimeCernos/PrimeCernos",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -4951,6 +4986,7 @@
   {
     "id": "cinta",
     "name": "Cinta",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/DaxDuviriAsymetricalBow/DaxDuviriAsymmetricalLongBowPlayerWeapon",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -5096,6 +5132,7 @@
   {
     "id": "coda_bassocyst",
     "name": "Coda Bassocyst",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/1999InfShotgun/1999InfShotgunWeapon",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -5202,6 +5239,7 @@
   {
     "id": "coda_bubonico",
     "name": "Coda Bubonico",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaBubonico/CodaBubonicoCannon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -5325,6 +5363,7 @@
   {
     "id": "coda_hema",
     "name": "Coda Hema",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaHema",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -5420,6 +5459,7 @@
   {
     "id": "coda_sporothrix",
     "name": "Coda Sporothrix",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaSporothrix",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -5528,6 +5568,7 @@
   {
     "id": "coda_synapse",
     "name": "Coda Synapse",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaSynapse",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -5622,6 +5663,7 @@
   {
     "id": "convectrix",
     "name": "Convectrix",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpSplitLaser/CrpSplitLaser",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -5762,6 +5804,7 @@
   {
     "id": "corinth",
     "name": "Corinth",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnHeavyShotgun/TnHeavyShotgunGun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -5912,6 +5955,7 @@
   {
     "id": "corinth_prime",
     "name": "Corinth Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeCorinth/PrimeCorinth",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -6063,6 +6107,7 @@
   {
     "id": "daikyu",
     "name": "Daikyu",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/AsymetricalBow/AsymetricalBow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -6190,6 +6235,7 @@
   {
     "id": "daikyu_prime",
     "name": "Daikyu Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/PrimeDaikyu/PrimeDaikyuBow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -6331,6 +6377,7 @@
   {
     "id": "dera",
     "name": "Dera",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Energy/EnergyRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -6471,6 +6518,7 @@
   {
     "id": "dera_vandal",
     "name": "Dera Vandal",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Energy/DeraVandal",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -6601,6 +6649,7 @@
   {
     "id": "dex_sybaris",
     "name": "Dex Sybaris",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/DexTheThird/DexTheThird",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -6708,6 +6757,7 @@
   {
     "id": "drakgoon",
     "name": "Drakgoon",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerFlakCannon/FlakCannon",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -6846,6 +6896,7 @@
   {
     "id": "dread",
     "name": "Dread",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/StalkerBow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -7002,6 +7053,7 @@
   {
     "id": "efv_5_jupiter",
     "name": "Efv-5 Jupiter",
+    "uniqueName": "/Lotus/Weapons/Lasria/LasGooAK/LasGooAKPlayerWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -7133,6 +7185,7 @@
   {
     "id": "enkaus",
     "name": "Enkaus",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnInkRifle/TnInkRifleWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -7279,6 +7332,7 @@
   {
     "id": "evensong",
     "name": "Evensong",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/TnChoirBow/TnChoirBow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -7432,6 +7486,7 @@
   {
     "id": "exergis",
     "name": "Exergis",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpShapeBlast/CrpShapeBlastShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -7560,6 +7615,7 @@
   {
     "id": "felarx",
     "name": "Felarx",
+    "uniqueName": "/Lotus/Weapons/Tenno/Zariman/LongGuns/PumpShotgun/ZarimanPumpShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -7697,6 +7753,7 @@
   {
     "id": "ferrox",
     "name": "Ferrox",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/Spears/Railgun/CorpusRailgun",
     "category": "Weapon",
     "subType": "Speargun (Primary)",
     "slot": "Primary",
@@ -7860,6 +7917,7 @@
   {
     "id": "flux_rifle",
     "name": "Flux Rifle",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Energy/CrpLaserRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -7985,6 +8043,7 @@
   {
     "id": "fulmin",
     "name": "Fulmin",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnWispRifle/TnWispRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -8122,6 +8181,7 @@
   {
     "id": "fulmin_prime",
     "name": "Fulmin Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeFulmin/PrimeFulmin",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -8260,6 +8320,7 @@
   {
     "id": "glaxion",
     "name": "Glaxion",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpFreezeRay/CrpFreezeRayRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -8383,6 +8444,7 @@
   {
     "id": "glaxion_vandal",
     "name": "Glaxion Vandal",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpFreezeRay/Vandal/CrpFreezeRayVandalRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -8477,6 +8539,7 @@
   {
     "id": "gorgon",
     "name": "Gorgon",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/HeavyRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -8627,6 +8690,7 @@
   {
     "id": "gorgon_wraith",
     "name": "Gorgon Wraith",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/WraithGorgon/WraithGorgon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -8771,6 +8835,7 @@
   {
     "id": "gotva_prime",
     "name": "Gotva Prime",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrnOrokinRifle/GrnOrokinRifleWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -8867,6 +8932,7 @@
   {
     "id": "grakata",
     "name": "Grakata",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/GrnAssaultRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -8991,6 +9057,7 @@
   {
     "id": "grinlok",
     "name": "Grinlok",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerLeverActionRifle/GLARifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -9118,6 +9185,7 @@
   {
     "id": "haalvu",
     "name": "Haalvu",
+    "uniqueName": "/Lotus/Weapons/Sentients/SentOctaMiniGun/SentOctaMiniGun",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -9220,6 +9288,7 @@
   {
     "id": "harpak",
     "name": "Harpak",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrnHarpoonGun/GrnHarpoonGun",
     "category": "Weapon",
     "subType": "Speargun (Primary)",
     "slot": "Primary",
@@ -9361,6 +9430,7 @@
   {
     "id": "hek",
     "name": "Hek",
+    "uniqueName": "/Lotus/Weapons/Tenno/Shotgun/QuadShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -9485,6 +9555,7 @@
   {
     "id": "hema",
     "name": "Hema",
+    "uniqueName": "/Lotus/Weapons/Infested/LongGuns/InfWFAccompanyingPri/InfestedBurstRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -9610,6 +9681,7 @@
   {
     "id": "higasa",
     "name": "Higasa",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/Gunbrella/ShrineMaidenGunbrellaWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -9748,6 +9820,7 @@
   {
     "id": "hind",
     "name": "Hind",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/BurstRifle/GrnBurstRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -9888,6 +9961,7 @@
   {
     "id": "ignis",
     "name": "Ignis",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Chemical/FlameThrower",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -10012,6 +10086,7 @@
   {
     "id": "ignis_wraith",
     "name": "Ignis Wraith",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Chemical/FlameThrowerWraith",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -10136,6 +10211,7 @@
   {
     "id": "javlok",
     "name": "Javlok",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrnFlameSpear/GrnFlameSpear",
     "category": "Weapon",
     "subType": "Speargun (Primary)",
     "slot": "Primary",
@@ -10296,6 +10372,7 @@
   {
     "id": "karak",
     "name": "Karak",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerM16Homage/GrineerM16Rifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -10424,6 +10501,7 @@
   {
     "id": "karak_wraith",
     "name": "Karak Wraith",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerM16Homage/KarakWraith",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -10542,6 +10620,7 @@
   {
     "id": "kohm",
     "name": "Kohm",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrnSpark/GrnSparkRifle",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -10682,6 +10761,7 @@
   {
     "id": "komorex",
     "name": "Komorex",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpSentAmlgSniper/CrpSentAmlgSniper",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -10818,6 +10898,7 @@
   {
     "id": "kuva_bramma",
     "name": "Kuva Bramma",
+    "uniqueName": "/Lotus/Weapons/Grineer/Bows/GrnBow/GrnBowWeapon",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -10952,6 +11033,7 @@
   {
     "id": "kuva_chakkhurr",
     "name": "Kuva Chakkhurr",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrnKuvaLichRifle/GrnKuvaLichRifleWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -11068,6 +11150,7 @@
   {
     "id": "kuva_drakgoon",
     "name": "Kuva Drakgoon",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Drakgoon/KuvaDrakgoon",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -11183,6 +11266,7 @@
   {
     "id": "kuva_hek",
     "name": "Kuva Hek",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Hek/KuvaHekWeapon",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -11296,6 +11380,7 @@
   {
     "id": "kuva_hind",
     "name": "Kuva Hind",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Hind/KuvaHind",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -11425,6 +11510,7 @@
   {
     "id": "kuva_karak",
     "name": "Kuva Karak",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Karak/KuvaKarak",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -11529,6 +11615,7 @@
   {
     "id": "kuva_kohm",
     "name": "Kuva Kohm",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Kohm/KuvaKohm",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -11646,6 +11733,7 @@
   {
     "id": "kuva_ogris",
     "name": "Kuva Ogris",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Ogris/KuvaOgris",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -11760,6 +11848,7 @@
   {
     "id": "kuva_quartakk",
     "name": "Kuva Quartakk",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Quartakk/KuvaQuartakk",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -11878,6 +11967,7 @@
   {
     "id": "kuva_sobek",
     "name": "Kuva Sobek",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Sobek/KuvaSobek",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -11978,6 +12068,7 @@
   {
     "id": "kuva_tonkor",
     "name": "Kuva Tonkor",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Tonkor/KuvaTonkor",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -12091,6 +12182,7 @@
   {
     "id": "kuva_zarr",
     "name": "Kuva Zarr",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Zarr/KuvaZarr",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -12239,6 +12331,7 @@
   {
     "id": "lanka",
     "name": "Lanka",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Energy/Railgun",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -12372,6 +12465,7 @@
   {
     "id": "latron",
     "name": "Latron",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/SemiAutoRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -12523,6 +12617,7 @@
   {
     "id": "latron_prime",
     "name": "Latron Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/LatronPrime",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -12676,6 +12771,7 @@
   {
     "id": "latron_wraith",
     "name": "Latron Wraith",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/WraithLatron/WraithLatron",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -12817,6 +12913,7 @@
   {
     "id": "lenz",
     "name": "Lenz",
+    "uniqueName": "/Lotus/Weapons/Corpus/Bow/Longbow/CrpBow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -12965,6 +13062,7 @@
   {
     "id": "miter",
     "name": "Miter",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerSawbladeGun/SawBladeGun",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -13130,6 +13228,7 @@
   {
     "id": "mk1_braton",
     "name": "Mk1-Braton",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/StartingRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -13249,6 +13348,7 @@
   {
     "id": "mk1_paris",
     "name": "Mk1-Paris",
+    "uniqueName": "/Lotus/Weapons/MK1Series/MK1Paris",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -13372,6 +13472,7 @@
   {
     "id": "mk1_strun",
     "name": "Mk1-Strun",
+    "uniqueName": "/Lotus/Weapons/MK1Series/MK1Strun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -13494,6 +13595,7 @@
   {
     "id": "mutalist_cernos",
     "name": "Mutalist Cernos",
+    "uniqueName": "/Lotus/Weapons/Infested/Bow/InfCernosBow/InfCernos",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -13644,6 +13746,7 @@
   {
     "id": "mutalist_quanta",
     "name": "Mutalist Quanta",
+    "uniqueName": "/Lotus/Weapons/Infested/LongGuns/InfCrpShockSwarm/InfCrpShockSwarmRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -13793,6 +13896,7 @@
   {
     "id": "nagantaka",
     "name": "Nagantaka",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/GarudaCrossbow/GarudaCrossbow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -13934,6 +14038,7 @@
   {
     "id": "nagantaka_prime",
     "name": "Nagantaka Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeNagantaka/PrimeNagantakaWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -14074,6 +14179,7 @@
   {
     "id": "nataruk",
     "name": "Nataruk",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/Omicrus/OmicrusPlayerWep",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -14198,6 +14304,7 @@
   {
     "id": "ogris",
     "name": "Ogris",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Chemical/RocketLauncher",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -14333,6 +14440,7 @@
   {
     "id": "opticor",
     "name": "Opticor",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpBFG/CrpBFG",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -14497,6 +14605,7 @@
   {
     "id": "opticor_vandal",
     "name": "Opticor Vandal",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpBFG/Vandal/VandalCrpBFG",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -14629,6 +14738,7 @@
   {
     "id": "panthera",
     "name": "Panthera",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/Miter/TnoMiter",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -14768,6 +14878,7 @@
   {
     "id": "panthera_prime",
     "name": "Panthera Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimePanthera/PrimePanthera",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -14920,6 +15031,7 @@
   {
     "id": "paracyst",
     "name": "Paracyst",
+    "uniqueName": "/Lotus/Weapons/Infested/LongGuns/QuantaFullyInfested/InfQuantaRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -15066,6 +15178,7 @@
   {
     "id": "paris",
     "name": "Paris",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/HuntingBow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -15219,6 +15332,7 @@
   {
     "id": "paris_prime",
     "name": "Paris Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/PrimeHuntingBow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -15374,6 +15488,7 @@
   {
     "id": "penta",
     "name": "Penta",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/GrenadeLauncher/GrenadeLauncher",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -15509,6 +15624,7 @@
   {
     "id": "perigale",
     "name": "Perigale",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnQuadSniper/TnQuadSniper",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -15637,6 +15753,7 @@
   {
     "id": "perigale_prime",
     "name": "Perigale Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimePerigale/PrimePerigaleSniper",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -15766,6 +15883,7 @@
   {
     "id": "phage",
     "name": "Phage",
+    "uniqueName": "/Lotus/Weapons/Infested/LongGuns/Tentacluster/InfestedShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -15892,6 +16010,7 @@
   {
     "id": "phantasma",
     "name": "Phantasma",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/RevenantShotgun/RevenantShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -16063,6 +16182,7 @@
   {
     "id": "phantasma_prime",
     "name": "Phantasma Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimePhantasma/PhantasmaPrimeShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -16235,6 +16355,7 @@
   {
     "id": "phenmor",
     "name": "Phenmor",
+    "uniqueName": "/Lotus/Weapons/Tenno/Zariman/LongGuns/SemiAutoRifle/ZarimanSemiAutoRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -16373,6 +16494,7 @@
   {
     "id": "prisma_gorgon",
     "name": "Prisma Gorgon",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/VoidTraderGorgon/VTGorgon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -16491,6 +16613,7 @@
   {
     "id": "prisma_grakata",
     "name": "Prisma Grakata",
+    "uniqueName": "/Lotus/Weapons/VoidTrader/PrismaGrakata",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -16585,6 +16708,7 @@
   {
     "id": "prisma_grinlok",
     "name": "Prisma Grinlok",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerLeverActionRifle/PrismaGrinlokWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -16682,6 +16806,7 @@
   {
     "id": "prisma_lenz",
     "name": "Prisma Lenz",
+    "uniqueName": "/Lotus/Weapons/Corpus/Bow/Longbow/PrismaLenz/PrismaLenzWeapon",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -16800,6 +16925,7 @@
   {
     "id": "prisma_tetra",
     "name": "Prisma Tetra",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CorpusUMP/PrismaCorpusUMP",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -16893,6 +17019,7 @@
   {
     "id": "proboscis_cernos",
     "name": "Proboscis Cernos",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bows/PrimeDerelictCernos/DerelictCernos",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -17043,6 +17170,7 @@
   {
     "id": "purgator_1",
     "name": "Purgator 1",
+    "uniqueName": "/Lotus/Weapons/Lasria/LasGrenadeLauncher/LasrianNoxPlayerWeapon",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -17157,6 +17285,7 @@
   {
     "id": "quanta",
     "name": "Quanta",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpShockRifle/CrpShockRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -17314,6 +17443,7 @@
   {
     "id": "quanta_vandal",
     "name": "Quanta Vandal",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpShockRifle/QuantaVandal",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -17441,6 +17571,7 @@
   {
     "id": "quartakk",
     "name": "Quartakk",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrnFourBarrelRifle/GrnFourBarrelRifleWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -17573,6 +17704,7 @@
   {
     "id": "quellor",
     "name": "Quellor",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnRailjackRifle/RailjackRifleGun",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -17716,6 +17848,7 @@
   {
     "id": "rakta_cernos",
     "name": "Rakta Cernos",
+    "uniqueName": "/Lotus/Weapons/Syndicates/RedVeil/Bows/RVCernos",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -17828,6 +17961,7 @@
   {
     "id": "rauta",
     "name": "Rauta",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PaxDuviricusShotgun/PaxDuviricusShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -17950,6 +18084,7 @@
   {
     "id": "reconifex",
     "name": "Reconifex",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnBeltFedRifle/TnBeltFedRifleWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -18073,6 +18208,7 @@
   {
     "id": "rubico",
     "name": "Rubico",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/FiveShotSniper/FiveShotSniper",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -18199,6 +18335,7 @@
   {
     "id": "rubico_prime",
     "name": "Rubico Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/RubicoPrime/RubicoPrimeWeapon",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -18328,6 +18465,7 @@
   {
     "id": "sancti_tigris",
     "name": "Sancti Tigris",
+    "uniqueName": "/Lotus/Weapons/Syndicates/NewLoka/LongGuns/NLTigris",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -18427,6 +18565,7 @@
   {
     "id": "scourge",
     "name": "Scourge",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnPriestSpear/TnPriestSpearGun",
     "category": "Weapon",
     "subType": "Speargun (Primary)",
     "slot": "Primary",
@@ -18591,6 +18730,7 @@
   {
     "id": "scourge_prime",
     "name": "Scourge Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeScourge/PrimeScourgeWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -18756,6 +18896,7 @@
   {
     "id": "secura_penta",
     "name": "Secura Penta",
+    "uniqueName": "/Lotus/Weapons/Syndicates/PerrinSequence/LongGuns/PSPenta",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -18864,6 +19005,7 @@
   {
     "id": "shedu",
     "name": "Shedu",
+    "uniqueName": "/Lotus/Weapons/Sentients/Shedu/SheduHeavyWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -19003,6 +19145,7 @@
   {
     "id": "simulor",
     "name": "Simulor",
+    "uniqueName": "/Lotus/Weapons/Cephalon/Primary/CephPrimary/CephPrimary",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -19150,6 +19293,7 @@
   {
     "id": "sirocco",
     "name": "Sirocco",
+    "uniqueName": "/Lotus/Weapons/Operator/Pistols/DrifterPistol/DrifterPistolPlayerWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -19255,6 +19399,7 @@
   {
     "id": "snipetron",
     "name": "Snipetron",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/SniperRifle",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -19383,6 +19528,7 @@
   {
     "id": "snipetron_vandal",
     "name": "Snipetron Vandal",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/VandalSniperRifle",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -19500,6 +19646,7 @@
   {
     "id": "sobek",
     "name": "Sobek",
+    "uniqueName": "/Lotus/Weapons/Tenno/Shotgun/DoubleBarrelShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -19626,6 +19773,7 @@
   {
     "id": "soma",
     "name": "Soma",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/TennoAR",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -19768,6 +19916,7 @@
   {
     "id": "soma_prime",
     "name": "Soma Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeSoma/PrimeSomaRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -19910,6 +20059,7 @@
   {
     "id": "sporothrix",
     "name": "Sporothrix",
+    "uniqueName": "/Lotus/Weapons/Infested/LongGuns/InfSniperRifle/InfSniperRifle",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -20049,6 +20199,7 @@
   {
     "id": "stahlta",
     "name": "Stahlta",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpRubanRifle/CrpRubanRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -20196,6 +20347,7 @@
   {
     "id": "steflos",
     "name": "Steflos",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnoLotusPodShotgun/TnoLotusPodShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -20322,6 +20474,7 @@
   {
     "id": "stradavar",
     "name": "Stradavar",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TennoTommyGun/TennoTommyGunRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -20463,6 +20616,7 @@
   {
     "id": "stradavar_prime",
     "name": "Stradavar Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeStradavar/PrimeStradavarGun",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -20605,6 +20759,7 @@
   {
     "id": "strun",
     "name": "Strun",
+    "uniqueName": "/Lotus/Weapons/Tenno/Shotgun/Shotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -20726,6 +20881,7 @@
   {
     "id": "strun_prime",
     "name": "Strun Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeStrun/PrimeStrunWeapon",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -20879,6 +21035,7 @@
   {
     "id": "strun_wraith",
     "name": "Strun Wraith",
+    "uniqueName": "/Lotus/Weapons/Tenno/Shotgun/ShotgunVandal",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -21020,6 +21177,7 @@
   {
     "id": "supra",
     "name": "Supra",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Energy/CrpHeavyRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -21146,6 +21304,7 @@
   {
     "id": "supra_vandal",
     "name": "Supra Vandal",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/Machinegun/SupraVandal",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -21244,6 +21403,7 @@
   {
     "id": "sybaris",
     "name": "Sybaris",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnoLeverAction/TnoLeverActionRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -21382,6 +21542,7 @@
   {
     "id": "sybaris_prime",
     "name": "Sybaris Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeSybaris/PrimeSybarisRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -21524,6 +21685,7 @@
   {
     "id": "synapse",
     "name": "Synapse",
+    "uniqueName": "/Lotus/Weapons/Infested/LongGuns/InfestedRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -21648,6 +21810,7 @@
   {
     "id": "synoid_simulor",
     "name": "Synoid Simulor",
+    "uniqueName": "/Lotus/Weapons/Syndicates/CephalonSuda/LongGuns/CSSimulor",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -21776,6 +21939,7 @@
   {
     "id": "telos_boltor",
     "name": "Telos Boltor",
+    "uniqueName": "/Lotus/Weapons/Syndicates/ArbitersOfHexis/LongGuns/AHBoltor",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -21886,6 +22050,7 @@
   {
     "id": "tenet_arca_plasmor",
     "name": "Tenet Arca Plasmor",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEArcaPlasmor/CrpBEArcaPlasmor",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -21987,6 +22152,7 @@
   {
     "id": "tenet_envoy",
     "name": "Tenet Envoy",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpBriefcaseLauncher/CrpBriefcaseLauncher",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -22096,6 +22262,7 @@
   {
     "id": "tenet_ferrox",
     "name": "Tenet Ferrox",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEFerrox/CrpBEFerrox",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -22237,6 +22404,7 @@
   {
     "id": "tenet_flux_rifle",
     "name": "Tenet Flux Rifle",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEFluxRifle/CrpBEFluxRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -22336,6 +22504,7 @@
   {
     "id": "tenet_glaxion",
     "name": "Tenet Glaxion",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEGlaxion/CrpBEGlaxion",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -22434,6 +22603,7 @@
   {
     "id": "tenet_quanta",
     "name": "Tenet Quanta",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEQuanta/CrpBEQuanta",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -22570,6 +22740,7 @@
   {
     "id": "tenet_tetra",
     "name": "Tenet Tetra",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBETetra/CrpBETetra",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -22692,6 +22863,7 @@
   {
     "id": "tenora",
     "name": "Tenora",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnBardRifle/TnBardRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -22833,6 +23005,7 @@
   {
     "id": "tenora_prime",
     "name": "Tenora Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeTenora/TenoraPrimeWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -22975,6 +23148,7 @@
   {
     "id": "tetra",
     "name": "Tetra",
+    "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CorpusUMP/CorpusUMP",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -23099,6 +23273,7 @@
   {
     "id": "thornbak",
     "name": "Thornbak",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnModQuestRifle/TnModQuestRifleWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -23226,6 +23401,7 @@
   {
     "id": "tiberon",
     "name": "Tiberon",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/DrakeRifle/DrakeRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -23352,6 +23528,7 @@
   {
     "id": "tiberon_prime",
     "name": "Tiberon Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeTiberon/PrimeTiberonRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -23507,6 +23684,7 @@
   {
     "id": "tigris",
     "name": "Tigris",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/DoubleBarrelShotgun/TennoDoubleBarrelShotgun",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -23633,6 +23811,7 @@
   {
     "id": "tigris_prime",
     "name": "Tigris Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeTigris/PrimeTigris",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -23762,6 +23941,7 @@
   {
     "id": "tonkor",
     "name": "Tonkor",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrnGrenadeLauncher/GrnGrenadeLauncher",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -23896,6 +24076,7 @@
   {
     "id": "torid",
     "name": "Torid",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Bio/BioWeapon",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -24042,6 +24223,7 @@
   {
     "id": "trumna",
     "name": "Trumna",
+    "uniqueName": "/Lotus/Weapons/Thanotech/ThanoRifle/ThanotechRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -24199,6 +24381,7 @@
   {
     "id": "trumna_prime",
     "name": "Trumna Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeTrumna/PrimeTrumnaWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -24358,6 +24541,7 @@
   {
     "id": "vadarya_prime",
     "name": "Vadarya Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeLightningGun/PrimeLightningGun",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -24484,6 +24668,7 @@
   {
     "id": "vaykor_hek",
     "name": "Vaykor Hek",
+    "uniqueName": "/Lotus/Weapons/Syndicates/SteelMeridian/LongGuns/SMHek",
     "category": "Weapon",
     "subType": "Shotgun (Primary)",
     "slot": "Primary",
@@ -24582,6 +24767,7 @@
   {
     "id": "vectis",
     "name": "Vectis",
+    "uniqueName": "/Lotus/Weapons/Tenno/Rifle/TennoSniperRifle",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -24743,6 +24929,7 @@
   {
     "id": "vectis_prime",
     "name": "Vectis Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeVectis/PrimeVectisRifle",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -24905,6 +25092,7 @@
   {
     "id": "veldt",
     "name": "Veldt",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnRevolverRifle/TnRevolverRifleGun",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -25034,6 +25222,7 @@
   {
     "id": "vinquibus",
     "name": "Vinquibus",
+    "uniqueName": "/Lotus/Weapons/Tenno/Bayonet/TnBayonetRifleWeapon",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -25163,6 +25352,7 @@
   {
     "id": "vulkar",
     "name": "Vulkar",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerSniperRifle/GrnSniperRifle",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -25289,6 +25479,7 @@
   {
     "id": "vulkar_wraith",
     "name": "Vulkar Wraith",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerSniperRifle/VulkarWraith",
     "category": "Weapon",
     "subType": "Sniper (Primary)",
     "slot": "Primary",
@@ -25384,6 +25575,7 @@
   {
     "id": "zarr",
     "name": "Zarr",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrnCannon/GrnCannonWeapon",
     "category": "Weapon",
     "subType": "Launcher (Primary)",
     "slot": "Primary",
@@ -25556,6 +25748,7 @@
   {
     "id": "zenith",
     "name": "Zenith",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/LoginPrimary/SundialRifle",
     "category": "Weapon",
     "subType": "Rifle (Primary)",
     "slot": "Primary",
@@ -25698,6 +25891,7 @@
   {
     "id": "zhuge",
     "name": "Zhuge",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/RepeatingCrossbow/RepeatingCrossbow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -25825,6 +26019,7 @@
   {
     "id": "zhuge_prime",
     "name": "Zhuge Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeZhuge/PrimeZhugeCrossbow",
     "category": "Weapon",
     "subType": "Bow (Primary)",
     "slot": "Primary",
@@ -25968,6 +26163,7 @@
   {
     "id": "acrid",
     "name": "Acrid",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Bio/AcidDartPistol",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -26092,6 +26288,7 @@
   {
     "id": "aegrit",
     "name": "Aegrit",
+    "uniqueName": "/Lotus/Weapons/Grineer/ThrowingWeapons/GrnVorStickyBomb/GrnVorStickyBomb",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -26234,6 +26431,7 @@
   {
     "id": "afuris",
     "name": "Afuris",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkimboAutoPistols",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -26352,6 +26550,7 @@
   {
     "id": "afuris_prime",
     "name": "Afuris Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAfuris/PrimeAFurisWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -26475,6 +26674,7 @@
   {
     "id": "akarius",
     "name": "Akarius",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/SapientPistol/SapientPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -26613,6 +26813,7 @@
   {
     "id": "akarius_prime",
     "name": "Akarius Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAkarius/PrimeAkariusWeapon",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -26745,6 +26946,7 @@
   {
     "id": "akbolto",
     "name": "Akbolto",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -26864,6 +27066,7 @@
   {
     "id": "akbolto_prime",
     "name": "Akbolto Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAkbolto/PrimeAkBoltoWeapon",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -26989,6 +27192,7 @@
   {
     "id": "akbronco",
     "name": "Akbronco",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkimboShotGun",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -27110,6 +27314,7 @@
   {
     "id": "akbronco_prime",
     "name": "Akbronco Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/PrimeAkimboShotGun",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -27231,6 +27436,7 @@
   {
     "id": "akjagara",
     "name": "Akjagara",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TigrisRedeemerSetPistol/TnoBladedPistols",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -27351,6 +27557,7 @@
   {
     "id": "akjagara_prime",
     "name": "Akjagara Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAkjagara/AkJagaraPrime",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -27479,6 +27686,7 @@
   {
     "id": "aklato",
     "name": "Aklato",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkimboPistol",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -27574,6 +27782,7 @@
   {
     "id": "aklex",
     "name": "Aklex",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkLexPistols",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -27693,6 +27902,7 @@
   {
     "id": "aklex_prime",
     "name": "Aklex Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkLexPrimePistols",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -27810,6 +28020,7 @@
   {
     "id": "akmagnus",
     "name": "Akmagnus",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/DualMagnus",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -27927,6 +28138,7 @@
   {
     "id": "akmagnus_prime",
     "name": "Akmagnus Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/DualMagnusPrime",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -28047,6 +28259,7 @@
   {
     "id": "aksomati",
     "name": "Aksomati",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/SomaSidearm/AkimboSomaPistols",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -28167,6 +28380,7 @@
   {
     "id": "aksomati_prime",
     "name": "Aksomati Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAksomati/PrimeAksomati",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -28290,6 +28504,7 @@
   {
     "id": "akstiletto",
     "name": "Akstiletto",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TennoUzi/TennoUzi",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -28418,6 +28633,7 @@
   {
     "id": "akstiletto_prime",
     "name": "Akstiletto Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAkstiletto/PrimeAkstiletto",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -28541,6 +28757,7 @@
   {
     "id": "akvasto",
     "name": "Akvasto",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/DualVastos",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -28658,6 +28875,7 @@
   {
     "id": "akvasto_prime",
     "name": "Akvasto Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/AkPrimeVasto/AkPrimeVastoPistol",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -28778,6 +28996,7 @@
   {
     "id": "akzani",
     "name": "Akzani",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/HarlequinGun/HarlequinPistols",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -28906,6 +29125,7 @@
   {
     "id": "angstrum",
     "name": "Angstrum",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/CorpusHandRocketLauncher",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -29053,6 +29273,7 @@
   {
     "id": "arca_scisco",
     "name": "Arca Scisco",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/SniperPistol/CrpScopeGun",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -29180,6 +29401,7 @@
   {
     "id": "athodai",
     "name": "Athodai",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnJetTurbine/TnJetTurbinePistolWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -29311,6 +29533,7 @@
   {
     "id": "athodai_prime",
     "name": "Athodai Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAthodai/PrimeAthodaiPistolWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -29446,6 +29669,7 @@
   {
     "id": "atomos",
     "name": "Atomos",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/HeatGun/GrnHeatGun",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -29593,6 +29817,7 @@
   {
     "id": "azima",
     "name": "Azima",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/SundialGun/SundialPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -29732,6 +29957,7 @@
   {
     "id": "ballistica",
     "name": "Ballistica",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/AutomaticHandCrossbow/AutoCrossBow",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -29884,6 +30110,7 @@
   {
     "id": "ballistica_prime",
     "name": "Ballistica Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeBallistica/PrimeBallistica",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -30038,6 +30265,7 @@
   {
     "id": "bolto",
     "name": "Bolto",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistol/CrossBow",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -30163,6 +30391,7 @@
   {
     "id": "brakk",
     "name": "Brakk",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerHandShotgun/GrineerHandCannon",
     "category": "Weapon",
     "subType": "Shotgun Sidearm (Secondary)",
     "slot": "Secondary",
@@ -30286,6 +30515,7 @@
   {
     "id": "bronco",
     "name": "Bronco",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistol/HandShotGun",
     "category": "Weapon",
     "subType": "Shotgun Sidearm (Secondary)",
     "slot": "Secondary",
@@ -30425,6 +30655,7 @@
   {
     "id": "bronco_prime",
     "name": "Bronco Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -30559,6 +30790,7 @@
   {
     "id": "cantare",
     "name": "Cantare",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/TnChoirframeKunai/TnChoirframeKunai",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -30688,6 +30920,7 @@
   {
     "id": "castanas",
     "name": "Castanas",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/StickyBomb/StickyBombs",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -30825,6 +31058,7 @@
   {
     "id": "catabolyst",
     "name": "Catabolyst",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfBeamPistol/InfBeamPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -30993,6 +31227,7 @@
   {
     "id": "cestra",
     "name": "Cestra",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -31130,6 +31365,7 @@
   {
     "id": "coda_catabolyst",
     "name": "Coda Catabolyst",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaCatabolyst",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -31268,6 +31504,7 @@
   {
     "id": "coda_pox",
     "name": "Coda Pox",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaPox",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -31374,6 +31611,7 @@
   {
     "id": "coda_tysis",
     "name": "Coda Tysis",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaTysis",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -31481,6 +31719,7 @@
   {
     "id": "cyanex",
     "name": "Cyanex",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpSentAmalgPistol/CrpSentAmalgPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -31629,6 +31868,7 @@
   {
     "id": "cycron",
     "name": "Cycron",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpChargeGun/CrpChargeGun",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -31757,6 +31997,7 @@
   {
     "id": "despair",
     "name": "Despair",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/StalkerKunai",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -31911,6 +32152,7 @@
   {
     "id": "detron",
     "name": "Detron",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CorpusHandShotgun/CorpusHandCannon",
     "category": "Weapon",
     "subType": "Shotgun Sidearm (Secondary)",
     "slot": "Secondary",
@@ -32028,6 +32270,7 @@
   {
     "id": "dex_furis",
     "name": "Dex Furis",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/DexFuris/DexFuris",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -32125,6 +32368,7 @@
   {
     "id": "dual_cestra",
     "name": "Dual Cestra",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/DualCorpusMinigun",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -32252,6 +32496,7 @@
   {
     "id": "dual_coda_torxica",
     "name": "Dual Coda Torxica",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Pistols/1999InfSporePistol/1999InfSporePistolWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -32347,6 +32592,7 @@
   {
     "id": "dual_toxocyst",
     "name": "Dual Toxocyst",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfVomitGun/InfVomitGunWep",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -32488,6 +32734,7 @@
   {
     "id": "efv_8_mars",
     "name": "Efv-8 Mars",
+    "uniqueName": "/Lotus/Weapons/Lasria/LasGooPistol/LasGooPistolPlayerWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -32627,6 +32874,7 @@
   {
     "id": "embolist",
     "name": "Embolist",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfestedPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -32753,6 +33001,7 @@
   {
     "id": "epitaph",
     "name": "Epitaph",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnWraitheSidearm/TnWraitheSidearmWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -32901,6 +33150,7 @@
   {
     "id": "epitaph_prime",
     "name": "Epitaph Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeEpitaph/PrimeEpitaphSidearmWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -33047,6 +33297,7 @@
   {
     "id": "euphona_prime",
     "name": "Euphona Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/AllNew1hSG/AllNew1hSG",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -33183,6 +33434,7 @@
   {
     "id": "furis",
     "name": "Furis",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistol/AutoPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -33322,6 +33574,7 @@
   {
     "id": "fusilai",
     "name": "Fusilai",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/GlassKunai/GlassKunaiWeapon",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -33463,6 +33716,7 @@
   {
     "id": "gammacor",
     "name": "Gammacor",
+    "uniqueName": "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSDroidArray",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -33611,6 +33865,7 @@
   {
     "id": "grimoire",
     "name": "Grimoire",
+    "uniqueName": "/Lotus/Weapons/Tenno/Grimoire/TnDoppelgangerGrimoire",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -33741,6 +33996,7 @@
   {
     "id": "grimoire",
     "name": "Grimoire",
+    "uniqueName": "/Lotus/Weapons/Tenno/Grimoire/TnGrimoire",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -33901,6 +34157,7 @@
   {
     "id": "hikou",
     "name": "Hikou",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/TennoStars",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -34031,6 +34288,7 @@
   {
     "id": "hikou_prime",
     "name": "Hikou Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeThrowingStar/PrimeHikou",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -34154,6 +34412,7 @@
   {
     "id": "hystrix",
     "name": "Hystrix",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/QuillDartgun/QuillDartGunWeapon",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -34321,6 +34580,7 @@
   {
     "id": "hystrix_prime",
     "name": "Hystrix Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeHystrix/PrimeHystrixWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -34482,6 +34742,7 @@
   {
     "id": "knell",
     "name": "Knell",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnPriestPistolScope/TnPriestPistolWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -34610,6 +34871,7 @@
   {
     "id": "knell_prime",
     "name": "Knell Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeKnell/PrimeKnellWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -34734,6 +34996,7 @@
   {
     "id": "kohmak",
     "name": "Kohmak",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnKohmPistol/GrnKohmPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -34877,6 +35140,7 @@
   {
     "id": "kompressa",
     "name": "Kompressa",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnYareliPistol/TnYareliPistolWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -35007,6 +35271,7 @@
   {
     "id": "kompressa_prime",
     "name": "Kompressa Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeKompressa/PrimeKompressa",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -35138,6 +35403,7 @@
   {
     "id": "kraken",
     "name": "Kraken",
+    "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrnHeavyPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -35263,6 +35529,7 @@
   {
     "id": "kulstar",
     "name": "Kulstar",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnTorpedoPistol/GrnTorpedoPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -35422,6 +35689,7 @@
   {
     "id": "kunai",
     "name": "Kunai",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/Kunai",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -35565,6 +35833,7 @@
   {
     "id": "kuva_brakk",
     "name": "Kuva Brakk",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Brakk/KuvaBrakk",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -35670,6 +35939,7 @@
   {
     "id": "kuva_kraken",
     "name": "Kuva Kraken",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Kraken/KuvaKraken",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -35785,6 +36055,7 @@
   {
     "id": "kuva_nukor",
     "name": "Kuva Nukor",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Nukor/KuvaNukor",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -35884,6 +36155,7 @@
   {
     "id": "kuva_seer",
     "name": "Kuva Seer",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Seer/KuvaSeer",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -35997,6 +36269,7 @@
   {
     "id": "kuva_twin_stubbas",
     "name": "Kuva Twin Stubbas",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Stubba/KuvaStubba",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -36101,6 +36374,7 @@
   {
     "id": "laetum",
     "name": "Laetum",
+    "uniqueName": "/Lotus/Weapons/Tenno/Zariman/Pistols/HeavyPistol/ZarimanHeavyPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -36248,6 +36522,7 @@
   {
     "id": "lato",
     "name": "Lato",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistol/Pistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -36362,6 +36637,7 @@
   {
     "id": "lato_prime",
     "name": "Lato Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistol/LatoPrime",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -36474,6 +36750,7 @@
   {
     "id": "lato_vandal",
     "name": "Lato Vandal",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistol/LatoVandal",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -36604,6 +36881,7 @@
   {
     "id": "lex",
     "name": "Lex",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistol/HeavyPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -36713,6 +36991,7 @@
   {
     "id": "lex_prime",
     "name": "Lex Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -36848,6 +37127,7 @@
   {
     "id": "magnus",
     "name": "Magnus",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/Magnum/Magnum",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -36975,6 +37255,7 @@
   {
     "id": "magnus_prime",
     "name": "Magnus Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -37096,6 +37377,7 @@
   {
     "id": "mara_detron",
     "name": "Mara Detron",
+    "uniqueName": "/Lotus/Weapons/VoidTrader/VTDetron",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -37188,6 +37470,7 @@
   {
     "id": "marelok",
     "name": "Marelok",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerLeverActionPistol/GLAPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -37314,6 +37597,7 @@
   {
     "id": "mk1_furis",
     "name": "Mk1-Furis",
+    "uniqueName": "/Lotus/Weapons/MK1Series/MK1Furis",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -37423,6 +37707,7 @@
   {
     "id": "mk1_kunai",
     "name": "Mk1-Kunai",
+    "uniqueName": "/Lotus/Weapons/MK1Series/MK1Kunai",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -37535,6 +37820,7 @@
   {
     "id": "nukor",
     "name": "Nukor",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerMicrowavegun/GrnMicrowavePistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -37658,6 +37944,7 @@
   {
     "id": "ocucor",
     "name": "Ocucor",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpSentExperimentPistol/CrpSentExperimentPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -37783,6 +38070,7 @@
   {
     "id": "onos",
     "name": "Onos",
+    "uniqueName": "/Lotus/Weapons/Thanotech/EntratiWristGun/EntratiWristGunWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -37941,6 +38229,7 @@
   {
     "id": "pandero",
     "name": "Pandero",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnBardPistol/TnBardPistolGun",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -38082,6 +38371,7 @@
   {
     "id": "pandero_prime",
     "name": "Pandero Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimePandero/PanderoPrimeWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -38216,6 +38506,7 @@
   {
     "id": "plinx",
     "name": "Plinx",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpSonificBlastor/CrpBlastorWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -38340,6 +38631,7 @@
   {
     "id": "pox",
     "name": "Pox",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfProximityStars/InfProximityStars",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -38477,6 +38769,7 @@
   {
     "id": "prisma_angstrum",
     "name": "Prisma Angstrum",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/PrismaAngstrum",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -38594,6 +38887,7 @@
   {
     "id": "prisma_twin_gremlins",
     "name": "Prisma Twin Gremlins",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerBulbousSMG/Prisma/PrismaTwinGremlinsWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -38690,6 +38984,7 @@
   {
     "id": "pyrana",
     "name": "Pyrana",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/SawnOffShotgun/TennoHandShotgun",
     "category": "Weapon",
     "subType": "Shotgun Sidearm (Secondary)",
     "slot": "Secondary",
@@ -38815,6 +39110,7 @@
   {
     "id": "pyrana_prime",
     "name": "Pyrana Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimePyrana/PrimePyranaPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -38937,6 +39233,7 @@
   {
     "id": "quatz",
     "name": "Quatz",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnAmphisPistol/GrnAmphisPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -39077,6 +39374,7 @@
   {
     "id": "rakta_ballistica",
     "name": "Rakta Ballistica",
+    "uniqueName": "/Lotus/Weapons/Syndicates/RedVeil/Pistols/RVBallistica",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -39199,6 +39497,7 @@
   {
     "id": "riot_848",
     "name": "Riot-848",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/1999EntHybridPistolWeapon/1999EntHybridPistolWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -39335,6 +39634,7 @@
   {
     "id": "sagek_prime",
     "name": "Sagek Prime",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnOrokinPistol/GrnOrokinPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -39459,6 +39759,7 @@
   {
     "id": "sancti_castanas",
     "name": "Sancti Castanas",
+    "uniqueName": "/Lotus/Weapons/Syndicates/NewLoka/Pistols/NLCastanas",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -39567,6 +39868,7 @@
   {
     "id": "scyotid",
     "name": "Scyotid",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/TnOraxiaFlechette/TnOraxiaFlechette",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -39700,6 +40002,7 @@
   {
     "id": "secura_dual_cestra",
     "name": "Secura Dual Cestra",
+    "uniqueName": "/Lotus/Weapons/Syndicates/PerrinSequence/Pistols/PSDualCestra",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -39797,6 +40100,7 @@
   {
     "id": "seer",
     "name": "Seer",
+    "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrnScopedPistolPlayer",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -39918,6 +40222,7 @@
   {
     "id": "sepulcrum",
     "name": "Sepulcrum",
+    "uniqueName": "/Lotus/Weapons/Thanotech/ThanoPistol/ThanotechPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -40073,6 +40378,7 @@
   {
     "id": "sicarus",
     "name": "Sicarus",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistol/BurstPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -40183,6 +40489,7 @@
   {
     "id": "sicarus_prime",
     "name": "Sicarus Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeSicarus/PrimeSicarusPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -40319,6 +40626,7 @@
   {
     "id": "sonicor",
     "name": "Sonicor",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpAirPistol/CrpAirPistolArray",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -40456,6 +40764,7 @@
   {
     "id": "spectra",
     "name": "Spectra",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Energy/CrpLaserPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -40581,6 +40890,7 @@
   {
     "id": "spectra_vandal",
     "name": "Spectra Vandal",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CorpusModularPistol/Vandal/CrpLaserPistolVandal",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -40701,6 +41011,7 @@
   {
     "id": "spira",
     "name": "Spira",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/LiDagger/LiDagger",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -40828,6 +41139,7 @@
   {
     "id": "spira_prime",
     "name": "Spira Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeLiDagger/PrimeLiDagger",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -40950,6 +41262,7 @@
   {
     "id": "staticor",
     "name": "Staticor",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpElectroMag/CrpElectroMag",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -41107,6 +41420,7 @@
   {
     "id": "stubba",
     "name": "Stubba",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnUzi/GrnUziWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -41236,6 +41550,7 @@
   {
     "id": "stug",
     "name": "Stug",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerCrossbow/GrineerGooGun",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -41406,6 +41721,7 @@
   {
     "id": "synoid_gammacor",
     "name": "Synoid Gammacor",
+    "uniqueName": "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSSynoidGammacor",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -41524,6 +41840,7 @@
   {
     "id": "talons",
     "name": "Talons",
+    "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/U18ThrowingKnives/U18throwingknives",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -41662,6 +41979,7 @@
   {
     "id": "telos_akbolto",
     "name": "Telos Akbolto",
+    "uniqueName": "/Lotus/Weapons/Syndicates/ArbitersOfHexis/Pistols/AHAkbolto",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -41759,6 +42077,7 @@
   {
     "id": "tenet_cycron",
     "name": "Tenet Cycron",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBECycron/CrpBECycron",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -41860,6 +42179,7 @@
   {
     "id": "tenet_detron",
     "name": "Tenet Detron",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEDetron/CrpBEDetron",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -41969,6 +42289,7 @@
   {
     "id": "tenet_diplos",
     "name": "Tenet Diplos",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpBriefcaseAkimbo/CrpBriefcaseAkimboPistol",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -42084,6 +42405,7 @@
   {
     "id": "tenet_plinx",
     "name": "Tenet Plinx",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEPlinx/CrpBEPlinxWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -42208,6 +42530,7 @@
   {
     "id": "tenet_spirex",
     "name": "Tenet Spirex",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpIgniterPistol/CrpIgniterPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -42322,6 +42645,7 @@
   {
     "id": "twin_grakatas",
     "name": "Twin Grakatas",
+    "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/TwinGrakatas",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -42442,6 +42766,7 @@
   {
     "id": "twin_gremlins",
     "name": "Twin Gremlins",
+    "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerAkimboPistol",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -42570,6 +42895,7 @@
   {
     "id": "twin_kohmak",
     "name": "Twin Kohmak",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnDWUniques/GrnTwinKohmaks",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -42705,6 +43031,7 @@
   {
     "id": "twin_rogga",
     "name": "Twin Rogga",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnQueenGuardDualPistol/GrnQueenGuardDualPistols",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -42835,6 +43162,7 @@
   {
     "id": "twin_vipers",
     "name": "Twin Vipers",
+    "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkimboViperPistols",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -42955,6 +43283,7 @@
   {
     "id": "twin_vipers_wraith",
     "name": "Twin Vipers Wraith",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/WraithTwinVipers/WraithTwinVipers",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -43073,6 +43402,7 @@
   {
     "id": "tysis",
     "name": "Tysis",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfestedDartPistol/InfestedDartPistol",
     "category": "Weapon",
     "subType": "Throwing (Secondary)",
     "slot": "Secondary",
@@ -43209,6 +43539,7 @@
   {
     "id": "vasto",
     "name": "Vasto",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistol/RevolverPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -43349,6 +43680,7 @@
   {
     "id": "vasto_prime",
     "name": "Vasto Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -43485,6 +43817,7 @@
   {
     "id": "vaykor_marelok",
     "name": "Vaykor Marelok",
+    "uniqueName": "/Lotus/Weapons/Syndicates/SteelMeridian/Pistols/SMMarelok",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -43583,6 +43916,7 @@
   {
     "id": "velox",
     "name": "Velox",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnOdaliskSmg/TnOdaliskSmgPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -43706,6 +44040,7 @@
   {
     "id": "velox_prime",
     "name": "Velox Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeVelox/PrimeVeloxPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -43829,6 +44164,7 @@
   {
     "id": "vesper_77",
     "name": "Vesper 77",
+    "uniqueName": "/Lotus/Weapons/Lasria/LasSilencedPistol/LasSilencedPistolWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -43952,6 +44288,7 @@
   {
     "id": "viper",
     "name": "Viper",
+    "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -44080,6 +44417,7 @@
   {
     "id": "viper_wraith",
     "name": "Viper Wraith",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/WraithSingleViper/WraithSingleViper",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -44176,6 +44514,7 @@
   {
     "id": "zakti",
     "name": "Zakti",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnGuandoPistol/TnGuandoPistolGun",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -44314,6 +44653,7 @@
   {
     "id": "zakti_prime",
     "name": "Zakti Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeZakti/PrimeZaktiPistol",
     "category": "Weapon",
     "subType": "Dual Pistols (Secondary)",
     "slot": "Secondary",
@@ -44448,6 +44788,7 @@
   {
     "id": "zylok",
     "name": "Zylok",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/ConclaveLeverPistol/ConclaveLeverPistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -44566,6 +44907,7 @@
   {
     "id": "zylok_prime",
     "name": "Zylok Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeZylok/ZylokPrimePistol",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -44713,6 +45055,7 @@
   {
     "id": "zymos",
     "name": "Zymos",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfUzi/InfUziWeapon",
     "category": "Weapon",
     "subType": "Pistol (Secondary)",
     "slot": "Secondary",
@@ -44875,6 +45218,7 @@
   {
     "id": "ack_brunt",
     "name": "Ack & Brunt",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerTylAxeAndBoar/RegorAxeShield",
     "category": "Weapon",
     "subType": "Sword & Shield (Melee)",
     "slot": "Melee",
@@ -45046,6 +45390,7 @@
   {
     "id": "amanata",
     "name": "Amanata",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/Naginata/ShrineMaidenNaginataWeapon",
     "category": "Weapon",
     "subType": "Polearm (Melee)",
     "slot": "Melee",
@@ -45188,6 +45533,7 @@
   {
     "id": "amphis",
     "name": "Amphis",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Staff/GrnStaff",
     "category": "Weapon",
     "subType": "Staff (Melee)",
     "slot": "Melee",
@@ -45335,6 +45681,7 @@
   {
     "id": "anku",
     "name": "Anku",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Scythe/ParisScythe/ParisScythe",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -45483,6 +45830,7 @@
   {
     "id": "ankyros",
     "name": "Ankyros",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Gauntlet/Gauntlet",
     "category": "Weapon",
     "subType": "Fist & Sparring (Melee)",
     "slot": "Melee",
@@ -45629,6 +45977,7 @@
   {
     "id": "ankyros_prime",
     "name": "Ankyros Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Gauntlet/PrimeAnkyros/PrimeAnkyros",
     "category": "Weapon",
     "subType": "Fist & Sparring (Melee)",
     "slot": "Melee",
@@ -45773,6 +46122,7 @@
   {
     "id": "arca_titron",
     "name": "Arca Titron",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/Hammer/CorpusHammerWeapon",
     "category": "Weapon",
     "subType": "Hammer (Melee)",
     "slot": "Melee",
@@ -45921,6 +46271,7 @@
   {
     "id": "argo_vel",
     "name": "Argo & Vel",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/DaxDuviriMaceShieldWeapon",
     "category": "Weapon",
     "subType": "Sword & Shield (Melee)",
     "slot": "Melee",
@@ -46092,6 +46443,7 @@
   {
     "id": "arum_spinosa",
     "name": "Arum Spinosa",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/InfWarfan/InfWarfanWeapon",
     "category": "Weapon",
     "subType": "Warfan (Melee)",
     "slot": "Melee",
@@ -46270,6 +46622,7 @@
   {
     "id": "atterax",
     "name": "Atterax",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerWhip/GrineerWhip",
     "category": "Weapon",
     "subType": "Whip (Melee)",
     "slot": "Melee",
@@ -46416,6 +46769,7 @@
   {
     "id": "azothane",
     "name": "Azothane",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriTwoHandedKatana/DaxDuviriTwoHandedKatanaWeapon",
     "category": "Weapon",
     "subType": "Nikana (Melee)",
     "slot": "Melee",
@@ -46564,6 +46918,7 @@
   {
     "id": "balla",
     "name": "Balla",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipOne",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -46639,6 +46994,7 @@
   {
     "id": "balla",
     "name": "Balla",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipOne",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -46745,6 +47101,7 @@
   {
     "id": "bo",
     "name": "Bo",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Staff/Staff",
     "category": "Weapon",
     "subType": "Staff (Melee)",
     "slot": "Melee",
@@ -46892,6 +47249,7 @@
   {
     "id": "bo_prime",
     "name": "Bo Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Staff/PrimeBo/PrimeBoWeapon",
     "category": "Weapon",
     "subType": "Staff (Melee)",
     "slot": "Melee",
@@ -47035,6 +47393,7 @@
   {
     "id": "boltace",
     "name": "Boltace",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Tonfa/Boltonfa/Boltonfa",
     "category": "Weapon",
     "subType": "Tonfa (Melee)",
     "slot": "Melee",
@@ -47173,6 +47532,7 @@
   {
     "id": "broken_scepter",
     "name": "Broken Scepter",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnQueenSceptre/GrnQueenSceptreWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -47324,6 +47684,7 @@
   {
     "id": "broken_war",
     "name": "Broken War",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoSmallSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -47475,6 +47836,7 @@
   {
     "id": "cadus",
     "name": "Cadus",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Staff/SingleStaff",
     "category": "Weapon",
     "subType": "Staff (Melee)",
     "slot": "Melee",
@@ -47620,6 +47982,7 @@
   {
     "id": "cassowar",
     "name": "Cassowar",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/TnHalberdPolearm/TnHalberdPolearmWeapon",
     "category": "Weapon",
     "subType": "Polearm (Melee)",
     "slot": "Melee",
@@ -47769,6 +48132,7 @@
   {
     "id": "caustacyst",
     "name": "Caustacyst",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/InfEmbolistScythe/InfestedScythe",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -47940,6 +48304,7 @@
   {
     "id": "ceramic_dagger",
     "name": "Ceramic Dagger",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Dagger/CeramicDagger",
     "category": "Weapon",
     "subType": "Dagger (Melee)",
     "slot": "Melee",
@@ -48112,6 +48477,7 @@
   {
     "id": "cerata",
     "name": "Cerata",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/Glaives/PunctureGlaive/PunctureGlaiveWeapon",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -48334,6 +48700,7 @@
   {
     "id": "ceti_lacera",
     "name": "Ceti Lacera",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerMios/OperationsLacera",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -48482,6 +48849,7 @@
   {
     "id": "cobra_crane",
     "name": "Cobra & Crane",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/PacifistShieldAndSword/PacifistShieldSword",
     "category": "Weapon",
     "subType": "Sword & Shield (Melee)",
     "slot": "Melee",
@@ -48627,6 +48995,7 @@
   {
     "id": "cobra_crane_prime",
     "name": "Cobra & Crane Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/PrimeCobraAndCrane/PrimeCobraAndCraneWeapon",
     "category": "Weapon",
     "subType": "Sword & Shield (Melee)",
     "slot": "Melee",
@@ -48775,6 +49144,7 @@
   {
     "id": "coda_caustacyst",
     "name": "Coda Caustacyst",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaCaustacyst/CodaCaustacyst",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -48915,6 +49285,7 @@
   {
     "id": "coda_hirudo",
     "name": "Coda Hirudo",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaHirudo",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -49032,6 +49403,7 @@
   {
     "id": "coda_mire",
     "name": "Coda Mire",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaMire",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -49150,6 +49522,7 @@
   {
     "id": "coda_motovore",
     "name": "Coda Motovore",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Melee/InfestedHammer/InfLichHammerWeapon",
     "category": "Weapon",
     "subType": "Hammer (Melee)",
     "slot": "Melee",
@@ -49271,6 +49644,7 @@
   {
     "id": "coda_pathocyst",
     "name": "Coda Pathocyst",
+    "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaPathocyst/CodaPathocyst",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -49462,6 +49836,7 @@
   {
     "id": "corufell",
     "name": "Corufell",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/ExaltedArchScythe/ExaltedAWScytheWeapon",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -49621,6 +49996,7 @@
   {
     "id": "cronus",
     "name": "Cronus",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/CronusSword/CronusLongSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -49764,6 +50140,7 @@
   {
     "id": "cyath",
     "name": "Cyath",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipFour",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -49839,6 +50216,7 @@
   {
     "id": "cyath",
     "name": "Cyath",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFour",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -49945,6 +50323,7 @@
   {
     "id": "dakra_prime",
     "name": "Dakra Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/CronusSword/PrimeCronusLongSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -50090,6 +50469,7 @@
   {
     "id": "dark_dagger",
     "name": "Dark Dagger",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Dagger/DarkDagger",
     "category": "Weapon",
     "subType": "Dagger (Melee)",
     "slot": "Melee",
@@ -50237,6 +50617,7 @@
   {
     "id": "dark_split_sword",
     "name": "Dark Split-Sword",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerHybridWeapon",
     "category": "Weapon",
     "subType": "Dagger (Melee)",
     "slot": "Melee",
@@ -50385,6 +50766,7 @@
   {
     "id": "dark_sword",
     "name": "Dark Sword",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkLongSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -50532,6 +50914,7 @@
   {
     "id": "dehtat",
     "name": "Dehtat",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipFive",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -50607,6 +50990,7 @@
   {
     "id": "dehtat",
     "name": "Dehtat",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFive",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -50713,6 +51097,7 @@
   {
     "id": "destreza",
     "name": "Destreza",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/TnoRapier/TnoRapier",
     "category": "Weapon",
     "subType": "Rapier (Melee)",
     "slot": "Melee",
@@ -50861,6 +51246,7 @@
   {
     "id": "destreza_prime",
     "name": "Destreza Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PRapier/DestrezaPrime",
     "category": "Weapon",
     "subType": "Rapier (Melee)",
     "slot": "Melee",
@@ -51004,6 +51390,7 @@
   {
     "id": "dex_dakra",
     "name": "Dex Dakra",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/DexTheSecond/DexTheSecond",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -51121,6 +51508,7 @@
   {
     "id": "dex_nikana",
     "name": "Dex Nikana",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/Dex2023Nikana/Dex2023Nikana",
     "category": "Weapon",
     "subType": "Nikana (Melee)",
     "slot": "Melee",
@@ -51239,6 +51627,7 @@
   {
     "id": "dokrahm",
     "name": "Dokrahm",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipEleven",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -51344,6 +51733,7 @@
   {
     "id": "dorrclave",
     "name": "Dorrclave",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/TnDagathBladeWhip/TnDagathBladeWhip",
     "category": "Weapon",
     "subType": "Whip (Melee)",
     "slot": "Melee",
@@ -51487,6 +51877,7 @@
   {
     "id": "dragon_nikana",
     "name": "Dragon Nikana",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/LowKatana",
     "category": "Weapon",
     "subType": "Nikana (Melee)",
     "slot": "Melee",
@@ -51631,6 +52022,7 @@
   {
     "id": "dual_cleavers",
     "name": "Dual Cleavers",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/DualCleaverWeapon",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -51780,6 +52172,7 @@
   {
     "id": "dual_ether",
     "name": "Dual Ether",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualEtherSword",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -51925,6 +52318,7 @@
   {
     "id": "dual_heat_swords",
     "name": "Dual Heat Swords",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualHeatSwords",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -52072,6 +52466,7 @@
   {
     "id": "dual_ichor",
     "name": "Dual Ichor",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Axe/DualInfestedAxesWeapon",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -52222,6 +52617,7 @@
   {
     "id": "dual_kamas",
     "name": "Dual Kamas",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/DualKamas/DualKamas",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -52360,6 +52756,7 @@
   {
     "id": "dual_kamas_prime",
     "name": "Dual Kamas Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeDualKamas/PrimeDualKamas",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -52497,6 +52894,7 @@
   {
     "id": "dual_keres",
     "name": "Dual Keres",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/QuillSword/QuillDualSwords",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -52645,6 +53043,7 @@
   {
     "id": "dual_keres_prime",
     "name": "Dual Keres Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeDualKeres/PrimeDualKeresWeapon",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -52782,6 +53181,7 @@
   {
     "id": "dual_raza",
     "name": "Dual Raza",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Soma/SomaDualKamas",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -52927,6 +53327,7 @@
   {
     "id": "dual_skana",
     "name": "Dual Skana",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualShortSword",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -53074,6 +53475,7 @@
   {
     "id": "dual_viciss",
     "name": "Dual Viciss",
+    "uniqueName": "/Lotus/Weapons/Lasria/LasGooSickle/LasGooSicklePlayerWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -53205,6 +53607,7 @@
   {
     "id": "dual_zoren",
     "name": "Dual Zoren",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Axe/DualAxeWeapon",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -53355,6 +53758,7 @@
   {
     "id": "dual_zoren_prime",
     "name": "Dual Zoren Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeZoren/PrimeZorenAxeWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -53493,6 +53897,7 @@
   {
     "id": "edun",
     "name": "Edun",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/DaxDuviriPolearm/DaxDuviriPolearmWeapon",
     "category": "Weapon",
     "subType": "Polearm (Melee)",
     "slot": "Melee",
@@ -53665,6 +54070,7 @@
   {
     "id": "ekhein",
     "name": "Ekhein",
+    "uniqueName": "/Lotus/Weapons/Thanotech/EntSphereHammer/EntSphereHammer",
     "category": "Weapon",
     "subType": "Hammer (Melee)",
     "slot": "Melee",
@@ -53812,6 +54218,7 @@
   {
     "id": "ekwana_ii_jai",
     "name": "Ekwana Ii Jai",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIStatusII",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -53893,6 +54300,7 @@
   {
     "id": "ekwana_ii_ruhang",
     "name": "Ekwana Ii Ruhang",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIStatusII",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -53974,6 +54382,7 @@
   {
     "id": "ekwana_jai",
     "name": "Ekwana Jai",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIStatusI",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -54055,6 +54464,7 @@
   {
     "id": "ekwana_jai_ii",
     "name": "Ekwana Jai Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIIStatusI",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -54136,6 +54546,7 @@
   {
     "id": "ekwana_ruhang",
     "name": "Ekwana Ruhang",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIStatusI",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -54217,6 +54628,7 @@
   {
     "id": "ekwana_ruhang_ii",
     "name": "Ekwana Ruhang Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIIStatusI",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -54298,6 +54710,7 @@
   {
     "id": "endura",
     "name": "Endura",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/ThreeLeaf/ThreeLeaf",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -54446,6 +54859,7 @@
   {
     "id": "ether_daggers",
     "name": "Ether Daggers",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/DualDagger/DualEtherDagger",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -54594,6 +55008,7 @@
   {
     "id": "ether_reaper",
     "name": "Ether Reaper",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Scythe/EtherScytheWeapon",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -54743,6 +55158,7 @@
   {
     "id": "ether_sword",
     "name": "Ether Sword",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/LongSword/EtherSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -54890,6 +55306,7 @@
   {
     "id": "falcor",
     "name": "Falcor",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/Glaive/CrpGlaive/CrpGlaive",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -55109,6 +55526,7 @@
   {
     "id": "fang",
     "name": "Fang",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/DualDagger/DualDagger",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -55259,6 +55677,7 @@
   {
     "id": "fang_prime",
     "name": "Fang Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/DualDagger/FangPrimeDagger",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -55397,6 +55816,7 @@
   {
     "id": "fragor",
     "name": "Fragor",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Hammer/HammerWeapon",
     "category": "Weapon",
     "subType": "Hammer (Melee)",
     "slot": "Melee",
@@ -55543,6 +55963,7 @@
   {
     "id": "fragor_prime",
     "name": "Fragor Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeFragor/PrimeFragor",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -55686,6 +56107,7 @@
   {
     "id": "furax",
     "name": "Furax",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Fist/Fist",
     "category": "Weapon",
     "subType": "Fist & Sparring (Melee)",
     "slot": "Melee",
@@ -55832,6 +56254,7 @@
   {
     "id": "furax_wraith",
     "name": "Furax Wraith",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Fist/FuraxWraith",
     "category": "Weapon",
     "subType": "Fist & Sparring (Melee)",
     "slot": "Melee",
@@ -55967,6 +56390,7 @@
   {
     "id": "galariak_prime",
     "name": "Galariak Prime",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/Scythe/GrnDrillScythe/GrnDrillScythe",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -56112,6 +56536,7 @@
   {
     "id": "galatine",
     "name": "Galatine",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/GreatSword/TennoGreatSword",
     "category": "Weapon",
     "subType": "Heavy Blade (Melee)",
     "slot": "Melee",
@@ -56260,6 +56685,7 @@
   {
     "id": "galatine_prime",
     "name": "Galatine Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeGalatine/PrimeGalatine",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -56404,6 +56830,7 @@
   {
     "id": "galvacord",
     "name": "Galvacord",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/Whips/CrpShockGrip/CrpShockGripWhipWeapon",
     "category": "Weapon",
     "subType": "Whip (Melee)",
     "slot": "Melee",
@@ -56551,6 +56978,7 @@
   {
     "id": "gazal_machete",
     "name": "Gazal Machete",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/PersianMachete/DjinnMachete",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -56699,6 +57127,7 @@
   {
     "id": "ghoulsaw",
     "name": "Ghoulsaw",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnGhoulSaw/GrnGhoulSawPlayer",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -56845,6 +57274,7 @@
   {
     "id": "glaive",
     "name": "Glaive",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Glaives/LightGlaive/LightGlaiveWeapon",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -57063,6 +57493,7 @@
   {
     "id": "glaive_prime",
     "name": "Glaive Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Glaives/PrimeGlaive/PrimeGlaiveWeapon",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -57278,6 +57709,7 @@
   {
     "id": "gram",
     "name": "Gram",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/GreatSword/GreatSword",
     "category": "Weapon",
     "subType": "Heavy Blade (Melee)",
     "slot": "Melee",
@@ -57424,6 +57856,7 @@
   {
     "id": "gram_prime",
     "name": "Gram Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeGram/PrimeGram",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -57568,6 +58001,7 @@
   {
     "id": "guandao",
     "name": "Guandao",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/TnGuandaoPolearm/TnGuandaoPolearmWeapon",
     "category": "Weapon",
     "subType": "Polearm (Melee)",
     "slot": "Melee",
@@ -57717,6 +58151,7 @@
   {
     "id": "guandao_prime",
     "name": "Guandao Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/PrimeGuandao/PrimeGuandaoWeapon",
     "category": "Weapon",
     "subType": "Polearm (Melee)",
     "slot": "Melee",
@@ -57862,6 +58297,7 @@
   {
     "id": "gunsen",
     "name": "Gunsen",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Warfan/WarfanWeapon",
     "category": "Weapon",
     "subType": "Warfan (Melee)",
     "slot": "Melee",
@@ -58013,6 +58449,7 @@
   {
     "id": "gunsen_prime",
     "name": "Gunsen Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Warfan/PrimeGunsen/PrimeGunsenWeapon",
     "category": "Weapon",
     "subType": "Warfan (Melee)",
     "slot": "Melee",
@@ -58150,6 +58587,7 @@
   {
     "id": "halikar",
     "name": "Halikar",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnBoomerang/GrnBoomerang",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -58371,6 +58809,7 @@
   {
     "id": "halikar_wraith",
     "name": "Halikar Wraith",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnBoomerang/HalikarWraithWeapon",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -58560,6 +58999,7 @@
   {
     "id": "harmony",
     "name": "Harmony",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Scythe/TnChoirScythe/TnChoirScythe",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -58710,6 +59150,7 @@
   {
     "id": "hate",
     "name": "Hate",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Scythe/StalkerScytheWeapon",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -58882,6 +59323,7 @@
   {
     "id": "heat_dagger",
     "name": "Heat Dagger",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Dagger/Dagger",
     "category": "Weapon",
     "subType": "Dagger (Melee)",
     "slot": "Melee",
@@ -59032,6 +59474,7 @@
   {
     "id": "heat_sword",
     "name": "Heat Sword",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/HeatSword/HeatLongSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -59181,6 +59624,7 @@
   {
     "id": "heliocor",
     "name": "Heliocor",
+    "uniqueName": "/Lotus/Weapons/Cephalon/Melee/Hammer/CephHammerWeapon",
     "category": "Weapon",
     "subType": "Hammer (Melee)",
     "slot": "Melee",
@@ -59327,6 +59771,7 @@
   {
     "id": "hespar",
     "name": "Hespar",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/HeavyScythe/DuviriScythe/DuviriHeavyScytheWeapon",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -59470,6 +59915,7 @@
   {
     "id": "hirudo",
     "name": "Hirudo",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/InfWFAccompanyingSparring/InfestedKogake",
     "category": "Weapon",
     "subType": "Fist & Sparring (Melee)",
     "slot": "Melee",
@@ -59617,6 +60063,7 @@
   {
     "id": "innodem",
     "name": "Innodem",
+    "uniqueName": "/Lotus/Weapons/Tenno/Zariman/Melee/Dagger/ZarimanDaggerWeapon",
     "category": "Weapon",
     "subType": "Dagger (Melee)",
     "slot": "Melee",
@@ -59775,6 +60222,7 @@
   {
     "id": "jai",
     "name": "Jai",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedI",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -59856,6 +60304,7 @@
   {
     "id": "jai_ii",
     "name": "Jai Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedII",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -59937,6 +60386,7 @@
   {
     "id": "jat_kittag",
     "name": "Jat Kittag",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerJetPoweredPolearm/GrineerJetPolearm",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -60087,6 +60537,7 @@
   {
     "id": "jat_kusar",
     "name": "Jat Kusar",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnKusarigama/GrnKusarigamaWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -60237,6 +60688,7 @@
   {
     "id": "jaw_sword",
     "name": "Jaw Sword",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/JawSword/JawLongSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -60386,6 +60838,7 @@
   {
     "id": "jayap",
     "name": "Jayap",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleFive",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -60466,6 +60919,7 @@
   {
     "id": "kama",
     "name": "Kama",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/DualKamas/SingleKama",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -60616,6 +61070,7 @@
   {
     "id": "karyst",
     "name": "Karyst",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/KrisDagger/KrisDagger",
     "category": "Weapon",
     "subType": "Dagger (Melee)",
     "slot": "Melee",
@@ -60765,6 +61220,7 @@
   {
     "id": "karyst_prime",
     "name": "Karyst Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeKaryst/PrimeKrisDagger",
     "category": "Weapon",
     "subType": "Dagger (Melee)",
     "slot": "Melee",
@@ -60911,6 +61367,7 @@
   {
     "id": "keratinos",
     "name": "Keratinos",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/InfTransformClaw/InfTransformClawsWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -61047,6 +61504,7 @@
   {
     "id": "kesheg",
     "name": "Kesheg",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerHalberd/GrnHalberd",
     "category": "Weapon",
     "subType": "Polearm (Melee)",
     "slot": "Melee",
@@ -61197,6 +61655,7 @@
   {
     "id": "kestrel",
     "name": "Kestrel",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Glaives/Boomerang/BoomerangWeapon",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -61417,6 +61876,7 @@
   {
     "id": "kestrel_prime",
     "name": "Kestrel Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Glaives/PrimeKestrel/PrimeKestrel",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -61632,6 +62092,7 @@
   {
     "id": "kogake",
     "name": "Kogake",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/BrassKnuckles/BrassKnuckles",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -61778,6 +62239,7 @@
   {
     "id": "kogake_prime",
     "name": "Kogake Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeKogake/KogakePrimeKnuckles",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -61923,6 +62385,7 @@
   {
     "id": "korb",
     "name": "Korb",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Handle/HandleNine",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -62003,6 +62466,7 @@
   {
     "id": "korrudo",
     "name": "Korrudo",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnSparring/GrnSpiderSparring/GrnSpiderSparring",
     "category": "Weapon",
     "subType": "Fist & Sparring (Melee)",
     "slot": "Melee",
@@ -62152,6 +62616,7 @@
   {
     "id": "korumm",
     "name": "Korumm",
+    "uniqueName": "/Lotus/Weapons/Archon/Melee/Trident/ArchonTridentPlayerWep",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -62313,6 +62778,7 @@
   {
     "id": "kreska",
     "name": "Kreska",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/CrpVenusHatchet/CrpVenusHatchet",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -62463,6 +62929,7 @@
   {
     "id": "krohkur",
     "name": "Krohkur",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/GrnEgyptSwdWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -62612,6 +63079,7 @@
   {
     "id": "kronen",
     "name": "Kronen",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinner/TennoTonfa",
     "category": "Weapon",
     "subType": "Tonfa (Melee)",
     "slot": "Melee",
@@ -62758,6 +63226,7 @@
   {
     "id": "kronen_prime",
     "name": "Kronen Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinnerPrime/TonfaContestWinnerPrimeWeapon",
     "category": "Weapon",
     "subType": "Tonfa (Melee)",
     "slot": "Melee",
@@ -62901,6 +63370,7 @@
   {
     "id": "kronsh",
     "name": "Kronsh",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipSix",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -62975,6 +63445,7 @@
   {
     "id": "kronsh",
     "name": "Kronsh",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipSix",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -63080,6 +63551,7 @@
   {
     "id": "kroostra",
     "name": "Kroostra",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleSix",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -63160,6 +63632,7 @@
   {
     "id": "kuva_ghoulsaw",
     "name": "Kuva Ghoulsaw",
+    "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Melee/Ghoulsaw/KuvaGhoulSaw",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -63286,6 +63759,7 @@
   {
     "id": "kuva_shildeg",
     "name": "Kuva Shildeg",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnKuvaLichScythe/GrnKuvaLichScytheWeapon",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -63411,6 +63885,7 @@
   {
     "id": "kwath",
     "name": "Kwath",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleThree",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -63491,6 +63966,7 @@
   {
     "id": "lacera",
     "name": "Lacera",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerMios/StalkerMios",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -63641,6 +64117,7 @@
   {
     "id": "laka",
     "name": "Laka",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleTwo",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -63721,6 +64198,7 @@
   {
     "id": "lecta",
     "name": "Lecta",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/Whip/CorpusWhipWeapon",
     "category": "Weapon",
     "subType": "Whip (Melee)",
     "slot": "Melee",
@@ -63868,6 +64346,7 @@
   {
     "id": "lesion",
     "name": "Lesion",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/TipedoStaff/InfTipedoStaff",
     "category": "Weapon",
     "subType": "Staff (Melee)",
     "slot": "Melee",
@@ -64015,6 +64494,7 @@
   {
     "id": "machete",
     "name": "Machete",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/Machete",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -64163,6 +64643,7 @@
   {
     "id": "machete_wraith",
     "name": "Machete Wraith",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/WraithMacheteWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -64282,6 +64763,7 @@
   {
     "id": "magistar",
     "name": "Magistar",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Maces/PaladinMace/PaladinMaceWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -64429,6 +64911,7 @@
   {
     "id": "masseter",
     "name": "Masseter",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/TnChiselKanabo/TnChiselKanabo",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -64575,6 +65058,7 @@
   {
     "id": "masseter_prime",
     "name": "Masseter Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeMasseter/PrimeMasseter",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -64719,6 +65203,7 @@
   {
     "id": "mewan",
     "name": "Mewan",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipThree",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -64794,6 +65279,7 @@
   {
     "id": "mewan",
     "name": "Mewan",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipThree",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -64900,6 +65386,7 @@
   {
     "id": "mios",
     "name": "Mios",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/Swords/Mios/Mios",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -65048,6 +65535,7 @@
   {
     "id": "mire",
     "name": "Mire",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/Swords/Mire/MireSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -65194,6 +65682,7 @@
   {
     "id": "mk1_bo",
     "name": "Mk1-Bo",
+    "uniqueName": "/Lotus/Weapons/MK1Series/MK1Bo",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -65312,6 +65801,7 @@
   {
     "id": "mk1_furax",
     "name": "Mk1-Furax",
+    "uniqueName": "/Lotus/Weapons/MK1Series/MK1Furax",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -65429,6 +65919,7 @@
   {
     "id": "nami_skyla",
     "name": "Nami Skyla",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/CutlassAndPoignard/CutlassPoignardSwords",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -65576,6 +66067,7 @@
   {
     "id": "nami_skyla_prime",
     "name": "Nami Skyla Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeNamiSkyla/PrimeNamiSkyla",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -65721,6 +66213,7 @@
   {
     "id": "nami_solo",
     "name": "Nami Solo",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/CutlassAndPoignard/TennoCutlass",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -65869,6 +66362,7 @@
   {
     "id": "nepheri",
     "name": "Nepheri",
+    "uniqueName": "/Lotus/Weapons/Archon/Melee/DualDaggers/ArchonDualDaggersPlayerWep",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -66030,6 +66524,7 @@
   {
     "id": "nikana",
     "name": "Nikana",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/Katana",
     "category": "Weapon",
     "subType": "Nikana (Melee)",
     "slot": "Melee",
@@ -66180,6 +66675,7 @@
   {
     "id": "nikana_prime",
     "name": "Nikana Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeKatana/PrimeNikana",
     "category": "Weapon",
     "subType": "Nikana (Melee)",
     "slot": "Melee",
@@ -66323,6 +66819,7 @@
   {
     "id": "ninkondi",
     "name": "Ninkondi",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Nunchaku/Nunchaku/Nunchaku",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -66468,6 +66965,7 @@
   {
     "id": "ninkondi_prime",
     "name": "Ninkondi Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeNinkondi/PrimeNikondi",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -66613,6 +67111,7 @@
   {
     "id": "obex",
     "name": "Obex",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/KickAndPunch/KickPunchWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -66759,6 +67258,7 @@
   {
     "id": "ohma",
     "name": "Ohma",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/CrpTonfa/CrpTonfa",
     "category": "Weapon",
     "subType": "Tonfa (Melee)",
     "slot": "Melee",
@@ -66905,6 +67405,7 @@
   {
     "id": "okina",
     "name": "Okina",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/TennoSai/TennoSais",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -67078,6 +67579,7 @@
   {
     "id": "okina_prime",
     "name": "Okina Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeOkina/PrimeOkina",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -67245,6 +67747,7 @@
   {
     "id": "ooltha",
     "name": "Ooltha",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipTwo",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -67320,6 +67823,7 @@
   {
     "id": "ooltha",
     "name": "Ooltha",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipTwo",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -67426,6 +67930,7 @@
   {
     "id": "orthos",
     "name": "Orthos",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/PolearmWeapon",
     "category": "Weapon",
     "subType": "Polearm (Melee)",
     "slot": "Melee",
@@ -67573,6 +68078,7 @@
   {
     "id": "orthos_prime",
     "name": "Orthos Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/PrimePolearmWeapon",
     "category": "Weapon",
     "subType": "Polearm (Melee)",
     "slot": "Melee",
@@ -67715,6 +68221,7 @@
   {
     "id": "orvius",
     "name": "Orvius",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Glaives/TeshinGlaive/TnTeshinGlaiveWep",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -67947,6 +68454,7 @@
   {
     "id": "pangolin_prime",
     "name": "Pangolin Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimePangolinSword/PrimePangolinSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -68090,6 +68598,7 @@
   {
     "id": "pangolin_sword",
     "name": "Pangolin Sword",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PangolinSword/PangolinLongSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -68239,6 +68748,7 @@
   {
     "id": "paracesis",
     "name": "Paracesis",
+    "uniqueName": "/Lotus/Weapons/Orokin/BallasSword/BallasSwordWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -68383,6 +68893,7 @@
   {
     "id": "pathocyst",
     "name": "Pathocyst",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/InfBoomerang/InfBoomerangWeapon",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -68599,6 +69110,7 @@
   {
     "id": "pennant",
     "name": "Pennant",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/TnRailjackGreatKatana/TnRailJackGreatKatanaWeapon",
     "category": "Weapon",
     "subType": "Nikana (Melee)",
     "slot": "Melee",
@@ -68747,6 +69259,7 @@
   {
     "id": "peye",
     "name": "Peye",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleOne",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -68827,6 +69340,7 @@
   {
     "id": "plague_akwin",
     "name": "Plague Akwin",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleOne",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -68908,6 +69422,7 @@
   {
     "id": "plague_bokwin",
     "name": "Plague Bokwin",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleTwo",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -68989,6 +69504,7 @@
   {
     "id": "plague_keewar",
     "name": "Plague Keewar",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/InfestedTipTwo",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -69093,6 +69609,7 @@
   {
     "id": "plague_keewar",
     "name": "Plague Keewar",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/PvPVariantInfestedTipTwo",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -69166,6 +69683,7 @@
   {
     "id": "plague_kripath",
     "name": "Plague Kripath",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/InfestedTipOne",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -69270,6 +69788,7 @@
   {
     "id": "plague_kripath",
     "name": "Plague Kripath",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/PvPVariantInfestedTipOne",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -69343,6 +69862,7 @@
   {
     "id": "plasma_sword",
     "name": "Plasma Sword",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PlasmaSword/PlasmaLongSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -69491,6 +70011,7 @@
   {
     "id": "praedos",
     "name": "Praedos",
+    "uniqueName": "/Lotus/Weapons/Tenno/Zariman/Melee/Tonfas/ZarimanTonfaWeapon",
     "category": "Weapon",
     "subType": "Tonfa (Melee)",
     "slot": "Melee",
@@ -69639,6 +70160,7 @@
   {
     "id": "pride",
     "name": "Pride",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/HeavyScythe/TnOrionSiriusScythe/TnSiriusScytheWeapon",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -69782,6 +70304,7 @@
   {
     "id": "prisma_dual_cleavers",
     "name": "Prisma Dual Cleavers",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaDualCleavers",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -69899,6 +70422,7 @@
   {
     "id": "prisma_machete",
     "name": "Prisma Machete",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaMachete",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -70014,6 +70538,7 @@
   {
     "id": "prisma_obex",
     "name": "Prisma Obex",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/KickAndPunch/PrismaObex",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -70129,6 +70654,7 @@
   {
     "id": "prisma_ohma",
     "name": "Prisma Ohma",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/CrpTonfa/CrpPrismaTonfa",
     "category": "Weapon",
     "subType": "Tonfa (Melee)",
     "slot": "Melee",
@@ -70247,6 +70773,7 @@
   {
     "id": "prisma_skana",
     "name": "Prisma Skana",
+    "uniqueName": "/Lotus/Weapons/VoidTrader/PrismaSkana",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -70362,6 +70889,7 @@
   {
     "id": "prova",
     "name": "Prova",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Energy/ElectroProd",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -70508,6 +71036,7 @@
   {
     "id": "prova_vandal",
     "name": "Prova Vandal",
+    "uniqueName": "/Lotus/Weapons/ClanTech/Energy/VandalElectroProd",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -70623,6 +71152,7 @@
   {
     "id": "pulmonars",
     "name": "Pulmonars",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/Nunchaku/InfNunchuck/InfNunchuck",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -70770,6 +71300,7 @@
   {
     "id": "pupacyst",
     "name": "Pupacyst",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/Staff/InfStaff/InfStaff",
     "category": "Weapon",
     "subType": "Staff (Melee)",
     "slot": "Melee",
@@ -70919,6 +71450,7 @@
   {
     "id": "quassus",
     "name": "Quassus",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Warfan/TnBrokenFrameWarfan/TnBrokenFrameWarfanWeapon",
     "category": "Weapon",
     "subType": "Warfan (Melee)",
     "slot": "Melee",
@@ -71089,6 +71621,7 @@
   {
     "id": "quassus_prime",
     "name": "Quassus Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Warfan/PrimeQuassus/PrimeQuassusWeapon",
     "category": "Weapon",
     "subType": "Warfan (Melee)",
     "slot": "Melee",
@@ -71251,6 +71784,7 @@
   {
     "id": "rabvee",
     "name": "Rabvee",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipTen",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -71356,6 +71890,7 @@
   {
     "id": "rakta_dark_dagger",
     "name": "Rakta Dark Dagger",
+    "uniqueName": "/Lotus/Weapons/Syndicates/RedVeil/Melee/RVDarkDagger",
     "category": "Weapon",
     "subType": "Dagger (Melee)",
     "slot": "Melee",
@@ -71474,6 +72009,7 @@
   {
     "id": "reaper_prime",
     "name": "Reaper Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Scythe/ReaperWeapon",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -71616,6 +72152,7 @@
   {
     "id": "redeemer",
     "name": "Redeemer",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Gunblade/TnoGunblade",
     "category": "Weapon",
     "subType": "Gunblade (Melee)",
     "slot": "Melee",
@@ -71766,6 +72303,7 @@
   {
     "id": "redeemer_prime",
     "name": "Redeemer Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Gunblade/RedeemerPrime/RedeemerPrimeWep",
     "category": "Weapon",
     "subType": "Gunblade (Melee)",
     "slot": "Melee",
@@ -71920,6 +72458,7 @@
   {
     "id": "ripkas",
     "name": "Ripkas",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerClaws/GrnClaws",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -72068,6 +72607,7 @@
   {
     "id": "ruhang",
     "name": "Ruhang",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageI",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -72149,6 +72689,7 @@
   {
     "id": "ruhang_ii",
     "name": "Ruhang Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageII",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -72230,6 +72771,7 @@
   {
     "id": "rumblejack",
     "name": "Rumblejack",
+    "uniqueName": "/Lotus/Weapons/Operator/Melee/DrifterTazer/DrifterTazerPlayerWep",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -72346,6 +72888,7 @@
   {
     "id": "ruvox",
     "name": "Ruvox",
+    "uniqueName": "/Lotus/Weapons/Thanotech/EntFistIncarnon/EntFistIncarnon",
     "category": "Weapon",
     "subType": "Fist & Sparring (Melee)",
     "slot": "Melee",
@@ -72480,6 +73023,7 @@
   {
     "id": "sampotes",
     "name": "Sampotes",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Hammer/DaxDuviriHammer/DaxDuviriHammerWeapon",
     "category": "Weapon",
     "subType": "Hammer (Melee)",
     "slot": "Melee",
@@ -72628,6 +73172,7 @@
   {
     "id": "sancti_magistar",
     "name": "Sancti Magistar",
+    "uniqueName": "/Lotus/Weapons/Syndicates/NewLoka/Melee/NLMagistar",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -72746,6 +73291,7 @@
   {
     "id": "sarofang",
     "name": "Sarofang",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Axe/WolfFrameAxeWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -72888,6 +73434,7 @@
   {
     "id": "sarofang_prime",
     "name": "Sarofang Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeVorunaAxeWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -73030,6 +73577,7 @@
   {
     "id": "sarpa",
     "name": "Sarpa",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Gunblade/GunbladeAutomatic/TnoGunbladeAutomatic",
     "category": "Weapon",
     "subType": "Gunblade (Melee)",
     "slot": "Melee",
@@ -73190,6 +73738,7 @@
   {
     "id": "scindo",
     "name": "Scindo",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Axe/AxeWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -73336,6 +73885,7 @@
   {
     "id": "scindo_prime",
     "name": "Scindo Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeScindo/PrimeScindoWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -73479,6 +74029,7 @@
   {
     "id": "scoliac",
     "name": "Scoliac",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/Whip/InfestedWhip/InfestedWhipWeapon",
     "category": "Weapon",
     "subType": "Whip (Melee)",
     "slot": "Melee",
@@ -73627,6 +74178,7 @@
   {
     "id": "secura_lecta",
     "name": "Secura Lecta",
+    "uniqueName": "/Lotus/Weapons/Syndicates/PerrinSequence/Melee/PSLecta",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -73745,6 +74297,7 @@
   {
     "id": "seekalla",
     "name": "Seekalla",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleFour",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -73825,6 +74378,7 @@
   {
     "id": "sepfahn",
     "name": "Sepfahn",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipNine",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -73930,6 +74484,7 @@
   {
     "id": "serro",
     "name": "Serro",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/Polearm/CorpusPolearm01/CorpusPolearmWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -74077,6 +74632,7 @@
   {
     "id": "shaku",
     "name": "Shaku",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Nunchaku/TnoNunchaku/TnoNunchaku",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -74220,6 +74776,7 @@
   {
     "id": "sheev",
     "name": "Sheev",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerCombatKnife/GrineerCombatKnife",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -74359,6 +74916,7 @@
   {
     "id": "shtung",
     "name": "Shtung",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Handle/HandleTen",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -74440,6 +74998,7 @@
   {
     "id": "sibear",
     "name": "Sibear",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Hammer/IceHammer/IceHammer",
     "category": "Weapon",
     "subType": "Hammer (Melee)",
     "slot": "Melee",
@@ -74582,6 +75141,7 @@
   {
     "id": "sigma_octantis",
     "name": "Sigma & Octantis",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/SundialSwordBoard/SundialBoardSword",
     "category": "Weapon",
     "subType": "Sword & Shield (Melee)",
     "slot": "Melee",
@@ -74752,6 +75312,7 @@
   {
     "id": "silva_aegis",
     "name": "Silva & Aegis",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/MeleeContestWinnerOne/TennoSwordShield",
     "category": "Weapon",
     "subType": "Sword & Shield (Melee)",
     "slot": "Melee",
@@ -74897,6 +75458,7 @@
   {
     "id": "silva_aegis_prime",
     "name": "Silva & Aegis Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeSilvaAegis/PrimeSilvaAegis",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -75045,6 +75607,7 @@
   {
     "id": "skana",
     "name": "Skana",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/LongSword/LongSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -75192,6 +75755,7 @@
   {
     "id": "skana_prime",
     "name": "Skana Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/LongSword/SkanaPrime",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -75312,6 +75876,7 @@
   {
     "id": "skiajati",
     "name": "Skiajati",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/UmbraKatana/UmbraKatana",
     "category": "Weapon",
     "subType": "Nikana (Melee)",
     "slot": "Melee",
@@ -75462,6 +76027,7 @@
   {
     "id": "slaytra",
     "name": "Slaytra",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnSharbola/GrnSharbolaWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -75613,6 +76179,7 @@
   {
     "id": "spinnerex",
     "name": "Spinnerex",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Whips/SpiderWhip/SpiderWhipWeapon",
     "category": "Weapon",
     "subType": "Whip (Melee)",
     "slot": "Melee",
@@ -75755,6 +76322,7 @@
   {
     "id": "stropha",
     "name": "Stropha",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/Gunblade/CrpGunBlade/CrpGunbladeWeapon",
     "category": "Weapon",
     "subType": "Gunblade (Melee)",
     "slot": "Melee",
@@ -75914,6 +76482,7 @@
   {
     "id": "sun_moon",
     "name": "Sun & Moon",
+    "uniqueName": "/Lotus/Types/Friendly/PlayerControllable/Weapons/DuviriDualSwordsWeapon",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -76061,6 +76630,7 @@
   {
     "id": "syam",
     "name": "Syam",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriKatana/DaxDuviriKatanaWeapon",
     "category": "Weapon",
     "subType": "Nikana (Melee)",
     "slot": "Melee",
@@ -76231,6 +76801,7 @@
   {
     "id": "sydon",
     "name": "Sydon",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnTrident/GrnTridentWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -76375,6 +76946,7 @@
   {
     "id": "synoid_heliocor",
     "name": "Synoid Heliocor",
+    "uniqueName": "/Lotus/Weapons/Syndicates/CephalonSuda/Melee/CSHeliocor",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -76491,6 +77063,7 @@
   {
     "id": "tak_lug",
     "name": "Tak & Lug",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/MortiforShieldAndSword/MortiforShieldAndSword",
     "category": "Weapon",
     "subType": "Sword & Shield (Melee)",
     "slot": "Melee",
@@ -76632,6 +77205,7 @@
   {
     "id": "tatsu",
     "name": "Tatsu",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/TnTwoHandedKatana/TnTwoHandedKatana",
     "category": "Weapon",
     "subType": "Nikana (Melee)",
     "slot": "Melee",
@@ -76790,6 +77364,7 @@
   {
     "id": "tatsu_prime",
     "name": "Tatsu Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeTatsu/PrimeTatsuWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -76945,6 +77520,7 @@
   {
     "id": "tekko",
     "name": "Tekko",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Gauntlet/BrawlerKnuckles/BrawlerKnuckles",
     "category": "Weapon",
     "subType": "Fist & Sparring (Melee)",
     "slot": "Melee",
@@ -77092,6 +77668,7 @@
   {
     "id": "tekko_prime",
     "name": "Tekko Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeTekko/PrimeTekko",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -77236,6 +77813,7 @@
   {
     "id": "telos_boltace",
     "name": "Telos Boltace",
+    "uniqueName": "/Lotus/Weapons/Syndicates/ArbitersOfHexis/Melee/AHBoltace",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -77366,6 +77944,7 @@
   {
     "id": "tenet_agendus",
     "name": "Tenet Agendus",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/ShieldAndSword/CrpHammerShield/CrpHammerShield",
     "category": "Weapon",
     "subType": "Hammer (Melee)",
     "slot": "Melee",
@@ -77503,6 +78082,7 @@
   {
     "id": "tenet_exec",
     "name": "Tenet Exec",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/CrpBigSlash/CrpBigSlash",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -77623,6 +78203,7 @@
   {
     "id": "tenet_grigori",
     "name": "Tenet Grigori",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/CrpBriefcaseScythe/CrpBriefcaseScythe",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -77759,6 +78340,7 @@
   {
     "id": "tenet_livia",
     "name": "Tenet Livia",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/CrpBriefcase2HKatana/CrpBriefcase2HKatana",
     "category": "Weapon",
     "subType": "Nikana (Melee)",
     "slot": "Melee",
@@ -77880,6 +78462,7 @@
   {
     "id": "thalys",
     "name": "Thalys",
+    "uniqueName": "/Lotus/Weapons/Tenno/Zariman/Melee/HeavyScythe/ZarimanHeavyScythe/ZarimanHeavyScytheWeapon",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -78025,6 +78608,7 @@
   {
     "id": "tipedo",
     "name": "Tipedo",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Staff/MonkSpade/TnoMonkStaff",
     "category": "Weapon",
     "subType": "Staff (Melee)",
     "slot": "Melee",
@@ -78171,6 +78755,7 @@
   {
     "id": "tipedo_prime",
     "name": "Tipedo Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Staff/TipedoPrime/TipedoPrimeWeapon",
     "category": "Weapon",
     "subType": "Staff (Melee)",
     "slot": "Melee",
@@ -78314,6 +78899,7 @@
   {
     "id": "tonbo",
     "name": "Tonbo",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/FlowerPowerPolearm/FlowerPowerPolearmWep",
     "category": "Weapon",
     "subType": "Polearm (Melee)",
     "slot": "Melee",
@@ -78462,6 +79048,7 @@
   {
     "id": "tonkkatt",
     "name": "Tonkkatt",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/Tonfa/GrnChainSawTonfa/GrnChainSawTonfaWeapon",
     "category": "Weapon",
     "subType": "Tonfa (Melee)",
     "slot": "Melee",
@@ -78597,6 +79184,7 @@
   {
     "id": "twin_basolk",
     "name": "Twin Basolk",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnDualFireAxe/GrnDualFireAxe",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -78738,6 +79326,7 @@
   {
     "id": "twin_krohkur",
     "name": "Twin Krohkur",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/DualGrnEgyptSwdWeapon",
     "category": "Weapon",
     "subType": "Dual Swords (Melee)",
     "slot": "Melee",
@@ -78885,6 +79474,7 @@
   {
     "id": "vargeet_ii_jai",
     "name": "Vargeet Ii Jai",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedICritII",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -78966,6 +79556,7 @@
   {
     "id": "vargeet_ii_ruhang",
     "name": "Vargeet Ii Ruhang",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageICritII",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -79047,6 +79638,7 @@
   {
     "id": "vargeet_jai",
     "name": "Vargeet Jai",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedICritI",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -79128,6 +79720,7 @@
   {
     "id": "vargeet_jai_ii",
     "name": "Vargeet Jai Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIICritI",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -79209,6 +79802,7 @@
   {
     "id": "vargeet_ruhang",
     "name": "Vargeet Ruhang",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageICritI",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -79290,6 +79884,7 @@
   {
     "id": "vargeet_ruhang_ii",
     "name": "Vargeet Ruhang Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIICritI",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -79371,6 +79966,7 @@
   {
     "id": "vastilok",
     "name": "Vastilok",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GunBlade/GrnGunBlade/GrnGunblade",
     "category": "Weapon",
     "subType": "Gunblade (Melee)",
     "slot": "Melee",
@@ -79499,6 +80095,7 @@
   {
     "id": "vaykor_sydon",
     "name": "Vaykor Sydon",
+    "uniqueName": "/Lotus/Weapons/Syndicates/SteelMeridian/Melee/SMSydon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -79616,6 +80213,7 @@
   {
     "id": "venato",
     "name": "Venato",
+    "uniqueName": "/Lotus/Weapons/Sentients/SentJointedScythe/SentJointedScytheWeapon",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -79762,6 +80360,7 @@
   {
     "id": "venato_prime",
     "name": "Venato Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Scythe/PrimeVento/PrimeVentoScythe",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -79904,6 +80503,7 @@
   {
     "id": "venka",
     "name": "Venka",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Claws/TennoClaws",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -80050,6 +80650,7 @@
   {
     "id": "venka_prime",
     "name": "Venka Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeVenKa/PrimeVenkaClaws",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -80193,6 +80794,7 @@
   {
     "id": "verdilac",
     "name": "Verdilac",
+    "uniqueName": "/Lotus/Weapons/Archon/Melee/Whip/ArchonWhipPlayerWep",
     "category": "Weapon",
     "subType": "Whip (Melee)",
     "slot": "Melee",
@@ -80361,6 +80963,7 @@
   {
     "id": "vericres",
     "name": "Vericres",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Warfan/TnMoonWarfan/MoonWarfanWeapon",
     "category": "Weapon",
     "subType": "Warfan (Melee)",
     "slot": "Melee",
@@ -80479,6 +81082,7 @@
   {
     "id": "vitrica",
     "name": "Vitrica",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/NWIIIOrokinSword/NWOrokinSword",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -80642,6 +81246,7 @@
   {
     "id": "volnus",
     "name": "Volnus",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Hammer/GlassHammer/GlassHammer",
     "category": "Weapon",
     "subType": "Hammer (Melee)",
     "slot": "Melee",
@@ -80793,6 +81398,7 @@
   {
     "id": "volnus_prime",
     "name": "Volnus Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeVolnus/VolnusPrimeWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -80937,6 +81543,7 @@
   {
     "id": "war",
     "name": "War",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoGreatSword",
     "category": "Weapon",
     "subType": "Heavy Blade (Melee)",
     "slot": "Melee",
@@ -81086,6 +81693,7 @@
   {
     "id": "war_prime",
     "name": "War Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeWar/PrimeWarWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",
@@ -81205,6 +81813,7 @@
   {
     "id": "wolf_sledge",
     "name": "Wolf Sledge",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Hammer/ThrowingHammer",
     "category": "Weapon",
     "subType": "Hammer (Melee)",
     "slot": "Melee",
@@ -81386,6 +81995,7 @@
   {
     "id": "wrath",
     "name": "Wrath",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/HeavyScythe/TnOrionSiriusScythe/TnOrionScytheWeapon",
     "category": "Weapon",
     "subType": "Scythe (Melee)",
     "slot": "Melee",
@@ -81529,6 +82139,7 @@
   {
     "id": "xoris",
     "name": "Xoris",
+    "uniqueName": "/Lotus/Weapons/Corpus/Melee/Glaive/CrpGhostCatcherGlaive/CrpGhostCatcherGlaive",
     "category": "Weapon",
     "subType": "Glaive (Melee)",
     "slot": "Melee",
@@ -81741,6 +82352,7 @@
   {
     "id": "zenistar",
     "name": "Zenistar",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/SunDialAxe/SundialAxeWeapon",
     "category": "Weapon",
     "subType": "Sword (Melee)",
     "slot": "Melee",

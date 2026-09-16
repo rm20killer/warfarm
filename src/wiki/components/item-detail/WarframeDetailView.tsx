@@ -1,5 +1,7 @@
 import React from 'react';
 import { WarframeCombatStats } from '../../../shared/data/item-database';
+import { theme } from '../../styles/theme';
+import { formatWarframeText } from '../../utils/format-text';
 import { detailStyles as styles } from './itemDetailStyles';
 
 interface WarframeDetailViewProps {
@@ -11,9 +13,9 @@ export function WarframeDetailView({ warframeStats }: WarframeDetailViewProps) {
     <>
       <section style={styles.sectionCard}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
-          <h2 style={styles.sectionTitle}>Warframe Base &amp; Defensive Attributes</h2>
+          <h2 style={styles.sectionTitle}>Warframe Base & Defensive Attributes</h2>
           {warframeStats.sex && (
-            <span style={{ fontSize: 12, color: '#8ec48e', fontWeight: 600 }}>
+            <span style={{ fontSize: 12, color: theme.colors.green, fontWeight: 600 }}>
               {warframeStats.sex} Exosuit
             </span>
           )}
@@ -58,7 +60,7 @@ export function WarframeDetailView({ warframeStats }: WarframeDetailViewProps) {
 
         {warframeStats.passiveDescription && (
           <div style={{ ...styles.mechanicCallout, marginTop: 14 }}>
-            <strong>Passive Ability:</strong> {warframeStats.passiveDescription}
+            <strong>Passive Ability:</strong> {formatWarframeText(warframeStats.passiveDescription)}
           </div>
         )}
       </section>
@@ -73,7 +75,7 @@ export function WarframeDetailView({ warframeStats }: WarframeDetailViewProps) {
                   <span style={styles.abilityIndexBadge}>Ability {index + 1}</span>
                   <span style={styles.abilityName}>{ability.name}</span>
                 </div>
-                <p style={styles.abilityDescription}>{ability.description}</p>
+                <p style={styles.abilityDescription}>{formatWarframeText(ability.description)}</p>
               </div>
             ))}
           </div>

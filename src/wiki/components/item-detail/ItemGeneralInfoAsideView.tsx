@@ -1,10 +1,13 @@
 import React from 'react';
 import { ItemGeneralInfo } from '../../../shared/data/item-database';
 import { ResourceFarmingGuide } from '../../../shared/data/resource-guide';
+import { theme } from '../../styles/theme';
 import { detailStyles as styles } from './itemDetailStyles';
 
 interface ItemGeneralInfoAsideViewProps {
+  itemName?: string;
   itemGeneralInfo?: ItemGeneralInfo;
+  startingPrice?: number | null;
   personalNote: string;
   noteSaved: boolean;
   resourceGuide?: ResourceFarmingGuide;
@@ -13,7 +16,9 @@ interface ItemGeneralInfoAsideViewProps {
 }
 
 export function ItemGeneralInfoAsideView({
+  itemName,
   itemGeneralInfo,
+  startingPrice,
   personalNote,
   noteSaved,
   resourceGuide,
@@ -32,10 +37,18 @@ export function ItemGeneralInfoAsideView({
             </div>
             <div style={styles.infoRow}>
               <span style={styles.infoLabel}>Mastery Requirement</span>
-              <span style={{ ...styles.infoVal, color: '#8ec4c4', fontWeight: 600 }}>
+              <span style={{ ...styles.infoVal, color: theme.colors.accent, fontWeight: 600 }}>
                 Rank {itemGeneralInfo.masteryReq}
               </span>
             </div>
+            {startingPrice !== undefined && startingPrice !== null && (
+              <div style={styles.infoRow}>
+                <span style={styles.infoLabel}>Starting Price</span>
+                <span style={{ ...styles.infoVal, color: theme.colors.gold, fontWeight: 700 }}>
+                  {startingPrice}p
+                </span>
+              </div>
+            )}
             {itemGeneralInfo.polarity && (
               <div style={styles.infoRow}>
                 <span style={styles.infoLabel}>Polarity</span>
@@ -67,7 +80,7 @@ export function ItemGeneralInfoAsideView({
             {itemGeneralInfo.vendorSources && (
               <div style={styles.infoRow}>
                 <span style={styles.infoLabel}>Vendor / Acquisition</span>
-                <span style={{ ...styles.infoVal, color: '#d8c474' }}>
+                <span style={{ ...styles.infoVal, color: theme.colors.gold }}>
                   {itemGeneralInfo.vendorSources}
                 </span>
               </div>
@@ -81,7 +94,7 @@ export function ItemGeneralInfoAsideView({
                   rel="noopener noreferrer"
                   style={styles.dropTablesLink}
                 >
-                  Official Drop Tables &#8599;
+                  Official Drop Tables;
                 </a>
               </div>
             )}

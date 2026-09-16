@@ -538,7 +538,7 @@ export function parseWikiAcquisitionHtml(html: string): string {
   text = text
     .replace(/&#160;/g, ' ')
     .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
+    .replace(/&/g, '&')
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
     .replace(/&lt;/g, '<')
@@ -1038,6 +1038,43 @@ export async function syncCatalogs(): Promise<{
       };
     });
 
+  const relicDropsMap = new Map<string, Array<{ location: string; rarity?: string; chance?: number }>>();
+
+  if (Array.isArray(wfcdDropData)) {
+    for (const entry of wfcdDropData) {
+      if (!entry.item || !entry.item.includes('Relic')) continue;
+      let cleanItem = entry.item
+        .replace(/ \((Exceptional|Flawless|Radiant)\)/i, '')
+        .replace(/ Intact/i, '')
+        .trim();
+      if (!cleanItem.endsWith('Relic')) {
+        cleanItem = cleanItem + ' Relic';
+      }
+      const key = cleanItem.toLowerCase();
+      if (!relicDropsMap.has(key)) {
+        relicDropsMap.set(key, []);
+      }
+      const cleanPlace = (entry.place || '').replace(/<[^>]+>/g, '').trim();
+      relicDropsMap.get(key)!.push({
+        location: cleanPlace,
+        rarity: entry.rarity,
+        chance: entry.chance,
+      });
+    }
+  }
+
+  // Include known Requiem relic drop locations (Kuva Siphon / Flood / Thrall mercy)
+  for (const num of ['I', 'II', 'III', 'IV', 'Ultimatum']) {
+    const reqKey = `requiem ${num.toLowerCase()} relic`;
+    if (!relicDropsMap.has(reqKey) || relicDropsMap.get(reqKey)!.length === 0) {
+      relicDropsMap.set(reqKey, [
+        { location: 'Kuva Fortress / Kuva Siphon (Star Chart)', rarity: 'Uncommon', chance: 50.0 },
+        { location: 'Kuva Flood (Star Chart)', rarity: 'Rare', chance: 100.0 },
+        { location: 'Kuva Thrall / Hound Mercy Kill', rarity: 'Common', chance: 5.0 },
+      ]);
+    }
+  }
+
   const intactRelics = (relicsRaw || []).filter((r: any) => r.name && r.name.endsWith(' Intact'));
   const radiantMap = new Map<string, any>();
   (relicsRaw || []).filter((r: any) => r.name && r.name.endsWith(' Radiant')).forEach((r: any) => {
@@ -1068,12 +1105,21 @@ export async function syncCatalogs(): Promise<{
       else era = 'Lith';
     }
 
+    const fullName = `${baseName} Relic`;
+    const drops = relicDropsMap.get(fullName.toLowerCase()) || [];
+    // Sort drops by chance descending
+    drops.sort((a, b) => (b.chance || 0) - (a.chance || 0));
+
+    // A relic is unvaulted if it has active star chart drop sources or is evergreen Requiem
+    const isUnvaulted = drops.length > 0 || era === 'Requiem';
+
     return {
       id: baseName.toLowerCase().replace(/[^a-z0-9]+/g, '_'),
       era,
       name,
-      fullName: `${baseName} Relic`,
-      vaulted: !!intact.vaulted,
+      fullName,
+      vaulted: !isUnvaulted,
+      drops,
       rewards,
     };
   });
@@ -1557,6 +1603,152 @@ export async function syncCatalogs(): Promise<{
   // --- 2. Compile Vendors Catalog (Module:Vendors/data + Clan Dojo / In-Game Market) ---
   console.log('Fetching vendors from wiki...');
   const vendorCatalogMap: Record<string, any> = {};
+  const allVendorsMap: Record<string, any> = {};
+
+  const vendorMeta: Record<string, { category: string; location: string; description: string }> = {
+    'Cephalon Suda': {
+      category: 'Six Syndicates',
+      location: 'Any Tenno Relay (Upper Syndicate Enclave)',
+      description: 'Curator of cosmic data seeking knowledge without emotion. Sells Warframe augments (Chroma, Frost, Hydroid, Ivara, Limbo, Mirage, Nezha, Nova, Octavia, Revenant, Vauban, Wisp), Syndicate weapons (Synoid Gammacor, Synoid Heliocor, Synoid Simulor), Archwing weapon parts, and Void Relic Packs.',
+    },
+    'Steel Meridian': {
+      category: 'Six Syndicates',
+      location: 'Any Tenno Relay (Syndicate Enclave)',
+      description: 'Guerrilla defenders protecting innocent colonies. Sells Warframe augments (Atlas, Ember, Excalibur, Frost, Garuda, Khora, Mesa, Nidus, Oberon, Rhino, Saryn), Syndicate weapons (Vaykor Hek, Vaykor Marelok, Vaykor Sydon), and Archwing components.',
+    },
+    'Arbiters of Hexis': {
+      category: 'Six Syndicates',
+      location: 'Any Tenno Relay (Syndicate Enclave)',
+      description: 'Dogmatic arbiters seeking the Tenno’s martial potential. Sells Warframe augments (Ash, Excalibur, Harrow, Inaros, Ivara, Limbo, Mirage, Nyx, Volt, Wukong), Syndicate weapons (Telos Boltor, Telos Akbolto, Telos Boltace), and Archwing weapon parts.',
+    },
+    'Red Veil': {
+      category: 'Six Syndicates',
+      location: 'Any Tenno Relay (Syndicate Enclave)',
+      description: 'Zealots waging war against corruption. Sells Warframe augments (Ash, Atlas, Ember, Garuda, Harrow, Khora, Loki, Mesa, Nekros, Saryn, Titania, Volt, Zephyr), Syndicate weapons (Rakta Cernos, Rakta Ballistica, Rakta Dark Dagger), and Archwing components.',
+    },
+    'New Loka': {
+      category: 'Six Syndicates',
+      location: 'Any Tenno Relay (Syndicate Enclave)',
+      description: 'Worshipers of Earth’s pristine biology. Sells Warframe augments (Baruuk, Gara, Hydroid, Mag, Nidus, Oberon, Titania, Trinity, Valkyr, Wisp, Zephyr), Syndicate weapons (Sancti Tigris, Sancti Castanas, Sancti Magistar), and Ancient Healer Specters.',
+    },
+    'The Perrin Sequence': {
+      category: 'Six Syndicates',
+      location: 'Any Tenno Relay (Syndicate Enclave)',
+      description: 'Progressive Corpus merchants promoting shared prosperity. Sells Warframe augments (Banshee, Chroma, Inaros, Ivara, Mag, Nekros, Nidus, Protea, Trinity, Valkyr, Vauban), Syndicate weapons (Secura Penta, Secura Dual Cestra, Secura Lecta), and Tenet melee weapons via Ergo Glast.',
+    },
+    'Cephalon Simaris': {
+      category: 'Sanctuary & Arena',
+      location: 'Any Tenno Relay (Sanctuary)',
+      description: 'Custodian of the Sanctuary synthesis simulation. Sells Transmutation Cores, Health/Energy Conversion, Warframe Quest Blueprints (Chroma, Titania, Limbo, Mirage, Inaros), Exilus Weapon Adapters, and Scanner Upgrades.',
+    },
+    'Arbitration Honors': {
+      category: 'Sanctuary & Arena',
+      location: 'Any Tenno Relay (Arbiters of Hexis Enclave)',
+      description: 'Exchanges Vitus Essence earned from Arbitration missions for Galvanized Mods, Rolling Guard, Adaptation, Archgun Rivens, and cosmetic items.',
+    },
+    'The Steel Path Honors': {
+      category: 'Sanctuary & Arena',
+      location: 'Any Tenno Relay (Teshin Enclave)',
+      description: 'Teshin’s elite store exchanging Steel Essence for Primary and Secondary Arcane Adapters, Umbra Forma Blueprints, Kuva packs, and rotating weekly rewards.',
+    },
+    'Acrithis': {
+      category: 'Zariman, Duviri & 1999',
+      location: 'Duviri (Dormizone & Roaming Landscape)',
+      description: 'Duviri merchant exchanging Pathos Clamps, Enigma Gyrums, and regional resources for Arcanes, Kuva, Riven Slivers, Weapon Blueprints, and Captura scenes.',
+    },
+    'Archimedean Yonta': {
+      category: 'Zariman, Duviri & 1999',
+      location: 'Chrysalith (Zariman Ten Zero)',
+      description: 'Holdfast archivist exchanging Lua Thrax Plasm, Voidplumes, and Kuva for Zariman and Voruna arcanes, Kuva, and relic packs.',
+    },
+    'Bird 3': {
+      category: 'Zariman, Duviri & 1999',
+      location: 'Sanctum Anatomica (Deimos)',
+      description: 'Cavia syndicate merchant selling Melee Arcanes, Arcane Dissolution packs, Archon Shards, and Sanctum Anatomica components.',
+    },
+    'Vox Solaris': {
+      category: 'Open World Hubs',
+      location: 'Fortuna (Backroom)',
+      description: 'Solaris resistance leader Little Duck selling Operator Amp parts, Magus/Virtuos Arcanes, Baruuk and Hildryn blueprints, and Toroid trade-ins.',
+    },
+    'Fisher Hai-Luk': {
+      category: 'Open World Hubs',
+      location: 'Cetus (Earth)',
+      description: 'Ostron master angler selling Fishing Spears, Baits, Dye, and Plains of Eidolon fish trophies.',
+    },
+    'The Business': {
+      category: 'Open World Hubs',
+      location: 'Fortuna (Venus)',
+      description: 'Wildlife conservationist selling Tranq Rifles, Echo-Lures, Pheromone Synthesizers, and Orb Vallis Floofs.',
+    },
+    'Master Teasonai': {
+      category: 'Open World Hubs',
+      location: 'Cetus (Earth)',
+      description: 'Cetus wildlife warden selling Tranq Rifles, Kuaka/Condroc Floofs, Gene-Masking Kits, and Kubrow/Kavat cosmetics.',
+    },
+    "Kahl's Garrison": {
+      category: 'Zariman, Duviri & 1999',
+      location: 'Drifter Camp (Earth)',
+      description: 'Chipper sells Archon Mods, Styanax Blueprints, Slaydra cosmetics, and Archon Shards for Stock earned in Break Narmer missions.',
+    },
+    "Koumei's Shrine": {
+      category: 'Open World Hubs',
+      location: 'Cetus (Earth)',
+      description: 'Shrine offering Koumei blueprints, Higasa/Amanata weapons, and Shrine arcanes in exchange for Fate Pearls.',
+    },
+    "Kullervo's Archive": {
+      category: 'Zariman, Duviri & 1999',
+      location: "Kullervo's Hold (Duviri)",
+      description: 'Exchanges Kullervo’s Bane from the Kullervo boss fight for Kullervo Warframe and Rauta Shotgun blueprints.',
+    },
+    'Ergo Glast Merchandise': {
+      category: 'Special & Events',
+      location: 'Any Tenno Relay (The Perrin Sequence Enclave)',
+      description: 'Ergo Glast offers Tenet Melee weapons (Tenet Exec, Tenet Grigori, Tenet Agendus, Tenet Livia, Tenet Ferrox) with rotating elemental bonuses in exchange for Corrupted Holokeys.',
+    },
+    'Nights of Naberus': {
+      category: 'Special & Events',
+      location: 'Necralisk (Deimos)',
+      description: 'Daughter’s Halloween festival shop offering Orokin Catalysts/Reactors, Basmu/Ceti Lacera blueprints, and Naberus cosmetics for Mother Tokens.',
+    },
+  };
+
+  const getRankName = (vName: string, rank: number): string => {
+    if (vName === 'Cephalon Suda') {
+      const titles = ['Rank 0 - Neutral', 'Rank 1 - Competent', 'Rank 2 - Intriguing', 'Rank 3 - Recognized', 'Rank 4 - Genius', 'Rank 5 - Illuminant'];
+      return titles[rank] || `Rank ${rank}`;
+    }
+    if (vName === 'Steel Meridian') {
+      const titles = ['Rank 0 - Neutral', 'Rank 1 - Brave', 'Rank 2 - Valiant', 'Rank 3 - Defender', 'Rank 4 - Protector', 'Rank 5 - General'];
+      return titles[rank] || `Rank ${rank}`;
+    }
+    if (vName === 'Arbiters of Hexis') {
+      const titles = ['Rank 0 - Neutral', 'Rank 1 - Principled', 'Rank 2 - Authentic', 'Rank 3 - Crusader', 'Rank 4 - Vindicator', 'Rank 5 - Maxim'];
+      return titles[rank] || `Rank ${rank}`;
+    }
+    if (vName === 'Red Veil') {
+      const titles = ['Rank 0 - Neutral', 'Rank 1 - Respected', 'Rank 2 - Honored', 'Rank 3 - Esteemed', 'Rank 4 - Revered', 'Rank 5 - Exalted'];
+      return titles[rank] || `Rank ${rank}`;
+    }
+    if (vName === 'The Perrin Sequence') {
+      const titles = ['Rank 0 - Neutral', 'Rank 1 - Opportunity', 'Rank 2 - Senior Executive', 'Rank 3 - Director', 'Rank 4 - Vice President', 'Rank 5 - Chairman'];
+      return titles[rank] || `Rank ${rank}`;
+    }
+    if (vName === 'New Loka') {
+      const titles = ['Rank 0 - Neutral', 'Rank 1 - Humanitarian', 'Rank 2 - Fostered', 'Rank 3 - Guide', 'Rank 4 - Pure', 'Rank 5 - Flawless'];
+      return titles[rank] || `Rank ${rank}`;
+    }
+    if (vName === 'The Holdfasts' || vName === 'Cavalero' || vName === 'Archimedean Yonta') {
+      const titles = ['Rank 0 - Neutral', 'Rank 1 - Angel', 'Rank 2 - Fallen', 'Rank 3 - Guardian', 'Rank 4 - Seraph', 'Rank 5 - Meltdown'];
+      return titles[rank] || `Rank ${rank}`;
+    }
+    if (vName === 'Bird 3' || vName === 'Cavia') {
+      const titles = ['Rank 0 - Neutral', 'Rank 1 - Assistant', 'Rank 2 - Researcher', 'Rank 3 - Colleague', 'Rank 4 - Scholar', 'Rank 5 - Illuminator'];
+      return titles[rank] || `Rank ${rank}`;
+    }
+    return `Rank ${rank}`;
+  };
+
   try {
     const vRes = await fetch(
       'https://wiki.warframe.com/api.php?action=query&titles=Module:Vendors/data&prop=revisions&rvprop=content&format=json'
@@ -1575,15 +1767,36 @@ export async function syncCatalogs(): Promise<{
         const currencyMatch = block.match(/Currency\s*=\s*"([^"]+)"/);
         const currency = currencyMatch ? currencyMatch[1] : 'Standing';
 
+        const vendorId = vendorName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+        const meta = vendorMeta[vendorName] || {
+          category: 'Special & Events',
+          location: vendorName,
+          description: `Vendor offering items and blueprints in exchange for ${currency}.`,
+        };
+
+        const vendorRecord = {
+          id: vendorId,
+          name: vendorName,
+          title: vendorName,
+          syndicateOrStore: vendorName,
+          location: meta.location,
+          currency,
+          category: meta.category,
+          description: meta.description,
+          offerings: [] as any[],
+        };
+
         const offeringRegex = /\{\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*(\d+)/g;
         let oMatch;
         while ((oMatch = offeringRegex.exec(block)) !== null) {
           const itemName = oMatch[1];
+          const itemCategory = oMatch[2];
           const cost = parseInt(oMatch[3], 10);
           const lineEnd = block.indexOf('}', oMatch.index);
           const line = lineEnd !== -1 ? block.substring(oMatch.index, lineEnd) : '';
           const prereqMatch = line.match(/Prereq\s*=\s*(\d+)/);
           const prereq = prereqMatch ? parseInt(prereqMatch[1], 10) : undefined;
+          const rankText = typeof prereq === 'number' ? getRankName(vendorName, prereq) : undefined;
 
           const norm = itemName.toLowerCase().replace(/[^a-z0-9]+/g, '_');
           const rec = {
@@ -1592,14 +1805,38 @@ export async function syncCatalogs(): Promise<{
             vendorName,
             syndicateOrStore: vendorName,
             cost: `${cost.toLocaleString()} ${currency}`,
-            rankRequirement: prereq ? `Rank ${prereq}` : undefined,
-            location: vendorName,
+            rankRequirement: rankText,
+            location: meta.location,
             fullAcquisitionSentence: `${itemName} can be purchased from ${vendorName} for ${cost.toLocaleString()} ${currency}${
-              prereq ? ` after reaching Rank ${prereq}` : ''
+              rankText ? ` after reaching ${rankText}` : ''
             }.`,
           };
           vendorCatalogMap[norm] = rec;
           vendorCatalogMap[itemName.toLowerCase()] = rec;
+
+          vendorRecord.offerings.push({
+            itemName,
+            category: itemCategory,
+            cost,
+            formattedCost: `${cost.toLocaleString()} ${currency}`,
+            currency,
+            quantity: 1,
+            rankRequirement: rankText,
+            rankNumber: prereq,
+          });
+        }
+
+        if (vendorRecord.offerings.length > 0) {
+          // Sort offerings by rank requirement then name
+          vendorRecord.offerings.sort((a, b) => {
+            const ra = typeof a.rankNumber === 'number' ? a.rankNumber : 99;
+            const rb = typeof b.rankNumber === 'number' ? b.rankNumber : 99;
+            if (ra !== rb) return ra - rb;
+            return a.itemName.localeCompare(b.itemName);
+          });
+          (vendorRecord as any).offeringCount = vendorRecord.offerings.length;
+          allVendorsMap[vendorId] = vendorRecord;
+          allVendorsMap[vendorName.toLowerCase()] = vendorRecord;
         }
       }
     }
@@ -1720,6 +1957,7 @@ export async function syncCatalogs(): Promise<{
   }
 
   fs.writeFileSync(path.join(GENERATED_DIR, 'vendor-catalog.json'), JSON.stringify(vendorCatalogMap, null, 2));
+  fs.writeFileSync(path.join(GENERATED_DIR, 'all-vendors.json'), JSON.stringify(allVendorsMap, null, 2));
 
   // --- 3. Compile Planet Missions from official drop data ---
   console.log('Compiling planet missions...');

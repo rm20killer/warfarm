@@ -1,73 +1,260 @@
-import { MarketItem, MarketOrder, MarketStatistics } from '../types/market';
+import { MarketPriceSummary, MarketPartPriceEntry, PrimeSetMarketBreakdown } from '../types/market';
 import { RateLimiter } from '../utils/rate-limiter';
 
-const BASE_URL = 'https://api.warframe.market/v1';
+const BASE_API_URL = 'https://api.warframe.market/v2';
+const BASE_WEB_URL = 'https://warframe.market/items';
 const rateLimiter = new RateLimiter(3, 1);
+const CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes cache
 
-async function request<T>(endpoint: string): Promise<T> {
-  await rateLimiter.acquire();
-  const response = await fetch(`${BASE_URL}${endpoint}`);
-  if (!response.ok) {
-    throw new Error(`Market API error: ${response.status} ${response.statusText}`);
+const memoryCache = new Map<string, { data: MarketPriceSummary; timestamp: number }>();
+
+export function getMarketItemUrl(slugOrName: string): string {
+  const slug = slugOrName.includes(' ') || /[A-Z]/.test(slugOrName) ? getItemMarketSlug(slugOrName) : slugOrName;
+  return `${BASE_WEB_URL}/${encodeURIComponent(slug)}`;
+}
+
+/**
+ * Normalizes any Warframe item name into a Warframe.market URL slug.
+ */
+export function getItemMarketSlug(rawName: string, isSet = false): string {
+  let name = rawName.trim();
+  if (!name) return '';
+
+  const lower = name.toLowerCase();
+
+  // Handle Relics: "Lith A12", "Lith A12 Relic" -> "lith_a12_relic"
+  if (/^(lith|meso|neo|axi|requiem)\s+([a-z0-9]+)(\s+relic)?$/i.test(lower)) {
+    const match = lower.match(/^(lith|meso|neo|axi|requiem)\s+([a-z0-9]+)/i);
+    if (match) {
+      return `${match[1]}_${match[2]}_relic`;
+    }
   }
-  const data = await response.json();
-  return data.payload;
+
+  // Handle Prime component blueprints vs weapon parts
+  // Warframe parts in market have "_blueprint" suffix (e.g. rhino_prime_chassis_blueprint)
+  if (
+    /prime\s+(chassis|neuroptics|systems|harness|wings)/i.test(name) &&
+    !name.toLowerCase().endsWith('blueprint')
+  ) {
+    name = `${name} Blueprint`;
+  }
+
+  let slug = name
+    .toLowerCase()
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
+
+  const isPrimedMod = /^primed_/i.test(slug);
+
+  // Prime items without component suffix represent the full tradeable Set on Warframe.market (e.g. rhino_prime_set)
+  // Primed mods (e.g. primed_continuity) are single mods and must never have _set
+  if (!isPrimedMod) {
+    const isPrimeRoot = /_prime$/i.test(slug);
+    if ((isSet || isPrimeRoot) && !slug.endsWith('_set')) {
+      slug = `${slug}_set`;
+    }
+  }
+
+  return slug;
 }
 
-export async function fetchAllItems(): Promise<MarketItem[]> {
-  const payload = await request<{ items: MarketItem[] }>('/items');
-  return payload.items;
+function getStoredCache(slug: string): MarketPriceSummary | null {
+  const mem = memoryCache.get(slug);
+  if (mem && Date.now() - mem.timestamp < CACHE_TTL_MS) {
+    return { ...mem.data, isCached: true };
+  }
+
+  if (typeof window !== 'undefined' && window.localStorage) {
+    try {
+      const stored = localStorage.getItem(`wfm_cache_${slug}`);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        if (parsed && typeof parsed.timestamp === 'number' && Date.now() - parsed.timestamp < CACHE_TTL_MS) {
+          memoryCache.set(slug, { data: parsed.data, timestamp: parsed.timestamp });
+          return { ...parsed.data, isCached: true };
+        }
+      }
+    } catch {
+      // Ignore localStorage errors
+    }
+  }
+
+  return null;
 }
 
-export async function fetchOrders(urlName: string): Promise<MarketOrder[]> {
-  const payload = await request<{ orders: MarketOrder[] }>(`/items/${urlName}/orders`);
-  return payload.orders;
+function setStoredCache(slug: string, summary: MarketPriceSummary): void {
+  const now = Date.now();
+  memoryCache.set(slug, { data: summary, timestamp: now });
+
+  if (typeof window !== 'undefined' && window.localStorage) {
+    try {
+      localStorage.setItem(`wfm_cache_${slug}`, JSON.stringify({ data: summary, timestamp: now }));
+    } catch {
+      // Ignore localStorage quota errors
+    }
+  }
 }
 
-export async function fetchStatistics(urlName: string): Promise<{ stats48h: MarketStatistics[]; stats90d: MarketStatistics[] }> {
-  const payload = await request<{ statistics_closed: { '48hours': MarketStatistics[]; '90days': MarketStatistics[] } }>(`/items/${urlName}/statistics`);
-  return {
-    stats48h: payload.statistics_closed['48hours'],
-    stats90d: payload.statistics_closed['90days'],
-  };
+async function fetchMarketApi(endpointPath: string): Promise<Response> {
+  const isBrowser = typeof window !== 'undefined';
+
+  if (isBrowser) {
+    try {
+      const proxyUrl = `/api/wfm${endpointPath}`;
+      const res = await fetch(proxyUrl, {
+        headers: { Accept: 'application/json' },
+      });
+      if (res.ok || res.status === 404) {
+        return res;
+      }
+    } catch {
+      // Fallback to direct API fetch
+    }
+  }
+
+  return fetch(`${BASE_API_URL}${endpointPath.replace(/^\/v2/, '')}`, {
+    headers: { Accept: 'application/json' },
+  });
 }
 
-export async function getLowestSellPrice(urlName: string, platform: string = 'pc'): Promise<number | null> {
-  const orders = await fetchOrders(urlName);
-  const validSellOrders = orders.filter(
-    (o) =>
-      o.orderType === 'sell' &&
-      o.platform === platform &&
-      (o.user.status === 'ingame' || o.user.status === 'online')
-  );
+/**
+ * Fetches live buy/sell market pricing for a given item slug.
+ */
+export async function fetchMarketPrice(
+  slugOrName: string,
+  options: { isSet?: boolean; forceRefresh?: boolean; platform?: string } = {}
+): Promise<MarketPriceSummary | null> {
+  const slug = getItemMarketSlug(slugOrName, options.isSet);
+  if (!slug) return null;
 
-  if (validSellOrders.length === 0) {
+  if (!options.forceRefresh) {
+    const cached = getStoredCache(slug);
+    if (cached) return cached;
+  }
+
+  try {
+    await rateLimiter.acquire();
+    const res = await fetchMarketApi(`/v2/orders/item/${slug}`);
+
+    if (!res.ok) {
+      if (res.status === 404 && !options.isSet && slugOrName.toLowerCase().endsWith(' prime')) {
+        // Try falling back to _set if direct slug not found
+        return fetchMarketPrice(slugOrName, { ...options, isSet: true });
+      }
+      return null;
+    }
+
+    const json = await res.json();
+    const orders: any[] = json?.data || [];
+
+    const targetPlatform = (options.platform || 'pc').toLowerCase();
+
+    // Filter to active online or ingame traders
+    const onlineOrders = orders.filter((o) => {
+      const user = o.user;
+      if (!user) return false;
+      const isOnline = user.status === 'ingame' || user.status === 'online';
+      if (!isOnline) return false;
+      if (user.crossplay) return true;
+      return (user.platform || 'pc').toLowerCase() === targetPlatform;
+    });
+
+    const sellOrders = onlineOrders.filter((o) => o.type === 'sell' && typeof o.platinum === 'number');
+    const buyOrders = onlineOrders.filter((o) => o.type === 'buy' && typeof o.platinum === 'number');
+
+    const minSell = sellOrders.length > 0 ? Math.min(...sellOrders.map((o) => o.platinum)) : null;
+    const maxBuy = buyOrders.length > 0 ? Math.max(...buyOrders.map((o) => o.platinum)) : null;
+
+    const summary: MarketPriceSummary = {
+      slug,
+      itemName: slugOrName,
+      minSell,
+      maxBuy,
+      activeOrderCount: onlineOrders.length,
+      onlineSellersCount: sellOrders.length,
+      marketUrl: getMarketItemUrl(slug),
+      updatedAt: new Date().toISOString(),
+      isCached: false,
+    };
+
+    setStoredCache(slug, summary);
+    return summary;
+  } catch (err) {
+    console.warn(`Could not fetch warframe.market orders for ${slug}:`, err);
+    // Return stale cache if available upon network failure
+    const stale = memoryCache.get(slug);
+    if (stale) return { ...stale.data, isCached: true };
     return null;
   }
-
-  return Math.min(...validSellOrders.map((o) => o.platinum));
 }
 
-export interface MarketPriceSummary {
-  minSell: number | null;
-  avgPrice: number | null;
-  medianPrice: number | null;
-  volume: number;
-}
+/**
+ * Concurrently fetches live pricing for a Prime Set and all its component blueprints/parts.
+ */
+export async function fetchPrimeSetMarketBreakdown(
+  primeBaseName: string,
+  rawPartNames: string[] = [],
+  options: { forceRefresh?: boolean; platform?: string } = {}
+): Promise<PrimeSetMarketBreakdown> {
+  const cleanBase = primeBaseName.replace(/\s+Set$/i, '').trim();
 
-export async function fetchMarketPrice(urlName: string, platform: string = 'pc'): Promise<MarketPriceSummary> {
-  const [minSell, stats] = await Promise.all([
-    getLowestSellPrice(urlName, platform).catch(() => null),
-    fetchStatistics(urlName).catch(() => null),
+  let partNames = rawPartNames;
+  if (partNames.length === 0) {
+    const lower = cleanBase.toLowerCase();
+    const isWarframe = !/rifle|bow|shotgun|pistol|dagger|sword|blade|glaive|hammer|scythe|polearm|whip|gunblade/i.test(lower);
+    if (isWarframe) {
+      partNames = [
+        `${cleanBase} Blueprint`,
+        `${cleanBase} Neuroptics Blueprint`,
+        `${cleanBase} Chassis Blueprint`,
+        `${cleanBase} Systems Blueprint`,
+      ];
+    } else {
+      partNames = [
+        `${cleanBase} Blueprint`,
+        `${cleanBase} Barrel`,
+        `${cleanBase} Receiver`,
+        `${cleanBase} Stock`,
+      ];
+    }
+  }
+
+  // Fetch Set price and all parts prices in parallel
+  const [setSummary, ...partSummaries] = await Promise.all([
+    fetchMarketPrice(cleanBase, { isSet: true, forceRefresh: options.forceRefresh, platform: options.platform }),
+    ...partNames.map((pName) =>
+      fetchMarketPrice(pName, { isSet: false, forceRefresh: options.forceRefresh, platform: options.platform })
+    ),
   ]);
 
-  const latest48h = stats?.stats48h && stats.stats48h.length > 0 ? stats.stats48h[stats.stats48h.length - 1] : null;
+  const parts: MarketPartPriceEntry[] = partNames.map((pName, idx) => {
+    const pSum = partSummaries[idx];
+    const slug = getItemMarketSlug(pName);
+    return {
+      partName: pName,
+      slug,
+      minSell: pSum?.minSell ?? null,
+      maxBuy: pSum?.maxBuy ?? null,
+      marketUrl: getMarketItemUrl(slug),
+    };
+  });
+
+  const validPartSells = parts.map((p) => p.minSell).filter((p): p is number => typeof p === 'number');
+  const allPartsHavePrices = validPartSells.length === parts.length && parts.length > 0;
+  const totalPartsMinSell = allPartsHavePrices ? validPartSells.reduce((a, b) => a + b, 0) : null;
+
+  let setVsPartsDifference: number | null = null;
+  if (totalPartsMinSell !== null && setSummary?.minSell !== null && setSummary?.minSell !== undefined) {
+    setVsPartsDifference = totalPartsMinSell - setSummary.minSell;
+  }
 
   return {
-    minSell,
-    avgPrice: latest48h?.avgPrice ?? null,
-    medianPrice: latest48h?.median ?? null,
-    volume: latest48h?.volume ?? 0,
+    baseItemName: cleanBase,
+    setSummary,
+    parts,
+    totalPartsMinSell,
+    setVsPartsDifference,
+    updatedAt: new Date().toISOString(),
   };
 }
-

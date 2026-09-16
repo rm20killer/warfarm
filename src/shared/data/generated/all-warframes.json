@@ -2,6 +2,7 @@
   {
     "id": "ash",
     "name": "Ash",
+    "uniqueName": "/Lotus/Powersuits/Ninja/Ninja",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 455,
@@ -86,6 +87,7 @@
   {
     "id": "ash_prime",
     "name": "Ash Prime",
+    "uniqueName": "/Lotus/Powersuits/Ninja/AshPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 455,
@@ -172,6 +174,7 @@
   {
     "id": "atlas",
     "name": "Atlas",
+    "uniqueName": "/Lotus/Powersuits/Brawler/Brawler",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -258,6 +261,7 @@
   {
     "id": "atlas_prime",
     "name": "Atlas Prime",
+    "uniqueName": "/Lotus/Powersuits/Brawler/AtlasPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 550,
@@ -345,6 +349,7 @@
   {
     "id": "banshee",
     "name": "Banshee",
+    "uniqueName": "/Lotus/Powersuits/Banshee/Banshee",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -427,6 +432,7 @@
   {
     "id": "banshee_prime",
     "name": "Banshee Prime",
+    "uniqueName": "/Lotus/Powersuits/Banshee/BansheePrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -512,6 +518,7 @@
   {
     "id": "baruuk",
     "name": "Baruuk",
+    "uniqueName": "/Lotus/Powersuits/Pacifist/Pacifist",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 180,
@@ -597,6 +604,7 @@
   {
     "id": "baruuk_prime",
     "name": "Baruuk Prime",
+    "uniqueName": "/Lotus/Powersuits/Pacifist/BaruukPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 180,
@@ -682,6 +690,7 @@
   {
     "id": "bonewidow",
     "name": "Bonewidow",
+    "uniqueName": "/Lotus/Powersuits/EntratiMech/ThanoTech",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 1880,
@@ -768,6 +777,7 @@
   {
     "id": "caliban",
     "name": "Caliban",
+    "uniqueName": "/Lotus/Powersuits/Sentient/Sentient",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -852,6 +862,7 @@
   {
     "id": "caliban_prime",
     "name": "Caliban Prime",
+    "uniqueName": "/Lotus/Powersuits/Sentient/CalibanPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -937,6 +948,7 @@
   {
     "id": "chroma",
     "name": "Chroma",
+    "uniqueName": "/Lotus/Powersuits/Dragon/Dragon",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -1023,6 +1035,7 @@
   {
     "id": "chroma_prime",
     "name": "Chroma Prime",
+    "uniqueName": "/Lotus/Powersuits/Dragon/ChromaPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -1110,6 +1123,7 @@
   {
     "id": "citrine",
     "name": "Citrine",
+    "uniqueName": "/Lotus/Powersuits/Geode/Geode",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 400,
@@ -1194,6 +1208,7 @@
   {
     "id": "cyte_09",
     "name": "Cyte-09",
+    "uniqueName": "/Lotus/Powersuits/Frumentarius/Frumentarius",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 225,
@@ -1279,6 +1294,7 @@
   {
     "id": "dagath",
     "name": "Dagath",
+    "uniqueName": "/Lotus/Powersuits/Dagath/Dagath",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 566,
@@ -1361,6 +1377,7 @@
   {
     "id": "dante",
     "name": "Dante",
+    "uniqueName": "/Lotus/Powersuits/Pagemaster/Pagemaster",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 300,
@@ -1445,6 +1462,7 @@
   {
     "id": "ember",
     "name": "Ember",
+    "uniqueName": "/Lotus/Powersuits/Ember/Ember",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -1529,6 +1547,7 @@
   {
     "id": "ember_prime",
     "name": "Ember Prime",
+    "uniqueName": "/Lotus/Powersuits/Ember/EmberPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -1615,6 +1634,7 @@
   {
     "id": "equinox",
     "name": "Equinox",
+    "uniqueName": "/Lotus/Powersuits/YinYang/YinYang",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -1694,6 +1714,7 @@
   {
     "id": "equinox_prime",
     "name": "Equinox Prime",
+    "uniqueName": "/Lotus/Powersuits/YinYang/EquinoxPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 365,
@@ -1780,6 +1801,7 @@
   {
     "id": "excalibur",
     "name": "Excalibur",
+    "uniqueName": "/Lotus/Powersuits/Excalibur/Excalibur",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -1864,6 +1886,7 @@
   {
     "id": "excalibur_prime",
     "name": "Excalibur Prime",
+    "uniqueName": "/Lotus/Powersuits/Excalibur/ExcaliburPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -1920,6 +1943,7 @@
   {
     "id": "excalibur_umbra",
     "name": "Excalibur Umbra",
+    "uniqueName": "/Lotus/Powersuits/Excalibur/ExcaliburUmbra",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -2007,6 +2031,7 @@
   {
     "id": "follie",
     "name": "Follie",
+    "uniqueName": "/Lotus/Powersuits/Inkblot/Inkblot",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 485,
@@ -2093,6 +2118,7 @@
   {
     "id": "frost",
     "name": "Frost",
+    "uniqueName": "/Lotus/Powersuits/Frost/Frost",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -2178,6 +2204,7 @@
   {
     "id": "frost_prime",
     "name": "Frost Prime",
+    "uniqueName": "/Lotus/Powersuits/Frost/FrostPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -2263,6 +2290,7 @@
   {
     "id": "gara",
     "name": "Gara",
+    "uniqueName": "/Lotus/Powersuits/Glass/Glass",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -2351,6 +2379,7 @@
   {
     "id": "gara_prime",
     "name": "Gara Prime",
+    "uniqueName": "/Lotus/Powersuits/Glass/GaraPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 345,
@@ -2437,6 +2466,7 @@
   {
     "id": "garuda",
     "name": "Garuda",
+    "uniqueName": "/Lotus/Powersuits/Garuda/Garuda",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -2523,6 +2553,7 @@
   {
     "id": "garuda_prime",
     "name": "Garuda Prime",
+    "uniqueName": "/Lotus/Powersuits/Garuda/GarudaPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -2608,6 +2639,7 @@
   {
     "id": "gauss",
     "name": "Gauss",
+    "uniqueName": "/Lotus/Powersuits/Runner/Runner",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -2692,6 +2724,7 @@
   {
     "id": "gauss_prime",
     "name": "Gauss Prime",
+    "uniqueName": "/Lotus/Powersuits/Runner/GaussPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -2777,6 +2810,7 @@
   {
     "id": "grendel",
     "name": "Grendel",
+    "uniqueName": "/Lotus/Powersuits/Devourer/Devourer",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 1095,
@@ -2860,6 +2894,7 @@
   {
     "id": "grendel_prime",
     "name": "Grendel Prime",
+    "uniqueName": "/Lotus/Powersuits/Devourer/GrendelPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 1095,
@@ -2948,6 +2983,7 @@
   {
     "id": "gyre",
     "name": "Gyre",
+    "uniqueName": "/Lotus/Powersuits/Gyre/Gyre",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -3033,6 +3069,7 @@
   {
     "id": "gyre_prime",
     "name": "Gyre Prime",
+    "uniqueName": "/Lotus/Powersuits/Gyre/GyrePrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 345,
@@ -3119,6 +3156,7 @@
   {
     "id": "harrow",
     "name": "Harrow",
+    "uniqueName": "/Lotus/Powersuits/Priest/Priest",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -3207,6 +3245,7 @@
   {
     "id": "harrow_prime",
     "name": "Harrow Prime",
+    "uniqueName": "/Lotus/Powersuits/Priest/HarrowPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -3294,6 +3333,7 @@
   {
     "id": "helminth",
     "name": "Helminth",
+    "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/Helminth",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 100,
@@ -3381,6 +3421,7 @@
   {
     "id": "hildryn",
     "name": "Hildryn",
+    "uniqueName": "/Lotus/Powersuits/IronFrame/IronFrame",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 180,
@@ -3466,6 +3507,7 @@
   {
     "id": "hildryn_prime",
     "name": "Hildryn Prime",
+    "uniqueName": "/Lotus/Powersuits/IronFrame/IronFramePrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -3551,6 +3593,7 @@
   {
     "id": "hydroid",
     "name": "Hydroid",
+    "uniqueName": "/Lotus/Powersuits/Pirate/Pirate",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -3636,6 +3679,7 @@
   {
     "id": "hydroid_prime",
     "name": "Hydroid Prime",
+    "uniqueName": "/Lotus/Powersuits/Pirate/HydroidPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -3723,6 +3767,7 @@
   {
     "id": "inaros",
     "name": "Inaros",
+    "uniqueName": "/Lotus/Powersuits/Sandman/Sandman",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 2110,
@@ -3808,6 +3853,7 @@
   {
     "id": "inaros_prime",
     "name": "Inaros Prime",
+    "uniqueName": "/Lotus/Powersuits/Sandman/InarosPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 2215,
@@ -3895,6 +3941,7 @@
   {
     "id": "ivara",
     "name": "Ivara",
+    "uniqueName": "/Lotus/Powersuits/Ranger/Ranger",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 180,
@@ -3980,6 +4027,7 @@
   {
     "id": "ivara_prime",
     "name": "Ivara Prime",
+    "uniqueName": "/Lotus/Powersuits/Ranger/IvaraPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 180,
@@ -4065,6 +4113,7 @@
   {
     "id": "jade",
     "name": "Jade",
+    "uniqueName": "/Lotus/Powersuits/Choir/Choir",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 365,
@@ -4152,6 +4201,7 @@
   {
     "id": "khora",
     "name": "Khora",
+    "uniqueName": "/Lotus/Powersuits/Khora/Khora",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 365,
@@ -4238,6 +4288,7 @@
   {
     "id": "khora_prime",
     "name": "Khora Prime",
+    "uniqueName": "/Lotus/Powersuits/Khora/KhoraPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 365,
@@ -4323,6 +4374,7 @@
   {
     "id": "koumei",
     "name": "Koumei",
+    "uniqueName": "/Lotus/Powersuits/Koumei/Koumei",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 344,
@@ -4408,6 +4460,7 @@
   {
     "id": "kullervo",
     "name": "Kullervo",
+    "uniqueName": "/Lotus/Powersuits/PaxDuviricus/PaxDuviricus",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 1005,
@@ -4487,6 +4540,7 @@
   {
     "id": "lavos",
     "name": "Lavos",
+    "uniqueName": "/Lotus/Powersuits/Alchemist/Alchemist",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 540,
@@ -4572,6 +4626,7 @@
   {
     "id": "lavos_prime",
     "name": "Lavos Prime",
+    "uniqueName": "/Lotus/Powersuits/Alchemist/LavosPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 600,
@@ -4657,6 +4712,7 @@
   {
     "id": "limbo",
     "name": "Limbo",
+    "uniqueName": "/Lotus/Powersuits/Magician/Magician",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -4743,6 +4799,7 @@
   {
     "id": "limbo_prime",
     "name": "Limbo Prime",
+    "uniqueName": "/Lotus/Powersuits/Magician/LimboPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -4829,6 +4886,7 @@
   {
     "id": "loki",
     "name": "Loki",
+    "uniqueName": "/Lotus/Powersuits/Loki/Loki",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 180,
@@ -4913,6 +4971,7 @@
   {
     "id": "loki_prime",
     "name": "Loki Prime",
+    "uniqueName": "/Lotus/Powersuits/Loki/LokiPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 180,
@@ -5000,6 +5059,7 @@
   {
     "id": "mag",
     "name": "Mag",
+    "uniqueName": "/Lotus/Powersuits/Mag/Mag",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 180,
@@ -5084,6 +5144,7 @@
   {
     "id": "mag_prime",
     "name": "Mag Prime",
+    "uniqueName": "/Lotus/Powersuits/Mag/MagPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -5171,6 +5232,7 @@
   {
     "id": "mesa",
     "name": "Mesa",
+    "uniqueName": "/Lotus/Powersuits/Cowgirl/Cowgirl",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 365,
@@ -5255,6 +5317,7 @@
   {
     "id": "mesa_prime",
     "name": "Mesa Prime",
+    "uniqueName": "/Lotus/Powersuits/Cowgirl/MesaPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 400,
@@ -5341,6 +5404,7 @@
   {
     "id": "mirage",
     "name": "Mirage",
+    "uniqueName": "/Lotus/Powersuits/Harlequin/Harlequin",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 200,
@@ -5426,6 +5490,7 @@
   {
     "id": "mirage_prime",
     "name": "Mirage Prime",
+    "uniqueName": "/Lotus/Powersuits/Harlequin/MiragePrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 200,
@@ -5513,6 +5578,7 @@
   {
     "id": "nekros",
     "name": "Nekros",
+    "uniqueName": "/Lotus/Powersuits/Necro/Necro",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -5598,6 +5664,7 @@
   {
     "id": "nekros_prime",
     "name": "Nekros Prime",
+    "uniqueName": "/Lotus/Powersuits/Necro/NekrosPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -5684,6 +5751,7 @@
   {
     "id": "nezha",
     "name": "Nezha",
+    "uniqueName": "/Lotus/Powersuits/Nezha/Nezha",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 365,
@@ -5765,6 +5833,7 @@
   {
     "id": "nezha_prime",
     "name": "Nezha Prime",
+    "uniqueName": "/Lotus/Powersuits/Nezha/NezhaPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 365,
@@ -5851,6 +5920,7 @@
   {
     "id": "nidus",
     "name": "Nidus",
+    "uniqueName": "/Lotus/Powersuits/Infestation/Infestation",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 675,
@@ -5936,6 +6006,7 @@
   {
     "id": "nidus_prime",
     "name": "Nidus Prime",
+    "uniqueName": "/Lotus/Powersuits/Infestation/InfestationPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 825,
@@ -6021,6 +6092,7 @@
   {
     "id": "nokko",
     "name": "Nokko",
+    "uniqueName": "/Lotus/Powersuits/Nokko/Nokko",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 150,
@@ -6106,6 +6178,7 @@
   {
     "id": "nova",
     "name": "Nova",
+    "uniqueName": "/Lotus/Powersuits/AntiMatter/Anti",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -6191,6 +6264,7 @@
   {
     "id": "nova_prime",
     "name": "Nova Prime",
+    "uniqueName": "/Lotus/Powersuits/AntiMatter/NovaPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -6277,6 +6351,7 @@
   {
     "id": "nyx",
     "name": "Nyx",
+    "uniqueName": "/Lotus/Powersuits/Jade/Jade",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -6362,6 +6437,7 @@
   {
     "id": "nyx_prime",
     "name": "Nyx Prime",
+    "uniqueName": "/Lotus/Powersuits/Jade/NyxPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -6448,6 +6524,7 @@
   {
     "id": "oberon",
     "name": "Oberon",
+    "uniqueName": "/Lotus/Powersuits/Paladin/Paladin",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 365,
@@ -6532,6 +6609,7 @@
   {
     "id": "oberon_prime",
     "name": "Oberon Prime",
+    "uniqueName": "/Lotus/Powersuits/Paladin/PaladinPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 365,
@@ -6618,6 +6696,7 @@
   {
     "id": "octavia",
     "name": "Octavia",
+    "uniqueName": "/Lotus/Powersuits/Bard/Bard",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -6706,6 +6785,7 @@
   {
     "id": "octavia_prime",
     "name": "Octavia Prime",
+    "uniqueName": "/Lotus/Powersuits/Bard/OctaviaPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -6792,6 +6872,7 @@
   {
     "id": "oraxia",
     "name": "Oraxia",
+    "uniqueName": "/Lotus/Powersuits/Oraxia/Oraxia",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 575,
@@ -6878,6 +6959,7 @@
   {
     "id": "orion_sirius",
     "name": "Orion & Sirius",
+    "uniqueName": "/Lotus/Powersuits/SiriusOrion/OrionSuit",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 350,
@@ -6934,6 +7016,7 @@
   {
     "id": "protea",
     "name": "Protea",
+    "uniqueName": "/Lotus/Powersuits/Odalisk/Odalisk",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -7020,6 +7103,7 @@
   {
     "id": "protea_prime",
     "name": "Protea Prime",
+    "uniqueName": "/Lotus/Powersuits/Odalisk/ProteaPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -7105,6 +7189,7 @@
   {
     "id": "qorvex",
     "name": "Qorvex",
+    "uniqueName": "/Lotus/Powersuits/ConcreteFrame/ConcreteFrame",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 600,
@@ -7190,6 +7275,7 @@
   {
     "id": "revenant",
     "name": "Revenant",
+    "uniqueName": "/Lotus/Powersuits/Revenant/Revenant",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -7275,6 +7361,7 @@
   {
     "id": "revenant_prime",
     "name": "Revenant Prime",
+    "uniqueName": "/Lotus/Powersuits/Revenant/RevenantPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -7360,6 +7447,7 @@
   {
     "id": "rhino",
     "name": "Rhino",
+    "uniqueName": "/Lotus/Powersuits/Rhino/Rhino",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -7444,6 +7532,7 @@
   {
     "id": "rhino_prime",
     "name": "Rhino Prime",
+    "uniqueName": "/Lotus/Powersuits/Rhino/RhinoPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -7530,6 +7619,7 @@
   {
     "id": "saryn",
     "name": "Saryn",
+    "uniqueName": "/Lotus/Powersuits/Saryn/Saryn",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 365,
@@ -7615,6 +7705,7 @@
   {
     "id": "saryn_prime",
     "name": "Saryn Prime",
+    "uniqueName": "/Lotus/Powersuits/Saryn/SarynPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 365,
@@ -7700,6 +7791,7 @@
   {
     "id": "sevagoth",
     "name": "Sevagoth",
+    "uniqueName": "/Lotus/Powersuits/Wraith/Wraith",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -7786,6 +7878,7 @@
   {
     "id": "sevagoth_prime",
     "name": "Sevagoth Prime",
+    "uniqueName": "/Lotus/Powersuits/Wraith/SevagothPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -7871,6 +7964,7 @@
   {
     "id": "sirius_orion",
     "name": "Sirius & Orion",
+    "uniqueName": "/Lotus/Powersuits/SiriusOrion/SiriusSuit",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 475,
@@ -7958,6 +8052,7 @@
   {
     "id": "styanax",
     "name": "Styanax",
+    "uniqueName": "/Lotus/Powersuits/Hoplite/Hoplite",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -8044,6 +8139,7 @@
   {
     "id": "styanax_prime",
     "name": "Styanax Prime",
+    "uniqueName": "/Lotus/Powersuits/Hoplite/StyanaxPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -8131,6 +8227,7 @@
   {
     "id": "temple",
     "name": "Temple",
+    "uniqueName": "/Lotus/Powersuits/Temple/Temple",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 405,
@@ -8215,6 +8312,7 @@
   {
     "id": "titania",
     "name": "Titania",
+    "uniqueName": "/Lotus/Powersuits/Fairy/Fairy",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -8300,6 +8398,7 @@
   {
     "id": "titania_prime",
     "name": "Titania Prime",
+    "uniqueName": "/Lotus/Powersuits/Fairy/TitaniaPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 365,
@@ -8386,6 +8485,7 @@
   {
     "id": "trinity",
     "name": "Trinity",
+    "uniqueName": "/Lotus/Powersuits/Trinity/Trinity",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -8470,6 +8570,7 @@
   {
     "id": "trinity_prime",
     "name": "Trinity Prime",
+    "uniqueName": "/Lotus/Powersuits/Trinity/TrinityPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -8557,6 +8658,7 @@
   {
     "id": "uriel",
     "name": "Uriel",
+    "uniqueName": "/Lotus/Powersuits/DemonFrame/DemonFrame",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 566,
@@ -8642,6 +8744,7 @@
   {
     "id": "valkyr",
     "name": "Valkyr",
+    "uniqueName": "/Lotus/Powersuits/Berserker/Berserker",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 650,
@@ -8727,6 +8830,7 @@
   {
     "id": "valkyr_prime",
     "name": "Valkyr Prime",
+    "uniqueName": "/Lotus/Powersuits/Berserker/ValkyrPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 650,
@@ -8812,6 +8916,7 @@
   {
     "id": "vauban",
     "name": "Vauban",
+    "uniqueName": "/Lotus/Powersuits/Trapper/Trapper",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -8892,6 +8997,7 @@
   {
     "id": "vauban_prime",
     "name": "Vauban Prime",
+    "uniqueName": "/Lotus/Powersuits/Trapper/TrapperPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -8978,6 +9084,7 @@
   {
     "id": "voidrig",
     "name": "Voidrig",
+    "uniqueName": "/Lotus/Powersuits/EntratiMech/NechroTech",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 1400,
@@ -9064,6 +9171,7 @@
   {
     "id": "volt",
     "name": "Volt",
+    "uniqueName": "/Lotus/Powersuits/Volt/Volt",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -9145,6 +9253,7 @@
   {
     "id": "volt_prime",
     "name": "Volt Prime",
+    "uniqueName": "/Lotus/Powersuits/Volt/VoltPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -9231,6 +9340,7 @@
   {
     "id": "voruna",
     "name": "Voruna",
+    "uniqueName": "/Lotus/Powersuits/Werewolf/Werewolf",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 455,
@@ -9315,6 +9425,7 @@
   {
     "id": "voruna_prime",
     "name": "Voruna Prime",
+    "uniqueName": "/Lotus/Powersuits/Werewolf/VorunaPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 455,
@@ -9400,6 +9511,7 @@
   {
     "id": "wisp",
     "name": "Wisp",
+    "uniqueName": "/Lotus/Powersuits/Wisp/Wisp",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -9486,6 +9598,7 @@
   {
     "id": "wisp_prime",
     "name": "Wisp Prime",
+    "uniqueName": "/Lotus/Powersuits/Wisp/WispPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -9571,6 +9684,7 @@
   {
     "id": "wukong",
     "name": "Wukong",
+    "uniqueName": "/Lotus/Powersuits/MonkeyKing/MonkeyKing",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 455,
@@ -9652,6 +9766,7 @@
   {
     "id": "wukong_prime",
     "name": "Wukong Prime",
+    "uniqueName": "/Lotus/Powersuits/MonkeyKing/WukongPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 455,
@@ -9738,6 +9853,7 @@
   {
     "id": "xaku",
     "name": "Xaku",
+    "uniqueName": "/Lotus/Powersuits/BrokenFrame/BrokenFrame",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 269,
@@ -9824,6 +9940,7 @@
   {
     "id": "xaku_prime",
     "name": "Xaku Prime",
+    "uniqueName": "/Lotus/Powersuits/BrokenFrame/XakuPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 269,
@@ -9909,6 +10026,7 @@
   {
     "id": "yareli",
     "name": "Yareli",
+    "uniqueName": "/Lotus/Powersuits/Yareli/Yareli",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 270,
@@ -9990,6 +10108,7 @@
   {
     "id": "yareli_prime",
     "name": "Yareli Prime",
+    "uniqueName": "/Lotus/Powersuits/Yareli/YareliPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 270,
@@ -10075,6 +10194,7 @@
   {
     "id": "zephyr",
     "name": "Zephyr",
+    "uniqueName": "/Lotus/Powersuits/Tengu/Tengu",
     "category": "Warframe",
     "subType": "Standard Warframe",
     "health": 455,
@@ -10157,6 +10277,7 @@
   {
     "id": "zephyr_prime",
     "name": "Zephyr Prime",
+    "uniqueName": "/Lotus/Powersuits/Tengu/ZephyrPrime",
     "category": "Warframe",
     "subType": "Prime Warframe",
     "health": 455,

@@ -7,6 +7,9 @@ import {
 } from '../../shared/data/resource-guide';
 import { savePersonalTarget, getPersonalTargets, removePersonalTarget } from '../storage';
 import { usePageMeta } from '../../shared/utils/usePageMeta';
+import { theme } from '../styles/theme';
+import { directoryStyles } from '../styles/directoryPageStyles';
+import { ItemThumbnail } from '../../shared/utils/item-images';
 
 const CATEGORIES: Array<{ id: ResourceCategory | 'All'; label: string }> = [
   { id: 'All', label: 'All Resources' },
@@ -16,12 +19,61 @@ const CATEGORIES: Array<{ id: ResourceCategory | 'All'; label: string }> = [
   { id: 'OpenWorld', label: 'Open World' },
 ];
 
+function getResourceRarityTheme(category: ResourceCategory) {
+  if (category === 'Rare') {
+    return {
+      border: theme.colors.rarityRareBorder,
+      borderTop: `2px solid ${theme.colors.gold}`,
+      badgeBg: theme.colors.rarityRareBg,
+      badgeText: theme.colors.rarityRare,
+      tagBorder: theme.colors.rarityRareBorder,
+    };
+  }
+  if (category === 'Uncommon') {
+    return {
+      border: theme.colors.rarityUncommonBorder,
+      borderTop: `2px solid ${theme.colors.rarityUncommon}`,
+      badgeBg: theme.colors.rarityUncommonBg,
+      badgeText: theme.colors.rarityUncommon,
+      tagBorder: theme.colors.rarityUncommonBorder,
+    };
+  }
+  if (category === 'OpenWorld') {
+    return {
+      border: theme.colors.greenBorder,
+      borderTop: `2px solid ${theme.colors.green}`,
+      badgeBg: theme.colors.greenBg,
+      badgeText: theme.colors.green,
+      tagBorder: theme.colors.greenBorder,
+    };
+  }
+  if (category === 'Special') {
+    return {
+      border: theme.colors.purpleBorder,
+      borderTop: `2px solid ${theme.colors.purple}`,
+      badgeBg: theme.colors.purpleBg,
+      badgeText: theme.colors.purple,
+      tagBorder: theme.colors.purpleBorder,
+    };
+  }
+  return {
+    border: theme.colors.rarityCommonBorder,
+    borderTop: `2px solid ${theme.colors.rarityCommon}`,
+    badgeBg: theme.colors.rarityCommonBg,
+    badgeText: theme.colors.rarityCommon,
+    tagBorder: theme.colors.rarityCommonBorder,
+  };
+}
+
 export function ResourceLocatorPage() {
   const [activeCategory, setActiveCategory] = useState<ResourceCategory | 'All'>('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [showFilters, setShowFilters] = useState(false);
   const [trackedIds, setTrackedIds] = useState<Set<string>>(() => {
     return new Set(getPersonalTargets().map((t) => t.id));
   });
+
+  const activeFilterCount = activeCategory !== 'All' ? 1 : 0;
 
   usePageMeta({
     title: 'Resource Farming Directory & Node Guide',
@@ -32,16 +84,19 @@ export function ResourceLocatorPage() {
 
   const allGuides = useMemo(() => getAllResourceGuides(), []);
 
-  const filteredResources = allGuides.filter((item) => {
-    const matchesCategory = activeCategory === 'All' || item.category === activeCategory;
-    const matchesSearch =
-      !searchQuery.trim() ||
-      item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.planets.some((p) => p.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      item.optimalNodes.some((n) => n.node.toLowerCase().includes(searchQuery.toLowerCase()));
+  const filteredResources = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase();
+    return allGuides.filter((item) => {
+      const matchesCategory = activeCategory === 'All' || item.category === activeCategory;
+      const matchesSearch =
+        !q ||
+        item.name.toLowerCase().includes(q) ||
+        item.planets.some((p) => p.toLowerCase().includes(q)) ||
+        item.optimalNodes.some((n) => n.node.toLowerCase().includes(q) || n.planet.toLowerCase().includes(q));
 
-    return matchesCategory && matchesSearch;
-  });
+      return matchesCategory && matchesSearch;
+    });
+  }, [allGuides, activeCategory, searchQuery]);
 
   const handleToggleTarget = (guide: ResourceFarmingGuide) => {
     const isTracked = trackedIds.has(guide.id);
@@ -59,296 +114,399 @@ export function ResourceLocatorPage() {
         category: guide.category,
         targetQuantity: 10,
         currentQuantity: 0,
-        notes: '',
+        notes: `Optimal node: ${guide.optimalNodes[0]?.node || 'Star Chart'} (${guide.optimalNodes[0]?.planet || ''})`,
       });
-      setTrackedIds((prev) => new Set(prev).add(guide.id));
+      setTrackedIds((prev) => new Set([...prev, guide.id]));
     }
   };
 
   return (
-    <div style={styles.container}>
+    <div className="page-container-responsive" style={styles.container}>
       <header style={styles.header}>
-        <h1 style={styles.title}>Star Chart Resource Locator</h1>
+        <div style={styles.headerBadge}>Star Chart Materials</div>
+        <h1 style={styles.title}>Resource Farming & Drop Locator</h1>
         <p style={styles.subtitle}>
-          Find where to farm all Warframe crafting components with recommended squad builds and high-yield nodes.
+          Find optimal nodes, mission types, and squad compositions for rare, uncommon, and open-world Warframe materials.
         </p>
       </header>
 
-      <section style={styles.filterSection}>
-        <div style={styles.filterRow}>
+      {/* Search & Category Controls */}
+      <div style={styles.searchControlsRow}>
+        <div style={styles.searchBarWrapper}>
           <input
             type="text"
-            placeholder="Filter by resource or planet (e.g. Saturn, Tellurium)..."
+            placeholder="Filter by resource or planet (e.g. Saturn, Tellurium, Mot)..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             style={styles.searchInput}
             aria-label="Filter resources"
           />
-          <div style={styles.categoryButtons}>
-            {CATEGORIES.map(({ id, label }) => (
+          {searchQuery && (
+            <button
+              type="button"
+              onClick={() => setSearchQuery('')}
+              style={styles.clearSearchBtn}
+              title="Clear search"
+            >
+              Clear
+            </button>
+          )}
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setShowFilters((prev) => !prev)}
+          style={{
+            ...styles.filterToggleBtn,
+            backgroundColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBg : theme.colors.bgInput,
+            borderColor: showFilters || activeFilterCount > 0 ? theme.colors.accentBorder : theme.colors.borderDefault,
+            color: showFilters || activeFilterCount > 0 ? theme.colors.textHighlight : theme.colors.textSecondary,
+          }}
+          aria-expanded={showFilters}
+        >
+          <span style={{ fontSize: 13 }}>⚙</span>
+          <span>Filters</span>
+          {activeFilterCount > 0 && (
+            <span style={styles.filterCountBadge}>{activeFilterCount}</span>
+          )}
+          <span style={{ fontSize: 10, color: theme.colors.textMuted }}>
+            {showFilters ? '▲' : '▼'}
+          </span>
+        </button>
+
+        {activeFilterCount > 0 && (
+          <button
+            type="button"
+            onClick={() => setActiveCategory('All')}
+            style={styles.resetFiltersQuickBtn}
+          >
+            Reset
+          </button>
+        )}
+      </div>
+
+      {/* Category Pills Strip */}
+      <div style={styles.categoryPillsStrip}>
+        {CATEGORIES.map(({ id, label }) => {
+          const active = activeCategory === id;
+          return (
+            <button
+              key={id}
+              type="button"
+              onClick={() => setActiveCategory(id)}
+              style={{
+                ...styles.categoryPill,
+                ...(active ? styles.categoryPillActive : {}),
+              }}
+            >
+              {label}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Collapsible Filter Drawer for Mobile / Advanced */}
+      {showFilters && (
+        <div style={styles.filterDrawerCard}>
+          <div style={styles.filterDrawerHeader}>
+            <span style={styles.filterDrawerTitle}>Filter Resources Catalog</span>
+            <button
+              type="button"
+              onClick={() => setShowFilters(false)}
+              style={styles.closeDrawerBtn}
+            >
+              &times; Close
+            </button>
+          </div>
+
+          <div style={styles.filterGroup}>
+            <span style={styles.filterLabel}>Rarity & Category:</span>
+            <div style={styles.categoryButtons}>
+              {CATEGORIES.map(({ id, label }) => (
+                <button
+                  key={id}
+                  type="button"
+                  onClick={() => setActiveCategory(id)}
+                  style={{
+                    ...styles.catButton,
+                    backgroundColor: activeCategory === id ? theme.colors.accentBg : theme.colors.bgInput,
+                    borderColor: activeCategory === id ? theme.colors.accentBorder : theme.colors.borderDefault,
+                    color: activeCategory === id ? theme.colors.textHighlight : theme.colors.textSecondary,
+                  }}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div style={styles.filterDrawerFooter}>
+            <span style={{ fontSize: 12, color: theme.colors.textSecondary }}>
+              {activeFilterCount > 0 ? `${activeFilterCount} active filter applied` : 'Showing all resource categories'}
+            </span>
+            <div style={{ display: 'flex', gap: 8 }}>
+              {activeFilterCount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setActiveCategory('All')}
+                  style={styles.resetFiltersBtn}
+                >
+                  Reset All
+                </button>
+              )}
               <button
-                key={id}
-                onClick={() => setActiveCategory(id)}
-                style={{
-                  ...styles.catButton,
-                  backgroundColor: activeCategory === id ? '#222234' : '#14141c',
-                  borderColor: activeCategory === id ? '#3c3c56' : '#222230',
-                  color: activeCategory === id ? '#eaeaf4' : '#8a8aa0',
-                }}
+                type="button"
+                onClick={() => setShowFilters(false)}
+                style={styles.applyFiltersBtn}
               >
-                {label}
+                Done
               </button>
-            ))}
+            </div>
           </div>
         </div>
-      </section>
+      )}
 
-      <div style={styles.resourceList}>
-        {filteredResources.length === 0 ? (
+      {/* Results Info Bar */}
+      <div style={styles.resultsInfoBar}>
+        <span style={styles.resultsCount}>
+          Showing <strong>{filteredResources.length}</strong> of {allGuides.length} Resources
+        </span>
+        {(activeCategory !== 'All' || searchQuery) && (
+          <button
+            type="button"
+            style={styles.resetFiltersBtn}
+            onClick={() => {
+              setSearchQuery('');
+              setActiveCategory('All');
+            }}
+          >
+            Reset All Filters
+          </button>
+        )}
+      </div>
+
+      {/* Resource Cards Grid */}
+      {filteredResources.length === 0 ? (
+        <div style={styles.emptyNoticeBox}>
           <p style={styles.emptyNotice}>No resources matched your search filter.</p>
-        ) : (
-          filteredResources.map((resource) => {
+          <button
+            onClick={() => {
+              setSearchQuery('');
+              setActiveCategory('All');
+            }}
+            style={styles.resetFiltersBtn}
+          >
+            Reset Filters
+          </button>
+        </div>
+      ) : (
+        <div className="card-grid-responsive" style={styles.resourceGrid}>
+          {filteredResources.map((resource) => {
             const isTracked = trackedIds.has(resource.id);
+            const rarityTheme = getResourceRarityTheme(resource.category);
+
             return (
-              <article key={resource.id} style={styles.card}>
+              <article
+                key={resource.id}
+                style={{
+                  ...styles.card,
+                  borderColor: rarityTheme.border,
+                  borderTop: rarityTheme.borderTop,
+                }}
+              >
                 <div style={styles.cardHeader}>
-                  <div>
-                    <div style={styles.nameRow}>
-                      <h2 style={styles.resourceName}>{resource.name}</h2>
-                      <span style={styles.categoryBadge}>{resource.category}</span>
-                    </div>
-                    <span style={styles.planetsList}>
-                      Found on: {resource.planets.join(', ')}
-                    </span>
+                  <div style={styles.thumbArea}>
+                    <ItemThumbnail name={resource.name} size={48} />
                   </div>
 
-                  <div style={styles.cardActions}>
-                    <button
-                      onClick={() => handleToggleTarget(resource)}
-                      style={{
-                        ...styles.trackButton,
-                        backgroundColor: isTracked ? '#223822' : '#1a1a26',
-                        borderColor: isTracked ? '#3a623a' : '#28283a',
-                        color: isTracked ? '#92d492' : '#b0b0c4',
-                      }}
+                  <div style={styles.headerTitles}>
+                    <div style={styles.badgeRow}>
+                      <span
+                        style={{
+                          ...styles.categoryBadge,
+                          backgroundColor: rarityTheme.badgeBg,
+                          color: rarityTheme.badgeText,
+                          borderColor: rarityTheme.tagBorder,
+                        }}
+                      >
+                        {resource.category === 'OpenWorld' ? 'Open World' : resource.category}
+                      </span>
+                      {resource.tradable && (
+                        <span style={styles.tradableBadge}>Tradable</span>
+                      )}
+                    </div>
+
+                    <Link
+                      to={`/item/${encodeURIComponent(resource.name)}`}
+                      style={styles.resourceTitleLink}
                     >
-                      {isTracked ? 'Tracking' : '+ Track'}
-                    </button>
-                    <Link to={`/item/${encodeURIComponent(resource.name)}`} style={styles.viewLink}>
-                      Wiki Guide
+                      {resource.name}
                     </Link>
                   </div>
+
+                  <button
+                    type="button"
+                    style={{
+                      ...styles.trackButton,
+                      backgroundColor: isTracked ? theme.colors.gold : theme.colors.bgInput,
+                      color: isTracked ? theme.colors.textInverse : theme.colors.textSecondary,
+                      borderColor: isTracked ? theme.colors.goldBorder : theme.colors.borderDefault,
+                    }}
+                    onClick={() => handleToggleTarget(resource)}
+                    title={isTracked ? 'Remove from My Targets' : 'Add to My Targets'}
+                  >
+                    {isTracked ? '★ Tracked' : '+ Target'}
+                  </button>
                 </div>
 
-                <p style={styles.descriptionText}>{resource.description}</p>
-                {resource.specialMechanics && (
-                  <div style={styles.mechanicNote}>
-                    <strong>Note:</strong> {resource.specialMechanics}
-                  </div>
-                )}
-
-                <div style={styles.nodesSection}>
-                  <span style={styles.nodesHeader}>Top Farming Locations:</span>
-                  <div style={styles.nodesGrid}>
-                    {resource.optimalNodes.map((node, i) => (
-                      <div key={i} style={styles.nodeItem}>
-                        <div style={styles.nodeItemTop}>
-                          <span style={styles.nodeName}>
-                            {node.node} ({node.planet})
-                          </span>
-                          <span
-                            style={{
-                              ...styles.nodeRating,
-                              color: node.efficiencyRating === 'Best' ? '#90c890' : '#d2c884',
-                            }}
-                          >
-                            {node.efficiencyRating}
-                          </span>
-                        </div>
-                        <span style={styles.nodeMission}>{node.missionType}</span>
-                        <p style={styles.nodeStrategy}>{node.strategyNote}</p>
+                <div style={styles.cardBody}>
+                  {resource.planets && resource.planets.length > 0 && (
+                    <div style={styles.planetsRow}>
+                      <span style={styles.planetsLabel}>Found on:</span>
+                      <div style={styles.planetPills}>
+                        {resource.planets.map((p, pIdx) => (
+                          <span key={pIdx} style={styles.planetPill}>{p}</span>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </div>
+                    </div>
+                  )}
 
-                <div style={styles.footerRow}>
-                  <span style={styles.recommendedTitle}>Recommended Squad Frames:</span>
-                  <span style={styles.recommendedFrames}>{resource.recommendedFrames.join(', ')}</span>
+                  <p style={styles.descriptionText}>{resource.description}</p>
+
+                  {resource.specialMechanics && (
+                    <div style={styles.mechanicNote}>
+                      <strong>Note:</strong> {resource.specialMechanics}
+                    </div>
+                  )}
+
+                  <div style={styles.nodesSection}>
+                    <div style={styles.nodesHeader}>Top Farming Locations</div>
+                    <div style={styles.nodesGrid}>
+                      {resource.optimalNodes.map((node, i) => (
+                        <div key={i} style={styles.nodeItem}>
+                          <div style={styles.nodeItemTop}>
+                            <span style={styles.nodeName}>
+                              {node.node} <span style={{ color: theme.colors.textMuted }}>({node.planet})</span>
+                            </span>
+                            <span
+                              style={{
+                                ...styles.nodeRating,
+                                color: node.efficiencyRating === 'Best' ? theme.colors.green : theme.colors.gold,
+                                backgroundColor: node.efficiencyRating === 'Best' ? theme.colors.greenBg : theme.colors.goldBg,
+                                borderColor: node.efficiencyRating === 'Best' ? theme.colors.greenBorder : theme.colors.goldBorder,
+                              }}
+                            >
+                              {node.efficiencyRating}
+                            </span>
+                          </div>
+                          <span style={styles.nodeMission}>{node.missionType} • {node.faction}</span>
+                          <p style={styles.nodeStrategy}>{node.strategyNote}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {resource.recommendedFrames && resource.recommendedFrames.length > 0 && (
+                    <div style={styles.footerRow}>
+                      <span style={styles.recommendedTitle}>Recommended Squad:</span>
+                      <div style={styles.framesPills}>
+                        {resource.recommendedFrames.map((frame, fIdx) => (
+                          <span key={fIdx} style={styles.framePill}>{frame}</span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </article>
             );
-          })
-        )}
-      </div>
+          })}
+        </div>
+      )}
     </div>
   );
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  container: {
-    padding: '16px 18px 60px 18px',
-    maxWidth: 1040,
-    margin: '0 auto',
+  ...directoryStyles,
+  headerBadge: {
+    ...directoryStyles.headerBadge,
+    backgroundColor: theme.colors.catResourceBg,
+    color: theme.colors.catResource,
+    border: `1px solid ${theme.colors.catResourceBorder}`,
   },
-  header: {
-    backgroundColor: '#151722',
-    border: '1px solid #232738',
-    borderRadius: 8,
-    padding: '16px 20px',
-    marginBottom: 16,
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 700,
-    color: '#f0f0f8',
-    margin: '0 0 4px 0',
-  },
-  subtitle: {
-    fontSize: 13,
-    color: '#888ca8',
-    margin: 0,
-    lineHeight: 1.4,
-  },
-  filterSection: {
-    backgroundColor: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
-    padding: 16,
-    marginBottom: 16,
-  },
-  filterRow: {
+  resourceGrid: directoryStyles.cardGrid,
+  planetsRow: {
     display: 'flex',
-    flexDirection: 'column',
-    gap: 12,
-  },
-  searchInput: {
-    padding: '10px 14px',
-    background: '#0e0e12',
-    border: '1px solid #2a2a3c',
-    borderRadius: 5,
-    color: '#e2e2ec',
-    fontSize: 14,
-    outline: 'none',
-  },
-  categoryButtons: {
-    display: 'flex',
-    flexWrap: 'wrap',
+    alignItems: 'center',
     gap: 6,
-  },
-  catButton: {
-    padding: '6px 12px',
-    borderRadius: 4,
-    border: '1px solid',
-    fontSize: 12,
-    cursor: 'pointer',
-    transition: 'all 0.15s',
-  },
-  resourceList: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 16,
-  },
-  emptyNotice: {
-    color: '#888ca8',
-    fontSize: 14,
-    padding: '24px 0',
-  },
-  card: {
-    background: '#12141d',
-    border: '1px solid #1f2334',
-    borderRadius: 8,
-    padding: 16,
-  },
-  cardHeader: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
     flexWrap: 'wrap',
-    gap: 12,
-    marginBottom: 10,
+    fontSize: 12,
   },
-  nameRow: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: 8,
-    marginBottom: 4,
-  },
-  resourceName: {
-    fontSize: 18,
+  planetsLabel: {
+    color: theme.colors.textMuted,
     fontWeight: 600,
-    color: '#e8e8f0',
-    margin: 0,
+    fontSize: 11.5,
   },
-  categoryBadge: {
+  planetPills: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: 4,
+  },
+  planetPill: {
     fontSize: 11,
-    padding: '2px 6px',
-    background: '#1c1c2a',
-    color: '#9090b8',
-    borderRadius: 3,
+    padding: '1px 6px',
+    backgroundColor: theme.colors.bgCardElevated,
+    color: theme.colors.textSecondary,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.borderSubtle}`,
   },
-  planetsList: {
-    fontSize: 12,
-    color: '#7e7e94',
-  },
-  cardActions: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: 10,
-  },
-  trackButton: {
-    padding: '5px 12px',
-    border: '1px solid',
-    borderRadius: 4,
-    fontSize: 12,
-    cursor: 'pointer',
-  },
-  viewLink: {
-    fontSize: 12,
+  tradableBadge: {
+    fontSize: 10,
     fontWeight: 600,
-    color: '#8ea0d4',
-    textDecoration: 'none',
-    padding: '4px 10px',
-    backgroundColor: '#1a1d2c',
-    border: '1px solid #29304a',
-    borderRadius: 4,
+    padding: '2px 5px',
+    borderRadius: theme.radii.sm,
+    backgroundColor: theme.colors.accentBg,
+    color: theme.colors.accent,
+    border: `1px solid ${theme.colors.accentBorder}`,
   },
+  resourceTitleLink: directoryStyles.cardTitleLink,
+  trackButton: directoryStyles.targetBtn,
   descriptionText: {
-    fontSize: 13,
-    color: '#9898ae',
-    lineHeight: 1.4,
-    margin: '0 0 10px 0',
+    fontSize: 12.5,
+    color: theme.colors.textSecondary,
+    lineHeight: 1.45,
+    margin: 0,
   },
   mechanicNote: {
-    padding: '8px 12px',
-    background: '#1c1a20',
-    borderLeft: '3px solid #a88c58',
-    borderRadius: 3,
-    fontSize: 12,
-    color: '#c8bc9e',
-    marginBottom: 14,
+    padding: '8px 10px',
+    background: theme.colors.goldBg,
+    borderLeft: `3px solid ${theme.colors.gold}`,
+    borderRadius: theme.radii.sm,
+    fontSize: 11.5,
+    color: theme.colors.goldLight,
+    lineHeight: 1.4,
   },
   nodesSection: {
-    marginTop: 10,
-    marginBottom: 14,
+    marginTop: 4,
   },
   nodesHeader: {
-    fontSize: 12,
-    fontWeight: 600,
-    color: '#b0b0c4',
-    display: 'block',
-    marginBottom: 8,
+    fontSize: 11,
+    fontWeight: 700,
+    color: theme.colors.textMuted,
+    textTransform: 'uppercase',
+    letterSpacing: '0.05em',
+    marginBottom: 6,
   },
   nodesGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-    gap: 10,
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 6,
   },
   nodeItem: {
-    background: '#161824',
-    border: '1px solid #232738',
-    borderRadius: 6,
-    padding: 10,
+    background: theme.colors.bgCardElevated,
+    border: `1px solid ${theme.colors.borderSubtle}`,
+    borderRadius: theme.radii.sm,
+    padding: '8px 10px',
   },
   nodeItemTop: {
     display: 'flex',
@@ -357,40 +515,54 @@ const styles: Record<string, React.CSSProperties> = {
     marginBottom: 2,
   },
   nodeName: {
-    fontSize: 13,
+    fontSize: 12.5,
     fontWeight: 600,
-    color: '#dcdce8',
+    color: theme.colors.textHighlight,
   },
   nodeRating: {
-    fontSize: 11,
-    fontWeight: 600,
+    fontSize: 10,
+    fontWeight: 700,
+    padding: '1px 5px',
+    borderRadius: theme.radii.sm,
+    border: '1px solid',
   },
   nodeMission: {
     fontSize: 11,
-    color: '#7a7a92',
+    color: theme.colors.textMuted,
     display: 'block',
-    marginBottom: 6,
+    marginBottom: 4,
   },
   nodeStrategy: {
-    fontSize: 12,
-    color: '#8a8aa4',
+    fontSize: 11.5,
+    color: theme.colors.textSecondary,
     margin: 0,
-    lineHeight: 1.3,
+    lineHeight: 1.35,
   },
   footerRow: {
     display: 'flex',
     alignItems: 'center',
     flexWrap: 'wrap',
     gap: 6,
-    paddingTop: 10,
-    borderTop: '1px solid #181824',
-    fontSize: 12,
+    paddingTop: 8,
+    marginTop: 'auto',
+    borderTop: `1px solid ${theme.colors.borderSubtle}`,
+    fontSize: 11.5,
   },
   recommendedTitle: {
-    color: '#7a7a90',
+    color: theme.colors.textMuted,
+    fontWeight: 600,
   },
-  recommendedFrames: {
-    color: '#8ea0c4',
+  framesPills: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: 4,
+  },
+  framePill: {
+    fontSize: 11,
+    padding: '1px 6px',
+    backgroundColor: theme.colors.accentBg,
+    color: theme.colors.accentLight,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.accentBorder}`,
   },
 };
-

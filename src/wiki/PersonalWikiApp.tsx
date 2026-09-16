@@ -11,6 +11,8 @@ import { ModsDirectoryPage } from './pages/ModsDirectoryPage';
 import { GearDirectoryPage } from './pages/GearDirectoryPage';
 import { ArcanesDirectoryPage } from './pages/ArcanesDirectoryPage';
 import { LiveWorldStatePage } from './pages/LiveWorldStatePage';
+import { VendorsDirectoryPage } from './pages/VendorsDirectoryPage';
+import { VendorDetailPage } from './pages/VendorDetailPage';
 import {
   getPersonalTargets,
   getVisitHistory,
@@ -20,6 +22,8 @@ import {
 import syncMetaJson from '../shared/data/generated/sync-meta.json';
 import { AppFooter } from './components/AppFooter';
 import { AboutModal } from './components/AboutModal';
+import { ErrorBoundary } from './components/ErrorBoundary';
+import { theme } from './styles/theme';
 import { findSimilarItems, SimilarItemSuggestion } from '../shared/utils/fuzzy-search';
 import { ItemThumbnail } from '../shared/utils/item-images';
 
@@ -78,8 +82,8 @@ function NavigationBar({ onOpenAbout }: NavigationBarProps) {
   return (
     <header style={styles.navBar}>
       {/* Top Bar: Branding, Search, and Utilities */}
-      <div style={styles.topBar}>
-        <div style={styles.navBrandArea}>
+      <div className="nav-top-bar" style={styles.topBar}>
+        <div className="nav-brand-area" style={styles.navBrandArea}>
           <NavLink to="/" style={styles.brandTitle}>
             Warfarm Tracker
           </NavLink>
@@ -93,45 +97,58 @@ function NavigationBar({ onOpenAbout }: NavigationBarProps) {
           </button>
         </div>
 
-        <div style={styles.headerSearchWrapper}>
+        <div className="nav-search-wrapper" style={styles.headerSearchWrapper}>
           <input
             type="text"
             placeholder="Quick jump (e.g. A12, Tellurium, Rhino)..."
             value={headerQuery}
             onChange={(e) => setHeaderQuery(e.target.value)}
-            onKeyDown={handleHeaderSearch}
+            onKeyDown={(e) => {
+              if (e.key === 'Escape') {
+                setSuggestions([]);
+              } else {
+                handleHeaderSearch(e);
+              }
+            }}
             style={styles.headerSearchInput}
             aria-label="Quick search"
           />
           {suggestions.length > 0 && (
-            <div style={styles.headerSuggestionsDropdown}>
-              {suggestions.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => handleSelectSuggestion(item.path)}
-                  style={styles.headerSuggestionRow}
-                >
-                  <ItemThumbnail name={item.name} size={28} />
-                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', overflow: 'hidden' }}>
-                    <span style={styles.headerSuggestionName}>{item.name}</span>
-                    <span style={styles.headerSuggestionCategory}>
-                      {item.category}{item.subType && item.subType !== item.category ? ` · ${item.subType}` : ''}
-                    </span>
-                  </div>
-                </button>
-              ))}
-            </div>
+            <>
+              <div
+                style={styles.popoverBackdrop}
+                onClick={() => setSuggestions([])}
+              />
+              <div style={styles.headerSuggestionsDropdown}>
+                {suggestions.map((item) => (
+                  <button
+                    key={item.name}
+                    type="button"
+                    onClick={() => handleSelectSuggestion(item.path)}
+                    style={styles.headerSuggestionRow}
+                  >
+                    <ItemThumbnail name={item.name} size={28} />
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', overflow: 'hidden' }}>
+                      <span style={styles.headerSuggestionName}>{item.name}</span>
+                      <span style={styles.headerSuggestionCategory}>
+                        {item.category}{item.subType && item.subType !== item.category ? ` · ${item.subType}` : ''}
+                      </span>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </>
           )}
         </div>
 
-        <div style={styles.actionArea}>
+        <div className="nav-action-area" style={styles.actionArea}>
           <button
             type="button"
             onClick={onOpenAbout}
             style={styles.aboutNavBtn}
             title="About Warfarm Tracker, Data Sync & Links"
           >
-            About &amp; Sync
+            About & Sync
           </button>
 
           <div style={{ position: 'relative' }}>
@@ -140,9 +157,9 @@ function NavigationBar({ onOpenAbout }: NavigationBarProps) {
               onClick={() => setShowHistoryDropdown((prev) => !prev)}
               style={{
                 ...styles.historyNavBtn,
-                backgroundColor: showHistoryDropdown ? '#1c2838' : '#14141e',
-                borderColor: showHistoryDropdown ? '#68d4ff' : '#28283c',
-                color: showHistoryDropdown ? '#ffffff' : '#c0c8e0',
+                backgroundColor: showHistoryDropdown ? theme.colors.accentBg : theme.colors.bgInput,
+                borderColor: showHistoryDropdown ? theme.colors.accent : theme.colors.borderDefault,
+                color: showHistoryDropdown ? theme.colors.textHighlight : theme.colors.textSecondary,
               }}
               title="Recently Visited Pages & Items"
               aria-label="Recently Visited Pages & Items"
@@ -209,7 +226,7 @@ function NavigationBar({ onOpenAbout }: NavigationBarProps) {
       </div>
 
       {/* Bottom Bar: Primary Navigation */}
-      <nav style={styles.navLinksContainer} aria-label="Wiki navigation">
+      <nav className="nav-links-scroll" style={styles.navLinksContainer} aria-label="Wiki navigation">
         <NavLink
           to="/live"
           style={({ isActive }) => ({
@@ -238,7 +255,7 @@ function NavigationBar({ onOpenAbout }: NavigationBarProps) {
             borderBottom: isActive ? '2px solid #8e9ec4' : '2px solid transparent',
           })}
         >
-          Warframes &amp; Weapons
+          Warframes & Weapons
         </NavLink>
         <NavLink
           to="/arcanes"
@@ -278,7 +295,7 @@ function NavigationBar({ onOpenAbout }: NavigationBarProps) {
             borderBottom: isActive ? '2px solid #8e9ec4' : '2px solid transparent',
           })}
         >
-          Lua &amp; Puzzles
+          Lua & Puzzles
         </NavLink>
         <NavLink
           to="/relics"
@@ -289,6 +306,16 @@ function NavigationBar({ onOpenAbout }: NavigationBarProps) {
           })}
         >
           Relics
+        </NavLink>
+        <NavLink
+          to="/vendors"
+          style={({ isActive }) => ({
+            ...styles.navLink,
+            color: isActive ? '#f0f0f8' : '#8888a2',
+            borderBottom: isActive ? '2px solid #8e9ec4' : '2px solid transparent',
+          })}
+        >
+          Vendors
         </NavLink>
         <NavLink
           to="/targets"
@@ -315,19 +342,23 @@ export function PersonalWikiApp() {
           onOpenAbout={() => setShowAboutModal(true)}
         />
         <main style={styles.mainContent}>
-          <Routes>
-            <Route path="/" element={<WikiSearchPage />} />
-            <Route path="/live" element={<LiveWorldStatePage />} />
-            <Route path="/mods" element={<ModsDirectoryPage />} />
-            <Route path="/gear" element={<GearDirectoryPage />} />
-            <Route path="/arcanes" element={<ArcanesDirectoryPage />} />
-            <Route path="/item/:title" element={<WikiItemDetailPage />} />
-            <Route path="/missions" element={<PlanetsMissionsPage />} />
-            <Route path="/resources" element={<ResourceLocatorPage />} />
-            <Route path="/mechanics" element={<SpecialMechanicsPage />} />
-            <Route path="/relics" element={<RelicFinderPage />} />
-            <Route path="/targets" element={<MyTargetsPage />} />
-          </Routes>
+          <ErrorBoundary fallbackTitle="Unable to load page content">
+            <Routes>
+              <Route path="/" element={<WikiSearchPage />} />
+              <Route path="/live" element={<LiveWorldStatePage />} />
+              <Route path="/mods" element={<ModsDirectoryPage />} />
+              <Route path="/gear" element={<GearDirectoryPage />} />
+              <Route path="/arcanes" element={<ArcanesDirectoryPage />} />
+              <Route path="/item/:title" element={<WikiItemDetailPage />} />
+              <Route path="/vendors" element={<VendorsDirectoryPage />} />
+              <Route path="/vendor/:name" element={<VendorDetailPage />} />
+              <Route path="/missions" element={<PlanetsMissionsPage />} />
+              <Route path="/resources" element={<ResourceLocatorPage />} />
+              <Route path="/mechanics" element={<SpecialMechanicsPage />} />
+              <Route path="/relics" element={<RelicFinderPage />} />
+              <Route path="/targets" element={<MyTargetsPage />} />
+            </Routes>
+          </ErrorBoundary>
         </main>
         <AppFooter
           onOpenAbout={() => setShowAboutModal(true)}
@@ -346,14 +377,14 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
-    background: '#0e0e12',
-    color: '#e0e0e4',
+    background: theme.colors.bgApp,
+    color: theme.colors.textPrimary,
   },
   navBar: {
     display: 'flex',
     flexDirection: 'column',
-    background: '#0a0a0e',
-    borderBottom: '1px solid #1a1a24',
+    background: theme.colors.bgNavbar,
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
     position: 'sticky',
     top: 0,
     zIndex: 100,
@@ -375,17 +406,17 @@ const styles: Record<string, React.CSSProperties> = {
   brandTitle: {
     fontSize: 18,
     fontWeight: 700,
-    color: '#e4e4ee',
+    color: theme.colors.textHighlight,
     textDecoration: 'none',
   },
   versionNavBadge: {
     fontSize: 11,
     fontWeight: 700,
     padding: '2px 7px',
-    background: '#222538',
-    color: '#ffd700',
-    borderRadius: 4,
-    border: '1px solid #ffd70033',
+    background: theme.colors.bgCardElevated,
+    color: theme.colors.gold,
+    borderRadius: theme.radii.sm,
+    border: `1px solid ${theme.colors.goldBorder}`,
     letterSpacing: '0.02em',
   },
   headerSearchWrapper: {
@@ -398,10 +429,10 @@ const styles: Record<string, React.CSSProperties> = {
     width: '100%',
     boxSizing: 'border-box',
     padding: '8px 16px',
-    background: '#14141c',
-    border: '1px solid #222230',
-    borderRadius: 6,
-    color: '#d0d0dc',
+    background: theme.colors.bgInput,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.md,
+    color: theme.colors.textPrimary,
     fontSize: 13,
     outline: 'none',
     transition: 'border-color 0.2s ease',
@@ -411,10 +442,10 @@ const styles: Record<string, React.CSSProperties> = {
     top: 'calc(100% + 4px)',
     left: 0,
     right: 0,
-    backgroundColor: '#12141f',
-    border: '1px solid #24283c',
-    borderRadius: 6,
-    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.6)',
+    backgroundColor: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderStrong}`,
+    borderRadius: theme.radii.md,
+    boxShadow: theme.shadows.lg,
     zIndex: 1000,
     overflow: 'hidden',
   },
@@ -426,8 +457,8 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '8px 12px',
     background: 'none',
     border: 'none',
-    borderBottom: '1px solid #1a1e2e',
-    color: '#e0e4f4',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
+    color: theme.colors.textPrimary,
     cursor: 'pointer',
     textAlign: 'left',
     transition: 'background-color 0.15s ease',
@@ -435,14 +466,14 @@ const styles: Record<string, React.CSSProperties> = {
   headerSuggestionName: {
     fontSize: 13,
     fontWeight: 600,
-    color: '#e0e4f4',
+    color: theme.colors.textHighlight,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
   },
   headerSuggestionCategory: {
     fontSize: 11,
-    color: '#8e94b2',
+    color: theme.colors.textSecondary,
   },
   actionArea: {
     display: 'flex',
@@ -469,21 +500,21 @@ const styles: Record<string, React.CSSProperties> = {
     fontWeight: 500,
     textDecoration: 'none',
     transition: 'color 0.15s, border-color 0.15s',
-    marginBottom: '-1px', // Anchors the active border seamlessly to the bottom
+    marginBottom: '-1px',
   },
   targetBadge: {
     fontSize: 10,
     padding: '2px 6px',
-    background: '#2a3a2a',
-    color: '#90d090',
+    background: theme.colors.greenBg,
+    color: theme.colors.green,
     borderRadius: 10,
     fontWeight: 600,
   },
   historyNavBtn: {
-    background: '#14141e',
-    border: '1px solid #28283c',
-    borderRadius: 6,
-    color: '#c0c8e0',
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderDefault}`,
+    borderRadius: theme.radii.md,
+    color: theme.colors.textSecondary,
     padding: '6px 12px',
     fontSize: 12,
     fontWeight: 600,
@@ -496,9 +527,9 @@ const styles: Record<string, React.CSSProperties> = {
   historyBadge: {
     fontSize: 10,
     padding: '1px 5px',
-    background: '#162838',
-    color: '#68d4ff',
-    border: '1px solid #28446c',
+    background: theme.colors.accentBg,
+    color: theme.colors.accent,
+    border: `1px solid ${theme.colors.accentBorder}`,
     borderRadius: 10,
     fontWeight: 700,
   },
@@ -515,11 +546,12 @@ const styles: Record<string, React.CSSProperties> = {
     top: 'calc(100% + 8px)',
     right: 0,
     width: 320,
+    maxWidth: 'calc(100vw - 28px)',
     maxHeight: 420,
-    background: '#12141e',
-    border: '1px solid #2c3248',
-    borderRadius: 6,
-    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.5)',
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderStrong}`,
+    borderRadius: theme.radii.md,
+    boxShadow: theme.shadows.lg,
     zIndex: 200,
     display: 'flex',
     flexDirection: 'column',
@@ -530,12 +562,12 @@ const styles: Record<string, React.CSSProperties> = {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '12px 16px',
-    background: '#161926',
-    borderBottom: '1px solid #222638',
+    background: theme.colors.bgCardElevated,
+    borderBottom: `1px solid ${theme.colors.borderDefault}`,
   },
   clearHistoryButton: {
     fontSize: 11,
-    color: '#8e9ec4',
+    color: theme.colors.textSecondary,
     background: 'none',
     border: 'none',
     cursor: 'pointer',
@@ -545,7 +577,7 @@ const styles: Record<string, React.CSSProperties> = {
   historyEmpty: {
     padding: '24px 16px',
     fontSize: 12,
-    color: '#98a4c8',
+    color: theme.colors.textSecondary,
     textAlign: 'center',
   },
   historyDropdownList: {
@@ -561,8 +593,8 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '12px 16px',
     background: 'none',
     border: 'none',
-    borderBottom: '1px solid #1a1d2c',
-    color: '#d0d4e8',
+    borderBottom: `1px solid ${theme.colors.borderSubtle}`,
+    color: theme.colors.textPrimary,
     cursor: 'pointer',
     textAlign: 'left',
     transition: 'background 0.15s ease',
@@ -577,9 +609,9 @@ const styles: Record<string, React.CSSProperties> = {
   },
   historyItemCategory: {
     fontSize: 10,
-    color: '#68d4ff',
-    backgroundColor: '#102030',
-    border: '1px solid #204060',
+    color: theme.colors.accent,
+    backgroundColor: theme.colors.accentBg,
+    border: `1px solid ${theme.colors.accentBorder}`,
     padding: '2px 6px',
     borderRadius: 4,
     fontWeight: 600,
@@ -588,7 +620,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   historyItemTitle: {
     fontSize: 13,
-    color: '#e4e8f8',
+    color: theme.colors.textHighlight,
     fontWeight: 500,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
@@ -596,15 +628,15 @@ const styles: Record<string, React.CSSProperties> = {
   },
   historyItemArrow: {
     fontSize: 12,
-    color: '#98a4c8',
+    color: theme.colors.textMuted,
     marginLeft: 8,
     flexShrink: 0,
   },
   aboutNavBtn: {
-    background: '#141824',
-    border: '1px solid #283852',
-    borderRadius: 6,
-    color: '#8ec4ff',
+    background: theme.colors.bgCard,
+    border: `1px solid ${theme.colors.borderAccent}`,
+    borderRadius: theme.radii.md,
+    color: theme.colors.accent,
     padding: '6px 14px',
     fontSize: 12,
     fontWeight: 600,

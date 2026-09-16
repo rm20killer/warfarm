@@ -13,4 +13,5 @@ export * from './ArcaneDetailView';
 export * from './AcquisitionDropView';
 export * from './CommunityBuildsView';
 export * from './ItemGeneralInfoAsideView';
+export * from './MarketPriceView';
 

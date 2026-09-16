@@ -12,7 +12,7 @@ import {
 import { ResourceFarmingGuide } from '../../../shared/data/resource-guide';
 import { ItemComponentInfo, resolveComponentFullName } from '../../../shared/data/item-components';
 import { ResourceFarmTooltip } from '../ResourceFarmTooltip';
-import { detailStyles as styles, getRarityBadgeStyle } from './itemDetailStyles';
+import { detailStyles as styles, getRarityBadgeStyle, theme } from './itemDetailStyles';
 
 interface AcquisitionDropViewProps {
   itemName: string;
@@ -92,19 +92,37 @@ export function AcquisitionDropView({
         <section style={styles.acquisitionCard}>
           <div style={styles.acquisitionHeader}>
             <span style={styles.acquisitionBadge}>Acquisition</span>
-            <span style={styles.vendorStoreTag}>{vendorAcquisition.syndicateOrStore}</span>
+            <Link
+              to={`/vendor/${encodeURIComponent(vendorAcquisition.vendorName)}`}
+              style={{
+                ...styles.vendorStoreTag,
+                textDecoration: 'none',
+                color: theme.colors.accent,
+                transition: 'opacity 0.15s ease',
+              }}
+            >
+              {vendorAcquisition.syndicateOrStore} &rarr;
+            </Link>
           </div>
           <p style={styles.acquisitionSentence}>
             {vendorAcquisition.fullAcquisitionSentence}
           </p>
           <div style={styles.vendorMetaRow}>
-            <span><strong>Vendor:</strong> {vendorAcquisition.vendorName}</span>
+            <span>
+              <strong>Vendor:</strong>{' '}
+              <Link
+                to={`/vendor/${encodeURIComponent(vendorAcquisition.vendorName)}`}
+                style={{ color: theme.colors.accent, textDecoration: 'underline' }}
+              >
+                {vendorAcquisition.vendorName}
+              </Link>
+            </span>
             <span><strong>Cost:</strong> {vendorAcquisition.cost}</span>
             <span><strong>Location:</strong> {vendorAcquisition.location}</span>
           </div>
           {vendorAcquisition.notes && (
             <div style={{ marginTop: 12, padding: '10px 14px', background: '#101018', borderRadius: 6, borderLeft: '3px solid #68d4ff' }}>
-              <strong style={{ color: '#68d4ff', fontSize: 12.5, display: 'block', marginBottom: 4 }}>Rotation &amp; Acquisition Details:</strong>
+              <strong style={{ color: theme.colors.accent, fontSize: 12.5, display: 'block', marginBottom: 4 }}>Rotation & Acquisition Details:</strong>
               <p style={{ margin: 0, fontSize: 13, color: '#c0c8e0', lineHeight: 1.5 }}>
                 {vendorAcquisition.notes}
               </p>
@@ -115,7 +133,7 @@ export function AcquisitionDropView({
 
       {resourceGuide?.acquisition && (
         <section style={styles.sectionCard}>
-          <h2 style={styles.sectionTitle}>Acquisition &amp; Strategy</h2>
+          <h2 style={styles.sectionTitle}>Acquisition & Strategy</h2>
           {renderFormattedAcquisition(resourceGuide.acquisition)}
         </section>
       )}
@@ -256,13 +274,7 @@ export function AcquisitionDropView({
                   {isOpen && (
                     <div style={styles.relicBadgesGrid}>
                       {sortedRelics.map((r, rIdx) => {
-                        let eraBg = '#1b2234';
-                        let eraColor = '#90caf9';
-                        if (r.era === 'Lith') { eraBg = '#2a2216'; eraColor = '#e0a868'; }
-                        else if (r.era === 'Meso') { eraBg = '#1a2624'; eraColor = '#70c8b0'; }
-                        else if (r.era === 'Neo') { eraBg = '#281a28'; eraColor = '#d088d8'; }
-                        else if (r.era === 'Axi') { eraBg = '#2c2616'; eraColor = '#e8c458'; }
-                        else if (r.era === 'Requiem') { eraBg = '#2c1414'; eraColor = '#e86868'; }
+                        const eraStyle = theme.helpers.getRelicEraStyle(r.era);
                       
                         return (
                           <Link
@@ -278,7 +290,7 @@ export function AcquisitionDropView({
                             title={`View details and drop tables for ${r.fullName}`}
                           >
                             <div style={styles.primeRelicCardTop}>
-                              <span style={{ ...styles.eraChip, backgroundColor: eraBg, color: eraColor }}>
+                              <span style={{ ...styles.eraChip, backgroundColor: eraStyle.bg, color: eraStyle.color }}>
                                 {r.era} {r.relicName}
                               </span>
                               <span
@@ -287,9 +299,9 @@ export function AcquisitionDropView({
                                   fontWeight: 700,
                                   padding: '2px 5px',
                                   borderRadius: 3,
-                                  backgroundColor: r.vaulted ? '#2d2218' : '#142a1a',
-                                  color: r.vaulted ? '#e0a060' : '#7ae08a',
-                                  border: `1px solid ${r.vaulted ? '#543820' : '#23582e'}`,
+                                  backgroundColor: r.vaulted ? theme.colors.vaultedBg : theme.colors.unvaultedBg,
+                                  color: r.vaulted ? theme.colors.vaulted : theme.colors.unvaulted,
+                                  border: `1px solid ${r.vaulted ? theme.colors.vaultedBorder : theme.colors.unvaultedBorder}`,
                                 }}
                               >
                                 {r.vaulted ? 'Vaulted' : 'Unvaulted'}
@@ -303,8 +315,8 @@ export function AcquisitionDropView({
                             </div>
                               
                             <div style={styles.primeRelicChancesRow}>
-                              <span style={styles.relicChanceText}>Intact: <strong style={{ color: '#f0f0f8' }}>{r.intactChance}%</strong></span>
-                              <span style={styles.relicChanceText}>Radiant: <strong style={{ color: '#f0f0f8' }}>{r.radiantChance}%</strong></span>
+                              <span style={styles.relicChanceText}>Intact: <strong style={{ color: theme.colors.textPrimary }}>{r.intactChance}%</strong></span>
+                              <span style={styles.relicChanceText}>Radiant: <strong style={{ color: theme.colors.textPrimary }}>{r.radiantChance}%</strong></span>
                             </div>
                           </Link>
                         );
@@ -320,7 +332,7 @@ export function AcquisitionDropView({
 
       {lootSource && (lootSource.bossOrEnemyName || lootSource.locationNode || (!hasPrimeRelicDrops && !componentInfo)) && (
         <section style={styles.sectionCard}>
-          <h2 style={styles.sectionTitle}>Acquisition &amp; Loot Drops</h2>
+          <h2 style={styles.sectionTitle}>Acquisition & Loot Drops</h2>
           <div style={styles.lootSummaryBox}>
             {lootSource.bossOrEnemyName && (
               <div style={styles.lootInfoRow}>
@@ -343,7 +355,7 @@ export function AcquisitionDropView({
 
           {!hasPrimeRelicDrops && !componentInfo && lootSource.components && lootSource.components.length > 0 && (
             <div style={styles.componentsTable}>
-              <span style={styles.componentsHeader}>Component Blueprints &amp; Parts:</span>
+              <span style={styles.componentsHeader}>Component Blueprints & Parts:</span>
               {lootSource.components.map((c, i) => (
                 <div key={i} style={styles.componentRow}>
                   <span style={styles.componentName}>{c.partName}</span>
@@ -382,7 +394,7 @@ export function AcquisitionDropView({
             )}
             <span><strong>Installation:</strong> Cavalero (Chrysalith)</span>
             <span><strong>Plat Skip:</strong> 120 Platinum</span>
-            <span><strong>Prerequisites:</strong> The Duviri Paradox, Angels of the Zariman &amp; Steel Path</span>
+            <span><strong>Prerequisites:</strong> The Duviri Paradox, Angels of the Zariman & Steel Path</span>
           </div>
 
           {incarnonGenesis.installationRequirements.length > 0 && (
@@ -405,7 +417,7 @@ export function AcquisitionDropView({
 
           {incarnonGenesis.acquisition && (
             <div style={{ marginBottom: 14 }}>
-              <h3 style={{ fontSize: 13, fontWeight: 700, color: '#eed8ff', margin: '0 0 6px 0' }}>Acquisition &amp; Prerequisites</h3>
+              <h3 style={{ fontSize: 13, fontWeight: 700, color: '#eed8ff', margin: '0 0 6px 0' }}>Acquisition & Prerequisites</h3>
               <p style={{ margin: 0, fontSize: 13, lineHeight: 1.55, color: '#d0c4e8' }}>
                 {incarnonGenesis.acquisition}
               </p>
@@ -414,7 +426,7 @@ export function AcquisitionDropView({
 
           {incarnonGenesis.overview && (
             <div style={styles.incarnonOverviewBox}>
-              <div style={styles.incarnonOverviewTitle}>Incarnon Transmutation &amp; Form Overview:</div>
+              <div style={styles.incarnonOverviewTitle}>Incarnon Transmutation & Form Overview:</div>
               {incarnonGenesis.overview.split('\n').map((p, idx) => (
                 <p key={idx} style={styles.incarnonOverviewText}>{p}</p>
               ))}
@@ -423,7 +435,7 @@ export function AcquisitionDropView({
 
           {incarnonGenesis.evolutions.length > 0 && (
             <div>
-              <h3 style={styles.incarnonEvolutionsHeader}>Evolution Tiers &amp; Perks</h3>
+              <h3 style={styles.incarnonEvolutionsHeader}>Evolution Tiers & Perks</h3>
               {incarnonGenesis.evolutions.map((tier, tIdx) => (
                 <div key={tIdx} style={styles.incarnonTierCard}>
                   <div style={styles.incarnonTierTop}>

@@ -960,3 +960,114 @@ export function getItemVariantFamily(itemName: string, targetVariantName?: strin
   };
 }
 
+export function isItemTradeable(
+  itemName: string,
+  context?: {
+    category?: string;
+    isComponent?: boolean;
+    isMod?: boolean;
+    isArcane?: boolean;
+    isRelic?: boolean;
+    isWarframe?: boolean;
+    isWeapon?: boolean;
+    tradable?: boolean;
+  }
+): boolean {
+  if (!itemName) return false;
+  const lower = itemName.trim().toLowerCase();
+
+  // Explicit flag from resource or item data if present
+  if (context?.tradable !== undefined) {
+    return context.tradable;
+  }
+
+  // 1. Relics: All relics are tradeable
+  if (context?.isRelic || /^(lith|meso|neo|axi|requiem)\s+/i.test(lower)) {
+    return true;
+  }
+
+  // 2. Arcanes: All arcanes are tradeable
+  if (
+    context?.isArcane ||
+    lower.startsWith('arcane ') ||
+    lower.startsWith('magus ') ||
+    lower.startsWith('virtuos ') ||
+    lower.startsWith('pax ') ||
+    lower.startsWith('exodia ') ||
+    lower.startsWith('melee ') ||
+    lower.startsWith('primary ') ||
+    lower.startsWith('secondary ') ||
+    lower.startsWith('shotgun ')
+  ) {
+    return true;
+  }
+
+  // 3. Mods: Tradeable except Flawed and quest Umbral/Sacrificial mods
+  if (context?.isMod || lower.endsWith(' mod')) {
+    if (lower.startsWith('flawed ') || lower.startsWith('umbral ') || lower.startsWith('sacrificial ')) {
+      return false;
+    }
+    return true;
+  }
+
+  // 4. Components (e.g. Ash Prime Systems Blueprint vs Ash Systems Blueprint)
+  const isPartSuffix = /\s+(blueprint|chassis|neuroptics|systems|harness|wings|barrel|receiver|stock|blade|handle|hilt|guard|grip|string|upper limb|lower limb|disc|gauntlet|pouch|stars|ornament|chain|head|motor|heatsink|link)$/i.test(lower);
+  if (context?.isComponent || isPartSuffix) {
+    // Only Prime parts, Vandal/Wraith parts, Necramech damaged parts, and syndicate archwing parts are tradeable
+    if (
+      lower.includes('prime') ||
+      lower.includes('vandal') ||
+      lower.includes('wraith') ||
+      lower.includes('necramech') ||
+      lower.includes('damaged necramech') ||
+      lower.includes('scintillant')
+    ) {
+      return true;
+    }
+    return false;
+  }
+
+  // 5. Warframes: Base Warframes are NOT tradeable! Only Prime Warframes are tradeable.
+  if (context?.isWarframe || context?.category === 'Warframe') {
+    return lower.includes('prime');
+  }
+
+  // 6. Weapons: Base weapons are NOT tradeable. Only Prime, Syndicate, Vandal, Wraith, Prisma, Tenet, Kuva, etc. are tradeable.
+  if (context?.isWeapon || context?.category === 'Weapon') {
+    return (
+      lower.includes('prime') ||
+      lower.includes('vandal') ||
+      lower.includes('wraith') ||
+      lower.includes('prisma') ||
+      lower.includes('secura') ||
+      lower.includes('rakta') ||
+      lower.includes('telos') ||
+      lower.includes('sancti') ||
+      lower.includes('synoid') ||
+      lower.includes('vaykor') ||
+      lower.includes('ceti') ||
+      lower.includes('tenet') ||
+      lower.includes('kuva')
+    );
+  }
+
+  // 7. Base Resources: Untradeable
+  const untradeableResources = new Set([
+    'orokin cell', 'ferrite', 'rubedo', 'nano spores', 'plastids', 'alloy plate',
+    'circuits', 'polymer bundle', 'salvage', 'gallium', 'morphics', 'neural sensors',
+    'neurodes', 'control module', 'argon crystal', 'tellurium', 'oxium', 'cryotic',
+    'credits', 'endo', 'kuva', 'forma', 'forma blueprint'
+  ]);
+  if (untradeableResources.has(lower)) {
+    return false;
+  }
+
+  // Catch-all: If name contains Prime, it is tradeable
+  if (lower.includes('prime')) {
+    return true;
+  }
+
+  return false;
+}
+
+

@@ -167,3 +167,91 @@ export function findSimilarItems(query: string, limit = 8): SimilarItemSuggestio
   return scored.slice(0, limit);
 }
 
+export interface NameFamilyResult {
+  query: string;
+  categoryShortcut?: { title: string; path: string; description: string };
+  familyItems: SimilarItemSuggestion[];
+}
+
+export function findNameFamilyItems(query: string, limit = 16): NameFamilyResult {
+  const q = query.trim().toLowerCase();
+  if (!q) return { query, familyItems: [] };
+
+  let categoryShortcut: NameFamilyResult['categoryShortcut'] = undefined;
+  if (/^arcanes?$/i.test(q)) {
+    categoryShortcut = {
+      title: 'Arcanes & Enhancements Directory',
+      path: '/arcanes',
+      description: 'Explore all Arcanes across Warframes, Weapons, and Operators with drop chances and dissolution costs.',
+    };
+  } else if (/^mods?$/i.test(q)) {
+    categoryShortcut = {
+      title: 'Warframe & Companion Mods Directory',
+      path: '/mods',
+      description: 'Browse 1,800+ Warframe, Primed, Galvanized, and Augment mods with drop locations.',
+    };
+  } else if (/^relics?$/i.test(q)) {
+    categoryShortcut = {
+      title: 'Void Relics & Prime Parts Directory',
+      path: '/relics',
+      description: 'Check drop rates, refinement chances, and active vaulted status for 770+ Void relics.',
+    };
+  } else if (/^(warframes?|frames?)$/i.test(q)) {
+    categoryShortcut = {
+      title: 'Warframes Directory',
+      path: '/gear?tab=Warframes',
+      description: 'Browse all Warframes, Prime variants, crafting blueprints, and abilities.',
+    };
+  } else if (/^weapons?$/i.test(q)) {
+    categoryShortcut = {
+      title: 'Weapons Directory',
+      path: '/gear?tab=Weapons',
+      description: 'Explore Primary, Secondary, and Melee weapons with combat stats and weapon lineage.',
+    };
+  } else if (/^resources?$/i.test(q)) {
+    categoryShortcut = {
+      title: 'Star Chart Resource Locator',
+      path: '/resources',
+      description: 'Find best farming locations for rare resources, mining gems, and open world components.',
+    };
+  }
+
+  const matches: SimilarItemSuggestion[] = [];
+  const seen = new Set<string>();
+
+  for (const item of SEARCH_INDEX) {
+    const nameLower = item.name.toLowerCase();
+    const words = nameLower.split(/[\s_-]+/);
+
+    const isPrefix = nameLower.startsWith(q);
+    const isWordMatch = words.includes(q);
+    const isSubstring = nameLower.includes(q) && q.length >= 3;
+
+    if (isPrefix || isWordMatch || isSubstring) {
+      if (!seen.has(nameLower)) {
+        seen.add(nameLower);
+        let score = 0.5;
+        if (isPrefix) score += 0.4;
+        if (isWordMatch) score += 0.3;
+        matches.push({
+          name: item.name,
+          category: item.category,
+          subType: item.subType,
+          path: `/item/${encodeURIComponent(item.name)}`,
+          score,
+        });
+      }
+    }
+  }
+
+  matches.sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+
+  const familyItems = matches.length > 0 ? matches.slice(0, limit) : findSimilarItems(query, limit);
+
+  return {
+    query,
+    categoryShortcut,
+    familyItems,
+  };
+}
+
