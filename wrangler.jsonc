@@ -1,11 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "warfarm-tracker",
+  "name": "warfarm",
+  "main": "../src/worker.ts",
   "compatibility_date": "2026-09-10",
   "kv_namespaces": [
 		{
 			"binding": "WARFRAME_CACHE",
-			"id": "8ccdd1dfe2fe4ca59cc0725b1929950a",
+			"id": "8ccdd1dfe2fe4ca59cc0725b1929950a"
 		},
 	],
   "observability": {

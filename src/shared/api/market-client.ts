@@ -135,7 +135,8 @@ export async function fetchMarketPrice(
 
   try {
     await rateLimiter.acquire();
-    const res = await fetchMarketApi(`/v2/orders/item/${slug}`);
+    const queryStr = options.forceRefresh ? '?nocache=1' : '';
+    const res = await fetchMarketApi(`/v2/orders/item/${slug}${queryStr}`);
 
     if (!res.ok) {
       if (res.status === 404 && !options.isSet && slugOrName.toLowerCase().endsWith(' prime')) {

@@ -11,9 +11,10 @@ export const onRequest: PagesFunction<Env> = async (context) => {
   const targetUrl = `https://api.warframe.market${targetPath}${url.search}`;
 
   const cacheKey = `wfm_proxy_${targetPath}${url.search}`;
+  const skipCache = url.searchParams.get('nocache') === '1';
 
   try {
-    if (request.method === 'GET') {
+    if (request.method === 'GET' && !skipCache) {
       const cachedBody = await env.WARFRAME_CACHE.get(cacheKey);
       
       if (cachedBody) {
