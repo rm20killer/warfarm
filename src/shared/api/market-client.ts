@@ -1,10 +1,11 @@
-import { MarketPriceSummary, MarketPartPriceEntry, PrimeSetMarketBreakdown } from '../types/market';
+import { MarketPriceSummary, MarketPartPriceEntry, PrimeSetMarketBreakdown, RankPriceSummary } from '../types/market';
 import { RateLimiter } from '../utils/rate-limiter';
 
 const BASE_API_URL = 'https://api.warframe.market/v2';
 const BASE_WEB_URL = 'https://warframe.market/items';
 const rateLimiter = new RateLimiter(3, 1);
 const CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes cache
+const NEGATIVE_CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour for 404/not-found items
 
 const memoryCache = new Map<string, { data: MarketPriceSummary; timestamp: number }>();
 
@@ -61,8 +62,11 @@ export function getItemMarketSlug(rawName: string, isSet = false): string {
 
 function getStoredCache(slug: string): MarketPriceSummary | null {
   const mem = memoryCache.get(slug);
-  if (mem && Date.now() - mem.timestamp < CACHE_TTL_MS) {
-    return { ...mem.data, isCached: true };
+  if (mem) {
+    const ttl = mem.data.notFound ? NEGATIVE_CACHE_TTL_MS : CACHE_TTL_MS;
+    if (Date.now() - mem.timestamp < ttl) {
+      return { ...mem.data, isCached: true };
+    }
   }
 
   if (typeof window !== 'undefined' && window.localStorage) {
@@ -70,7 +74,8 @@ function getStoredCache(slug: string): MarketPriceSummary | null {
       const stored = localStorage.getItem(`wfm_cache_${slug}`);
       if (stored) {
         const parsed = JSON.parse(stored);
-        if (parsed && typeof parsed.timestamp === 'number' && Date.now() - parsed.timestamp < CACHE_TTL_MS) {
+        const ttl = parsed?.data?.notFound ? NEGATIVE_CACHE_TTL_MS : CACHE_TTL_MS;
+        if (parsed && typeof parsed.timestamp === 'number' && Date.now() - parsed.timestamp < ttl) {
           memoryCache.set(slug, { data: parsed.data, timestamp: parsed.timestamp });
           return { ...parsed.data, isCached: true };
         }
@@ -120,6 +125,7 @@ async function fetchMarketApi(endpointPath: string): Promise<Response> {
 
 /**
  * Fetches live buy/sell market pricing for a given item slug.
+ * Computes singular / unranked (Rank 0) and maxed (Max Rank) pricing for ranked Mods & Arcanes.
  */
 export async function fetchMarketPrice(
   slugOrName: string,
@@ -143,7 +149,24 @@ export async function fetchMarketPrice(
         // Try falling back to _set if direct slug not found
         return fetchMarketPrice(slugOrName, { ...options, isSet: true });
       }
-      return null;
+
+      // Store negative cache result in local/memory cache so we avoid repeated requests
+      const notFoundSummary: MarketPriceSummary = {
+        slug,
+        itemName: slugOrName,
+        minSell: null,
+        maxBuy: null,
+        activeOrderCount: 0,
+        onlineSellersCount: 0,
+        marketUrl: getMarketItemUrl(slug),
+        updatedAt: new Date().toISOString(),
+        isCached: false,
+        notFound: true,
+        isTradeable: false,
+      };
+
+      setStoredCache(slug, notFoundSummary);
+      return notFoundSummary;
     }
 
     const json = await res.json();
@@ -161,11 +184,75 @@ export async function fetchMarketPrice(
       return (user.platform || 'pc').toLowerCase() === targetPlatform;
     });
 
-    const sellOrders = onlineOrders.filter((o) => o.type === 'sell' && typeof o.platinum === 'number');
-    const buyOrders = onlineOrders.filter((o) => o.type === 'buy' && typeof o.platinum === 'number');
+    const sellOrders = onlineOrders.filter((o) => (o.type === 'sell' || o.order_type === 'sell') && typeof o.platinum === 'number');
+    const buyOrders = onlineOrders.filter((o) => (o.type === 'buy' || o.order_type === 'buy') && typeof o.platinum === 'number');
 
-    const minSell = sellOrders.length > 0 ? Math.min(...sellOrders.map((o) => o.platinum)) : null;
-    const maxBuy = buyOrders.length > 0 ? Math.max(...buyOrders.map((o) => o.platinum)) : null;
+    // Check for rank-based orders (Mods & Arcanes)
+    const hasRankInfo = onlineOrders.some(
+      (o) => typeof o.mod_rank === 'number' || typeof o.modRank === 'number' || typeof o.rank === 'number'
+    );
+
+    let isRankedItem = false;
+    let maxRank = 0;
+    let unrankedPrice: RankPriceSummary | null = null;
+    let maxedPrice: RankPriceSummary | null = null;
+    const rankBreakdown: Record<number, RankPriceSummary> = {};
+
+    if (hasRankInfo) {
+      isRankedItem = true;
+      const allRanks = new Set<number>();
+      onlineOrders.forEach((o) => {
+        const r = typeof o.mod_rank === 'number' ? o.mod_rank : typeof o.modRank === 'number' ? o.modRank : typeof o.rank === 'number' ? o.rank : 0;
+        allRanks.add(r);
+      });
+
+      if (allRanks.size > 0) {
+        maxRank = Math.max(...Array.from(allRanks));
+      }
+
+      Array.from(allRanks).sort((a, b) => a - b).forEach((rank) => {
+        const rankSells = sellOrders.filter((o) => {
+          const r = typeof o.mod_rank === 'number' ? o.mod_rank : typeof o.modRank === 'number' ? o.modRank : typeof o.rank === 'number' ? o.rank : 0;
+          return r === rank;
+        });
+        const rankBuys = buyOrders.filter((o) => {
+          const r = typeof o.mod_rank === 'number' ? o.mod_rank : typeof o.modRank === 'number' ? o.modRank : typeof o.rank === 'number' ? o.rank : 0;
+          return r === rank;
+        });
+
+        const rMinSell = rankSells.length > 0 ? Math.min(...rankSells.map((o) => o.platinum)) : null;
+        const rMaxBuy = rankBuys.length > 0 ? Math.max(...rankBuys.map((o) => o.platinum)) : null;
+
+        const rankSummary: RankPriceSummary = {
+          rank,
+          label: rank === 0 ? 'Unranked (R0)' : rank === maxRank ? `Maxed (R${maxRank})` : `Rank ${rank}`,
+          minSell: rMinSell,
+          maxBuy: rMaxBuy,
+          sellersCount: rankSells.length,
+          buyersCount: rankBuys.length,
+        };
+
+        rankBreakdown[rank] = rankSummary;
+        if (rank === 0) unrankedPrice = rankSummary;
+        if (rank === maxRank && maxRank > 0) maxedPrice = rankSummary;
+      });
+
+      if (!unrankedPrice && rankBreakdown[0]) {
+        unrankedPrice = rankBreakdown[0];
+      }
+    }
+
+    const minSell = isRankedItem && unrankedPrice?.minSell !== undefined
+      ? unrankedPrice.minSell
+      : sellOrders.length > 0
+      ? Math.min(...sellOrders.map((o) => o.platinum))
+      : null;
+
+    const maxBuy = isRankedItem && unrankedPrice?.maxBuy !== undefined
+      ? unrankedPrice.maxBuy
+      : buyOrders.length > 0
+      ? Math.max(...buyOrders.map((o) => o.platinum))
+      : null;
 
     const summary: MarketPriceSummary = {
       slug,
@@ -177,13 +264,19 @@ export async function fetchMarketPrice(
       marketUrl: getMarketItemUrl(slug),
       updatedAt: new Date().toISOString(),
       isCached: false,
+      notFound: false,
+      isTradeable: true,
+      isRankedItem,
+      maxRank: isRankedItem ? maxRank : undefined,
+      unrankedPrice,
+      maxedPrice,
+      rankBreakdown: isRankedItem ? rankBreakdown : undefined,
     };
 
     setStoredCache(slug, summary);
     return summary;
   } catch (err) {
     console.warn(`Could not fetch warframe.market orders for ${slug}:`, err);
-    // Return stale cache if available upon network failure
     const stale = memoryCache.get(slug);
     if (stale) return { ...stale.data, isCached: true };
     return null;

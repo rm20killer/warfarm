@@ -28,7 +28,7 @@ export function MarketPriceView({
   const [primeBreakdown, setPrimeBreakdown] = useState<PrimeSetMarketBreakdown | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
   const [lastFetchedAt, setLastFetchedAt] = useState<Date | null>(null);
 
   const isPrimeSetOverview = isPrime && !isComponentItem;
@@ -59,9 +59,10 @@ export function MarketPriceView({
         setSinglePrice(price);
       }
       setLastFetchedAt(new Date());
-    } catch (err: any) {
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : 'Failed to connect to Warframe.market';
       console.warn(`Failed loading market data for ${itemName}:`, err);
-      setError(err?.message || 'Failed to connect to Warframe.market');
+      setError(msg);
     } finally {
       setIsLoading(false);
       setIsRefreshing(false);
@@ -92,13 +93,19 @@ export function MarketPriceView({
         primeBreakdown.setSummary?.maxBuy !== null ||
         primeBreakdown.parts.some((p) => p.minSell !== null || p.maxBuy !== null))
   );
+
   const hasSingleData = Boolean(
     singlePrice &&
-      (singlePrice.minSell !== null || singlePrice.maxBuy !== null)
+      !singlePrice.notFound &&
+      (singlePrice.minSell !== null ||
+        singlePrice.maxBuy !== null ||
+        singlePrice.unrankedPrice?.minSell !== null ||
+        singlePrice.maxedPrice?.minSell !== null)
   );
+
   const hasData = isPrimeSetOverview ? hasPrimeData : hasSingleData;
 
-  // Hide the entire market section and buttons if loading is finished and there is no market data
+  // Hide the entire market section if loading is finished and there is no market data or item not found
   if (!isLoading && !hasData) {
     return null;
   }
@@ -141,7 +148,11 @@ export function MarketPriceView({
               Warframe.market
             </span>
             <h2 style={{ ...styles.sectionTitle, margin: 0, fontSize: 16 }}>
-              {isPrimeSetOverview ? 'Prime Trading & Set Breakdown' : 'Live Trading Prices'}
+              {isPrimeSetOverview
+                ? 'Prime Trading & Set Breakdown'
+                : singlePrice?.isRankedItem
+                ? 'Live Trading Prices (Unranked & Maxed)'
+                : 'Live Trading Prices'}
             </h2>
           </div>
           <p style={{ margin: '3px 0 0 0', fontSize: 12, color: theme.colors.textSecondary }}>
@@ -181,7 +192,6 @@ export function MarketPriceView({
       ) : isPrimeSetOverview && primeBreakdown && hasPrimeData ? (
         /* Prime Set + Component Parts Breakdown */
         <div>
-          {/* Highlight Summary Row: Full Set Price */}
           <div
             style={{
               display: 'grid',
@@ -243,7 +253,6 @@ export function MarketPriceView({
             </div>
           </div>
 
-          {/* Component Parts Trading Table */}
           <div style={{ overflowX: 'auto', marginBottom: 12 }}>
             <table style={styles.compTable}>
               <thead>
@@ -298,8 +307,108 @@ export function MarketPriceView({
             </table>
           </div>
         </div>
+      ) : singlePrice && singlePrice.isRankedItem ? (
+        /* Ranked Item (Mods & Arcanes): Singular (R0) & Maxed Side-by-Side */
+        <div>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+              gap: 14,
+              marginBottom: 12,
+            }}
+          >
+            {/* Singular / Unranked (Rank 0) Tier */}
+            <div
+              style={{
+                padding: '14px 16px',
+                background: '#141824',
+                border: '1px solid #243048',
+                borderRadius: 8,
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+                <span
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 700,
+                    padding: '2px 6px',
+                    borderRadius: 4,
+                    backgroundColor: 'rgba(79, 195, 247, 0.15)',
+                    color: '#4fc3f7',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  Unranked (R0 / Single)
+                </span>
+                <span style={{ fontSize: 11, color: '#8894b4' }}>
+                  {singlePrice.unrankedPrice?.sellersCount ?? 0} sellers
+                </span>
+              </div>
+
+              <div style={{ marginTop: 8 }}>
+                <div style={{ fontSize: 11, color: '#8ea4cc' }}>Buy Now (Lowest Sell)</div>
+                <div style={{ fontSize: 24, fontWeight: 800, color: theme.colors.gold, marginTop: 1 }}>
+                  {formatPlat(singlePrice.unrankedPrice?.minSell)}
+                </div>
+              </div>
+
+              <div style={{ marginTop: 8, paddingTop: 8, borderTop: '1px solid #1c2438', display: 'flex', justifyContent: 'space-between', fontSize: 11 }}>
+                <span style={{ color: '#8894b4' }}>Top Buy Offer:</span>
+                <strong style={{ color: theme.colors.green }}>
+                  {formatPlat(singlePrice.unrankedPrice?.maxBuy)}
+                </strong>
+              </div>
+            </div>
+
+            {/* Maxed (Rank Max) Tier */}
+            {singlePrice.maxedPrice && (
+              <div
+                style={{
+                  padding: '14px 16px',
+                  background: 'linear-gradient(135deg, rgba(255, 171, 0, 0.06) 0%, rgba(20, 24, 36, 1) 100%)',
+                  border: '1px solid rgba(255, 171, 0, 0.3)',
+                  borderRadius: 8,
+                }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      fontWeight: 700,
+                      padding: '2px 6px',
+                      borderRadius: 4,
+                      backgroundColor: 'rgba(255, 171, 0, 0.2)',
+                      color: '#ffab00',
+                      textTransform: 'uppercase',
+                    }}
+                  >
+                    Maxed (Rank {singlePrice.maxRank})
+                  </span>
+                  <span style={{ fontSize: 11, color: '#8894b4' }}>
+                    {singlePrice.maxedPrice.sellersCount} sellers
+                  </span>
+                </div>
+
+                <div style={{ marginTop: 8 }}>
+                  <div style={{ fontSize: 11, color: '#e5c07b' }}>Buy Now (Lowest Sell)</div>
+                  <div style={{ fontSize: 24, fontWeight: 800, color: theme.colors.gold, marginTop: 1 }}>
+                    {formatPlat(singlePrice.maxedPrice.minSell)}
+                  </div>
+                </div>
+
+                <div style={{ marginTop: 8, paddingTop: 8, borderTop: '1px solid #2a2c38', display: 'flex', justifyContent: 'space-between', fontSize: 11 }}>
+                  <span style={{ color: '#8894b4' }}>Top Buy Offer:</span>
+                  <strong style={{ color: theme.colors.green }}>
+                    {formatPlat(singlePrice.maxedPrice.maxBuy)}
+                  </strong>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
       ) : singlePrice && hasSingleData ? (
-        /* Single Item Market Card */
+        /* Standard Single Item Market Card */
         <div>
           <div
             style={{
@@ -375,4 +484,3 @@ export function MarketPriceView({
     </section>
   );
 }
-

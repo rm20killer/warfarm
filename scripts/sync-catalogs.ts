@@ -658,6 +658,7 @@ export async function syncCatalogs(): Promise<{
     .map((w: any) => ({
       id: w.name.toLowerCase().replace(/[^a-z0-9]+/g, '_'),
       name: w.name,
+      uniqueName: w.uniqueName,
       category: 'Warframe',
       subType: w.isPrime ? 'Prime Warframe' : 'Standard Warframe',
       health: w.health || 100,
@@ -699,6 +700,7 @@ export async function syncCatalogs(): Promise<{
       return {
         id: w.name.toLowerCase().replace(/[^a-z0-9]+/g, '_'),
         name: w.name,
+        uniqueName: w.uniqueName,
         category: 'Weapon',
         subType: `${subclass} (${slot})`,
         slot,
@@ -775,6 +777,7 @@ export async function syncCatalogs(): Promise<{
       return {
         id: mod.name.toLowerCase().replace(/[^a-z0-9]+/g, '_'),
         name: mod.name,
+        uniqueName: mod.uniqueName,
         type: mod.type || mod.compatName || 'Mod',
         polarity: cleanPolarity,
         rarity: cleanRarity,

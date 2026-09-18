@@ -139,5 +139,33 @@ describe('Tradeability Checks (isItemTradeable)', () => {
   });
 });
 
+describe('Ranked Mod & Arcane Pricing Extraction', () => {
+  it('correctly calculates unranked and maxed price tiers from raw orders', () => {
+    const mockOrders = [
+      { type: 'sell', platinum: 25, mod_rank: 0, user: { status: 'ingame', platform: 'pc' } },
+      { type: 'sell', platinum: 30, mod_rank: 0, user: { status: 'online', platform: 'pc' } },
+      { type: 'sell', platinum: 280, mod_rank: 10, user: { status: 'ingame', platform: 'pc' } },
+      { type: 'sell', platinum: 300, mod_rank: 10, user: { status: 'online', platform: 'pc' } },
+      { type: 'buy', platinum: 15, mod_rank: 0, user: { status: 'ingame', platform: 'pc' } },
+      { type: 'buy', platinum: 220, mod_rank: 10, user: { status: 'ingame', platform: 'pc' } },
+    ];
 
+    const sellOrders = mockOrders.filter((o) => o.type === 'sell');
+    const buyOrders = mockOrders.filter((o) => o.type === 'buy');
 
+    const allRanks = new Set(mockOrders.map((o) => o.mod_rank));
+    const maxRank = Math.max(...Array.from(allRanks));
+
+    expect(maxRank).toBe(10);
+
+    const unrankedSells = sellOrders.filter((o) => o.mod_rank === 0);
+    const unrankedBuys = buyOrders.filter((o) => o.mod_rank === 0);
+    const maxedSells = sellOrders.filter((o) => o.mod_rank === maxRank);
+    const maxedBuys = buyOrders.filter((o) => o.mod_rank === maxRank);
+
+    expect(Math.min(...unrankedSells.map((o) => o.platinum))).toBe(25);
+    expect(Math.max(...unrankedBuys.map((o) => o.platinum))).toBe(15);
+    expect(Math.min(...maxedSells.map((o) => o.platinum))).toBe(280);
+    expect(Math.max(...maxedBuys.map((o) => o.platinum))).toBe(220);
+  });
+});

@@ -2,6 +2,8 @@
  * Cloudflare Worker Entry Point for Warfarm Tracker
  * Handles:
  * 1. Warframe Market API Reverse Proxy with KV Caching (/api/wfm/*)
+ *    - Caches successful 200 OK responses in KV
+ *    - Caches 404 / untradeable / not-found responses in KV (negative caching) to prevent repeated requests
  * 2. Static Asset delivery & Single-Page Application (SPA) routing fallback
  */
 
@@ -21,6 +23,7 @@ export interface ExecutionContext {
 }
 
 const KV_TTL_SECONDS = 60 * 60 * 4; // 4 hours
+const KV_NEGATIVE_TTL_SECONDS = 60 * 60 * 24; // 24 hours for 404 / untradeable items
 
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
@@ -39,8 +42,16 @@ export default {
           const cachedBody = await env.WARFRAME_CACHE.get(cacheKey);
 
           if (cachedBody) {
+            let isNotFound = false;
+            try {
+              const parsed = JSON.parse(cachedBody);
+              isNotFound = Boolean(parsed && parsed.notFound);
+            } catch {
+              // Ignore JSON parse check
+            }
+
             return new Response(cachedBody, {
-              status: 200,
+              status: isNotFound ? 404 : 200,
               headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
@@ -66,6 +77,7 @@ export default {
         headers.set('Cache-Control', 'public, max-age=300, s-maxage=300');
         headers.set('X-KV-Cache', 'MISS');
 
+        // Handle successful 200 OK responses -> Cache in KV
         if (request.method === 'GET' && response.ok) {
           const responseBodyText = await response.text();
 
@@ -80,6 +92,29 @@ export default {
           return new Response(responseBodyText, {
             status: response.status,
             statusText: response.statusText,
+            headers,
+          });
+        }
+
+        // Handle 404 Not Found (item untradeable / no marketplace data) -> Cache negative result in KV
+        if (request.method === 'GET' && response.status === 404) {
+          const negativeBody = JSON.stringify({
+            error: 'Item not found on Warframe.market',
+            notFound: true,
+            data: [],
+          });
+
+          if (env.WARFRAME_CACHE) {
+            ctx.waitUntil(
+              env.WARFRAME_CACHE.put(cacheKey, negativeBody, {
+                expirationTtl: KV_NEGATIVE_TTL_SECONDS,
+              })
+            );
+          }
+
+          return new Response(negativeBody, {
+            status: 404,
+            statusText: 'Not Found',
             headers,
           });
         }
@@ -105,4 +140,3 @@ export default {
     return env.ASSETS.fetch(request);
   },
 };
-

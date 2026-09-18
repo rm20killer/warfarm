@@ -557,7 +557,7 @@ export function RelicFinderPage() {
                     </div>
                   ) : relic.vaulted ? (
                     <div style={styles.vaultNoticeSmall}>
-                      Vaulted — Not dropping in Star Chart rotations.
+                      Vaulted: Not dropping in Star Chart rotations.
                     </div>
                   ) : null}
                 </div>
