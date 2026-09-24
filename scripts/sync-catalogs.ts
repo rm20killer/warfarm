@@ -653,6 +653,33 @@ export async function syncCatalogs(): Promise<{
     fetchWikiCategoryResources(),
   ]);
 
+  const itemUniqueNameMap = new Map<string, string>();
+  for (const item of [
+    ...(wfRaw || []),
+    ...(pRaw || []),
+    ...(sRaw || []),
+    ...(mRaw || []),
+    ...(modsRaw || []),
+    ...(resRaw || []),
+    ...(miscRaw || []),
+    ...(gearRaw || []),
+    ...(sentinelsRaw || []),
+    ...(archwingRaw || []),
+    ...(arcanesRaw || []),
+    ...(relicsRaw || []),
+  ]) {
+    if (item && item.uniqueName && item.name) {
+      itemUniqueNameMap.set(item.uniqueName, item.name);
+    }
+  }
+
+  function resolveIngredientName(type: string): string {
+    if (!type) return '';
+    if (itemUniqueNameMap.has(type)) return itemUniqueNameMap.get(type)!;
+    const last = type.split('/').pop()?.replace(/Component|Blueprint|Item|Recipe/, '') || type;
+    return last.replace(/([A-Z])/g, ' $1').trim();
+  }
+
   const slimWf = wfRaw
     .filter((w: any) => !w.uniqueName?.includes('/Placeholder') && w.name)
     .map((w: any) => ({
@@ -680,7 +707,7 @@ export async function syncCatalogs(): Promise<{
       description: w.description || '',
       imageName: w.imageName || '',
       components: (w.components || []).map((c: any) => ({
-        partName: c.name,
+        partName: c.name || resolveIngredientName(c.uniqueName || '') || 'Component',
         itemCount: c.itemCount || 1,
         sourceText: c.drops && c.drops[0] ? c.drops[0].location : 'Crafted Blueprint',
         dropChance: c.drops && c.drops[0] ? c.drops[0].chance : undefined,
@@ -754,7 +781,7 @@ export async function syncCatalogs(): Promise<{
         description: w.description || '',
         imageName: w.imageName || '',
         components: (w.components || []).map((c: any) => ({
-          partName: c.name,
+          partName: c.name || resolveIngredientName(c.uniqueName || '') || 'Component',
           itemCount: c.itemCount || 1,
           sourceText:
             c.drops && c.drops[0] ? c.drops[0].location : 'In-Game Market / Dojo Blueprint',
@@ -897,12 +924,15 @@ export async function syncCatalogs(): Promise<{
         buildPrice: g.buildPrice || 0,
         buildTime: g.buildTime ? formatBuildTime(g.buildTime) : undefined,
         skipBuildTimePrice: g.skipBuildTimePrice || 0,
-        components: (g.components || []).map((c: any) => ({
-          partName: c.name,
-          itemCount: c.itemCount || 1,
-          sourceText: c.drops && c.drops[0] ? c.drops[0].location : 'Market / Blueprint',
-          dropChance: c.drops && c.drops[0] ? c.drops[0].chance : undefined,
-        })),
+        components: (g.components || []).map((c: any) => {
+          const partName = c.name || resolveIngredientName(c.uniqueName || '') || 'Component';
+          return {
+            partName,
+            itemCount: c.itemCount || 1,
+            sourceText: c.drops && c.drops[0] ? c.drops[0].location : 'Market / Blueprint',
+            dropChance: c.drops && c.drops[0] ? c.drops[0].chance : undefined,
+          };
+        }),
         drops: (g.drops || []).slice(0, 10).map((d: any) => ({
           location: d.location,
           chance: d.chance,
@@ -1157,17 +1187,19 @@ export async function syncCatalogs(): Promise<{
     const id = w.name.toLowerCase().replace(/[^a-z0-9]+/g, '_');
     const rawComponents = (w as any).components || [];
     const compList = rawComponents.filter((c: any) => {
-      const n = (c.name || '').toLowerCase();
+      const ingName = c.name || resolveIngredientName(c.uniqueName || '');
+      const n = (ingName || '').toLowerCase();
       return n !== 'blueprint' && n !== `${w.name.toLowerCase()} blueprint`;
     });
     const finalComponents = compList.length > 0 ? compList : rawComponents;
 
     const ingredients: WeaponCraftingIngredient[] = finalComponents.map((c: any) => {
+      const ingName = c.name || resolveIngredientName(c.uniqueName || '') || 'Component';
       const isComp = /barrel|receiver|stock|blade|hilt|handle|string|pouch|stars|limb|grip|link|guard|head|chassis|neuroptics|systems|motor|core/i.test(
-        c.name || ''
+        ingName
       );
       return {
-        name: c.name,
+        name: ingName,
         count: c.itemCount || 1,
         isComponent: isComp,
       };
@@ -1195,7 +1227,7 @@ export async function syncCatalogs(): Promise<{
       });
       const finalComps = compList.length > 0 ? compList : g.components;
       const ingredients: WeaponCraftingIngredient[] = finalComps.map((c: any) => ({
-        name: c.partName,
+        name: c.partName || 'Component',
         count: c.itemCount || 1,
         isComponent: /blueprint|barrel|receiver|stock|blade|hilt|handle|chassis|neuroptics|systems|motor|core|harness|wings/i.test(
           c.partName || ''
@@ -1218,18 +1250,6 @@ export async function syncCatalogs(): Promise<{
   fs.writeFileSync(path.join(GENERATED_DIR, 'weapon-recipes.json'), JSON.stringify(weaponRecipesMap, null, 2));
 
   // Process Warframe Foundry Component Recipes
-  const itemUniqueNameMap = new Map<string, string>();
-  for (const item of [...resRaw, ...miscRaw, ...wfRaw, ...pRaw, ...sRaw, ...mRaw]) {
-    if (item.uniqueName && item.name) {
-      itemUniqueNameMap.set(item.uniqueName, item.name);
-    }
-  }
-
-  function resolveIngredientName(type: string): string {
-    if (itemUniqueNameMap.has(type)) return itemUniqueNameMap.get(type)!;
-    const last = type.split('/').pop()?.replace(/Component|Blueprint|Item/, '') || type;
-    return last.replace(/([A-Z])/g, ' $1').trim();
-  }
 
   interface RecipeIngredientOutput {
     name: string;

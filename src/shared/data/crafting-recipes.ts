@@ -27,6 +27,7 @@ const foundryRecipesMap: Record<string, FoundryCraftingRecipe> = foundryRecipesJ
 export const CRAFTING_RECIPES: FoundryCraftingRecipe[] = Object.values(foundryRecipesMap);
 
 export function getCraftingRecipe(idOrName: string): FoundryCraftingRecipe | undefined {
+  if (!idOrName) return undefined;
   const normalized = idOrName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
   const lowerName = idOrName.toLowerCase().trim();
   const wfCatalog = warframeRecipesJson as Record<string, any>;
@@ -90,7 +91,7 @@ export function getCraftingRecipe(idOrName: string): FoundryCraftingRecipe | und
   }
 
   // 2. Weapon Recipes catalog (covers all 612 weapons)
-  const wpCatalog = weaponRecipesJson as Record<string, FoundryCraftingRecipe>;
+  const wpCatalog = weaponRecipesJson as unknown as Record<string, FoundryCraftingRecipe>;
   const weaponRecipe = wpCatalog[normalized] || wpCatalog[lowerName];
   if (weaponRecipe) {
     return weaponRecipe;

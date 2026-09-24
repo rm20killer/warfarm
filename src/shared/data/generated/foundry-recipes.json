@@ -56053,22 +56053,27 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Sapient Primary",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Hexenon",
         "count": 200,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 8000,
         "isComponent": false
       },
       {
+        "name": "Neurodes",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 925,
         "isComponent": false
       }
@@ -56082,6 +56087,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Braton",
         "count": 1,
         "isComponent": false
       }
@@ -56231,6 +56237,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Grn Bow",
         "count": 1,
         "isComponent": false
       }
@@ -56244,6 +56251,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Grn Bow",
         "count": 1,
         "isComponent": false
       }
@@ -56257,6 +56265,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Grn Kuva Lich Rifle Weapon",
         "count": 1,
         "isComponent": false
       }
@@ -56270,6 +56279,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Grn Kuva Lich Rifle Weapon",
         "count": 1,
         "isComponent": false
       }
@@ -56283,6 +56293,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Drakgoon",
         "count": 1,
         "isComponent": false
       }
@@ -56296,6 +56307,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Drakgoon",
         "count": 1,
         "isComponent": false
       }
@@ -56309,6 +56321,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Hek",
         "count": 1,
         "isComponent": false
       }
@@ -56322,6 +56335,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Hek",
         "count": 1,
         "isComponent": false
       }
@@ -56335,6 +56349,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Hind",
         "count": 1,
         "isComponent": false
       }
@@ -56348,6 +56363,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Hind",
         "count": 1,
         "isComponent": false
       }
@@ -56361,6 +56377,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Karak",
         "count": 1,
         "isComponent": false
       }
@@ -56374,6 +56391,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Karak",
         "count": 1,
         "isComponent": false
       }
@@ -56387,6 +56405,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Kohm",
         "count": 1,
         "isComponent": false
       }
@@ -56400,6 +56419,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Kohm",
         "count": 1,
         "isComponent": false
       }
@@ -56413,6 +56433,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Ogris",
         "count": 1,
         "isComponent": false
       }
@@ -56426,6 +56447,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Ogris",
         "count": 1,
         "isComponent": false
       }
@@ -56439,6 +56461,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Quartakk",
         "count": 1,
         "isComponent": false
       }
@@ -56452,6 +56475,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Quartakk",
         "count": 1,
         "isComponent": false
       }
@@ -56465,6 +56489,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Sobek",
         "count": 1,
         "isComponent": false
       }
@@ -56478,6 +56503,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Sobek",
         "count": 1,
         "isComponent": false
       }
@@ -56491,6 +56517,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Tonkor",
         "count": 1,
         "isComponent": false
       }
@@ -56504,6 +56531,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Tonkor",
         "count": 1,
         "isComponent": false
       }
@@ -56517,6 +56545,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Zarr",
         "count": 1,
         "isComponent": false
       }
@@ -56530,6 +56559,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Zarr",
         "count": 1,
         "isComponent": false
       }
@@ -56807,6 +56837,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Arca Plasmor",
         "count": 1,
         "isComponent": false
       }
@@ -56820,6 +56851,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Arca Plasmor",
         "count": 1,
         "isComponent": false
       }
@@ -56833,6 +56865,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Briefcase Launcher",
         "count": 1,
         "isComponent": false
       }
@@ -56846,6 +56879,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Briefcase Launcher",
         "count": 1,
         "isComponent": false
       }
@@ -56859,6 +56893,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Ferrox",
         "count": 1,
         "isComponent": false
       }
@@ -56872,6 +56907,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Ferrox",
         "count": 1,
         "isComponent": false
       }
@@ -56885,6 +56921,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Flux Rifle",
         "count": 1,
         "isComponent": false
       }
@@ -56898,6 +56935,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Flux Rifle",
         "count": 1,
         "isComponent": false
       }
@@ -56911,6 +56949,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Glaxion",
         "count": 1,
         "isComponent": false
       }
@@ -56924,6 +56963,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Glaxion",
         "count": 1,
         "isComponent": false
       }
@@ -56937,6 +56977,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Quanta",
         "count": 1,
         "isComponent": false
       }
@@ -56950,6 +56991,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Quanta",
         "count": 1,
         "isComponent": false
       }
@@ -56963,6 +57005,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Tetra",
         "count": 1,
         "isComponent": false
       }
@@ -56976,6 +57019,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Tetra",
         "count": 1,
         "isComponent": false
       }
@@ -56989,22 +57033,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 300,
         "isComponent": false
       },
       {
+        "name": "Tn Mod Quest Rifle Weapon",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 100,
         "isComponent": false
       },
       {
+        "name": "Neurodes",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 100,
         "isComponent": false
       }
@@ -57034,18 +57083,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Aklex",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Lex",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Lex",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Orokin Cell",
         "count": 1,
         "isComponent": false
       }
@@ -57139,6 +57192,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Brakk",
         "count": 1,
         "isComponent": false
       }
@@ -57152,6 +57206,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Brakk",
         "count": 1,
         "isComponent": false
       }
@@ -57165,6 +57220,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Kraken",
         "count": 1,
         "isComponent": false
       }
@@ -57178,6 +57234,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Kraken",
         "count": 1,
         "isComponent": false
       }
@@ -57191,6 +57248,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Nukor",
         "count": 1,
         "isComponent": false
       }
@@ -57204,6 +57262,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Nukor",
         "count": 1,
         "isComponent": false
       }
@@ -57217,6 +57276,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Seer",
         "count": 1,
         "isComponent": false
       }
@@ -57230,6 +57290,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Seer",
         "count": 1,
         "isComponent": false
       }
@@ -57243,6 +57304,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Stubba",
         "count": 1,
         "isComponent": false
       }
@@ -57256,6 +57318,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Stubba",
         "count": 1,
         "isComponent": false
       }
@@ -57285,16 +57348,19 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
+        "name": "Lato Vandal Barrel",
+        "count": 1,
+        "isComponent": true
+      },
+      {
+        "name": "Lato Vandal",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Lato Vandal Receiver",
         "count": 1,
-        "isComponent": false
-      },
-      {
-        "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -57306,16 +57372,19 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
+        "name": "Lato Vandal Barrel",
+        "count": 1,
+        "isComponent": true
+      },
+      {
+        "name": "Lato Vandal",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Lato Vandal Receiver",
         "count": 1,
-        "isComponent": false
-      },
-      {
-        "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -57327,20 +57396,24 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
+        "name": "Lex Prime Barrel",
+        "count": 1,
+        "isComponent": true
+      },
+      {
+        "name": "Lex Prime",
         "count": 1,
         "isComponent": false
       },
       {
-        "count": 1,
-        "isComponent": false
-      },
-      {
+        "name": "Orokin Cell",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Lex Prime Receiver",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -57352,20 +57425,24 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
+        "name": "Lex Prime Barrel",
+        "count": 1,
+        "isComponent": true
+      },
+      {
+        "name": "Lex Prime",
         "count": 1,
         "isComponent": false
       },
       {
-        "count": 1,
-        "isComponent": false
-      },
-      {
+        "name": "Orokin Cell",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Lex Prime Receiver",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -57505,20 +57582,24 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
+        "name": "Sicarus Prime Barrel",
+        "count": 1,
+        "isComponent": true
+      },
+      {
+        "name": "Sicarus Prime",
         "count": 1,
         "isComponent": false
       },
       {
-        "count": 1,
-        "isComponent": false
-      },
-      {
+        "name": "Orokin Cell",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Sicarus Prime Receiver",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -57530,20 +57611,24 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
+        "name": "Sicarus Prime Barrel",
+        "count": 1,
+        "isComponent": true
+      },
+      {
+        "name": "Sicarus Prime",
         "count": 1,
         "isComponent": false
       },
       {
-        "count": 1,
-        "isComponent": false
-      },
-      {
+        "name": "Orokin Cell",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Sicarus Prime Receiver",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -57587,6 +57672,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Cycron",
         "count": 1,
         "isComponent": false
       }
@@ -57600,6 +57686,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Cycron",
         "count": 1,
         "isComponent": false
       }
@@ -57613,6 +57700,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Detron",
         "count": 1,
         "isComponent": false
       }
@@ -57626,6 +57714,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Detron",
         "count": 1,
         "isComponent": false
       }
@@ -57639,6 +57728,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Briefcase Akimbo Pistol",
         "count": 1,
         "isComponent": false
       }
@@ -57652,6 +57742,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Briefcase Akimbo Pistol",
         "count": 1,
         "isComponent": false
       }
@@ -57665,6 +57756,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Plinx",
         "count": 1,
         "isComponent": false
       }
@@ -57678,6 +57770,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp B E Plinx",
         "count": 1,
         "isComponent": false
       }
@@ -57691,6 +57784,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Igniter Pistol",
         "count": 1,
         "isComponent": false
       }
@@ -57704,6 +57798,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Igniter Pistol",
         "count": 1,
         "isComponent": false
       }
@@ -57741,22 +57836,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Tip One",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       },
       {
+        "name": "Tear Azurite",
         "count": 10,
         "isComponent": false
       }
@@ -57850,22 +57950,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Tip Four",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Breath Of The Eidolon",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Marquise Veridos",
         "count": 6,
         "isComponent": false
       }
@@ -57879,22 +57984,27 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Dark Sword Dagger Hybrid",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Dual Skana",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Mutagen Mass",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Rubedo",
         "count": 1200,
         "isComponent": false
       }
@@ -57908,22 +58018,27 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Dark Sword Dagger Hybrid",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Dual Skana",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Mutagen Mass",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Rubedo",
         "count": 1200,
         "isComponent": false
       }
@@ -57937,22 +58052,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Tip Five",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 40,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 45,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Marquise Veridos",
         "count": 8,
         "isComponent": false
       }
@@ -57998,22 +58118,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Tip Eleven",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 45,
         "isComponent": false
       },
       {
+        "name": "Marquise Veridos",
         "count": 7,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 25,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       }
@@ -58027,22 +58152,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I Status I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       }
@@ -58056,22 +58186,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I Status I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       }
@@ -58085,22 +58220,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I Status I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -58114,22 +58254,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I Status I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -58143,22 +58288,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I Status I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Goopolla Spleen",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -58172,22 +58322,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I Status I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Goopolla Spleen",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -58201,22 +58356,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Balance Speed I I Status I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Breath Of The Eidolon",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       }
@@ -58230,22 +58390,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Balance Speed I I Status I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Breath Of The Eidolon",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       }
@@ -58259,22 +58424,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I Status I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Charc Electroplax",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -58288,22 +58458,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I Status I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Charc Electroplax",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -58317,22 +58492,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Balance Damage I I Status I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Breath Of The Eidolon",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       }
@@ -58346,22 +58526,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Balance Damage I I Status I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Breath Of The Eidolon",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       }
@@ -58391,22 +58576,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Khut-Khut Venom Sac",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       }
@@ -58420,22 +58610,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Yogwun Stomach",
         "count": 5,
         "isComponent": false
       }
@@ -58449,22 +58644,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Yogwun Stomach",
         "count": 5,
         "isComponent": false
       }
@@ -58478,22 +58678,27 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Grineer Jet Polearm",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Detonite Injector",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Rubedo",
         "count": 600,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 5000,
         "isComponent": false
       }
@@ -58507,22 +58712,27 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Grineer Jet Polearm",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Detonite Injector",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Rubedo",
         "count": 600,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 5000,
         "isComponent": false
       }
@@ -58536,22 +58746,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Handle Five",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Fersteel Alloy",
         "count": 40,
         "isComponent": false
       },
       {
+        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Rubedo",
         "count": 600,
         "isComponent": false
       }
@@ -58565,22 +58780,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Handle Nine",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       },
       {
+        "name": "Iradite",
         "count": 25,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       },
       {
+        "name": "Rubedo",
         "count": 650,
         "isComponent": false
       }
@@ -58594,22 +58814,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Tip Six",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 60,
         "isComponent": false
       },
       {
+        "name": "Esher Devar",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 45,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 20,
         "isComponent": false
       }
@@ -58623,22 +58848,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Handle Six",
+        "count": 1,
+        "isComponent": true
+      },
+      {
+        "name": "Breath Of The Eidolon",
         "count": 1,
         "isComponent": false
       },
       {
-        "count": 1,
-        "isComponent": false
-      },
-      {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       }
@@ -58652,6 +58882,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Ghoul Saw",
         "count": 1,
         "isComponent": false
       }
@@ -58665,6 +58896,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Kuva Ghoul Saw",
         "count": 1,
         "isComponent": false
       }
@@ -58678,6 +58910,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Grn Kuva Lich Scythe",
         "count": 1,
         "isComponent": false
       }
@@ -58691,6 +58924,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Grn Kuva Lich Scythe",
         "count": 1,
         "isComponent": false
       }
@@ -58704,22 +58938,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Handle Three",
+        "count": 1,
+        "isComponent": true
+      },
+      {
+        "name": "Cetus Wisp",
         "count": 1,
         "isComponent": false
       },
       {
-        "count": 1,
-        "isComponent": false
-      },
-      {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 700,
         "isComponent": false
       }
@@ -58733,22 +58972,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Handle Two",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Coprite Alloy",
         "count": 60,
         "isComponent": false
       },
       {
+        "name": "Cryotic",
         "count": 750,
         "isComponent": false
       },
       {
+        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       }
@@ -58778,22 +59022,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Tip Three",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Cetus Wisp",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Marquise Veridos",
         "count": 6,
         "isComponent": false
       }
@@ -58839,22 +59088,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Tip Two",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Iradite",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       },
       {
+        "name": "Tear Azurite",
         "count": 10,
         "isComponent": false
       }
@@ -58868,22 +59122,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 850,
         "isComponent": false
       },
       {
+        "name": "Handle One",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       },
       {
+        "name": "Iradite",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       }
@@ -58897,22 +59156,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Infested Handle One",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Fish Scales",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Iradite",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 1100,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 30,
         "isComponent": false
       }
@@ -58926,22 +59190,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Infested Handle One",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Fish Scales",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Iradite",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 1100,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 30,
         "isComponent": false
       }
@@ -58955,22 +59224,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Infested Handle Two",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Coprite Alloy",
         "count": 30,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 1100,
         "isComponent": false
       }
@@ -58984,22 +59258,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Infested Handle Two",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Coprite Alloy",
         "count": 30,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 1100,
         "isComponent": false
       }
@@ -59141,22 +59420,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Tip Ten",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Esher Devar",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 50,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       }
@@ -59186,22 +59470,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Mawfish Bones",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       }
@@ -59215,22 +59504,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Yogwun Stomach",
         "count": 5,
         "isComponent": false
       }
@@ -59244,22 +59538,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Yogwun Stomach",
         "count": 5,
         "isComponent": false
       }
@@ -59313,22 +59612,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Handle Four",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 900,
         "isComponent": false
       }
@@ -59342,22 +59646,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Tip Nine",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Condroc Wing",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 60,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Tear Azurite",
         "count": 10,
         "isComponent": false
       }
@@ -59371,22 +59680,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Handle Ten",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Ferrite",
         "count": 850,
         "isComponent": false
       },
       {
+        "name": "Fish Scales",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 25,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       }
@@ -59416,22 +59730,27 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 3250,
         "isComponent": false
       },
       {
+        "name": "Umbra Katana",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Orokin Cell",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Oxium",
         "count": 75,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 100,
         "isComponent": false
       }
@@ -59477,10 +59796,12 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Hammer Shield",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 1,
         "isComponent": false
       }
@@ -59494,10 +59815,12 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Hammer Shield",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 1,
         "isComponent": false
       }
@@ -59511,6 +59834,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Big Slash",
         "count": 1,
         "isComponent": false
       }
@@ -59524,6 +59848,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Big Slash",
         "count": 1,
         "isComponent": false
       }
@@ -59537,6 +59862,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Briefcase Scythe",
         "count": 1,
         "isComponent": false
       }
@@ -59550,6 +59876,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Briefcase Scythe",
         "count": 1,
         "isComponent": false
       }
@@ -59563,6 +59890,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Briefcase2 H Katana",
         "count": 1,
         "isComponent": false
       }
@@ -59576,6 +59904,7 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Crp Briefcase2 H Katana",
         "count": 1,
         "isComponent": false
       }
@@ -59589,22 +59918,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I Crit I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       }
@@ -59618,22 +59952,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I Crit I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       }
@@ -59647,22 +59986,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I Crit I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -59676,22 +60020,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I Crit I I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -59705,22 +60054,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I Crit I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Goopolla Spleen",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -59734,22 +60088,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Speed I Crit I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Goopolla Spleen",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -59763,22 +60122,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Balance Speed I I Crit I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Breath Of The Eidolon",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       }
@@ -59792,22 +60156,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Balance Speed I I Crit I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Breath Of The Eidolon",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       }
@@ -59821,22 +60190,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I Crit I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Charc Electroplax",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -59850,22 +60224,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Balance Damage I Crit I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Charc Electroplax",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -59879,22 +60258,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Balance Damage I I Crit I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Breath Of The Eidolon",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       }
@@ -59908,22 +60292,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Balance Damage I I Crit I",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Breath Of The Eidolon",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       }
@@ -59985,22 +60374,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Speed Buff Armor Debuff",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 1500,
         "isComponent": false
       },
       {
+        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -60014,22 +60408,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Speed Buff Armor Debuff",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 1500,
         "isComponent": false
       },
       {
+        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -60043,18 +60442,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Mining Laser C",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 40,
         "isComponent": false
       },
       {
+        "name": "Marquise Veridos",
         "count": 2,
         "isComponent": false
       }
@@ -60068,18 +60471,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Mining Laser C",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 40,
         "isComponent": false
       },
       {
+        "name": "Marquise Veridos",
         "count": 2,
         "isComponent": false
       }
@@ -60093,22 +60500,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Liset Air Support",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 1200,
         "isComponent": false
       },
       {
+        "name": "Morphics",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 700,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2000,
         "isComponent": false
       }
@@ -60122,22 +60534,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Liset Air Support",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 1200,
         "isComponent": false
       },
       {
+        "name": "Morphics",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 700,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2000,
         "isComponent": false
       }
@@ -60151,10 +60568,12 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Night Common Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Threshcone",
         "count": 4,
         "isComponent": false
       }
@@ -60168,10 +60587,12 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Night Common Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Threshcone",
         "count": 4,
         "isComponent": false
       }
@@ -60185,18 +60606,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Ancient Healer Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60210,18 +60635,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Ancient Healer Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60235,22 +60664,27 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Antiserum Injector Fragment",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Infested Syringe",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fieldron",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 6000,
         "isComponent": false
       },
       {
+        "name": "Tellurium",
         "count": 2,
         "isComponent": false
       }
@@ -60264,22 +60698,27 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Antiserum Injector Fragment",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Infested Syringe",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fieldron",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 6000,
         "isComponent": false
       },
       {
+        "name": "Tellurium",
         "count": 2,
         "isComponent": false
       }
@@ -60293,10 +60732,12 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Day Common Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Sunlight Threshcone",
         "count": 4,
         "isComponent": false
       }
@@ -60310,10 +60751,12 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Day Common Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Sunlight Threshcone",
         "count": 4,
         "isComponent": false
       }
@@ -60327,14 +60770,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Health Debuff Key",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 250,
         "isComponent": false
       },
       {
+        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60348,14 +60794,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Health Debuff Key",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 250,
         "isComponent": false
       },
       {
+        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60369,22 +60818,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1500,
         "isComponent": false
       },
       {
+        "name": "Armor Buff Speed Debuff",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -60398,22 +60852,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1500,
         "isComponent": false
       },
       {
+        "name": "Armor Buff Speed Debuff",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -60427,18 +60886,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Charger Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60452,18 +60915,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Charger Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60477,14 +60944,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Cipher",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 400,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 400,
         "isComponent": false
       }
@@ -60498,14 +60968,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Day Un Common Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Sunlight Dragonlily",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Sunlight Threshcone",
         "count": 2,
         "isComponent": false
       }
@@ -60519,14 +60992,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Day Un Common Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Sunlight Dragonlily",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Sunlight Threshcone",
         "count": 2,
         "isComponent": false
       }
@@ -60540,18 +61016,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Clem Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60565,18 +61045,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Clem Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60590,22 +61074,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Revive Buff",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Cryotic",
         "count": 1500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -60619,22 +61108,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Revive Buff",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Cryotic",
         "count": 1500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -60648,18 +61142,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Corrupted Bombard Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60673,18 +61171,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Corrupted Bombard Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60698,18 +61200,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Corrupted Lancer Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60723,18 +61229,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Corrupted Lancer Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60748,22 +61258,27 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Platinum Spectre",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Gallium",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 5000,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 1000,
         "isComponent": false
       }
@@ -60777,22 +61292,27 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Platinum Spectre",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Gallium",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 5000,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 1000,
         "isComponent": false
       }
@@ -60806,22 +61326,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Night Rare Fish Bait B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Goopolla Spleen",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Murkray Liver",
         "count": 5,
         "isComponent": false
       }
@@ -60835,22 +61360,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Night Rare Fish Bait B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Goopolla Spleen",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Murkray Liver",
         "count": 5,
         "isComponent": false
       }
@@ -60864,14 +61394,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Shield Debuff Key",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 250,
         "isComponent": false
       },
       {
+        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60885,14 +61418,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Shield Debuff Key",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 250,
         "isComponent": false
       },
       {
+        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60906,14 +61442,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Damage Debuff Key",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 250,
         "isComponent": false
       },
       {
+        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60927,14 +61466,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Damage Debuff Key",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 250,
         "isComponent": false
       },
       {
+        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60948,14 +61490,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Credit Chip Medium",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 5,
         "isComponent": false
       }
@@ -60969,14 +61514,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Credit Chip Medium",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 5,
         "isComponent": false
       }
@@ -60990,22 +61538,27 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Mining Laser B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Esher Devar",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       },
       {
+        "name": "Tear Azurite",
         "count": 1,
         "isComponent": false
       }
@@ -61019,22 +61572,27 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Mining Laser B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Esher Devar",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       },
       {
+        "name": "Tear Azurite",
         "count": 1,
         "isComponent": false
       }
@@ -61048,18 +61606,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Fomorian Negator",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Cryotic",
         "count": 300,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 3500,
         "isComponent": false
       },
       {
+        "name": "Omega Isotope",
         "count": 4,
         "isComponent": false
       }
@@ -61073,18 +61635,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Fomorian Negator",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Cryotic",
         "count": 300,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 3500,
         "isComponent": false
       },
       {
+        "name": "Omega Isotope",
         "count": 4,
         "isComponent": false
       }
@@ -61098,22 +61664,27 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Gold Spectre",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 1000,
         "isComponent": false
       }
@@ -61127,22 +61698,27 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Gold Spectre",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 1000,
         "isComponent": false
       }
@@ -61156,22 +61732,27 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Flare Blue",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Goopolla Spleen",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Karkina Antenna",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       }
@@ -61185,22 +61766,27 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Flare Blue",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Goopolla Spleen",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Karkina Antenna",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       }
@@ -61214,22 +61800,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Night Legendary Fish Bait",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Cuthol Tendrils",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Norg Brain",
         "count": 5,
         "isComponent": false
       }
@@ -61243,22 +61834,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Night Legendary Fish Bait",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Cuthol Tendrils",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Norg Brain",
         "count": 5,
         "isComponent": false
       }
@@ -61272,22 +61868,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Self Heal",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Threshcone",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Sunlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Sunlight Threshcone",
         "count": 15,
         "isComponent": false
       }
@@ -61301,22 +61902,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Self Heal",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Threshcone",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Sunlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Sunlight Threshcone",
         "count": 15,
         "isComponent": false
       }
@@ -61330,14 +61936,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Speed Debuff Key",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 250,
         "isComponent": false
       },
       {
+        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -61351,14 +61960,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Speed Debuff Key",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 250,
         "isComponent": false
       },
       {
+        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -61372,14 +61984,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Credit Chip Small",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 5,
         "isComponent": false
       }
@@ -61393,14 +62008,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Credit Chip Small",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 5,
         "isComponent": false
       }
@@ -61414,18 +62032,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Spear Fishing Spear",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 1200,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 10,
         "isComponent": false
       }
@@ -61439,18 +62061,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Spear Fishing Spear",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 1200,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 10,
         "isComponent": false
       }
@@ -61464,22 +62090,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Rare Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Dragonlily",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Sunlight Dragonlily",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Sunlight Jadeleaf",
         "count": 1,
         "isComponent": false
       }
@@ -61493,22 +62124,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Rare Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Dragonlily",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Sunlight Dragonlily",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Sunlight Jadeleaf",
         "count": 1,
         "isComponent": false
       }
@@ -61522,18 +62158,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Map Marker",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 200,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 100,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 150,
         "isComponent": false
       }
@@ -61547,18 +62187,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Map Marker",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 200,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 100,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 150,
         "isComponent": false
       }
@@ -61572,14 +62216,17 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Angler Vision",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Iradite",
         "count": 10,
         "isComponent": false
       }
@@ -61593,14 +62240,17 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Angler Vision",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Iradite",
         "count": 10,
         "isComponent": false
       }
@@ -61614,18 +62264,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Moa Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -61639,18 +62293,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Moa Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -61664,22 +62322,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Both Rare Fish Bait A",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Goopolla Spleen",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -61693,22 +62356,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Both Rare Fish Bait A",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Goopolla Spleen",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -61722,22 +62390,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Specter Summon Knave Loki",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Dusklight Sarracenia",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Moonlight Dragonlily",
         "count": 6,
         "isComponent": false
       },
       {
+        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Sunlight Threshcone",
         "count": 12,
         "isComponent": false
       }
@@ -61751,22 +62424,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Specter Summon Knave Loki",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Dusklight Sarracenia",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Moonlight Dragonlily",
         "count": 6,
         "isComponent": false
       },
       {
+        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Sunlight Threshcone",
         "count": 12,
         "isComponent": false
       }
@@ -61780,22 +62458,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Night Rare Fish Bait A",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Karkina Antenna",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Sharrac Teeth",
         "count": 5,
         "isComponent": false
       }
@@ -61809,22 +62492,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Night Rare Fish Bait A",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Karkina Antenna",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Sharrac Teeth",
         "count": 5,
         "isComponent": false
       }
@@ -61838,14 +62526,17 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Mining Laser",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2000,
         "isComponent": false
       }
@@ -61859,14 +62550,17 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Mining Laser",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2000,
         "isComponent": false
       }
@@ -61880,14 +62574,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Credit Chip Large",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 5,
         "isComponent": false
       }
@@ -61901,14 +62598,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Credit Chip Large",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 5,
         "isComponent": false
       }
@@ -61922,14 +62622,17 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Generic Fish Bait",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       }
@@ -61943,14 +62646,17 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Generic Fish Bait",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       }
@@ -61964,22 +62670,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Spear Fishing Spear C",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 100,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 80,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 70,
         "isComponent": false
       }
@@ -61993,22 +62704,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Spear Fishing Spear C",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Coprite Alloy",
         "count": 100,
         "isComponent": false
       },
       {
+        "name": "Fersteel Alloy",
         "count": 80,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 70,
         "isComponent": false
       }
@@ -62022,14 +62738,17 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Soft Touch",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Iradite",
         "count": 10,
         "isComponent": false
       }
@@ -62043,22 +62762,27 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Silver Spectre",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 5000,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 750,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 5000,
         "isComponent": false
       }
@@ -62072,22 +62796,27 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Silver Spectre",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 5000,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 750,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 5000,
         "isComponent": false
       }
@@ -62101,22 +62830,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Infested Bait Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Chitinous Husk",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Infected Palpators",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Pulsating Tubercles",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Severed Bile Sac",
         "count": 1,
         "isComponent": false
       }
@@ -62130,22 +62864,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Infested Bait Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Chitinous Husk",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Infected Palpators",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Pulsating Tubercles",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Severed Bile Sac",
         "count": 1,
         "isComponent": false
       }
@@ -62159,14 +62898,17 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Argon Crystal",
         "count": 3,
         "isComponent": false
       },
       {
+        "name": "Infested Irradiated Bait Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Pherliac Pods",
         "count": 1,
         "isComponent": false
       }
@@ -62180,14 +62922,17 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Argon Crystal",
         "count": 3,
         "isComponent": false
       },
       {
+        "name": "Infested Irradiated Bait Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Pherliac Pods",
         "count": 1,
         "isComponent": false
       }
@@ -62201,10 +62946,12 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Infested Fish Bait B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fass Residue",
         "count": 5,
         "isComponent": false
       }
@@ -62218,10 +62965,12 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Infested Fish Bait B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fass Residue",
         "count": 5,
         "isComponent": false
       }
@@ -62235,10 +62984,12 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Orokin Fish Bait B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Vome Residue",
         "count": 5,
         "isComponent": false
       }
@@ -62252,10 +63003,12 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Orokin Fish Bait B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Vome Residue",
         "count": 5,
         "isComponent": false
       }
@@ -62269,18 +63022,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Razorback Cipher",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Cryptographic Alu",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Gallium",
         "count": 3,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 1500,
         "isComponent": false
       }
@@ -62294,18 +63051,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Razorback Cipher",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Cryptographic Alu",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Gallium",
         "count": 3,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 1500,
         "isComponent": false
       }
@@ -62319,22 +63080,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Cloaking Buff",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Cryotic",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 1500,
         "isComponent": false
       },
       {
+        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -62348,22 +63114,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Cloaking Buff",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Cryotic",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 1500,
         "isComponent": false
       },
       {
+        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -62377,18 +63148,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Roller Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -62402,18 +63177,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Roller Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -62427,18 +63206,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Shield Drone Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -62452,18 +63235,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Shield Drone Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -62477,22 +63264,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Robofish Spear B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -62506,22 +63298,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Robofish Spear B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -62535,14 +63332,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Syndicate Team Ammo Ten Pack",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 300,
         "isComponent": false
       }
@@ -62556,14 +63356,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Syndicate Team Ammo Ten Pack",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 300,
         "isComponent": false
       }
@@ -62577,14 +63380,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Clan Team Ammo",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 600,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 600,
         "isComponent": false
       }
@@ -62598,14 +63404,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Clan Team Ammo",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 600,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 600,
         "isComponent": false
       }
@@ -62619,14 +63428,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Hundred Team Ammo Totem",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 7200,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 900,
         "isComponent": false
       }
@@ -62640,14 +63452,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Hundred Team Ammo Totem",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 7200,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 900,
         "isComponent": false
       }
@@ -62661,14 +63476,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Syndicate Team Energy Ten Pack",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 3000,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 500,
         "isComponent": false
       }
@@ -62682,14 +63500,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Syndicate Team Energy Ten Pack",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 3000,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 500,
         "isComponent": false
       }
@@ -62703,14 +63524,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 150,
         "isComponent": false
       },
       {
+        "name": "Clan Team Energy",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 600,
         "isComponent": false
       }
@@ -62724,14 +63548,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 150,
         "isComponent": false
       },
       {
+        "name": "Clan Team Energy",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 600,
         "isComponent": false
       }
@@ -62745,14 +63572,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Hundred Team Energy Totem",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 9000,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 900,
         "isComponent": false
       }
@@ -62766,14 +63596,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Hundred Team Energy Totem",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 9000,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 900,
         "isComponent": false
       }
@@ -62787,14 +63620,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Syndicate Team Heal Ten Pack",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 600,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 4000,
         "isComponent": false
       }
@@ -62808,14 +63644,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Syndicate Team Heal Ten Pack",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 600,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 4000,
         "isComponent": false
       }
@@ -62829,14 +63668,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Clan Team Heal",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 600,
         "isComponent": false
       }
@@ -62850,14 +63692,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Clan Team Heal",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 600,
         "isComponent": false
       }
@@ -62871,14 +63716,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Syndicate Team Shield Ten Pack",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       }
@@ -62892,14 +63740,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Syndicate Team Shield Ten Pack",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       }
@@ -62913,14 +63764,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 150,
         "isComponent": false
       },
       {
+        "name": "Clan Team Shield",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 600,
         "isComponent": false
       }
@@ -62934,14 +63788,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 150,
         "isComponent": false
       },
       {
+        "name": "Clan Team Shield",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 600,
         "isComponent": false
       }
@@ -62955,10 +63812,12 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Hundred Team Shield Totem",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 14400,
         "isComponent": false
       }
@@ -62972,10 +63831,12 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Hundred Team Shield Totem",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 14400,
         "isComponent": false
       }
@@ -62989,18 +63850,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Stalker Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -63014,18 +63879,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Stalker Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -63039,22 +63908,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Robofish Spear C",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -63068,22 +63942,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Robofish Spear C",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -63097,22 +63976,27 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Advanced Nosam Cutter",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Mining Laser Solaris",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Marquise Veridos",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Travocyte Alloy",
         "count": 30,
         "isComponent": false
       }
@@ -63126,22 +64010,27 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Advanced Nosam Cutter",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Mining Laser Solaris",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Marquise Veridos",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Travocyte Alloy",
         "count": 30,
         "isComponent": false
       }
@@ -63155,22 +64044,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Specter Summon Feyarch Oberon",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Frostleaf",
         "count": 8,
         "isComponent": false
       },
       {
+        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Sunlight Jadeleaf",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Vestan Moss",
         "count": 12,
         "isComponent": false
       }
@@ -63184,22 +64078,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Specter Summon Feyarch Oberon",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Frostleaf",
         "count": 8,
         "isComponent": false
       },
       {
+        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Sunlight Jadeleaf",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Vestan Moss",
         "count": 12,
         "isComponent": false
       }
@@ -63213,18 +64112,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Surge Eximus Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -63238,18 +64141,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Surge Eximus Ball",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -63263,14 +64170,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Night Un Common Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Dragonlily",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Moonlight Threshcone",
         "count": 2,
         "isComponent": false
       }
@@ -63284,14 +64194,17 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Night Un Common Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Dragonlily",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Moonlight Threshcone",
         "count": 2,
         "isComponent": false
       }
@@ -63305,22 +64218,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Spear Fishing Spear B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -63334,22 +64252,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Spear Fishing Spear B",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
+        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -63363,22 +64286,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Specter Summon Orphid Saryn",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Lunar Pitcher",
         "count": 6,
         "isComponent": false
       },
       {
+        "name": "Moonlight Jadeleaf",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Ruk's Claw",
         "count": 6,
         "isComponent": false
       }
@@ -63392,22 +64320,27 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
+        "name": "Specter Summon Orphid Saryn",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Lunar Pitcher",
         "count": 6,
         "isComponent": false
       },
       {
+        "name": "Moonlight Jadeleaf",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Ruk's Claw",
         "count": 6,
         "isComponent": false
       }
@@ -63421,22 +64354,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Both Uncommon Fish Bait",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Fish Oil",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 10,
         "isComponent": false
       }
@@ -63450,22 +64388,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Both Uncommon Fish Bait",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Fish Meat",
         "count": 20,
         "isComponent": false
       },
       {
+        "name": "Fish Oil",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 10,
         "isComponent": false
       }
@@ -63479,14 +64422,17 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Bronze Spectre",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 5000,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 7500,
         "isComponent": false
       }
@@ -63500,14 +64446,17 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
+        "name": "Bronze Spectre",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 5000,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 7500,
         "isComponent": false
       }
@@ -63521,22 +64470,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Catbrow Vampire Disinfect",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Karkina Antenna",
         "count": 3,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Norg Brain",
         "count": 3,
         "isComponent": false
       }
@@ -63550,22 +64504,27 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
+        "name": "Catbrow Vampire Disinfect",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Karkina Antenna",
         "count": 3,
         "isComponent": false
       },
       {
+        "name": "Maprico",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Nistlepod",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Norg Brain",
         "count": 3,
         "isComponent": false
       }
@@ -63579,22 +64538,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Solo Rare Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Dragonlily",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Moonlight Jadeleaf",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Sunlight Dragonlily",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Sunlight Jadeleaf",
         "count": 4,
         "isComponent": false
       }
@@ -63608,22 +64572,27 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Solo Rare Antitoxin",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Moonlight Dragonlily",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Moonlight Jadeleaf",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Sunlight Dragonlily",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Sunlight Jadeleaf",
         "count": 4,
         "isComponent": false
       }
@@ -63637,22 +64606,27 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
+        "name": "Carrier Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 400,
         "isComponent": false
       },
       {
+        "name": "Control Module",
         "count": 3,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 1500,
         "isComponent": false
       }
@@ -63666,24 +64640,29 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Prime Carrier Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Prime Carrier Carapace",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Prime Carrier Cerebrum",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Orokin Cell",
         "count": 6,
         "isComponent": false
       },
       {
+        "name": "Prime Carrier Systems",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -63695,24 +64674,29 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Prime Carrier Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Prime Carrier Carapace",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Prime Carrier Cerebrum",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Orokin Cell",
         "count": 6,
         "isComponent": false
       },
       {
+        "name": "Prime Carrier Systems",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -63724,22 +64708,27 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Deth Cube Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 400,
         "isComponent": false
       },
       {
+        "name": "Control Module",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 200,
         "isComponent": false
       }
@@ -63753,22 +64742,27 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 600,
         "isComponent": false
       },
       {
+        "name": "Argon Crystal",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Arc Trap Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Plastids",
         "count": 350,
         "isComponent": false
       },
       {
+        "name": "Polymer Bundle",
         "count": 500,
         "isComponent": false
       }
@@ -63782,22 +64776,27 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Infested Sentinel Weapon",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 3500,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Mutagen Mass",
         "count": 6,
         "isComponent": false
       },
       {
+        "name": "Salvage",
         "count": 30000,
         "isComponent": false
       }
@@ -63811,22 +64810,27 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
+        "name": "Helios Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 5000,
         "isComponent": false
       },
       {
+        "name": "Fieldron",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Oxium",
         "count": 300,
         "isComponent": false
       }
@@ -63840,24 +64844,29 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Prime Helios Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Prime Helios Carapace",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Prime Helios Cerebrum",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Orokin Cell",
         "count": 6,
         "isComponent": false
       },
       {
+        "name": "Prime Helios Systems",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -63869,24 +64878,29 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Prime Helios Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Prime Helios Carapace",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Prime Helios Cerebrum",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Orokin Cell",
         "count": 6,
         "isComponent": false
       },
       {
+        "name": "Prime Helios Systems",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -63898,22 +64912,27 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Axidrol Alloy",
         "count": 45,
         "isComponent": false
       },
       {
+        "name": "Radar Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Goblite Tears",
         "count": 15,
         "isComponent": false
       },
       {
+        "name": "Longwinder Lathe Coagulant",
         "count": 10,
         "isComponent": false
       },
       {
+        "name": "Scrap",
         "count": 40,
         "isComponent": false
       }
@@ -63927,22 +64946,27 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Shade Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 400,
         "isComponent": false
       },
       {
+        "name": "Control Module",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 200,
         "isComponent": false
       }
@@ -63956,18 +64980,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
+        "name": "Tn Sentinel Cross",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Ferrite",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Neurodes",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Rubedo",
         "count": 200,
         "isComponent": false
       }
@@ -63981,22 +65009,27 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
+        "name": "Alloy Plate",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Wyrm Sentinel",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Circuits",
         "count": 400,
         "isComponent": false
       },
       {
+        "name": "Control Module",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 200,
         "isComponent": false
       }
@@ -64010,24 +65043,29 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
+        "name": "Support Archwing",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Support Archwing Chassis",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Nitain Extract",
         "count": 4,
         "isComponent": false
       },
       {
+        "name": "Support Archwing Systems",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Support Archwing Wings",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -64039,24 +65077,29 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
+        "name": "Demolition Archwing",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Control Module",
         "count": 5,
         "isComponent": false
       },
       {
+        "name": "Demolition Archwing Chassis",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Demolition Archwing Systems",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Demolition Archwing Wings",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -64068,24 +65111,29 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
+        "name": "Stealth Archwing",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Control Module",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Stealth Archwing Chassis",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Stealth Archwing Systems",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Stealth Archwing Wings",
         "count": 1,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -64097,18 +65145,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Argon Crystal",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Utility Unlocker",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Orokin Cell",
         "count": 1,
         "isComponent": false
       }
@@ -64122,18 +65174,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Argon Crystal",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Utility Unlocker",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 2,
         "isComponent": false
       },
       {
+        "name": "Orokin Cell",
         "count": 1,
         "isComponent": false
       }
@@ -64147,18 +65203,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Weapon Utility Unlocker",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Exceptional Sentient Core",
+        "count": 1,
+        "isComponent": true
+      },
+      {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "count": 1,
-        "isComponent": false
-      },
-      {
+        "name": "Orokin Cell",
         "count": 1,
         "isComponent": false
       }
@@ -64172,18 +65232,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Weapon Utility Unlocker",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Exceptional Sentient Core",
+        "count": 1,
+        "isComponent": true
+      },
+      {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "count": 1,
-        "isComponent": false
-      },
-      {
+        "name": "Orokin Cell",
         "count": 1,
         "isComponent": false
       }
@@ -64197,20 +65261,24 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Atmo Systems",
         "count": 5,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Heavy Weapon Catalyst",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Gyromag Systems",
         "count": 10,
-        "isComponent": false
+        "isComponent": true
       },
       {
+        "name": "Repeller Systems",
         "count": 2,
-        "isComponent": false
+        "isComponent": true
       }
     ]
   },
@@ -64222,18 +65290,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Argon Crystal",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Forma Stance",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nitain Extract",
         "count": 5,
         "isComponent": false
       }
@@ -64247,18 +65319,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Argon Crystal",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Forma Stance",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Nitain Extract",
         "count": 5,
         "isComponent": false
       }
@@ -64272,22 +65348,27 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Umbra Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Kuva",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 1100,
         "isComponent": false
       },
       {
+        "name": "Neurodes",
         "count": 1,
         "isComponent": false
       }
@@ -64301,22 +65382,27 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
+        "name": "Umbra Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
+        "name": "Kuva",
         "count": 500,
         "isComponent": false
       },
       {
+        "name": "Nano Spores",
         "count": 1100,
         "isComponent": false
       },
       {
+        "name": "Neurodes",
         "count": 1,
         "isComponent": false
       }

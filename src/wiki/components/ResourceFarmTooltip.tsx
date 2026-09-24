@@ -12,14 +12,15 @@ interface ResourceFarmTooltipProps {
   parentItemName?: string;
 }
 
-export function ResourceFarmTooltip({ ingredientName, count, isComponent, parentItemName }: ResourceFarmTooltipProps) {
+export function ResourceFarmTooltip({ ingredientName = '', count = 1, isComponent, parentItemName }: ResourceFarmTooltipProps) {
+  const safeIngredientName = ingredientName || 'Unknown Component';
   const targetItemName = isComponent && parentItemName
-    ? resolveComponentFullName(ingredientName, parentItemName)
-    : ingredientName;
+    ? resolveComponentFullName(safeIngredientName, parentItemName)
+    : safeIngredientName;
   const [isOpen, setIsOpen] = useState(false);
   const closeTimerRef = useRef<NodeJS.Timeout | null>(null);
   const navigate = useNavigate();
-  const guide = getResourceGuide(ingredientName);
+  const guide = ingredientName ? getResourceGuide(ingredientName) : undefined;
 
   useEffect(() => {
     return () => {

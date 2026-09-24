@@ -614,8 +614,9 @@ function ensureObsidianVaultSetup(targetDir: string): void {
           '| Component / Resource | Quantity | Source / Acquisition | Drop Chance |',
           '| :--- | :---: | :--- | :---: |',
           ...comps.map((c) => {
-            const isBlueprint = c.partName.toLowerCase() === 'blueprint';
-            const link = isBlueprint ? `**${wp.name} Blueprint**` : `**[[${c.partName}]]**`;
+            const pName = c.partName || 'Component';
+            const isBlueprint = pName.toLowerCase() === 'blueprint';
+            const link = isBlueprint ? `**${wp.name} Blueprint**` : `**[[${pName}]]**`;
             const count = c.itemCount ? c.itemCount.toLocaleString() : '1';
             const cleanSource = (c.sourceText || '-').replace(/\(([^)]+)\)/g, '([[$1]])');
             return `| ${link} | ${count} | ${cleanSource} | ${c.dropChance !== undefined ? `${c.dropChance}%` : '-'} |`;

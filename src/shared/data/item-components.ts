@@ -113,8 +113,11 @@ const COMPONENT_SUFFIXES: Array<{ suffix: string; cleanType: string; isWarframeP
  * full canonical item name relative to the parent item (e.g. "Alternox Prime Barrel").
  */
 export function resolveComponentFullName(partOrIngName: string, parentItemName: string): string {
-  const p = partOrIngName.trim();
-  const parent = parentItemName.trim();
+  if (!partOrIngName) return parentItemName || '';
+  const p = (partOrIngName || '').trim();
+  const parent = (parentItemName || '').trim();
+  if (!p) return parent;
+  if (!parent) return p;
   const pLower = p.toLowerCase();
   const parentLower = parent.toLowerCase();
 
@@ -162,6 +165,7 @@ export function resolveComponentFullName(partOrIngName: string, parentItemName: 
  * Retrieves all component parts and blueprints belonging to a parent item (e.g. "Alternox Prime" or "Rhino Prime").
  */
 export function getParentItemComponents(parentItemName: string, currentItemName?: string): SiblingComponent[] {
+  if (!parentItemName) return [];
   const parentLower = parentItemName.trim().toLowerCase();
   const siblingsMap = new Map<string, SiblingComponent>();
 

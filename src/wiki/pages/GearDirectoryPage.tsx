@@ -273,7 +273,7 @@ export function GearDirectoryPage() {
         (item.locationNode && item.locationNode.toLowerCase().includes(q)) ||
         (item.planet && item.planet.toLowerCase().includes(q)) ||
         item.description.toLowerCase().includes(q) ||
-        (item.components && item.components.some((c) => c.partName.toLowerCase().includes(q) || c.sourceText.toLowerCase().includes(q)))
+        (item.components && item.components.some((c) => (c.partName || '').toLowerCase().includes(q) || (c.sourceText || '').toLowerCase().includes(q)))
       );
     });
 

@@ -25,22 +25,27 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Speed Buff Armor Debuff",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Plastids",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 1500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Synthula",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -60,18 +65,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Mining Laser C",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fersteel Alloy",
         "itemCount": 40,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Marquise Veridos",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -91,22 +100,27 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Liset Air Support",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 1200,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Morphics",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Plastids",
         "itemCount": 700,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2000,
         "sourceText": "Market / Blueprint"
       }
@@ -139,10 +153,12 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Night Common Antitoxin",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Threshcone",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       }
@@ -162,18 +178,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Ancient Healer Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -193,22 +213,27 @@
     "skipBuildTimePrice": 35,
     "components": [
       {
+        "partName": "Antiserum Injector Fragment",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Infested Syringe",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fieldron",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 6000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Tellurium",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -318,10 +343,12 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Day Common Antitoxin",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Threshcone",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       }
@@ -354,14 +381,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Health Debuff Key",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 250,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Void Traces",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       }
@@ -438,22 +468,27 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 1500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Armor Buff Speed Debuff",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Plastids",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Synthula",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -505,18 +540,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Charger Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -536,14 +575,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Cipher",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 400,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 400,
         "sourceText": "Market / Blueprint"
       }
@@ -563,14 +605,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Day Un Common Antitoxin",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Dragonlily",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Threshcone",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -590,18 +635,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Clem Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -621,22 +670,27 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Revive Buff",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Cryotic",
         "itemCount": 1500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Synthula",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -707,18 +761,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Corrupted Bombard Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -751,18 +809,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Corrupted Lancer Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -782,22 +844,27 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
+        "partName": "Platinum Spectre",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Gallium",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 5000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Plastids",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       }
@@ -868,22 +935,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Night Rare Fish Bait B",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fish Meat",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Goopolla Spleen",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Maprico",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Murkray Liver",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -903,14 +975,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Shield Debuff Key",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 250,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Void Traces",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       }
@@ -1052,14 +1127,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Damage Debuff Key",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 250,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Void Traces",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       }
@@ -1079,14 +1157,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Credit Chip Medium",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -1140,22 +1221,27 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Mining Laser B",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Esher Devar",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Pyrotic Alloy",
         "itemCount": 40,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Tear Azurite",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -1175,18 +1261,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Fomorian Negator",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Cryotic",
         "itemCount": 300,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 3500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Omega Isotope",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       }
@@ -1206,22 +1296,27 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Gold Spectre",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Plastids",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       }
@@ -1254,22 +1349,27 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Flare Blue",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Goopolla Spleen",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Grokdrul",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Karkina Antenna",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Maprico",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -1308,22 +1408,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Night Legendary Fish Bait",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Cuthol Tendrils",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fish Meat",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Maprico",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Norg Brain",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -1382,22 +1487,27 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Self Heal",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Jadeleaf",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Threshcone",
         "itemCount": 15,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Jadeleaf",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Threshcone",
         "itemCount": 15,
         "sourceText": "Market / Blueprint"
       }
@@ -1430,14 +1540,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Speed Debuff Key",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 250,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Void Traces",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       }
@@ -1495,14 +1608,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Credit Chip Small",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -1688,18 +1804,22 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Spear Fishing Spear",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 1200,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Grokdrul",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nistlepod",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       }
@@ -1719,22 +1839,27 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Rare Antitoxin",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Dragonlily",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Jadeleaf",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Dragonlily",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Jadeleaf",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -1754,18 +1879,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Map Marker",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 200,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Plastids",
         "itemCount": 100,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 150,
         "sourceText": "Market / Blueprint"
       }
@@ -1804,14 +1933,17 @@
     "skipBuildTimePrice": 25,
     "components": [
       {
+        "partName": "Angler Vision",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Iradite",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       }
@@ -1914,18 +2046,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Moa Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -1945,22 +2081,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Both Rare Fish Bait A",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fish Meat",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Goopolla Spleen",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Mortus Horn",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Tralok Eyes",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -2038,22 +2179,27 @@
     "skipBuildTimePrice": 0,
     "components": [
       {
+        "partName": "Specter Summon Knave Loki",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Dusklight Sarracenia",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Dragonlily",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Morphics",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Threshcone",
         "itemCount": 12,
         "sourceText": "Market / Blueprint"
       }
@@ -2073,22 +2219,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Night Rare Fish Bait A",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fish Meat",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Karkina Antenna",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Maprico",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sharrac Teeth",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -2108,14 +2259,17 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Mining Laser",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2000,
         "sourceText": "Market / Blueprint"
       }
@@ -2315,14 +2469,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Credit Chip Large",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -2342,14 +2499,17 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Generic Fish Bait",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fish Meat",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nistlepod",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       }
@@ -2369,22 +2529,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Spear Fishing Spear C",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Coprite Alloy",
         "itemCount": 100,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fersteel Alloy",
         "itemCount": 80,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Grokdrul",
         "itemCount": 55,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nistlepod",
         "itemCount": 70,
         "sourceText": "Market / Blueprint"
       }
@@ -2404,14 +2569,17 @@
     "skipBuildTimePrice": 25,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Soft Touch",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Iradite",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       }
@@ -2431,22 +2599,27 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Silver Spectre",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 5000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 750,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 5000,
         "sourceText": "Market / Blueprint"
       }
@@ -2479,22 +2652,27 @@
     "skipBuildTimePrice": 0,
     "components": [
       {
+        "partName": "Infested Bait Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Chitinous Husk",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Infected Palpators",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Pulsating Tubercles",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Severed Bile Sac",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -2565,14 +2743,17 @@
     "skipBuildTimePrice": 0,
     "components": [
       {
+        "partName": "Argon Crystal",
         "itemCount": 3,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Infested Irradiated Bait Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Pherliac Pods",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -2630,10 +2811,12 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
+        "partName": "Infested Fish Bait B",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fass Residue",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -2653,10 +2836,12 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
+        "partName": "Orokin Fish Bait B",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Vome Residue",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -2689,18 +2874,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Razorback Cipher",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Cryptographic Alu",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Gallium",
         "itemCount": 3,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 1500,
         "sourceText": "Market / Blueprint"
       }
@@ -2720,22 +2909,27 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Cloaking Buff",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Cryotic",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 1500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Synthula",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -2794,18 +2988,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Roller Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -2902,18 +3100,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Shield Drone Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -2946,22 +3148,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Robofish Spear B",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Grokdrul",
         "itemCount": 35,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nistlepod",
         "itemCount": 55,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Pyrotic Alloy",
         "itemCount": 40,
         "sourceText": "Market / Blueprint"
       }
@@ -3039,14 +3246,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Syndicate Team Ammo Ten Pack",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 300,
         "sourceText": "Market / Blueprint"
       }
@@ -3066,14 +3276,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Clan Team Ammo",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 600,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 600,
         "sourceText": "Market / Blueprint"
       }
@@ -3093,14 +3306,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Hundred Team Ammo Totem",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 7200,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 900,
         "sourceText": "Market / Blueprint"
       }
@@ -3120,14 +3336,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Syndicate Team Energy Ten Pack",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 3000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       }
@@ -3147,14 +3366,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 150,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Clan Team Energy",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 600,
         "sourceText": "Market / Blueprint"
       }
@@ -3174,14 +3396,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Hundred Team Energy Totem",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 9000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 900,
         "sourceText": "Market / Blueprint"
       }
@@ -3201,14 +3426,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Syndicate Team Heal Ten Pack",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 600,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 4000,
         "sourceText": "Market / Blueprint"
       }
@@ -3228,14 +3456,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Clan Team Heal",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 600,
         "sourceText": "Market / Blueprint"
       }
@@ -3268,14 +3499,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Syndicate Team Shield Ten Pack",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -3295,14 +3529,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 150,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Clan Team Shield",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 600,
         "sourceText": "Market / Blueprint"
       }
@@ -3322,10 +3559,12 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Hundred Team Shield Totem",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 14400,
         "sourceText": "Market / Blueprint"
       }
@@ -3371,18 +3610,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Stalker Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -3453,22 +3696,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Robofish Spear C",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Grokdrul",
         "itemCount": 35,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nistlepod",
         "itemCount": 55,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Pyrotic Alloy",
         "itemCount": 40,
         "sourceText": "Market / Blueprint"
       }
@@ -3488,22 +3736,27 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Advanced Nosam Cutter",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Mining Laser Solaris",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Marquise Veridos",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Travocyte Alloy",
         "itemCount": 30,
         "sourceText": "Market / Blueprint"
       }
@@ -3523,22 +3776,27 @@
     "skipBuildTimePrice": 0,
     "components": [
       {
+        "partName": "Specter Summon Feyarch Oberon",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Frostleaf",
         "itemCount": 8,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Morphics",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Jadeleaf",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Vestan Moss",
         "itemCount": 12,
         "sourceText": "Market / Blueprint"
       }
@@ -3558,18 +3816,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Surge Eximus Ball",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 2500,
         "sourceText": "Market / Blueprint"
       }
@@ -3640,14 +3902,17 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Night Un Common Antitoxin",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Dragonlily",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Threshcone",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -3710,22 +3975,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Spear Fishing Spear B",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Grokdrul",
         "itemCount": 35,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nistlepod",
         "itemCount": 55,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Pyrotic Alloy",
         "itemCount": 40,
         "sourceText": "Market / Blueprint"
       }
@@ -3745,22 +4015,27 @@
     "skipBuildTimePrice": 0,
     "components": [
       {
+        "partName": "Specter Summon Orphid Saryn",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Lunar Pitcher",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Jadeleaf",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Morphics",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ruk's Claw",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       }
@@ -3780,22 +4055,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Both Uncommon Fish Bait",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fish Meat",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fish Oil",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Maprico",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nistlepod",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       }
@@ -3853,14 +4133,17 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
+        "partName": "Bronze Spectre",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 5000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 7500,
         "sourceText": "Market / Blueprint"
       }
@@ -3893,22 +4176,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Catbrow Vampire Disinfect",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Karkina Antenna",
         "itemCount": 3,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Maprico",
         "itemCount": 15,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nistlepod",
         "itemCount": 15,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Norg Brain",
         "itemCount": 3,
         "sourceText": "Market / Blueprint"
       }
@@ -3966,22 +4254,27 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Solo Rare Antitoxin",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Dragonlily",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Moonlight Jadeleaf",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Dragonlily",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Sunlight Jadeleaf",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       }
@@ -4201,22 +4494,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 1000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Carrier Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 400,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Control Module",
         "itemCount": 3,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 1500,
         "sourceText": "Market / Blueprint"
       }
@@ -4236,22 +4534,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Prime Carrier Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Carrier Carapace",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Carrier Cerebrum",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Carrier Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4271,22 +4574,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Deth Cube Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 400,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Control Module",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 200,
         "sourceText": "Market / Blueprint"
       }
@@ -4306,22 +4614,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Prime Dethcube Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Dethcube Carapace",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Dethcube Cerebrum",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Dethcube Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4341,22 +4654,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 600,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Argon Crystal",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Arc Trap Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Plastids",
         "itemCount": 350,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Polymer Bundle",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       }
@@ -4376,22 +4694,27 @@
     "skipBuildTimePrice": 35,
     "components": [
       {
+        "partName": "Infested Sentinel Weapon",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 3500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Forma",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Mutagen Mass",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Salvage",
         "itemCount": 30000,
         "sourceText": "Market / Blueprint"
       }
@@ -4411,22 +4734,27 @@
     "skipBuildTimePrice": 35,
     "components": [
       {
+        "partName": "Helios Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 5000,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Fieldron",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Forma",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Oxium",
         "itemCount": 300,
         "sourceText": "Market / Blueprint"
       }
@@ -4446,22 +4774,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Prime Helios Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Helios Carapace",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Helios Cerebrum",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Helios Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4481,22 +4814,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Empyrean Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Empyrean Sentinel Carapace",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Empyrean Sentinel Cerebrum",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nullstones",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Empyrean Sentinel Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4516,22 +4854,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Nautilus Prime Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nautilus Prime Carapace",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nautilus Prime Cerebrum",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nautilus Prime Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4551,22 +4894,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Axidrol Alloy",
         "itemCount": 45,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Radar Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Goblite Tears",
         "itemCount": 15,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Longwinder Lathe Coagulant",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Scrap",
         "itemCount": 40,
         "sourceText": "Market / Blueprint"
       }
@@ -4599,22 +4947,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Shade Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 400,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Control Module",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 200,
         "sourceText": "Market / Blueprint"
       }
@@ -4634,22 +4987,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Shade Prime Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Shade Prime Carapace",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Shade Prime Cerebrum",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Shade Prime Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4669,18 +5027,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
+        "partName": "Tn Sentinel Cross",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Ferrite",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Neurodes",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Rubedo",
         "itemCount": 200,
         "sourceText": "Market / Blueprint"
       }
@@ -4700,22 +5062,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Wyrm Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 400,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Control Module",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 200,
         "sourceText": "Market / Blueprint"
       }
@@ -4735,22 +5102,27 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
+        "partName": "Prime Wyrm Sentinel",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Wyrm Carapace",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Wyrm Cerebrum",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Wyrm Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4770,22 +5142,27 @@
     "skipBuildTimePrice": 50,
     "components": [
       {
+        "partName": "Support Archwing",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Support Archwing Chassis",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nitain Extract",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Support Archwing Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Support Archwing Wings",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4805,22 +5182,27 @@
     "skipBuildTimePrice": 50,
     "components": [
       {
+        "partName": "Demolition Archwing",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Control Module",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Demolition Archwing Chassis",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Demolition Archwing Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Demolition Archwing Wings",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4840,22 +5222,27 @@
     "skipBuildTimePrice": 50,
     "components": [
       {
+        "partName": "Stealth Archwing",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Control Module",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Stealth Archwing Chassis",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Stealth Archwing Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Stealth Archwing Wings",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4875,22 +5262,27 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
+        "partName": "Standard Archwing",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Circuits",
         "itemCount": 300,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Standard Archwing Chassis",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Standard Archwing Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Standard Archwing Wings",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4910,22 +5302,27 @@
     "skipBuildTimePrice": 50,
     "components": [
       {
+        "partName": "Prime Archwing",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Archwing Chassis",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Archwing Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Prime Archwing Wings",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4945,18 +5342,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Argon Crystal",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Utility Unlocker",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Forma",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -4976,18 +5377,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Weapon Utility Unlocker",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Exceptional Sentient Core",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Forma",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -5071,18 +5476,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Atmo Systems",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Heavy Weapon Catalyst",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Gyromag Systems",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Repeller Systems",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -5102,22 +5511,27 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Orokin Catalyst",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Control Module",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Gallium",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Morphics",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -5137,22 +5551,27 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Orokin Reactor",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Morphics",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Neural Sensors",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Neurodes",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -5172,18 +5591,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Argon Crystal",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Forma Stance",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Forma",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nitain Extract",
         "itemCount": 5,
         "sourceText": "Market / Blueprint"
       }
@@ -5203,22 +5626,27 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
+        "partName": "Umbra Forma",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Forma",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Kuva",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 1100,
         "sourceText": "Market / Blueprint"
       },
       {
+        "partName": "Neurodes",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }

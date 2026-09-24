@@ -54,22 +54,27 @@
     "imageName": "Ash.png",
     "components": [
       {
+        "partName": "Ash",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ash Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ash Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ash Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -131,22 +136,27 @@
     "imageName": "AshPrime.png",
     "components": [
       {
+        "partName": "Ash Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ash Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ash Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ash Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -208,22 +218,27 @@
     "imageName": "Atlas.png",
     "components": [
       {
+        "partName": "Brawler",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Brawler Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Brawler Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Brawler Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -286,22 +301,27 @@
     "imageName": "AtlasPrime.png",
     "components": [
       {
+        "partName": "Atlas Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Atlas Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Atlas Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Atlas Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -363,22 +383,27 @@
     "imageName": "Banshee.png",
     "components": [
       {
+        "partName": "Banshee",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Banshee Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Banshee Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Banshee Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -439,22 +464,27 @@
     "imageName": "BansheePrime.png",
     "components": [
       {
+        "partName": "Banshee Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Banshee Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Banshee Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Banshee Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -515,22 +545,27 @@
     "imageName": "Pacifist.png",
     "components": [
       {
+        "partName": "Pacifist",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Pacifist Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Pacifist Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Pacifist Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -591,22 +626,27 @@
     "imageName": "BaruukPrime.png",
     "components": [
       {
+        "partName": "Baruuk Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Baruuk Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Baruuk Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Baruuk Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -668,22 +708,27 @@
     "imageName": "ThanoMech.png",
     "components": [
       {
+        "partName": "Thanotech",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Bonewidow Capsule",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Bonewidow Casing",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Bonewidow Engine",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Bonewidow Weapon Pod",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -744,22 +789,27 @@
     "imageName": "Caliban.png",
     "components": [
       {
+        "partName": "Sentient",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Sentient Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Sentient Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 12,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Sentient Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -820,22 +870,27 @@
     "imageName": "CalibanPrime.png",
     "components": [
       {
+        "partName": "Caliban Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Caliban Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Caliban Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Caliban Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -898,22 +953,27 @@
     "imageName": "Chroma.png",
     "components": [
       {
+        "partName": "Chroma",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Chroma Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Chroma Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Chroma Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "V O L T Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -976,22 +1036,27 @@
     "imageName": "ChromaPrime.png",
     "components": [
       {
+        "partName": "Chroma Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Chroma Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Chroma Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Chroma Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1051,22 +1116,27 @@
     "imageName": "Citrine.png",
     "components": [
       {
+        "partName": "Geode",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Geode Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Geode Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Geode Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1129,22 +1199,27 @@
     "imageName": "CitrinePrime.png",
     "components": [
       {
+        "partName": "Citrine Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Citrine Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Citrine Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Citrine Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1206,22 +1281,27 @@
     "imageName": "Frumentarius.png",
     "components": [
       {
+        "partName": "Cyte09",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Cyte09 Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Cyte09 Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Cyte09 Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1283,22 +1363,27 @@
     "imageName": "Dagath.png",
     "components": [
       {
+        "partName": "Dagath",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Dagath Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Dagath Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Dagath Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1358,22 +1443,27 @@
     "imageName": "Pagemaster.png",
     "components": [
       {
+        "partName": "Pagemaster",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Pagemaster Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Pagemaster Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Pagemaster Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1434,22 +1524,27 @@
     "imageName": "Ember.png",
     "components": [
       {
+        "partName": "Ember",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ember Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ember Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ember Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1511,22 +1606,27 @@
     "imageName": "EmberPrime.png",
     "components": [
       {
+        "partName": "Ember Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ember Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ember Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ember Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1588,18 +1688,22 @@
     "imageName": "Equinox.png",
     "components": [
       {
+        "partName": "Anima Animus",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Animus",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Forma",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Anima",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1661,22 +1765,27 @@
     "imageName": "EquinoxPrime.png",
     "components": [
       {
+        "partName": "Equinox Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Equinox Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Equinox Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Equinox Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1737,22 +1846,27 @@
     "imageName": "Excalibur.png",
     "components": [
       {
+        "partName": "Excalibur",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Excalibur Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Excalibur Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Excalibur Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1873,22 +1987,27 @@
     "imageName": "ExcaliburUmbra.png",
     "components": [
       {
+        "partName": "Alloy Plate",
         "itemCount": 1600,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Excalibur Umbra",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Kuva",
         "itemCount": 60,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nano Spores",
         "itemCount": 1200,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -1950,22 +2069,27 @@
     "imageName": "Inkblot.png",
     "components": [
       {
+        "partName": "Follie",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Follie Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Follie Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Follie Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2027,22 +2151,27 @@
     "imageName": "Frost.png",
     "components": [
       {
+        "partName": "Frost",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Frost Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Frost Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Frost Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2103,22 +2232,27 @@
     "imageName": "FrostPrime.png",
     "components": [
       {
+        "partName": "Frost Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Frost Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Frost Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Frost Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2182,22 +2316,27 @@
     "imageName": "Gara.png",
     "components": [
       {
+        "partName": "Glass",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Glass Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Glass Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Glass Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2259,22 +2398,27 @@
     "imageName": "GaraPrime.png",
     "components": [
       {
+        "partName": "Gara Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gara Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gara Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gara Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2336,22 +2480,27 @@
     "imageName": "Garuda.png",
     "components": [
       {
+        "partName": "Garuda",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Garuda Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Kuva",
         "itemCount": 3500,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Garuda Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Garuda Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2412,22 +2561,27 @@
     "imageName": "GarudaPrime.png",
     "components": [
       {
+        "partName": "Garuda Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Garuda Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Garuda Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Garuda Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2488,22 +2642,27 @@
     "imageName": "Gauss.png",
     "components": [
       {
+        "partName": "Gauss",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gauss Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gauss Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gauss Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2564,22 +2723,27 @@
     "imageName": "GaussPrime.png",
     "components": [
       {
+        "partName": "Gauss Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gauss Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gauss Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gauss Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2642,22 +2806,27 @@
     "imageName": "Grendel.png",
     "components": [
       {
+        "partName": "Grendel",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Grendel Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Grendel Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Grendel Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2721,22 +2890,27 @@
     "imageName": "GrendelPrime.png",
     "components": [
       {
+        "partName": "Grendel Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Grendel Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Grendel Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Grendel Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2797,22 +2971,27 @@
     "imageName": "Gyre.png",
     "components": [
       {
+        "partName": "Gyre",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gyre Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gyre Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gyre Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2874,22 +3053,27 @@
     "imageName": "GyrePrime.png",
     "components": [
       {
+        "partName": "Gyre Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gyre Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gyre Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gyre Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -2953,22 +3137,27 @@
     "imageName": "Harrow.png",
     "components": [
       {
+        "partName": "Priest",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Priest Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Kuva",
         "itemCount": 2000,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Priest Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Priest Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3031,22 +3220,27 @@
     "imageName": "HarrowPrime.png",
     "components": [
       {
+        "partName": "Harrow Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Harrow Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Harrow Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Harrow Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3195,22 +3389,27 @@
     "imageName": "IronFrame.png",
     "components": [
       {
+        "partName": "Ironframe",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ironframe Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ironframe Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ironframe Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3271,22 +3470,27 @@
     "imageName": "HildrynPrime.png",
     "components": [
       {
+        "partName": "Hildryn Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Hildryn Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Hildryn Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Hildryn Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3348,22 +3552,27 @@
     "imageName": "Hydroid.png",
     "components": [
       {
+        "partName": "Hydroid",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Hydroid Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Hydroid Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Hydroid Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3426,22 +3635,27 @@
     "imageName": "HydroidPrime.png",
     "components": [
       {
+        "partName": "Hydroid Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Hydroid Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Hydroid Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Hydroid Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3502,22 +3716,27 @@
     "imageName": "Inaros.png",
     "components": [
       {
+        "partName": "Mummy",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mummy Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mummy Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mummy Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3580,22 +3799,27 @@
     "imageName": "InarosPrime.png",
     "components": [
       {
+        "partName": "Inaros Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Inaros Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Inaros Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Inaros Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3657,22 +3881,27 @@
     "imageName": "Ivara.png",
     "components": [
       {
+        "partName": "Ranger",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ranger Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ranger Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ranger Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3733,22 +3962,27 @@
     "imageName": "IvaraPrime.png",
     "components": [
       {
+        "partName": "Ivara Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ivara Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ivara Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Ivara Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3812,22 +4046,27 @@
     "imageName": "Jade.png",
     "components": [
       {
+        "partName": "Choir",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Choir Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Choir Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Choir Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3890,22 +4129,27 @@
     "imageName": "Khora.png",
     "components": [
       {
+        "partName": "Khora",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Khora Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Khora Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Khora Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -3966,22 +4210,27 @@
     "imageName": "KhoraPrime.png",
     "components": [
       {
+        "partName": "Khora Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Khora Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Khora Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Khora Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4043,22 +4292,27 @@
     "imageName": "Koumei.png",
     "components": [
       {
+        "partName": "Koumei",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Koumei Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Fate Pearl",
         "itemCount": 30,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Koumei Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Koumei Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4118,22 +4372,27 @@
     "imageName": "PaxDuviricus.png",
     "components": [
       {
+        "partName": "Pax Duviricus",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Pax Duviricus Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Pax Duviricus Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Pathos Clamp",
         "itemCount": 10,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Pax Duviricus Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4194,22 +4453,27 @@
     "imageName": "Lavos.png",
     "components": [
       {
+        "partName": "Lavos",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Lavos Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Lavos Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Lavos Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4270,22 +4534,27 @@
     "imageName": "LavosPrime.png",
     "components": [
       {
+        "partName": "Lavos Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Lavos Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Lavos Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Lavos Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4348,22 +4617,27 @@
     "imageName": "Limbo.png",
     "components": [
       {
+        "partName": "Magician",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Magician Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Magician Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Magician Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4425,22 +4699,27 @@
     "imageName": "LimboPrime.png",
     "components": [
       {
+        "partName": "Limbo Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Limbo Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Limbo Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Limbo Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4501,22 +4780,27 @@
     "imageName": "Loki.png",
     "components": [
       {
+        "partName": "L O K I",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "L O K I Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "L O K I Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "L O K I Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4579,22 +4863,27 @@
     "imageName": "LokiPrime.png",
     "components": [
       {
+        "partName": "Loki Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Loki Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Loki Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Loki Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4655,22 +4944,27 @@
     "imageName": "Mag.png",
     "components": [
       {
+        "partName": "Mag",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mag Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mag Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mag Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4733,22 +5027,27 @@
     "imageName": "MagPrime.png",
     "components": [
       {
+        "partName": "Mag Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mag Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mag Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mag Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4809,22 +5108,27 @@
     "imageName": "Mesa.png",
     "components": [
       {
+        "partName": "Gunslinger",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gunslinger Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gunslinger Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Gunslinger Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4886,22 +5190,27 @@
     "imageName": "MesaPrime.png",
     "components": [
       {
+        "partName": "Mesa Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mesa Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mesa Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mesa Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -4963,22 +5272,27 @@
     "imageName": "Mirage.png",
     "components": [
       {
+        "partName": "Argon Crystal",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Harlequin",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Harlequin Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Harlequin Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Harlequin Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5041,22 +5355,27 @@
     "imageName": "MiragePrime.png",
     "components": [
       {
+        "partName": "Mirage Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mirage Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mirage Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mirage Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5118,22 +5437,27 @@
     "imageName": "Narin.png",
     "components": [
       {
+        "partName": "Narin",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Narin Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Narin Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Narin Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5195,22 +5519,27 @@
     "imageName": "Nekros.png",
     "components": [
       {
+        "partName": "Necro",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Necro Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Necro Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Necro Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5272,22 +5601,27 @@
     "imageName": "NekrosPrime.png",
     "components": [
       {
+        "partName": "Nekros Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nekros Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nekros Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nekros Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5348,22 +5682,27 @@
     "imageName": "Nezha.png",
     "components": [
       {
+        "partName": "Nezha",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nezha Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nezha Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nezha Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5425,22 +5764,27 @@
     "imageName": "NezhaPrime.png",
     "components": [
       {
+        "partName": "Nezha Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nezha Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nezha Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nezha Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5501,22 +5845,27 @@
     "imageName": "Nidus.png",
     "components": [
       {
+        "partName": "Nidus",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nidus Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Kuva",
         "itemCount": 2000,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nidus Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nidus Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5577,22 +5926,27 @@
     "imageName": "NidusPrime.png",
     "components": [
       {
+        "partName": "Nidus Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nidus Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nidus Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nidus Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5653,22 +6007,27 @@
     "imageName": "Nokko.png",
     "components": [
       {
+        "partName": "Nokko",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nokko Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nokko Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nokko Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5730,22 +6089,27 @@
     "imageName": "Nova.png",
     "components": [
       {
+        "partName": "Nova",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nova Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nova Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nova Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5807,22 +6171,27 @@
     "imageName": "NovaPrime.png",
     "components": [
       {
+        "partName": "Nova Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nova Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nova Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nova Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5884,22 +6253,27 @@
     "imageName": "Nyx.png",
     "components": [
       {
+        "partName": "Nyx",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nyx Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nyx Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nyx Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -5961,22 +6335,27 @@
     "imageName": "NyxPrime.png",
     "components": [
       {
+        "partName": "Nyx Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nyx Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nyx Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nyx Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6037,22 +6416,27 @@
     "imageName": "Oberon.png",
     "components": [
       {
+        "partName": "Paladin",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Paladin Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Paladin Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Paladin Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6114,22 +6498,27 @@
     "imageName": "OberonPrime.png",
     "components": [
       {
+        "partName": "Oberon Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Oberon Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Oberon Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Oberon Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6193,22 +6582,27 @@
     "imageName": "Octavia.png",
     "components": [
       {
+        "partName": "Octavia",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Octavia Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Mandachord",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Octavia Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Octavia Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6270,22 +6664,27 @@
     "imageName": "OctaviaPrime.png",
     "components": [
       {
+        "partName": "Octavia Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Octavia Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Octavia Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Octavia Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6347,22 +6746,27 @@
     "imageName": "Oraxia.png",
     "components": [
       {
+        "partName": "Oraxia",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Oraxia Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Oraxia Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Oraxia Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6481,22 +6885,27 @@
     "imageName": "Odalisk.png",
     "components": [
       {
+        "partName": "Protea",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Protea Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Protea Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Protea Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6557,22 +6966,27 @@
     "imageName": "ProteaPrime.png",
     "components": [
       {
+        "partName": "Protea Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Protea Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Protea Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Protea Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6634,22 +7048,27 @@
     "imageName": "Qorvex.png",
     "components": [
       {
+        "partName": "Concrete Frame",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Concrete Frame Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Echo Voca",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Concrete Frame Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Concrete Frame Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6710,22 +7129,27 @@
     "imageName": "Revenant.png",
     "components": [
       {
+        "partName": "Revenant",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Revenant Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Revenant Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Revenant Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6786,22 +7210,27 @@
     "imageName": "RevenantPrime.png",
     "components": [
       {
+        "partName": "Revenant Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Revenant Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Revenant Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Revenant Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6862,22 +7291,27 @@
     "imageName": "Rhino.png",
     "components": [
       {
+        "partName": "Rhino",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Rhino Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Neurodes",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Rhino Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Rhino Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -6939,22 +7373,27 @@
     "imageName": "RhinoPrime.png",
     "components": [
       {
+        "partName": "Rhino Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Rhino Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Rhino Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Rhino Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7016,22 +7455,27 @@
     "imageName": "Saryn.png",
     "components": [
       {
+        "partName": "Saryn",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Saryn Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Saryn Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Saryn Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7092,22 +7536,27 @@
     "imageName": "SarynPrime.png",
     "components": [
       {
+        "partName": "Saryn Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Saryn Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Saryn Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Saryn Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7169,22 +7618,27 @@
     "imageName": "Wraith.png",
     "components": [
       {
+        "partName": "Wraith",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wraith Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wraith Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wraith Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7245,22 +7699,27 @@
     "imageName": "SevagothPrime.png",
     "components": [
       {
+        "partName": "Sevagoth Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Sevagoth Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Sevagoth Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Sevagoth Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7323,22 +7782,27 @@
     "imageName": "SiriusOrion.png",
     "components": [
       {
+        "partName": "Sirius Orion",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Sirius Orion Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Sirius Orion Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Sirius Orion Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7400,22 +7864,27 @@
     "imageName": "Styanax.png",
     "components": [
       {
+        "partName": "Styanax",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Styanax Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Styanax Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 12,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Styanax Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7478,22 +7947,27 @@
     "imageName": "StyanaxPrime.png",
     "components": [
       {
+        "partName": "Styanax Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Styanax Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Styanax Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Styanax Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7553,22 +8027,27 @@
     "imageName": "Temple.png",
     "components": [
       {
+        "partName": "Temple",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Temple Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Temple Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Temple Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7629,22 +8108,27 @@
     "imageName": "Titania.png",
     "components": [
       {
+        "partName": "Fairy",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Fairy Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Fairy Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Fairy Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7706,22 +8190,27 @@
     "imageName": "TitaniaPrime.png",
     "components": [
       {
+        "partName": "Titania Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Titania Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Titania Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Titania Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7782,22 +8271,27 @@
     "imageName": "Trinity.png",
     "components": [
       {
+        "partName": "Trinity",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Trinity Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Trinity Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Trinity Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7860,22 +8354,27 @@
     "imageName": "TrinityPrime.png",
     "components": [
       {
+        "partName": "Trinity Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Trinity Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Trinity Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Trinity Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -7937,22 +8436,27 @@
     "imageName": "Demonframe.png",
     "components": [
       {
+        "partName": "Uriel",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Uriel Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Uriel Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Uriel Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8014,22 +8518,27 @@
     "imageName": "Valkyr.png",
     "components": [
       {
+        "partName": "Berserker",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Berserker Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Berserker Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Berserker Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8090,22 +8599,27 @@
     "imageName": "ValkyrPrime.png",
     "components": [
       {
+        "partName": "Valkyr Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Valkyr Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Valkyr Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Valkyr Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8165,22 +8679,27 @@
     "imageName": "Vauban.png",
     "components": [
       {
+        "partName": "Trapper",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Trapper Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Trapper Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Trapper Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8242,22 +8761,27 @@
     "imageName": "VaubanPrime.png",
     "components": [
       {
+        "partName": "Vauban Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Vauban Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Vauban Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Nitain Extract",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Vauban Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8320,22 +8844,27 @@
     "imageName": "NechroMech.png",
     "components": [
       {
+        "partName": "Necromech",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Voidrig Capsule",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Voidrig Casing",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Voidrig Engine",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Voidrig Weapon Pod",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8396,22 +8925,27 @@
     "imageName": "Volt.png",
     "components": [
       {
+        "partName": "V O L T",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "V O L T Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "V O L T Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "V O L T Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8473,22 +9007,27 @@
     "imageName": "VoltPrime.png",
     "components": [
       {
+        "partName": "Volt Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Volt Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Volt Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Volt Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8548,22 +9087,27 @@
     "imageName": "Voruna.png",
     "components": [
       {
+        "partName": "Wolf Frame",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wolf Frame Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Lua Thrax Plasm",
         "itemCount": 50,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wolf Frame Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wolf Frame Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8624,22 +9168,27 @@
     "imageName": "VorunaPrime.png",
     "components": [
       {
+        "partName": "Voruna Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Voruna Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Voruna Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Voruna Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8701,22 +9250,27 @@
     "imageName": "Wisp.png",
     "components": [
       {
+        "partName": "Wisp",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wisp Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wisp Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wisp Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8777,22 +9331,27 @@
     "imageName": "WispPrime.png",
     "components": [
       {
+        "partName": "Wisp Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wisp Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wisp Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wisp Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8853,22 +9412,27 @@
     "imageName": "Wukong.png",
     "components": [
       {
+        "partName": "Wukong",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wukong Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wukong Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wukong Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -8930,22 +9494,27 @@
     "imageName": "WukongPrime.png",
     "components": [
       {
+        "partName": "Wukong Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wukong Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wukong Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Wukong Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -9007,22 +9576,27 @@
     "imageName": "BrokenFrame.png",
     "components": [
       {
+        "partName": "Broken Frame",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Broken Frame Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Broken Frame Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Broken Frame Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -9083,22 +9657,27 @@
     "imageName": "XakuPrime.png",
     "components": [
       {
+        "partName": "Xaku Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Xaku Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Xaku Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Xaku Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -9158,22 +9737,27 @@
     "imageName": "Yareli.png",
     "components": [
       {
+        "partName": "Yareli",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Yareli Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Yareli Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 3,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Yareli Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -9234,22 +9818,27 @@
     "imageName": "YareliPrime.png",
     "components": [
       {
+        "partName": "Yareli Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Yareli Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Yareli Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Yareli Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -9311,22 +9900,27 @@
     "imageName": "Zephyr.png",
     "components": [
       {
+        "partName": "Tengu",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Tengu Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Tengu Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Tengu Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }
@@ -9388,22 +9982,27 @@
     "imageName": "ZephyrPrime.png",
     "components": [
       {
+        "partName": "Zephyr Prime",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Zephyr Prime Chassis",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Zephyr Prime Helmet",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Orokin Cell",
         "itemCount": 5,
         "sourceText": "Crafted Blueprint"
       },
       {
+        "partName": "Zephyr Prime Systems",
         "itemCount": 1,
         "sourceText": "Crafted Blueprint"
       }

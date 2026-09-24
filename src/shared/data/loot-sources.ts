@@ -728,7 +728,7 @@ export function searchLootSources(query: string): LootSourceItem[] {
       (item.locationNode && item.locationNode.toLowerCase().includes(q)) ||
       (item.planet && item.planet.toLowerCase().includes(q)) ||
       item.description.toLowerCase().includes(q) ||
-      (item.components && item.components.some((c) => c.partName.toLowerCase().includes(q)))
+      (item.components && item.components.some((c) => (c.partName || '').toLowerCase().includes(q)))
   );
 }
 

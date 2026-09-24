@@ -925,17 +925,18 @@ export function synthesizeResourceGuide(r: RawResourceItem): ResourceFarmingGuid
 }
 
 export function getResourceGuide(idOrName: string): ResourceFarmingGuide | undefined {
+  if (!idOrName) return undefined;
   const normalized = idOrName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
   const lowerName = idOrName.toLowerCase();
 
   const curated = RESOURCE_GUIDES.find(
-    (g) => g.id === normalized || g.name.toLowerCase() === lowerName
+    (g) => g.id === normalized || (g.name && g.name.toLowerCase() === lowerName)
   );
   if (curated) return curated;
 
   const catalog = allResourcesJson as RawResourceItem[];
   const raw = catalog.find(
-    (r) => r.id === normalized || r.name.toLowerCase() === lowerName
+    (r) => r.id === normalized || (r.name && r.name.toLowerCase() === lowerName)
   );
   if (raw) {
     return synthesizeResourceGuide(raw);
@@ -949,16 +950,17 @@ export function getAllResourceGuides(): ResourceFarmingGuide[] {
   const all: ResourceFarmingGuide[] = [];
 
   for (const g of RESOURCE_GUIDES) {
-    seen.add(g.name.toLowerCase());
-    seen.add(g.id);
+    if (g.name) seen.add(g.name.toLowerCase());
+    if (g.id) seen.add(g.id);
     all.push(g);
   }
 
   const catalog = allResourcesJson as RawResourceItem[];
   for (const r of catalog) {
-    if (!seen.has(r.name.toLowerCase()) && !seen.has(r.id)) {
-      seen.add(r.name.toLowerCase());
-      seen.add(r.id);
+    const rLower = (r.name || '').toLowerCase();
+    if (rLower && !seen.has(rLower) && !seen.has(r.id)) {
+      seen.add(rLower);
+      if (r.id) seen.add(r.id);
       all.push(synthesizeResourceGuide(r));
     }
   }
@@ -967,16 +969,17 @@ export function getAllResourceGuides(): ResourceFarmingGuide[] {
 }
 
 export function searchResourceGuides(query: string): ResourceFarmingGuide[] {
+  if (!query) return getAllResourceGuides();
   const q = query.toLowerCase().trim();
   const allGuides = getAllResourceGuides();
   if (!q) return allGuides;
 
   return allGuides.filter(
     (g) =>
-      g.name.toLowerCase().includes(q) ||
-      g.planets.some((p) => p.toLowerCase().includes(q)) ||
-      g.description.toLowerCase().includes(q) ||
-      g.optimalNodes.some((n) => n.node.toLowerCase().includes(q))
+      (g.name && g.name.toLowerCase().includes(q)) ||
+      (g.planets && g.planets.some((p) => p && p.toLowerCase().includes(q))) ||
+      (g.description && g.description.toLowerCase().includes(q)) ||
+      (g.optimalNodes && g.optimalNodes.some((n) => n.node && n.node.toLowerCase().includes(q)))
   );
 }
 
