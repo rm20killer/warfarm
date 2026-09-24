@@ -1501,8 +1501,8 @@
     "type": "Arch-Gun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -1701,14 +1701,14 @@
     "rarity": "Rare",
     "baseCost": 2,
     "maxRank": 5,
-    "description": "On Headshot:\\n+135% Critical Chance when Aiming for 9s",
+    "description": "On Weak Point Hit:\\n+135% Critical Chance when Aiming for 9s",
     "levelStats": [
-      "On Headshot:\\n+22.5% Critical Chance when Aiming for 2s",
-      "On Headshot:\\n+45% Critical Chance when Aiming for 3s",
-      "On Headshot:\\n+67.5% Critical Chance when Aiming for 5s",
-      "On Headshot:\\n+90% Critical Chance when Aiming for 6s",
-      "On Headshot:\\n+112.5% Critical Chance when Aiming for 8s",
-      "On Headshot:\\n+135% Critical Chance when Aiming for 9s"
+      "On Weak Point Hit:\\n+22.5% Critical Chance when Aiming for 2s",
+      "On Weak Point Hit:\\n+45% Critical Chance when Aiming for 3s",
+      "On Weak Point Hit:\\n+67.5% Critical Chance when Aiming for 5s",
+      "On Weak Point Hit:\\n+90% Critical Chance when Aiming for 6s",
+      "On Weak Point Hit:\\n+112.5% Critical Chance when Aiming for 8s",
+      "On Weak Point Hit:\\n+135% Critical Chance when Aiming for 9s"
     ],
     "sourceText": "Duviri/Endless: Tier 6 (Normal)",
     "dropChance": 1.03,
@@ -2111,24 +2111,6 @@
     "sourceText": "Eidolon Gantulyst",
     "dropChance": 0.84,
     "imageName": "EventPunctureDamageModMelee.jpg"
-  },
-  {
-    "id": "augmented_sonar",
-    "name": "Augmented Sonar",
-    "uniqueName": "/Lotus/Powersuits/Banshee/SonarPvPAugmentCard",
-    "type": "Warframe Mod",
-    "polarity": "Zenurik",
-    "rarity": "Rare",
-    "baseCost": 6,
-    "maxRank": 3,
-    "description": "Sonar Augment: Affected enemies also become visible through walls for 10s.",
-    "levelStats": [
-      "Sonar Augment: Affected enemies also become visible through walls for 7s.",
-      "Sonar Augment: Affected enemies also become visible through walls for 8s.",
-      "Sonar Augment: Affected enemies also become visible through walls for 9s.",
-      "Sonar Augment: Affected enemies also become visible through walls for 10s."
-    ],
-    "imageName": "SonarAugment.jpg"
   },
   {
     "id": "augur_accord",
@@ -4024,6 +4006,24 @@
     "imageName": "HigherAirAimFoVShotgunMod.jpg"
   },
   {
+    "id": "brood_s_oversurge",
+    "name": "Brood's Oversurge",
+    "uniqueName": "/Lotus/Powersuits/Oraxia/BroodAugmentCard",
+    "type": "Warframe Mod",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseCost": 6,
+    "maxRank": 3,
+    "description": "Widow's Brood Augment: Scuttlers are galvanized with Electricity. Hold to direct all active Scuttlers at the aimed target, inflicting 2000 <DT_ELECTRICITY_COLOR> Electricity Damage and Status Effect in a radius.",
+    "levelStats": [
+      "Widow's Brood Augment: Scuttlers are galvanized with Electricity. Hold to direct all active Scuttlers at the aimed target, inflicting 1250 <DT_ELECTRICITY_COLOR> Electricity Damage and Status Effect in a radius.",
+      "Widow's Brood Augment: Scuttlers are galvanized with Electricity. Hold to direct all active Scuttlers at the aimed target, inflicting 1500 <DT_ELECTRICITY_COLOR> Electricity Damage and Status Effect in a radius.",
+      "Widow's Brood Augment: Scuttlers are galvanized with Electricity. Hold to direct all active Scuttlers at the aimed target, inflicting 1750 <DT_ELECTRICITY_COLOR> Electricity Damage and Status Effect in a radius.",
+      "Widow's Brood Augment: Scuttlers are galvanized with Electricity. Hold to direct all active Scuttlers at the aimed target, inflicting 2000 <DT_ELECTRICITY_COLOR> Electricity Damage and Status Effect in a radius."
+    ],
+    "imageName": "OraxiaBroodAugment.jpg"
+  },
+  {
     "id": "brutal_tide",
     "name": "Brutal Tide",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/PunchKickCmbTwoMeleeTree",
@@ -5286,6 +5286,24 @@
     "sourceText": "Ventkids, Primo",
     "dropChance": 100,
     "imageName": "HoverboardModR.jpg"
+  },
+  {
+    "id": "cold_front",
+    "name": "Cold Front",
+    "uniqueName": "/Lotus/Powersuits/Frost/IceShieldAugmentTwoCard",
+    "type": "Warframe Mod",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseCost": 6,
+    "maxRank": 3,
+    "description": "Snow Globe Augment: Snow Globe is now attached to Frost with a smaller radius while increasing your mobility. Kills on frozen enemies increase the Globe health by 4% per kill. ",
+    "levelStats": [
+      "Snow Globe Augment: Snow Globe is now attached to Frost with a smaller radius while increasing your mobility. Kills on frozen enemies increase the Globe health by 1% per kill. ",
+      "Snow Globe Augment: Snow Globe is now attached to Frost with a smaller radius while increasing your mobility. Kills on frozen enemies increase the Globe health by 2% per kill. ",
+      "Snow Globe Augment: Snow Globe is now attached to Frost with a smaller radius while increasing your mobility. Kills on frozen enemies increase the Globe health by 3% per kill. ",
+      "Snow Globe Augment: Snow Globe is now attached to Frost with a smaller radius while increasing your mobility. Kills on frozen enemies increase the Globe health by 4% per kill. "
+    ],
+    "imageName": "FrostIceShieldAugmentTwoCard.jpg"
   },
   {
     "id": "cold_snap",
@@ -11474,19 +11492,19 @@
     "rarity": "Rare",
     "baseCost": 2,
     "maxRank": 10,
-    "description": "On Headshot:\\n+120% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+40% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+    "description": "On Weak Point Hit:\\n+120% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+40% Critical Chance when Aiming for 12s. Stacks up to 5x.",
     "levelStats": [
-      "On Headshot:\\n+10.9% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+3.6% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+21.8% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+7.3% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+32.7% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+10.9% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+43.6% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+14.5% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+54.5% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+18.2% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+65.5% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+21.8% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+76.4% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+25.5% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+87.3% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+29.1% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+98.2% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+32.7% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+109.1% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+36.4% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+120% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+40% Critical Chance when Aiming for 12s. Stacks up to 5x."
+      "On Weak Point Hit:\\n+10.9% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+3.6% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+21.8% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+7.3% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+32.7% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+10.9% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+43.6% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+14.5% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+54.5% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+18.2% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+65.5% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+21.8% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+76.4% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+25.5% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+87.3% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+29.1% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+98.2% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+32.7% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+109.1% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+36.4% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+120% Critical Chance when Aiming for 12s\\nOn Weak Point Kill:\\n+40% Critical Chance when Aiming for 12s. Stacks up to 5x."
     ],
     "imageName": "CritChanceWhileAimingPistolSPMod.jpg"
   },
@@ -11624,19 +11642,19 @@
     "rarity": "Rare",
     "baseCost": 2,
     "maxRank": 10,
-    "description": "On Headshot:\\n+120% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+40% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+    "description": "On Weak Point Hit:\\n+120% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+40% Critical Chance when Aiming for 12s. Stacks up to 5x.",
     "levelStats": [
-      "On Headshot:\\n+10.9% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+3.6% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+21.8% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+7.3% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+32.7% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+10.9% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+43.6% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+14.5% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+54.6% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+18.2% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+65.5% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+21.8% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+76.4% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+25.5% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+87.3% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+29.1% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+98.2% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+32.7% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+109.1% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+36.4% Critical Chance when Aiming for 12s. Stacks up to 5x.",
-      "On Headshot:\\n+120% Critical Chance when Aiming for 12s\\nOn Headshot Kill:\\n+40% Critical Chance when Aiming for 12s. Stacks up to 5x."
+      "On Weak Point Hit:\\n+10.9% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+3.6% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+21.8% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+7.3% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+32.7% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+10.9% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+43.6% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+14.5% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+54.6% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+18.2% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+65.5% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+21.8% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+76.4% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+25.5% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+87.3% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+29.1% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+98.2% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+32.7% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+109.1% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+36.4% Critical Chance when Aiming for 12s. Stacks up to 5x.",
+      "On Weak Point Hit:\\n+120% Critical Chance when Aiming for 12s\\nOn Weak Point Hit:\\n+40% Critical Chance when Aiming for 12s. Stacks up to 5x."
     ],
     "imageName": "CritChanceWhileAimingRifleSPMod.jpg"
   },
@@ -11691,6 +11709,24 @@
     "imageName": "WeaponCritChanceSPMod.jpg"
   },
   {
+    "id": "gaseous_quake",
+    "name": "Gaseous Quake",
+    "uniqueName": "/Lotus/Powersuits/Banshee/EarthQuakeAugmentCard",
+    "type": "Warframe Mod",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseCost": 6,
+    "maxRank": 3,
+    "description": "Sound Quake Augment: Channel <DT_GAS_COLOR>Gas Damage and Status Effect leaks with a 2.75x Damage Multiplier that increases every second on enemies in your sight.",
+    "levelStats": [
+      "Sound Quake Augment: Channel <DT_GAS_COLOR>Gas Damage and Status Effect leaks with a 2x Damage Multiplier that increases every second on enemies in your sight.",
+      "Sound Quake Augment: Channel <DT_GAS_COLOR>Gas Damage and Status Effect leaks with a 2.25x Damage Multiplier that increases every second on enemies in your sight.",
+      "Sound Quake Augment: Channel <DT_GAS_COLOR>Gas Damage and Status Effect leaks with a 2.5x Damage Multiplier that increases every second on enemies in your sight.",
+      "Sound Quake Augment: Channel <DT_GAS_COLOR>Gas Damage and Status Effect leaks with a 2.75x Damage Multiplier that increases every second on enemies in your sight."
+    ],
+    "imageName": "BansheeEarthquakeAugment1.jpg"
+  },
+  {
     "id": "gastro",
     "name": "Gastro",
     "uniqueName": "/Lotus/Powersuits/Devourer/DevourerRegurgitateAugmentCard",
@@ -11709,6 +11745,24 @@
     "sourceText": "Red Veil, Exalted",
     "dropChance": 100,
     "imageName": "GrendelRegurgitateAugment.jpg"
+  },
+  {
+    "id": "gastroparesis",
+    "name": "Gastroparesis",
+    "uniqueName": "/Lotus/Powersuits/Devourer/DevourerPassiveAugmentCard",
+    "type": "Warframe Mod",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseCost": 6,
+    "maxRank": 3,
+    "description": "Passive Augment: Each enemy consumed adds 15% <DT_GAS_COLOR> Extra Gas Damage to Primary and Secondary Weapons.",
+    "levelStats": [
+      "Passive Augment: Each enemy consumed adds 6% <DT_GAS_COLOR> Extra Gas Damage to Primary and Secondary Weapons.",
+      "Passive Augment: Each enemy consumed adds 9% <DT_GAS_COLOR> Extra Gas Damage to Primary and Secondary Weapons.",
+      "Passive Augment: Each enemy consumed adds 12% <DT_GAS_COLOR> Extra Gas Damage to Primary and Secondary Weapons.",
+      "Passive Augment: Each enemy consumed adds 15% <DT_GAS_COLOR> Extra Gas Damage to Primary and Secondary Weapons."
+    ],
+    "imageName": "GrendelPassiveAugment.jpg"
   },
   {
     "id": "gemini_cross",
@@ -13931,14 +13985,14 @@
     "rarity": "Common",
     "baseCost": 2,
     "maxRank": 5,
-    "description": "On Headshot:\\n+135% Critical Chance when Aiming for 9s",
+    "description": "On Weak Point Hit:\\n+135% Critical Chance when Aiming for 9s",
     "levelStats": [
-      "On Headshot:\\n+22.5% Critical Chance when Aiming for 2s",
-      "On Headshot:\\n+45% Critical Chance when Aiming for 3s",
-      "On Headshot:\\n+67.5% Critical Chance when Aiming for 5s",
-      "On Headshot:\\n+90% Critical Chance when Aiming for 6s",
-      "On Headshot:\\n+112.5% Critical Chance when Aiming for 8s",
-      "On Headshot:\\n+135% Critical Chance when Aiming for 9s"
+      "On Weak Point Hit:\\n+22.5% Critical Chance when Aiming for 2s",
+      "On Weak Point Hit:\\n+45% Critical Chance when Aiming for 3s",
+      "On Weak Point Hit:\\n+67.5% Critical Chance when Aiming for 5s",
+      "On Weak Point Hit:\\n+90% Critical Chance when Aiming for 6s",
+      "On Weak Point Hit:\\n+112.5% Critical Chance when Aiming for 8s",
+      "On Weak Point Hit:\\n+135% Critical Chance when Aiming for 9s"
     ],
     "sourceText": "Lua/Pavlov (Spy), Rotation A",
     "dropChance": 12.18,
@@ -14045,12 +14099,12 @@
     "rarity": "Rare",
     "baseCost": 6,
     "maxRank": 3,
-    "description": "Hysteria Augment: Attack with Valkyr’s Talons to leap onto targeted enemies up to 50m away. Gain +50% Parkour Velocity and +50% Sprint Speed for 5s.",
+    "description": "Hysteria Augment: Attack with Valkyr's Talons to leap onto targeted enemies up to 50m away. Gain +50% Parkour Velocity and +50% Sprint Speed for 5s.",
     "levelStats": [
-      "Hysteria Augment: Attack with Valkyr’s Talons to leap onto targeted enemies up to 50m away. Gain +20% Parkour Velocity and +20% Sprint Speed for 5s.",
-      "Hysteria Augment: Attack with Valkyr’s Talons to leap onto targeted enemies up to 50m away. Gain +30% Parkour Velocity and +30% Sprint Speed for 5s.",
-      "Hysteria Augment: Attack with Valkyr’s Talons to leap onto targeted enemies up to 50m away. Gain +40% Parkour Velocity and +40% Sprint Speed for 5s.",
-      "Hysteria Augment: Attack with Valkyr’s Talons to leap onto targeted enemies up to 50m away. Gain +50% Parkour Velocity and +50% Sprint Speed for 5s."
+      "Hysteria Augment: Attack with Valkyr's Talons to leap onto targeted enemies up to 50m away. Gain +20% Parkour Velocity and +20% Sprint Speed for 5s.",
+      "Hysteria Augment: Attack with Valkyr's Talons to leap onto targeted enemies up to 50m away. Gain +30% Parkour Velocity and +30% Sprint Speed for 5s.",
+      "Hysteria Augment: Attack with Valkyr's Talons to leap onto targeted enemies up to 50m away. Gain +40% Parkour Velocity and +40% Sprint Speed for 5s.",
+      "Hysteria Augment: Attack with Valkyr's Talons to leap onto targeted enemies up to 50m away. Gain +50% Parkour Velocity and +50% Sprint Speed for 5s."
     ],
     "sourceText": "New Loka, Flawless",
     "dropChance": 100,
@@ -14499,6 +14553,24 @@
     "sourceText": "Blite Captain",
     "dropChance": 3,
     "imageName": "ArchwingEventToxinStatusMeleeMod.jpg"
+  },
+  {
+    "id": "infernum",
+    "name": "Infernum",
+    "uniqueName": "/Lotus/Powersuits/DemonFrame/DemonFrameFireBallAugmentCard",
+    "type": "Warframe Mod",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseCost": 6,
+    "maxRank": 3,
+    "description": "Infernalis Augment: Release Fireballs for 1500<DT_FIRE_COLOR>Heat Damage with larger volleys when grabbing Vythelas' Runes during flight. Hits from Fireballs slowly charge Brimstone.",
+    "levelStats": [
+      "Infernalis Augment: Release Fireballs for 1000<DT_FIRE_COLOR>Heat Damage with larger volleys when grabbing Vythelas' Runes during flight. Hits from Fireballs slowly charge Brimstone.",
+      "Infernalis Augment: Release Fireballs for 1250<DT_FIRE_COLOR>Heat Damage with larger volleys when grabbing Vythelas' Runes during flight. Hits from Fireballs slowly charge Brimstone.",
+      "Infernalis Augment: Release Fireballs for 1350<DT_FIRE_COLOR>Heat Damage with larger volleys when grabbing Vythelas' Runes during flight. Hits from Fireballs slowly charge Brimstone.",
+      "Infernalis Augment: Release Fireballs for 1500<DT_FIRE_COLOR>Heat Damage with larger volleys when grabbing Vythelas' Runes during flight. Hits from Fireballs slowly charge Brimstone."
+    ],
+    "imageName": "UrielFireballAugmentCard.jpg"
   },
   {
     "id": "infested_impedance",
@@ -15561,8 +15633,8 @@
     "type": "Kitgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "sourceText": "Duviri/Endless: Repeated Rewards (Hard)",
@@ -15633,14 +15705,14 @@
     "rarity": "Uncommon",
     "baseCost": 4,
     "maxRank": 5,
-    "description": "On Headshot:\\n+120% Critical Chance when Aiming for 9s",
+    "description": "On Weak Point Hit:\\n+120% Critical Chance when Aiming for 9s",
     "levelStats": [
-      "On Headshot:\\n+20% Critical Chance when Aiming for 2s",
-      "On Headshot:\\n+40% Critical Chance when Aiming for 3s",
-      "On Headshot:\\n+60% Critical Chance when Aiming for 5s",
-      "On Headshot:\\n+80% Critical Chance when Aiming for 6s",
-      "On Headshot:\\n+100% Critical Chance when Aiming for 8s",
-      "On Headshot:\\n+120% Critical Chance when Aiming for 9s"
+      "On Weak Point Hit:\\n+20% Critical Chance when Aiming for 2s",
+      "On Weak Point Hit:\\n+40% Critical Chance when Aiming for 3s",
+      "On Weak Point Hit:\\n+60% Critical Chance when Aiming for 5s",
+      "On Weak Point Hit:\\n+80% Critical Chance when Aiming for 6s",
+      "On Weak Point Hit:\\n+100% Critical Chance when Aiming for 8s",
+      "On Weak Point Hit:\\n+120% Critical Chance when Aiming for 9s"
     ],
     "sourceText": "Duviri/Endless: Tier 1 (Normal)",
     "dropChance": 0.67,
@@ -15725,12 +15797,12 @@
     "rarity": "Rare",
     "baseCost": 6,
     "maxRank": 3,
-    "description": "Covenant Augment: Headshot kills increase Critical Chance bonus duration by 3s.",
+    "description": "Covenant Augment: Weak Point kills increase Critical Chance bonus duration by 3s.",
     "levelStats": [
-      "Covenant Augment: Headshot kills increase Critical Chance bonus duration by 1s.",
-      "Covenant Augment: Headshot kills increase Critical Chance bonus duration by 1.5s.",
-      "Covenant Augment: Headshot kills increase Critical Chance bonus duration by 2s.",
-      "Covenant Augment: Headshot kills increase Critical Chance bonus duration by 3s."
+      "Covenant Augment: Weak Point kills increase Critical Chance bonus duration by 1s.",
+      "Covenant Augment: Weak Point kills increase Critical Chance bonus duration by 1.5s.",
+      "Covenant Augment: Weak Point kills increase Critical Chance bonus duration by 2s.",
+      "Covenant Augment: Weak Point kills increase Critical Chance bonus duration by 3s."
     ],
     "sourceText": "Arbiters of Hexis, Maxim",
     "dropChance": 100,
@@ -17605,8 +17677,8 @@
     "type": "Melee Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "sourceText": "Duviri/Endless: Repeated Rewards (Hard)",
@@ -21377,8 +21449,8 @@
     "type": "Pistol Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "sourceText": "Duviri/Endless: Repeated Rewards (Hard)",
@@ -26095,36 +26167,16 @@
     "rarity": "Rare",
     "baseCost": 6,
     "maxRank": 3,
-    "description": "Sonar Augment: Killing an enemy by shooting their weak spot will trigger another Sonar for 100% of remaining duration.",
+    "description": "Sonar Augment: Killing an enemy by shooting their Sonar's weak point will trigger another Sonar for 100% of its duration.",
     "levelStats": [
-      "Sonar Augment: Killing an enemy by shooting their weak spot will trigger another Sonar for 50% of remaining duration.",
-      "Sonar Augment: Killing an enemy by shooting their weak spot will trigger another Sonar for 65% of remaining duration.",
-      "Sonar Augment: Killing an enemy by shooting their weak spot will trigger another Sonar for 80% of remaining duration.",
-      "Sonar Augment: Killing an enemy by shooting their weak spot will trigger another Sonar for 100% of remaining duration."
+      "Sonar Augment: Killing an enemy by shooting their Sonar's weak point will trigger another Sonar for 50% of its duration.",
+      "Sonar Augment: Killing an enemy by shooting their Sonar's weak point will trigger another Sonar for 65% of its duration.",
+      "Sonar Augment: Killing an enemy by shooting their Sonar's weak point will trigger another Sonar for 80% of its duration.",
+      "Sonar Augment: Killing an enemy by shooting their Sonar's weak point will trigger another Sonar for 100% of its duration."
     ],
     "sourceText": "Cephalon Suda, Genius",
     "dropChance": 100,
     "imageName": "BansheeSonarAugmentCard.jpg"
-  },
-  {
-    "id": "resonating_quake",
-    "name": "Resonating Quake",
-    "uniqueName": "/Lotus/Powersuits/Banshee/EarthQuakeAugmentCard",
-    "type": "Warframe Mod",
-    "polarity": "Zenurik",
-    "rarity": "Rare",
-    "baseCost": 6,
-    "maxRank": 3,
-    "description": "Sound Quake Augment: Forgoes channeling to create a shockwave that deals 20x Damage at the epicenter, gradually weakening as it expands out.",
-    "levelStats": [
-      "Sound Quake Augment: Forgoes channeling to create a shockwave that deals 10x Damage at the epicenter, gradually weakening as it expands out.",
-      "Sound Quake Augment: Forgoes channeling to create a shockwave that deals 12x Damage at the epicenter, gradually weakening as it expands out.",
-      "Sound Quake Augment: Forgoes channeling to create a shockwave that deals 15x Damage at the epicenter, gradually weakening as it expands out.",
-      "Sound Quake Augment: Forgoes channeling to create a shockwave that deals 20x Damage at the epicenter, gradually weakening as it expands out."
-    ],
-    "sourceText": "Cephalon Suda, Genius",
-    "dropChance": 100,
-    "imageName": "BansheeEarthquakeAugment1.jpg"
   },
   {
     "id": "resourceful_retriever",
@@ -26550,8 +26602,8 @@
     "type": "Rifle Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "sourceText": "Duviri/Endless: Repeated Rewards (Hard)",
@@ -28538,19 +28590,19 @@
     "rarity": "Rare",
     "baseCost": 2,
     "maxRank": 10,
-    "description": "On Headshot Kill:\\n+15 Energy",
+    "description": "[PH] On Weak Point Kill:\\n+15 Energy",
     "levelStats": [
-      "On Headshot Kill:\\n+5 Energy",
-      "On Headshot Kill:\\n+6 Energy",
-      "On Headshot Kill:\\n+7 Energy",
-      "On Headshot Kill:\\n+8 Energy",
-      "On Headshot Kill:\\n+9 Energy",
-      "On Headshot Kill:\\n+10 Energy",
-      "On Headshot Kill:\\n+11 Energy",
-      "On Headshot Kill:\\n+12 Energy",
-      "On Headshot Kill:\\n+13 Energy",
-      "On Headshot Kill:\\n+14 Energy",
-      "On Headshot Kill:\\n+15 Energy"
+      "[PH] On Weak Point Kill:\\n+5 Energy",
+      "[PH] On Weak Point Kill:\\n+6 Energy",
+      "[PH] On Weak Point Kill:\\n+7 Energy",
+      "[PH] On Weak Point Kill:\\n+8 Energy",
+      "[PH] On Weak Point Kill:\\n+9 Energy",
+      "[PH] On Weak Point Kill:\\n+10 Energy",
+      "[PH] On Weak Point Kill:\\n+11 Energy",
+      "[PH] On Weak Point Kill:\\n+12 Energy",
+      "[PH] On Weak Point Kill:\\n+13 Energy",
+      "[PH] On Weak Point Kill:\\n+14 Energy",
+      "[PH] On Weak Point Kill:\\n+15 Energy"
     ],
     "imageName": "EnergyOnHeadshotRifle.jpg"
   },
@@ -29311,8 +29363,8 @@
     "type": "Shotgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "sourceText": "Duviri/Endless: Repeated Rewards (Hard)",
@@ -30251,23 +30303,21 @@
     "imageName": "FocusIcon21.jpg"
   },
   {
-    "id": "sonic_fracture",
-    "name": "Sonic Fracture",
+    "id": "sonic_siphon",
+    "name": "Sonic Siphon",
     "uniqueName": "/Lotus/Powersuits/Banshee/PushAugmentCard",
     "type": "Warframe Mod",
     "polarity": "Zenurik",
     "rarity": "Rare",
     "baseCost": 6,
     "maxRank": 3,
-    "description": "Sonic Boom Augment: Enemy Armor is reduced by 70%.",
+    "description": "Sonic Boom Augment: Gain Armor for each enemy hit by Sonic Boom for 20s.",
     "levelStats": [
-      "Sonic Boom Augment: Enemy Armor is reduced by 35%.",
-      "Sonic Boom Augment: Enemy Armor is reduced by 45%.",
-      "Sonic Boom Augment: Enemy Armor is reduced by 55%.",
-      "Sonic Boom Augment: Enemy Armor is reduced by 70%."
+      "Sonic Boom Augment: Gain Armor for each enemy hit by Sonic Boom for 12s.",
+      "Sonic Boom Augment: Gain Armor for each enemy hit by Sonic Boom for 15s.",
+      "Sonic Boom Augment: Gain Armor for each enemy hit by Sonic Boom for 18s.",
+      "Sonic Boom Augment: Gain Armor for each enemy hit by Sonic Boom for 20s."
     ],
-    "sourceText": "Cephalon Suda, Genius",
-    "dropChance": 100,
     "imageName": "BansheePushAugment.jpg"
   },
   {
@@ -34925,8 +34975,8 @@
     "type": "Railjack Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -34938,8 +34988,8 @@
     "type": "Railjack Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -34951,8 +35001,8 @@
     "type": "Railjack Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -34964,8 +35014,8 @@
     "type": "Railjack Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -34977,8 +35027,8 @@
     "type": "Railjack Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -34990,8 +35040,8 @@
     "type": "Railjack Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -35003,8 +35053,8 @@
     "type": "Railjack Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -35016,8 +35066,8 @@
     "type": "Railjack Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -35029,8 +35079,8 @@
     "type": "Railjack Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -35042,8 +35092,8 @@
     "type": "Railjack Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "imageName": "OmegaMod.png"
@@ -37288,8 +37338,8 @@
     "type": "Zaw Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseCost": 2,
-    "maxRank": 434,
+    "baseCost": 2025586688,
+    "maxRank": 593,
     "description": "",
     "levelStats": [],
     "sourceText": "Duviri/Endless: Repeated Rewards (Hard)",

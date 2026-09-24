@@ -39456,12 +39456,6 @@
       "dropChance": 100,
       "rarity": "Common",
       "category": "Resource"
-    },
-    {
-      "enemyName": "Eximus Enemy (Railjack Steel Path)",
-      "dropChance": 4.99,
-      "rarity": "Rare",
-      "category": "Resource"
     }
   ],
   "lavan_carcinnox_mk_ii": [
@@ -45733,12 +45727,6 @@
     }
   ],
   "riven_sliver": [
-    {
-      "enemyName": "Eximus Enemy (Railjack Steel Path)",
-      "dropChance": 2.01,
-      "rarity": "Rare",
-      "category": "Resource"
-    },
     {
       "enemyName": "Eximus Enemy (Descendia Steel Path)",
       "dropChance": 1.99,

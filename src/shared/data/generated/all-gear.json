@@ -25,30 +25,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 1000,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Plastids",
         "itemCount": 500,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 1500,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Synthula",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -68,27 +60,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 500,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fersteel Alloy",
         "itemCount": 40,
-        "sourceText": "Ostron (Old Man Suumbaat), Visitor",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Marquise Veridos",
         "itemCount": 2,
-        "sourceText": "Ostron (Old Man Suumbaat), Visitor",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -106,33 +91,24 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 1200,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Morphics",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Plastids",
         "itemCount": 700,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -163,12 +139,10 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Threshcone",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       }
@@ -188,28 +162,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Hallowed Flame Endurance Caches, Rotation A",
-        "dropChance": 7.37
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -227,32 +193,24 @@
     "skipBuildTimePrice": 35,
     "components": [
       {
-        "partName": "Antiserum Injector Fragment",
         "itemCount": 500,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fieldron",
         "itemCount": 2,
-        "sourceText": "Rare Corpus Storage Container",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 6000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Tellurium",
         "itemCount": 2,
-        "sourceText": "Ancient Maggot",
-        "dropChance": 0.03
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -360,12 +318,10 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sunlight Threshcone",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       }
@@ -398,21 +354,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 250,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Void Traces",
         "itemCount": 10,
-        "sourceText": "Extended Granum Void, Rotation A",
-        "dropChance": 33.33
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -487,30 +438,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 1500,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Plastids",
         "itemCount": 500,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 1000,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Synthula",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -562,28 +505,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Hallowed Flame Endurance Caches, Rotation A",
-        "dropChance": 7.37
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -601,21 +536,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 400,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 400,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -633,17 +563,14 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sunlight Dragonlily",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sunlight Threshcone",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -663,28 +590,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Hallowed Flame Endurance Caches, Rotation B",
-        "dropChance": 1.01
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -702,30 +621,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 500,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cryotic",
         "itemCount": 1500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 1000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Synthula",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -796,27 +707,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -847,27 +751,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -885,34 +782,24 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Eris/Brugia (Rescue), Rotation C",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 500,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Gallium",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 5000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Plastids",
         "itemCount": 1000,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -981,32 +868,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fish Meat",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Goopolla Spleen",
         "itemCount": 10,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Maprico",
         "itemCount": 5,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Murkray Liver",
         "itemCount": 5,
-        "sourceText": "Operational Supply, Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1024,21 +903,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 250,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Void Traces",
         "itemCount": 10,
-        "sourceText": "Extended Granum Void, Rotation A",
-        "dropChance": 33.33
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1178,21 +1052,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 250,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Void Traces",
         "itemCount": 10,
-        "sourceText": "Extended Granum Void, Rotation A",
-        "dropChance": 33.33
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1210,21 +1079,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 1,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 5,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1276,33 +1140,24 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 500,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Esher Devar",
         "itemCount": 1,
-        "sourceText": "Ostron (Old Man Suumbaat), Offworlder",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Pyrotic Alloy",
         "itemCount": 40,
-        "sourceText": "Ostron (Old Man Suumbaat), Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Tear Azurite",
         "itemCount": 1,
-        "sourceText": "Ostron (Old Man Suumbaat), Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1320,24 +1175,18 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cryotic",
         "itemCount": 300,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 3500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Omega Isotope",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       }
@@ -1357,34 +1206,24 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 1000,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Eris/Brugia (Rescue), Rotation B",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 1000,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Plastids",
         "itemCount": 1000,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 1000,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1415,33 +1254,24 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Goopolla Spleen",
         "itemCount": 5,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Grokdrul",
         "itemCount": 5,
-        "sourceText": "Grokdrul Drum",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Karkina Antenna",
         "itemCount": 5,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Maprico",
         "itemCount": 5,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1478,32 +1308,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cuthol Tendrils",
         "itemCount": 5,
-        "sourceText": "Operational Supply, Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fish Meat",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Maprico",
         "itemCount": 5,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Norg Brain",
         "itemCount": 5,
-        "sourceText": "Operational Supply, Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1560,27 +1382,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Jadeleaf",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Threshcone",
         "itemCount": 15,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sunlight Jadeleaf",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sunlight Threshcone",
         "itemCount": 15,
         "sourceText": "Market / Blueprint"
       }
@@ -1613,21 +1430,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 250,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Void Traces",
         "itemCount": 10,
-        "sourceText": "Extended Granum Void, Rotation A",
-        "dropChance": 33.33
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1683,21 +1495,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 1,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 5,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1881,27 +1688,20 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 1200,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Grokdrul",
         "itemCount": 10,
-        "sourceText": "Grokdrul Drum",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nistlepod",
         "itemCount": 10,
-        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-        "dropChance": 15.18
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -1919,27 +1719,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Dragonlily",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Jadeleaf",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sunlight Dragonlily",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sunlight Jadeleaf",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -1959,27 +1754,20 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 200,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Plastids",
         "itemCount": 100,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 150,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2016,21 +1804,16 @@
     "skipBuildTimePrice": 25,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 10,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Iradite",
         "itemCount": 10,
-        "sourceText": "Iradite Formation",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2131,27 +1914,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2169,32 +1945,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fish Meat",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Goopolla Spleen",
         "itemCount": 10,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Mortus Horn",
         "itemCount": 5,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Tralok Eyes",
         "itemCount": 5,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2270,28 +2038,22 @@
     "skipBuildTimePrice": 0,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Dusklight Sarracenia",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Dragonlily",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Morphics",
         "itemCount": 2,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sunlight Threshcone",
         "itemCount": 12,
         "sourceText": "Market / Blueprint"
       }
@@ -2311,32 +2073,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fish Meat",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Karkina Antenna",
         "itemCount": 5,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Maprico",
         "itemCount": 5,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sharrac Teeth",
         "itemCount": 5,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2354,21 +2108,16 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 500,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2000,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2566,21 +2315,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 1,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 5,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2598,20 +2342,16 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fish Meat",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nistlepod",
         "itemCount": 20,
-        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-        "dropChance": 15.18
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2629,33 +2369,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Coprite Alloy",
         "itemCount": 100,
-        "sourceText": "Ostron (Old Man Suumbaat), Offworlder",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fersteel Alloy",
         "itemCount": 80,
-        "sourceText": "Ostron (Old Man Suumbaat), Visitor",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Grokdrul",
         "itemCount": 55,
-        "sourceText": "Grokdrul Drum",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nistlepod",
         "itemCount": 70,
-        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-        "dropChance": 15.18
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2673,21 +2404,16 @@
     "skipBuildTimePrice": 25,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 10,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Iradite",
         "itemCount": 10,
-        "sourceText": "Iradite Formation",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2705,34 +2431,24 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 1000,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Ceres/Nuovo (Rescue), Rotation C",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 5000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 750,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 5000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2763,34 +2479,24 @@
     "skipBuildTimePrice": 0,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Demolisher Juggernaut",
-        "dropChance": 2.5
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Chitinous Husk",
         "itemCount": 1,
-        "sourceText": "Deimos Juggernaut",
-        "dropChance": 25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Infected Palpators",
         "itemCount": 1,
-        "sourceText": "Deimos Juggernaut",
-        "dropChance": 25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Pulsating Tubercles",
         "itemCount": 1,
-        "sourceText": "Deimos Juggernaut",
-        "dropChance": 25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Severed Bile Sac",
         "itemCount": 1,
-        "sourceText": "Deimos Juggernaut",
-        "dropChance": 25
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2859,18 +2565,14 @@
     "skipBuildTimePrice": 0,
     "components": [
       {
-        "partName": "Argon Crystal",
         "itemCount": 3,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Pherliac Pods",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -2928,15 +2630,12 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fass Residue",
         "itemCount": 5,
-        "sourceText": "Entrati (Daughter), Associate",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2954,15 +2653,12 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Vome Residue",
         "itemCount": 5,
-        "sourceText": "Entrati (Daughter), Friend",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -2993,26 +2689,20 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cryptographic Alu",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Gallium",
         "itemCount": 3,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 1500,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3030,30 +2720,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 500,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cryotic",
         "itemCount": 1000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 1500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Synthula",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -3112,27 +2794,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3227,27 +2902,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3278,33 +2946,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 1000,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Grokdrul",
         "itemCount": 35,
-        "sourceText": "Grokdrul Drum",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nistlepod",
         "itemCount": 55,
-        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-        "dropChance": 15.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Pyrotic Alloy",
         "itemCount": 40,
-        "sourceText": "Ostron (Old Man Suumbaat), Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3380,22 +3039,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Red Veil, Esteemed",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 300,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3413,21 +3066,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 600,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 600,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3445,21 +3093,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 7200,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 900,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3477,22 +3120,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Arbiters of Hexis, Lawful",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 3000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 500,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3510,21 +3147,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 150,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 600,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3542,21 +3174,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 9000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 900,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3574,22 +3201,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "New Loka, Benevolent",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 600,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 4000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3607,21 +3228,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 600,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3652,22 +3268,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 1000,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Cephalon Suda, Intelligent",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3685,21 +3295,16 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 150,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 600,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3717,15 +3322,12 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 14400,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3769,27 +3371,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3858,33 +3453,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 1000,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Grokdrul",
         "itemCount": 35,
-        "sourceText": "Grokdrul Drum",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nistlepod",
         "itemCount": 55,
-        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-        "dropChance": 15.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Pyrotic Alloy",
         "itemCount": 40,
-        "sourceText": "Ostron (Old Man Suumbaat), Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3902,32 +3488,24 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Advanced Nosam Cutter",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 1000,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Marquise Veridos",
         "itemCount": 2,
-        "sourceText": "Ostron (Old Man Suumbaat), Visitor",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Travocyte Alloy",
         "itemCount": 30,
-        "sourceText": "Solaris United (Smokefinger), Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -3945,28 +3523,22 @@
     "skipBuildTimePrice": 0,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Frostleaf",
         "itemCount": 8,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Morphics",
-        "itemCount": 2,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
-      },
-      {
-        "partName": "Sunlight Jadeleaf",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Vestan Moss",
+        "itemCount": 2,
+        "sourceText": "Market / Blueprint"
+      },
+      {
         "itemCount": 12,
         "sourceText": "Market / Blueprint"
       }
@@ -3986,27 +3558,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 2500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 2500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4075,17 +3640,14 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Dragonlily",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Threshcone",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       }
@@ -4148,33 +3710,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 1000,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Grokdrul",
         "itemCount": 35,
-        "sourceText": "Grokdrul Drum",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nistlepod",
         "itemCount": 55,
-        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-        "dropChance": 15.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Pyrotic Alloy",
         "itemCount": 40,
-        "sourceText": "Ostron (Old Man Suumbaat), Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4192,28 +3745,22 @@
     "skipBuildTimePrice": 0,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Lunar Pitcher",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Jadeleaf",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Morphics",
         "itemCount": 2,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ruk's Claw",
         "itemCount": 6,
         "sourceText": "Market / Blueprint"
       }
@@ -4233,31 +3780,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fish Meat",
         "itemCount": 20,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fish Oil",
         "itemCount": 10,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Maprico",
         "itemCount": 1,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nistlepod",
         "itemCount": 10,
-        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-        "dropChance": 15.18
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4313,22 +3853,16 @@
     "skipBuildTimePrice": 20,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Ceres/Nuovo (Rescue), Rotation B",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 5000,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 7500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4359,33 +3893,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Karkina Antenna",
         "itemCount": 3,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Maprico",
         "itemCount": 15,
-        "sourceText": "Narmer Thumper",
-        "dropChance": 16.68
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nistlepod",
         "itemCount": 15,
-        "sourceText": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-        "dropChance": 15.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Norg Brain",
         "itemCount": 3,
-        "sourceText": "Operational Supply, Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4441,27 +3966,22 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Dragonlily",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Moonlight Jadeleaf",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sunlight Dragonlily",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Sunlight Jadeleaf",
         "itemCount": 4,
         "sourceText": "Market / Blueprint"
       }
@@ -4681,33 +4201,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 1000,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 400,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Control Module",
         "itemCount": 3,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 1500,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4725,34 +4236,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Lith V7 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Carapace",
         "itemCount": 1,
-        "sourceText": "Lith V10 Relic",
-        "dropChance": 11
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cerebrum",
         "itemCount": 1,
-        "sourceText": "Lith C1 Relic (Radiant)",
-        "dropChance": 10
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
         "itemCount": 6,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
-        "sourceText": "Axi A7 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4770,33 +4271,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 500,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 400,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Control Module",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 200,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4814,34 +4306,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Lith D1 Relic (Radiant)",
-        "dropChance": 10
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Carapace",
         "itemCount": 1,
-        "sourceText": "Axi N7 Relic",
-        "dropChance": 11
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cerebrum",
         "itemCount": 1,
-        "sourceText": "Lith D2 Relic (Radiant)",
-        "dropChance": 10
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
         "itemCount": 6,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
-        "sourceText": "Axi I1 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4859,33 +4341,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 600,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Argon Crystal",
         "itemCount": 2,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Plastids",
         "itemCount": 350,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Polymer Bundle",
         "itemCount": 500,
-        "sourceText": "Ceres/Ker (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4903,33 +4376,24 @@
     "skipBuildTimePrice": 35,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 3500,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Forma",
         "itemCount": 2,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Mutagen Mass",
         "itemCount": 6,
-        "sourceText": "Hallowed Flame Endurance Caches, Rotation B",
-        "dropChance": 11.06
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Salvage",
         "itemCount": 30000,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4947,33 +4411,24 @@
     "skipBuildTimePrice": 35,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 5000,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Fieldron",
         "itemCount": 10,
-        "sourceText": "Rare Corpus Storage Container",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Forma",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Oxium",
         "itemCount": 300,
-        "sourceText": "Carrypod",
-        "dropChance": 0.5
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -4991,34 +4446,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Lith C3 Relic",
-        "dropChance": 11
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Carapace",
         "itemCount": 1,
-        "sourceText": "Axi A3 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cerebrum",
         "itemCount": 1,
-        "sourceText": "Axi H1 Relic (Radiant)",
-        "dropChance": 10
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
         "itemCount": 6,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
-        "sourceText": "Axi A12 Relic",
-        "dropChance": 11
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5036,34 +4481,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Neptune/Arva Vector (Skirmish), Rotation C",
-        "dropChance": 4.26
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Carapace",
         "itemCount": 1,
-        "sourceText": "Neptune/Arva Vector (Skirmish), Rotation C",
-        "dropChance": 4.26
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cerebrum",
         "itemCount": 1,
-        "sourceText": "Neptune/Arva Vector (Skirmish), Rotation C",
-        "dropChance": 4.26
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nullstones",
         "itemCount": 5,
-        "sourceText": "Apex Membroid (Level 76 - 100)",
-        "dropChance": 0
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
-        "sourceText": "Neptune/Arva Vector (Skirmish), Rotation C",
-        "dropChance": 4.26
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5081,34 +4516,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Lith N17 Relic (Radiant)",
-        "dropChance": 10
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Carapace",
         "itemCount": 1,
-        "sourceText": "Axi V13 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cerebrum",
         "itemCount": 1,
-        "sourceText": "Axi N13 Relic (Radiant)",
-        "dropChance": 10
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
         "itemCount": 6,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
-        "sourceText": "Axi S16 Relic",
-        "dropChance": 11
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5126,31 +4551,22 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Axidrol Alloy",
         "itemCount": 45,
-        "sourceText": "Solaris United (Smokefinger), Neutral",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Solaris United (The Business), Old Mate",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Goblite Tears",
         "itemCount": 15,
-        "sourceText": "Solaris United (Smokefinger), Outworlder",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Longwinder Lathe Coagulant",
         "itemCount": 10,
-        "sourceText": "Exploiter Orb",
-        "dropChance": 50.01
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Scrap",
         "itemCount": 40,
         "sourceText": "Market / Blueprint"
       }
@@ -5183,33 +4599,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 500,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 400,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Control Module",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 200,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5227,34 +4634,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Axi A17 Relic",
-        "dropChance": 11
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Carapace",
         "itemCount": 1,
-        "sourceText": "Axi S16 Relic (Radiant)",
-        "dropChance": 10
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cerebrum",
         "itemCount": 1,
-        "sourceText": "Axi G11 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
         "itemCount": 6,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
-        "sourceText": "Axi B6 Relic",
-        "dropChance": 11
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5272,27 +4669,20 @@
     "skipBuildTimePrice": 1,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Ferrite",
         "itemCount": 500,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Neurodes",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Rubedo",
         "itemCount": 200,
-        "sourceText": "Earth/Cervantes (Caches), Rotation B",
-        "dropChance": 12.18
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5310,33 +4700,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Alloy Plate",
         "itemCount": 500,
-        "sourceText": "Mars/Gradivus (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 400,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Control Module",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 200,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5354,34 +4735,24 @@
     "skipBuildTimePrice": 30,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Axi S2 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Carapace",
         "itemCount": 1,
-        "sourceText": "Axi L1 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Cerebrum",
         "itemCount": 1,
-        "sourceText": "Lith G2 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
         "itemCount": 6,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
-        "sourceText": "Meso E1 Relic",
-        "dropChance": 11
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5399,28 +4770,22 @@
     "skipBuildTimePrice": 50,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Harness",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nitain Extract",
         "itemCount": 4,
-        "sourceText": "Wolf Of Saturn Six",
-        "dropChance": 0.13
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Wings",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -5440,28 +4805,22 @@
     "skipBuildTimePrice": 50,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Control Module",
         "itemCount": 5,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Harness",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Wings",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -5481,28 +4840,22 @@
     "skipBuildTimePrice": 50,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Control Module",
         "itemCount": 2,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Harness",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Wings",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -5522,33 +4875,24 @@
     "skipBuildTimePrice": 5,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Circuits",
         "itemCount": 300,
-        "sourceText": "Kuva Fortress/Dakata (Caches), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Harness",
         "itemCount": 1,
-        "sourceText": "Cephalon Simaris, Complete The Archwing (Quest)",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
-        "sourceText": "Cephalon Simaris, Complete The Archwing (Quest)",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Wings",
         "itemCount": 1,
-        "sourceText": "Cephalon Simaris, Complete The Archwing (Quest)",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5566,33 +4910,24 @@
     "skipBuildTimePrice": 50,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Harness",
         "itemCount": 1,
-        "sourceText": "Axi K1 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Systems",
         "itemCount": 1,
-        "sourceText": "Axi V1 Relic (Radiant)",
-        "dropChance": 16.67
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Wings",
         "itemCount": 1,
-        "sourceText": "Lith O2 Relic (Radiant)",
-        "dropChance": 10
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5610,24 +4945,18 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Argon Crystal",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
-        "sourceText": "Cephalon Simaris, Complete Natah (Quest)",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Forma",
         "itemCount": 2,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -5647,23 +4976,18 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
-        "itemCount": 1,
-        "sourceText": "Requiem I Relic (Radiant)",
-        "dropChance": 10
-      },
-      {
-        "partName": "Exceptional Sentient Core",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Forma",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -5747,27 +5071,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Atmo Systems",
         "itemCount": 5,
-        "sourceText": "Venus/Orb Vallis (Level 40 - 60 PROFIT-TAKER - PHASE 1), Rotation C",
-        "dropChance": 10
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Gyromag Systems",
         "itemCount": 10,
-        "sourceText": "Vox Solaris, Operative",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Repeller Systems",
         "itemCount": 2,
-        "sourceText": "Vox Solaris, Hand",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5785,31 +5102,24 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
-        "itemCount": 1,
-        "sourceText": "The Descendia: Rare Rewards (Steel Path)",
-        "dropChance": 19.36
-      },
-      {
-        "partName": "Control Module",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Gallium",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Morphics",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
+      },
+      {
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5827,28 +5137,22 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
-        "itemCount": 1,
-        "sourceText": "The Descendia: Rare Rewards (Steel Path)",
-        "dropChance": 19.36
-      },
-      {
-        "partName": "Morphics",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Neural Sensors",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Neurodes",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Orokin Cell",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       }
@@ -5868,26 +5172,20 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Argon Crystal",
-        "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
-      },
-      {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Forma",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nitain Extract",
+        "itemCount": 1,
+        "sourceText": "Market / Blueprint"
+      },
+      {
         "itemCount": 5,
-        "sourceText": "Wolf Of Saturn Six",
-        "dropChance": 0.13
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []
@@ -5905,32 +5203,24 @@
     "skipBuildTimePrice": 10,
     "components": [
       {
-        "partName": "Blueprint",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Forma",
         "itemCount": 1,
         "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Kuva",
         "itemCount": 500,
-        "sourceText": "Demolisher Bailiff",
-        "dropChance": 100
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Nano Spores",
         "itemCount": 1100,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 12.65
+        "sourceText": "Market / Blueprint"
       },
       {
-        "partName": "Neurodes",
         "itemCount": 1,
-        "sourceText": "Neptune/Cephalon Capture (Conclave), Rotation B",
-        "dropChance": 0.25
+        "sourceText": "Market / Blueprint"
       }
     ],
     "drops": []

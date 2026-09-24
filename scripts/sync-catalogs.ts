@@ -2349,7 +2349,17 @@ export async function syncCatalogs(): Promise<{
     if (wikiRes.ok) {
       const data = await wikiRes.json();
       const members: Array<{ title: string; ns: number }> = data?.query?.categorymembers || [];
-      const updateItem = members.find((m) => m.ns === 0 && m.title.toLowerCase().startsWith('update '));
+      const updateItems = members.filter((m) => m.ns === 0 && m.title.toLowerCase().startsWith('update '));
+      updateItems.sort((a, b) => {
+        const matchA = a.title.match(/update\s+(\d+)/i);
+        const matchB = b.title.match(/update\s+(\d+)/i);
+
+        const numA = matchA ? parseInt(matchA[1], 10) : 0;
+        const numB = matchB ? parseInt(matchB[1], 10) : 0;
+
+        return numB - numA; 
+      });
+      const updateItem = updateItems[0];
       if (updateItem) {
         versionInfo = {
           gameVersion: updateItem.title,

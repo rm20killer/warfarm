@@ -978,6 +978,75 @@
       }
     ]
   },
+  "aksondol": {
+    "itemId": "aksondol",
+    "itemName": "Aksondol",
+    "buildTimeText": "6 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 25,
+    "ingredients": [
+      {
+        "count": 650,
+        "name": "Polymer Bundle",
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "name": "Entrati Lanthorn",
+        "isComponent": false
+      },
+      {
+        "count": 1200,
+        "name": "Alloy Plate",
+        "isComponent": false
+      },
+      {
+        "count": 100,
+        "name": "Cryotic",
+        "isComponent": false
+      },
+      {
+        "count": 400,
+        "name": "Rubedo",
+        "isComponent": false
+      },
+      {
+        "count": 40,
+        "name": "Voidgel Orb",
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "name": "Neurodes",
+        "isComponent": false
+      },
+      {
+        "count": 900,
+        "name": "Salvage",
+        "isComponent": false
+      },
+      {
+        "count": 50,
+        "name": "Thrax Plasm",
+        "isComponent": false
+      },
+      {
+        "count": 8200,
+        "name": "Nano Spores",
+        "isComponent": false
+      },
+      {
+        "count": 600,
+        "name": "Circuits",
+        "isComponent": false
+      },
+      {
+        "count": 2600,
+        "name": "Ferrite",
+        "isComponent": false
+      }
+    ]
+  },
   "akstiletto": {
     "itemId": "akstiletto",
     "itemName": "Akstiletto",
@@ -4683,6 +4752,64 @@
       },
       {
         "count": 3,
+        "name": "Orokin Cell",
+        "isComponent": false
+      }
+    ]
+  },
+  "corufell_prime": {
+    "itemId": "corufell_prime",
+    "itemName": "Corufell Prime",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 50,
+    "ingredients": [
+      {
+        "count": 1,
+        "name": "Barrel",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Receiver",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Handle",
+        "isComponent": true
+      },
+      {
+        "count": 15,
+        "name": "Orokin Cell",
+        "isComponent": false
+      }
+    ]
+  },
+  "corufell prime": {
+    "itemId": "corufell_prime",
+    "itemName": "Corufell Prime",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 50,
+    "ingredients": [
+      {
+        "count": 1,
+        "name": "Barrel",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Receiver",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Handle",
+        "isComponent": true
+      },
+      {
+        "count": 15,
         "name": "Orokin Cell",
         "isComponent": false
       }
@@ -16032,6 +16159,95 @@
       }
     ]
   },
+  "nunchasa": {
+    "itemId": "nunchasa",
+    "itemName": "Nunchasa",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 20000,
+    "rushPricePlat": 25,
+    "ingredients": [
+      {
+        "count": 1700,
+        "name": "Alloy Plate",
+        "isComponent": false
+      },
+      {
+        "count": 30,
+        "name": "Voidgel Orb",
+        "isComponent": false
+      },
+      {
+        "count": 2,
+        "name": "Voidplume Pinion",
+        "isComponent": false
+      },
+      {
+        "count": 800,
+        "name": "Plastids",
+        "isComponent": false
+      },
+      {
+        "count": 1700,
+        "name": "Alloy Plate",
+        "isComponent": false
+      },
+      {
+        "count": 30,
+        "name": "Voidgel Orb",
+        "isComponent": false
+      },
+      {
+        "count": 2,
+        "name": "Voidplume Pinion",
+        "isComponent": false
+      },
+      {
+        "count": 800,
+        "name": "Plastids",
+        "isComponent": false
+      },
+      {
+        "count": 750,
+        "name": "Polymer Bundle",
+        "isComponent": false
+      },
+      {
+        "count": 4,
+        "name": "Gallium",
+        "isComponent": false
+      },
+      {
+        "count": 100,
+        "name": "Oxium",
+        "isComponent": false
+      },
+      {
+        "count": 2,
+        "name": "Neurodes",
+        "isComponent": false
+      },
+      {
+        "count": 400,
+        "name": "Cryotic",
+        "isComponent": false
+      },
+      {
+        "count": 2500,
+        "name": "Salvage",
+        "isComponent": false
+      },
+      {
+        "count": 2,
+        "name": "Entrati Lanthorn",
+        "isComponent": false
+      },
+      {
+        "count": 5,
+        "name": "Morphics",
+        "isComponent": false
+      }
+    ]
+  },
   "obex": {
     "itemId": "obex",
     "itemName": "Obex",
@@ -21371,6 +21587,64 @@
       {
         "count": 4,
         "name": "Neurodes",
+        "isComponent": false
+      }
+    ]
+  },
+  "steflos_prime": {
+    "itemId": "steflos_prime",
+    "itemName": "Steflos Prime",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 50,
+    "ingredients": [
+      {
+        "count": 1,
+        "name": "Barrel",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Receiver",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Stock",
+        "isComponent": true
+      },
+      {
+        "count": 10,
+        "name": "Orokin Cell",
+        "isComponent": false
+      }
+    ]
+  },
+  "steflos prime": {
+    "itemId": "steflos_prime",
+    "itemName": "Steflos Prime",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 50,
+    "ingredients": [
+      {
+        "count": 1,
+        "name": "Barrel",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Receiver",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Stock",
+        "isComponent": true
+      },
+      {
+        "count": 10,
+        "name": "Orokin Cell",
         "isComponent": false
       }
     ]
@@ -32260,6 +32534,238 @@
       }
     ]
   },
+  "citrine_prime": {
+    "itemId": "citrine_prime",
+    "itemName": "Citrine Prime",
+    "buildTimeText": "72 hours",
+    "buildPriceCredits": 25000,
+    "rushPricePlat": 50,
+    "ingredients": [
+      {
+        "count": 1,
+        "name": "Prime Neuroptics",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Prime Chassis",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Prime Systems",
+        "isComponent": true
+      },
+      {
+        "count": 5,
+        "name": "Orokin Cell",
+        "isComponent": false
+      }
+    ]
+  },
+  "citrine prime": {
+    "itemId": "citrine_prime",
+    "itemName": "Citrine Prime",
+    "buildTimeText": "72 hours",
+    "buildPriceCredits": 25000,
+    "rushPricePlat": 50,
+    "ingredients": [
+      {
+        "count": 1,
+        "name": "Prime Neuroptics",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Prime Chassis",
+        "isComponent": true
+      },
+      {
+        "count": 1,
+        "name": "Prime Systems",
+        "isComponent": true
+      },
+      {
+        "count": 5,
+        "name": "Orokin Cell",
+        "isComponent": false
+      }
+    ]
+  },
+  "citrine_prime_chassis": {
+    "itemId": "citrine_prime_chassis",
+    "itemName": "Citrine Prime Chassis",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 25,
+    "ingredients": [
+      {
+        "count": 2,
+        "name": "Nitain Extract",
+        "isComponent": false
+      },
+      {
+        "count": 10,
+        "name": "Control Module",
+        "isComponent": false
+      },
+      {
+        "count": 1600,
+        "name": "Rubedo",
+        "isComponent": false
+      },
+      {
+        "count": 7800,
+        "name": "Salvage",
+        "isComponent": false
+      }
+    ]
+  },
+  "citrine prime chassis": {
+    "itemId": "citrine_prime_chassis",
+    "itemName": "Citrine Prime Chassis",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 25,
+    "ingredients": [
+      {
+        "count": 2,
+        "name": "Nitain Extract",
+        "isComponent": false
+      },
+      {
+        "count": 10,
+        "name": "Control Module",
+        "isComponent": false
+      },
+      {
+        "count": 1600,
+        "name": "Rubedo",
+        "isComponent": false
+      },
+      {
+        "count": 7800,
+        "name": "Salvage",
+        "isComponent": false
+      }
+    ]
+  },
+  "citrine_prime_neuroptics": {
+    "itemId": "citrine_prime_neuroptics",
+    "itemName": "Citrine Prime Neuroptics",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 25,
+    "ingredients": [
+      {
+        "count": 4,
+        "name": "Neurodes",
+        "isComponent": false
+      },
+      {
+        "count": 1750,
+        "name": "Circuits",
+        "isComponent": false
+      },
+      {
+        "count": 450,
+        "name": "Plastids",
+        "isComponent": false
+      },
+      {
+        "count": 4750,
+        "name": "Nano Spores",
+        "isComponent": false
+      }
+    ]
+  },
+  "citrine prime neuroptics": {
+    "itemId": "citrine_prime_neuroptics",
+    "itemName": "Citrine Prime Neuroptics",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 25,
+    "ingredients": [
+      {
+        "count": 4,
+        "name": "Neurodes",
+        "isComponent": false
+      },
+      {
+        "count": 1750,
+        "name": "Circuits",
+        "isComponent": false
+      },
+      {
+        "count": 450,
+        "name": "Plastids",
+        "isComponent": false
+      },
+      {
+        "count": 4750,
+        "name": "Nano Spores",
+        "isComponent": false
+      }
+    ]
+  },
+  "citrine_prime_systems": {
+    "itemId": "citrine_prime_systems",
+    "itemName": "Citrine Prime Systems",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 25,
+    "ingredients": [
+      {
+        "count": 2,
+        "name": "Argon Crystal",
+        "isComponent": false
+      },
+      {
+        "count": 5,
+        "name": "Neural Sensors",
+        "isComponent": false
+      },
+      {
+        "count": 1775,
+        "name": "Polymer Bundle",
+        "isComponent": false
+      },
+      {
+        "count": 4000,
+        "name": "Ferrite",
+        "isComponent": false
+      }
+    ]
+  },
+  "citrine prime systems": {
+    "itemId": "citrine_prime_systems",
+    "itemName": "Citrine Prime Systems",
+    "buildTimeText": "12 hours",
+    "buildPriceCredits": 15000,
+    "rushPricePlat": 25,
+    "ingredients": [
+      {
+        "count": 2,
+        "name": "Argon Crystal",
+        "isComponent": false
+      },
+      {
+        "count": 5,
+        "name": "Neural Sensors",
+        "isComponent": false
+      },
+      {
+        "count": 1775,
+        "name": "Polymer Bundle",
+        "isComponent": false
+      },
+      {
+        "count": 4000,
+        "name": "Ferrite",
+        "isComponent": false
+      }
+    ]
+  },
   "chroma": {
     "itemId": "chroma",
     "itemName": "Chroma",
@@ -43100,7 +43606,7 @@
       },
       {
         "count": 1,
-        "name": "[PH]",
+        "name": "Orokin Cell",
         "isComponent": false
       }
     ]
@@ -43113,23 +43619,23 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "count": 3,
-        "name": "[PH]",
+        "count": 3300,
+        "name": "Alloy Plate",
         "isComponent": false
       },
       {
-        "count": 3250,
-        "name": "[PH]",
+        "count": 1200,
+        "name": "Polymer Bundle",
         "isComponent": false
       },
       {
-        "count": 100,
-        "name": "[PH]",
+        "count": 800,
+        "name": "Cryotic",
         "isComponent": false
       },
       {
-        "count": 5,
-        "name": "[PH]",
+        "count": 10,
+        "name": "Morphics",
         "isComponent": false
       }
     ]
@@ -43142,23 +43648,23 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "count": 3,
-        "name": "[PH]",
+        "count": 3300,
+        "name": "Alloy Plate",
         "isComponent": false
       },
       {
-        "count": 3250,
-        "name": "[PH]",
+        "count": 1200,
+        "name": "Polymer Bundle",
         "isComponent": false
       },
       {
-        "count": 100,
-        "name": "[PH]",
+        "count": 800,
+        "name": "Cryotic",
         "isComponent": false
       },
       {
-        "count": 5,
-        "name": "[PH]",
+        "count": 10,
+        "name": "Morphics",
         "isComponent": false
       }
     ]
@@ -43171,23 +43677,23 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "count": 3,
-        "name": "[PH]",
+        "count": 2900,
+        "name": "Plastids",
         "isComponent": false
       },
       {
-        "count": 2850,
-        "name": "[PH]",
+        "count": 4,
+        "name": "Neural Sensors",
         "isComponent": false
       },
       {
-        "count": 50,
-        "name": "[PH]",
+        "count": 6,
+        "name": "Entrati Lanthorn",
         "isComponent": false
       },
       {
-        "count": 5,
-        "name": "[PH]",
+        "count": 400,
+        "name": "Thrax Plasm",
         "isComponent": false
       }
     ]
@@ -43200,23 +43706,23 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "count": 3,
-        "name": "[PH]",
+        "count": 2900,
+        "name": "Plastids",
         "isComponent": false
       },
       {
-        "count": 2850,
-        "name": "[PH]",
+        "count": 4,
+        "name": "Neural Sensors",
         "isComponent": false
       },
       {
-        "count": 50,
-        "name": "[PH]",
+        "count": 6,
+        "name": "Entrati Lanthorn",
         "isComponent": false
       },
       {
-        "count": 5,
-        "name": "[PH]",
+        "count": 400,
+        "name": "Thrax Plasm",
         "isComponent": false
       }
     ]
@@ -43229,23 +43735,23 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "count": 3,
-        "name": "[PH]",
+        "count": 55,
+        "name": "Voidgel Orb",
         "isComponent": false
       },
       {
-        "count": 2500,
-        "name": "[PH]",
+        "count": 2,
+        "name": "Argon Crystal",
+        "isComponent": false
+      },
+      {
+        "count": 2100,
+        "name": "Circuits",
         "isComponent": false
       },
       {
         "count": 10,
-        "name": "[PH]",
-        "isComponent": false
-      },
-      {
-        "count": 5,
-        "name": "[PH]",
+        "name": "Control Module",
         "isComponent": false
       }
     ]
@@ -43258,23 +43764,23 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "count": 3,
-        "name": "[PH]",
+        "count": 55,
+        "name": "Voidgel Orb",
         "isComponent": false
       },
       {
-        "count": 2500,
-        "name": "[PH]",
+        "count": 2,
+        "name": "Argon Crystal",
+        "isComponent": false
+      },
+      {
+        "count": 2100,
+        "name": "Circuits",
         "isComponent": false
       },
       {
         "count": 10,
-        "name": "[PH]",
-        "isComponent": false
-      },
-      {
-        "count": 5,
-        "name": "[PH]",
+        "name": "Control Module",
         "isComponent": false
       }
     ]
@@ -55547,22 +56053,22 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Hexenon",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 200,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 8000,
         "isComponent": false
       },
       {
-        "name": "Neurodes",
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 925,
         "isComponent": false
       }
@@ -55576,7 +56082,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55726,7 +56231,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55740,7 +56244,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55754,7 +56257,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55768,7 +56270,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55782,7 +56283,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55796,7 +56296,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55810,7 +56309,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55824,7 +56322,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55838,7 +56335,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55852,7 +56348,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55866,7 +56361,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55880,7 +56374,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55894,7 +56387,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55908,7 +56400,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55922,7 +56413,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55936,7 +56426,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55950,7 +56439,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55964,7 +56452,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55978,7 +56465,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -55992,7 +56478,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56006,7 +56491,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56020,7 +56504,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56034,7 +56517,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56048,7 +56530,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56326,7 +56807,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56340,7 +56820,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56354,7 +56833,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56368,7 +56846,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56382,7 +56859,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56396,7 +56872,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56410,7 +56885,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56424,7 +56898,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56438,7 +56911,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56452,7 +56924,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56466,7 +56937,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56480,7 +56950,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56494,7 +56963,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56508,7 +56976,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56522,22 +56989,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 300,
         "isComponent": false
       },
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 100,
         "isComponent": false
       },
       {
-        "name": "Neurodes",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 100,
         "isComponent": false
       }
@@ -56567,17 +57034,18 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Lex",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Lex",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -56671,7 +57139,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56685,7 +57152,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56699,7 +57165,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56713,7 +57178,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56727,7 +57191,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56741,7 +57204,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56755,7 +57217,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56769,7 +57230,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56783,7 +57243,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56797,7 +57256,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -56827,14 +57285,16 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
-        "name": "Barrel",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Receiver",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
       }
     ]
   },
@@ -56846,14 +57306,16 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
-        "name": "Barrel",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Receiver",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
       }
     ]
   },
@@ -56865,19 +57327,20 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
-        "name": "Barrel",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Receiver",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -56889,19 +57352,20 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
-        "name": "Barrel",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Receiver",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -57041,19 +57505,20 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
-        "name": "Barrel",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Receiver",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -57065,19 +57530,20 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
-        "name": "Barrel",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Receiver",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -57121,7 +57587,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -57135,7 +57600,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -57149,7 +57613,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -57163,7 +57626,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -57177,7 +57639,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -57191,7 +57652,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -57205,7 +57665,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -57219,7 +57678,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -57233,7 +57691,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -57247,7 +57704,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -57285,22 +57741,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fish Scales",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       },
       {
-        "name": "Tear Azurite",
         "count": 10,
         "isComponent": false
       }
@@ -57394,22 +57850,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Breath Of The Eidolon",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Fish Scales",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Marquise Veridos",
         "count": 6,
         "isComponent": false
       }
@@ -57423,22 +57879,22 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Dual Skana",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Mutagen Mass",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Rubedo",
         "count": 1200,
         "isComponent": false
       }
@@ -57452,22 +57908,22 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Dual Skana",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Mutagen Mass",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Rubedo",
         "count": 1200,
         "isComponent": false
       }
@@ -57481,22 +57937,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fersteel Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 40,
         "isComponent": false
       },
       {
-        "name": "Fish Scales",
         "count": 45,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Marquise Veridos",
         "count": 8,
         "isComponent": false
       }
@@ -57542,22 +57998,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fish Scales",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 45,
         "isComponent": false
       },
       {
-        "name": "Marquise Veridos",
         "count": 7,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 25,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       }
@@ -57571,22 +58027,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Condroc Wing",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       }
@@ -57600,22 +58056,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Condroc Wing",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       }
@@ -57629,22 +58085,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Condroc Wing",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -57658,22 +58114,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Condroc Wing",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -57687,22 +58143,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Condroc Wing",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Goopolla Spleen",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -57716,22 +58172,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Condroc Wing",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Goopolla Spleen",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -57745,22 +58201,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Breath Of The Eidolon",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       }
@@ -57774,22 +58230,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Breath Of The Eidolon",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       }
@@ -57803,22 +58259,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Charc Electroplax",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -57832,22 +58288,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Charc Electroplax",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -57861,22 +58317,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Breath Of The Eidolon",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       }
@@ -57890,22 +58346,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Breath Of The Eidolon",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Condroc Wing",
         "count": 5,
         "isComponent": false
       }
@@ -57935,22 +58391,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Condroc Wing",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Khut-Khut Venom Sac",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       }
@@ -57964,22 +58420,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Condroc Wing",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Yogwun Stomach",
         "count": 5,
         "isComponent": false
       }
@@ -57993,22 +58449,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Condroc Wing",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Yogwun Stomach",
         "count": 5,
         "isComponent": false
       }
@@ -58022,22 +58478,22 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Detonite Injector",
-        "count": 5,
-        "isComponent": false
-      },
-      {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Rubedo",
+        "count": 5,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 600,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 5000,
         "isComponent": false
       }
@@ -58051,22 +58507,22 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Detonite Injector",
-        "count": 5,
-        "isComponent": false
-      },
-      {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Rubedo",
+        "count": 5,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 600,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 5000,
         "isComponent": false
       }
@@ -58080,22 +58536,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fersteel Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 40,
         "isComponent": false
       },
       {
-        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Rubedo",
         "count": 600,
         "isComponent": false
       }
@@ -58109,22 +58565,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fish Oil",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 50,
         "isComponent": false
       },
       {
-        "name": "Iradite",
         "count": 25,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       },
       {
-        "name": "Rubedo",
         "count": 650,
         "isComponent": false
       }
@@ -58138,22 +58594,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Coprite Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 60,
         "isComponent": false
       },
       {
-        "name": "Esher Devar",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Fish Scales",
         "count": 45,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 20,
         "isComponent": false
       }
@@ -58167,22 +58623,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Breath Of The Eidolon",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       }
@@ -58196,7 +58652,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -58210,7 +58665,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -58224,7 +58678,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -58238,7 +58691,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -58252,22 +58704,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Cetus Wisp",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 700,
         "isComponent": false
       }
@@ -58281,22 +58733,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Coprite Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 60,
         "isComponent": false
       },
       {
-        "name": "Cryotic",
         "count": 750,
         "isComponent": false
       },
       {
-        "name": "Fish Oil",
         "count": 50,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       }
@@ -58326,22 +58778,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Cetus Wisp",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Fish Scales",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Marquise Veridos",
         "count": 6,
         "isComponent": false
       }
@@ -58387,22 +58839,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fish Scales",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Iradite",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       },
       {
-        "name": "Tear Azurite",
         "count": 10,
         "isComponent": false
       }
@@ -58416,22 +58868,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 850,
         "isComponent": false
       },
       {
-        "name": "Fish Oil",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 50,
         "isComponent": false
       },
       {
-        "name": "Iradite",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       }
@@ -58445,22 +58897,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fish Scales",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Iradite",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 1100,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 30,
         "isComponent": false
       }
@@ -58474,22 +58926,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fish Scales",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Iradite",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 1100,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 30,
         "isComponent": false
       }
@@ -58503,22 +58955,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Coprite Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 30,
         "isComponent": false
       },
       {
-        "name": "Fish Scales",
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 1100,
         "isComponent": false
       }
@@ -58532,22 +58984,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Coprite Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 30,
         "isComponent": false
       },
       {
-        "name": "Fish Scales",
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 1100,
         "isComponent": false
       }
@@ -58689,22 +59141,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Esher Devar",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Fish Scales",
         "count": 50,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       }
@@ -58734,22 +59186,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Kuaka Spinal Claw",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Mawfish Bones",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       }
@@ -58763,22 +59215,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Kuaka Spinal Claw",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Yogwun Stomach",
         "count": 5,
         "isComponent": false
       }
@@ -58792,22 +59244,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Kuaka Spinal Claw",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Yogwun Stomach",
         "count": 5,
         "isComponent": false
       }
@@ -58861,22 +59313,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fish Oil",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 50,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 900,
         "isComponent": false
       }
@@ -58890,22 +59342,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Condroc Wing",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Coprite Alloy",
         "count": 60,
         "isComponent": false
       },
       {
-        "name": "Fish Scales",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Tear Azurite",
         "count": 10,
         "isComponent": false
       }
@@ -58919,22 +59371,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 850,
         "isComponent": false
       },
       {
-        "name": "Fish Scales",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 25,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 60,
         "isComponent": false
       }
@@ -58964,22 +59416,22 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 3250,
         "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Oxium",
         "count": 75,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 100,
         "isComponent": false
       }
@@ -59025,7 +59477,10 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Salvage",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -59039,7 +59494,10 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Salvage",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -59053,7 +59511,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -59067,7 +59524,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -59081,7 +59537,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -59095,7 +59550,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -59109,7 +59563,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -59123,7 +59576,6 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Blueprint",
         "count": 1,
         "isComponent": false
       }
@@ -59137,22 +59589,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fersteel Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       }
@@ -59166,22 +59618,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fersteel Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       }
@@ -59195,22 +59647,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fersteel Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -59224,22 +59676,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Fersteel Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -59253,22 +59705,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Coprite Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Goopolla Spleen",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -59282,22 +59734,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Coprite Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Goopolla Spleen",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -59311,22 +59763,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Breath Of The Eidolon",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       }
@@ -59340,22 +59792,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Breath Of The Eidolon",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       }
@@ -59369,22 +59821,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Charc Electroplax",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -59398,22 +59850,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Charc Electroplax",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Coprite Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 30,
         "isComponent": false
       }
@@ -59427,22 +59879,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Breath Of The Eidolon",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       }
@@ -59456,22 +59908,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Auroxium Alloy",
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Breath Of The Eidolon",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Cetus Wisp",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Kuaka Spinal Claw",
         "count": 5,
         "isComponent": false
       }
@@ -59533,22 +59985,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Plastids",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 1500,
         "isComponent": false
       },
       {
-        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -59562,22 +60014,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Plastids",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 1500,
         "isComponent": false
       },
       {
-        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -59591,17 +60043,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
         "count": 40,
         "isComponent": false
       },
       {
-        "name": "Marquise Veridos",
         "count": 2,
         "isComponent": false
       }
@@ -59615,17 +60068,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
         "count": 40,
         "isComponent": false
       },
       {
-        "name": "Marquise Veridos",
         "count": 2,
         "isComponent": false
       }
@@ -59639,22 +60093,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
-        "count": 1200,
-        "isComponent": false
-      },
-      {
-        "name": "Morphics",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Plastids",
+        "count": 1200,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 700,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2000,
         "isComponent": false
       }
@@ -59668,22 +60122,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
-        "count": 1200,
-        "isComponent": false
-      },
-      {
-        "name": "Morphics",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Plastids",
+        "count": 1200,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 700,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2000,
         "isComponent": false
       }
@@ -59697,7 +60151,10 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Moonlight Threshcone",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 4,
         "isComponent": false
       }
@@ -59711,7 +60168,10 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Moonlight Threshcone",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 4,
         "isComponent": false
       }
@@ -59725,17 +60185,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -59749,17 +60210,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -59773,22 +60235,22 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Antiserum Injector Fragment",
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Fieldron",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 6000,
         "isComponent": false
       },
       {
-        "name": "Tellurium",
         "count": 2,
         "isComponent": false
       }
@@ -59802,22 +60264,22 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Antiserum Injector Fragment",
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Fieldron",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 6000,
         "isComponent": false
       },
       {
-        "name": "Tellurium",
         "count": 2,
         "isComponent": false
       }
@@ -59831,7 +60293,10 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Sunlight Threshcone",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 4,
         "isComponent": false
       }
@@ -59845,7 +60310,10 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Sunlight Threshcone",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 4,
         "isComponent": false
       }
@@ -59859,12 +60327,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 250,
         "isComponent": false
       },
       {
-        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -59878,12 +60348,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 250,
         "isComponent": false
       },
       {
-        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -59897,22 +60369,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1500,
         "isComponent": false
       },
       {
-        "name": "Plastids",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -59926,22 +60398,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1500,
         "isComponent": false
       },
       {
-        "name": "Plastids",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -59955,17 +60427,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -59979,17 +60452,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60003,12 +60477,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 400,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 400,
         "isComponent": false
       }
@@ -60022,12 +60498,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Sunlight Dragonlily",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Sunlight Threshcone",
         "count": 2,
         "isComponent": false
       }
@@ -60041,12 +60519,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Sunlight Dragonlily",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Sunlight Threshcone",
         "count": 2,
         "isComponent": false
       }
@@ -60060,17 +60540,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60084,17 +60565,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60108,22 +60590,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Cryotic",
         "count": 1500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -60137,22 +60619,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Cryotic",
         "count": 1500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -60166,17 +60648,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60190,17 +60673,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60214,17 +60698,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60238,17 +60723,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -60262,22 +60748,22 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Circuits",
-        "count": 500,
-        "isComponent": false
-      },
-      {
-        "name": "Gallium",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
+        "count": 500,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5000,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 1000,
         "isComponent": false
       }
@@ -60291,22 +60777,22 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Circuits",
-        "count": 500,
-        "isComponent": false
-      },
-      {
-        "name": "Gallium",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
+        "count": 500,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5000,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 1000,
         "isComponent": false
       }
@@ -60320,22 +60806,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Fish Meat",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Goopolla Spleen",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Murkray Liver",
         "count": 5,
         "isComponent": false
       }
@@ -60349,22 +60835,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Fish Meat",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Goopolla Spleen",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Murkray Liver",
         "count": 5,
         "isComponent": false
       }
@@ -60378,12 +60864,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 250,
         "isComponent": false
       },
       {
-        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60397,12 +60885,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 250,
         "isComponent": false
       },
       {
-        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60416,12 +60906,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 250,
         "isComponent": false
       },
       {
-        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60435,12 +60927,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 250,
         "isComponent": false
       },
       {
-        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60454,12 +60948,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -60473,12 +60969,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -60492,22 +60990,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Circuits",
-        "count": 500,
-        "isComponent": false
-      },
-      {
-        "name": "Esher Devar",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
+        "count": 500,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 40,
         "isComponent": false
       },
       {
-        "name": "Tear Azurite",
         "count": 1,
         "isComponent": false
       }
@@ -60521,22 +61019,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Circuits",
-        "count": 500,
-        "isComponent": false
-      },
-      {
-        "name": "Esher Devar",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
+        "count": 500,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 40,
         "isComponent": false
       },
       {
-        "name": "Tear Azurite",
         "count": 1,
         "isComponent": false
       }
@@ -60550,17 +61048,18 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Cryotic",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 300,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 3500,
         "isComponent": false
       },
       {
-        "name": "Omega Isotope",
         "count": 4,
         "isComponent": false
       }
@@ -60574,17 +61073,18 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Cryotic",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 300,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 3500,
         "isComponent": false
       },
       {
-        "name": "Omega Isotope",
         "count": 4,
         "isComponent": false
       }
@@ -60598,22 +61098,22 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 1000,
         "isComponent": false
       }
@@ -60627,22 +61127,22 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 1000,
         "isComponent": false
       }
@@ -60656,22 +61156,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Goopolla Spleen",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Karkina Antenna",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       }
@@ -60685,22 +61185,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Goopolla Spleen",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Karkina Antenna",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       }
@@ -60714,22 +61214,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Cuthol Tendrils",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Fish Meat",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Norg Brain",
         "count": 5,
         "isComponent": false
       }
@@ -60743,22 +61243,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Cuthol Tendrils",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Fish Meat",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Norg Brain",
         "count": 5,
         "isComponent": false
       }
@@ -60772,22 +61272,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Moonlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Moonlight Threshcone",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Sunlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Sunlight Threshcone",
         "count": 15,
         "isComponent": false
       }
@@ -60801,22 +61301,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Moonlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Moonlight Threshcone",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Sunlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Sunlight Threshcone",
         "count": 15,
         "isComponent": false
       }
@@ -60830,12 +61330,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 250,
         "isComponent": false
       },
       {
-        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60849,12 +61351,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 250,
         "isComponent": false
       },
       {
-        "name": "Void Traces",
         "count": 10,
         "isComponent": false
       }
@@ -60868,12 +61372,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -60887,12 +61393,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -60906,17 +61414,18 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1200,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 10,
         "isComponent": false
       }
@@ -60930,17 +61439,18 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1200,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 10,
         "isComponent": false
       }
@@ -60954,22 +61464,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Moonlight Dragonlily",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Moonlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Sunlight Dragonlily",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Sunlight Jadeleaf",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -60983,22 +61493,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Moonlight Dragonlily",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Moonlight Jadeleaf",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Sunlight Dragonlily",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Sunlight Jadeleaf",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -61012,17 +61522,18 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 200,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 100,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 150,
         "isComponent": false
       }
@@ -61036,17 +61547,18 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 200,
         "isComponent": false
       },
       {
-        "name": "Plastids",
         "count": 100,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 150,
         "isComponent": false
       }
@@ -61060,12 +61572,14 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Iradite",
         "count": 10,
         "isComponent": false
       }
@@ -61079,12 +61593,14 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Iradite",
         "count": 10,
         "isComponent": false
       }
@@ -61098,17 +61614,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -61122,17 +61639,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -61146,22 +61664,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Fish Meat",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Goopolla Spleen",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -61175,22 +61693,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Fish Meat",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Goopolla Spleen",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Mortus Horn",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Tralok Eyes",
         "count": 5,
         "isComponent": false
       }
@@ -61204,22 +61722,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Dusklight Sarracenia",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Moonlight Dragonlily",
         "count": 6,
         "isComponent": false
       },
       {
-        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Sunlight Threshcone",
         "count": 12,
         "isComponent": false
       }
@@ -61233,22 +61751,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Dusklight Sarracenia",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Moonlight Dragonlily",
         "count": 6,
         "isComponent": false
       },
       {
-        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Sunlight Threshcone",
         "count": 12,
         "isComponent": false
       }
@@ -61262,22 +61780,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Fish Meat",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Karkina Antenna",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Sharrac Teeth",
         "count": 5,
         "isComponent": false
       }
@@ -61291,22 +61809,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Fish Meat",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Karkina Antenna",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Sharrac Teeth",
         "count": 5,
         "isComponent": false
       }
@@ -61320,12 +61838,14 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Ferrite",
         "count": 2000,
         "isComponent": false
       }
@@ -61339,12 +61859,14 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Ferrite",
         "count": 2000,
         "isComponent": false
       }
@@ -61358,12 +61880,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -61377,12 +61901,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -61396,12 +61922,14 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Fish Meat",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       }
@@ -61415,12 +61943,14 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Fish Meat",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 20,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 20,
         "isComponent": false
       }
@@ -61434,22 +61964,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Coprite Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 100,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
         "count": 80,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 70,
         "isComponent": false
       }
@@ -61463,22 +61993,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Coprite Alloy",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 100,
         "isComponent": false
       },
       {
-        "name": "Fersteel Alloy",
         "count": 80,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 70,
         "isComponent": false
       }
@@ -61492,12 +62022,14 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Iradite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       }
@@ -61511,22 +62043,22 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5000,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 750,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 5000,
         "isComponent": false
       }
@@ -61540,22 +62072,22 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5000,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 750,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 5000,
         "isComponent": false
       }
@@ -61569,22 +62101,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Chitinous Husk",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Infected Palpators",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Pulsating Tubercles",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Severed Bile Sac",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -61598,22 +62130,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Chitinous Husk",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Infected Palpators",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Pulsating Tubercles",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Severed Bile Sac",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -61627,12 +62159,14 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Argon Crystal",
         "count": 3,
         "isComponent": false
       },
       {
-        "name": "Pherliac Pods",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -61646,12 +62180,14 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Argon Crystal",
         "count": 3,
         "isComponent": false
       },
       {
-        "name": "Pherliac Pods",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -61665,7 +62201,10 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Fass Residue",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -61679,7 +62218,10 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Fass Residue",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -61693,7 +62235,10 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Vome Residue",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -61707,7 +62252,10 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Vome Residue",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -61721,17 +62269,18 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Cryptographic Alu",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Gallium",
         "count": 3,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 1500,
         "isComponent": false
       }
@@ -61745,17 +62294,18 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Cryptographic Alu",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Gallium",
         "count": 3,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 1500,
         "isComponent": false
       }
@@ -61769,22 +62319,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Cryotic",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 1500,
         "isComponent": false
       },
       {
-        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -61798,22 +62348,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Cryotic",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 1500,
         "isComponent": false
       },
       {
-        "name": "Synthula",
         "count": 2,
         "isComponent": false
       }
@@ -61827,17 +62377,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -61851,17 +62402,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -61875,17 +62427,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -61899,17 +62452,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -61923,22 +62477,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -61952,22 +62506,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -61981,12 +62535,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 300,
         "isComponent": false
       }
@@ -62000,12 +62556,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 300,
         "isComponent": false
       }
@@ -62019,12 +62577,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 600,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 600,
         "isComponent": false
       }
@@ -62038,12 +62598,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 600,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 600,
         "isComponent": false
       }
@@ -62057,12 +62619,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 7200,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 900,
         "isComponent": false
       }
@@ -62076,12 +62640,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 7200,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 900,
         "isComponent": false
       }
@@ -62095,12 +62661,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 3000,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 500,
         "isComponent": false
       }
@@ -62114,12 +62682,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 3000,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 500,
         "isComponent": false
       }
@@ -62133,12 +62703,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 150,
         "isComponent": false
       },
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 600,
         "isComponent": false
       }
@@ -62152,12 +62724,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 150,
         "isComponent": false
       },
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 600,
         "isComponent": false
       }
@@ -62171,12 +62745,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 9000,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 900,
         "isComponent": false
       }
@@ -62190,12 +62766,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 9000,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 900,
         "isComponent": false
       }
@@ -62209,12 +62787,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 600,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 4000,
         "isComponent": false
       }
@@ -62228,12 +62808,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 600,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 4000,
         "isComponent": false
       }
@@ -62247,12 +62829,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 600,
         "isComponent": false
       }
@@ -62266,12 +62850,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 600,
         "isComponent": false
       }
@@ -62285,12 +62871,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       }
@@ -62304,12 +62892,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       }
@@ -62323,12 +62913,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 150,
         "isComponent": false
       },
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 600,
         "isComponent": false
       }
@@ -62342,12 +62934,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 150,
         "isComponent": false
       },
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 600,
         "isComponent": false
       }
@@ -62361,7 +62955,10 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 14400,
         "isComponent": false
       }
@@ -62375,7 +62972,10 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Nano Spores",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 14400,
         "isComponent": false
       }
@@ -62389,17 +62989,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -62413,17 +63014,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -62437,22 +63039,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -62466,22 +63068,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -62495,22 +63097,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Advanced Nosam Cutter",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Marquise Veridos",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Travocyte Alloy",
         "count": 30,
         "isComponent": false
       }
@@ -62524,22 +63126,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Advanced Nosam Cutter",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Marquise Veridos",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Travocyte Alloy",
         "count": 30,
         "isComponent": false
       }
@@ -62553,22 +63155,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Frostleaf",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 8,
         "isComponent": false
       },
       {
-        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Sunlight Jadeleaf",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Vestan Moss",
         "count": 12,
         "isComponent": false
       }
@@ -62582,22 +63184,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Frostleaf",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 8,
         "isComponent": false
       },
       {
-        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Sunlight Jadeleaf",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Vestan Moss",
         "count": 12,
         "isComponent": false
       }
@@ -62611,17 +63213,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -62635,17 +63238,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 2500,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 2500,
         "isComponent": false
       }
@@ -62659,12 +63263,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Moonlight Dragonlily",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Moonlight Threshcone",
         "count": 2,
         "isComponent": false
       }
@@ -62678,12 +63284,14 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Moonlight Dragonlily",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Moonlight Threshcone",
         "count": 2,
         "isComponent": false
       }
@@ -62697,22 +63305,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -62726,22 +63334,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Grokdrul",
         "count": 35,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 55,
         "isComponent": false
       },
       {
-        "name": "Pyrotic Alloy",
         "count": 40,
         "isComponent": false
       }
@@ -62755,22 +63363,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Lunar Pitcher",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 6,
         "isComponent": false
       },
       {
-        "name": "Moonlight Jadeleaf",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Ruk's Claw",
         "count": 6,
         "isComponent": false
       }
@@ -62784,22 +63392,22 @@
     "rushPricePlat": 25,
     "ingredients": [
       {
-        "name": "Lunar Pitcher",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 6,
         "isComponent": false
       },
       {
-        "name": "Moonlight Jadeleaf",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Morphics",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Ruk's Claw",
         "count": 6,
         "isComponent": false
       }
@@ -62813,22 +63421,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Fish Meat",
-        "count": 20,
-        "isComponent": false
-      },
-      {
-        "name": "Fish Oil",
-        "count": 10,
-        "isComponent": false
-      },
-      {
-        "name": "Maprico",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
+        "count": 20,
+        "isComponent": false
+      },
+      {
+        "count": 10,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       }
@@ -62842,22 +63450,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Fish Meat",
-        "count": 20,
-        "isComponent": false
-      },
-      {
-        "name": "Fish Oil",
-        "count": 10,
-        "isComponent": false
-      },
-      {
-        "name": "Maprico",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
+        "count": 20,
+        "isComponent": false
+      },
+      {
+        "count": 10,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
         "isComponent": false
       }
@@ -62871,12 +63479,14 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5000,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 7500,
         "isComponent": false
       }
@@ -62890,12 +63500,14 @@
     "rushPricePlat": 20,
     "ingredients": [
       {
-        "name": "Ferrite",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5000,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 7500,
         "isComponent": false
       }
@@ -62909,22 +63521,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Karkina Antenna",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 3,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Norg Brain",
         "count": 3,
         "isComponent": false
       }
@@ -62938,22 +63550,22 @@
     "rushPricePlat": 5,
     "ingredients": [
       {
-        "name": "Karkina Antenna",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 3,
         "isComponent": false
       },
       {
-        "name": "Maprico",
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Nistlepod",
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Norg Brain",
         "count": 3,
         "isComponent": false
       }
@@ -62967,22 +63579,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Moonlight Dragonlily",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Moonlight Jadeleaf",
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Sunlight Dragonlily",
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Sunlight Jadeleaf",
         "count": 4,
         "isComponent": false
       }
@@ -62996,22 +63608,22 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Moonlight Dragonlily",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Moonlight Jadeleaf",
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Sunlight Dragonlily",
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Sunlight Jadeleaf",
         "count": 4,
         "isComponent": false
       }
@@ -63025,22 +63637,22 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 1000,
         "isComponent": false
       },
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 400,
         "isComponent": false
       },
       {
-        "name": "Control Module",
         "count": 3,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 1500,
         "isComponent": false
       }
@@ -63054,24 +63666,24 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Carapace",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Cerebrum",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 6,
         "isComponent": false
       },
       {
-        "name": "Systems",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -63083,24 +63695,24 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Carapace",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Cerebrum",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 6,
         "isComponent": false
       },
       {
-        "name": "Systems",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -63112,22 +63724,22 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Circuits",
-        "count": 400,
-        "isComponent": false
-      },
-      {
-        "name": "Control Module",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
+        "count": 400,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 200,
         "isComponent": false
       }
@@ -63141,22 +63753,22 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 600,
         "isComponent": false
       },
       {
-        "name": "Argon Crystal",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Plastids",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 350,
         "isComponent": false
       },
       {
-        "name": "Polymer Bundle",
         "count": 500,
         "isComponent": false
       }
@@ -63170,22 +63782,22 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Circuits",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 3500,
         "isComponent": false
       },
       {
-        "name": "Forma",
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Mutagen Mass",
         "count": 6,
         "isComponent": false
       },
       {
-        "name": "Salvage",
         "count": 30000,
         "isComponent": false
       }
@@ -63199,22 +63811,22 @@
     "rushPricePlat": 35,
     "ingredients": [
       {
-        "name": "Ferrite",
-        "count": 5000,
-        "isComponent": false
-      },
-      {
-        "name": "Fieldron",
-        "count": 10,
-        "isComponent": false
-      },
-      {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Oxium",
+        "count": 5000,
+        "isComponent": false
+      },
+      {
+        "count": 10,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 300,
         "isComponent": false
       }
@@ -63228,24 +63840,24 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Carapace",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Cerebrum",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 6,
         "isComponent": false
       },
       {
-        "name": "Systems",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -63257,24 +63869,24 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Carapace",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Cerebrum",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 6,
         "isComponent": false
       },
       {
-        "name": "Systems",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -63286,22 +63898,22 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Axidrol Alloy",
         "count": 45,
         "isComponent": false
       },
       {
-        "name": "Goblite Tears",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 15,
         "isComponent": false
       },
       {
-        "name": "Longwinder Lathe Coagulant",
         "count": 10,
         "isComponent": false
       },
       {
-        "name": "Scrap",
         "count": 40,
         "isComponent": false
       }
@@ -63315,22 +63927,22 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Circuits",
-        "count": 400,
-        "isComponent": false
-      },
-      {
-        "name": "Control Module",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
+        "count": 400,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 200,
         "isComponent": false
       }
@@ -63344,17 +63956,18 @@
     "rushPricePlat": 1,
     "ingredients": [
       {
-        "name": "Ferrite",
-        "count": 500,
-        "isComponent": false
-      },
-      {
-        "name": "Neurodes",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Rubedo",
+        "count": 500,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 200,
         "isComponent": false
       }
@@ -63368,22 +63981,22 @@
     "rushPricePlat": 30,
     "ingredients": [
       {
-        "name": "Alloy Plate",
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Circuits",
-        "count": 400,
-        "isComponent": false
-      },
-      {
-        "name": "Control Module",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
+        "count": 400,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 200,
         "isComponent": false
       }
@@ -63397,24 +64010,24 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
-        "name": "Harness",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Nitain Extract",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 4,
         "isComponent": false
       },
       {
-        "name": "Systems",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Wings",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -63426,24 +64039,24 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
-        "name": "Control Module",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       },
       {
-        "name": "Harness",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Systems",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Wings",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -63455,24 +64068,24 @@
     "rushPricePlat": 50,
     "ingredients": [
       {
-        "name": "Control Module",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Harness",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Systems",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Wings",
         "count": 1,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -63484,17 +64097,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Argon Crystal",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Forma",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Orokin Cell",
         "count": 1,
         "isComponent": false
       }
@@ -63508,17 +64122,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Argon Crystal",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Forma",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 2,
         "isComponent": false
       },
       {
-        "name": "Orokin Cell",
         "count": 1,
         "isComponent": false
       }
@@ -63532,17 +64147,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Exceptional Sentient Core",
-        "count": 1,
-        "isComponent": true
-      },
-      {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -63556,17 +64172,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Exceptional Sentient Core",
-        "count": 1,
-        "isComponent": true
-      },
-      {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Orokin Cell",
+        "count": 1,
+        "isComponent": false
+      },
+      {
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 1,
         "isComponent": false
       }
@@ -63580,19 +64197,20 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Atmo Systems",
         "count": 5,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Gyromag Systems",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 10,
-        "isComponent": true
+        "isComponent": false
       },
       {
-        "name": "Repeller Systems",
         "count": 2,
-        "isComponent": true
+        "isComponent": false
       }
     ]
   },
@@ -63604,17 +64222,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Argon Crystal",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Nitain Extract",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -63628,17 +64247,18 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Argon Crystal",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Nitain Extract",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 5,
         "isComponent": false
       }
@@ -63652,22 +64272,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Kuva",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 1100,
         "isComponent": false
       },
       {
-        "name": "Neurodes",
         "count": 1,
         "isComponent": false
       }
@@ -63681,22 +64301,22 @@
     "rushPricePlat": 10,
     "ingredients": [
       {
-        "name": "Forma",
         "count": 1,
         "isComponent": false
       },
       {
-        "name": "Kuva",
+        "count": 1,
+        "isComponent": false
+      },
+      {
         "count": 500,
         "isComponent": false
       },
       {
-        "name": "Nano Spores",
         "count": 1100,
         "isComponent": false
       },
       {
-        "name": "Neurodes",
         "count": 1,
         "isComponent": false
       }

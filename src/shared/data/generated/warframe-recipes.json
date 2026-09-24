@@ -10368,5 +10368,69 @@
       "Rubedo": 800,
       "Orokin Cell": 1
     }
+  },
+  "citrine prime": {
+    "name": "Citrine Prime",
+    "blueprint": {
+      "buildPrice": 25000,
+      "buildTime": "72 hours",
+      "rushPricePlat": 50,
+      "ingredients": [
+        {
+          "name": "Citrine Prime Neuroptics",
+          "count": 1
+        },
+        {
+          "name": "Citrine Prime Chassis",
+          "count": 1
+        },
+        {
+          "name": "Citrine Prime Systems",
+          "count": 1
+        },
+        {
+          "name": "Orokin Cell",
+          "count": 1
+        }
+      ]
+    },
+    "totalResources": {
+      "Morphics": 3,
+      "Ferrite": 2500,
+      "Rubedo": 800,
+      "Orokin Cell": 1
+    }
+  },
+  "narin": {
+    "name": "Narin",
+    "blueprint": {
+      "buildPrice": 25000,
+      "buildTime": "72 hours",
+      "rushPricePlat": 50,
+      "ingredients": [
+        {
+          "name": "Narin Neuroptics",
+          "count": 1
+        },
+        {
+          "name": "Narin Chassis",
+          "count": 1
+        },
+        {
+          "name": "Narin Systems",
+          "count": 1
+        },
+        {
+          "name": "Orokin Cell",
+          "count": 1
+        }
+      ]
+    },
+    "totalResources": {
+      "Morphics": 3,
+      "Ferrite": 2500,
+      "Rubedo": 800,
+      "Orokin Cell": 1
+    }
   }
 }
